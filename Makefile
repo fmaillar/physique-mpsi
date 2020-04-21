@@ -24,3 +24,8 @@ aread:
 
 clean:
 	rm -f *.ps *.log *.aux *.out *.dvi *.bbl *.blg *.lof *.lot *.toc *.ilg *.idx *.ind *~ ${filename}.m*
+
+backup:
+	git add *
+	git commit
+	git push backupDD master
