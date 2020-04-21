@@ -1,0 +1,108 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Cin\IeC {\'e}matique du point mat\IeC {\'e}riel}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Espace physique et temps d'un observateur}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Notion de solide}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Espace physique}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Chronologie et d\IeC {\'e}finition de la seconde}{2}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Mouvement et r\IeC {\'e}f\IeC {\'e}rentiel, temps absolu}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Notion de point mat\IeC {\'e}riel}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Compl\IeC {\'e}ment de g\IeC {\'e}om\IeC {\'e}trie}{4}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Rep\IeC {\`e}re, coordonn\IeC {\'e}es cart\IeC {\'e}siennes}{4}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Coordonn\IeC {\'e}es cylindriques, ou cylindro-polaires}{4}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Trajectoire, abscisse curviligne et loi horaire}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}Vitesse}{5}{section.1.6}
+\contentsline {section}{\numberline {1.7}Acc\IeC {\'e}l\IeC {\'e}ration}{6}{section.1.7}
+\contentsline {section}{\numberline {1.8}Mouvements particuliers}{6}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Lois horaires particuli\IeC {\`e}res}{6}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Mouvements rectilignes}{7}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}Mouvements \IeC {\`a} acc\IeC {\'e}l\IeC {\'e}ration constante}{7}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}Mouvements circulaires}{8}{subsection.1.8.4}
+\contentsline {section}{\numberline {1.9}Produit vectoriel}{9}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}D\IeC {\'e}finition}{9}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Propri\IeC {\'e}t\IeC {\'e}s du produit vectoriel}{9}{subsection.1.9.2}
+\contentsline {subsection}{\numberline {1.9.3}Norme, direction et sens du produit vectoriel, produit vectoriel nul}{9}{subsection.1.9.3}
+\contentsline {subsection}{\numberline {1.9.4}Moment en un point d'un vecteur li\IeC {\'e}}{10}{subsection.1.9.4}
+\contentsline {section}{\numberline {1.10}Exercices}{10}{section.1.10}
+\contentsline {chapter}{\numberline {2}Cin\IeC {\'e}matique du point mat\IeC {\'e}riel}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Masse pesante et masse inerte}{14}{section.2.1}
+\contentsline {section}{\numberline {2.2}Quantit\IeC {\'e} de mouvement et moment cin\IeC {\'e}tique}{14}{section.2.2}
+\contentsline {section}{\numberline {2.3}Principe d'inertie, r\IeC {\'e}f\IeC {\'e}rentiel galil\IeC {\'e}en}{14}{section.2.3}
+\contentsline {section}{\numberline {2.4}Notion de force}{15}{section.2.4}
+\contentsline {section}{\numberline {2.5}Relation fondamentale de la dynamique du point mat\IeC {\'e}riel (deuxi\IeC {\`e}me loi de Newton)}{16}{section.2.5}
+\contentsline {section}{\numberline {2.6}Th\IeC {\'e}or\IeC {\`e}me du moment cin\IeC {\'e}tique pour un point mat\IeC {\'e}riel}{17}{section.2.6}
+\contentsline {section}{\numberline {2.7}Principe des interactions (troisi\IeC {\`e}me loi de Newton)}{17}{section.2.7}
+\contentsline {section}{\numberline {2.8}Interactions \IeC {\`a} distance}{17}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Interaction gravitationelle}{17}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Interaction \IeC {\'e}lectromagn\IeC {\'e}tique}{18}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Interaction forte}{18}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}Interaction faible}{19}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}Unification des interactions}{19}{subsection.2.8.5}
+\contentsline {section}{\numberline {2.9}Interactions de contact}{19}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Point mat\IeC {\'e}riel li\IeC {\'e} \IeC {\`a} un fil tendu de masse nulle}{19}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Point mat\IeC {\'e}riel li\IeC {\'e}e \IeC {\`a} une extr\IeC {\'e}mit\IeC {\'e} d'un ressort parfait}{20}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}Mouvement d'un point li\IeC {\'e} \IeC {\`a} une courbe ou \IeC {\`a} une surface}{20}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}Exercices}{20}{section.2.10}
+\contentsline {chapter}{\numberline {3}Applications de la relation fondamentale de la dynamique}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Chute libre, tir dans le vide}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Influence de la r\IeC {\'e}sistance de l'air sur le tir d'un projectile pour des vitesses faibles}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tir vertical}{26}{section.3.3}
+\contentsline {section}{\numberline {3.4}Mouvement d'un point mat\IeC {\'e}riel soumis \IeC {\`a} une force de rappel}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Pendule \IeC {\'e}lastique horizontal}{27}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Pendule \IeC {\'e}lastique vertical}{27}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Exercices}{28}{section.3.5}
+\contentsline {chapter}{\numberline {4}Aspects \IeC {\'e}nerg\IeC {\'e}tiques de la dynamique du point mat\IeC {\'e}riel}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Puissance et travail d'une force}{32}{section.4.1}
+\contentsline {section}{\numberline {4.2}\IeC {\'E}nergie cin\IeC {\'e}tique, th\IeC {\'e}or\IeC {\`e}me de l'\IeC {\'e}nergie cin\IeC {\'e}tique pour un point mat\IeC {\'e}riel}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}Exemple d'utilisation du th\IeC {\'e}or\IeC {\`e}me de l'\IeC {\'e}nergie cin\IeC {\'e}tique}{33}{section.4.3}
+\contentsline {section}{\numberline {4.4}Exemples de calculs de travaux et de puissances}{34}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Travail du poids d'un point mat\IeC {\'e}riel}{34}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Travail d'une force de rappel d'un ressort}{34}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Travail d'une force de frottement}{35}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}\IeC {\'E}nergie potentielle d'un point mat\IeC {\'e}rielle}{35}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Force conservative}{35}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}\IeC {\'E}nergie potentielle}{35}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}\IeC {\'E}nergie potentielle de pesanteur}{36}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}\IeC {\'E}nergie potentielle \IeC {\'e}lastique}{36}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Cas d'une force qui ne travaille pas}{36}{subsection.4.5.5}
+\contentsline {section}{\numberline {4.6}\IeC {\'E}nergie m\IeC {\'e}canique d'un point mat\IeC {\'e}riel, limites du mouvement}{36}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}D\IeC {\'e}finition de l'\IeC {\'e}nergie m\IeC {\'e}canique et th\IeC {\'e}or\IeC {\`e}me de l'\IeC {\'e}nergie m\IeC {\'e}canique pour un point mat\IeC {\'e}riel}{36}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Limites du mouvement}{37}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Positions d'\IeC {\'e}quilibre, stabilit\IeC {\'e} d'un \IeC {\'e}quilibre}{37}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Positions d'\IeC {\'e}quilibre}{37}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Stabilit\IeC {\'e} d'un \IeC {\'e}quilibre}{38}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}Exemples d'application}{39}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Utilisation de l'int\IeC {\'e}grale premi\IeC {\`e}re du mouvement pour un pendule \IeC {\'e}lastique inclin\IeC {\'e}}{39}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Positions d'\IeC {\'e}quilibre d'un point mat\IeC {\'e}riel sur un cercle}{40}{subsection.4.8.2}
+\contentsline {section}{\numberline {4.9}Exercices}{41}{section.4.9}
+\contentsline {chapter}{\numberline {5}Oscillateurs et portraits de phase}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Oscillateur harmonique}{43}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Mouvement d'un point mat\IeC {\'e}riel sur une courbe au voisinage d'une position d'\IeC {\'e}quilibre}{43}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Oscillateur harmonique}{44}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Aspect \IeC {\'e}nerg\IeC {\'e}tique}{45}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Portrait de phase}{46}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}D\IeC {\'e}finitions, propri\IeC {\'e}t\IeC {\'e}s des trajectoires de phase}{46}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Portraits de phase de l'oscillateur harmonique}{46}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Portrait de phase du pendule pesant simple}{47}{subsection.5.2.3}
+\contentsline {subsubsection}{D\IeC {\'e}finition, \IeC {\'e}quation diff\IeC {\'e}rentielle}{47}{section*.1}
+\contentsline {subsubsection}{Cas des petites oscillations}{48}{section*.2}
+\contentsline {subsubsection}{Cas g\IeC {\'e}n\IeC {\'e}ral}{48}{section*.3}
+\contentsline {section}{\numberline {5.3}Oscillateur amorti par frottements fluides}{49}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{49}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Loi horaire du mouvement}{50}{subsection.5.3.2}
+\contentsline {subsubsection}{R\IeC {\'e}gime ap\IeC {\'e}riodique}{50}{section*.4}
+\contentsline {subsubsection}{R\IeC {\'e}gime critique}{50}{section*.5}
+\contentsline {subsubsection}{R\IeC {\'e}gime pseudop\IeC {\'e}riodique}{51}{section*.6}
+\contentsline {subsection}{\numberline {5.3.3}Aspect \IeC {\'e}nerg\IeC {\'e}tique, facteur de qualit\IeC {\'e} d'un oscillateur}{51}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Portrait de phase de l'oscillateur amorti}{52}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Exercices}{52}{section.5.4}
+\contentsline {chapter}{\numberline {6}Lois de Descartes -- Prisme}{53}{chapter.6}
+\contentsline {section}{\numberline {6.1}Nature de la lumi\IeC {\`e}re}{53}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Vitesse de propagation, indices de r\IeC {\'e}fraction}{53}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Diff\IeC {\'e}rents domaines des ondes \IeC {\'e}lectromagn\IeC {\'e}tiques}{54}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Propagation rectiligne}{54}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Hypoth\IeC {\`e}se de propagation rectiligne}{54}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Rayons lumineux}{54}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Lois de Descartes}{55}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}D\IeC {\'e}finitions}{55}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}R\IeC {\'e}flexion totale et r\IeC {\'e}fraction limite}{55}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Prisme}{56}{section.6.4}

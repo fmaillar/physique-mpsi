@@ -1,0 +1,408 @@
+\chapter{Aspects énergétiques de la dynamique du point matériel}
+\label{chap:aspectenergetiques}
+\minitoc
+\minilof
+\minilot
+
+\section{Puissance et travail d'une force}
+\label{chap4-sec:puissanceettravail}
+
+\begin{defdef}[Puissance]
+  Soit $\vv$ la vitesse d'un point $M$ dans le référentiel considéré, la puissance développée par la force $(M, \vF)$ est définie comme
+  \begin{equation}
+    \P=\vF \cdot \vv.
+  \end{equation}
+  Elle s'exprime en watt, $\SI{1}{W}=\SI{1}{kg.m^2.s^{-3}}$.
+\end{defdef}
+ Pendant un intervalle de temps élémentaire $\diff t$, le déplacement élémentaire de $M$ est $\diff \vec{M} = \vv \diff t$. Le travail élémentaire effectué par la force vaut donc $\delta W = \vF \cdot \diff \vec{M} = \P \diff t$.
+
+On remarquera que l'on note $\delta W$ et non $\diff W$ car le travail d'une force, dans le cas général, ne dépend pas que de la position initiale et de la position finale. En d'autre termes le travail élémentaire n'est pas une forme différentielle.
+\begin{defdef}[Travail]
+  Pour un point $M$ qui se déplace de $M_1$ à $M_2$ sur une trajectoire $\Gamma$, le travail effectué par la force $(M, \vF)$ est définie par
+\begin{equation}
+  W_{1, 2} = \int_{M_1}^{M_2} \vF \cdot \diff \vec{M} = \int_{t_1}^{t_2} \P \diff t.
+\end{equation}
+Le travail d'une force s'exprime en joule, $\SI{1}{J}=\SI{1}{N.m}=\SI{1}{kg.m^2.s^{-2}}$. Dans le cas d'une force constante, $W_{1, 2}=\vF \cdot \vect{M_1M_2}$.
+\end{defdef}
+ Le produit scalaire est distributif, donc la puissance d'une somme de force vaut la somme des puissance des forces (idem pour le travail).
+
+Lorsque $M$ effectue un parcours fermé le long d'une courbe $\Gamma$, l'intégrale curviligne est notée $\oint$ et le travail ne dépend pas du point de départ~: $W_{1,1} = W_{2,2} = \oint_\Gamma \vF \cdot \diff \vec{M}$.
+
+\section{Énergie cinétique, théorème de l'énergie cinétique pour un point matériel}
+\label{chap4-sec:ernergiecinetique}
+
+\begin{defdef}[Énergie cinétique]
+  On considère un point matériel $M$ de masse $m$ et de vitesse $\vv$ dans le référentiel considéré, son énergie cinétique est définie (dans ce référentiel) comme~:
+  \begin{equation}
+    E_c = \frac{1}{2} m v^2.
+  \end{equation}
+  Elle s'exprime en joule
+\end{defdef}
+\begin{theo}[Théorème de l'énergie cinétique]
+  La dérivée temporelle de l'énergie cinétique d'un point matériel dans un référentiel galiléen est la puissance totale des forces qui agissent sur ce point matériel~:
+  \begin{align}
+    \derived{E_c}{t} = \P, \\
+    \diff E_c = \delta W, \\
+    \Delta E_c = W
+  \end{align}
+\end{theo}
+\begin{proof}
+  En appliquant la relation fondamentale de la dynamique on trouve que
+  \begin{equation}
+    \P = \vF \cdot \vv = m \vv \cdot \va = \frac{m}{2} \derived{\vv^2}{t} = \derived{E_c}{t}.
+  \end{equation}
+\end{proof}
+
+\section{Exemple d'utilisation du théorème de l'énergie cinétique}
+\label{chap4-sec:exempletheoremeenergiecinetique}
+
+Un point matériel $M$ de masse $M$ glisse sans frotter sur un rail circulaire (de rayon $r$ et de centre $O$) contenu dans un plan vertical. On abandonne ce point sans vitesse initiale en un point $M_0$ très voisin de la position la plus haute $A$. On repère sa position par l'angle polaire $\theta = (\vect{OA}, \vect{OM})$. 
+
+Pour quelle valeur de $\theta$ le contact entre $M$ et le rail est rompu ?
+
+Le point $M$ est soumis à la réaction du rail $\vect{R}$ perpendiculaire au rail (donc aussi à $\vv$) et à son poids $\vect{P} = -mg\ux$.  La puissance développée par la réaction est nulle, donc son travail aussi est nul. Le travail du poids vaut~:
+\begin{align}
+  W_{\vect{P}} = -mg\ux \cdot \vect{M_0M} &= -mg\ux \cdot \vect{AM} \\
+  &= -mg\ux \cdot r((\cos\theta -1)\ux + \sin\theta \uy) \\
+  &=mgr(1-\cos\theta).
+\end{align}
+La vitesse vaut $\vv = r\dot{\theta} \utheta$ et donc $E_c = \frac{1}{2}mr^2\dot{\theta}^2$ ${E_c}_{0}=0$. 
+
+Le théorème de l'énergie cinétique donne $E_c - {E_c}_{0} = W_{\vect{R}} + W_{\vect{P}}$ et après simplification
+\begin{equation}
+  \dot{\theta}^2 = \frac{2g(1-\cos\theta)}{r}.
+\end{equation}
+
+Les forces agissant sur $M$ s'expriment en coordonnées cylindro-polaires par~:
+\begin{align}
+  \vect{R} &= R_\rho \urho + R_z \uz \\
+  \vect{P} &= mg(-\cos\theta \urho +\sin\theta \utheta)
+\end{align}
+et l'accélération par
+\begin{equation}
+  \va = r \ddot{\theta}\utheta -r\dot{\theta}^2\urho.
+\end{equation}
+
+La relation fondamentale de la dynamique donne~:
+\begin{equation}
+  \begin{cases}
+    R_z = 0 \\
+    R_\rho -mg\cos\theta =-mr\dot{\theta}^2.
+  \end{cases}
+\end{equation}
+Le rail exerce une fore du rail vers le point, donc on a
+\begin{equation}
+  R=R_\rho = mg\cos\theta - mr \frac{2g(1-\cos\theta)}{r} = mg(3\cos\theta -2)>0
+\end{equation}
+Le contact est rompu lorsque $R$ s'annule, c'est-à-dire pour $\cos\theta = \frac{2}{3}$, soit $\theta = \arccos\left(\frac{2}{3}\right) = 48,2 \degree$.
+
+\section{Exemples de calculs de travaux et de puissances}
+\label{chap-4sec:exemplesdecalculs}
+
+\subsection{Travail du poids d'un point matériel}
+\label{chap4-subsec:travaildupoids}
+
+On notera $(Oz)$ un axe vertical ascendant, donc $\vect{P}=-mg\uz$. Pour un déplacement élémentaire $\D M = \D x \ux + \D y \uy + \D z \uz$, le travail élémentaire vaut $\delta W = -mg\D z$. Entre une position initiale $z_1$ et une position finale $z_2$, le travail du poids est $W=mg(z_2-z_1)$. La puissance du poids est $\P=-mg\dot{z}$.
+
+\emph{Le travail du poids d'un point matériel est égal au produit de son intensité par la diminution de l'altitude du point matériel.}
+
+\subsection{Travail d'une force de rappel d'un ressort}
+\label{chap4-subsec:travailduneforcederappel}
+
+On considère un point matériel $M$ attaché à une extrémité libre d'un ressort parfait, l'autre extrémité $A$ du ressort étant fixé. Le ressort exerce sur ce point la force
+\begin{equation}
+  \vF = -k(L-L_0)\frac{\vect{AM}}{L}.
+\end{equation}
+Pour un déplacement élémentaire $\D \vect{AM}$ de $M$, le travail vaut
+\begin{align}
+  \delta W &= \vect{F} \cdot \D \vect{AM} \\
+  &= -k \frac{L-L_0}{L} \vect{AM} \D \vect{AM} \\
+  &= -k \frac{L-L_0}{L} L \D L \\
+  &= -k \frac{L-L_0} \D L.
+\end{align}
+En notant l'allongement $\alpha = L-L_0$, on obtient
+\begin{align}
+  \delta W &= -k\alpha \D \alpha\\
+  &=-\D \left(\frac{k\alpha^2}{2}\right).
+\end{align}
+Entre deux positions $M_1$ et $M_2$ de $M$, le travail de la force vaut $W_{1,2}=\frac{k}{2}(\alpha_1^2-\alpha_2^2)$.
+
+\subsection{Travail d'une force de frottement}
+\label{chap4-subsec:travaildufrottement}
+
+Une force de frottement est toujours orientée comme $-\vv$, donc sa puissance est négative et son travail est aussi négatif, quelque soit le déplacement.
+
+\section{Énergie potentielle d'un point matérielle}
+\label{chap4-sec:energiepotentielle}
+
+\subsection{Force conservative}
+\label{chap4-subsec:forceconservative}
+
+\begin{defdef}
+  Une force est conservative si et seulement si son travail est indépendant du chemin suivi par son point d'application.
+\end{defdef}
+
+Ce travail ne dépend donc que des positions initiale et finale du point d'application de la force. Le long d'un parcours fermé, le travail d'une force conservative est nul.
+
+C'est le cas du poids d'un point matériel, $W_{1,2}=mg(z_1-z_2)$. C'est aussi le cas de la force de rappel d'un ressort de masse négligeable dont une extrémité est fixe, $W_{1, 2} = \frac{k}{2}(\alpha_1^2 - \alpha_2^2)$. Par contre, ce n'est pas le cas de la force de frottement, car son travail est négatif même pour un parcours fermé. Les frottements ne sont pas conservatifs.
+
+\subsection{Énergie potentielle}
+\label{chap4-subsec:energiepotentielle}
+
+Dans ces deux cas, le travail apparaît comme la diminution d'une fonction de la position. Cette fonction est appelée énergie potentielle.
+\begin{defdef}
+  Le travail d'une force conservative est égal à la diminution de l'énergie potentielle correspondante
+  \begin{equation}
+    W_{1, 2}={E_p}_1 -{E_p}_2.
+  \end{equation}
+\end{defdef}
+
+Pour un déplacement élémentaire, on a donc $\delta W = -\D E_p$. Le travail élémentaire d'une force conservative est la différentielle d'une fonction de la position de son point d'application \footnote{C'est une différentielle totale exacte, alors qu'en général $\delta W$ n'est qu'une forme différentielle.}. Réciproquement, si le travail élémentaire est la différentielle d'une fonction de la position, alors la force est conservative. On a l'équivalence
+\begin{equation}
+  \vF \text{~est conservative} \iff \exists f \ \delta W = \D f(x,y,z) = -\D E_p.
+\end{equation}
+
+L'énergie potentielle est donc définie à une constante près. Pour choisir une expression de l'énergie potentielle parmi toutes les expressions possibles, il faut choisir une position du point matériel pour laquelle on décide que $E_p=0$.
+
+\subsection{Énergie potentielle de pesanteur}
+\label{chap4-subsec:NRJPotPes}
+
+On a vu que le travail du poids d'un point matériel s'écrit $W_{1, 2}=mg(z_1-z_2)$, donc l'énergie potentielle de pesanteur est $E_p = mgz +K$. En choisissant $E_p=0$ pour $z=0$ on a $E_p=mgz$.
+
+\subsection{Énergie potentielle élastique}
+\label{chap4-subsec:NRJPotElast}
+
+Le travail de la force exercée par l'extrémité libre d'un ressort parfaitement élastique et de masse négligeable sur un point matériel (si son autre extrémité est fixe) est $W_{1, 2} = \frac{k}{2}(\alpha_1^2-\alpha_2^2)$ avec $\alpha$ l'allongement du ressort. $\alpha$ n'est fonction que des coordonnées du point matériel. L'énergie potentielle correspondante à cette force est l'énergie potentielle élastique. Alors $E_p = \frac{k}{2}\alpha^2$ avec $\alpha=L-L_0$, $E_p=0$ lorsque $\alpha=0$.
+
+\subsection{Cas d'une force qui ne travaille pas}
+\label{chap4-subsec:casduneforcequinetravaillepas}
+
+Si une force reste perpendiculaire au déplacement de son point d'application (réaction d'un fil tendu, inextensible ou réaction d'une surface en l'absence de frottements), alors son travail est nul pour tout déplacement et tout se passe comme s'il lui correspondait une énergie potentielle constante, qui est choisie nulle.
+
+\section{Énergie mécanique d'un point matériel, limites du mouvement}
+\label{chap4-sec:NRJmecanique}
+
+\subsection{Définition de l'énergie mécanique et théorème de l'énergie mécanique pour un point matériel}
+\label{chap4-subsec:Defdelenergiemecanique}
+
+\begin{defdef}[Énergie mécanique]
+  L'énergie mécanique d'un point matériel est la somme de son énergie cinétique et de toutes ses énergies potentielles. En notant $E_p$ la somme des énergie potentielles on a
+  \begin{equation}
+    E_m = E_c + E_p.
+  \end{equation}
+\end{defdef}
+
+\begin{theo}[de l'énergie mécanique]
+  La variation de l'énergie mécanique d'un point matériel est égale au travail effectué par les forces non-conservatives auxquelles il est soumis~:
+  \begin{equation}
+    \Delta E_m = W_{nc}.
+  \end{equation}
+\end{theo}
+\begin{proof}
+ Si un point matériel est soumis à des forces conservatives effectuant le travail $W_c$ et à des forces non-conservatives effectuant pour le même trajet $W_{nc}$, alors la variation de l'énergie cinétique du point matériel est 
+ \begin{equation}
+   \Delta E_c = W_c +W_{nc},
+ \end{equation}
+d'après le théorème de l'énergie cinétique. On vient de voir que le travaille d'une force conservative est l'opposée de la variation de l'énergie potentielle
+\begin{equation}
+  W_c = - \Delta E_p
+\end{equation}
+Alors d'une part
+\begin{equation}
+  \Delta E_c -W_c = \Delta E_m
+\end{equation}
+et d'autre part
+\begin{equation}
+  \Delta E_c + \Delta E_p = W_{nc}.
+\end{equation}
+Alors $\Delta E_m = W_{nc}$.
+\end{proof}
+
+Par exemple, si le point matériel est soumis à des frottements, en l'absence d'autres forces non conservatives, le travail des forces de frottements étant toujours négatif, l'énergie mécanique décroît\footnote{et elle est transformée en énergie thermique}.
+
+\emph{Si aucune force non-conservative appliquée au point matériel ne travaille, son énergie mécanique est constante.}
+
+Dans ce cas, avec un repère lié au référentiel galiléen de référence, $E_p=f(x,y,z)$ et $E_c = \frac{m}{2}(\dot{x}^2+\dot{y}^2+\dot{z}^2)$, avec $E_m=E_c+E_p$. On obtient une équation différentielle nommée \emph{intégrale première du mouvement}~:
+\begin{equation}
+  \frac{m}{2}(\dot{x}^2+\dot{y}^2+\dot{z}^2) + f(x,y,z) = \frac{m}{2}v_0^2+f(x_0,y_0,z_0).
+\end{equation}
+L'indice $0$ correspond à une position particulière, par exemple la position initiale.
+
+Le nom de cette équation différentielle vient de ce que les variables $x$, $y$ et $z$ n'interviennent que par leurs premières dérivées temporelles. Alors que la relation fondamentale de la dynamique fait intervenir les dérivées secondes.
+
+Dans le cas général, cette équation différentielle a l'inconvénient de faire apparaître les trois coordonnées.
+
+\subsection{Limites du mouvement}
+\label{chap4-subsec:limitesdumvt}
+
+S aucune force non-conservative ne travaille, l'énergie mécanique $E_m=E_c+E_p$ est une constante et garde donc sa valeur initiale $E_0$. Cependant, l'énergie cinétique est toujours positive, donc $E_p \leq E_0$. Les coordonnées de $M$ ne peuvent donc varier que dans des domaines où $E_p$ reste inférieure à l'énergie mécanique.
+
+\section{Positions d'équilibre, stabilité d'un équilibre}
+\label{chap4-sec:positiondequilibre}
+
+\subsection{Positions d'équilibre}
+\label{chap4-subsec:positionsdequilibre}
+
+\begin{defdef}
+  Une position d'équilibre est une position telle que, si le point s'y trouve avec une vitesse nulle, il reste immobile.
+\end{defdef}
+
+C'est donc un point où si la vitesse d'un point matériel est nulle, elle reste nulle. C'est donc un point où l'accélération est nulle si sa vitesse est nulle.
+
+Le cas où l'accélération dépend de la vitesse se pose concrètement si une force de frottement fluide intervient, car la force de frottement fluide est du type : $\vec{f}=-Kv^{\alpha}\vv$. C'est aussi le cas s'il intervient une force magnétique $\vec{f} = q\vv \wedge \vec{B}$. Mais dans ces deux cas, si la vitesse est nulle, alors la force est nulle.
+
+Dans le cas où seules les forces sont des forces conservatives et, éventuellement, des forces qui s'annulent avec le vitesse et des forces qui ne travaillent pas, si le point matériel se trouve avec une vitesse nulle dans une position d'équilibre, la somme des forces est nulle, son travail élémentaire est alors $\delta W=\vF \cdot \D\vec{M}=\D E_p$, avec $\vF=\vec{0}$. Si $x$ est une coordonnée de position, $\derived{E_p}{x}=0$.
+
+\emph{La condition nécessaire et suffisante pour qu'un point matériel soit dans une position d'équilibre est que sont énergie potentielle soit extrémale, c'est-à-dire que ses dérivées spatiales soient nulles.}
+
+\subsection{Stabilité d'un équilibre}
+\label{chap4-subsec:stabiliteequilibre}
+
+\begin{defdef}
+  Une position d'équilibre est une position d'équilibre stable pour un point matériel si et seulement si lorsque ce point est abandonné sans vitesse très près de cette position, il va vers cette position. S'il s'en écarte, il s'agit d'une position d'équilibre instable.
+\end{defdef}
+
+On supposera pour simplifier, que $E_p$ n'est fonction que de la coordonnée $x$ du point matériel. Soit $\D x = x-x_0$ la petite variation de la coordonnée $x$ à partir d'une position d'équilibre $M_0$ du point matériel $M$. 
+
+On a donc~:
+\begin{equation}
+  E_p(x) = E_p(x_0) +(x-x_0)\derived{E_p}{x}(x_0) +\frac{(x-x_0)^2}{2}\deriveds{E_p}{x}(x_0) + \ldots
+\end{equation}
+Comme c'est une position d'équilibre ($\derived{E_p}{x}(x_0)=0$), l'énergie potentielle a varié de
+\begin{equation}
+  \D E_p = -\vF_c \vect{M_0M} = \frac{(x-x_0)^2}{2}\deriveds{E_p}{x}(x_0).
+\end{equation}
+Si $\deriveds{E_p}{x}(x_0)>0$ alors $\vF_c$ est dans le sens de $M$ vers $M_0$, sinon elle est dans l'autre sens.
+
+L'équilibre est stable si et seulement si la dérivée seconde de l'énergie potentielle est positive en ce point d'équilibre.
+
+Si la dérivée seconde est nulle, on étudie la dérivée troisième. Si la dérivée troisième est nulle, \ldots Si toutes les dérivées de l'énergie potentielles sont nulles, alors l'équilibre est dit indifférent.
+
+\section{Exemples d'application}
+\label{chap4-sec:exemplesdapplication}
+
+\subsection{Utilisation de l'intégrale première du mouvement pour un pendule élastique incliné}
+\label{chap4-subsec:penduleelastique}
+
+Soit un objet de masse $m$ que l'on assimile à un point matériel $M$ glissant sans frotter sur une tige rectiligne $x'x$ inclinée d'un angle $\alpha$ (par rapport à l'horizontale). L'objet est attaché à un ressort parfaitement élastique, de raideur $k$ et de longueur à vide $L_0$, lui-même enfilé sur la même tige et dont l'autre extrémité $A$ est fixe.
+
+On supposera que la tige est lubrifiée et que la vitesse de $M$ reste suffisamment faible pour que les frottements soient négligeables.
+
+On notera $O$ la position d'équilibre de $M$ et on prendra l'altitude de $O$ comme origine des altitudes. L'abscisse de $M$ sur l'axe $(Ox)$ est $x$.
+
+Le point matériel $M$ est soumis aux forces suivantes~:
+\begin{itemize}
+\item La réaction de la tige $\vect{R}$ perpendiculaire à $xx'$, donc elle ne travaille pas;
+\item Son poids $\vect{P}$, qui est une force conservative;
+\item La force de rappel exercée par le ressort $\vect{f}$, qui est conservative.
+\end{itemize}
+
+L'énergie potentielle de $M$ vaut donc $E_p = mgz + \frac{k}{2}(L-L_0)^2 +K$ (où $K$ est une constante dont on peut choisir la valeur). En notant $L_e$ la longueur du ressort à l'équilibre, on a
+\begin{align}
+  z &= -x \sin \alpha \\
+  L-L_0 &= L_e+x-L_0.
+\end{align}
+Donc
+\begin{align}
+  E_p &= -mgx \sin \alpha + \frac{k}{2}(L_e-L_0+x)^2 +K \\
+  &= -mgx \sin \alpha + \frac{k}{2}(L_e-L_0)^2 +\frac{k}{2}x^2 + k(L_e-L_0)x+K 
+\end{align}
+La dérivée spatiale de $E_p$ vaut
+\begin{equation}
+  \derived{E_p}{x} = -mg\sin\alpha + k(L_e-L_0) + kx.
+\end{equation}
+À l'équilibre, $x=0$, on a $\derived{E_p}{x}=0$ c'est-à-dire $L_e = L_0 + \frac{mg\sin\alpha}{k}$. Donc
+\begin{equation}
+  E_p = -mgx \sin \alpha + \frac{k}{2}\left(\frac{mg\sin\alpha}{k}\right)^2 +\frac{k}{2}x^2 + k\left(\frac{mg\sin\alpha}{k}\right)x+K.
+\end{equation}
+En choisissant $K$ convenablement, il reste $E_p = \frac{k}{2}x^2$.
+
+L'énergie cinétique s'exprime par $E_x = \frac{m}{2} \dot{x}^2$.
+
+Les forces étant conservatives, $E_m=E_p+E_c$ est constantes. L'énergie mécanique garde donc sa valeur initiale $E_0=\frac{k}{2}x_0^2 + \frac{m}{2}\dot{x}_0^2$.
+
+En dérivant temporellement l'équation $E_c+E_p=E_0$ il vient
+\begin{equation}
+  k x \dot{x} +m \dot{x}\ddot{x} =0.
+\end{equation}
+On suppose que $\dot{x} \neq 0$ (sinon il n'y a pas de mouvement) et on obtient l'équation différentielle d'un oscillateur~:
+\begin{equation}
+  \ddot{x} + \frac{k}{m}x=0.
+\end{equation}
+
+Sa solution est de la forme $x=X\cos(\omega t +\varphi)$ avec la pulsation $\omega = \sqrt{\frac{k}{m}}$, l'amplitude $X$ et la phase à l'origine des dates sont déterminées avec les conditions initiales \ldots
+
+La valeur initiale de l'énergie mécanique $E_0$ donne les limites du mouvements, donc de l'amplitude~:
+\begin{equation}
+  E_p=\frac{k}{2}x^2 \leq E_0,
+\end{equation}
+donc $x \in \intervalleff{-\sqrt{\frac{2E_0}{k}}}{\sqrt{\frac{2E_0}{k}}}$, c'est-à-dire que l'amplitude est $X=\sqrt{\frac{2E_0}{k}}$.
+
+La représentation de $E_p$ en fonction de $x$ et de la constante $E_0$ fait apparaître que le point matériel se déplace dans un puits de potentiel, entre deux barrières de potentiels.
+
+\subsection{Positions d'équilibre d'un point matériel sur un cercle}
+\label{chap4-subsec:positionsdequilibredunpointsuruncercle}
+
+On considère un point matériel $M$ formé par une perle de masse $m$, enfilée sur une tige circulaire de rayon $r$, placée dans un plan vertical, et glissant sans frotter sur cette tige. La perle est attachée à un ressort parfait, de longueur à vide négligeable et dont l'autre extrémité est attachée à une extrémité $A$ du diamètre de la tige circulaire. La position $M$ est repérée par l'angle polaire $\theta = (\vect{OA}, \vect{OM})$. 
+
+Déterminer les positions d'équilibres de $M$ et préciser pour chacune leur stabilité.
+
+Le point $M$ est soumis à trois forces~:
+\begin{itemize}
+\item son poids, qui est conservatif auquel correspond l'énergie potentielle de pesanteur $mgy=mgr\sin\theta$;
+\item la réaction de la tige qui ne travaille pas, car elle est perpendiculaire à la vitesse;
+\item la force de rappel du ressort, qui est conservative et à laquelle correspond l'énergie potentielle élastique $\frac{k}{2}AM^2=\frac{k}{2}\left(2r\sin\left(\frac{\theta}{2}\right)\right)$.
+\end{itemize}
+
+L'énergie potentielle totale est donc $E_p = mgr \sin\theta + 2kr^2 \sin^2\left(\frac{\theta}{2}\right)$. Les positions d'équilibre correspondent aux zéros de la dérivée spatiale de $E_p$~:
+\begin{align}
+  \derivep{E_p}{\theta} = 0 &\iff mgr\cos\theta +2kr^2 \sin\left(\frac{\theta}{2}\right) \cos\left(\frac{\theta}{2}\right)=0 \\
+&\iff mgr\cos\theta + kr^2 \sin\theta=0\\
+&\iff \tan\theta = -\frac{mg}{kr}\\
+&\iff \theta \in \{\theta_1=-\arctan \left( \frac{mg}{kr} \right), \theta_2=\pi-\arctan \left( \frac{mg}{kr} \right)\}
+\end{align}
+
+La dérivée seconde de l'énergie potentielle vaut
+\begin{equation}
+  \deriveds{E_p}{\theta} = -mgr\sin\theta +kr^2\cos\theta.
+\end{equation}
+Pour $\theta=\theta_1$, $\sin\theta_1<0$ et $\cos\theta_1>0$ donc $\deriveds{E_p}{\theta}>0$ ($E_p$ est minimale) alors que pour $\theta_2$, $\sin\theta_2>0$ et $\cos\theta_2<0$ donc $\deriveds{E_p}{\theta}<0$ ($E_p$ est maximale). Ainsi~: \emph{$\theta_1$ correspond à une position d'équilibre stable alors que $\theta_2$ correspond à une position d'équilibre instable.}
+
+\section{Exercices}
+\label{chap4-sec:exercices}
+
+\begin{exercice}[Énergie potentielle électrostatique]
+  Soit une charge électrique ponctuelle fixe $Q$ en un point $O$, et une charge ponctuelle mobile $q$ placée en $M$. Exprimer la force électrostatique exercée par $O$ sur $M$ et son travail élémentaire. Montrer que cette force est conservative et exprimer l'énergie potentielle électrostatique du point $M$, avec $E_p$ tendant vers zéro en l'infini.
+\end{exercice}
+%
+\begin{exercice}[Énergie potentielle gravitationelle]
+  Soit une masse ponctuelle fixe $\mu$ placée en un point $O$, et une masse ponctuelle mobile $m$ placée en $M$. Exprimer la force gravitationelle exercée par $O$ sur $M$ et son travail élémentaire. Montrer que cette force est conservative et exprimer l'énergie potentielle gravitationelle du point $M$, avec $E_p$ tendant vers zéro en l'infini.
+\end{exercice}
+%
+\begin{exercice}[Oscillations sur une gouttière cycloïdale]
+  Soit une gouttière cycloïdale d'équations paramétriques $\begin{cases} x = R(\theta +\sin\theta) \\ y=R(1-\cos\theta)\end{cases}$ avec $\theta \in \intervalleff{0}{\pi}$. L'axe $(Oy)$ est vertical et orienté vers le haut. Le champ de pesanteur est uniforme et le point matériel $M$, de masse $m$, glisse sans frotter dans cette gouttière.
+
+  \begin{enumerate}
+  \item Exprimer $\derived{y}{x}$ avec $\frac{\theta}{2}$. Tracer l'allure de cette gouttière, en montrant sur le dessin la signification géométrique de l'angle $\frac{\theta}{2}$.
+  \item On place l'origine des abscisses curvilignes en $O$ et le sens positif sur la trajectoire est celui des $x$ croissants. Exprimer $\D s$, puis $s$ avec $R$ et $\theta$.
+  \item Exprimer l'énergie potentielle de pesanteur de $M$ en fonction de $\theta$, puis en fonction de $s$, avec les paramètres $m$, $g$ et $R$.
+  \item Quelle est la position d'équilibre de $M$ ? Est-elle stable ?
+  \item $M$ est lâché sans vitesse initiale du point $\theta=\frac{\pi}{2}$ à $t=0$. Quelle est l'abscisse curviligne initiale ? Entre quelles valeurs $s$ variera-t-il ?
+  \item Établir l'équation différentielle vérifiée par $s$ et la résoudre.
+ \end{enumerate}
+\end{exercice}
+%
+\begin{exercice}[Glissement sur une sphère]
+  Un point matériel et lâché du point $A$ de la sphère $(O, r)$ avec une vitesse $\vect{v_0}$ horizontale. Les frottements ne sont pas négligés.
+  \begin{enumerate}
+  \item Démontrer que la trajectoire de $M$ est un cercle vertical.
+  \item Exprimer la relation entre $\theta$ et $\dot{\theta}$ à l'instant où le contact entre la sphère et $M$ est rompu, avec les paramètres $r$ et $g$.
+  \item Exprimer le travail $W_f$ de la force de frottement que subit le point matériel., depuis le départ jusqu'à la rupture du contact, si le contact est rompu en $\theta=\theta_1$, avec $m$, $g$, $r$, $v_0$ et $\theta_1$.
+  \item Calculer numériquement ce travail pour les données suivantes~: $\theta_1=60 \degree$, $r=\SI{1}{m}$, $m=\SI{10}{g}$, $g=\SI{9,81}{m.s^{-2}}$ et $v_0=\SI{2}{m/s}$.
+  \end{enumerate}
+\end{exercice}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "physique"
+%%% End: 

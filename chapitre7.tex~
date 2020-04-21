@@ -1,0 +1,241 @@
+\chapter{Formation des images, miroir plan, miroir sphérique}
+\label{chap:formationdesimages}
+\minitoc
+\minilof
+\minilot
+
+
+\section{Point objet, point image, stigmatisme}
+\label{chap7-sec:pointobjet}
+
+\subsection{Stigmatisme d'un système optique pour un point}
+\label{chap7-subsec:stigmatisme}
+
+Soit un système optique utilisant l'optique géométrique (réflexions et réfractions), frappé par un faisceau lumineux monochromatique, dont les rayons (rayons incidents) sont portés par des droites concourantes. Le point de concours de ces droites est un point objet. Celui-ci peut se trouver sur le trajet des rayons lumineux ou sur leurs prolongements.
+
+Si les droites supports des rayons émergeant du système optique sont concourantes, on dit que le système est stigmatique pour le point objet considéré. Le point de concours des droites supports des rayons émergents est le point image correspondant au point objet considéré.
+
+\emph{Un système optique stigmatique pour un point objet donné, (intersection des supports des rayons incidents), donne de ce point objet un point image, (intersection des supports des rayons émergents).}
+
+Un point objet et le point image correspondant sont dits ``conjugués'' par rapport au système optique.
+
+\subsection{Réalité, virtualité d'un point objet ou d'un point image}
+\label{chap7-subsec:realitevirtualite}
+
+Si un système optique est stigmatique pour un point objet donné, le point objet est réel s'il est avant l'entrée dans le système et virtuel s'il se trouve après. Le point image est réel s'il se trouve après la sortie du système et virtuel s'il se trouve avant. On retiendra les définitions suivantes qui sont équivalentes.
+
+\emph{Un point objet est réel si les rayons incidents divergent et virtuel s'ils convergent, à l'entrée dans le système optique. Un point image est réel si les rayons émergents convergent et virtuel s'ils divergent à la sortie du système optique.}
+
+\subsection{Objets et images étendus}
+\label{chap7-subsec:objetsimagesetendues}
+
+Un ensemble de points objets constitue un objet étendu. Si le système optique considéré est stigmatique pour tous ces points, l'ensemble des points image correspondants constitue une image étendue.
+
+
+\section{Images données par un miroir plan}
+\label{chap7-sec:imagemiroirplan}
+
+Les lois de Descartes pour la réflexion impliquent qu'à tout rayon incident dont le support passe par un point objet donné correspond un rayon émergent dont le support passe par le symétrique du point objet par rapport au plan du miroir. Celui-ci est donc le point image correspondant.
+
+\emph{Un miroir plan est stigmatique pour tout point objet. L'image d'un objet donnée par un miroir plan est symétrique de l'objet par rapport au plan du miroir.}
+
+Si l'objet est une source de lumière, source primaire, produisant elle-même de la lumière, ou source secondaire, éclairée et diffusant la lumière qu'elle reçoit, c'est-à-dire la réfléchissant dans toutes les directions du fait de la structure plus ou moins granulaire de sa surface, 1'objet est réel et l'image est virtuelle.
+
+Si l'objet est l'image que formerait un système optique (projecteur) sur un écran si la lumière n'était pas déviée avant celui-ci par le miroir, il s'agit pour le miroir d'un objet virtuel et son image est réelle, on peut l'observer sur un écran diffusant convenablement placé. Si l'objet est plan son image l'est aussi).
+
+\section{Miroir sphérique}
+\label{chap7-sec:miroirspherique}
+
+\subsection{Définitions}
+\label{chap7-subsec:definitions}
+
+Un miroir sphérique est constitué par une calotte sphérique réfléchissante. Le centre $C$ de la sphère dans laquelle a été découpé le miroir est le centre du miroir. Le rayon $r$ de cette sphère est le rayon du miroir. L'axe de la calotte sphérique est l'axe principal ou axe optique du miroir. Son intersection $S$ avec le miroir est le sommet du miroir. Le demi angle au sommet $a$ du cône de sommet $C$ qui délimite le miroir est l'angle d'ouverture du miroir. Les droites passant par $C$ sont les axes secondaires du miroir.
+Si le centre $C$ est dans le milieu de propagation de 1a lumière, le miroir est concave. Il est convexe dans le cas contraire.
+
+\subsection{Condition de stigmatisme rigoureux}
+\label{chap7-subsec:conditiondestigmatisme}
+
+On prendra l'exemple d'un point objet réel $A$ sur l'axe principal d'un miroir sphérique concave.
+Un rayon lumineux issu de $A$, suivant l'axe principal est réfléchi en $S$ avec un angle d'incidence nul.
+ L'angle de réflexion est donc aussi nul et le rayon réfléchi suit l'axe principal en sens inverse. Donc, si $A$ a un conjugué, celui-ci se trouve aussi sur l'axe principal.
+Soit un autre rayon issu de $A$, frappant le miroir au point d'incidence $I$, avec l'angle d'incidence $i$. On notera $\omega$ l'angle de la normale au point d'incidence avec l'axe principal.
+D'après les lois de Descartes, le rayon réfléchi coupe l'axe principal, en un point $A$, puisqu'il est dans le plan de $A$, $C$ et $I$ et l'angle de réflexion est égal à $i$.
+$A'$ est le conjugué de $A$ si et seulement si la position de $A'$ est indépendante de l'angle $\omega$, (ou de $I$, ou de $i$).
+
+On a~:
+\begin{equation}
+  \tan(\omega-i) = \frac{\tan \omega -\tan i}{1+ \tan\omega \tan i} = \frac{IH}{\overline{CH} - \overline{CA}}.
+\end{equation}
+Avec $H$ le projeté de $I$ sur l'axe du miroir, $IH = \overline{CS} \sin \omega$ et $\overline{CH} = \overline{CS} \cos \omega$. En posant $a = \frac{\overline{CA}}{\overline{CS} \cos \omega}$ on obtient
+\begin{equation}
+  \tan(\omega-i) = \frac{\tan \omega -\tan i}{1+ \tan\omega \tan i} =\frac{\tan \omega}{1-a}
+\end{equation}
+d'où
+\begin{equation}
+  \tan i = - \frac{a \tan \omega}{1-a+\tan^2 \omega}.
+\end{equation}
+
+De la même manière, en posant $a' = \frac{\overline{CA'}}{\overline{CS} \cos \omega}$ on obtient
+\begin{equation}
+  \tan(\omega+i) = \frac{\tan \omega +\tan i}{1+ \tan\omega \tan i} =\frac{\tan \omega}{1-a'},
+\end{equation}
+d'où
+\begin{equation}
+  \tan i = \frac{a' \tan \omega}{1-a+\tan^2 \omega}.
+\end{equation}
+
+Avec les deux expressions de $\tan i$, on obtient
+\begin{equation}
+  -a +aa' -a\tan^2\omega = a'-a'a+a'\tan^2\omega,
+\end{equation}
+d'où
+\begin{equation}
+  2aa' = \frac{a+a'}{\cos^2\omega}.
+\end{equation}
+En remplaçant $a$ et $a'$ on obtient
+\begin{equation}
+  2 \frac{\overline{CA}\overline{CA'}}{\overline{CS}^2\cos^2\omega} = \frac{\overline{CA} + \overline{CA'}}{\overline{CS} \cos^3\omega},
+\end{equation}
+d'où
+\begin{equation}
+  \label{eq:stigrigoureux}
+  2 \overline{CA} \overline{CA'} \cos\omega = \overline{CS}(\overline{CA}+ \overline{CA'}).
+\end{equation}
+Ainsi
+\begin{equation}
+  \overline{CA'} = \frac{\overline{CA} \overline{CS}}{2 \overline{CA} \cos \omega - \overline{CS}},
+\end{equation}
+et en dérivant
+\begin{equation}
+  \derived{\overline{CA'}}{\omega} = 2 \frac{\overline{CA}^2 \overline{CS} \sin\omega}{(2 \overline{CA} \cos \omega - \overline{CS})^2}.
+\end{equation}
+
+Pour qu'il y ait stigmatisme rigoureux, il faut que pour tout $\omega$, $\derived{\overline{CA'}}{\omega} = 0$. En dehors du cas où $\overline{CS}=0$ qui n'a aucun intérêt et $\overline{CS}=\infty$ qui est la cas du miroir plan, la seule possibilité est que $\overline{CA}=0$. Alors~:
+\emph{Un miroir sphérique n'est exactement stigmatique que  pour un seul point objet, son centre. Le centre d'un miroir sphérique est son propre conjugué.}
+
+\subsection{Stigmatisme approché}
+\label{chap7-subsec:stigmatismeapproche}
+
+Si tous les rayons issus de A sont paraxiaux, c'est-à-dire voisins de l'axe principal, on peut faire l'approximation $\cos \omega = 1$. L'équation \ref{eq:stigrigoureux} se ré-écrit alors en
+\begin{equation}
+  2 \overline{CA} \overline{CA'} = \overline{CS}(\overline{CA}+ \overline{CA'}),
+\end{equation}
+alors
+\begin{equation}
+  \frac{1}{\overline{CA}} + \frac{1}{\overline{CA'}} = \frac{2}{\overline{CS}}.
+\end{equation}
+
+On remarque que si $A'$ est le conjugué de $A$, alors $A$ est le conjugué de $A'$ (c'est une conséquence de la loi du retour inverse). Lorsque tous les rayons sont paraxiaux, on dit que le miroir sphérique est utilisé dans les \emph{conditions de Gauss}.
+
+\subsection{Aplanétisme, notion de plans conjugués, conditions de Gauss, grandissement transversal}
+\label{chap7-subsec:aplanetisme}
+
+Soit un point $A$ de l'axe principal et $A'$ son conjugué dans les conditions de Gauss. $AB$ est un petit objet dans un plan frontal, c'est-à-dire perpendiculaire à l'axe principal. $B$ est sur un axe secondaire; si les rayons issus de $B$ sont voisins de l'axe principal, ils le sont aussi de l'axe secondaire $CB$ si $AB$ est suffisamment petit. $B$ a donc un conjugué $B'$ tel que $\frac{1}{\overline{CB}}+\frac{1}{\overline{CB'}} = \frac{2}{\overline{CS'}} = \frac{2}{\overline{CS}}$. Mais AB étant petit, $\overline{CA}=\overline{CB}$, $\overline{CA'} \approx \overline{CB'}$ et l'image $A'B'$ est à peu près perpendiculaire à l'axe principal, c'est-à-dire \emph{contenue dans un plan frontal} dont on dira qu'il est \emph{conjugué du plan frontal de l'objet}.
+Lorsqu'il en est ainsi pour un système centré, c'est-à-dire présentant une symétrie de révolution autour d'un axe appelé axe optique du système, on dit que celui-ci est \emph{aplanétique}.
+On peut remarquer d'autre part que pour que les conditions de Gauss soient respectées à la fois pour $A$ et pour $B$, il faut et il suffit que l'angle d'incidence $i$ d'un rayon issu de $B$ et passant par $S$ soit très petit et que l'angle $\alpha$ d'ouverture utile du miroir le soit aussi. (On peut limiter l'ouverture utile du miroir avec un diaphragme).
+
+\emph{Conditions de Gauss : objet petit devant le rayon du miroir et ouverture utile du miroir très faible (alors tous les rayons issus de l'objet et frappant le miroir sont paraxiaux). Le grandissement transversal est par définition le rapport des dimensions algébriques de l'image et de l'objet situés dans des plans frontaux conjugués} $\gamma = \frac{\overline{A'B'}}{\overline{AB}}$.
+
+Pour le miroir sphérique on obtient immédiatement $\gamma = \frac{\overline{CA'}}{\overline{CA}}$.
+
+\subsection{Formules du miroir sphérique avec origine au centre et avec origine au sommet}
+\label{chap7-subsec:formulemiroirspherique}
+
+Les formules déjà démontrées sont les formules de Descartes du miroir sphérique avec origine au centre : formule de conjugaison $\frac{1}{\overline{CA}} + \frac{1}{\overline{CA'}} = \frac{2}{\overline{CS}}$, formule du grandissement transversal $\gamma = \frac{\overline{CA'}}{\overline{CA}}$.
+Le sens positif étant celui de la lumière incidente dans la direction de l'axe principal et celui de l'objet $AB$ dans la direction perpendiculaire. Ces formules ne sont valables que si l'image existe, c'est-à-dire si les conditions de Gauss sont respectées. On supposera dorénavant qu'il en est ainsi, même si pour des raisons pratiques les figures sont dilatées dans la direction perpendiculaire à l'axe principal.
+Elles conviennent que le miroir soit concave ou convexe.
+
+En plaçant maintenant l'origine au sommet, on obtient $ \frac{1}{\overline{SA} - \overline{SC}} + \frac{1}{\overline{SA'} - \overline{SC}} = -\frac{2}{\overline{SC}}$, en réduisant au même dénominateur et en multipliant par ce dénominateur $\overline{SC}(\overline{SA}+\overline{SA'}-2\overline{SC})=-2(\overline{SA}-\overline{SC})(\overline{SA'}-\overline{SC})$, après simplification il reste : $0= -2\overline{SA}(\overline{SA'}+\overline{SA}\overline{SC} +\overline{SA'}\overline{SC})$. En divisant par $\overline{SA}\overline{SA'}\overline{SC}$, on obtient finalement : $\frac{1}{\overline{SA}} + \frac{1}{\overline{SA'}} = \frac{2}{\overline{SC}}$.
+
+Formules de Descartes du miroir sphérique avec origine au sommet : formule de conjugaison $\frac{1}{\overline{SA}} + \frac{1}{\overline{SA'}} = \frac{2}{\overline{SC}}$, formule du grandissement transversal $\gamma = -\frac{\overline{SA'}}{\overline{SA}}$.
+
+\subsection{Foyer principal, plan focal, distance focale}
+\label{chap7-subsec:foyerprincipal}
+
+Pour un système optique centré, en général on nomme \emph{foyer principal image le point image conjugué du point objet situé à l'infini sur l'axe principal et foyer principal objet le point objet conjugué du point image situé à l'infini sur l'axe principal.}
+
+\emph{Les foyers principaux image et objet du miroir sphérique sont confondus en un point $F$ nommé foyer principal du miroir, situé sur l'axe principal, à égale distance du centre et du sommet.}
+
+On nomme distance focale 1a distance algébrique $f = \overline{SF}$ (avec pour sens positif celui de la lumière incidente). Distance focale : $f = \overline{SF} = \overline{FC} = \frac{\overline{SC}}{2}$, pour un miroir concave $f < 0$ , pour un miroir convexe $f > 0$. Le plan focal est le plan frontal qui contient le foyer principal. Son plan frontal conjugué est donc à l'infini.
+
+De la définition du foyer principal, il résulte que : \emph{tout rayon incident parallèle à l'axe principal émerge en passant par le foyer principal. Tout rayon incident passant par le foyer principal émerge parallèlement à l'axe principal.}
+
+\subsection{Foyers secondaires}
+\label{chap7-subsec:foyerssecondaires}
+
+Pour un axe secondaire, peu incliné sur l'axe principal, on a les mêmes propriétés : l'intersection d'un axe secondaire avec le plan focal est le foyer secondaire correspondant (noté $\Phi$), c'est le conjugué du point à l'infini de cet axe secondaire. Tout rayon incident (paraxial) parallèle à un axe secondaire donné émerge en passant par le foyer secondaire correspondant. Tout rayon incident (paraxial) passant par un foyer secondaire donné émerge parallèlement à l'axe secondaire correspondant.
+
+\subsection{Représentation du miroir sphérique utilisé dans les conditions de Gauss, construction des images}
+\label{chap7-subsec:miroirspheriqueconditionsdeGauss}
+
+Pour qu'un miroir sphérique soit utilisé dans les conditions de Gauss, il est nécessaire que les rayons lumineux soient paraxiaux, donc qu'ils frappent le miroir prés de son sommet. La partie utile du miroir est donc pratiquement un plan de front d'où sa représentation (toujours fortement dilatée dans la direction perpendiculaire à l'axe principal, pour faciliter les constructions graphiques).
+
+Les propriétés des foyers secondaires permettent de construire le rayon émergent correspondant à un rayon incident paraxial donné.
+
+Pour construire l'image d'un petit objet $AB$ situé dans un plan frontal, $A$ étant sur l'axe principal, il suffit d'utiliser les propriétés du foyer principal pour obtenir l'image $B'$ de $B$. (On peut aussi utiliser le fait qu'un rayon passant par $C$ se réfléchi en revenant sur lui-même). L'image $A'$ de $A$ sera dans le même plan frontal que $B'$.
+
+Exemple avec un miroir concave, un objet réel, une image réelle, renversée, plus petite que l'objet. Exemple avec un miroir convexe, un objet réel, une image virtuelle, droite, plus petite que l'objet. 
+
+\subsection{Formules de Newton (origine au foyer)}
+\label{chap7-subsec:formulesdeNewton}
+
+Les homothéties dans les figures ci-dessus permettent  d'écrire (toujours avec $f =  \overline{SF}$) :
+\begin{align}
+  \gamma &= \frac{\overline{A'B'}}{\overline{AB}} = \frac{\overline{A'B'}}{\overline{SI}} = \frac{\overline{FA'}}{\overline{FS}} = - \frac{\overline{FA'}}{f} \\
+\gamma &= \frac{\overline{A'B'}}{\overline{AB}} = \frac{\overline{SI'}}{\overline{AB}} = \frac{\overline{FS}}{\overline{FA}} = - \frac{f}{\overline{FA}}.
+\end{align}
+D'où $f^2 = \overline{FA}\overline{FA'}$. 
+
+Formule de Newton du grandissement : $\gamma = - \frac{\overline{FA'}}{f} = - \frac{f}{\overline{FA}}$.
+Formule de conjugaison de Newton : $f^2 = \overline{FA}\overline{FA'}$.
+
+\subsection{Image d'un objet à l'infini}
+\label{chap7-subsec:imageobjetinfini}
+
+On peut utiliser directement la deuxième loi de Descartes ou les propriétés des foyers secondaires. Par exemple, pour un objet réel à l'infini, avec un miroir concave : On constate que l'image est réelle et renversée. Le grandissement est bien sûr nul. L'image est vue de $S$ sous le même angle apparent que l'objet : $\alpha'=\alpha$(angle petit dans les conditions de Gauss). On a donc $A'B' = \alpha |f| \tan(\alpha)$  soit $\overline{A'B'} = \alpha f$.
+
+\section{Exercices}
+\label{chap7-sec:exercices}
+
+\begin{exercice}[Association de miroirs]
+  On réalise un système optique centré constitué par l'association du miroir concave $M_1$, de centre $C_1$ de sommet $S_1$, et du miroir $M_2$, de centre $C_2$, de sommet $S_2$, de même axe optique. Ils sont disposés tels que : 
+$C_1$ -- $C_2$ -- $S_2$ -- $S_1$.
+
+Le miroir $M_1$ est percé d'un petit trou permettant à la lumière de le traverser près de son sommet, mais qui ne modifie pas ses propriétés.
+Les distances focales $f_1$ et $f_2$ des deux miroirs sont telles que $|f_1| = \SI{3.0}{m}$ et $|f_2| = \SI{2.0}{m}$. On note $d = \overline{S_1 S_2}$.
+\begin{enumerate}
+\item Déterminer $d$ pour que tout rayon incident, parallèle à l'axe optique et réfléchi par les deux miroirs, passe par $S_1$.
+\item Vérifier le calcul par une construction graphique à l'échelle $0,02$ pour les segments parallèles à l'axe optique. (L'échelle dans la direction perpendiculaire à l'axe optique sera prise bien plus grande).
+\end{enumerate}
+\end{exercice}
+%
+\begin{exercice}[Cavité confocale]
+  Une cavité confocale est constituée de deux miroirs identiques concaves $M_1$ et $M_2$ face à face, de même rayon $R$, de même axe optique $\Delta$ et dont les foyers sont confondus. On place un objet $AB$ à l'intérieur de la cavité perpendiculairement à $\Delta$.
+%
+  \begin{enumerate}
+  \item Construire géométriquement les quatre images successives obtenues, la première réflexion ayant lieu sur $M_2$. Le résultat dépend-il de la position de l'objet $AB$?
+  \item On considère un rayon lumineux, incliné d'un angle $\alpha_1$ sur l'axe optique, émis d'un point $B$ et dont le support passe par le point $I_1$ de $M_1$ distant de $y_0$ de l'axe optique.
+
+    Exprimer en fonction de $\alpha_1$, $y_0$ et $R$ dans les conditions de Gauss, les angles $\alpha_2$, $\alpha_3$, $\alpha_4$ que font les rayons réfléchis avec $\Delta$ à l'issue respectivement de la 1\iere, 2\ieme puis 3\ieme réflexion.
+  \item Conclure quant à la localisation du rayon à l'intérieur de la cavité optique.
+  \end{enumerate}
+\end{exercice}
+%
+\begin{exercice}[Télescope Hipparcos (D'après écrit Mines sup 2000  filière PCSI option PC)]
+  On propose de modéliser le télescope d'Hipparcos par un miroir concave $M_C$ de rayon $R = \SI{2800}{mm}$ avec un miroir plan de renvoi. On note $S$ le sommet du miroir concave. La lumière subit deux réflexions et passe par un orifice dans le miroir concave pour atteindre le détecteur. Celui-ci est constitué d'une grille et de cellules CCD permettant de repérer la position de l'image. La grille comporte $N = 2688$ fentes équidistantes de $L = \SI{8,2}{\micro\meter}$.
+
+On considère une étoile visée dans la direction $Sx$. L'axe $Sx$ est orienté vers l'étoile.
+\begin{enumerate}
+\item Déterminer l'abscisse $x$ de l'image $E_1$, de l'étoile $E$ donnée par le miroir $M_C$.
+\item On note $a$ la distance séparant le miroir plan et le sommet du miroir concave. Déterminer une condition sur $a$ pour que l'image finale $E_2$ se forme sur le détecteur placé à l'arrière du miroir concave.
+\item Déterminer la largeur angulaire $\alpha_C$ du champ observé. Calculer $\alpha_C$ en degré.
+\item En réalité, Hipparcos réalise une mesure de position relative des étoiles. Le télescope vise deux directions symétriques par rapport à $Sx$ présentant un angle $\alpha = 58 \degree$. C'est un système de deux miroirs plans $M_1$, $M_2$ qui permet d'obtenir les images des deux étoiles sur le détecteur. Le télescope tourne autour d'un axe de direction fixe $S_z$. 
+Déterminer l'angle $\alpha_0$ des miroirs $M_1$ et $M_2$ avec l'axe $Sx$ du télescope.
+\item Déterminer le déplacement angulaire $\theta_1$, d'un rayon lumineux réfléchi par le miroir $M_1$ lorsque le satellite tourne d'un angle $\theta$. Préciser le sens de déplacement des rayons réfléchis par $M_1$ et $M_2$.
+\end{enumerate}
+\end{exercice}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "physique"
+%%% End: 

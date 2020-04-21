@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper]{book}
+\input{preambule}
+
+\includeonly{%
+chapitre1,
+chapitre2,
+chapitre3,
+chapitre4,
+chapitre5,
+chapitre6,
+chapitre7,
+chapitre8,
+chapitre9,
+chapitre10,
+% chapitre11,
+% chapitre12,
+% chapitre13,
+% chapitre14,
+% chapitre15,
+% chapitre16,
+% chapitre17,
+% chapitre18,
+% chapitre19,
+% chapitre20,
+% chapitre21,
+% chapitre22,
+% chapitre23,
+% chapitre24,
+% chapitre25,
+% chapitre26,
+% chapitre27,
+% chapitre28,
+% chapitre29,
+% chapitre30,
+% chapitre31,
+}
+
+\title{\textbf{\Huge Cours de physique \\ CPGE MPSI}}
+\author{Florian \bsc{Maillard}\\ e-mail : \href{mailto:florian.maillard@mailoo.org}{florian.maillard@mailoo.org}}
+\date{\today}
+\begin{document}
+\frontmatter
+
+\maketitle
+\dominitoc
+\dominilof
+\dominilot
+%\faketableofcontents
+%\fakelistoffigures
+%\fakelistoftables
+
+%pour créer le sommaire au début
+%\shorttableofcontents{Sommaire}{1}
+\mainmatter
+
+
+%\part{Cours}
+\part{Mécanique \primo}
+\include{chapitre1}
+\include{chapitre2}
+\include{chapitre3}
+\include{chapitre4}
+\include{chapitre5}
+\part{Optique}
+\include{chapitre6}
+\include{chapitre7}
+\include{chapitre8}
+\part{Électrocinétique}
+\include{chapitre9}
+\include{chapitre10}
+\include{chapitre11}
+\include{chapitre12}
+\include{chapitre13}
+\include{chapitre14}
+\include{chapitre15}
+\include{chapitre16}
+\include{chapitre17}
+\include{chapitre18}
+\include{chapitre19}
+\include{chapitre20}
+\include{chapitre21}
+\include{chapitre22}
+\include{chapitre23}
+\include{chapitre24}
+\include{chapitre25}
+\include{chapitre26}
+\include{chapitre27}
+\include{chapitre28}
+\include{chapitre29}
+\include{chapitre30}
+\include{chapitre31}
+%\setcounter{part}{1}
+%\part{Exercices}
+%\setcounter{chapter}{0}
+
+%
+\backmatter
+\tableofcontents
+%\listoffigures 
+%\listoftables
+\printindex
+
+\end{document}

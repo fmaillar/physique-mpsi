@@ -1,0 +1,6 @@
+PWD /home/florian/Documents/Physique-MPSI
+INPUT /usr/local/texlive/2014/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-var/web2c/pdftex/latex.fmt
+INPUT chapitre10.tex
+OUTPUT chapitre10.log
