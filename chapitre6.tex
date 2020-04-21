@@ -115,4 +115,55 @@ $r = \arcsin{\frac{\sin(i)}{n}}$ $r'=A - \arcsin{\frac{\sin(i)}{n}}$ $i' = \arcs
 Cette fonction, $D=f(i)$ est assez compliquée à étudier, mais on peut montrer qu'elle admet un seul extremum, qui est d'ailleurs un minimum. On peut le confirmer par expérience.
 
 \paragraph{Symétrie au minimum de déviation}
-La loi du retour inverse de la lumière implique que si $i$ prend la valeur $i_1$ et $i'$ la valeur $i_2$ pour un sens donné de la lumière, alors, pour le sens inverse, $i=i_2$ et $i'=i_1$. La déviation est la même pour les deux sens de la lumière. Donc, à chaque valeur de $D$, il correspond deux angles d'incidence possibles.
+La loi du retour inverse de la lumière implique que si $i$ prend la valeur $i_1$ et $i'$ la valeur $i_2$ pour un sens donné de la lumière, alors, pour le sens inverse, $i=i_2$ et $i'=i_1$. La déviation est la même pour les deux sens de la lumière. Donc, à chaque valeur de $D$, il correspond deux angles d'incidence possibles. Mais au minimum de déviation $D_m$ il n'en correspond qu'un seul.
+
+Pour $D=D_m$, on a $i=i'$ et par conséquent $r=r'$, \emph{la figure est alors symétrique par rapport au plan bisecteur du dièdre formé par le prisme.} En indiçant par $m$ les valeurs correspondantes au minimum de déviation, on a~: $r_m = r'_m = \frac{A}{2}$, $D_m = 2i_m-A$, d'où $i_m = \frac{D_m+A}{2}$ ; avec $\sin(i_m) = n\sin(r_m)$, on obtient~:
+\begin{equation}
+	n = \frac{\sin\left(\frac{D_m+A}{2}\right)}{\sin\left(\frac{A}{2}\right)}
+\end{equation}
+
+\paragraph{Déviation laximal, condition d'émergence}
+Un rayon lumineux pourra dde toute façon ttraverser la face d'entrée du prisme quel que soit son angle d'incidence, mais il ne traversera la face de sortie que si son angle d'incidence $r'$ sur celle-ci est inférieur à $i_m = \arcsin 1/n$ ce qui correspond à $i'_0 = \frac{\pi}{2}$ et à $r_0 = A - \arcsin 1/n$ donc à l'angle d'incidence minimal $i_0 = \arcsin(n\sin(A-\arcsin 1/n))$. On remarquera que cet angle peut être positif ou négatif suivant la valeur du prisme $A$. La déviation prendra alors sa valeur maximale, la même que pour $i=\frac{\pi}{2}$, d'après la loi du retour inverse de la lumière~:\begin{equation}
+	D_m = i_0 +\frac{\pi}{2} - A
+\end{equation}
+
+\subsection{Exemple}
+
+Soit un prisme d'angle au sommet $A = \frac{\pi}{6}$, d'indice $n=\frac{3}{2}$ pour une lumière monochromatique considérée.
+
+Au minimum de déviation, $r=r'=r_m=\frac{A}{2}=\frac{\pi}{12}$, et $i=i'=i_m=\arcsin\left(\frac{3}{2}\sin(\pi/12)\right) = \arcsin\left(\frac{3}{2} \frac{\sqrt{2-\sqrt{3}}}{2}\right)$ soit 22.8 degrés, et $D_m=2i_m-A$ vaut approximativement 15.7 degrés.
+L'angle d'incidence minimal permettant la traversée de la deuxième face du prisme est $i_0$ tel que $i'_0=\frac{\pi}{2}$, d'où $r'_0 = \arcsin(1/n)$ soit approximativement 41.8 degrés et $r_0=A-r'_0$ soit -11.8 degrés d'où $i_0=\arcsin(1.5 \sin(r_0))$ soit approximativement -17.9 degrés. La déviation maximale est donc de $D_0 = i_0 + \frac{pi}{2}-A$ approximativement 42.1 degrés. Elle est obtenue pour $i=i_0$ et $i'=\frac{\pi}{2}$ comme pour $i=\frac{\pi}{2}$ et $i'=i_0$.
+
+Pour $i=0$ on a $r=0$, $r'=A=\frac{\pi}{6}$. On a alors $i'=\arcsin(\frac{3}{2}\sin(\pi/6))$ soit approximativement 48.6 degrés et une déviation $D=i'-A$ soit approximativement 18.6 degrés. La même déviation est obtenue pour $i$ valant 48.6 degrés et $i'=0$.
+Le tracé complet de $D=f(i)$ est réalisé ci-dessous sur la figure \ref{fig:chap6-deviation}, directement avec l'expression de cette fonction.
+\begin{figure}
+	\centering
+	\label{fig:chap6-deviation}
+	\includegraphics{Deviation_optique.eps}
+	\caption{Deviation en fonction de l'incidence}
+\end{figure}
+\subsection{Étude de la déviation, dispersion polychromatique}
+On retiendra d'abord que \emph{l'indice d'un milieu transparent estune fonction croissante de la fréquence de la lumière, donc décroissante en fonction de la longueur d'onde dans le vide}.
+
+En effet, pour les radiations lumineuse (aussi dans l'infrarouge et l'ultraviolet), mais pas au delà,\emph{la lumière est d'autant plus freinée que ses photons ont plus d'énergie}, donc si $E=h \nu$ croît, alors la longueur d'onde dans le vide $\lambda_0 = h/\nu$ décroît, la vitesse $v$ décroît et donc l'indice de réfraction par rapport à l'aire $n=c/v$ croît. À la lumière violette correspond un indice plus élevé que pour la lumière rouge.
+
+Il en réslte qu'un rayon entrant dans un milie moins réfringent est d'autant plus dévié (rapproché de la normale) que sa longueur d'onde dans le vide est basse. De même, un rayon entrant dans u milieu moins réfringent est d'autant plus dévié (écarté de la normale) que lorsque sa longueur d'onde dans le vide est plus basse.
+
+Pour un rayon lumineux traversant le prisme, les deux déviations $i-r$ et $i'-r'$ (dont la somme est $D$) se font dans le même sens, vers la base du prisme ; donc, pour un angle d'incidence fixé, \emph{un rayon lumineu est d'autant plus dévié par un prisme que sa longueur d'onde dans le vide est plus basse.}
+\emph{Un prisme permet donc de disperser une lumière polychromatique plus efficacement, grâce aux deux réfractions, qu'un réfraction unique}.
+
+\section{Exercices}
+\begin{exercice}[Conditions d'émergences pour le prisme]
+	Soit un prisme d'indice $n$, plongé dans l'air d'indice 1, d'angle $A$.
+	Soit $S$ la source lumineuse ponctuelle et $SI$ un rayon incident contenu dans un plan de section principale, $I$ étant le point d'incidence. Le rayon réfracté par la première face frappe la seconde face du prisme en $I'$. Le rayon réfracté par la seconde face est $I'R$, lorsqu'il existe.
+
+	On utilisera les notations et les conventions de signes habituelles pour les angles $i$, $i'$, $r$ et $r'$ et $D$.
+	\begin{enumerate}
+\item Montrer que, lorsqu'il existe, le rayon $I'R$ est dans le plan de section principale de $SI$.
+\item Etablir les quatre formules du prisme.
+\item Montrer que pour que le rayon $I'R$ existe, il est nécessaire que les deux conditions suivantes soient satisfaites : $A \leq 2 \arctan(1/n)$ et $i_0 \leq i \leq \pi/2$ avec $\sin i_0 = n \sin\left(A-\arcsin(1/n)\right)$.
+	\end{enumerate}
+\end{exercice}
+\begin{exercice}[Etude du minimum de déviation]
+
+	\end{exercice}
