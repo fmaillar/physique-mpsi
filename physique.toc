@@ -110,6 +110,10 @@
 \contentsline {subsection}{\numberline {6.4.2}\IeC {\'E}tude de la d\IeC {\'e}viation en fonction de l'angle d'incidence}{59}{subsection.6.4.2}% 
 \contentsline {paragraph}{Existence d'un minimum de d\IeC {\'e}viation}{59}{section*.7}% 
 \contentsline {paragraph}{Sym\IeC {\'e}trie au minimum de d\IeC {\'e}viation}{59}{section*.8}% 
+\contentsline {paragraph}{D\IeC {\'e}viation maximale, condition d'\IeC {\'e}mergence}{59}{section*.9}% 
+\contentsline {subsection}{\numberline {6.4.3}Exemple}{59}{subsection.6.4.3}% 
+\contentsline {subsection}{\numberline {6.4.4}\IeC {\'E}tude de la d\IeC {\'e}viation, dispersion polychromatique}{60}{subsection.6.4.4}% 
+\contentsline {section}{\numberline {6.5}Exercices}{61}{section.6.5}% 
 \contentsline {chapter}{\numberline {7}Formation des images, miroir plan, miroir sph\IeC {\'e}rique}{67}{chapter.7}
 \contentsline {section}{\numberline {7.1}Point objet, point image, stigmatisme}{68}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Stigmatisme d'un syst\IeC {\`e}me optique pour un point}{68}{subsection.7.1.1}

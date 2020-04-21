@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=latex 2020.3.23)  21 APR 2020 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=latex 2020.3.23)  21 APR 2020 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2235,15 +2235,15 @@ Package minitoc Info: I0006
 (minitoc)             physique.mlf6 is empty on input line 5.
 Package minitoc Info: I0006
 (minitoc)             physique.mlt6 is empty on input line 6.
- [55] [56] [57]
-Overfull \hbox (77.88106pt too wide) in paragraph at lines 110--112
-\T1/lmr/m/n/10.95 prisme donnent alors : $\OML/lmm/m/it/10.95 r \OT1/lmr/m/n/10
-.95 = [] []$ $\OML/lmm/m/it/10.95 r[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 
-A \OMS/lmsy/m/n/10.95 ^^@ [] []$ $\OML/lmm/m/it/10.95 i[] \OT1/lmr/m/n/10.95 = 
-[] []$\T1/lmr/m/n/10.95 ,
+ [55] [56] [57] [58]
+Overfull \hbox (1.87434pt too wide) in paragraph at lines 128--128
+ []\T1/lmr/bx/n/10.95 Déviation maxi-male, condi-tion d'émer-gence[] \T1/lmr/m/
+n/10.95 Un rayon lu-mi-neux pou-
  []
 
-[58]) [59] (./physique.toc [127
+[59]
+File: Deviation_optique.eps Graphic file (type eps)
+ <Deviation_optique.eps> [60]) [61] (./physique.toc [127
 
 
 
@@ -2279,7 +2279,7 @@ Overfull \hbox (3.3573pt too wide) in paragraph at lines 68--68
  []
 
 [128] [129] [130]
-Overfull \hbox (26.80934pt too wide) in paragraph at lines 161--161
+Overfull \hbox (26.80934pt too wide) in paragraph at lines 165--165
  [][] [][][]\T1/lmr/m/n/10.95 Régime sta-tion-naire, ap-proxi-ma-tion des ré-gi
 mes quasi-stationnaires 
  []
@@ -2342,7 +2342,7 @@ No file chapitre31.aux.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `physique.out' has not changed.
-(rerunfilecheck)             Checksum: 05B96FA91EE2C5534752933A8F143B0B;9041.
+(rerunfilecheck)             Checksum: B187FB9729E2B9FFEB7B42D75B05F4CD;9270.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2351,12 +2351,12 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 38955 strings out of 494419
- 730993 string characters out of 6173614
- 906306 words of memory out of 5000000
- 41595 multiletter control sequences out of 15000+600000
- 798324 words of font info for 308 fonts, out of 8000000 for 9000
+ 38966 strings out of 494419
+ 731193 string characters out of 6173614
+ 906717 words of memory out of 5000000
+ 41604 multiletter control sequences out of 15000+600000
+ 801119 words of font info for 309 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  63i,21n,69p,973b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on physique.dvi (68 pages, 472076 bytes).
+Output written on physique.dvi (70 pages, 487136 bytes).
