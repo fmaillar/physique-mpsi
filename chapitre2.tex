@@ -22,17 +22,17 @@ On admettra, comme le confirme l'expérience, que la masse pesante s'identifie �
 \label{chap2-sec:quantitedemouvementetmomentcinetique}
 
 \begin{defdef}
- Pour un point matériel de masse $m$ dans un référentiel où sa vitesse est $\vect{v}$, la quantité de mouvement est définie par
+ Pour un point matériel de masse $m$ dans un référentiel où sa vitesse est $\vv{v}$, la quantité de mouvement est définie par
 
 \begin{equation}
-  \vect{p}=m\vect{v}.
+  \vv{p}=m\vv{v}.
 \end{equation} 
 \end{defdef}
 %
 \begin{defdef}
-  En un point $P$, le moment cinétique du point matériel $M$ dans ce même référentiel est par définition le moment en $P$ du vecteur quantité de mouvement en $M$. Il est noté $\vect{L}_P$ et vaut
+  En un point $P$, le moment cinétique du point matériel $M$ dans ce même référentiel est par définition le moment en $P$ du vecteur quantité de mouvement en $M$. Il est noté $\vv{L}_P$ et vaut
 \begin{equation}
-  \vect{L}_P=m\vect{PM} \wedge \vect{v}.
+  \vv{L}_P=m\vv{PM} \wedge \vv{v}.
 \end{equation}
 
 \end{defdef}
@@ -46,7 +46,7 @@ Un point matériel ou un système situé à une distance suffisamment grande de 
 
 Le principe d'inertie définit donc les référentiels galiléens et postule leur existence. L'expérimentation conduit à constater que le référentiel de Copernic est un référentiel galiléen. Le référentiel de Copernic a, par définition, son origine au centre d’inertie du système solaire, ses axes étant définis par les directions de trois étoiles très éloignées. Le caractère galiléen du référentiel de Copernic n'est en fait qu'une approximation, mais celle-ci reste très valable tant que l'on ne s'intéresse pas à des mouvements de systèmes n'appartenant pas au système solaire. Ainsi, le mouvement d'une étoile de la galaxie nécessite d'utiliser un référentiel moins grossièrement galiléen, lié au centre d'inertie de la galaxie et dont les axes sont dirigés vers des galaxies lointaines \ldots
 
-La loi de composition des vitesses montre que si un référentiel est en translation rectiligne et uniforme par rapport à un référentiel galiléen, ce référentiel est aussi galiléen. En effet, si est $\vv$ est la vitesse d'un point matériel dans un référentiel galiléen (R) et si $\vv_0$ est la vitesse de translation constante, du référentiel (R) par rapport à un autre référentiel ($R_0$), alors la vitesse du point matériel considéré est $\vv'=\vv+\vv_0$ dans le référentiel ($R_0$). Si $\vv$ est constante (mouvement rectiligne uniforme), alors $\vv'$ est aussi constante. Tout référentiel en translation rectiligne uniforme par rapport au référentiel de Copernic est donc galiléen.
+La loi de composition des vitesses montre que si un référentiel est en translation rectiligne et uniforme par rapport à un référentiel galiléen, ce référentiel est aussi galiléen. En effet, si est $\vvv$ est la vitesse d'un point matériel dans un référentiel galiléen (R) et si $\vvv_0$ est la vitesse de translation constante, du référentiel (R) par rapport à un autre référentiel ($R_0$), alors la vitesse du point matériel considéré est $\vvv'=\vvv+\vvv_0$ dans le référentiel ($R_0$). Si $\vvv$ est constante (mouvement rectiligne uniforme), alors $\vvv'$ est aussi constante. Tout référentiel en translation rectiligne uniforme par rapport au référentiel de Copernic est donc galiléen.
 
 Ce n'est pas le cas d'un référentiel lié à la Terre puisque la terre tourne par rapport aux étoiles. Cependant, pour des applications pratiques réclamant peu de précision et concernant des objets terrestres, on admettra que si les effets de la rotation de la terre peuvent être négligés un référentiel terrestre peut être assimilé à un référentiel galiléen. 
 
@@ -72,13 +72,13 @@ On notera encore que la position du point d'application d'une force n'est une no
 
 \emph{Dans un référentiel galiléen, la force totale qui s'exerce sur un point matériel est la dérivée temporelle de sa quantité de mouvement~:
   \begin{equation}
-    \vF = \derived{\vect{p}}{t}.
+    \vF = \derived{\vv{p}}{t}.
   \end{equation}
 }
 
 Cette loi reste valable, sous cette forme, en mécanique relativiste. Elle s'applique à des points matériels, donc à des objets contenant de la matière. La masse étant une constante, on a donc aussi
 \begin{equation}
-  \vF = m \derived{\vect{v}}{t}=m\vect{a}.
+  \vF = m \derived{\vv{v}}{t}=m\vv{a}.
 \end{equation}
 
 D'après cette relation, on voit que la dimension de la force est $[m.L.t^{-2}]$ donc $\SI{1}{N}=\SI{1}{kg.m.s^{-2}}$. Le newton est donc l'intensité de la force agissant sur un point matériel pesant $\SI{1}{kg}$ subissant une accélération de $\SI{1}{m.s^{-2}}$.
@@ -88,7 +88,7 @@ D'après cette relation, on voit que la dimension de la force est $[m.L.t^{-2}]$
 
 Si $P$ est un point fixe dans le référentiel galiléen considéré~:
 \begin{equation}
-  \derived{\vect{L}_P}{t} = \derived{\vect{PM}}{t} \wedge \vect{p} +\vect{PM} \wedge  \derived{\vect{p}}{t} = \vect{PM} \wedge \vF
+  \derived{\vv{L}_P}{t} = \derived{\vv{PM}}{t} \wedge \vv{p} +\vv{PM} \wedge  \derived{\vv{p}}{t} = \vv{PM} \wedge \vF
 \end{equation}
 
 \emph{Dans un référentiel galiléen, la dérivée temporelle du moment cinétique d'un point matériel $M$ en un point fixe $P$ vaut le moment en $P$ de la force qui agit en $M$.}
@@ -108,22 +108,22 @@ Ce principe ne s'applique que si l'interaction se propage à une vitesse infinie
 
 Elle suit la loi de Newton~: Pour deux points matériels $(A, m_A)$ et $(B, m_B)$, c'est la force de droite d'action $(AB)$ et d'intensité $F=\Gb \frac{m_A m_B}{AB^2}$ avec $\Gb = \SI{6,672e-11}{N.m^2.kg^{-2}}$ la constante de gravitation universelle. Elle est toujours attractive~:
 \begin{equation}
-  \vF_{A/B} = -\Gb \frac{m_A m_B}{AB^3}\vect{AB}.
+  \vF_{A/B} = -\Gb \frac{m_A m_B}{AB^3}\vv{AB}.
 \end{equation}
-En un point où la masse $m$ subit (ou subirait si elle n'est pas présente) une force de gravitation $\vF$, le champ de gravitation est $\vect{G}=\frac{\vF}{m}$.
+En un point où la masse $m$ subit (ou subirait si elle n'est pas présente) une force de gravitation $\vF$, le champ de gravitation est $\vv{G}=\frac{\vF}{m}$.
 
 La théorie complète qui décrit la gravitation est la gravitation relativiste. Cette interaction serait véhiculée par des particules nommées gravitons, que l'on n'a pas encore détectés.
 
 \subsection{Interaction électromagnétique}
 \label{chap2-subsec:interactionelectromagnetique}
 
-Elle concerne les charges électriques. Une charge ponctuelle $q$ de vitesse $\vv$ dans un champ électromagnétique caractérisé dans le référentiel considéré par les vecteurs $\vect{E}$ (le champ électrique, en $\si{V.m^{-1}}$) et $\vect{B}$ (le champ magnétique, en tesla noté $\si{T}$) est soumis à la force de Lorentz $\vF = q(\vect{E}+\vv \wedge \vect{B})$.
+Elle concerne les charges électriques. Une charge ponctuelle $q$ de vitesse $\vvv$ dans un champ électromagnétique caractérisé dans le référentiel considéré par les vecteurs $\vv{E}$ (le champ électrique, en $\si{V.m^{-1}}$) et $\vv{B}$ (le champ magnétique, en tesla noté $\si{T}$) est soumis à la force de Lorentz $\vF = q(\vv{E}+\vv \wedge \vv{B})$.
 
 En plus de l'expression de la force de Lorentz, les lois de l'électromagnétisme comprennent les équations de Maxwell qui seront étudiées en seconde année. La théorie complète actuelle, relativiste et quantique, est l'électrodynamique quantique. Les particules qui véhiculent l'interaction électromagnétiques sont les photons. Si les objets qui créent le champ sont immobile, on parle de champ statique.
 
 En particulier, dans le cas de deux charges ponctuelles, immobiles, l'interaction électrostatique est donnée par la loi de Coulomb. Pour deux charges ponctuelles $(A, q_A)$ et $(B, q_B)$ la force est telle que
 \begin{equation}
-  \vF_{A/B} = \frac{1}{4\pi \epsilon_0} \frac{q_A q_B}{AB^3} \vect{AB},
+  \vF_{A/B} = \frac{1}{4\pi \epsilon_0} \frac{q_A q_B}{AB^3} \vv{AB},
 \end{equation}
 avec $\epsilon_0 = \SI{8,8537e-12}{F.m^{-1}}$ la permittivité électrique du vide. Cette force est attractive lorsque les charges sont de signes opposées et répulsive sinon.
 
@@ -184,7 +184,7 @@ Pour s'en tenir aux actions subies par des objets assimilés à des points maté
 \end{equation}
 avec $k$ la raideur du ressort en $\si{N.m^{-1}}$, $L_0$ la longueur à vide du ressort et $L$ la longueur du ressort. Ainsi si le ressort est attaché en un point $A$ et la force appliqué en $M$ on a
 \begin{equation}
-  \vect{F_{R/M}} = -k(L-L_0) \frac{\vect{AM}}{L}.
+  \vv{F_{R/M}} = -k(L-L_0) \frac{\vv{AM}}{L}.
 \end{equation}
 
 \subsection{Mouvement d'un point lié à une courbe ou à une surface}
@@ -192,13 +192,13 @@ avec $k$ la raideur du ressort en $\si{N.m^{-1}}$, $L_0$ la longueur à vide du 
 
 Si un point mobile reste en contact avec une surface $\Sigma$ sans la quitter, la liaison est dite bilatérale. Tout se passe comme si $M$ était entre deux surface parallèles $\Sigma$ et $\Sigma'$. La force de liaison ou \emph{réaction de la surface} a en général deux composantes~: une normale (à $\Sigma$) et une tangentielle (à $\Sigma$)~:
 \begin{equation}
-  \vect{R} = \vect{R_n} + \vect{R_t}.
+  \vv{R} = \vv{R_n} + \vv{R_t}.
 \end{equation}
-Si le point mobile peut quitter la surface sans la traverser, le contact est unilatéral. La réaction normale est alors toujours dans le sens de $\Sigma$ vers $M$. Elle s'annule quand $M$ quitte $\Sigma$ et le problème change de nature. En l'absence de frottement, $\vect{R_t}=\vect{0}$. S'il y a frottement, la réaction tangentielle est de même direction que la vitesse et de sens opposé.
+Si le point mobile peut quitter la surface sans la traverser, le contact est unilatéral. La réaction normale est alors toujours dans le sens de $\Sigma$ vers $M$. Elle s'annule quand $M$ quitte $\Sigma$ et le problème change de nature. En l'absence de frottement, $\vv{R_t}=\vv{0}$. S'il y a frottement, la réaction tangentielle est de même direction que la vitesse et de sens opposé.
 
-Si un point mobile reste en contact avec une courbe $\Gamma$, sa trajectoire est imposée. En l'absence de frottement, $\vect{R_t}=\vect{0}$. S'il y a frottement, la réaction tangentielle est de même direction que la vitesse et de sens opposé.
+Si un point mobile reste en contact avec une courbe $\Gamma$, sa trajectoire est imposée. En l'absence de frottement, $\vv{R_t}=\vv{0}$. S'il y a frottement, la réaction tangentielle est de même direction que la vitesse et de sens opposé.
 
-Pour un point lié à une surface, la direction de $\vect{R}_n$ est imposée. Alors que pour un point lié à une courbe, elle ce l'est pas car il y a une infinité de normales en un point d'une courbe.
+Pour un point lié à une surface, la direction de $\vv{R}_n$ est imposée. Alors que pour un point lié à une courbe, elle ce l'est pas car il y a une infinité de normales en un point d'une courbe.
 
 \section{Exercices}
 \label{chap2-sec:exercices}
@@ -217,9 +217,9 @@ Pour un point lié à une surface, la direction de $\vect{R}_n$ est imposée. Al
 \end{exercice}
 %
 \begin{exercice}[Mouvement sans frottement sur une surface plane]
-  On considère le mouvement d'un point matériel glissant sans frottement sur un plan incliné. On notera $\vg$ l'accélération de la pesanteur, $\vect{v_0}$ la vitesse initiale, $O$ la position initiale, $\alpha$ le rectiligne du diédre formé par le plan incliné et le plan horizontal, $\beta$ l'angle de $\vect{v_0}$ avec une horizontale du plan incliné (compté positivement si $\vect{v_0}$ est au-dessus de cette horizontale). On utilise comme repère orthogonal : $(Ox)$ horizontale du plan incliné orienté dans le sens de $\vect{v_0}$, $(Oy)$ vers le haut dans le plan incliné et $(Oz)$ perpendiculaire au plan vers le haut.
+  On considère le mouvement d'un point matériel glissant sans frottement sur un plan incliné. On notera $\vg$ l'accélération de la pesanteur, $\vv{v_0}$ la vitesse initiale, $O$ la position initiale, $\alpha$ le rectiligne du diédre formé par le plan incliné et le plan horizontal, $\beta$ l'angle de $\vv{v_0}$ avec une horizontale du plan incliné (compté positivement si $\vv{v_0}$ est au-dessus de cette horizontale). On utilise comme repère orthogonal : $(Ox)$ horizontale du plan incliné orienté dans le sens de $\vv{v_0}$, $(Oy)$ vers le haut dans le plan incliné et $(Oz)$ perpendiculaire au plan vers le haut.
   \begin{enumerate}
-  \item Établir les expressions vectorielles de $\vect{a}$, $\vect{v}$ et $\vect{OM}$ en fonction du temps $t$, puis donner les coordonnées $x$ et $y$ de $M$ en fonction de $t$. En déduire l'équation cartésienne de la trajectoire.
+  \item Établir les expressions vectorielles de $\vv{a}$, $\vv{v}$ et $\vv{OM}$ en fonction du temps $t$, puis donner les coordonnées $x$ et $y$ de $M$ en fonction de $t$. En déduire l'équation cartésienne de la trajectoire.
   \item Exprimer la portée horizontale et la flèche de la trajectoire avec $g$, $v_0$, $\alpha$ et $\beta$.
   \item Donner la loi horaire du mouvement $s=f(t)$ (la trajectoire étant dans le sens du mouvement et l'origine des abscisses curvilignes étant le point $O$).
   \item Exprimer l'accélération tangentielle et l'accélération normale, puis en déduire l'expression du rayon de courbure en fonction de la position de $M$, puis en fonction du temps $t$.   
@@ -227,7 +227,7 @@ Pour un point lié à une surface, la direction de $\vect{R}_n$ est imposée. Al
 \end{exercice}
 %
 \begin{exercice}[Frottement proportionnel à la vitesse]
-  Un point matériel lancé sur une droite avec une vitesse initiale de norme $v_0 = \SI{2}{m.s^{-1}}$ n'est soumis qu'à la force de frottement fluide $\vect{f} = -\lambda m \vect{v}$.
+  Un point matériel lancé sur une droite avec une vitesse initiale de norme $v_0 = \SI{2}{m.s^{-1}}$ n'est soumis qu'à la force de frottement fluide $\vv{f} = -\lambda m \vv{v}$.
   \begin{enumerate}
   \item Le point parcourt en tout la distance $d = \SI{100}{m}$. Calculer numériquement $\lambda$.
   \item Calculer les temps $t_1$, $t_2$, $t_3$ et $t_f$ nécessaires pour parcourir les distances respectives de $\SI{50}{m}$, $\SI{99}{m}$, $\SI{99.9}{m}$, $\SI{100}{m}$.
@@ -236,7 +236,7 @@ Pour un point lié à une surface, la direction de $\vect{R}_n$ est imposée. Al
 \end{exercice}
 %
 \begin{exercice}[Frottement proportionnel au carré de la vitesse]
-  Un point matériel lancé sur une droite avec une vitesse initiale de norme $v_0 = \SI{2}{m.s^{-1}}$ n'est soumis qu'à la force de frottement fluide $\vect{f} = -K m v \vect{v}$. Le point met $T=\SI{50}{s}$ pour parcourir $d=\SI{50}{m}$.
+  Un point matériel lancé sur une droite avec une vitesse initiale de norme $v_0 = \SI{2}{m.s^{-1}}$ n'est soumis qu'à la force de frottement fluide $\vv{f} = -K m v \vv{v}$. Le point met $T=\SI{50}{s}$ pour parcourir $d=\SI{50}{m}$.
   \begin{enumerate}
   \item Calculer numériquement $K$, en précisant son unité.
   \item Quel temps met le point matériel pour parcourir la distance $2d$ ?
@@ -245,7 +245,7 @@ Pour un point lié à une surface, la direction de $\vect{R}_n$ est imposée. Al
 \end{exercice}
 %
 \begin{exercice}[Pendule simple]
-  Un anneau, assimilé à un point matériel de masse $m$, glisse sans frotter sur une tige circulaire, de rayon $r$, placée dans un plan vertical. On repère sa position par l'angle polaire $\theta = (\vect{OA}, \vect{OM})$. Le point $A$ étant la position la plus basse. Établir l'équation différentielle vérifiée par $\theta$~:
+  Un anneau, assimilé à un point matériel de masse $m$, glisse sans frotter sur une tige circulaire, de rayon $r$, placée dans un plan vertical. On repère sa position par l'angle polaire $\theta = (\vv{OA}, \vv{OM})$. Le point $A$ étant la position la plus basse. Établir l'équation différentielle vérifiée par $\theta$~:
     \begin{enumerate}
     \item avec la relation fondamentale de la dynamique;
     \item avec le théorème du moment cinétique.

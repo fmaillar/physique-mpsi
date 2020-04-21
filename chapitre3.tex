@@ -7,11 +7,11 @@
 \section{Chute libre, tir dans le vide}
 \label{sec-chap3:chutelibre}
 
-Dans une région de la Terre suffisamment petite, on sait que la seule force qui s'exerce dans le référentiel terrestre sur un corps dans le vide est son poids~: $\vect{P}=m\vg$, $\vg$ étant le champ de pesanteur, localement uniforme, vertical et orienté vers le bas. La relation fondamentale de la dynamique donne alors $\vect{a}=\vg$, elle est nommée aussi accélération de la pesanteur. À Paris, $g=\SI{9.80665}{m.s^{-2}}$.
+Dans une région de la Terre suffisamment petite, on sait que la seule force qui s'exerce dans le référentiel terrestre sur un corps dans le vide est son poids~: $\vv{P}=m\vg$, $\vg$ étant le champ de pesanteur, localement uniforme, vertical et orienté vers le bas. La relation fondamentale de la dynamique donne alors $\vv{a}=\vg$, elle est nommée aussi accélération de la pesanteur. À Paris, $g=\SI{9.80665}{m.s^{-2}}$.
 
-Pour étudier le mouvement d'un projectile dans le vide, on utilise un repère cartésien lié à la terre avec $O$~: position à $t=0$, $(Oz)$ vertical ; $(Ox)$ dans le plan de tir formé par $O$ et $\vect{v_0}$. À $t=0$, on a l'angle de tir $\alpha = (\vect{Ox}, \vect{v_0})$. Alors, en prenant en compte $\vect{a} = -g\uz$ et $\vect{v_0}= v_0\cos\alpha \ux + v_0\sin\alpha \uz$ et en intégrant deux fois, on obtient~:
+Pour étudier le mouvement d'un projectile dans le vide, on utilise un repère cartésien lié à la terre avec $O$~: position à $t=0$, $(Oz)$ vertical ; $(Ox)$ dans le plan de tir formé par $O$ et $\vv{v_0}$. À $t=0$, on a l'angle de tir $\alpha = (\vv{Ox}, \vv{v_0})$. Alors, en prenant en compte $\vv{a} = -g\uz$ et $\vv{v_0}= v_0\cos\alpha \ux + v_0\sin\alpha \uz$ et en intégrant deux fois, on obtient~:
 \begin{equation}
-  \vect{OM} = v_0t\cos \alpha \ux + \left(v_0t\sin\alpha - g\frac{t^2}{2}\right) \uz.
+  \vv{OM} = v_0t\cos \alpha \ux + \left(v_0t\sin\alpha - g\frac{t^2}{2}\right) \uz.
 \end{equation}
 
 Ainsi, l'équation cartésienne du mouvement est
@@ -47,21 +47,21 @@ Son sommet a les coordonnées de $x=0$ et $z=f_m$ et elle coupe l'axe $(Ox)$ au 
 \section{Influence de la résistance de l'air sur le tir d'un projectile pour des vitesses faibles}
 \label{sec-chap3:influencedelaresistancedelair}
 
-Pour des vitesses faibles, on peut faire l'approximation suivante~: la résistance de l'air est proportionelle à la vitesse~: $\vect{f}=-k \vv$. La relation fondamentale de la dynamique donne l'équation différentielle suivante~:
+Pour des vitesses faibles, on peut faire l'approximation suivante~: la résistance de l'air est proportionnelle à la vitesse~: $\vv{f}=-k \vvv$. La relation fondamentale de la dynamique donne l'équation différentielle suivante~:
 \begin{equation}
-  \derived{\vv}{t}+\frac{k}{m}\vv = \vg.
+  \derived{\vvv}{t}+\frac{k}{m}\vvv = \vg.
 \end{equation}
-La solution homogène de cette équation est $\vv = \vect{C}\e^{-\frac{k}{m}t}$ (où $\vect{C}$ est un vecteur constant). Une solution particulière de l'équation complète est $\vv = \frac{m}{k}\vg$. La solution générale de l'équation différentielle est donc
+La solution homogène de cette équation est $\vvv = \vv{C}\e^{-\frac{k}{m}t}$ (où $\vv{C}$ est un vecteur constant). Une solution particulière de l'équation complète est $\vvv = \frac{m}{k}\vg$. La solution générale de l'équation différentielle est donc
 \begin{equation}
-  \vv = \vect{C}\e^{-\frac{k}{m}t} + \frac{m}{k}\vg.
+  \vvv = \vv{C}\e^{-\frac{k}{m}t} + \frac{m}{k}\vg.
 \end{equation}
-À $t=0$ on a $\vv=\vv_0$ donc $\vect{C}=\vv_0 - \frac{m}{k}\vg$. La solution physique de cette équation est donc
+À $t=0$ on a $\vvv=\vvv_0$ donc $\vv{C}=\vvv_0 - \frac{m}{k}\vg$. La solution physique de cette équation est donc
 \begin{equation}
-  \vv = \left( \vv_0 - \frac{m}{k}\vg \right) \e^{-\frac{k}{m}t} + \frac{m}{k}\vg
+  \vvv = \left( \vvv_0 - \frac{m}{k}\vg \right) \e^{-\frac{k}{m}t} + \frac{m}{k}\vg
 \end{equation}
-En intégrant encore une fois (avec $\vect{OM}(t=0)=\vect{0}$), on obtient
+En intégrant encore une fois (avec $\vv{OM}(t=0)=\vv{0}$), on obtient
 \begin{equation}
-  \vect{OM} = \frac{m}{k}\left(\vv_0 - \frac{m}{k}\vg\right)\left(1 - \e^{-\frac{k}{m}t}\right) + \frac{m}{k}\vg t.
+  \vv{OM} = \frac{m}{k}\left(\vvv_0 - \frac{m}{k}\vg\right)\left(1 - \e^{-\frac{k}{m}t}\right) + \frac{m}{k}\vg t.
 \end{equation}
 Si on décompose dans le repère orthogonal on obtient
 \begin{equation}
@@ -71,7 +71,7 @@ Si on décompose dans le repère orthogonal on obtient
   \end{cases}
 \end{equation}
 
-Lorsque $t$ tend vers l'infini la vitesse tend vers une vitesse limite verticale~: $\vv_L = \frac{m}{k}\vg$. On notera donc $v_L = \frac{m}{k}g$. L'abscisse tend vers la valeur limite $x_L = \frac{mv_0 \cos \alpha}{k}$.
+Lorsque $t$ tend vers l'infini la vitesse tend vers une vitesse limite verticale~: $\vvv_L = \frac{m}{k}\vg$. On notera donc $v_L = \frac{m}{k}g$. L'abscisse tend vers la valeur limite $x_L = \frac{mv_0 \cos \alpha}{k}$.
 
 On peut donc écrire plus simplement~: $x = x_L\left(1-\e^{-\frac{k}{m}t}\right)$ d'où $t = -\frac{m}{k}\ln\left(1-\frac{x}{x_L}\right)$ et
 \begin{equation}
@@ -93,13 +93,13 @@ La portée est la valeur $x$ non nulle solution de $z=0$, que l'on ne peut pas r
 \section{Tir vertical}
 \label{chap3-sec:tirvertical}
 
-Dans le cas général, la force de frottement exercée par le fluide est de la forme $\vect{f}=-Kv^\alpha\vv$ avec $\alpha \in [0, 3]$ et $K>0$. On étudiera ici le cas où la vitesse initiale est verticale, le champ de pesanteur uniforme et la poussée d'Archiméde négligeable. On a alors l'équation différentielle suivante~:
+Dans le cas général, la force de frottement exercée par le fluide est de la forme $\vv{f}=-Kv^\alpha\vvv$ avec $\alpha \in [0, 3]$ et $K>0$. On étudiera ici le cas où la vitesse initiale est verticale, le champ de pesanteur uniforme et la poussée d'Archimède négligeable. On a alors l'équation différentielle suivante~:
 \begin{equation}
-  \derived{\vv}{t} + \frac{Kv^\alpha}{m}\vv = \vg.
+  \derived{\vvv}{t} + \frac{Kv^\alpha}{m}\vvv = \vg.
 \end{equation}
-Les vecteurs $\vv_0$ est $\vg$ étant verticaux, on en déduit que le mouvement se fait sur une trajectoire verticale.
+Les vecteurs $\vvv_0$ est $\vg$ étant verticaux, on en déduit que le mouvement se fait sur une trajectoire verticale.
 
-On se limite maintenant au cas où $v$ reste d'un ordre de grandeur où $\alpha=1$ avec $\vv_0$ vers le bas. Ainsi l'équation différentielle s'écrit
+On se limite maintenant au cas où $v$ reste d'un ordre de grandeur où $\alpha=1$ avec $\vvv_0$ vers le bas. Ainsi l'équation différentielle s'écrit
 \begin{equation}
   mg -Kv^2 = m\derived{v}{t}.
 \end{equation}
@@ -130,14 +130,14 @@ On remarque que lorsque $t$ tend vers l'infini, $v$ tend vers $v_L$.
 
 On considère un point matériel $M$ de masse $m$, attaché à un ressort dont l'autre extrémité est fixe. L'ensemble est enfilé sur une tige horizontale $(Ax)$. On suppose que le ressort est parfait, e raideur $k$ et de longueur à vide $L_0=AO$ et que les frottements sont négligeables.
 
-Le point $M$ est soumis, dans le référentiel terrestre assumé galiléen, à son poids $\vect{P}$ vertical, à la réaction de la tige $\vect{R}$ normale à $(Ox)$ et à la force de rappel exercée par le ressort $\vect{F}=-kx\ux$.
+Le point $M$ est soumis, dans le référentiel terrestre assumé galiléen, à son poids $\vv{P}$ vertical, à la réaction de la tige $\vv{R}$ normale à $(Ox)$ et à la force de rappel exercée par le ressort $\vv{F}=-kx\ux$.
 
 La relation fondamentale de la dynamique donne~:
 \begin{equation}
-  \vect{P}+\vect{R}-kx\ux = m\vect{a}.
+  \vv{P}+\vv{R}-kx\ux = m\vv{a}.
 \end{equation}
 
-La vitesse est horizontale donc $\vect{a} = \ddot{x}\ux$ est aussi horizontale donc $\vect{R}=-\vect{P}$ et alors on a l'équation différentielle suivante~:
+La vitesse est horizontale donc $\vv{a} = \ddot{x}\ux$ est aussi horizontale donc $\vv{R}=-\vv{P}$ et alors on a l'équation différentielle suivante~:
 \begin{equation}
   \ddot{x} +\frac{k}{m}x=0.
 \end{equation}
@@ -155,7 +155,7 @@ On suppose maintenant que le ressort est vertical. Pour amorcer le mouvement, il
 
 On prend la position d'équilibre comme l'origine de l'axe vertical descendant $(Ox)$ et on note $L_e$ la longueur du ressort à l'équilibre.
 
-En négligeant encore la poussée d'Archiméde et la résistance de l'air, $M$ est soumis à son poids $\vect{P}=mg\ux$ et la force du ressort $\vect{F}=-k(L_e +x-L_0)\ux$. 
+En négligeant encore la poussée d'Archimède et la résistance de l'air, $M$ est soumis à son poids $\vv{P}=mg\ux$ et la force du ressort $\vv{F}=-k(L_e +x-L_0)\ux$. 
 L'équation différentielle du mouvement est donc
 \begin{equation}
   mg -k(L_e +x-L_0) = m\ddot{x}.
@@ -170,7 +170,7 @@ d'où $\ddot{x} +\frac{k}{m}x=0$ et le même type de solution.
 \label{chap3-sec:exercices}
 
 \begin{exercice}[Interaction entre deux charges ponctuelles]
-  Quatre charges ponctuelles $q$, $-2q$, $2q$, et $-q$ sont placées respectivement aux sommets $A$, $B$, $C$ et $D$ d'un carré de coté $a$. Exprimer la force exercée par l'ensemble de ces quatre charges sur une charge ponctuelle $q$ placée au centre $O$ du carré, avec $a$, $q$ et les vecteurs unitaires $\vi$ et $\vj$ tels que $\vect{AB}=\vect{DC}=a\vi$ et $\vect{DA}=\vect{CB}=a\vj$.
+  Quatre charges ponctuelles $q$, $-2q$, $2q$, et $-q$ sont placées respectivement aux sommets $A$, $B$, $C$ et $D$ d'un carré de coté $a$. Exprimer la force exercée par l'ensemble de ces quatre charges sur une charge ponctuelle $q$ placée au centre $O$ du carré, avec $a$, $q$ et les vecteurs unitaires $\vi$ et $\vj$ tels que $\vv{AB}=\vv{DC}=a\vi$ et $\vv{DA}=\vv{CB}=a\vj$.
 \end{exercice}
 %
 \begin{exercice}[Expérience de Millikan]

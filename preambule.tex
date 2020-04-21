@@ -12,10 +12,13 @@
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{mathrsfs}
-\usepackage{latexsym}
+%\usepackage{latexsym}
 %
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{esvect}
 %Pour faire des maths en francais
-\usepackage{frmath}
+%\usepackage{frmath}
 %
 %Pour utiliser les tableaux
 \usepackage{array}
@@ -186,30 +189,30 @@
 \newcommand{\classe}[1]{\mathit{C}^#1}
 \newcommand{\con}[1]{\mathcal{C}_#1}
 \newcommand{\courbe}{\mathcal{C}}
-\newcommand{\vi}{\vect{i}}
-\newcommand{\vj}{\vect{j}}
-\newcommand{\vk}{\vect{k}}
-\newcommand{\ex}{\vect{e}_x}
-\newcommand{\ey}{\vect{e}_y}
-\newcommand{\ez}{\vect{e}_z}
-\newcommand{\vu}{\vect{u}}
-\newcommand{\vv}{\vect{v}}
-\newcommand{\vw}{\vect{w}}
-\newcommand{\vU}{\vect{U}}
-\newcommand{\vV}{\vect{V}}
-\newcommand{\vW}{\vect{W}}
-\newcommand{\vz}{\vect{z}}
-\newcommand{\vF}{\vect{F}}
-\newcommand{\ux}{\vect{u_x}}
-\newcommand{\uy}{\vect{u_y}}
-\newcommand{\uz}{\vect{u_z}}
-\newcommand{\ur}{\vect{u_r}}
-\newcommand{\utheta}{\vect{u_{\theta}}}
-\newcommand{\urho}{\vect{u_{\rho}}}
-\newcommand{\vn}{\vect{n}}
-\newcommand{\va}{\vect{a}}
-\newcommand{\vb}{\vect{b}}
-\newcommand{\vc}{\vect{c}}
+\newcommand{\vi}{\vv{i}}
+\newcommand{\vj}{\vv{j}}
+\newcommand{\vk}{\vv{k}}
+\newcommand{\ex}{\vv{e}_x}
+\newcommand{\ey}{\vv{e}_y}
+\newcommand{\ez}{\vv{e}_z}
+\newcommand{\vu}{\vv{u}}
+\newcommand{\vvv}{\vv{v}}
+\newcommand{\vw}{\vv{w}}
+\newcommand{\vU}{\vv{U}}
+\newcommand{\vV}{\vv{V}}
+\newcommand{\vW}{\vv{W}}
+\newcommand{\vz}{\vv{z}}
+\newcommand{\vF}{\vv{F}}
+\newcommand{\ux}{\vv{u_x}}
+\newcommand{\uy}{\vv{u_y}}
+\newcommand{\uz}{\vv{u_z}}
+\newcommand{\ur}{\vv{u_r}}
+\newcommand{\utheta}{\vv{u_{\theta}}}
+\newcommand{\urho}{\vv{u_{\rho}}}
+\newcommand{\vn}{\vv{n}}
+\newcommand{\va}{\vv{a}}
+\newcommand{\vb}{\vv{b}}
+\newcommand{\vc}{\vv{c}}
 \newcommand{\rond}{(O,\vi,\vj)}
 \newcommand{\bond}{(\vi,\vj)}
 \newcommand{\rondtrois}{(O,\vi,\vj,\vk)}
@@ -240,15 +243,17 @@
 \newcommand{\congru}[3]{#1 \equiv #2~\left[#3 \right]} %congru
 \newcommand{\expc}[2]{#1 \e^{#2 \ii}}% exp complexe
 \renewcommand{\bar}{\overline}
-\newcommand{\Uv}{\vect{u}}
-\newcommand{\V}{\vect{v}}
-\newcommand{\W}{\vect{w}}
+\newcommand{\Uv}{\vv{u}}
+\newcommand{\V}{\vv{v}}
+\newcommand{\W}{\vv{w}}
 %% pour les dérivées
+\newcommand{\D}{\mathrm{d}}
+
 \newcommand{\derived}[2]{\dfrac{\D #1}{\D #2}}
 \newcommand{\deriveds}[2]{\dfrac{\D^2 #1}{\D {#2}^2}}
-\newcommand{\derivep}[2]{\dfrac{\dr #1}{\dr #2}}
-\newcommand{\deriveps}[2]{\dfrac{\dr^2 #1}{\dr {#2}^2}}
-\newcommand{\derivepc}[3]{\dfrac{\dr^2 #1}{\dr {#2} \dr {#3}}}
+\newcommand{\derivep}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\deriveps}[2]{\dfrac{\partial^2 #1}{\partial {#2}^2}}
+\newcommand{\derivepc}[3]{\dfrac{\partial^2 #1}{\partial {#2} \partial {#3}}}
 %%
 \newcommand\Hrule{\noindent \rule[0mm]{\linewidth}{0.5pt}}
 
@@ -256,7 +261,7 @@
 \newcommand{\norme}[1]{\left\lVert#1\right\rVert}
 \newcommand{\diff}{\mathop{}\mathopen{}\D}
 
-\newcommand{\vg}{\vect{g}}
+\newcommand{\vg}{\vv{g}}
 
 \newcommand{\intervalle}[4]{\mathopen{#1}#2\mathclose{}\mathpunct{};#3\mathclose{#4}}
 \newcommand{\pv}{\ensuremath{\, ; }}

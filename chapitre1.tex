@@ -67,15 +67,15 @@ Un repère d'espace est constitué par un point et trois axes de coordonnées ca
 
 En coordonnées cartésiennes, la position d'un point matériel est définie par son \emph{vecteur position} décomposable suivant la direction de ces trois axes~:
 \begin{equation}
-  \vect{OM}=x\vi+y\vj+z\vk=x\ux+y\uy+z\uz.
+  \vv{OM}=x\vi+y\vj+z\vk=x\ux+y\uy+z\uz.
 \end{equation}
 Si le repère est lié au référentiel dans lequel on travail, ses axes sont considérés comme fixe. Les vecteurs unitaires de la base correspondante sont alors constants. Le déplacement élémentaire du point matériel est alors~:
 \begin{equation}
-  \D\vect{OM}=\D x\ux+\D y\uy+\D z\uz.
+  \D\vv{OM}=\D x\ux+\D y\uy+\D z\uz.
 \end{equation}
 La longueur de ce déplacement est donc~:
 \begin{equation}
-  \D s = ||\D\vect{OM}||,
+  \D s = ||\D\vv{OM}||,
 \end{equation}
 tel que
 \begin{equation}
@@ -85,11 +85,11 @@ tel que
 \subsection{Coordonnées cylindriques, ou cylindro-polaires}
 \label{chap1-subsec:coordcylindriques}
 
-Un repère cartésien, que l'on supposera ici lié au référentiel dans lequel on étudie le mouvement, étant défini, les coordonnées cylindro-polaires sont les coordonnées polaires de la projection $H$ de $M$ dans le plan $(xOy)$~: la coordonnées radiale $\rho=r=\sqrt{x^2+y^2}$, l'angle polaire $\theta=(\vect{Ox}, \vect{OH})$ et la côte $z$.
+Un repère cartésien, que l'on supposera ici lié au référentiel dans lequel on étudie le mouvement, étant défini, les coordonnées cylindro-polaires sont les coordonnées polaires de la projection $H$ de $M$ dans le plan $(xOy)$~: la coordonnées radiale $\rho=r=\sqrt{x^2+y^2}$, l'angle polaire $\theta=(\vv{Ox}, \vv{OH})$ et la côte $z$.
 
 Les vecteurs unitaires $\ur$, $\utheta$ et $\uz$ forment une base mobile utilisée pour décomposer les vecteurs. Par exemple
 \begin{equation}
-  \vect{OM}=r \ur + z\uz.
+  \vv{OM}=r \ur + z\uz.
 \end{equation}
 
 On remarque que $\ur = \cos \theta \ux + \sin \theta \uy$ et $\utheta = -\sin \theta \ux + \cos \theta \uy$. D'autre part, $(Oxyz)$ étant un référentiel, les vecteurs $\ux$ et $\uy$ sont constants alors
@@ -97,7 +97,7 @@ On remarque que $\ur = \cos \theta \ux + \sin \theta \uy$ et $\utheta = -\sin \t
   \derived{\ur}{\theta} = \utheta \quad \derived{\utheta}{\theta} = -\ur.
 \end{equation}
 
-Plus généralement, la dérivée d'un vecteur unitaire $\vu$ tournant dans un plan par rapport à l'angle qui définit sa direction dans ce plan est le vecteur $\vv$ unitaire par rotation de $\vu$ de $\frac{\pi}{2}$.
+Plus généralement, la dérivée d'un vecteur unitaire $\vu$ tournant dans un plan par rapport à l'angle qui définit sa direction dans ce plan est le vecteur $\vvv$ unitaire par rotation de $\vu$ de $\frac{\pi}{2}$.
 
 % \begin{figure}
 %   \centering
@@ -131,21 +131,21 @@ Plus généralement, la dérivée d'un vecteur unitaire $\vu$ tournant dans un p
 
 La vitesse d'un point matériel dans un référentiel où le point $O$ est fixe est
 \begin{equation}
-  v = \derived{\vect{OM}}{t}.
+  v = \derived{\vv{OM}}{t}.
 \end{equation}
-Le point $O$ pouvant être remplacé par n'importe quel point lié au référentiel. On note encore la vitesse du point $M$ comme $\derived{\vect{M}}{t}$ ou $\dot{\vect{OM}}$ ou encore $\dot{\vect{M}}$. La vitesse est une fonction continue du temps. Si l'on utilise plusieurs référentiels, la vitesse de $M$ dans le référentiel $R$ est notée $\vec{v}_{M/R}$. Un déplacement élémentaire $\D \vect{M}$ du point $M$ est tangent à la trajectoire donc \emph{le vecteur vitesse est tangent à la trajectoire}.
+Le point $O$ pouvant être remplacé par n'importe quel point lié au référentiel. On note encore la vitesse du point $M$ comme $\derived{\vv{M}}{t}$ ou $\dot{\vv{OM}}$ ou encore $\dot{\vv{M}}$. La vitesse est une fonction continue du temps. Si l'on utilise plusieurs référentiels, la vitesse de $M$ dans le référentiel $R$ est notée $\vec{v}_{M/R}$. Un déplacement élémentaire $\D \vv{M}$ du point $M$ est tangent à la trajectoire donc \emph{le vecteur vitesse est tangent à la trajectoire}.
 
-Le vecteur $\ur$ étant tangent à la trajectoire et orienté dans le même sens que celle-ci, le déplacement élémentaire s'écrit $\D \vect{M}=\D s \vec{u}_T$ donc $\vect{v}=\dot{s} \vect{u}_T$, $\dot{s}$ est la \emph{vitesse algébrique} et \emph{la norme de la vitesse} est donc $v=|\dot{s}|$.
+Le vecteur $\ur$ étant tangent à la trajectoire et orienté dans le même sens que celle-ci, le déplacement élémentaire s'écrit $\D \vv{M}=\D s \vec{u}_T$ donc $\vv{v}=\dot{s} \vv{u}_T$, $\dot{s}$ est la \emph{vitesse algébrique} et \emph{la norme de la vitesse} est donc $v=|\dot{s}|$.
 
 On appelle hodographe du mouvement la courbe décrite par l'extrémité du vecteur vitesse représenté avec une origine fixe.
 
 En coordonnées cartésiennes,
 \begin{equation}
-  \vect{v} = \dot{x}\ux+\dot{y}\uy+\dot{z}\uz,
+  \vv{v} = \dot{x}\ux+\dot{y}\uy+\dot{z}\uz,
 \end{equation}
 et en coordonnées cylindriques $\dot{\ur}=\dot{\theta}\utheta$ et donc
 \begin{equation}
-  \vect{v}=\dot{r}\ur+r\dot{\theta}\utheta+\dot{z}\uz.
+  \vv{v}=\dot{r}\ur+r\dot{\theta}\utheta+\dot{z}\uz.
 \end{equation}
 
 \section{Accélération}
@@ -153,23 +153,23 @@ et en coordonnées cylindriques $\dot{\ur}=\dot{\theta}\utheta$ et donc
 
 L'accélération d'un point matériel dans un référetiel où le point $O$ est fixe est
 \begin{equation}
-  \vect{a}=\derived{\vect{v}}{t}=\deriveds{\vect{OM}}{t}.
+  \vv{a}=\derived{\vv{v}}{t}=\deriveds{\vv{OM}}{t}.
 \end{equation}
-Elle peut présenter des discontinuités. Si l'on doit préciser le référentiel on note $\vect{a}_{M/R}$. Si la trajectoire n'est pas rectiligne, le vecteur unitaire tangentiel $\vec{u}_T$ varie donc sa dérivée par rapport au temps est normale à la trajectoire. Ainsi l'accélération a une composante tangentielle, $\ddot{s}$, et une composante normale à la trajectoire
+Elle peut présenter des discontinuités. Si l'on doit préciser le référentiel on note $\vv{a}_{M/R}$. Si la trajectoire n'est pas rectiligne, le vecteur unitaire tangentiel $\vec{u}_T$ varie donc sa dérivée par rapport au temps est normale à la trajectoire. Ainsi l'accélération a une composante tangentielle, $\ddot{s}$, et une composante normale à la trajectoire
 \begin{equation}
-  \vect{a}=\ddot{s}\vect{u}_T + \dot{s}\dot{\vect{u}_T}.
+  \vv{a}=\ddot{s}\vv{u}_T + \dot{s}\dot{\vv{u}_T}.
 \end{equation}
 
 En coordonnées cartésiennes,
 \begin{equation}
-  \vect{a} = \ddot{x}\ux+\ddot{y}\uy+\ddot{z}\uz,
+  \vv{a} = \ddot{x}\ux+\ddot{y}\uy+\ddot{z}\uz,
 \end{equation}
 et en coordonnées cylindriques $\dot{\utheta}=-\dot{\theta}\ur$ et donc
 \begin{equation}
-  \vect{a}=(\ddot{r}-r\dot{\theta}^2)\ur+(2\dot{r}\dot{\theta}+r\ddot{\theta})\utheta+\ddot{z}\uz.
+  \vv{a}=(\ddot{r}-r\dot{\theta}^2)\ur+(2\dot{r}\dot{\theta}+r\ddot{\theta})\utheta+\ddot{z}\uz.
 \end{equation}
 
-Si $\vect{a}\cdot\vect{v}=\dot{s}\ddot{s}$ est positif, alors le mouvement est accéléré. Sinon alors le mouvement est ralenti.
+Si $\vv{a}\cdot\vv{v}=\dot{s}\ddot{s}$ est positif, alors le mouvement est accéléré. Sinon alors le mouvement est ralenti.
 
 \section{Mouvements particuliers}
 \label{chap1-sec:mvtparticuliers}
@@ -186,13 +186,13 @@ Un mouvement est sinusoïdal si $s=s_0+\alpha \cos(\omega t+\varphi)$. Le nombre
 \subsection{Mouvements rectilignes}
 \label{chap1-sec:mvtrect}
 
-Pour un mouvement rectiligne, $\vect{u}_T$ est constant, l'accélération est tangentielle~: $\vect{a}=\ddot{s} \vect{u}_T$. On choisit l'axe $(Ox)$ suivant la trajectoire ($s$ est alors noté $x$ et l'origine des abscisses curvilignes est en $O$). La loi horaire est alors $f:t \rightarrow x=f(t)$.
+Pour un mouvement rectiligne, $\vv{u}_T$ est constant, l'accélération est tangentielle~: $\vv{a}=\ddot{s} \vv{u}_T$. On choisit l'axe $(Ox)$ suivant la trajectoire ($s$ est alors noté $x$ et l'origine des abscisses curvilignes est en $O$). La loi horaire est alors $f:t \rightarrow x=f(t)$.
 
-Si le mouvement est rectiligne uniforme alors $\vect{v}$ est constant et l'accélération est nulle.
+Si le mouvement est rectiligne uniforme alors $\vv{v}$ est constant et l'accélération est nulle.
 
-Si le mouvement est rectiligne uniformément varié alors $\vect{a}$ est constant. La réciproque est fausse.
+Si le mouvement est rectiligne uniformément varié alors $\vv{a}$ est constant. La réciproque est fausse.
 
-Si le mouvement est rectiligne sinusoïdal, avec le choix de $O$ au milieu du segment parcouru, la loi horaire s'écrit $x=X\cos(\omega t+\varphi)$ ou $x=A\cos(\omega t) + B\sin(\omega t)$. L'accélération s'écrit $\vect{a}=-\omega^2X\cos(\omega t+\varphi)=-\omega^2 \vect{OM}$.
+Si le mouvement est rectiligne sinusoïdal, avec le choix de $O$ au milieu du segment parcouru, la loi horaire s'écrit $x=X\cos(\omega t+\varphi)$ ou $x=A\cos(\omega t) + B\sin(\omega t)$. L'accélération s'écrit $\vv{a}=-\omega^2X\cos(\omega t+\varphi)=-\omega^2 \vv{OM}$.
 
 Si à $t=0$, on a
 \begin{equation}
@@ -209,14 +209,14 @@ On obtient plus directement $A$ et $B$ avec $x_0=A$ et $\dot{x}_0=\omega B$.
 \subsection{Mouvements à accélération constante}
 \label{chap1-subsec:accelerationcst}
 
-Si $\vect{a}$ est constant, alors $\vect{v}=\vect{v_0}+\vect{a}t$ et $\vect{OM}= \vect{OM}_0+ \vect{v_0} t + \vect{a}\frac{t^2}{2}$ .
+Si $\vv{a}$ est constant, alors $\vv{v}=\vv{v_0}+\vv{a}t$ et $\vv{OM}= \vv{OM}_0+ \vv{v_0} t + \vv{a}\frac{t^2}{2}$ .
 
-On choisit les axes du repère avec $M_0=O$ comme origine, l'axe $Oz$ parallèle à l'accélération $\vect{a}$ et de sens contraire et le plan $(xOz)$ confondu avec le plan $(\vect{a},\vect{v_0})$.
+On choisit les axes du repère avec $M_0=O$ comme origine, l'axe $Oz$ parallèle à l'accélération $\vv{a}$ et de sens contraire et le plan $(xOz)$ confondu avec le plan $(\vv{a},\vv{v_0})$.
 
-On a donc, avec $\alpha=(\vect{Ox},\vect{v_0})$~:
+On a donc, avec $\alpha=(\vv{Ox},\vv{v_0})$~:
 \begin{align}
-  \vect{a}&=\ddot{z} \uz=-a\uz \\
-  \vect{v_0}&=\dot{x}\ux+\dot{z}\uz=v_0\cos\alpha\ux+v_0\sin\alpha\uz.
+  \vv{a}&=\ddot{z} \uz=-a\uz \\
+  \vv{v_0}&=\dot{x}\ux+\dot{z}\uz=v_0\cos\alpha\ux+v_0\sin\alpha\uz.
 \end{align}
 On en déduit
 \begin{equation}
@@ -233,21 +233,21 @@ En éliminant la date $t=\frac{x}{v_0\cos\alpha}$, on obtient l'équation de la 
 \end{equation}
 c'est l'équation d'une parabole.
 
-\emph{La trajectoire d'un point matériel dont l'accélération est constante est une parabole}. Le mouvement de la projection de $M$ sur $(Ox)$ est uniforme et celui de la projection de $M$ sur $Oz$ est uniformément varié. Si $\vect{v_0}$ et $\vect{a}$ sont parallèles alors le mouvement de $M$ est rectiligne uniformément varié sur l'axe $Oz$.
+\emph{La trajectoire d'un point matériel dont l'accélération est constante est une parabole}. Le mouvement de la projection de $M$ sur $(Ox)$ est uniforme et celui de la projection de $M$ sur $Oz$ est uniformément varié. Si $\vv{v_0}$ et $\vv{a}$ sont parallèles alors le mouvement de $M$ est rectiligne uniformément varié sur l'axe $Oz$.
 
 Avec les équations vectorielles on démontre facilement les propriétés suivantes~:
 \begin{itemize}
 \item la vitesse moyenne entre $t_1$ et $t_2$ est égale à la vitesse à $\frac{t_1+t_2}{2}$
   \begin{equation}
-    \vect{v}_{1,2}=\vect{v}_{\left(\frac{t_1+t_2}{2}\right)}=\frac{\vect{v}_1+\vect{v}_2}{2};
+    \vv{v}_{1,2}=\vv{v}_{\left(\frac{t_1+t_2}{2}\right)}=\frac{\vv{v}_1+\vv{v}_2}{2};
   \end{equation}
 \item la variation du carré de la vitesse est le double du produit scalaire de l'accélération par le vecteur déplacement
   \begin{equation}
-v_2^2-v_1^2=2\vect{a}\cdot \vect{M_1M_2};
+v_2^2-v_1^2=2\vv{a}\cdot \vv{M_1M_2};
   \end{equation}
 \item les vecteurs déplacements pendant des intervalles de temps successifs de même durée $\tau$ forment une suite arithmétique~:
   \begin{equation}
-    \vect{M_nM_{n+1}}-\vect{M_{n-1}M_{n}}=\vect{a}\tau^2
+    \vv{M_nM_{n+1}}-\vv{M_{n-1}M_{n}}=\vv{a}\tau^2
   \end{equation}
 \end{itemize}
 
@@ -261,7 +261,7 @@ v_2^2-v_1^2=2\vect{a}\cdot \vect{M_1M_2};
 %     \coordinate (A) at (0,6);
 %     \coordinate (B) at (6,0);
 %     \coordinate (M) at (120:4);
-%     \draw (0,0) node[below]{$\vect{\omega} \ Oz$};
+%     \draw (0,0) node[below]{$\vv{\omega} \ Oz$};
 %     \draw[>=latex] (0,0) circle(4);
 %     \draw[->] (O) -- (B) node[below]{$x$};
 %     \draw[->] (O) -- (A) node[left]{$y$};
@@ -279,23 +279,23 @@ Un point matériel mobile $M$ se meut circulairement s'il ce déplace sur un cer
 
 En notant $R$ le rayon du cercle parcouru par $M$ et $O$ son centre, si $s=0$ lorsque $\theta=0$ alors $s=R\theta$, $\dot{s}=R\dot{\theta}$ et $\ddot{s}=R\ddot{\theta}$.
 
-Le vecteur \emph{vitesse angulaire} est $\vect{\omega}=\dot{\theta}\uz$. Sa norme vaut $\omega=\frac{v}{R}$ et elle s'exprime en $\si{rad\per s}$. 
+Le vecteur \emph{vitesse angulaire} est $\vv{\omega}=\dot{\theta}\uz$. Sa norme vaut $\omega=\frac{v}{R}$ et elle s'exprime en $\si{rad\per s}$. 
 
 Le vecteur vitesse est 
 \begin{equation}
- \vect{v}=\dot{s}\utheta=R\dot{\theta} \utheta= \vect{\omega} \wedge \vect{OM}.
+ \vv{v}=\dot{s}\utheta=R\dot{\theta} \utheta= \vv{\omega} \wedge \vv{OM}.
 \end{equation}
 C'est le moment en $M$ du vecteur vitesse angulaire représenté en $O$.
 
 Le vecteur accélération est
 \begin{equation}
-\vect{a}=-R\dot{\theta}^2\ur +R\ddot{\theta}\utheta=-\frac{v^2}{R}\ur+\ddot{s}\utheta.  
+\vv{a}=-R\dot{\theta}^2\ur +R\ddot{\theta}\utheta=-\frac{v^2}{R}\ur+\ddot{s}\utheta.  
 \end{equation}
 On constate que l'accélération normale est orientée vers le centre du cercle.
 
-Si le mouvement est circulaire uniforme, alors l'accélération angulaire $\ddot{\theta}$ est nulle. Le vecteur vitesse angulaire $\vect{\omega}$ est constant, l'accélération est donc normale~:
+Si le mouvement est circulaire uniforme, alors l'accélération angulaire $\ddot{\theta}$ est nulle. Le vecteur vitesse angulaire $\vv{\omega}$ est constant, l'accélération est donc normale~:
 \begin{equation}
-  \vect{a}=-R\dot{\theta}^2\ur =-\omega^2\vect{OM}.
+  \vv{a}=-R\dot{\theta}^2\ur =-\omega^2\vv{OM}.
 \end{equation}
 Le mouvement est périodique de période $T=\frac{2\pi}{\omega}=\frac{2\pi R}{v}$ et de fréquence $f=\frac{1}{T}=\frac{\omega}{2\pi}=\frac{v}{2\pi R}$.
 
@@ -305,9 +305,9 @@ Le mouvement est périodique de période $T=\frac{2\pi}{\omega}=\frac{2\pi R}{v}
 \subsection{Définition}
 \label{chap1-subsec:defprodvec}
 
-Soit la base $(\vu,\vv,\vw)$ formant un trièdre direct. Soient deux vecteurs $\vU$ et $\vV$ de coordonnées respectives dans cette base $(U_1,U_2,U_3)$ et $(V_1,V_2,V_3)$. Le produit vectoriel est donné par
+Soit la base $(\vu,\vvv,\vw)$ formant un trièdre direct. Soient deux vecteurs $\vU$ et $\vV$ de coordonnées respectives dans cette base $(U_1,U_2,U_3)$ et $(V_1,V_2,V_3)$. Le produit vectoriel est donné par
 \begin{equation}
-  \vU \wedge \vV = (U_2V_3-U_3V_2) \vu + (U_3V_1-U_1V_3) \vv + (U_1V_2-U_2V_1) \vw
+  \vU \wedge \vV = (U_2V_3-U_3V_2) \vu + (U_3V_1-U_1V_3) \vvv + (U_1V_2-U_2V_1) \vw
 \end{equation}
 
 \subsection{Propriétés du produit vectoriel}
@@ -327,7 +327,7 @@ et il est distributif à gauche et à droite par rapport à la somme
 \subsection{Norme, direction et sens du produit vectoriel, produit vectoriel nul}
 \label{chap1-sec:normedirectionetsensproduitvectoriel}
 
-En choisissant $(xOy)$ suivant le plan défini par les deux vecteurs avec $(O\vect{x})$ dans la direction et le sens de $\vU$, si $(\vU,\vV)=\alpha)$, leurs coordonnées sont, dans la base $(\ex,\ey,\ez)$ formant un trièdre trirectangle de sens direct~: $(U,0,0)$ et $(V\cos\alpha,V\sin\alpha,0)$. On a alors $\vU\wedge\vV = UV\sin\alpha\ez$. Le trièdre $(\vU,\vV,\vU\wedge\vV)$ est de sens direct.
+En choisissant $(xOy)$ suivant le plan défini par les deux vecteurs avec $(O\vv{x})$ dans la direction et le sens de $\vU$, si $(\vU,\vV)=\alpha$, leurs coordonnées sont, dans la base $(\ex,\ey,\ez)$ formant un trièdre trirectangle de sens direct~: $(U,0,0)$ et $(V\cos\alpha,V\sin\alpha,0)$. On a alors $\vU\wedge\vV = UV\sin\alpha\ez$. Le trièdre $(\vU,\vV,\vU\wedge\vV)$ est de sens direct.
 
 Le produit vectoriel est nul si et seulement si la famille $(\vU,\vV)$ est liée, c'est-à-dire si et seulement s'ils sont colinéaires ou l'un des deux est nul.
 
@@ -338,7 +338,7 @@ On appelle vecteur lié un vecteur représentant une caractéristique physique d
 
 Le moment en $P$ du vecteur $\vU$ lié au point $M$ est par définition
 \begin{equation}
-  \Mom{P}{\vU}=\vect{PM}\wedge\vU.
+  \Mom{P}{\vU}=\vv{PM}\wedge\vU.
 \end{equation}
 
 \section{Exercices}
@@ -356,7 +356,7 @@ Le moment en $P$ du vecteur $\vU$ lié au point $M$ est par définition
 \end{exercice}
 %
 \begin{exercice}[Exemple de mouvement circulaire]
-  Un point $M$ se déplace sur un cercle de centre $O$ et de rayon $R=\SI{1}{m}$. Sa position est repérée par l'angle $\theta=(\vect{OM_0},\vect{OM})$ et la loi horaire de ce mouvement est $\theta=\pi\sin\left(\frac{2\pi t}{T}\right)$ avec une période de $T=\SI{1}{s}$.
+  Un point $M$ se déplace sur un cercle de centre $O$ et de rayon $R=\SI{1}{m}$. Sa position est repérée par l'angle $\theta=(\vv{OM_0},\vv{OM})$ et la loi horaire de ce mouvement est $\theta=\pi\sin\left(\frac{2\pi t}{T}\right)$ avec une période de $T=\SI{1}{s}$.
   \begin{enumerate}
   \item À quelle date le mobile $M$ passe-t-il pour la première fois en $M_1$ d'angle polaire $\theta_1=\frac{\pi}{2}$ ?
   \item Calculez numériquement les coordonnées radiale et orthoradiale du vecteur vitesse à la date $t_1$ à laquelle $M$ est en $M_1$.

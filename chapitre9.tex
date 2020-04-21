@@ -14,7 +14,7 @@ Elle se fait par frottement, contact ou influence. Elle permet de distinguer iso
 \subsection{Définition}
 \label{chap9-subsec:definition}
 
-Une grandeur physique est dite ``mesurable'' si et seulement si l'on peut définir l'égalité et la somme ou le rapport de deux valeurs de cette grandeur. Soient deux charges $q$ et $q'$ ponctuelles, fixes, placées successivement au même point, dans le même environnement électrique (1) et subissant les forces électrostatiques $\vect{F_1}$ et $\vect{F'_1}$, puis dans un autre environnement (2), $\vect{F_2}$ et $\vect{F'_2}$ etc.
+Une grandeur physique est dite ``mesurable'' si et seulement si l'on peut définir l'égalité et la somme ou le rapport de deux valeurs de cette grandeur. Soient deux charges $q$ et $q'$ ponctuelles, fixes, placées successivement au même point, dans le même environnement électrique (1) et subissant les forces électrostatiques $\vv{F_1}$ et $\vv{F'_1}$, puis dans un autre environnement (2), $\vv{F_2}$ et $\vv{F'_2}$ etc.
 
 On peut constater par la mesure que $ \frac{F'_1}{F_1} = \frac{F'_2}{F_2} = ...$ Par définition, on pose $\abs{\frac{q'}{q}} = \frac{F'_1}{F_1}$.
 L'unité internationale de la charge électrique est le coulomb, c'est la charge qui traverse toute section d'un circuit parcourue par un courant de $\SI{1}{A}$ pendant une durée de $\SI{1}{s}$, donc $\SI{1}{C} = \SI{1}{A.s}$.
@@ -72,29 +72,29 @@ Avec des notations semblables, pour des courants circulant sur une surface, la d
 Soit une surface $\Sigma$ à travers laquelle circule un courant d'intensité algébrique $i$. $\si{A}=\si{C.s^{-1}}$ donc ceci signifie que $i$ est le nombre d'ampères, c'est-à-dire le nombre de coulombs qui traverse $\Sigma$ par seconde dans le sens de la flèche qui donne la convention de signe pour $i$.
 %% Inserer figure
 
-$\vect{\D S}$ représente un vecteur surface élémentaire de norme $\D S$ autour du point $M$ (aire élémentaire), normal à la surface $\Sigma$, orienté dans le sens de la flèche qui définit la convention de signe pour $i$. Si la densité volumique de charges mobiles, au voisinage de $M$ est $\rho$, et si leur vitesse moyenne est $\vv$, la densité volumique de courant est $\vj = \rho \vv$.
-Les charges mobiles contenues dans le cylindre de base , de génératrice $\vv \D t$, sont celles qui auront traversé la surface $\D S$ au bout du temps $\D t$. Le volume de ce cylindre est $\D \vect{S} \cdot \vv\D t$.
+$\vv{\D S}$ représente un vecteur surface élémentaire de norme $\D S$ autour du point $M$ (aire élémentaire), normal à la surface $\Sigma$, orienté dans le sens de la flèche qui définit la convention de signe pour $i$. Si la densité volumique de charges mobiles, au voisinage de $M$ est $\rho$, et si leur vitesse moyenne est $\vv$, la densité volumique de courant est $\vj = \rho \vv$.
+Les charges mobiles contenues dans le cylindre de base , de génératrice $\vv \D t$, sont celles qui auront traversé la surface $\D S$ au bout du temps $\D t$. Le volume de ce cylindre est $\D \vv{S} \cdot \vv\D t$.
 La charge qui traverse $\D S$ pendant le temps $\D t$ a donc pour expression
 \begin{equation}
-  \D q = \rho \D \vect{S} \cdot \vv \D t = \vj \cdot \D S \D t.
+  \D q = \rho \D \vv{S} \cdot \vv \D t = \vj \cdot \D S \D t.
 \end{equation}
 
-L'intensité du courant traversant la surface $\D S$ dans le sens défini par la flèche est $\D i = \derived{q}{t} = \vj \cdot \D \vect{S}$.
+L'intensité du courant traversant la surface $\D S$ dans le sens défini par la flèche est $\D i = \derived{q}{t} = \vj \cdot \D \vv{S}$.
 Pour obtenir l'intensité totale du courant traversant la surface $\Sigma$, il faut additionner les intensités élémentaires qui traversent toutes les surfaces élémentaires dont la réunion constitue $\Sigma$.
-L'intensité du courant électrique traversant $\Sigma$ dans le sens défini par la flèche est donc le ``flux'' du vecteur densité volumique de courant à travers $\Sigma$~: $i = \iint_\Sigma \vj \cdot \D \vect{S}$.
+L'intensité du courant électrique traversant $\Sigma$ dans le sens défini par la flèche est donc le ``flux'' du vecteur densité volumique de courant à travers $\Sigma$~: $i = \iint_\Sigma \vj \cdot \D \vv{S}$.
 
-Dans le cas d'un courant surfacique (nappe de courant), pour évaluer le courant  traversant une ligne $\Gamma$, on fait correspondre à un élément de longueur $\D L$ de cette ligne un vecteur, normal à la ligne, dans le plan tangent à la surface où circule le courant et orienté dans le sens de la flèche qui définit la convention de signe pour l'intensité. L'élément $\D L$ est traversé parle courant d'intensité $\D i = \vj_S \cdot \D \vect{L}$ et l'intensité totale qui traverse la ligne $\Gamma$ est $i = \int_\Gamma \vj_S \cdot \D \vect{L}$.
+Dans le cas d'un courant surfacique (nappe de courant), pour évaluer le courant  traversant une ligne $\Gamma$, on fait correspondre à un élément de longueur $\D L$ de cette ligne un vecteur, normal à la ligne, dans le plan tangent à la surface où circule le courant et orienté dans le sens de la flèche qui définit la convention de signe pour l'intensité. L'élément $\D L$ est traversé parle courant d'intensité $\D i = \vj_S \cdot \D \vv{L}$ et l'intensité totale qui traverse la ligne $\Gamma$ est $i = \int_\Gamma \vj_S \cdot \D \vv{L}$.
 
 \section{Lignes de courant, tubes de courant}
 \label{chap9-sec:lignesdecourant}
 
 En chaque point d'une ligne de courant $\vj$ est tangent à  cette ligne. Les lignes de courant sont orientées dans le même sens que $\vj$. Ce sont donc les lignes de champ de la densité volumique de courant. Pour une nappe de courant, ce sont les lignes de champ de la densité surfacique de courant $\vj_S$.
 Les équations d'une ligne de courant sont telles que~: soit un point $M(x,y,z)$ sur une ligne de courant et un vecteur $\D M$ joignant $M$ à un point $M'$ infiniment voisins de $M$ sur la même ligne de courant.
-$\D \vect{M} = \D x \ux + \D y \uy + \D z \uz$ est parallèle à  $\vj = j_x \ux + j_y \uy + j_z \uz$ donc $\frac{\D x}{j_x} = \frac{\D y}{j_y} = \frac{\D z}{j_z}$. L'intégration de ces équations différentielles donne l'équation des lignes de courant.
+$\D \vv{M} = \D x \ux + \D y \uy + \D z \uz$ est parallèle à  $\vj = j_x \ux + j_y \uy + j_z \uz$ donc $\frac{\D x}{j_x} = \frac{\D y}{j_y} = \frac{\D z}{j_z}$. L'intégration de ces équations différentielles donne l'équation des lignes de courant.
 
 \emph{Un tube de courant s'appuie sur une courbe fermée et est limité par des lignes de courant.}
 
-Pour une portion de tube de courant limitée par les sections $\Sigma_1$ et $\Sigma_2$, avec $I_1$ courant entrant par $\Sigma_1$ et $I_2$ courant sortant par $\Sigma_2$. Le courant sortant par la paroi $T$ est nul car en chaque point de $T$, $\vj$ est normal à $\D \vect{S}$ et $\vj \cdot \D \vect{S} = 0$. Le courant $i$ sortant de cette portion de tube de courant est donc $i = I_2 - I_1$.
+Pour une portion de tube de courant limitée par les sections $\Sigma_1$ et $\Sigma_2$, avec $I_1$ courant entrant par $\Sigma_1$ et $I_2$ courant sortant par $\Sigma_2$. Le courant sortant par la paroi $T$ est nul car en chaque point de $T$, $\vj$ est normal à $\D \vv{S}$ et $\vj \cdot \D \vv{S} = 0$. Le courant $i$ sortant de cette portion de tube de courant est donc $i = I_2 - I_1$.
 
 \section{Régime stationnaire, approximation des régimes quasi-stationnaires (ARQS)}
 \label{chap9-sec:ARQS}
@@ -124,14 +124,14 @@ En ARQS, ces lois restent valables approximativement, mais les intensités varie
 \subsection{Potentiel électrostatique}
 \label{chap9-subsec:potentiel}
 
-Une répartition de charges (ponctuelles, volumiques, surfaciques ou linéiques) fixe et indépendante du temps crée un champ électrostatique. Le champ électrostatique en un point où une charge $q$ subit (ou subirait) la force électrostatique $\vF$  est $\vect{E} = \frac{\vF}{q}$, il ne dépend pas de $q$ mais de la disposition et des valeurs des charges qui créent ce champ. 
+Une répartition de charges (ponctuelles, volumiques, surfaciques ou linéiques) fixe et indépendante du temps crée un champ électrostatique. Le champ électrostatique en un point où une charge $q$ subit (ou subirait) la force électrostatique $\vF$  est $\vv{E} = \frac{\vF}{q}$, il ne dépend pas de $q$ mais de la disposition et des valeurs des charges qui créent ce champ. 
 
-\emph{Les forces électrostatiques sont conservatives donc elles dérivent d'un potentiel : l'énergie potentielle électrostatique}. Pour un déplacement $\D \vect{M}$ on a $\vF \cdot \D \vect{M}=\delta W = -\D E_p$ soit $ q \vect{E} \cdot \D \vect{M}=-\D E_p$ avec $q$ constante donc $\D \left(\frac{E_p}{q}\right) = -\vect{E} \cdot \D \vect{M}$.
-$V = \frac{E_p}{q}$ est le potentiel électrostatique au point $M$, il ne dépend pas de la charge $q$, ni même de la présence d'une charge électrique en $M$ puisque sa différentielle est $\D V = -\vect{E} \cdot \D \vect{M}$ et que $\vect{E}$ dépend des charges qui le créent et non de celle qui éventuellement le subit.
+\emph{Les forces électrostatiques sont conservatives donc elles dérivent d'un potentiel : l'énergie potentielle électrostatique}. Pour un déplacement $\D \vv{M}$ on a $\vF \cdot \D \vv{M}=\delta W = -\D E_p$ soit $ q \vv{E} \cdot \D \vv{M}=-\D E_p$ avec $q$ constante donc $\D \left(\frac{E_p}{q}\right) = -\vv{E} \cdot \D \vv{M}$.
+$V = \frac{E_p}{q}$ est le potentiel électrostatique au point $M$, il ne dépend pas de la charge $q$, ni même de la présence d'une charge électrique en $M$ puisque sa différentielle est $\D V = -\vv{E} \cdot \D \vv{M}$ et que $\vv{E}$ dépend des charges qui le créent et non de celle qui éventuellement le subit.
 
 Son unité internationale est le volt  $\si{V} = \si{J/C} =\si{W/A} = \si{kg.m^2.s^{-3}.A^{-1}}$. On peut donc définir le potentiel électrostatique par la formule
 \begin{equation}
- \D V = -\vect{E} \cdot \D \vect{M}.
+ \D V = -\vv{E} \cdot \D \vv{M}.
 \end{equation}
 Il en résulte que l'unité internationale du champ électrostatique est le volt par mètre : $\si{V/m}$.
 
@@ -140,16 +140,16 @@ Il en résulte que l'unité internationale du champ électrostatique est le volt
 \subsection{Surfaces équipotentielles}
 \label{chap9-subsec:surfacesequipotentielles}
 
-\emph{Une surface équipotentielle est une surface sur laquelle le potentiel électrique $V$ est uniforme}. Soient deux point $M_1$ et $M_2$ très voisins sur une surface équipotentielle. On note $\D \vect{M}=\vect{M_1M_2}$ et $dV= V_1 - V_2 = 0$, on a donc $\D V = -\vect{E}\cdot\D \vect{M} = 0$  donc $\vect{E} \perp \D \vect{M}$.
+\emph{Une surface équipotentielle est une surface sur laquelle le potentiel électrique $V$ est uniforme}. Soient deux point $M_1$ et $M_2$ très voisins sur une surface équipotentielle. On note $\D \vv{M}=\vv{M_1M_2}$ et $dV= V_1 - V_2 = 0$, on a donc $\D V = -\vv{E}\cdot\D \vv{M} = 0$  donc $\vv{E} \perp \D \vv{M}$.
 \emph{En un point d'une surface équipotentielle, le champ électrostatique est normal à la surface équipotentielle}.
 
 \subsection{Différence de potentiel électrostatique ou tension électrostatique}
 \label{chap9-subsec:differencedepotentielelectrostatique}
 
-\emph{La différence de potentiel électrostatique entre deux points} $M_1$ et $M_2$ est obtenue par intégration de la relation précédente :  $V_2 - V_1 = \int_{M_1}^{M_2} -\vect{E} \cdot \D \vect{M}$, cette intégrale est bien sûr indépendante du chemin suivi de $M_1$ à $M_2$ puisqu'on intègre une différentielle totale exacte : celle de V.
+\emph{La différence de potentiel électrostatique entre deux points} $M_1$ et $M_2$ est obtenue par intégration de la relation précédente :  $V_2 - V_1 = \int_{M_1}^{M_2} -\vv{E} \cdot \D \vv{M}$, cette intégrale est bien sûr indépendante du chemin suivi de $M_1$ à $M_2$ puisqu'on intègre une différentielle totale exacte : celle de V.
 
-La diminution du potentiel électrostatique entre $M_1$ et $M_2$ est donc égale à la circulation du champ électrostatique de $M_1$ à $M_2$: $V_1-V_2 = \int_{M_1}^{M_2} \vect{E} \cdot \D \vect{M}$.
-Dans le cas d'un champ électrostatique uniforme : $V_1-V_2 = \vect{E} \cdot \vect{M_1M_2}$.
+La diminution du potentiel électrostatique entre $M_1$ et $M_2$ est donc égale à la circulation du champ électrostatique de $M_1$ à $M_2$: $V_1-V_2 = \int_{M_1}^{M_2} \vv{E} \cdot \D \vv{M}$.
+Dans le cas d'un champ électrostatique uniforme : $V_1-V_2 = \vv{E} \cdot \vv{M_1M_2}$.
 La différence de potentiel électrostatique (d.d.p.) entre deux points est aussi nommée \emph{tension électrostatique entre ces deux points}. On peut la définir par une flèche :
 %mettre figure
 La tension $u$ définie par la flèche ci-dessus est $u=V_1-V_2$ (On peut aussi la noter $u_{12}$). Le travail de la force électrostatique subie par une charge ponctuelle $q$ se déplaçant de $M_1$ à $M_2$ peut donc s'écrire : $W_{1,2} = E_{p_1} - E_{p_2}$ avec $E_p = q V$ donc $W_{1,2} = q(V_1-V_2)$ ou  $W_{1,2} = q u$ si la flèche définissant $u$ va de $M_2$ vers $M_1$.
@@ -157,7 +157,7 @@ La tension $u$ définie par la flèche ci-dessus est $u=V_1-V_2$ (On peut aussi 
 \section{Cas de l'ARQS, différence de potentiel électrique (ddp) ou tension électrique}
 \label{chap9-sec:casdelARQS}
 
-Dans le cas d'un régime variable, les charges sont soumises à un champ électromagnétique, formé d'un champ électrique et d'un champ magnétique qui sont couplés (chacun dépend des variations temporelles de l'autre). Il existe toujours un potentiel $V$, nommé alors potentiel électrique, mais la relation $\D V = -\vect{E} \cdot \D \vect{M}$ n'est plus valable (voir cours de deuxième année).
+Dans le cas d'un régime variable, les charges sont soumises à un champ électromagnétique, formé d'un champ électrique et d'un champ magnétique qui sont couplés (chacun dépend des variations temporelles de l'autre). Il existe toujours un potentiel $V$, nommé alors potentiel électrique, mais la relation $\D V = -\vv{E} \cdot \D \vv{M}$ n'est plus valable (voir cours de deuxième année).
 On admettra que si le régime est lentement variable, c'est-à-dire quasi-stationnaire, les relations obtenues en électrostatique restent valables avec une bonne approximation.
 En ARQS : $V$ représente alors le potentiel électrique, $E_p$ l'énergie potentielle électrique (ou électrocinétique) et $W$ le travail de la force électrique agissant sur la charge ponctuelle $q$.
 
