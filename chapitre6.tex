@@ -74,7 +74,7 @@ Si le milieu 2 est plus réfringent que le milieu 1, le rayon lumineux se rappro
 \end{theo}
 
 \subsection{Réflexion totale et réfraction limite}
-\label{sec:chap6-subsec:reftotale}
+\label{chap6-subsec:reftotale}
 Soit un rayon lumineux passant du milieu 1 au milieu 2 plus réfringent ($n_{2/1}>1$). L'angle de réfraction est tel que $n_{2/1} \sin i_2 = \sin i_1$, donc
 \begin{equation}
   i_2 < \arcsin \left(\frac{1}{n_{2/1}} \right) = i_m.
@@ -96,4 +96,23 @@ La première loi de Descartes pour la réfraction implique que le trajet d'un te
 
 L'angle d'incidence sur la face d'entrée sera noté $i$ et l'angle de réfraction sur la face de sortie $i'$. L'angle $i$ est compté positivement lorsque le rayon incident est du même coté de la normale à la face d'entrée que la base du prisme et négativement s'il est du même côté que l'arête. De même pour l'angle $i'$, il est positif si le rayon émergeant est du même côté de la normale à la face de sortie que la base du prisme et négativement dans l'autre cas.
 
-L'angle de réfraction sur la face d''entrée sera noté $r$ et l'angle d'incidence sur la face de sortie sera noté $r'$. Les angles $r$ et $r'$ sont comptés positivement pour des rayons correspondants situés du même côté de la normale corres
+L'angle de réfraction sur la face d''entrée sera noté $r$ et l'angle d'incidence sur la face de sortie sera noté $r'$. Les angles $r$ et $r'$ sont comptés positivement pour des rayons correspondants situés du même côté de la normale correspondante que l'arête du prisme.
+
+\subsection{Les formules du prisme}
+\label{chap6-subsec:formulesprisme}
+
+Les deux premières formules traduisent la deuxième loi de Descartes pour la réfraction : $\sin(i) = n\sin(r)$ et $\sin(i') = n\sin(r')$. Les deux autres sont géométriques : $r+r'=A$ et $D=i+i'-A$. $D$ est la déviation, c'est l'angle entre le rayon incident et le rayon émergeant. \emph{Un rayon lumineux est toujours dévié vers la base du prisme, $D \geq 0$}.
+
+\subsection{Étude de la déviation en fonction de l'angle d'incidence}
+\label{chap6-subsec:etudedeviation}
+\paragraph{Existence d'un minimum de déviation}
+
+Pour une lumière monochromatique donnée et un prisme donnée, $n$ et $A$ sont constants. Les formules du prisme donnent alors:
+$r = \arcsin{\frac{\sin(i)}{n}}$ $r'=A - \arcsin{\frac{\sin(i)}{n}}$ $i' = \arcsin{n\sin\left(A-\arcsin{\frac{\sin(i)}{n}}\right)}$, donc :
+\begin{equation}
+  D = i + \arcsin{n\sin\left(A-\arcsin{\frac{\sin(i)}{n}}\right)} -A.
+\end{equation}
+Cette fonction, $D=f(i)$ est assez compliquée à étudier, mais on peut montrer qu'elle admet un seul extremum, qui est d'ailleurs un minimum. On peut le confirmer par expérience.
+
+\paragraph{Symétrie au minimum de déviation}
+La loi du retour inverse de la lumière implique que si $i$ prend la valeur $i_1$ et $i'$ la valeur $i_2$ pour un sens donné de la lumière, alors, pour le sens inverse, $i=i_2$ et $i'=i_1$. La déviation est la même pour les deux sens de la lumière. Donc, à chaque valeur de $D$, il correspond deux angles d'incidence possibles.
