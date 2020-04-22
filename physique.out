@@ -190,56 +190,57 @@
 \BOOKMARK [1][-]{section.10.7}{Loi de Joule}{chapter.10}% 190
 \BOOKMARK [2][-]{subsection.10.7.1}{Cas d'un conducteur ohmique}{section.10.7}% 191
 \BOOKMARK [2][-]{subsection.10.7.2}{Cas d'un dip\364le quelconque}{section.10.7}% 192
-\BOOKMARK [0][-]{chapter.11}{Dip\364les \351lectrocin\351tiques}{}% 193
-\BOOKMARK [1][-]{section.11.1}{Dip\364le \351lectrocin\351tique, puissance \351lectrocin\351tique}{chapter.11}% 194
-\BOOKMARK [2][-]{subsection.11.1.1}{Circuits \351tudi\351s}{section.11.1}% 195
-\BOOKMARK [2][-]{subsection.11.1.2}{Transformations d'\351nergie dans un dip\364le}{section.11.1}% 196
-\BOOKMARK [1][-]{section.11.2}{Caract\351ristique courant tension d'un dip\364le}{chapter.11}% 197
-\BOOKMARK [2][-]{subsection.11.2.1}{D\351finition}{section.11.2}% 198
-\BOOKMARK [2][-]{subsection.11.2.2}{Exemples de caract\351ristiques de dip\364les}{section.11.2}% 199
-\BOOKMARK [2][-]{subsection.11.2.3}{Dip\364les lin\351aires}{section.11.2}% 200
-\BOOKMARK [1][-]{section.11.3}{Dip\364les lin\351aires id\351aux}{chapter.11}% 201
-\BOOKMARK [2][-]{subsection.11.3.1}{Sources de tension}{section.11.3}% 202
-\BOOKMARK [2][-]{subsection.11.3.2}{Sources de courant}{section.11.3}% 203
-\BOOKMARK [2][-]{subsection.11.3.3}{Auto-inductance pure}{section.11.3}% 204
-\BOOKMARK [2][-]{subsection.11.3.4}{Capacit\351 pure}{section.11.3}% 205
-\BOOKMARK [1][-]{section.11.4}{Bobines et condensateurs r\351els}{chapter.11}% 206
-\BOOKMARK [2][-]{subsection.11.4.1}{Bobine de r\351sistance non n\351gligeable}{section.11.4}% 207
-\BOOKMARK [2][-]{subsection.11.4.2}{Condensateur r\351el avec conductance de fuite}{section.11.4}% 208
-\BOOKMARK [1][-]{section.11.5}{G\351n\351rateurs et r\351cepteurs lin\351aires}{chapter.11}% 209
-\BOOKMARK [2][-]{subsection.11.5.1}{Mod\350le de Th\351venin}{section.11.5}% 210
-\BOOKMARK [2][-]{subsection.11.5.2}{Mod\350le de Norton}{section.11.5}% 211
-\BOOKMARK [2][-]{subsection.11.5.3}{\311quivalence des deux mod\350les}{section.11.5}% 212
-\BOOKMARK [2][-]{subsection.11.5.4}{Puissance \351lectrocin\351tique re\347ue, puissance \351lectrocin\351tique engendr\351e, diff\351rents types de fonctionnement}{section.11.5}% 213
-\BOOKMARK [2][-]{subsection.11.5.5}{Cas d'un dip\364le non lin\351aire poss\351dant une caract\351ristique}{section.11.5}% 214
-\BOOKMARK [2][-]{subsection.11.5.6}{R\351cepteurs \(\351lectrolyseurs, moteurs \351lectriques\) non polaris\351s}{section.11.5}% 215
-\BOOKMARK [1][-]{section.11.6}{Loi d'Ohm g\351n\351ralis\351e, signe de la force \351lectro-motrice}{chapter.11}% 216
-\BOOKMARK [0][-]{chapter.12}{R\351gimes transitoires}{}% 217
-\BOOKMARK [1][-]{section.12.1}{R\351gime continu}{chapter.12}% 218
-\BOOKMARK [2][-]{subsection.12.1.1}{D\351finitions}{section.12.1}% 219
-\BOOKMARK [2][-]{subsection.12.1.2}{Loi de Pouillet}{section.12.1}% 220
-\BOOKMARK [2][-]{subsection.12.1.3}{Circuits complexes}{section.12.1}% 221
-\BOOKMARK [1][-]{section.12.2}{\311chelon de tension}{chapter.12}% 222
-\BOOKMARK [1][-]{section.12.3}{Dip\364le R, L s\351rie soumis \340 un \351chelon de tension}{chapter.12}% 223
-\BOOKMARK [2][-]{subsection.12.3.1}{Sch\351ma, \351quation diff\351rentielle}{section.12.3}% 224
-\BOOKMARK [2][-]{subsection.12.3.2}{\311tablissement du courant}{section.12.3}% 225
-\BOOKMARK [2][-]{subsection.12.3.3}{Constante de temps}{section.12.3}% 226
-\BOOKMARK [2][-]{subsection.12.3.4}{Arr\352t du courant}{section.12.3}% 227
-\BOOKMARK [2][-]{subsection.12.3.5}{Aspect \311nerg\351tique}{section.12.3}% 228
-\BOOKMARK [1][-]{section.12.4}{Dip\364le R, C s\351rie soumis \340 un \351chelon de tension}{chapter.12}% 229
-\BOOKMARK [2][-]{subsection.12.4.1}{Sch\351ma, \351quation diff\351rentielle}{section.12.4}% 230
-\BOOKMARK [2][-]{subsection.12.4.2}{Charge du condensateur}{section.12.4}% 231
-\BOOKMARK [2][-]{subsection.12.4.3}{Constante de temps}{section.12.4}% 232
-\BOOKMARK [2][-]{subsection.12.4.4}{D\351charge du condensateur}{section.12.4}% 233
-\BOOKMARK [2][-]{subsection.12.4.5}{Aspect \351nerg\351tique}{section.12.4}% 234
-\BOOKMARK [1][-]{section.12.5}{R\351gimes propres du circuit RLC s\351rie}{chapter.12}% 235
-\BOOKMARK [2][-]{subsection.12.5.1}{\311quation diff\351rentielle}{section.12.5}% 236
-\BOOKMARK [2][-]{subsection.12.5.2}{R\351gime ap\351riodique}{section.12.5}% 237
-\BOOKMARK [2][-]{subsection.12.5.3}{R\351gime critique}{section.12.5}% 238
-\BOOKMARK [2][-]{subsection.12.5.4}{R\351gime pseudo-p\351riodique \(ou sinuso\357dal amorti\)}{section.12.5}% 239
-\BOOKMARK [2][-]{subsection.12.5.5}{Aspects \351nerg\351tiques, facteur de qualit\351}{section.12.5}% 240
-\BOOKMARK [1][-]{section.12.6}{R\351ponse d'un di\364le R,L,C s\351rie \340 un \351chelon de tension}{chapter.12}% 241
-\BOOKMARK [2][-]{subsection.12.6.1}{\311quation diff\351rentielle}{section.12.6}% 242
-\BOOKMARK [2][-]{subsection.12.6.2}{R\351gime pseudo p\351riodique}{section.12.6}% 243
-\BOOKMARK [2][-]{subsection.12.6.3}{Aspects \351nerg\351tiques}{section.12.6}% 244
-\BOOKMARK [2][-]{subsection.12.6.4}{R\351gime propre et r\351gime transitoire}{section.12.6}% 245
+\BOOKMARK [1][-]{section.10.8}{Exercices}{chapter.10}% 193
+\BOOKMARK [0][-]{chapter.11}{Dip\364les \351lectrocin\351tiques}{}% 194
+\BOOKMARK [1][-]{section.11.1}{Dip\364le \351lectrocin\351tique, puissance \351lectrocin\351tique}{chapter.11}% 195
+\BOOKMARK [2][-]{subsection.11.1.1}{Circuits \351tudi\351s}{section.11.1}% 196
+\BOOKMARK [2][-]{subsection.11.1.2}{Transformations d'\351nergie dans un dip\364le}{section.11.1}% 197
+\BOOKMARK [1][-]{section.11.2}{Caract\351ristique courant tension d'un dip\364le}{chapter.11}% 198
+\BOOKMARK [2][-]{subsection.11.2.1}{D\351finition}{section.11.2}% 199
+\BOOKMARK [2][-]{subsection.11.2.2}{Exemples de caract\351ristiques de dip\364les}{section.11.2}% 200
+\BOOKMARK [2][-]{subsection.11.2.3}{Dip\364les lin\351aires}{section.11.2}% 201
+\BOOKMARK [1][-]{section.11.3}{Dip\364les lin\351aires id\351aux}{chapter.11}% 202
+\BOOKMARK [2][-]{subsection.11.3.1}{Sources de tension}{section.11.3}% 203
+\BOOKMARK [2][-]{subsection.11.3.2}{Sources de courant}{section.11.3}% 204
+\BOOKMARK [2][-]{subsection.11.3.3}{Auto-inductance pure}{section.11.3}% 205
+\BOOKMARK [2][-]{subsection.11.3.4}{Capacit\351 pure}{section.11.3}% 206
+\BOOKMARK [1][-]{section.11.4}{Bobines et condensateurs r\351els}{chapter.11}% 207
+\BOOKMARK [2][-]{subsection.11.4.1}{Bobine de r\351sistance non n\351gligeable}{section.11.4}% 208
+\BOOKMARK [2][-]{subsection.11.4.2}{Condensateur r\351el avec conductance de fuite}{section.11.4}% 209
+\BOOKMARK [1][-]{section.11.5}{G\351n\351rateurs et r\351cepteurs lin\351aires}{chapter.11}% 210
+\BOOKMARK [2][-]{subsection.11.5.1}{Mod\350le de Th\351venin}{section.11.5}% 211
+\BOOKMARK [2][-]{subsection.11.5.2}{Mod\350le de Norton}{section.11.5}% 212
+\BOOKMARK [2][-]{subsection.11.5.3}{\311quivalence des deux mod\350les}{section.11.5}% 213
+\BOOKMARK [2][-]{subsection.11.5.4}{Puissance \351lectrocin\351tique re\347ue, puissance \351lectrocin\351tique engendr\351e, diff\351rents types de fonctionnement}{section.11.5}% 214
+\BOOKMARK [2][-]{subsection.11.5.5}{Cas d'un dip\364le non lin\351aire poss\351dant une caract\351ristique}{section.11.5}% 215
+\BOOKMARK [2][-]{subsection.11.5.6}{R\351cepteurs \(\351lectrolyseurs, moteurs \351lectriques\) non polaris\351s}{section.11.5}% 216
+\BOOKMARK [1][-]{section.11.6}{Loi d'Ohm g\351n\351ralis\351e, signe de la force \351lectro-motrice}{chapter.11}% 217
+\BOOKMARK [0][-]{chapter.12}{R\351gimes transitoires}{}% 218
+\BOOKMARK [1][-]{section.12.1}{R\351gime continu}{chapter.12}% 219
+\BOOKMARK [2][-]{subsection.12.1.1}{D\351finitions}{section.12.1}% 220
+\BOOKMARK [2][-]{subsection.12.1.2}{Loi de Pouillet}{section.12.1}% 221
+\BOOKMARK [2][-]{subsection.12.1.3}{Circuits complexes}{section.12.1}% 222
+\BOOKMARK [1][-]{section.12.2}{\311chelon de tension}{chapter.12}% 223
+\BOOKMARK [1][-]{section.12.3}{Dip\364le R, L s\351rie soumis \340 un \351chelon de tension}{chapter.12}% 224
+\BOOKMARK [2][-]{subsection.12.3.1}{Sch\351ma, \351quation diff\351rentielle}{section.12.3}% 225
+\BOOKMARK [2][-]{subsection.12.3.2}{\311tablissement du courant}{section.12.3}% 226
+\BOOKMARK [2][-]{subsection.12.3.3}{Constante de temps}{section.12.3}% 227
+\BOOKMARK [2][-]{subsection.12.3.4}{Arr\352t du courant}{section.12.3}% 228
+\BOOKMARK [2][-]{subsection.12.3.5}{Aspect \311nerg\351tique}{section.12.3}% 229
+\BOOKMARK [1][-]{section.12.4}{Dip\364le R, C s\351rie soumis \340 un \351chelon de tension}{chapter.12}% 230
+\BOOKMARK [2][-]{subsection.12.4.1}{Sch\351ma, \351quation diff\351rentielle}{section.12.4}% 231
+\BOOKMARK [2][-]{subsection.12.4.2}{Charge du condensateur}{section.12.4}% 232
+\BOOKMARK [2][-]{subsection.12.4.3}{Constante de temps}{section.12.4}% 233
+\BOOKMARK [2][-]{subsection.12.4.4}{D\351charge du condensateur}{section.12.4}% 234
+\BOOKMARK [2][-]{subsection.12.4.5}{Aspect \351nerg\351tique}{section.12.4}% 235
+\BOOKMARK [1][-]{section.12.5}{R\351gimes propres du circuit RLC s\351rie}{chapter.12}% 236
+\BOOKMARK [2][-]{subsection.12.5.1}{\311quation diff\351rentielle}{section.12.5}% 237
+\BOOKMARK [2][-]{subsection.12.5.2}{R\351gime ap\351riodique}{section.12.5}% 238
+\BOOKMARK [2][-]{subsection.12.5.3}{R\351gime critique}{section.12.5}% 239
+\BOOKMARK [2][-]{subsection.12.5.4}{R\351gime pseudo-p\351riodique \(ou sinuso\357dal amorti\)}{section.12.5}% 240
+\BOOKMARK [2][-]{subsection.12.5.5}{Aspects \351nerg\351tiques, facteur de qualit\351}{section.12.5}% 241
+\BOOKMARK [1][-]{section.12.6}{R\351ponse d'un di\364le R,L,C s\351rie \340 un \351chelon de tension}{chapter.12}% 242
+\BOOKMARK [2][-]{subsection.12.6.1}{\311quation diff\351rentielle}{section.12.6}% 243
+\BOOKMARK [2][-]{subsection.12.6.2}{R\351gime pseudo p\351riodique}{section.12.6}% 244
+\BOOKMARK [2][-]{subsection.12.6.3}{Aspects \351nerg\351tiques}{section.12.6}% 245
+\BOOKMARK [2][-]{subsection.12.6.4}{R\351gime propre et r\351gime transitoire}{section.12.6}% 246

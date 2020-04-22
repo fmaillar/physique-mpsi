@@ -200,56 +200,57 @@
 \contentsline {section}{\numberline {10.7}Loi de Joule}{101}{section.10.7}% 
 \contentsline {subsection}{\numberline {10.7.1}Cas d'un conducteur ohmique}{101}{subsection.10.7.1}% 
 \contentsline {subsection}{\numberline {10.7.2}Cas d'un dip\IeC {\^o}le quelconque}{102}{subsection.10.7.2}% 
-\contentsline {chapter}{\numberline {11}Dip\IeC {\^o}les \IeC {\'e}lectrocin\IeC {\'e}tiques}{103}{chapter.11}% 
-\contentsline {section}{\numberline {11.1}Dip\IeC {\^o}le \IeC {\'e}lectrocin\IeC {\'e}tique, puissance \IeC {\'e}lectrocin\IeC {\'e}tique}{104}{section.11.1}% 
-\contentsline {subsection}{\numberline {11.1.1}Circuits \IeC {\'e}tudi\IeC {\'e}s}{104}{subsection.11.1.1}% 
-\contentsline {subsection}{\numberline {11.1.2}Transformations d'\IeC {\'e}nergie dans un dip\IeC {\^o}le}{104}{subsection.11.1.2}% 
-\contentsline {section}{\numberline {11.2}Caract\IeC {\'e}ristique courant tension d'un dip\IeC {\^o}le}{105}{section.11.2}% 
-\contentsline {subsection}{\numberline {11.2.1}D\IeC {\'e}finition}{105}{subsection.11.2.1}% 
-\contentsline {subsection}{\numberline {11.2.2}Exemples de caract\IeC {\'e}ristiques de dip\IeC {\^o}les}{105}{subsection.11.2.2}% 
-\contentsline {subsection}{\numberline {11.2.3}Dip\IeC {\^o}les lin\IeC {\'e}aires}{105}{subsection.11.2.3}% 
-\contentsline {section}{\numberline {11.3}Dip\IeC {\^o}les lin\IeC {\'e}aires id\IeC {\'e}aux}{105}{section.11.3}% 
-\contentsline {subsection}{\numberline {11.3.1}Sources de tension}{105}{subsection.11.3.1}% 
-\contentsline {subsection}{\numberline {11.3.2}Sources de courant}{106}{subsection.11.3.2}% 
-\contentsline {subsection}{\numberline {11.3.3}Auto-inductance pure}{106}{subsection.11.3.3}% 
-\contentsline {subsection}{\numberline {11.3.4}Capacit\IeC {\'e} pure}{106}{subsection.11.3.4}% 
-\contentsline {section}{\numberline {11.4}Bobines et condensateurs r\IeC {\'e}els}{107}{section.11.4}% 
-\contentsline {subsection}{\numberline {11.4.1}Bobine de r\IeC {\'e}sistance non n\IeC {\'e}gligeable}{107}{subsection.11.4.1}% 
-\contentsline {subsection}{\numberline {11.4.2}Condensateur r\IeC {\'e}el avec conductance de fuite}{107}{subsection.11.4.2}% 
-\contentsline {section}{\numberline {11.5}G\IeC {\'e}n\IeC {\'e}rateurs et r\IeC {\'e}cepteurs lin\IeC {\'e}aires}{107}{section.11.5}% 
-\contentsline {subsection}{\numberline {11.5.1}Mod\IeC {\`e}le de Th\IeC {\'e}venin}{107}{subsection.11.5.1}% 
-\contentsline {subsection}{\numberline {11.5.2}Mod\IeC {\`e}le de Norton}{107}{subsection.11.5.2}% 
-\contentsline {subsection}{\numberline {11.5.3}\IeC {\'E}quivalence des deux mod\IeC {\`e}les}{107}{subsection.11.5.3}% 
-\contentsline {subsection}{\numberline {11.5.4}Puissance \IeC {\'e}lectrocin\IeC {\'e}tique re\IeC {\c c}ue, puissance \IeC {\'e}lectrocin\IeC {\'e}tique engendr\IeC {\'e}e, diff\IeC {\'e}rents types de fonctionnement}{108}{subsection.11.5.4}% 
-\contentsline {subsection}{\numberline {11.5.5}Cas d'un dip\IeC {\^o}le non lin\IeC {\'e}aire poss\IeC {\'e}dant une caract\IeC {\'e}ristique}{108}{subsection.11.5.5}% 
-\contentsline {subsection}{\numberline {11.5.6}R\IeC {\'e}cepteurs (\IeC {\'e}lectrolyseurs, moteurs \IeC {\'e}lectriques) non polaris\IeC {\'e}s}{109}{subsection.11.5.6}% 
-\contentsline {section}{\numberline {11.6}Loi d'Ohm g\IeC {\'e}n\IeC {\'e}ralis\IeC {\'e}e, signe de la force \IeC {\'e}lectro-motrice}{109}{section.11.6}% 
-\contentsline {chapter}{\numberline {12}R\IeC {\'e}gimes transitoires}{111}{chapter.12}% 
-\contentsline {section}{\numberline {12.1}R\IeC {\'e}gime continu}{112}{section.12.1}% 
-\contentsline {subsection}{\numberline {12.1.1}D\IeC {\'e}finitions}{112}{subsection.12.1.1}% 
-\contentsline {subsection}{\numberline {12.1.2}Loi de Pouillet}{112}{subsection.12.1.2}% 
-\contentsline {subsection}{\numberline {12.1.3}Circuits complexes}{113}{subsection.12.1.3}% 
-\contentsline {section}{\numberline {12.2}\IeC {\'E}chelon de tension}{113}{section.12.2}% 
-\contentsline {section}{\numberline {12.3}Dip\IeC {\^o}le R, L s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{113}{section.12.3}% 
-\contentsline {subsection}{\numberline {12.3.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{113}{subsection.12.3.1}% 
-\contentsline {subsection}{\numberline {12.3.2}\IeC {\'E}tablissement du courant}{114}{subsection.12.3.2}% 
-\contentsline {subsection}{\numberline {12.3.3}Constante de temps}{114}{subsection.12.3.3}% 
-\contentsline {subsection}{\numberline {12.3.4}Arr\IeC {\^e}t du courant}{115}{subsection.12.3.4}% 
-\contentsline {subsection}{\numberline {12.3.5}Aspect \IeC {\'E}nerg\IeC {\'e}tique}{115}{subsection.12.3.5}% 
-\contentsline {section}{\numberline {12.4}Dip\IeC {\^o}le R, C s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{116}{section.12.4}% 
-\contentsline {subsection}{\numberline {12.4.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{116}{subsection.12.4.1}% 
-\contentsline {subsection}{\numberline {12.4.2}Charge du condensateur}{116}{subsection.12.4.2}% 
-\contentsline {subsection}{\numberline {12.4.3}Constante de temps}{116}{subsection.12.4.3}% 
-\contentsline {subsection}{\numberline {12.4.4}D\IeC {\'e}charge du condensateur}{117}{subsection.12.4.4}% 
-\contentsline {subsection}{\numberline {12.4.5}Aspect \IeC {\'e}nerg\IeC {\'e}tique}{117}{subsection.12.4.5}% 
-\contentsline {section}{\numberline {12.5}R\IeC {\'e}gimes propres du circuit RLC s\IeC {\'e}rie}{117}{section.12.5}% 
-\contentsline {subsection}{\numberline {12.5.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{117}{subsection.12.5.1}% 
-\contentsline {subsection}{\numberline {12.5.2}R\IeC {\'e}gime ap\IeC {\'e}riodique}{118}{subsection.12.5.2}% 
-\contentsline {subsection}{\numberline {12.5.3}R\IeC {\'e}gime critique}{119}{subsection.12.5.3}% 
-\contentsline {subsection}{\numberline {12.5.4}R\IeC {\'e}gime pseudo-p\IeC {\'e}riodique (ou sinuso\IeC {\"\i }dal amorti)}{119}{subsection.12.5.4}% 
-\contentsline {subsection}{\numberline {12.5.5}Aspects \IeC {\'e}nerg\IeC {\'e}tiques, facteur de qualit\IeC {\'e}}{120}{subsection.12.5.5}% 
-\contentsline {section}{\numberline {12.6}R\IeC {\'e}ponse d'un di\IeC {\^o}le R,L,C s\IeC {\'e}rie \IeC {\`a} un \IeC {\'e}chelon de tension}{121}{section.12.6}% 
-\contentsline {subsection}{\numberline {12.6.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{121}{subsection.12.6.1}% 
-\contentsline {subsection}{\numberline {12.6.2}R\IeC {\'e}gime pseudo p\IeC {\'e}riodique}{122}{subsection.12.6.2}% 
-\contentsline {subsection}{\numberline {12.6.3}Aspects \IeC {\'e}nerg\IeC {\'e}tiques}{122}{subsection.12.6.3}% 
-\contentsline {subsection}{\numberline {12.6.4}R\IeC {\'e}gime propre et r\IeC {\'e}gime transitoire}{122}{subsection.12.6.4}% 
+\contentsline {section}{\numberline {10.8}Exercices}{102}{section.10.8}% 
+\contentsline {chapter}{\numberline {11}Dip\IeC {\^o}les \IeC {\'e}lectrocin\IeC {\'e}tiques}{105}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}Dip\IeC {\^o}le \IeC {\'e}lectrocin\IeC {\'e}tique, puissance \IeC {\'e}lectrocin\IeC {\'e}tique}{106}{section.11.1}% 
+\contentsline {subsection}{\numberline {11.1.1}Circuits \IeC {\'e}tudi\IeC {\'e}s}{106}{subsection.11.1.1}% 
+\contentsline {subsection}{\numberline {11.1.2}Transformations d'\IeC {\'e}nergie dans un dip\IeC {\^o}le}{106}{subsection.11.1.2}% 
+\contentsline {section}{\numberline {11.2}Caract\IeC {\'e}ristique courant tension d'un dip\IeC {\^o}le}{107}{section.11.2}% 
+\contentsline {subsection}{\numberline {11.2.1}D\IeC {\'e}finition}{107}{subsection.11.2.1}% 
+\contentsline {subsection}{\numberline {11.2.2}Exemples de caract\IeC {\'e}ristiques de dip\IeC {\^o}les}{107}{subsection.11.2.2}% 
+\contentsline {subsection}{\numberline {11.2.3}Dip\IeC {\^o}les lin\IeC {\'e}aires}{107}{subsection.11.2.3}% 
+\contentsline {section}{\numberline {11.3}Dip\IeC {\^o}les lin\IeC {\'e}aires id\IeC {\'e}aux}{107}{section.11.3}% 
+\contentsline {subsection}{\numberline {11.3.1}Sources de tension}{107}{subsection.11.3.1}% 
+\contentsline {subsection}{\numberline {11.3.2}Sources de courant}{108}{subsection.11.3.2}% 
+\contentsline {subsection}{\numberline {11.3.3}Auto-inductance pure}{108}{subsection.11.3.3}% 
+\contentsline {subsection}{\numberline {11.3.4}Capacit\IeC {\'e} pure}{108}{subsection.11.3.4}% 
+\contentsline {section}{\numberline {11.4}Bobines et condensateurs r\IeC {\'e}els}{109}{section.11.4}% 
+\contentsline {subsection}{\numberline {11.4.1}Bobine de r\IeC {\'e}sistance non n\IeC {\'e}gligeable}{109}{subsection.11.4.1}% 
+\contentsline {subsection}{\numberline {11.4.2}Condensateur r\IeC {\'e}el avec conductance de fuite}{109}{subsection.11.4.2}% 
+\contentsline {section}{\numberline {11.5}G\IeC {\'e}n\IeC {\'e}rateurs et r\IeC {\'e}cepteurs lin\IeC {\'e}aires}{109}{section.11.5}% 
+\contentsline {subsection}{\numberline {11.5.1}Mod\IeC {\`e}le de Th\IeC {\'e}venin}{109}{subsection.11.5.1}% 
+\contentsline {subsection}{\numberline {11.5.2}Mod\IeC {\`e}le de Norton}{109}{subsection.11.5.2}% 
+\contentsline {subsection}{\numberline {11.5.3}\IeC {\'E}quivalence des deux mod\IeC {\`e}les}{109}{subsection.11.5.3}% 
+\contentsline {subsection}{\numberline {11.5.4}Puissance \IeC {\'e}lectrocin\IeC {\'e}tique re\IeC {\c c}ue, puissance \IeC {\'e}lectrocin\IeC {\'e}tique engendr\IeC {\'e}e, diff\IeC {\'e}rents types de fonctionnement}{110}{subsection.11.5.4}% 
+\contentsline {subsection}{\numberline {11.5.5}Cas d'un dip\IeC {\^o}le non lin\IeC {\'e}aire poss\IeC {\'e}dant une caract\IeC {\'e}ristique}{110}{subsection.11.5.5}% 
+\contentsline {subsection}{\numberline {11.5.6}R\IeC {\'e}cepteurs (\IeC {\'e}lectrolyseurs, moteurs \IeC {\'e}lectriques) non polaris\IeC {\'e}s}{111}{subsection.11.5.6}% 
+\contentsline {section}{\numberline {11.6}Loi d'Ohm g\IeC {\'e}n\IeC {\'e}ralis\IeC {\'e}e, signe de la force \IeC {\'e}lectro-motrice}{111}{section.11.6}% 
+\contentsline {chapter}{\numberline {12}R\IeC {\'e}gimes transitoires}{113}{chapter.12}% 
+\contentsline {section}{\numberline {12.1}R\IeC {\'e}gime continu}{114}{section.12.1}% 
+\contentsline {subsection}{\numberline {12.1.1}D\IeC {\'e}finitions}{114}{subsection.12.1.1}% 
+\contentsline {subsection}{\numberline {12.1.2}Loi de Pouillet}{114}{subsection.12.1.2}% 
+\contentsline {subsection}{\numberline {12.1.3}Circuits complexes}{115}{subsection.12.1.3}% 
+\contentsline {section}{\numberline {12.2}\IeC {\'E}chelon de tension}{115}{section.12.2}% 
+\contentsline {section}{\numberline {12.3}Dip\IeC {\^o}le R, L s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{115}{section.12.3}% 
+\contentsline {subsection}{\numberline {12.3.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{115}{subsection.12.3.1}% 
+\contentsline {subsection}{\numberline {12.3.2}\IeC {\'E}tablissement du courant}{116}{subsection.12.3.2}% 
+\contentsline {subsection}{\numberline {12.3.3}Constante de temps}{116}{subsection.12.3.3}% 
+\contentsline {subsection}{\numberline {12.3.4}Arr\IeC {\^e}t du courant}{117}{subsection.12.3.4}% 
+\contentsline {subsection}{\numberline {12.3.5}Aspect \IeC {\'E}nerg\IeC {\'e}tique}{117}{subsection.12.3.5}% 
+\contentsline {section}{\numberline {12.4}Dip\IeC {\^o}le R, C s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{118}{section.12.4}% 
+\contentsline {subsection}{\numberline {12.4.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{118}{subsection.12.4.1}% 
+\contentsline {subsection}{\numberline {12.4.2}Charge du condensateur}{118}{subsection.12.4.2}% 
+\contentsline {subsection}{\numberline {12.4.3}Constante de temps}{118}{subsection.12.4.3}% 
+\contentsline {subsection}{\numberline {12.4.4}D\IeC {\'e}charge du condensateur}{119}{subsection.12.4.4}% 
+\contentsline {subsection}{\numberline {12.4.5}Aspect \IeC {\'e}nerg\IeC {\'e}tique}{119}{subsection.12.4.5}% 
+\contentsline {section}{\numberline {12.5}R\IeC {\'e}gimes propres du circuit RLC s\IeC {\'e}rie}{119}{section.12.5}% 
+\contentsline {subsection}{\numberline {12.5.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{119}{subsection.12.5.1}% 
+\contentsline {subsection}{\numberline {12.5.2}R\IeC {\'e}gime ap\IeC {\'e}riodique}{120}{subsection.12.5.2}% 
+\contentsline {subsection}{\numberline {12.5.3}R\IeC {\'e}gime critique}{121}{subsection.12.5.3}% 
+\contentsline {subsection}{\numberline {12.5.4}R\IeC {\'e}gime pseudo-p\IeC {\'e}riodique (ou sinuso\IeC {\"\i }dal amorti)}{121}{subsection.12.5.4}% 
+\contentsline {subsection}{\numberline {12.5.5}Aspects \IeC {\'e}nerg\IeC {\'e}tiques, facteur de qualit\IeC {\'e}}{122}{subsection.12.5.5}% 
+\contentsline {section}{\numberline {12.6}R\IeC {\'e}ponse d'un di\IeC {\^o}le R,L,C s\IeC {\'e}rie \IeC {\`a} un \IeC {\'e}chelon de tension}{123}{section.12.6}% 
+\contentsline {subsection}{\numberline {12.6.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{123}{subsection.12.6.1}% 
+\contentsline {subsection}{\numberline {12.6.2}R\IeC {\'e}gime pseudo p\IeC {\'e}riodique}{124}{subsection.12.6.2}% 
+\contentsline {subsection}{\numberline {12.6.3}Aspects \IeC {\'e}nerg\IeC {\'e}tiques}{124}{subsection.12.6.3}% 
+\contentsline {subsection}{\numberline {12.6.4}R\IeC {\'e}gime propre et r\IeC {\'e}gime transitoire}{124}{subsection.12.6.4}% 

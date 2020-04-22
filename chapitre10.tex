@@ -193,7 +193,7 @@ Avec une conductance de charge, il faut remplacer $G_2$ par la conductance équi
 
 \emph{Dans un conducteur ohmique toute l'énergie électrocinétique reçue est transformée en énergie thermique. En régime stationnaire, cette énergie thermique est intégralement cédée au milieu extérieur sous forme de chaleur}, puisque la température du conducteur est fixe, de même bie sûr que l'état physique et la composition chimique du conducteur.
 
-Par contre, en régime variable, une partie de l'énergie thermique peut être conservée par le conducteur qui voit alors sa température varier. La résistance du conducteur est alors une variable de la température \ldots La puissance électrocinétique reçue par un conducteur ohmique est, avec la convention récepteur $P = ui$, avec $u=Ri$ ou $u=Gi$, donc $P=R i^2 = G u^2$.
+Par contre, en régime variable, une partie de l'énergie thermique peut être conservée par le conducteur qui voit alors sa température varier. La résistance du conducteur est alors une variable de la température\ldots{} La puissance électrocinétique reçue par un conducteur ohmique est, avec la convention récepteur $P = ui$, avec $u=Ri$ ou $u=Gi$, donc $P=R i^2 = G u^2$.
 
 \emph{La puissance thermique produite dans un conducteur ohmique est donc~:}
 \begin{equation}\label{eq:loidejoule}
@@ -202,3 +202,44 @@ Par contre, en régime variable, une partie de l'énergie thermique peut être c
 L'énergie thermique produite pendant un temps infinitésimal $\D t$ est donc $\delta W_{th} = Ri^2 \D t = Gu^2 \D t$. Si le régime est stationnaire, la chaleur reçue par le conducteur ohmique vaut $Q = -Ri^2 t = -Gu^2 t$.
 
 \subsection{Cas d'un dipôle quelconque}
+
+L'effet Joule est la production d'énergie thermique dans un dipôle. Il concerne tous les dipôles. Par définition, la résistance d'un dipôle dans lequel la puissance thermique produite est $\P_{th}$ pour une intensité $i$ traversant ce dipôle est $R = \frac{\P_{th}}{i^2}$. La loi de Joule s'écrit donc pour un dipôle quelconque $\P_{th} = Ri^2$, mais elle ne s'écrit $\P_{th} = Gu^2$ que pour un conducteur ohmique. De même, en régime stationnaire $Q = -Ri^2 t$, mais $Q=-Gu^2t$ n'est valable que pour un conducteur ohmique.
+
+\section{Exercices}
+\begin{exercice}[Loi de joule locale]
+	\begin{enumerate}
+		\item On donne la masse de l'électron $m=\SI{9.11e-31}{\kilogram}$, la charge élémentaire $e = \SI{1.60e-19}{\coulomb}$, la masse molaire atomique de l'argent $M=\SI{108}{\gram\per\mole}$ et la masse volumique de l'argent $M_V = \SI{10.5}{\gram\per\cubed\centi\meter}$. En admettant qu'il y a un électron libre par atome d'argent, calculer la concentration $n$ des électrons libres dans ce métal.
+		\item La conductivité de l'argent étant $\sigma = \SI{61.8}{\micro\siemens\per\meter}$, déterminer la norme de la vitesse moyenne des électrons libres pour une densité de courant de norme $j=\SI{20.0}{\ampere\per\meter\squared}$, puis la mobilité $\mu$ de ces électrons libres dans l'argent.
+		\item Exprimer avec $j$, $\sigma$ et $n$ la puissance de la force exercée par le champ électrique sur un porteur de charge, puis, avec $j$ et $\sigma$, le rapport $\derived{P}{V}$, $\D P$ étant la puissance électrocinétique que reçoivent les électrons libres d'un volume élémentaire $\D V$. Cette dernière formule exprime la loi de Joule locale.
+		\item Retrouver la loi de Joule macroscopique $P=Ri^2$ à partir de la loi de Joule locale.
+	\end{enumerate}
+\end{exercice}
+
+\begin{exercice}[Association de résistances]
+	\begin{enumerate}
+		\item Les douze arêtes d'un cube sont constituées par des résistance identiques de valeur $r$ chacune. Le cube est relié au circuit extérieur par deux sommets opposés. Exprimer la résistance équivalente de ce cube avec $r$ (On utilisera des symétries pour chercher comment on divise l'intensité totale entre les différentes arêtes).
+		\item On considère un grillage formé de seize carrés dont les côtés ont chacun une résistance $r$. Ce réseau est connecté au circuit extérieur par des sommets opposés. Exprimer la résistance équivalente de ce grillage avec $r$ (On montrera d'abord à l'aide des symétries, l’équivalence entre les deux réseaux ci-dessous, puis on utilisera les lois sur les associations de résistance et le théorème de Kennelly). 
+	\end{enumerate}
+\end{exercice}
+
+\begin{exercice}[Résistance d'une prise de terre]
+	Deux sphères métalliques concentriques en un point $O$, de rayons $r_1$ et $r_2$, supposées parfaitement conductrices, sont séparées par un milieu peu conducteur de résistivité $\rho$. On établit entre ces deux sphères une différence de potentiel.
+	
+	Quelles sont les surfaces équipotentielles et quelles sont les lignes de ce champs électrique ?
+	
+	Calculer la résistance $R$ du conducteur situé entre les deux sphères. On exprimera d'abord la résistance d'un tronc de cône élémentaire, de sommet $O$, limité par les sphères de rayon $r$ et $r +\D r$, que l'on assimilera à un cylindre de section $\D S$ ; puis on effectuera les intégrations nécessaires pour calculer $R$.
+	
+	Que devient $R$ lorsque $r_2$ tend à l'infini ?
+	
+	Application numérique pour $r_1 = \SI{10}{\centi\meter}$ et $\rho=\SI{e3}{\ohm \meter}$ (sol argileux).
+\end{exercice}
+
+\begin{exercice}[Diviseur de courant en cascade]
+	\begin{enumerate}
+		\item Quelle est, exprimée en avec $G$, la conductance $G_k$ équivalente au groupement de conducteurs ohmiques à droite des points $A_k$ et $B_k$ pour $k$ allant de 1 à 3 ?
+		\item Montrer que pour tout naturel non nul $k$ on a : $G_k = \frac{x_{k+1}}{x_k} G$, où $(x_k)$ est la suite de Fibonacci définie par $x_2=x_1=1$ et $x_k = x_{k-1}+x_{k-2}$ pour $k \geq 3$.
+		\item Lorsque $k$ tend vers l'infini, le rapport $\frac{x_{k+1}}{x_k}$ converge vers une limite finie. Calculer cette limite et donner la valeur de $G_\infty = \lim\limits_{k \to \infty} G_k$ en fonction de $G$.
+		\item On note $i_k$ l'intensité entrant par $A_k$ et sortant par $B_k$. Calculer le rapport $\frac{i_{k-1}}{i_k}$ avec $G$ et $G_{k-1}$, en utilisant la formule du diviseur de courant, puis avec les termes $x_{2k+1}$ et $x_{2k-1}$ de la suite de Fibonacci.
+		\item En déduire que le rapport $\frac{i_n}{i_0}$ de l'intensité du courant d'entrée à l'intensité du courant de sortie duquadripôle représenté ($A_n$, $B_n$, $A_0$, $B_0$) est égal à l'un des termes de la suite de Fibonacci, lequel ? 
+	\end{enumerate}
+\end{exercice}
