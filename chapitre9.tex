@@ -57,14 +57,14 @@ Soit, pour le $i$\ieme type de porteur de charge, au point $M$ :
 \begin{itemize}
 \item $q_i$ : charge de ce type de porteur de charge,
 \item $\rho_i$ : densité volumique de charge mobile (en $\si{C.m^{-3}}$),
-\item $\vv_i$ : vecteur vitesse moyen (en $\si{m/s}$),
+\item $\vvv_i$ : vecteur vitesse moyen (en $\si{m/s}$),
 \item $n_i$ : concentration volumique (en $\si{m^{-3}}$).
 \end{itemize}
-La densité volumique de courant en $M$ est $\vj = \sum_i \rho_i \vv_i = \sum_i n_i q_i \vv_i$. Elle s'exprime en $\si{A.m^{-2}}$.
+La densité volumique de courant en $M$ est $\vj = \sum_i \rho_i \vvv_i = \sum_i n_i q_i \vvv_i$. Elle s'exprime en $\si{A.m^{-2}}$.
 
 \subsection{Densité surfacique de courant}
 \label{chap9-subsec:Densité surfacique de courant}
-Avec des notations semblables, pour des courants circulant sur une surface, la densité surfacique de courant en $M$ est: $\vj_s = \sum_i \sigma_i \vv_i$ .$\vj_s$ s'exprime en $\si{A.m^{-1}}$.
+Avec des notations semblables, pour des courants circulant sur une surface, la densité surfacique de courant en $M$ est: $\vj_s = \sum_i \sigma_i \vvv_i$ .$\vj_s$ s'exprime en $\si{A.m^{-1}}$.
 
 \section{Intensité d'un courant électrique}
 \label{chap9-sec:intensiteduncourantelectrique}
@@ -72,11 +72,11 @@ Avec des notations semblables, pour des courants circulant sur une surface, la d
 Soit une surface $\Sigma$ à travers laquelle circule un courant d'intensité algébrique $i$. $\si{A}=\si{C.s^{-1}}$ donc ceci signifie que $i$ est le nombre d'ampères, c'est-à-dire le nombre de coulombs qui traverse $\Sigma$ par seconde dans le sens de la flèche qui donne la convention de signe pour $i$.
 %% Inserer figure
 
-$\vv{\D S}$ représente un vecteur surface élémentaire de norme $\D S$ autour du point $M$ (aire élémentaire), normal à la surface $\Sigma$, orienté dans le sens de la flèche qui définit la convention de signe pour $i$. Si la densité volumique de charges mobiles, au voisinage de $M$ est $\rho$, et si leur vitesse moyenne est $\vv$, la densité volumique de courant est $\vj = \rho \vv$.
-Les charges mobiles contenues dans le cylindre de base , de génératrice $\vv \D t$, sont celles qui auront traversé la surface $\D S$ au bout du temps $\D t$. Le volume de ce cylindre est $\D \vv{S} \cdot \vv\D t$.
+$\vv{\D S}$ représente un vecteur surface élémentaire de norme $\D S$ autour du point $M$ (aire élémentaire), normal à la surface $\Sigma$, orienté dans le sens de la flèche qui définit la convention de signe pour $i$. Si la densité volumique de charges mobiles, au voisinage de $M$ est $\rho$, et si leur vitesse moyenne est $\vvv$, la densité volumique de courant est $\vj = \rho \vvv$.
+Les charges mobiles contenues dans le cylindre de base , de génératrice $\vvv \D t$, sont celles qui auront traversé la surface $\D S$ au bout du temps $\D t$. Le volume de ce cylindre est $\D \vv{S} \cdot \vvv\D t$.
 La charge qui traverse $\D S$ pendant le temps $\D t$ a donc pour expression
 \begin{equation}
-  \D q = \rho \D \vv{S} \cdot \vv \D t = \vj \cdot \D S \D t.
+  \D q = \rho \D \vv{S} \cdot \vvv \D t = \vj \cdot \D S \D t.
 \end{equation}
 
 L'intensité du courant traversant la surface $\D S$ dans le sens défini par la flèche est $\D i = \derived{q}{t} = \vj \cdot \D \vv{S}$.
@@ -103,7 +103,7 @@ Pour une portion de tube de courant limitée par les sections $\Sigma_1$ et $\Si
 \label{chap9-sec:def}
 
 En régime stationnaire, toutes les grandeurs physiques sont indépendantes du temps (sauf bien entendu les coordonnées des porteurs de charge). Les dérivées partielles par rapport au temps de En régime stationnaire, toutes les grandeurs physiques sont indépendantes du temps (sauf bien entendu les coordonnées des porteurs de charge).
-Les dérivées partielles par rapport au temps de $n_i$, $\rho_i$, $\vj$, $\vv_i$, T, etc. sont nulles en chaque point. L'approximation des régimes quasi-stationnaires (ARQS) concerne les régimes ``lentement'' variables. 
+Les dérivées partielles par rapport au temps de $n_i$, $\rho_i$, $\vj$, $\vvv_i$, T, etc. sont nulles en chaque point. L'approximation des régimes quasi-stationnaires (ARQS) concerne les régimes ``lentement'' variables. 
 
 Concrètement, en régime sinusoïdal permanent (courant alternatif sinusoïdal), on peut appliquer cette approximation tant que la fréquence est suffisamment basse pour que la longueur d'onde de la propagation du courant soit grande devant les dimensions du circuit. En notant $f$ la fréquence et $v$ la vitesse de propagation du courant ($v\approx c = \SI{3e8}{m.s^{-1}}$ : vitesse de la lumière dans le vide), cette longueur d'onde est  $\lambda = \frac{c}{f}$.
 
@@ -154,7 +154,7 @@ La différence de potentiel électrostatique (d.d.p.) entre deux points est auss
 %mettre figure
 La tension $u$ définie par la flèche ci-dessus est $u=V_1-V_2$ (On peut aussi la noter $u_{12}$). Le travail de la force électrostatique subie par une charge ponctuelle $q$ se déplaçant de $M_1$ à $M_2$ peut donc s'écrire : $W_{1,2} = E_{p_1} - E_{p_2}$ avec $E_p = q V$ donc $W_{1,2} = q(V_1-V_2)$ ou  $W_{1,2} = q u$ si la flèche définissant $u$ va de $M_2$ vers $M_1$.
 
-\section{Cas de l'ARQS, différence de potentiel électrique (ddp) ou tension électrique}
+\section{Cas de l'ARQS, différence de potentiel électrique ou tension électrique}
 \label{chap9-sec:casdelARQS}
 
 Dans le cas d'un régime variable, les charges sont soumises à un champ électromagnétique, formé d'un champ électrique et d'un champ magnétique qui sont couplés (chacun dépend des variations temporelles de l'autre). Il existe toujours un potentiel $V$, nommé alors potentiel électrique, mais la relation $\D V = -\vv{E} \cdot \D \vv{M}$ n'est plus valable (voir cours de deuxième année).
@@ -164,7 +164,7 @@ En ARQS : $V$ représente alors le potentiel électrique, $E_p$ l'énergie poten
 \section{Travail et puissance électrocinétiques reçus par un dipôle électrocinétique en ARQS}
 \label{chap9-sec:travailetpuissance}
 
-Une portion de circuit (tube de courant) comprise entre deux surfaces équipotentielles $A$ et $B$, constitue un dipôle électrocinétique $D$. Si le régime est quasi stationnaire, l'intensité $i$ (ou $i_{AB}$)  du courant circulant de $A$ vers $B$ est la même à travers toutes les sections du tube de courant, et en particulier, à travers les deux équipotentielles $A$ et $B$. Soit $u$ la ddp ou tension électrique définie sur le schéma ($u = u_{AB} = V_A - V_B$). 
+Une portion de circuit (tube de courant) comprise entre deux surfaces équipotentielles $A$ et $B$, constitue un dipôle électrocinétique $D$. Si le régime est quasi stationnaire, l'intensité $i$ (ou $i_{AB}$)  du courant circulant de $A$ vers $B$ est la même à travers toutes les sections du tube de courant, et en particulier, à travers les deux équipotentielles $A$ et $B$. Soit $u$ la différence de potentiel ou tension électrique définie sur le schéma ($u = u_{AB} = V_A - V_B$). 
 
 L'énergie électrocinétique que reçoit une charge $q$ qui le traverse de la part du reste du circuit est : $W = E_{p_A} - E_{p_B} = q(V_A - V_B)$. En un temps $\D t$ :
 \begin{itemize}
@@ -193,16 +193,16 @@ Ces lois concernent les circuits électriques filiformes, c'est-à-dire formés 
 \subsection{Loi des n\oe{}uds}
 \label{chap9-subsec:loidesnoeuds}
 
-On a déjà démontré, en ARQS, que l'intensité totale du courant sortant d'un conducteur est nulle donc, si $n$ courants d'intensités $i_1$, $i_2$, ... $i_n$ arrivent en un n\oe{}ud par les différentes branches, leur somme est nulle :
+On a déjà démontré, en ARQS, que l'intensité totale du courant sortant d'un conducteur est nulle donc, si $n$ courants d'intensités $i_1$, $i_2$, ... $i_n$ arrivent en un nœud par les différentes branches, leur somme est nulle :
 \begin{equation}
   \sum_{k=1}^n i_k = 0.
 \end{equation}
-Il en est de même pour les courants arrivant en un n\oe{}ud.
+Il en est de même pour les courants arrivant en un nœud.
 
 \subsection{Loi des mailles}
 \label{chap9-subsec:loidesmailles}
 
-Le potentiel électrique dépend du point considéré, la ddp ne dépend pas du chemin suivi par les porteurs de charge, d'où la loi des mailles :
+Le potentiel électrique dépend du point considéré, la différence de potentiel ne dépend pas du chemin suivi par les porteurs de charge, d'où la loi des mailles :
 \emph{La somme des tensions représentées par des flèches, correspondant toutes au même sens de parcours le long d'une maille, est nulle}. En notant $u_1$, $u_2$, ... $u_n$ les $n$ tensions correspondantes :
 \begin{equation}
   \sum_{k=1}^n u_k = 0.
@@ -213,7 +213,7 @@ Le potentiel électrique dépend du point considéré, la ddp ne dépend pas du 
 
 On étudie ici le cas d'un circuit pour lequel on connaît les relations $u = f(i)$ pour chacun des dipôles qui le constituent ($u = R i$ pour un conducteur ohmique, $u = E - R i$ pour un générateur, $u = R i + E'$ pour un récepteur). On cherche à calculer les intensités des courants dans toutes les branches de ce circuit, (on pourra en déduire ensuite les tensions).
 
-L'utilisation directe des lois de Kirchhoff se fait en écrivant autant d'équations qu'il y a d'intensités inconnues : on écrit d'abord la loi des n\oe{}uds pour tous les n\oe{}uds moins un. (le dernier n\oe{}ud fournirait une équation qui serait une combinaison linéaire des précédentes).
+L'utilisation directe des lois de Kirchhoff se fait en écrivant autant d'équations qu'il y a d'intensités inconnues : on écrit d'abord la loi des nœuds pour tous les nœuds moins un. (le dernier nœud fournirait une équation qui serait une combinaison linéaire des précédentes).
 
 On écrit ensuite la loi des mailles autant de fois que nécessaire pour compléter le système d'équations, après avoir choisi sur chaque maille utilisée un sens de parcours déterminé. Il suffit pour ceci de repérer un ensemble de mailles indépendantes.
 
@@ -233,14 +233,14 @@ Cette méthode est souvent longue, d'autres méthodes plus rapides seront étudi
   \item Ce fil est enroulé à spires jointives sur un cylindre de diamètre $D = \SI{10}{cm}$. On considérera que les spires sont pratiquement circulaires et qu'elles forment une nappe de courant. Quels sont la direction, et la norme $j_s$ du vecteur densité surfacique de courant ?
   \end{enumerate}
 \end{exercice}
-\begin{exercice}[Pont de Wheastone]
+\begin{exercice}[Pont de Wheatstone]
   %Mettre la figure
   \begin{enumerate}
   \item Écrire les équations d'inconnues $i, i_{1 .. 5}$, données par les lois de Kirchhoff, qui permettent le calcul de ces intensités.
   \item Si $i_5 = 0$, quelle relation y a-t-il entre $R_1, R_2, R_3$ et $R_4$ ? Exprimer alors toutes les intensités avec les résistances et $E$.
   \end{enumerate}
 \end{exercice}
-\begin{exercice}[Lois de Khirchhoff]
+\begin{exercice}[Lois de Kirchhoff]
   Pour le circuit suivant~:
   %METTRE LA FIGURE
   \begin{enumerate}
@@ -257,7 +257,7 @@ Cette méthode est souvent longue, d'autres méthodes plus rapides seront étudi
   \item H étant petite devant $\ell$ et L, on assimile la tôle à une surface. Exprimer le vecteur densité surfacique de courant $\vj_s$.
   \end{enumerate}
 \end{exercice}
-\begin{exercice}[Sphére chargée en volume]
+\begin{exercice}[Sphère chargée en volume]
   Soit une sphère de rayon $R$, de centre $O$, chargée électriquement. La densité volumique de charge en un point $M$, à la distance $r$ de $O$ est $\rho = \frac{q \exp\left(-\frac{r}{a}\right)}{4 \pi r a^2}$. Calculer sa charge électrique totale $Q$ pour $R = a$ ainsi que $\lim\limits_{R \to \infty} Q$.
 \end{exercice}
 

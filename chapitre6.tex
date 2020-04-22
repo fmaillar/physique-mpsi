@@ -1,3 +1,4 @@
+% !TeX root = physique.tex
 \chapter{Lois de Descartes -- Prisme}
 \label{chap:loisdedescartes}
 \minitoc
@@ -164,11 +165,42 @@ Pour un rayon lumineux traversant le prisme, les deux déviations $i-r$ et $i'-r
 	On utilisera les notations et les conventions de signes habituelles pour les angles $i$, $i'$, $r$ et $r'$ et $D$.
 	\begin{enumerate}
 \item Montrer que, lorsqu'il existe, le rayon $I'R$ est dans le plan de section principale de $SI$.
-\item Etablir les quatre formules du prisme.
+\item Établir les quatre formules du prisme.
 \item Montrer que pour que le rayon $I'R$ existe, il est nécessaire que les deux conditions suivantes soient satisfaites : $A \leq 2 \arctan(1/n)$ et $i_0 \leq i \leq \pi/2$ avec $\sin i_0 = n \sin\left(A-\arcsin(1/n)\right)$.
 	\end{enumerate}
 \end{exercice}
 
-\begin{exercice}[Etude du minimum de déviation]
+\begin{exercice}[Étude du minimum de déviation]
+	Les notations sont celles de l'exercice précédent.
+	\begin{enumerate}
+		\item
+		\begin{enumerate}
+			\item Montrer que la déviation $D$ passe par un minimum $D_m$ lorsque $ii=i'=i_m$.
+			\item Exprimer l'indice $n$ du prisme en fonction de $A$ et $D_m$.
+			\item Tracer l'allure de la courbe de $D=f(i)$. On précisera les tangentes aux deux extrémités $i=i_0$ et $i=\pi/2$, ainsi que la valeur de la déviation $D_0$ correspondante.
+			\item Quel est d'après vous l'intérêt d'utiliser le prisme au minimum de déviation ?
+		\end{enumerate}
+		\item Dans un spectroscope à prisme, le prisme est éclairé en lumière parallèle (donc sous une incidence $i$ fixée), est monochromatique, de longueur d'onde dans le vide $\lambda$, variable. Exprimer $\derived{D}{\lambda}$, en fonction de $\derived{n}{\lambda}$ (dispersion du verre du prisme), $A$, $r$ et $i'$.
+		\item On se place au minimum de déviation pour une longueur d'onde $\lambda$ donnée. Le faisceau incident est obtenu grâce à une fente éclairée par la source, parallèle à l'arête du prisme et une lentille convergente $L_1$, de distance focale $f'$, placée entre la fente et le prisme. Le spectre obtenu est recueilli sur une plaque photographique dans le plan focal d'une lentille convergente $L_2$ de même distance focale $f'$ que $L_1$. La base de la partie éclairée du prisme a une largeur $b$, celui-ci est éclairé jusqu'à son arête. Le faisceau émergent a une largeur égale à $a$ dans les plans de section principale du prisme. Exprimer $\derived{D}{\lambda}$ en fonction de $a$, $b$ et $\derived{n}{\lambda}$. 
+	\end{enumerate}
+\end{exercice}
+
+\begin{exercice}[Fibre optique à saut d'indice]
+	Soit une fibre optique $F$ constituée d'un cœur cylindrique de rayon $a$ et d'indice $n_1$, entouré d'une gaine d'indice $n_2 \leq n_1$ et de rayon extérieur $b$. Les faces d'entrées et de sortie sont perpendiculaires au cylindre d'axe $(Oz)$ formé par la fibre. L'ensemble, en particulier la face d'entrée, est en contact avec un milieu d'indice $n_0$ et pour les applications numériques, on considérera que ce milieu est de l'air $n_0=1$.
+	\begin{enumerate}
+		\item "Zigzag plan". Un rayon lumineux $SI$ arrive en un point $I$ sur la face d'entrée de la fibre. À quelles conditions d'incidence ce rayon a-t-il, dans la fibre, un trajet plan ? 
+		
+		On considère un rayon $(SI)$ incident sur le cœur et contenu dans le plan $Oxz$. On appelle $i$ l'angle d'incidence et $\theta$ l'angle de la réfraction sur la face d'entrée de la fibre.
+		\item Déterminer en fonction de $n_0$, $n_1$ et $n_2$ la condition que doit satisfaire $i$ pour que le rayon réfracté ait une propagation guidée dans le cœur. la valeur maximale de $i$ est alors désignée par $i_a$, l'angle d'acceptance de la fibre.
+		\item On appelle ouverture numérique $ON$ du guide la quantité $ON=n_0 \sin i_a$. Exprimer l'ouverture numérique en fonction de $n_1$ et $n_2$.
+		\item Calculer $i_a$ et $ON$ pour une fibre d'indice $n_1=1.456$ (silice) et $n_2=1.410$ (silicone). Quelles seraient les valeurs de ces grandeurs pour un guide à base d'arséniure de gallium pour lequel $n_1=3.9$ et $n_2=3$ ? Commenter
+		
+		L'atténuation de la lumière dans les fibres optiques est due à l'absorption et à la diffusion par le matériau constitutif du cœur et par ses impuretés (les ions fers 2, les ions cuivres 2, les ions hydroxyde, \ldots). Elle se mesure en décibels par kilomètre : $A=\frac{\SI{10}{km}}{l} \log(\Phi_1/\Phi_2)$, où $\Phi_1$ et $\Phi_2$ désignent les flux lumineux (puissance lumineuse) dans les plans de front successifs 1 et 2 distants de $l$.
+		
+		\item On parvient couramment à réaliser des fibres dans lesquelles le flux, après un parcours de 50 kilomètres, représente 10 pourcents du flux incident. Calculer l'atténuation de telles fibres. Applications : Endoscope à fibres, fibroscope. Le but d'un endoscope est de permettre à un observateur de "voir" dans des endroits inaccessibles, d'intérêts divers (médical, militaire, industriel, \ldots). L'endoscope à fibres est constitué de deux faisceaux de fibres : l'un éclaire le site, l'autre assure le retour vers l'extérieur de la lumière émise par la cible éclairée. Le nombre de fibres constituant chaque faisceau est de l'ordre de 10 mille à 1 million.
+		
+		\item Si l'on imagine la cible divisée en 100 mille petits carrés à peu près, chaque fibre au voisinage de la cible recueillant la lumière de l'un d'eux, quel est le problème posé à l'autre extrémité par la reconstitution de l'image ? Quel est le problème technologique majeur posé alors par la fabrication d'un faisceau de fibres ?
+	\end{enumerate}
 	
+ 
 \end{exercice}

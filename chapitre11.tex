@@ -1,11 +1,14 @@
 \chapter{Dipôles électrocinétiques}
+\minitoc
+\minilof
+\minilot
 
 \section{Dipôle électrocinétique, puissance électrocinétique}
 \subsection{Circuits étudiés}
 
 On ne considérera ici que des circuits dans lesquels les dipôles seront reliés entre eux par des fils que l'on assimilera à de simples lignes conductrices, le plus souvent, de résistances négligeables (de conductances infinies). La tension entre les deux extrémités d'un fil sera alors nulle. Un dipôle sera donc limité par deux équipotentielles assimilables à des points. Chaque dipôle sera donc couplé électriquement au reste du circuit. Avec la convention récepteur, la puissance électrocinétique que reçoit un dipôle de la part du reste du circuit est $P = ui$.
 
-La charge entrant par A pendant dt est $dq = i dt$, la charge sortant par B pendant $dt$ est la même (ARQS). L'énergie électrocinétique reçue par le dipôle pendant dt est  $\delta W = P \diff t = u i \diff t = u \diff q$. Avec la convention générateur (flèche u inversée), on a bien sûr $P  = - u i$  et  $\delta W = - u i \diff t$. On se placera toujours dans des conditions telles que l'on puisse appliquer l'approximation des régimes quasi stationnaires. La température d'un dipôle sera considérée comme constante, sa résistance le sera donc aussi. Toute l'énergie thermique produite par effet Joule sera donc évacuée sous forme de chaleur $P_{th} = R i^2$ et  $\delta W_{th} = R i^2 \diff t = -\delta Q$, si $R$ est la résistance du dipôle.
+La charge entrant par A pendant dt est $\D q = i \D t$, la charge sortant par B pendant $\D t$ est la même (ARQS). L'énergie électrocinétique reçue par le dipôle pendant dt est  $\delta W = P \D t = u i \D t = u \D q$. Avec la convention générateur (flèche u inversée), on a bien sûr $P  = - u i$  et  $\delta W = - u i \D t$. On se placera toujours dans des conditions telles que l'on puisse appliquer l'approximation des régimes quasi stationnaires. La température d'un dipôle sera considérée comme constante, sa résistance le sera donc aussi. Toute l'énergie thermique produite par effet Joule sera donc évacuée sous forme de chaleur $P_{th} = R i^2$ et  $\delta W_{th} = R i^2 \D t = -\delta Q$, si $R$ est la résistance du dipôle.
 
 \subsection{Transformations d'énergie dans un dipôle}
 En plus du couplage électrique avec le reste du circuit et du couplage thermique avec l'extérieur, le dipôle peut être couplé au milieu extérieur de différentes façons~:
@@ -40,7 +43,7 @@ Un dipôle est linéaire si et seulement si $u$ est une fonction affine de $i$ o
 \section{Dipôles linéaires idéaux}
 \subsection{Sources de tension}
 
-Ce sont des générateurs (ou récepteurs) idéaux pour lesquels la tension entre les bornes est indépendante de l'intensité du courant qui les traverse. Le tension $e$ est la force électromotrice (f.é.m.) de la source de tension. C'est la tension constante entre ses bornes, fléchée habituellement dans le même sens que le courant $i$. C'est un dipôle actif, non symétrique, ses deux bornes (ou pôles) sont différents : Si e > 0, le pôle + est du côté de la pointe de la flèche représentant la f.é.m. Avec la convention récepteur, l'équation de la caractéristique est quelque soit le courant $i$ : $u=-e$. La puissance électrocinétique est $P=-ei$. 
+Ce sont des générateurs (ou récepteurs) idéaux pour lesquels la tension entre les bornes est indépendante de l'intensité du courant qui les traverse. Le tension $e$ est la force électromotrice (force électro-motrice) de la source de tension. C'est la tension constante entre ses bornes, fléchée habituellement dans le même sens que le courant $i$. C'est un dipôle actif, non symétrique, ses deux bornes (ou pôles) sont différents : Si e > 0, le pôle + est du côté de la pointe de la flèche représentant la force électro-motrice Avec la convention récepteur, l'équation de la caractéristique est quelque soit le courant $i$ : $u=-e$. La puissance électrocinétique est $P=-ei$. 
 
 Son opposé est la puissance électrocinétique engendrée : $P' = e i$. Lorsqu'elle est positive, ($e$ et $i$ de même signe), la source transforme de l'énergie chimique, mécanique ou autre en énergie électrocinétique qu'elle fournit au reste du circuit. Il s'agit donc alors d'un générateur. Si c'est $P$ qui est positive ($P ' < 0$), elle transforme de l'énergie électrocinétique qu'elle reçoit du reste du circuit en énergie chimique, mécanique ou autre. Il s'agit alors d'un récepteur.
 
@@ -53,7 +56,7 @@ C'est un dipôle actif, non symétrique, ses deux bornes (ou pôles) sont diffé
 
 \subsection{Auto-inductance pure}
 
-Il s'agit du cas idéal d'une bobine de résistance nulle. Dans le cours de deuxième année, on démontrera que si le courant $i$ varie, la bobine est le siège d'un phénomène d'autoinduction. La f.é.m. d'autoinduction est $e = -L\derived{i}{t}$ . La relation entre $u$ et $i$ est donc l'équation différentielle linéaire : $u = L\derived{i}{t}$. C'est donc une source de tension variable puisque sa f.é.m. dépend des variations de i au cours du temps.
+Il s'agit du cas idéal d'une bobine de résistance nulle. Dans le cours de deuxième année, on démontrera que si le courant $i$ varie, la bobine est le siège d'un phénomène d'auto-induction. La force électro-motrice d'auto-induction est $e = -L\derived{i}{t}$ . La relation entre $u$ et $i$ est donc l'équation différentielle linéaire : $u = L\derived{i}{t}$. C'est donc une source de tension variable puisque sa force électro-motrice dépend des variations de i au cours du temps.
 
 \subsection{Capacité pure}
 
@@ -96,9 +99,9 @@ La puissance électrocinétique reçue par le dipôle est  $P  = u i = R i^2 - e
 Étudions le cas où $e > 0 (\eta > 0)$ ; il y a trois fonctionnements possibles :
 Si $i > 0$  et $u < 0$, alors $P'> 0$ et $-P  > 0$ , avec $-P  < P'$. C'est le cas habituel d'un générateur qui engendre effectivement de la puissance électrocinétique, qui en fournit une partie au reste du circuit et qui dissipe le reste par effet Joule.
 
-Si $i < 0$, et $u < 0$, alors $P > 0$ et $P' < 0$ . C'est le cas d'un fonctionnement en récepteur; le dipôle consomme de la puissance électrocinétique par effet joule et par un autre effet (chimique, mécanique...). Ce récepteur peut être un "générateur monté en opposition", $i < 0$ étant imposé par un autre générateur de f.é.m. plus grande (en valeur absolue), les deux pôles + étant reliés entre eux.
+Si $i < 0$, et $u < 0$, alors $P > 0$ et $P' < 0$ . C'est le cas d'un fonctionnement en récepteur; le dipôle consomme de la puissance électrocinétique par effet joule et par un autre effet (chimique, mécanique...). Ce récepteur peut être un "générateur monté en opposition", $i < 0$ étant imposé par un autre générateur de force électro-motrice plus grande (en valeur absolue), les deux pôles + étant reliés entre eux.
 
-Si $i > 0$ et $u > 0$, alors $P > 0$ et $P' > 0$ avec  $P > P'$. On a dans ce cas $i > \eta$, l'intensité du courant est plus grande que celle du courant de court-circuit (avec souvent un risque de détérioration du fait d'un effet Joule intense). C'est le cas exceptionnel d'un générateur qui engendre effectivement de la puissance électrocinétique mais qui en consomme par effet Joule plus qu'il n'en engendre.  Ce n'est possible que s'il est monté en série avec un autre générateur de f.é.m. grande et de résistance petite (son pôle – est relié au pôle + de l'autre).
+Si $i > 0$ et $u > 0$, alors $P > 0$ et $P' > 0$ avec  $P > P'$. On a dans ce cas $i > \eta$, l'intensité du courant est plus grande que celle du courant de court-circuit (avec souvent un risque de détérioration du fait d'un effet Joule intense). C'est le cas exceptionnel d'un générateur qui engendre effectivement de la puissance électrocinétique mais qui en consomme par effet Joule plus qu'il n'en engendre.  Ce n'est possible que s'il est monté en série avec un autre générateur de force électro-motrice grande et de résistance petite (son pôle – est relié au pôle + de l'autre).
 \subsection{Cas d'un dipôle non linéaire possédant une caractéristique}
 C'est en fait le cas habituel pour les générateurs et récepteurs réels. On peut, au voisinage du point de fonctionnement assimiler la caractéristique à sa tangente et écrire suivant la modélisation choisie $u = R i - e$ ou i$ = G u + \eta$. La caractéristique est "linéarisée". Mais alors, $R$ (ou $G$) et $e$ (ou $\eta$) dépendent du point de fonctionnement.
 \subsection{Récepteurs (électrolyseurs, moteurs électriques) non polarisés}
@@ -113,7 +116,7 @@ i = 0 &  - E' < u < E'.
 
 La puissance utile, c'est-à-dire la puissance électrocinétique transformée en puissance chimique ou mécanique est $P_u = E' \abs{i}$. Elle est toujours positive. La puissance électrocinétique reçue est $P = u i = R i^2 + E' \abs{i} = P_{th} + P_u$.
 
-\section{Loi d'Ohm généralisée, signe de la f.é.m.}
+\section{Loi d'Ohm généralisée, signe de la force électro-motrice}
 Finalement, tout récepteur ou générateur polarisé ou non, si sa caractéristique est linéaire dans le domaine du point de fonctionnement, peut être modélisé par la représentation de Thévenin ou par celle de Norton et suit la loi d'Ohm généralisée qui s'écrit, avec la convention récepteur avec $i$, $e$, et $\eta$ fléchés dans le même sens : $u = R i - e$ ou $i = G u + \eta$.
 
 Si le dipôle est polarisé, alors le signe de $e$ est constant : avec $e$ fléché de $A$ vers $B$, $e = eAB$ on a $e > 0$ si $B$ est le pôle plus, et $e < 0$ si B est le pôle moins. De même pour le signe de $\eta$.

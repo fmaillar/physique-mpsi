@@ -104,145 +104,152 @@
 \contentsline {subsection}{\numberline {6.2.2}Rayons lumineux}{56}{subsection.6.2.2}% 
 \contentsline {section}{\numberline {6.3}Lois de Descartes}{57}{section.6.3}% 
 \contentsline {subsection}{\numberline {6.3.1}D\IeC {\'e}finitions}{57}{subsection.6.3.1}% 
-\contentsline {subsection}{\numberline {6.3.2}R\IeC {\'e}flexion totale et r\IeC {\'e}fraction limite}{57}{subsection.6.3.2}% 
+\contentsline {subsection}{\numberline {6.3.2}R\IeC {\'e}flexion totale et r\IeC {\'e}fraction limite}{58}{subsection.6.3.2}% 
 \contentsline {section}{\numberline {6.4}Prisme}{58}{section.6.4}% 
-\contentsline {subsection}{\numberline {6.4.1}Les formules du prisme}{58}{subsection.6.4.1}% 
+\contentsline {subsection}{\numberline {6.4.1}Les formules du prisme}{59}{subsection.6.4.1}% 
 \contentsline {subsection}{\numberline {6.4.2}\IeC {\'E}tude de la d\IeC {\'e}viation en fonction de l'angle d'incidence}{59}{subsection.6.4.2}% 
 \contentsline {paragraph}{Existence d'un minimum de d\IeC {\'e}viation}{59}{section*.7}% 
 \contentsline {paragraph}{Sym\IeC {\'e}trie au minimum de d\IeC {\'e}viation}{59}{section*.8}% 
 \contentsline {paragraph}{D\IeC {\'e}viation maximale, condition d'\IeC {\'e}mergence}{59}{section*.9}% 
-\contentsline {subsection}{\numberline {6.4.3}Exemple}{59}{subsection.6.4.3}% 
+\contentsline {subsection}{\numberline {6.4.3}Exemple}{60}{subsection.6.4.3}% 
 \contentsline {subsection}{\numberline {6.4.4}\IeC {\'E}tude de la d\IeC {\'e}viation, dispersion polychromatique}{60}{subsection.6.4.4}% 
 \contentsline {section}{\numberline {6.5}Exercices}{61}{section.6.5}% 
-\contentsline {chapter}{\numberline {7}Formation des images, miroir plan, miroir sph\IeC {\'e}rique}{67}{chapter.7}
-\contentsline {section}{\numberline {7.1}Point objet, point image, stigmatisme}{68}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Stigmatisme d'un syst\IeC {\`e}me optique pour un point}{68}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}R\IeC {\'e}alit\IeC {\'e}, virtualit\IeC {\'e} d'un point objet ou d'un point image}{68}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Objets et images \IeC {\'e}tendus}{68}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Images donn\IeC {\'e}es par un miroir plan}{68}{section.7.2}
-\contentsline {section}{\numberline {7.3}Miroir sph\IeC {\'e}rique}{69}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}D\IeC {\'e}finitions}{69}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Condition de stigmatisme rigoureux}{69}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Stigmatisme approch\IeC {\'e}}{71}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Aplan\IeC {\'e}tisme, notion de plans conjugu\IeC {\'e}s, conditions de Gauss, grandissement transversal}{71}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Formules du miroir sph\IeC {\'e}rique avec origine au centre et avec origine au sommet}{71}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Foyer principal, plan focal, distance focale}{72}{subsection.7.3.6}
-\contentsline {subsection}{\numberline {7.3.7}Foyers secondaires}{72}{subsection.7.3.7}
-\contentsline {subsection}{\numberline {7.3.8}Repr\IeC {\'e}sentation du miroir sph\IeC {\'e}rique utilis\IeC {\'e} dans les conditions de Gauss, construction des images}{73}{subsection.7.3.8}
-\contentsline {subsection}{\numberline {7.3.9}Formules de Newton (origine au foyer)}{73}{subsection.7.3.9}
-\contentsline {subsection}{\numberline {7.3.10}Image d'un objet \IeC {\`a} l'infini}{73}{subsection.7.3.10}
-\contentsline {section}{\numberline {7.4}Exercices}{74}{section.7.4}
-\contentsline {chapter}{\numberline {8}Lentilles sph\IeC {\'e}riques minces}{77}{chapter.8}
-\contentsline {section}{\numberline {8.1}Diff\IeC {\'e}rents types de lentilles sph\IeC {\'e}riques}{77}{section.8.1}
-\contentsline {section}{\numberline {8.2}Lentilles sph\IeC {\'e}riques minces, leurs repr\IeC {\'e}sentations}{78}{section.8.2}
-\contentsline {section}{\numberline {8.3}Conditions de stigmatisme approch\IeC {\'e} pour une lentille mince, conditions de Gauss et aplan\IeC {\'e}tisme}{78}{section.8.3}
-\contentsline {section}{\numberline {8.4}Foyers d'une lentille mince}{78}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Foyers principaux objet et image}{78}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}Plans focaux, distance focale}{79}{subsection.8.4.2}
-\contentsline {subsection}{\numberline {8.4.3}Vergence}{79}{subsection.8.4.3}
-\contentsline {subsection}{\numberline {8.4.4}Foyers secondaires}{79}{subsection.8.4.4}
-\contentsline {section}{\numberline {8.5}Trac\IeC {\'e} du rayon \IeC {\'e}mergent correspondant \IeC {\`a} un rayon incident donn\IeC {\'e}}{79}{section.8.5}
-\contentsline {section}{\numberline {8.6}Construction de l'image d'un objet frontal donn\IeC {\'e}, dans les conditions de Gauss}{80}{section.8.6}
-\contentsline {section}{\numberline {8.7}Formules des lentilles minces}{80}{section.8.7}
-\contentsline {section}{\numberline {8.8}Image d'un objet \IeC {\`a} l'infini}{81}{section.8.8}
-\contentsline {section}{\numberline {8.9}\IeC {\'E}tude analytique des diff\IeC {\'e}rents cas}{81}{section.8.9}
-\contentsline {section}{\numberline {8.10}Lentilles minces accol\IeC {\'e}es}{82}{section.8.10}
-\contentsline {section}{\numberline {8.11}Exercices}{82}{section.8.11}
-\contentsline {chapter}{\numberline {9}Charges \IeC {\'e}lectriques, intensit\IeC {\'e}, tension et lois de Kirchhoff}{89}{chapter.9}
-\contentsline {section}{\numberline {9.1}Charge \IeC {\'e}lectrique}{90}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}\IeC {\'E}lectrisation}{90}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}D\IeC {\'e}finition}{90}{subsection.9.1.2}
-\contentsline {subsection}{\numberline {9.1.3}Quantification de la charge \IeC {\'e}lectrique}{90}{subsection.9.1.3}
-\contentsline {subsection}{\numberline {9.1.4}Propri\IeC {\'e}t\IeC {\'e}s des charges \IeC {\'e}lectriques}{91}{subsection.9.1.4}
-\contentsline {section}{\numberline {9.2}Densit\IeC {\'e}s de charge \IeC {\'e}lectrique}{91}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Densit\IeC {\'e} volumique de charge}{91}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}Densit\IeC {\'e} surfacique de charge, densit\IeC {\'e} lin\IeC {\'e}ique de charge}{91}{subsection.9.2.2}
-\contentsline {section}{\numberline {9.3}Densit\IeC {\'e}s de courant}{91}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Densit\IeC {\'e} volumique de courant}{91}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Densit\IeC {\'e} surfacique de courant}{92}{subsection.9.3.2}
-\contentsline {section}{\numberline {9.4}Intensit\IeC {\'e} d'un courant \IeC {\'e}lectrique}{92}{section.9.4}
-\contentsline {section}{\numberline {9.5}Lignes de courant, tubes de courant}{93}{section.9.5}
-\contentsline {section}{\numberline {9.6}R\IeC {\'e}gime stationnaire, approximation des r\IeC {\'e}gimes quasi-stationnaires (ARQS)}{93}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}D\IeC {\'e}finition}{93}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Tube de courant dans le cadre de l'ARQS}{94}{subsection.9.6.2}
-\contentsline {section}{\numberline {9.7}Potentiel \IeC {\'e}lectrostatique, tension \IeC {\'e}lectrostatique ou diff\IeC {\'e}rence de potentiel \IeC {\'e}lectrostatique}{94}{section.9.7}
-\contentsline {subsection}{\numberline {9.7.1}Potentiel \IeC {\'e}lectrostatique}{94}{subsection.9.7.1}
-\contentsline {subsection}{\numberline {9.7.2}Surfaces \IeC {\'e}quipotentielles}{94}{subsection.9.7.2}
-\contentsline {subsection}{\numberline {9.7.3}Diff\IeC {\'e}rence de potentiel \IeC {\'e}lectrostatique ou tension \IeC {\'e}lectrostatique}{95}{subsection.9.7.3}
-\contentsline {section}{\numberline {9.8}Cas de l'ARQS, diff\IeC {\'e}rence de potentiel \IeC {\'e}lectrique (ddp) ou tension \IeC {\'e}lectrique}{95}{section.9.8}
-\contentsline {section}{\numberline {9.9}Travail et puissance \IeC {\'e}lectrocin\IeC {\'e}tiques re\IeC {\c c}us par un dip\IeC {\^o}le \IeC {\'e}lectrocin\IeC {\'e}tique en ARQS}{95}{section.9.9}
-\contentsline {section}{\numberline {9.10}Lois de Kirchhoff}{96}{section.9.10}
-\contentsline {subsection}{\numberline {9.10.1}D\IeC {\'e}finitions}{96}{subsection.9.10.1}
-\contentsline {subsection}{\numberline {9.10.2}Loi des n\oe {}uds}{96}{subsection.9.10.2}
-\contentsline {subsection}{\numberline {9.10.3}Loi des mailles}{97}{subsection.9.10.3}
-\contentsline {subsection}{\numberline {9.10.4}Utilisation des lois de Kirchhoff}{97}{subsection.9.10.4}
-\contentsline {section}{\numberline {9.11}Exercices}{97}{section.9.11}
-\contentsline {chapter}{\numberline {10}Conducteurs ohmiques, loi d'ohm, loi de joule}{99}{chapter.10}
-\contentsline {section}{\numberline {10.1}Conductivit\IeC {\'e}, loi d'Ohm locale}{99}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Conducteur ohmique, mobilit\IeC {\'e} des porteurs de charge}{99}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}Loi d'Ohm locale}{100}{subsection.10.1.2}
-\contentsline {section}{\numberline {10.2}R\IeC {\'e}sistance \IeC {\'e}lectrique d'un conducteur ohmique, loi d'Ohm}{100}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}Loi d'Ohm}{100}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}R\IeC {\'e}sistance d'un conducteur ohmique \IeC {\'e}l\IeC {\'e}mentaire et d'un conducteur ohmique cylindrique}{101}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}\IeC {\'E}tude physique de la conductivit\IeC {\'e}}{101}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Cas des m\IeC {\'e}taux, des alliages m\IeC {\'e}talliques}{101}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}Supraconducteurs}{102}{subsection.10.3.2}
-\contentsline {subsection}{\numberline {10.3.3}\IeC {\'E}lectrolytes}{102}{subsection.10.3.3}
-\contentsline {section}{\numberline {10.4}Associations de r\IeC {\'e}sistances}{102}{section.10.4}
-\contentsline {subsection}{\numberline {10.4.1}Association en s\IeC {\'e}rie}{102}{subsection.10.4.1}
-\contentsline {subsection}{\numberline {10.4.2}Association en parall\IeC {\`e}le}{103}{subsection.10.4.2}
-\contentsline {subsection}{\numberline {10.4.3}Cas de deux conducteurs ohmiques}{103}{subsection.10.4.3}
-\contentsline {subsection}{\numberline {10.4.4}Th\IeC {\'e}or\IeC {\`e}me de Kennely (\IeC {\'e}quivalence triangle, \IeC {\'e}toile)}{103}{subsection.10.4.4}
-\contentsline {chapter}{\numberline {11}Dip\IeC {\^o}les \IeC {\'e}lectrocin\IeC {\'e}tiques}{107}{chapter.11}
-\contentsline {section}{\numberline {11.1}Dip\IeC {\^o}le \IeC {\'e}lectrocin\IeC {\'e}tique, puissance \IeC {\'e}lectrocin\IeC {\'e}tique}{107}{section.11.1}
-\contentsline {subsection}{\numberline {11.1.1}Circuits \IeC {\'e}tudi\IeC {\'e}s}{107}{subsection.11.1.1}
-\contentsline {subsection}{\numberline {11.1.2}Transformations d'\IeC {\'e}nergie dans un dip\IeC {\^o}le}{107}{subsection.11.1.2}
-\contentsline {section}{\numberline {11.2}Caract\IeC {\'e}ristique courant tension d'un dip\IeC {\^o}le}{108}{section.11.2}
-\contentsline {subsection}{\numberline {11.2.1}D\IeC {\'e}finition}{108}{subsection.11.2.1}
-\contentsline {subsection}{\numberline {11.2.2}Exemples de caract\IeC {\'e}ristiques de dip\IeC {\^o}les}{108}{subsection.11.2.2}
-\contentsline {subsection}{\numberline {11.2.3}Dip\IeC {\^o}les lin\IeC {\'e}aires}{108}{subsection.11.2.3}
-\contentsline {section}{\numberline {11.3}Dip\IeC {\^o}les lin\IeC {\'e}aires id\IeC {\'e}aux}{109}{section.11.3}
-\contentsline {subsection}{\numberline {11.3.1}Sources de tension}{109}{subsection.11.3.1}
-\contentsline {subsection}{\numberline {11.3.2}Sources de courant}{109}{subsection.11.3.2}
-\contentsline {subsection}{\numberline {11.3.3}Auto-inductance pure}{109}{subsection.11.3.3}
-\contentsline {subsection}{\numberline {11.3.4}Capacit\IeC {\'e} pure}{110}{subsection.11.3.4}
-\contentsline {section}{\numberline {11.4}Bobines et condensateurs r\IeC {\'e}els}{110}{section.11.4}
-\contentsline {subsection}{\numberline {11.4.1}Bobine de r\IeC {\'e}sistance non n\IeC {\'e}gligeable}{110}{subsection.11.4.1}
-\contentsline {subsection}{\numberline {11.4.2}Condensateur r\IeC {\'e}el avec conductance de fuite}{110}{subsection.11.4.2}
-\contentsline {section}{\numberline {11.5}G\IeC {\'e}n\IeC {\'e}rateurs et r\IeC {\'e}cepteurs lin\IeC {\'e}aires}{110}{section.11.5}
-\contentsline {subsection}{\numberline {11.5.1}Mod\IeC {\`e}le de Th\IeC {\'e}venin}{110}{subsection.11.5.1}
-\contentsline {subsection}{\numberline {11.5.2}Mod\IeC {\`e}le de Norton}{111}{subsection.11.5.2}
-\contentsline {subsection}{\numberline {11.5.3}\IeC {\'E}quivalence des deux mod\IeC {\`e}les}{111}{subsection.11.5.3}
-\contentsline {subsection}{\numberline {11.5.4}Puissance \IeC {\'e}lectrocin\IeC {\'e}tique re\IeC {\c c}ue, puissance \IeC {\'e}lectrocin\IeC {\'e}tique engendr\IeC {\'e}e, diff\IeC {\'e}rents types de fonctionnement}{111}{subsection.11.5.4}
-\contentsline {subsection}{\numberline {11.5.5}Cas d'un dip\IeC {\^o}le non lin\IeC {\'e}aire poss\IeC {\'e}dant une caract\IeC {\'e}ristique}{112}{subsection.11.5.5}
-\contentsline {subsection}{\numberline {11.5.6}R\IeC {\'e}cepteurs (\IeC {\'e}lectrolyseurs, moteurs \IeC {\'e}lectriques) non polaris\IeC {\'e}s}{112}{subsection.11.5.6}
-\contentsline {section}{\numberline {11.6}Loi d'Ohm g\IeC {\'e}n\IeC {\'e}ralis\IeC {\'e}e, signe de la f.\IeC {\'e}.m.}{112}{section.11.6}
-\contentsline {chapter}{\numberline {12}R\IeC {\'e}gimes transitoires}{115}{chapter.12}
-\contentsline {section}{\numberline {12.1}R\IeC {\'e}gime continu}{115}{section.12.1}
-\contentsline {subsection}{\numberline {12.1.1}D\IeC {\'e}finitions}{115}{subsection.12.1.1}
-\contentsline {subsection}{\numberline {12.1.2}Loi de Pouillet}{115}{subsection.12.1.2}
-\contentsline {subsection}{\numberline {12.1.3}Circuits complexes}{116}{subsection.12.1.3}
-\contentsline {section}{\numberline {12.2}\IeC {\'E}chelon de tension}{116}{section.12.2}
-\contentsline {section}{\numberline {12.3}Dip\IeC {\^o}le R, L s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{117}{section.12.3}
-\contentsline {subsection}{\numberline {12.3.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{117}{subsection.12.3.1}
-\contentsline {subsection}{\numberline {12.3.2}\IeC {\'E}tablissement du courant}{117}{subsection.12.3.2}
-\contentsline {subsection}{\numberline {12.3.3}Constante de temps}{118}{subsection.12.3.3}
-\contentsline {subsection}{\numberline {12.3.4}Arr\IeC {\^e}t du courant}{118}{subsection.12.3.4}
-\contentsline {subsection}{\numberline {12.3.5}Aspect \IeC {\'E}nerg\IeC {\'e}tique}{118}{subsection.12.3.5}
-\contentsline {section}{\numberline {12.4}Dip\IeC {\^o}le R, C s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{119}{section.12.4}
-\contentsline {subsection}{\numberline {12.4.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{119}{subsection.12.4.1}
-\contentsline {subsection}{\numberline {12.4.2}Charge du condensateur}{119}{subsection.12.4.2}
-\contentsline {subsection}{\numberline {12.4.3}Constante de temps}{120}{subsection.12.4.3}
-\contentsline {subsection}{\numberline {12.4.4}D\IeC {\'e}charge du condensateur}{120}{subsection.12.4.4}
-\contentsline {subsection}{\numberline {12.4.5}Aspect \IeC {\'e}nerg\IeC {\'e}tique}{120}{subsection.12.4.5}
-\contentsline {section}{\numberline {12.5}R\IeC {\'e}gimes propres du circuit RLC s\IeC {\'e}rie}{121}{section.12.5}
-\contentsline {subsection}{\numberline {12.5.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{121}{subsection.12.5.1}
-\contentsline {subsection}{\numberline {12.5.2}R\IeC {\'e}gime ap\IeC {\'e}riodique}{121}{subsection.12.5.2}
-\contentsline {subsection}{\numberline {12.5.3}R\IeC {\'e}gime critique}{122}{subsection.12.5.3}
-\contentsline {subsection}{\numberline {12.5.4}R\IeC {\'e}gime pseudo-p\IeC {\'e}riodique (ou sinuso\IeC {\"\i }dal amorti)}{122}{subsection.12.5.4}
-\contentsline {subsection}{\numberline {12.5.5}Aspects \IeC {\'e}nerg\IeC {\'e}tiques, facteur de qualit\IeC {\'e}}{123}{subsection.12.5.5}
-\contentsline {section}{\numberline {12.6}R\IeC {\'e}ponse d'un di\IeC {\^o}le R,L,C s\IeC {\'e}rie \IeC {\`a} un \IeC {\'e}chelon de tension}{124}{section.12.6}
-\contentsline {subsection}{\numberline {12.6.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{124}{subsection.12.6.1}
-\contentsline {subsection}{\numberline {12.6.2}R\IeC {\'e}gime pseudo p\IeC {\'e}riodique}{125}{subsection.12.6.2}
-\contentsline {subsection}{\numberline {12.6.3}Aspects \IeC {\'e}nerg\IeC {\'e}tiques}{125}{subsection.12.6.3}
-\contentsline {subsection}{\numberline {12.6.4}R\IeC {\'e}gime propre et r\IeC {\'e}gime transitoire}{126}{subsection.12.6.4}
+\contentsline {chapter}{\numberline {7}Formation des images, miroir plan, miroir sph\IeC {\'e}rique}{65}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Point objet, point image, stigmatisme}{66}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}Stigmatisme d'un syst\IeC {\`e}me optique pour un point}{66}{subsection.7.1.1}% 
+\contentsline {subsection}{\numberline {7.1.2}R\IeC {\'e}alit\IeC {\'e}, virtualit\IeC {\'e} d'un point objet ou d'un point image}{66}{subsection.7.1.2}% 
+\contentsline {subsection}{\numberline {7.1.3}Objets et images \IeC {\'e}tendus}{66}{subsection.7.1.3}% 
+\contentsline {section}{\numberline {7.2}Images donn\IeC {\'e}es par un miroir plan}{66}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}Miroir sph\IeC {\'e}rique}{67}{section.7.3}% 
+\contentsline {subsection}{\numberline {7.3.1}D\IeC {\'e}finitions}{67}{subsection.7.3.1}% 
+\contentsline {subsection}{\numberline {7.3.2}Condition de stigmatisme rigoureux}{67}{subsection.7.3.2}% 
+\contentsline {subsection}{\numberline {7.3.3}Stigmatisme approch\IeC {\'e}}{69}{subsection.7.3.3}% 
+\contentsline {subsection}{\numberline {7.3.4}Aplan\IeC {\'e}tisme, notion de plans conjugu\IeC {\'e}s, conditions de Gauss, grandissement transversal}{69}{subsection.7.3.4}% 
+\contentsline {subsection}{\numberline {7.3.5}Formules du miroir sph\IeC {\'e}rique avec origine au centre et avec origine au sommet}{69}{subsection.7.3.5}% 
+\contentsline {subsection}{\numberline {7.3.6}Foyer principal, plan focal, distance focale}{70}{subsection.7.3.6}% 
+\contentsline {subsection}{\numberline {7.3.7}Foyers secondaires}{70}{subsection.7.3.7}% 
+\contentsline {subsection}{\numberline {7.3.8}Repr\IeC {\'e}sentation du miroir sph\IeC {\'e}rique utilis\IeC {\'e} dans les conditions de Gauss, construction des images}{71}{subsection.7.3.8}% 
+\contentsline {subsection}{\numberline {7.3.9}Formules de Newton (origine au foyer)}{71}{subsection.7.3.9}% 
+\contentsline {subsection}{\numberline {7.3.10}Image d'un objet \IeC {\`a} l'infini}{71}{subsection.7.3.10}% 
+\contentsline {section}{\numberline {7.4}Exercices}{72}{section.7.4}% 
+\contentsline {chapter}{\numberline {8}Lentilles sph\IeC {\'e}riques minces}{75}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Diff\IeC {\'e}rents types de lentilles sph\IeC {\'e}riques}{75}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Lentilles sph\IeC {\'e}riques minces, leurs repr\IeC {\'e}sentations}{76}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Conditions de stigmatisme approch\IeC {\'e} pour une lentille mince, conditions de Gauss et aplan\IeC {\'e}tisme}{76}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}Foyers d'une lentille mince}{76}{section.8.4}% 
+\contentsline {subsection}{\numberline {8.4.1}Foyers principaux objet et image}{76}{subsection.8.4.1}% 
+\contentsline {subsection}{\numberline {8.4.2}Plans focaux, distance focale}{77}{subsection.8.4.2}% 
+\contentsline {subsection}{\numberline {8.4.3}Vergence}{77}{subsection.8.4.3}% 
+\contentsline {subsection}{\numberline {8.4.4}Foyers secondaires}{77}{subsection.8.4.4}% 
+\contentsline {section}{\numberline {8.5}Trac\IeC {\'e} du rayon \IeC {\'e}mergent correspondant \IeC {\`a} un rayon incident donn\IeC {\'e}}{77}{section.8.5}% 
+\contentsline {section}{\numberline {8.6}Construction de l'image d'un objet frontal donn\IeC {\'e}, dans les conditions de Gauss}{78}{section.8.6}% 
+\contentsline {section}{\numberline {8.7}Formules des lentilles minces}{78}{section.8.7}% 
+\contentsline {section}{\numberline {8.8}Image d'un objet \IeC {\`a} l'infini}{79}{section.8.8}% 
+\contentsline {section}{\numberline {8.9}\IeC {\'E}tude analytique des diff\IeC {\'e}rents cas}{79}{section.8.9}% 
+\contentsline {section}{\numberline {8.10}Lentilles minces accol\IeC {\'e}es}{80}{section.8.10}% 
+\contentsline {section}{\numberline {8.11}Exercices}{80}{section.8.11}% 
+\contentsline {chapter}{\numberline {9}Charges \IeC {\'e}lectriques, intensit\IeC {\'e}, tension et lois de Kirchhoff}{85}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Charge \IeC {\'e}lectrique}{86}{section.9.1}% 
+\contentsline {subsection}{\numberline {9.1.1}\IeC {\'E}lectrisation}{86}{subsection.9.1.1}% 
+\contentsline {subsection}{\numberline {9.1.2}D\IeC {\'e}finition}{86}{subsection.9.1.2}% 
+\contentsline {subsection}{\numberline {9.1.3}Quantification de la charge \IeC {\'e}lectrique}{86}{subsection.9.1.3}% 
+\contentsline {subsection}{\numberline {9.1.4}Propri\IeC {\'e}t\IeC {\'e}s des charges \IeC {\'e}lectriques}{87}{subsection.9.1.4}% 
+\contentsline {section}{\numberline {9.2}Densit\IeC {\'e}s de charge \IeC {\'e}lectrique}{87}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}Densit\IeC {\'e} volumique de charge}{87}{subsection.9.2.1}% 
+\contentsline {subsection}{\numberline {9.2.2}Densit\IeC {\'e} surfacique de charge, densit\IeC {\'e} lin\IeC {\'e}ique de charge}{87}{subsection.9.2.2}% 
+\contentsline {section}{\numberline {9.3}Densit\IeC {\'e}s de courant}{87}{section.9.3}% 
+\contentsline {subsection}{\numberline {9.3.1}Densit\IeC {\'e} volumique de courant}{87}{subsection.9.3.1}% 
+\contentsline {subsection}{\numberline {9.3.2}Densit\IeC {\'e} surfacique de courant}{88}{subsection.9.3.2}% 
+\contentsline {section}{\numberline {9.4}Intensit\IeC {\'e} d'un courant \IeC {\'e}lectrique}{88}{section.9.4}% 
+\contentsline {section}{\numberline {9.5}Lignes de courant, tubes de courant}{89}{section.9.5}% 
+\contentsline {section}{\numberline {9.6}R\IeC {\'e}gime stationnaire, approximation des r\IeC {\'e}gimes quasi-stationnaires (ARQS)}{89}{section.9.6}% 
+\contentsline {subsection}{\numberline {9.6.1}D\IeC {\'e}finition}{89}{subsection.9.6.1}% 
+\contentsline {subsection}{\numberline {9.6.2}Tube de courant dans le cadre de l'ARQS}{90}{subsection.9.6.2}% 
+\contentsline {section}{\numberline {9.7}Potentiel \IeC {\'e}lectrostatique, tension \IeC {\'e}lectrostatique ou diff\IeC {\'e}rence de potentiel \IeC {\'e}lectrostatique}{90}{section.9.7}% 
+\contentsline {subsection}{\numberline {9.7.1}Potentiel \IeC {\'e}lectrostatique}{90}{subsection.9.7.1}% 
+\contentsline {subsection}{\numberline {9.7.2}Surfaces \IeC {\'e}quipotentielles}{90}{subsection.9.7.2}% 
+\contentsline {subsection}{\numberline {9.7.3}Diff\IeC {\'e}rence de potentiel \IeC {\'e}lectrostatique ou tension \IeC {\'e}lectrostatique}{91}{subsection.9.7.3}% 
+\contentsline {section}{\numberline {9.8}Cas de l'ARQS, diff\IeC {\'e}rence de potentiel \IeC {\'e}lectrique ou tension \IeC {\'e}lectrique}{91}{section.9.8}% 
+\contentsline {section}{\numberline {9.9}Travail et puissance \IeC {\'e}lectrocin\IeC {\'e}tiques re\IeC {\c c}us par un dip\IeC {\^o}le \IeC {\'e}lectrocin\IeC {\'e}tique en ARQS}{91}{section.9.9}% 
+\contentsline {section}{\numberline {9.10}Lois de Kirchhoff}{92}{section.9.10}% 
+\contentsline {subsection}{\numberline {9.10.1}D\IeC {\'e}finitions}{92}{subsection.9.10.1}% 
+\contentsline {subsection}{\numberline {9.10.2}Loi des n\oe {}uds}{92}{subsection.9.10.2}% 
+\contentsline {subsection}{\numberline {9.10.3}Loi des mailles}{93}{subsection.9.10.3}% 
+\contentsline {subsection}{\numberline {9.10.4}Utilisation des lois de Kirchhoff}{93}{subsection.9.10.4}% 
+\contentsline {section}{\numberline {9.11}Exercices}{93}{section.9.11}% 
+\contentsline {chapter}{\numberline {10}Conducteurs ohmiques, loi d'ohm, loi de joule}{95}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}Conductivit\IeC {\'e}, loi d'Ohm locale}{96}{section.10.1}% 
+\contentsline {subsection}{\numberline {10.1.1}Conducteur ohmique, mobilit\IeC {\'e} des porteurs de charge}{96}{subsection.10.1.1}% 
+\contentsline {subsection}{\numberline {10.1.2}Loi d'Ohm locale}{96}{subsection.10.1.2}% 
+\contentsline {section}{\numberline {10.2}R\IeC {\'e}sistance \IeC {\'e}lectrique d'un conducteur ohmique, loi d'Ohm}{97}{section.10.2}% 
+\contentsline {subsection}{\numberline {10.2.1}Loi d'Ohm}{97}{subsection.10.2.1}% 
+\contentsline {subsection}{\numberline {10.2.2}R\IeC {\'e}sistance d'un conducteur ohmique \IeC {\'e}l\IeC {\'e}mentaire et d'un conducteur ohmique cylindrique}{97}{subsection.10.2.2}% 
+\contentsline {section}{\numberline {10.3}\IeC {\'E}tude physique de la conductivit\IeC {\'e}}{98}{section.10.3}% 
+\contentsline {subsection}{\numberline {10.3.1}Cas des m\IeC {\'e}taux, des alliages m\IeC {\'e}talliques}{98}{subsection.10.3.1}% 
+\contentsline {subsection}{\numberline {10.3.2}Supraconducteurs}{98}{subsection.10.3.2}% 
+\contentsline {subsection}{\numberline {10.3.3}\IeC {\'E}lectrolytes}{98}{subsection.10.3.3}% 
+\contentsline {section}{\numberline {10.4}Associations de r\IeC {\'e}sistances}{99}{section.10.4}% 
+\contentsline {subsection}{\numberline {10.4.1}Association en s\IeC {\'e}rie}{99}{subsection.10.4.1}% 
+\contentsline {subsection}{\numberline {10.4.2}Association en parall\IeC {\`e}le}{99}{subsection.10.4.2}% 
+\contentsline {subsection}{\numberline {10.4.3}Cas de deux conducteurs ohmiques}{99}{subsection.10.4.3}% 
+\contentsline {subsection}{\numberline {10.4.4}Th\IeC {\'e}or\IeC {\`e}me de Kennely (\IeC {\'e}quivalence triangle, \IeC {\'e}toile)}{99}{subsection.10.4.4}% 
+\contentsline {section}{\numberline {10.5}Th\IeC {\'e}or\IeC {\`e}me de Millman}{100}{section.10.5}% 
+\contentsline {section}{\numberline {10.6}Ponts diviseur de tension et diviseur de courant}{101}{section.10.6}% 
+\contentsline {subsection}{\numberline {10.6.1}Pont diviseur de tension}{101}{subsection.10.6.1}% 
+\contentsline {subsection}{\numberline {10.6.2}Pont diviseur de courant}{101}{subsection.10.6.2}% 
+\contentsline {section}{\numberline {10.7}Loi de Joule}{101}{section.10.7}% 
+\contentsline {subsection}{\numberline {10.7.1}Cas d'un conducteur ohmique}{101}{subsection.10.7.1}% 
+\contentsline {subsection}{\numberline {10.7.2}Cas d'un dip\IeC {\^o}le quelconque}{102}{subsection.10.7.2}% 
+\contentsline {chapter}{\numberline {11}Dip\IeC {\^o}les \IeC {\'e}lectrocin\IeC {\'e}tiques}{103}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}Dip\IeC {\^o}le \IeC {\'e}lectrocin\IeC {\'e}tique, puissance \IeC {\'e}lectrocin\IeC {\'e}tique}{104}{section.11.1}% 
+\contentsline {subsection}{\numberline {11.1.1}Circuits \IeC {\'e}tudi\IeC {\'e}s}{104}{subsection.11.1.1}% 
+\contentsline {subsection}{\numberline {11.1.2}Transformations d'\IeC {\'e}nergie dans un dip\IeC {\^o}le}{104}{subsection.11.1.2}% 
+\contentsline {section}{\numberline {11.2}Caract\IeC {\'e}ristique courant tension d'un dip\IeC {\^o}le}{105}{section.11.2}% 
+\contentsline {subsection}{\numberline {11.2.1}D\IeC {\'e}finition}{105}{subsection.11.2.1}% 
+\contentsline {subsection}{\numberline {11.2.2}Exemples de caract\IeC {\'e}ristiques de dip\IeC {\^o}les}{105}{subsection.11.2.2}% 
+\contentsline {subsection}{\numberline {11.2.3}Dip\IeC {\^o}les lin\IeC {\'e}aires}{105}{subsection.11.2.3}% 
+\contentsline {section}{\numberline {11.3}Dip\IeC {\^o}les lin\IeC {\'e}aires id\IeC {\'e}aux}{105}{section.11.3}% 
+\contentsline {subsection}{\numberline {11.3.1}Sources de tension}{105}{subsection.11.3.1}% 
+\contentsline {subsection}{\numberline {11.3.2}Sources de courant}{106}{subsection.11.3.2}% 
+\contentsline {subsection}{\numberline {11.3.3}Auto-inductance pure}{106}{subsection.11.3.3}% 
+\contentsline {subsection}{\numberline {11.3.4}Capacit\IeC {\'e} pure}{106}{subsection.11.3.4}% 
+\contentsline {section}{\numberline {11.4}Bobines et condensateurs r\IeC {\'e}els}{107}{section.11.4}% 
+\contentsline {subsection}{\numberline {11.4.1}Bobine de r\IeC {\'e}sistance non n\IeC {\'e}gligeable}{107}{subsection.11.4.1}% 
+\contentsline {subsection}{\numberline {11.4.2}Condensateur r\IeC {\'e}el avec conductance de fuite}{107}{subsection.11.4.2}% 
+\contentsline {section}{\numberline {11.5}G\IeC {\'e}n\IeC {\'e}rateurs et r\IeC {\'e}cepteurs lin\IeC {\'e}aires}{107}{section.11.5}% 
+\contentsline {subsection}{\numberline {11.5.1}Mod\IeC {\`e}le de Th\IeC {\'e}venin}{107}{subsection.11.5.1}% 
+\contentsline {subsection}{\numberline {11.5.2}Mod\IeC {\`e}le de Norton}{107}{subsection.11.5.2}% 
+\contentsline {subsection}{\numberline {11.5.3}\IeC {\'E}quivalence des deux mod\IeC {\`e}les}{107}{subsection.11.5.3}% 
+\contentsline {subsection}{\numberline {11.5.4}Puissance \IeC {\'e}lectrocin\IeC {\'e}tique re\IeC {\c c}ue, puissance \IeC {\'e}lectrocin\IeC {\'e}tique engendr\IeC {\'e}e, diff\IeC {\'e}rents types de fonctionnement}{108}{subsection.11.5.4}% 
+\contentsline {subsection}{\numberline {11.5.5}Cas d'un dip\IeC {\^o}le non lin\IeC {\'e}aire poss\IeC {\'e}dant une caract\IeC {\'e}ristique}{108}{subsection.11.5.5}% 
+\contentsline {subsection}{\numberline {11.5.6}R\IeC {\'e}cepteurs (\IeC {\'e}lectrolyseurs, moteurs \IeC {\'e}lectriques) non polaris\IeC {\'e}s}{109}{subsection.11.5.6}% 
+\contentsline {section}{\numberline {11.6}Loi d'Ohm g\IeC {\'e}n\IeC {\'e}ralis\IeC {\'e}e, signe de la force \IeC {\'e}lectro-motrice}{109}{section.11.6}% 
+\contentsline {chapter}{\numberline {12}R\IeC {\'e}gimes transitoires}{111}{chapter.12}% 
+\contentsline {section}{\numberline {12.1}R\IeC {\'e}gime continu}{112}{section.12.1}% 
+\contentsline {subsection}{\numberline {12.1.1}D\IeC {\'e}finitions}{112}{subsection.12.1.1}% 
+\contentsline {subsection}{\numberline {12.1.2}Loi de Pouillet}{112}{subsection.12.1.2}% 
+\contentsline {subsection}{\numberline {12.1.3}Circuits complexes}{113}{subsection.12.1.3}% 
+\contentsline {section}{\numberline {12.2}\IeC {\'E}chelon de tension}{113}{section.12.2}% 
+\contentsline {section}{\numberline {12.3}Dip\IeC {\^o}le R, L s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{113}{section.12.3}% 
+\contentsline {subsection}{\numberline {12.3.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{113}{subsection.12.3.1}% 
+\contentsline {subsection}{\numberline {12.3.2}\IeC {\'E}tablissement du courant}{114}{subsection.12.3.2}% 
+\contentsline {subsection}{\numberline {12.3.3}Constante de temps}{114}{subsection.12.3.3}% 
+\contentsline {subsection}{\numberline {12.3.4}Arr\IeC {\^e}t du courant}{115}{subsection.12.3.4}% 
+\contentsline {subsection}{\numberline {12.3.5}Aspect \IeC {\'E}nerg\IeC {\'e}tique}{115}{subsection.12.3.5}% 
+\contentsline {section}{\numberline {12.4}Dip\IeC {\^o}le R, C s\IeC {\'e}rie soumis \IeC {\`a} un \IeC {\'e}chelon de tension}{116}{section.12.4}% 
+\contentsline {subsection}{\numberline {12.4.1}Sch\IeC {\'e}ma, \IeC {\'e}quation diff\IeC {\'e}rentielle}{116}{subsection.12.4.1}% 
+\contentsline {subsection}{\numberline {12.4.2}Charge du condensateur}{116}{subsection.12.4.2}% 
+\contentsline {subsection}{\numberline {12.4.3}Constante de temps}{116}{subsection.12.4.3}% 
+\contentsline {subsection}{\numberline {12.4.4}D\IeC {\'e}charge du condensateur}{117}{subsection.12.4.4}% 
+\contentsline {subsection}{\numberline {12.4.5}Aspect \IeC {\'e}nerg\IeC {\'e}tique}{117}{subsection.12.4.5}% 
+\contentsline {section}{\numberline {12.5}R\IeC {\'e}gimes propres du circuit RLC s\IeC {\'e}rie}{117}{section.12.5}% 
+\contentsline {subsection}{\numberline {12.5.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{117}{subsection.12.5.1}% 
+\contentsline {subsection}{\numberline {12.5.2}R\IeC {\'e}gime ap\IeC {\'e}riodique}{118}{subsection.12.5.2}% 
+\contentsline {subsection}{\numberline {12.5.3}R\IeC {\'e}gime critique}{119}{subsection.12.5.3}% 
+\contentsline {subsection}{\numberline {12.5.4}R\IeC {\'e}gime pseudo-p\IeC {\'e}riodique (ou sinuso\IeC {\"\i }dal amorti)}{119}{subsection.12.5.4}% 
+\contentsline {subsection}{\numberline {12.5.5}Aspects \IeC {\'e}nerg\IeC {\'e}tiques, facteur de qualit\IeC {\'e}}{120}{subsection.12.5.5}% 
+\contentsline {section}{\numberline {12.6}R\IeC {\'e}ponse d'un di\IeC {\^o}le R,L,C s\IeC {\'e}rie \IeC {\`a} un \IeC {\'e}chelon de tension}{121}{section.12.6}% 
+\contentsline {subsection}{\numberline {12.6.1}\IeC {\'E}quation diff\IeC {\'e}rentielle}{121}{subsection.12.6.1}% 
+\contentsline {subsection}{\numberline {12.6.2}R\IeC {\'e}gime pseudo p\IeC {\'e}riodique}{122}{subsection.12.6.2}% 
+\contentsline {subsection}{\numberline {12.6.3}Aspects \IeC {\'e}nerg\IeC {\'e}tiques}{122}{subsection.12.6.3}% 
+\contentsline {subsection}{\numberline {12.6.4}R\IeC {\'e}gime propre et r\IeC {\'e}gime transitoire}{122}{subsection.12.6.4}% 
