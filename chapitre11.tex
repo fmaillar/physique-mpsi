@@ -124,3 +124,59 @@ Si le dipôle est polarisé, alors le signe de $e$ est constant : avec $e$ fléc
 Si le dipôle n'est pas polarisé, alors le signe de $e$ (ou de $\eta$) change avec celui de $i$ : si $i > 0$, $e = –E'$. Si $i < 0$, $e = E'$ . On a bien dans ces deux cas $u = R i - e$.
 
 La puissance utile s'écrit donc aussi $P_u = - e i$ . Elle est toujours positive car un récepteur non polarisé ne peut fonctionner qu'en récepteur. On a donc toujours $ei < 0$.
+
+\section{Générateurs et récepteurs}
+Avec la loir d'Ohm généralisée (convention récepteur, $e$ fléchée dans le même sens que $i$)~: $u=Ri-e$. La puissance électrocinétique reçue du reste du circuit est 
+\begin{equation}
+	\P = ui = Ri^2 - ei = \P_{th}+ \P_u = \P_{th} - \P', 
+\end{equation}
+où $\P_{th}$ représente la puissance dissipée par effet Joule, $\P_u=-ei$ la puissance dissipée par un autre effet (mécanique, chimique, \ldots{}) et $\P'$ la puissance électrocinétique engendrée dans le dipôle.
+
+Si $\P_u$ est positive, alors le dipôle est un récepteur, si elle est négative, alors le dipôle est un générateur et si elle est nulle il s'agit d'un conducteur ohmique.
+
+Pour un dipôle polarisé, le signe de $e$ est fixé, celui de $i$ dépend de la présence ou non d'autres dipôles polarisés dans le circuit, de leurs sens de branchement (série ou opposition), de leur forces électromotrices et de leurs résistances. Il peut fonctionner compme générateur ou comme récepteur.
+
+Pour un dipôle non polarisé, si $e$ n'est pas nulle, elle est toujours du signe opposé à $i$, il ne peut fonctionner que comme récepteur et ceci uniquement s'il est placé sous une tension suffisante (de valeur absolue supérieure à sa force contre-électromotrice).
+
+Un dipôle non polarisé peut être polarisé lors de son fonctionnement en récepteur, il suffit qu'il accumule au moins une partie de l'énergie non-électrique (chimique, mécanique, électro-magnétique, \ldots) qu'il produit. Il peut alors retransformer cette énergie en énergie électrocinétique, c'est-à-dire, fonctionner aussi en générateur.
+
+\section{Exercices}
+\begin{exercice}[Associations de dipôles]
+	\begin{enumerate}
+		\item Donner l'allure de la caractéristique $i=f(u)$ de deux diodes Zéner en série tête bêche.
+		\item Tracer la caractéristique de l'association en parallèle d'une diode Zener idéale de tension de seuil $U_s=\SI{0.1}{\volt}$, de tension de Zener $U_Z = \SI{0.7}{\volt}$ et d'un conducteur ohmique de résistance $R=\SI{1}{\kilo\ohm}$.
+		\item Même question en remplaçant la diode par deux diodes Zener en série reliées par leurs bases
+		\item Exprimer la caractéristiques de deux générateurs de tension $(e_1, R_1)$ et $(e_2, R_2)$ associées en parallèle, si les deux forces électromotrices sont fléchées dans le même sens. Conclusion ?
+		\item Même question pour deux générateurs de courant $(\eta_1, G_1)$, $(\eta_2, G_2)$ associés en série.
+	\end{enumerate}
+\end{exercice}
+\begin{exercice}[Association de dipôles et point de fonctionnement]
+	\begin{enumerate}
+		\item Tracer les caractéristiques des dipôles $AB$ et $MN$ représentés ci-dessous :
+		\item Tracer la caractéristique $u=f(i)$ des dipôles $AB$ et $MN$ associés en parallèle, avec $A$ reliè à$N$ et $B$ à $M$.
+		\item En déduire les coodonnées du point de fonctionnement de cette association sans connexion avec l'extérieur.
+	\end{enumerate}
+\end{exercice}
+		
+\begin{exercice}[Puissance reçue par un conducteur ohmique]
+	On relie un générateur $(E, r)$ avec un conducteur ohmique de résistance $R$ variable.
+	\begin{enumerate}
+		\item Déterminer l'xpression de l'intensité $i$ dans le circuit
+		\item Exprimer la puissance $P$ reçue par $R$ et tracer l'allure de $P=f(R)$. Quelles sont les expressions (avec $E$ et $r$) de la valeur maximale $P_M$ de $P$ et la valeur $R_M$ de $R$ correspondante ?
+		\item Reprendre le même raisonnement avec un générateur modélisé par le modèle de Norton $(j, g)$.
+	\end{enumerate}
+\end{exercice}
+
+\begin{exercice}[Montage potentiométrique]
+La résistance de la partie du potentiomètre entre $A$ et $B$ est $kR$ avec $k$ variant entre 0 et 1.
+	\begin{enumerate}
+		\item Déterminer les éléments $e_T$ et $r_T$ du générateur de Thévenin situé à gauche ed $A$ et $B$ sur le schéma. Application numérique pour $R=\SI{1}{\kilo\ohm}$, $E=\SI{30}{\volt}$ et $k=0.3$.
+		\item Déterminer l'expression de $U$ en fonction de $E$, $k$, $R$ et $R_C$. En posant $\alpha = \frac{R_C}{R}$ et $y= \frac{U}{E}$, exprimer $y$ en fonction de $k$ et $\alpha$. Application numérique pour $R_C=\SI{5}{\kilo\ohm}$.
+		\item On note $U_0$ la valeur de $U$ lorsque $R_C$ est infinie et $y_0 = U_0/E$. Déterminer l'écart relatif $\epsilon = \frac{y_0-y}{y_0}$ en fonction de $k$ et $\alpha$. Montrer que $\epsilon$ passe par un maximum lorsque $k$ varie et $\alpha$ demeure constant. Tracer l'allure des courbes donnant $y$ en fonction de $k$ pour différents valeurs de $\alpha$.
+		\item Pour quelle valeur de $R_C$ la puissance reçue par $R_C$ est elle maximale ?
+	\end{enumerate}
+\end{exercice}
+
+\begin{exercice}[Diode idéale]
+	Dans le circuit ci-contre
+\end{exercice}
