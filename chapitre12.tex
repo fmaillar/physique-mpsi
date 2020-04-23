@@ -4,331 +4,326 @@
 \minilot
 
 \section{Régime continu}
-\subsection{Définitions}
-En "régime continu" (ou stationnaire), les tensions et les intensités sont constantes. Le régime continu a un début et une fin qui ne peuvent être instantanés pour deux raisons~:
-\begin{itemize}
-\item Continuité de $i_L = f(t)$ dans toute portion de circuit inductive car la tension $u_L = L\derived{i_L}{t}$ ne peut être infinie ;
-\item Continuité de la charge $q(t)$ accumulée sur une armature de condensateur, et donc aussi de la tension entre les armatures $u_c(t) = \frac{q}{C}$, pour toute portion de circuit capacitive car l'intensité $i_C = C \derived{u_c}{t}$ ne peut être infinie.
-\end{itemize}
-Le régime continu est donc précédé et suivi de "régimes transitoires". On verra que pour les circuits ne comportant que des dipôles linéaires, intensités et tensions sont solutions d'équations différentielles linéaires à coefficients constants. Chaque solution est la somme de deux fonctions, l'une correspondant au régime continu, l'autre s'amortissant au cours du temps, souvent rapidement, elle correspond donc au régime transitoire et disparaît en régime continu.
-\subsection{Loi de Pouillet}
-Pour un circuit simple, (c'est-à-dire sans nœuds), ne comportant que des dipôles linéaires, en régime continu~:
-\begin{itemize}
-\item l'intensité $i_L$ est constante donc $u_L = L \derived{i}{t} = 0$, une inductance pure équivaut à un court-circuit.
-\item la tension $u_C$ entre les armatures d'un condensateur est constante, donc $q = C u_C$ est constante et $i_c = C\derived{u_C}{t} = 0$, un condensateur pur équivaut à un coupe-circuit.
-\end{itemize}
-Les circuits simples en continu sont donc du type suivant~:
+	\subsection{Définitions}
+		En "régime continu" (ou stationnaire), les tensions et les intensités sont constantes. Le régime continu a un début et une fin qui ne peuvent être instantanés pour deux raisons~:
+		\begin{itemize}
+			\item Continuité de $i_L = f(t)$ dans toute portion de circuit inductive car la tension $u_L = L\derived{i_L}{t}$ ne peut être infinie ;
+			\item Continuité de la charge $q(t)$ accumulée sur une armature de condensateur, et donc aussi de la tension entre les armatures $u_c(t) = \frac{q}{C}$, pour toute portion de circuit capacitive car l'intensité $i_C = C \derived{u_c}{t}$ ne peut être infinie.
+		\end{itemize}
+		Le régime continu est donc précédé et suivi de "régimes transitoires". On verra que pour les circuits ne comportant que des dipôles linéaires, intensités et tensions sont solutions d'équations différentielles linéaires à coefficients constants. Chaque solution est la somme de deux fonctions, l'une correspondant au régime continu, l'autre s'amortissant au cours du temps, souvent rapidement, elle correspond donc au régime transitoire et disparaît en régime continu.
+	\subsection{Loi de Pouillet}
+		Pour un circuit simple, (c'est-à-dire sans nœuds), ne comportant que des dipôles linéaires, en régime continu~:
+		\begin{itemize}
+			\item l'intensité $i_L$ est constante donc $u_L = L \derived{i}{t} = 0$, une inductance pure équivaut à un court-circuit.
+			\item la tension $u_C$ entre les armatures d'un condensateur est constante, donc $q = C u_C$ est constante et $i_c = C\derived{u_C}{t} = 0$, un condensateur pur équivaut à un coupe-circuit.
+		\end{itemize}
+		Les circuits simples en continu sont donc du type suivant~:
 
-On choisit un sens positif  pour le courant (ici le sens trigonométrique), les f.é.m. fléchées dans ce sens sont~: $e_1 = E_1$,  $e_2 = - E_2$,  $e_3 = - E_3$.
-Avec la loi d'Ohm et la loi  des mailles, on obtient~: 
-\begin{equation}
-R_4 i - e_3 + R_1 i + R_2 i - e_1 + R_3 i - e_2 = 0.
-\end{equation}
-D'où la loi de Pouillet~:
-\begin{equation}
-i = \frac{\sum_{j} e_j}{\sum_k R_k},
-\end{equation}
-avec les $e$ fléchés dans le même sens que $i$. 
+		On choisit un sens positif  pour le courant (ici le sens trigonométrique), les f.é.m. fléchées dans ce sens sont~: $e_1 = E_1$,  $e_2 = - E_2$,  $e_3 = - E_3$.
+		Avec la loi d'Ohm et la loi  des mailles, on obtient~:
+		\begin{equation}
+			R_4 i - e_3 + R_1 i + R_2 i - e_1 + R_3 i - e_2 = 0.
+		\end{equation}
+		D'où la loi de Pouillet~:
+		\begin{equation}
+			i = \frac{\sum_{j} e_j}{\sum_k R_k},
+		\end{equation}
+		avec les $e$ fléchés dans le même sens que $i$.
 
-Si le circuit comporte un récepteur non polarisé, de f.c.é.m. $E'$, on suppose $i > 0$ donc $e = -E'$. Si on trouve $i < 0$, on recommence avec $i < 0$ donc $e = E’$. Si on obtient $i > 0$, c'est que le récepteur ne fonctionne pas (sources insuffisantes).
-\subsection{Circuits complexes}
-S'ils ne comportent que des dipôles linéaires, on peut les réduire à des circuits simples avec les lois sur les associations de conducteurs ohmiques, l'équivalence triangle étoile, l'équivalence entre générateurs de Norton et générateurs de Thévenin \ldots On applique ensuite la loi de Pouillet. On peut aussi utiliser les lois de Kirchhoff pour écrire le nombre d'équations nécessaire à la résolution du problème. On verra encore d'autres méthodes \ldots
+		Si le circuit comporte un récepteur non polarisé, de f.c.é.m. $E'$, on suppose $i > 0$ donc $e = -E'$. Si on trouve $i < 0$, on recommence avec $i < 0$ donc $e = E’$. Si on obtient $i > 0$, c'est que le récepteur ne fonctionne pas (sources insuffisantes).
+	\subsection{Circuits complexes}
+		S'ils ne comportent que des dipôles linéaires, on peut les réduire à des circuits simples avec les lois sur les associations de conducteurs ohmiques, l'équivalence triangle étoile, l'équivalence entre générateurs de Norton et générateurs de Thévenin \ldots On applique ensuite la loi de Pouillet. On peut aussi utiliser les lois de Kirchhoff pour écrire le nombre d'équations nécessaire à la résolution du problème. On verra encore d'autres méthodes \ldots
 
-S'ils comportent des dipôles non linéaires, on doit appliquer des méthodes graphiques qui aboutissent à l'obtention du point de fonctionnement à l’intersection de deux caractéristiques.
+		S'ils comportent des dipôles non linéaires, on doit appliquer des méthodes graphiques qui aboutissent à l'obtention du point de fonctionnement à l’intersection de deux caractéristiques.
 \section{Échelon de tension}
-Un échelon de tension est une fonction du type~:
-\begin{equation}
-\fonction{e}{\R}{\R}{t}{
-\begin{cases}
-0 & t < t_0 \\
-E & t > t_0 
-\end{cases}.
-}
-\end{equation}
-La fonction $e$ n'est pas définie en $t_0$. Il correspond à la mise en marche brutale d'une source de tension qui était jusqu'alors court-circuitée, mais en pratique, le temps de montée de $0$ à $E$ ne peut être tout à fait nul. On obtient des échelons de tension presque parfaits avec certains dispositifs électroniques. On peut décrire mathématiquement l'échelon de tension avec la fonction de Heaviside.
+	Un échelon de tension est une fonction du type~:
+	\begin{equation}
+		\fonction{e}{\R}{\R}{t}{
+		\begin{cases}
+		0 & t < t_0 \\
+		E & t > t_0
+		\end{cases}.
+		}
+	\end{equation}
+	La fonction $e$ n'est pas définie en $t_0$. Il correspond à la mise en marche brutale d'une source de tension qui était jusqu'alors court-circuitée, mais en pratique, le temps de montée de $0$ à $E$ ne peut être tout à fait nul. On obtient des échelons de tension presque parfaits avec certains dispositifs électroniques. On peut décrire mathématiquement l'échelon de tension avec la fonction de Heaviside.
 
-On étudiera dans la suite la réponse de différents dipôles en série soumis à des échelons de tension et dans tous les cas, on supposera que le régime stationnaire était atteint à la date $t = 0$, ce qui permettra d’obtenir la condition initiale pour $t > 0$.
+	On étudiera dans la suite la réponse de différents dipôles en série soumis à des échelons de tension et dans tous les cas, on supposera que le régime stationnaire était atteint à la date $t = 0$, ce qui permettra d’obtenir la condition initiale pour $t > 0$.
 \section{Dipôle R, L série soumis à un échelon de tension}
-\subsection{Schéma, équation différentielle}
-On supposera que $L$ et $R$ sont des constantes. L’équation différentielle s’écrit grâce à la loi des mailles~: 
-\begin{equation}
-L\derived{i}{t}+Ri=e(t).
-\end{equation}
-Ainsi, pour $t < 0$, $L\derived{i}{t}+Ri=0$ et pour $t > 0$, $L\derived{i}{t}+Ri=E$.	Si le régime stationnaire est atteint pour $t < 0$, alors $\derived{i}{t}=0$ et $i = 0$. Mais $i$ est une fonction continue de $t$ car ce courant passe dans une bobine donc $\lim\limits_{t \to 0^+} i = 0$.
-\subsection{Établissement du courant}
-On résout l'équation différentielle pour $t > 0$. L'équation homogène (ou "sans second membre") s'écrit
-\begin{equation}
-L\derived{i}{t}+Ri = 0n
-\end{equation}
-soit en séparant les variables :  
-\begin{equation}
-\dfrac{\D i}{i} = -\frac{R}{L} \D t,
-\end{equation}
-d'où en intégrant~:
-\begin{equation}
-\ln\left(\frac{i}{A}\right) = -\frac{R}{L} t.
-\end{equation}
-Ainsi Donc la solution générale de l'équation homogène est~:
-\begin{equation}
-i = A \exp\left(-\frac{R}{L} t\right)
-\end{equation}
-La constante d'intégration $A$ est une intensité. Une solution particulière évidente de l'équation complète est $i = \frac{E}{R}$. Par conséquent~: 
-\begin{equation}
-i = \frac{E}{R} + A \exp\left(-\frac{R}{L} t\right).
-\end{equation}
-La condition initiale $\lim\limits_{t \to 0^+} i = 0$ donne la constante : $A = -\frac{E}{R}$. L'établissement du courant dans le circuit se fait donc suivant la loi~:
-\begin{equation}
-i = \frac{E}{R} \left(1 - \exp\left(-\frac{R}{L} t\right)\right).
-\end{equation} 
-La courbe présente donc une asymptote, $\lim\limits_{+\infty} i = \frac{E}{R}$. Elle correspond au régime stationnaire.
-\subsection{Constante de temps}
-La constante de temps du dipôle R, L série est $\tau=\frac{L}{R}$ donc, pendant l'établissement du courant dans le circuit $i = \frac{E}{R} \left(1 - \exp\left(-\frac{t}{\tau}\right)\right)$ et $\derived{i}{t}=\frac{E}{L}\exp\left(-\frac{t}{\tau}\right)$ donc $ \lim\limits_{0} \derived{i}{t} = \frac{E}{L}$. La tangente à l'origine a pour équation $\frac{E}{L} t$, elle coupe l'asymptote pour $t = \frac{L}{R}$ soit $t = \tau$. Des ordres de grandeur de la constante de temps sont~:
-\begin{itemize}
-\item Si $L=\SI{2}{\henry}$ et $R=\SI{10}{\ohm}$, alors $\tau=\SI{0.2}{\second}$ ;
-\item Si $L=\SI{20}{\milli\henry}$ et $R=\SI{1}{\kilo\ohm}$, alors $\tau=\SI{20}{\micro\second}$.
-\end{itemize}
-Le temps de montée est le temps pour passer de 10 \% à 90 \% de $i$ maximal. 	Donc $t_M = t_2 - t_1$, donc $t_M = \tau \ln(9)$ soit $t_M = 2.2\tau$.
-Le temps de réponse à 5 \% est le temps nécessaire pour que l'écart avec la valeur finale soit inférieur à 5 \%, donc $\tau_R = \tau \ln(20) = 3\tau$.
-\subsection{Arrêt du courant}
-Si, après que le régime stationnaire se soit établi dans le circuit, la source est court-circuitée à partir de $t = 0$, c'est-à-dire : $e(t) = E Y(-t)$, on a alors $\lim\limits_{t \to 0^+} i = \frac{E}{R}$ et, pour $t > 0$ l'équation différentielle est l'équation homogène~:
-\begin{equation}
-L \derived{i}{t} + Ri = 0, 
-\end{equation}
-l'arrêt du courant dans le circuit suit donc la loi~:
-\begin{equation}
-i = -\frac{E}{R} \exp\left(-\frac{R}{L} t\right).
-\end{equation} 
-L'asymptote est $i = 0$, elle correspond au régime stationnaire.
-\subsection{Aspect Énergétique}
-La puissance fournie par la source est $ei = Ri^2+Li \derived{i}{t}$.
-Pendant l'établissement du courant dans le circuit, l'énergie fournie par la source est :
-\begin{equation}
-\int_0^t Ei \D t = \int_0^t Ri^2 \D t+ \int_0^t Li \derived{i}{t} \D t.
-\end{equation}
-On voit que cette énergie est consommée en partie par effet Joule dans le conducteur ohmique et en partie stockée dans la bobine sous forme d'énergie électromagnétique (magnétique). L'énergie stockée dans la bobine est $W_m = \int_0^t Li \D i$. L'énergie électromagnétique stockée dans la bobine est $W_m = \frac{Li^2}{2}$. Quand le régime stationnaire est atteint la bobine a accumulé une énergie $\lim\limits_{\infty} W_m = \frac{LE^2}{2R^2}$, cette énergie est restituée sous forme électrocinétique pendant la phase d'arrêt du courant et finalement transformée en chaleur par effet Joule dans le conducteur ohmique.
+	\subsection{Schéma, équation différentielle}
+		On supposera que $L$ et $R$ sont des constantes. L’équation différentielle s’écrit grâce à la loi des mailles~:
+		\begin{equation}
+			L\derived{i}{t}+Ri=e(t).
+		\end{equation}
+		Ainsi, pour $t < 0$, $L\derived{i}{t}+Ri=0$ et pour $t > 0$, $L\derived{i}{t}+Ri=E$.	Si le régime stationnaire est atteint pour $t < 0$, alors $\derived{i}{t}=0$ et $i = 0$. Mais $i$ est une fonction continue de $t$ car ce courant passe dans une bobine donc $\lim\limits_{t \to 0^+} i = 0$.
+	\subsection{Établissement du courant}
+		On résout l'équation différentielle pour $t > 0$. L'équation homogène (ou "sans second membre") s'écrit
+		\begin{equation}
+			L\derived{i}{t}+Ri = 0n
+		\end{equation}
+		soit en séparant les variables :
+		\begin{equation}
+			\dfrac{\D i}{i} = -\frac{R}{L} \D t,
+		\end{equation}
+		d'où en intégrant~:
+		\begin{equation}
+			\ln\left(\frac{i}{A}\right) = -\frac{R}{L} t.
+		\end{equation}
+		Ainsi Donc la solution générale de l'équation homogène est~:
+		\begin{equation}
+			i = A \exp\left(-\frac{R}{L} t\right)
+		\end{equation}
+		La constante d'intégration $A$ est une intensité. Une solution particulière évidente de l'équation complète est $i = \frac{E}{R}$. Par conséquent~:
+		\begin{equation}
+			i = \frac{E}{R} + A \exp\left(-\frac{R}{L} t\right).
+		\end{equation}
+		La condition initiale $\lim\limits_{t \to 0^+} i = 0$ donne la constante : $A = -\frac{E}{R}$. L'établissement du courant dans le circuit se fait donc suivant la loi~:
+		\begin{equation}
+			i = \frac{E}{R} \left(1 - \exp\left(-\frac{R}{L} t\right)\right).
+		\end{equation}
+		La courbe présente donc une asymptote, $\lim\limits_{+\infty} i = \frac{E}{R}$. Elle correspond au régime stationnaire.
+	\subsection{Constante de temps}
+		La constante de temps du dipôle R, L série est $\tau=\frac{L}{R}$ donc, pendant l'établissement du courant dans le circuit $i = \frac{E}{R} \left(1 - \exp\left(-\frac{t}{\tau}\right)\right)$ et $\derived{i}{t}=\frac{E}{L}\exp\left(-\frac{t}{\tau}\right)$ donc $ \lim\limits_{0} \derived{i}{t} = \frac{E}{L}$.
+		La tangente à l'origine a pour équation $\frac{E}{L} t$, elle coupe l'asymptote pour $t = \frac{L}{R}$ soit $t = \tau$. Des ordres de grandeur de la constante de temps sont~:
+		\begin{itemize}
+			\item Si $L=\SI{2}{\henry}$ et $R=\SI{10}{\ohm}$, alors $\tau=\SI{0.2}{\second}$ ;
+			\item Si $L=\SI{20}{\milli\henry}$ et $R=\SI{1}{\kilo\ohm}$, alors $\tau=\SI{20}{\micro\second}$.
+		\end{itemize}
+		Le temps de montée est le temps pour passer de 10 \% à 90 \% de $i$ maximal. 	Donc $t_M = t_2 - t_1$, donc $t_M = \tau \ln(9)$ soit $t_M = 2.2\tau$.
+		Le temps de réponse à 5 \% est le temps nécessaire pour que l'écart avec la valeur finale soit inférieur à 5 \%, donc $\tau_R = \tau \ln(20) = 3\tau$.
+	\subsection{Arrêt du courant}
+		Si, après que le régime stationnaire se soit établi dans le circuit, la source est court-circuitée à partir de $t = 0$, c'est-à-dire : $e(t) = E Y(-t)$, on a alors $\lim\limits_{t \to 0^+} i = \frac{E}{R}$ et, pour $t > 0$ l'équation différentielle est l'équation homogène~:
+		\begin{equation}
+			L \derived{i}{t} + Ri = 0,
+		\end{equation}
+		l'arrêt du courant dans le circuit suit donc la loi~:
+		\begin{equation}
+			i = -\frac{E}{R} \exp\left(-\frac{R}{L} t\right).
+		\end{equation}
+		L'asymptote est $i = 0$, elle correspond au régime stationnaire.
+	\subsection{Aspect Énergétique}
+		La puissance fournie par la source est $ei = Ri^2+Li \derived{i}{t}$. Pendant l'établissement du courant dans le circuit, l'énergie fournie par la source est :
+		\begin{equation}
+			\int_0^t Ei \D t = \int_0^t Ri^2 \D t+ \int_0^t Li \derived{i}{t} \D t.
+		\end{equation}
+		On voit que cette énergie est consommée en partie par effet Joule dans le conducteur ohmique et en partie stockée dans la bobine sous forme d'énergie électromagnétique (magnétique). L'énergie stockée dans la bobine est $W_m = \int_0^t Li \D i$. L'énergie électromagnétique stockée dans la bobine est $W_m = \frac{Li^2}{2}$. Quand le régime stationnaire est atteint la bobine a accumulé une énergie $\lim\limits_{\infty} W_m = \frac{LE^2}{2R^2}$, cette énergie est restituée sous forme électrocinétique pendant la phase d'arrêt du courant et finalement transformée en chaleur par effet Joule dans le conducteur ohmique.
 \section{Dipôle R, C série soumis à un échelon de tension}
-\subsection{Schéma, équation différentielle}
-On a $i = \derived{q}{t}$. L'équation différentielle s'écrit donc grâce à la loi des mailles~:
-\begin{equation}
-R \derived{q}{t} + \frac{q}{C} = e(t).
-\end{equation}
-Pour $t < 0$, on a $R \derived{q}{t} + \frac{q}{C} = 0$ et pour $t > 0$ $R \derived{q}{t} + \frac{q}{C} = E$. Si le régime stationnaire est atteint pour $t < 0$, $\derived{q}{t} = 0$ et $q = 0$. Mais $q$ est une fonction continue du temps donc $\lim\limits_{0} q =0$. 
-
-\subsection{Charge du condensateur}
-On résout l'équation différentielle pour $t>0$~: L'équation homogène s'écrit $R \derived{q}{t} + \frac{q}{C} =0$. En séparant les variables, on obtient $\frac{\D q}{q} = -\frac{\D t}{R C}$. Soit en intégrant en posant $A$ la constante d'intégration : $\ln{\abs{\frac{q}{A}}} = -\frac{t}{R C}$.
-Ainsi, la solution de l'équation homogène est~:
-\begin{equation}
-q = A\exp\left(-\frac{t}{RC}\right).
-\end{equation}
-Une solution particulière évidente de l'équation complète est $q = C E$. La solution complète s'exprime donc~:
-\begin{equation}
-q = CE + A\exp\left(-\frac{t}{RC}\right).
-\end{equation}
-La condition initiale $\lim\limits_{\infty} q=0$ donne la constante $A=-CE$. Ainsi~:
-\begin{equation}
-q = CE\left(1-\exp\left(-\frac{t}{RC}\right)\right).
-\end{equation}
-
-La courbe représentative de $q$ en fonction du temps possède donc une asymptote. Elle correspond au régime stationnaire. L'intensité est $i = \frac{E}{R} \exp\left(-\frac{t}{RC}\right)$ et $\lim\limits_{\infty} i(t) = 0$.
-
-\subsection{Constante de temps}
-La constante de temps du dipôle R,C série est $\tau = RC$. Pendant la charge du condensateur~:
-\begin{equation}
-q = CE(1 - \exp(-t/\tau)),
-\end{equation}
-et $i = \frac{E}{R} \exp(-t/\tau)$. La limite en zéro du courant vaut $\frac{E}{R}$, donc la tangente à l'origine de $q$ a pour équation $\frac{E}{R} t$. La tangente à l'origine coupe l'asymptote pour une valeur de $t = \tau$. Le temps de montée est le temps pour passer de 10\% à 90 \% de $q_max$, soit $t_M = 2.2 \tau$. Le temps de réponse à 5\% est le temps nécessaire pour que l'écart avec la valeur finale soit inférieure à 5\%. Donc $t_r = 3 \tau$.
-
-\subsection{Décharge du condensateur}
-Si, après que le régime stationnaire se soit établi dans le circuit, la source est court-circuitée à partir de $t = 0$, (c'est-à-dire : $e(t) = E Y(-t)$, on a alors $\lim\limits_{0} q = CE$ et, pour $t > 0$ l'équation différentielle est l'équation homogène $R \derived{q}{t} + \frac{q}{C} = 0$, sa solution générale est donc $q=CE \exp(-t/\tau)$.
-La décharge du condensateur suit donc la loi $q=CE \exp{-t/\tau}$. L'asymptote est $q=0$, elle correspond au régime stationnaire. On a alors $i=0$.
-
-\subsection{Aspect énergétique}
-La puissance fournie par la source est $ei = Ri^2 + \frac{q}{C} \derived{q}{t}$.
-Pendant l'établissement du courant dans le circuit, l'énergie fournie par la source est :
-\begin{equation}
-\int_0^t Ei \D t = \int_0^t R i^2 \D t + \int_{0}^{t} \frac{q}{C} \derived{q}{t} \D t.
-\end{equation}
-On voit que cette énergie est consommée en partie par effet Joule dans le conducteur ohmique et en partie stockée dans le condensateur sous forme d'énergie électromagnétique (électrostatique).
-L'énergie stockée dans le condensateur est $W_e = \int_{0}^{t} \frac{q}{C} \derived{q}{t} \D t = \frac{q^2}{2C}$. La source a fourni l'énergie $W' = Eq$. Quand le régime stationnaire est atteint le condensateur a accumulé une énergie $\frac{CE^2}{2}$, alors que la source a fourni $W' = C E^2$. Le condensateur accumule donc la moitié de l'énergie fournie par la source, l'autre moitié est dissipée par effet Joule dans le conducteur ohmique. Cette énergie accumulée est restituée sous forme électrocinétique pendant la décharge du condensateur et finalement transformée en chaleur par effet Joule dans le conducteur ohmique. 
-
+	\subsection{Schéma, équation différentielle}
+		On a $i = \derived{q}{t}$. L'équation différentielle s'écrit donc grâce à la loi des mailles~:
+		\begin{equation}
+			R \derived{q}{t} + \frac{q}{C} = e(t).
+		\end{equation}
+		Pour $t < 0$, on a $R \derived{q}{t} + \frac{q}{C} = 0$ et pour $t > 0$ $R \derived{q}{t} + \frac{q}{C} = E$. Si le régime stationnaire est atteint pour $t < 0$, $\derived{q}{t} = 0$ et $q = 0$. Mais $q$ est une fonction continue du temps donc $\lim\limits_{0} q =0$.
+	\subsection{Charge du condensateur}
+		On résout l'équation différentielle pour $t>0$~: L'équation homogène s'écrit $R \derived{q}{t} + \frac{q}{C} =0$. En séparant les variables, on obtient $\frac{\D q}{q} = -\frac{\D t}{R C}$. Soit en intégrant en posant $A$ la constante d'intégration : $\ln{\abs{\frac{q}{A}}} = -\frac{t}{R C}$.
+		Ainsi, la solution de l'équation homogène est~:
+		\begin{equation}
+			q = A\exp\left(-\frac{t}{RC}\right).
+		\end{equation}
+		Une solution particulière évidente de l'équation complète est $q = C E$. La solution complète s'exprime donc~:
+		\begin{equation}
+			q = CE + A\exp\left(-\frac{t}{RC}\right).
+		\end{equation}
+		La condition initiale $\lim\limits_{\infty} q=0$ donne la constante $A=-CE$. Ainsi~:
+		\begin{equation}
+			q = CE\left(1-\exp\left(-\frac{t}{RC}\right)\right).
+		\end{equation}
+		La courbe représentative de $q$ en fonction du temps possède donc une asymptote. Elle correspond au régime stationnaire. L'intensité est $i = \frac{E}{R} \exp\left(-\frac{t}{RC}\right)$ et $\lim\limits_{\infty} i(t) = 0$.
+	\subsection{Constante de temps}
+		La constante de temps du dipôle R,C série est $\tau = RC$. Pendant la charge du condensateur~:
+		\begin{equation}
+			q = CE(1 - \exp(-t/\tau)),
+		\end{equation}
+		et $i = \frac{E}{R} \exp(-t/\tau)$. La limite en zéro du courant vaut $\frac{E}{R}$, donc la tangente à l'origine de $q$ a pour équation $\frac{E}{R} t$. La tangente à l'origine coupe l'asymptote pour une valeur de $t = \tau$. Le temps de montée est le temps pour passer de 10\% à 90 \% de $q_max$, soit $t_M = 2.2 \tau$. Le temps de réponse à 5\% est le temps nécessaire pour que l'écart avec la valeur finale soit inférieure à 5\%. Donc $t_r = 3 \tau$.
+	\subsection{Décharge du condensateur}
+		Si, après que le régime stationnaire se soit établi dans le circuit, la source est court-circuitée à partir de $t = 0$, (c'est-à-dire : $e(t) = E Y(-t)$, on a alors $\lim\limits_{0} q = CE$ et, pour $t > 0$ l'équation différentielle est l'équation homogène $R \derived{q}{t} + \frac{q}{C} = 0$, sa solution générale est donc $q=CE \exp(-t/\tau)$. La décharge du condensateur suit donc la loi $q=CE \exp{-t/\tau}$. L'asymptote est $q=0$, elle correspond au régime stationnaire. On a alors $i=0$.
+	\subsection{Aspect énergétique}
+		La puissance fournie par la source est $ei = Ri^2 + \frac{q}{C} \derived{q}{t}$. Pendant l'établissement du courant dans le circuit, l'énergie fournie par la source est~:
+	\begin{equation}
+		\int_0^t Ei \D t = \int_0^t R i^2 \D t + \int_{0}^{t} \frac{q}{C} \derived{q}{t} \D t.
+	\end{equation}
+		On voit que cette énergie est consommée en partie par effet Joule dans le conducteur ohmique et en partie stockée dans le condensateur sous forme d'énergie électromagnétique (électrostatique). L'énergie stockée dans le condensateur est $W_e = \int_{0}^{t} \frac{q}{C} \derived{q}{t} \D t = \frac{q^2}{2C}$. La source a fourni l'énergie $W' = Eq$. Quand le régime stationnaire est atteint le condensateur a accumulé une énergie $\frac{CE^2}{2}$, alors que la source a fourni $W' = C E^2$. Le condensateur accumule donc la moitié de l'énergie fournie par la source, l'autre moitié est dissipée par effet Joule dans le conducteur ohmique. Cette énergie accumulée est restituée sous forme électrocinétique pendant la décharge du condensateur et finalement transformée en chaleur par effet Joule dans le conducteur ohmique.
 \section{Régimes propres du circuit RLC série}
-\subsection{Équation différentielle}
-On parle de régime libre lorsqu’il n’y a pas de générateur dans le circuit. On a au préalable chargé le condensateur ou fait circuler un courant dans la bobine pour accumuler de l’énergie dans l’un de ces deux dipôles (ou dans les deux). On supposera que $R$, $L$ et $C$ sont des constantes. On a $i = \derived{q}{t}$ et $\derived{i}{t} = \deriveds{q}{t}$. Ainsi
-\begin{equation}
-L \deriveds{q}{t} + R \derived{q}{t} + \frac{q}{C} = 0.
-\end{equation}
-ou  
-\begin{equation}
-\deriveds{q}{t} + \frac{R}{L} \derived{q}{t} + \frac{q}{LC} = 0.
-\end{equation}
-C'est une équation linéaire du second ordre à coefficients constants. On pose en général : $\lambda = \frac{R}{2L}$ qu'on appelle coefficient d'amortissement et $\omega_0 = \frac{1}{\sqrt{LC}}$. appelée la pulsation propre. La pulsation propre vérifie donc la formule de Thomson : $L C \omega_0^2 = 1$. On a alors~: 
-\begin{equation}
-\deriveds{q}{t} + 2\lambda \derived{q}{t} + \omega_0^2 q = 0.
-\end{equation}
-L'équation caractéristique associée à cette équation différentielle est $x^2 + 2\lambda x + \omega_0^2=0$. 	Son discriminant réduit est $\delta = \lambda^2-\omega_0^2$ (c'est $\frac{\Delta}{4}$). Il est nul pour $\lambda=\omega_0$, soit pour une valeur de $R$ appelée résistance critique : $R_c = 2\sqrt{\frac{L}{C}}$. Pour $L$ et $C$ fixés, $\delta>0$ si $R > R_c$.
+	\subsection{Équation différentielle}
+		On parle de régime libre lorsqu’il n’y a pas de générateur dans le circuit. On a au préalable chargé le condensateur ou fait circuler un courant dans la bobine pour accumuler de l’énergie dans l’un de ces deux dipôles (ou dans les deux). On supposera que $R$, $L$ et $C$ sont des constantes. On a $i = \derived{q}{t}$ et $\derived{i}{t} = \deriveds{q}{t}$. Ainsi~:
+		\begin{equation}
+			L \deriveds{q}{t} + R \derived{q}{t} + \frac{q}{C} = 0.
+		\end{equation}
+		ou
+		\begin{equation}
+			\deriveds{q}{t} + \frac{R}{L} \derived{q}{t} + \frac{q}{LC} = 0.
+		\end{equation}
+		C'est une équation linéaire du second ordre à coefficients constants. On pose en général : $\lambda = \frac{R}{2L}$ qu'on appelle coefficient d'amortissement et $\omega_0 = \frac{1}{\sqrt{LC}}$. appelée la pulsation propre. La pulsation propre vérifie donc la formule de Thomson : $L C \omega_0^2 = 1$. On a alors~:
+		\begin{equation}
+			\deriveds{q}{t} + 2\lambda \derived{q}{t} + \omega_0^2 q = 0.
+		\end{equation}
+		L'équation caractéristique associée à cette équation différentielle est $x^2 + 2\lambda x + \omega_0^2=0$. 	Son discriminant réduit est $\delta = \lambda^2-\omega_0^2$ (c'est $\frac{\Delta}{4}$). Il est nul pour $\lambda=\omega_0$, soit pour une valeur de $R$ appelée résistance critique : $R_c = 2\sqrt{\frac{L}{C}}$. Pour $L$ et $C$ fixés, $\delta>0$ si $R > R_c$.
+	\subsection{Régime apériodique}
+		Lorsque $\delta >0$, l'équation caractéristique possède deux racines réelles négatives : $x_{1, 2} = -\lambda \pm \sqrt{\lambda^2 -\omega_0^2}$. La solution de l'équation différentielle s'écrit~: $q(t) = A\exp(-\alpha t) + B\exp(-\beta t)$, avec $\alpha = -x_1$ et $\beta=-x_2$, $\alpha>\beta>0$. En dérivant la charge, le courant vaut
+		\begin{equation}
+			i(t) = -A\alpha \exp{(-\alpha t)} - B\beta \exp{(-\beta t)}.
+		\end{equation}
+		Si les conditions initiales à $t=0$ sont $q=q_0$ et $i=0$, alors les deux constantes d'intégrations valent $A = -\frac{q_0 \beta}{\alpha - \beta}$ et $B = \frac{q_0 \alpha}{\alpha - \beta}$.
 
-\subsection{Régime apériodique} Lorsque $\delta >0$, l'équation caractéristique possède deux racines réelles négatives : $x_{1, 2} = -\lambda \pm \sqrt{\lambda^2 -\omega_0^2}$. La solution de l'équation différentielle s'écrit : $q(t) = A\exp(-\alpha t) + B\exp(-\beta t)$, avec $\alpha = -x_1$ et $\beta=-x_2$, $\alpha>\beta>0$. En dérivant la charge, le courant vaut
-\begin{equation}
-i(t) = -A\alpha \exp{(-\alpha t)} - B\beta \exp{(-\beta t)}.
-\end{equation}
+		La solution adaptée au problème physique est donc~:
+		\begin{equation}
+			q(t) = \frac{q_0}{\alpha - \beta}\left(-\beta\exp(-\alpha t) + \alpha\exp(-\beta t )\right).
+		\end{equation}
 
-Si les conditions initiales à $t=0$ sont $q=q_0$ et $i=0$, alors les deux constantes d'intégrations valent $A = -\frac{q_0 \beta}{\alpha - \beta}$ et $B = \frac{q_0 \alpha}{\alpha - \beta}$.
+		Ainsi $i = \derived{q}{t} = \frac{q_0 \alpha \beta}{\alpha - \beta}\left(\exp(-\alpha t) - \exp(-\beta t )\right)$ et $\derived{i}{t} = \frac{q_0 \alpha \beta}{\alpha - \beta}\left(-\alpha\exp(-\alpha t) +\beta\exp(-\beta t )\right)$. On voit que $\lim\limits_{t \to 0} \derived{i}{t} = -q_0 \alpha\beta$, $\lim\limits_{t \to \infty} q = \lim\limits_{t \to \infty} i = \lim\limits_{t \to \infty} \derived{i}{t} = 0$. Pour $t_m = \frac{\ln\left(\frac{\alpha}{\beta}\right)}{\alpha-\beta}$, le courant $i$ est minimal et $q$ s'infléchie. % (voir Fig. \label{fig:}).
+	\subsection{Régime critique}
 
-La solution adaptée au problème physique est donc~:
-\begin{equation}
-q(t) = \frac{q_0}{\alpha - \beta}\left(-\beta\exp(-\alpha t) + \alpha\exp(-\beta t )\right).
-\end{equation}
+		Si le discriminant réduit, $\delta = 0$ (\emph{i.e.} $\lambda = \omega_0$ et $R = R_c$) alors l'équation caractéristique a une racine double réelle $x = -\lambda = -\omega_0$. La solution générale de l'équation différentielle s'écrit $q(t) = (At+B)\exp(-\lambda t)$. En dérivant temporellement la charge, le courant vaut $i(t) = (A-\lambda B-\lambda A t)\exp(-\lambda t)$.
 
-Ainsi $i = \derived{q}{t} = \frac{q_0 \alpha \beta}{\alpha - \beta}\left(\exp(-\alpha t) - \exp(-\beta t )\right)$ et $\derived{i}{t} = \frac{q_0 \alpha \beta}{\alpha - \beta}\left(-\alpha\exp(-\alpha t) +\beta\exp(-\beta t )\right)$.
+		Si les conditions initiales sont à $t=0$, $q=q_0>0$, $i=0$ alors on a $B=q_0$ et $A=\lambda q_0$. La solution adaptée au problème physique s'écrit donc $q(t) = q_0(A+\lambda t)\exp(-\lambda t)$. D'où $i(t) = -q_0\lambda^2 t\exp(-\lambda t)$ et $\derived{i}{t} = -q_0\lambda^2(1-\lambda t)\exp(-\lambda t)$.
 
-On voit que $\lim\limits_{t \to 0} \derived{i}{t} = -q_0 \alpha\beta$, $\lim\limits_{t \to \infty} q = \lim\limits_{t \to \infty} i = \lim\limits_{t \to \infty} \derived{i}{t} = 0$.
+		On voit que $\lim\limits_{t \to 0} \derived{i}{t} = -q_0\lambda^2$ et $\lim\limits_{t \to \infty} q(t) = \lim\limits_{t \to \infty} i(t) = 0$.
 
-Pour $t_m = \frac{\ln\left(\frac{\alpha}{\beta}\right)}{\alpha-\beta}$, le courant $i$ est minimal et $q$ s'infléchie. % (voir Fig. \label{fig:}).
+		On voit que la dérivée du courant s'annule pour $t=t_m = \frac{1}{\lambda} = 2\frac{L}{R} = \sqrt{LC} = \frac{RC}{2}$. Le courant passe par un minimum négatif $i_m=-\frac{q_0 \lambda}{e}$ et $q$ présente un point d'inflexion. Les graphes sont du même types que pour le régime apériodique, avec un amortissement plus rapide pour des valeurs de $L$ et de $C$ identiques.
+	\subsection{Régime pseudo-périodique (ou sinusoïdal amorti)}
+		Si le discriminant réduit, $delta$ est négatif (\emph{i.e.} $\lambda = \omega_0$ et $R = R_c$) alors l'équation caractéristique a deux racines complexes conjuguées : $x_{1, 2} = -\lambda \pm j\sqrt{-\delta}$. La solution générale de l'équation différentielle (homogène) s'écrit~:
+		\begin{equation}
+			q(t) = A \exp(x_1 t) + B \exp(x_2 t) = \exp(-\lambda t)(A\exp(-j\sqrt{-\delta t})+B\exp(j\sqrt{-\delta t})).
+		\end{equation}
+		Seules les solution réelles nous intéressent, alors~:
+		\begin{equation}
+			q(t) = \exp(-\lambda t)(A\cos(\sqrt{-\delta t}) + B\sin(\sqrt{-\delta t})).
+		\end{equation}
+		On a donc un régime sinusoïdal amorti de pseudo pulsation $\omega=\sqrt{-\delta} = \sqrt{\omega^2 - \lambda^2}<\omega_0$ qui vérifie $\omega^2 +\lambda^2 = \omega_0^2$. La pseudo période $T=\frac{2\pi}{\omega}$ est supérieure à la période propre $T_0=\frac{2\pi}{\omega_0}$. La solution réelle générale s'écrit donc~:
+		\begin{equation}
+			q(t) = \exp(-\lambda t)(A\cos(\omega t)+B\sin(\omega t)).
+		\end{equation}
+		Alors le courant vaut~:
+		\begin{equation}
+			i(t) = \exp(-\lambda t)((B\omega - A\lambda)\cos(\omega t) - (A\omega + B\lambda)\sin(\omega t)).
+		\end{equation}
+		Si les conditions initiales à $t=0$ sont $q=q_0>0$, $i=0$ alors on a~: $A=q_0$ et $B=q_0\frac{\lambda}{\omega}$. La solution adaptée au problème est donc~:
+		\begin{equation}
+			q(t) = q_0 \exp(-\lambda t)\left(\cos(\omega t) + \frac{\lambda}{\omega} \sin(\omega t)\right).
+		\end{equation}
+		Alors, $i(t) = -\exp(-\lambda t) \left(\omega +\frac{\lambda^2}{\omega}\right)\sin(\omega t)$ avec $\omega + \frac{\lambda^2}{\omega} = \frac{\omega_0^2}{\omega}$ d'où~:
+		\begin{equation}
+			i(t) = \frac{-q_0\omega_0^2}{\omega}\exp(-\lambda t) \sin(\omega t),
+		\end{equation}
+		et
+		\begin{equation}
+			\derived{i}{t} = \frac{-q_0\omega_0^2}{\omega}\exp(-\lambda t) (\omega \cos(\omega t) - \lambda \sin(\omega t)).
+		\end{equation}
 
-\subsection{Régime critique}
+		La pseudo période est l'intervalle de temps entre deux maxima (ou deux minima, ou deux annulations), avec variation dans le même sens, de $i$ ou de $q$. En une pseudo-période, $\ln(q)$ et $\ln(i)$ diminuent de $\delta_\ell = \ln\left(\frac{q(t)}{q(t+T)}\right) = \ln\left(\frac{\exp(-\lambda t)}{\exp(-\lambda t-\lambda T)}\right)=\lambda T$. Cette grandeur est appelée \emph{décrément logarithmique}~: $\delta_\ell = \lambda T$.
 
-Si le discriminant réduit, $\delta = 0$ (\emph{i.e.} $\lambda = \omega_0$ et $R = R_c$) alors l'équation caractéristique a une racine double réelle $x = -\lambda = -\omega_0$. La solution générale de l'équation différentielle s'écrit $q(t) = (At+B)\exp(-\lambda t)$. En dérivant temporellement la charge, le courant vaut $i(t) = (A-\lambda B-\lambda A t)\exp(-\lambda t)$. 
+		On peut aussi écrire la solution sous la forme~: $q=K\exp(-\lambda t) \cos(\omega t +\phi)$. Donc~:
+		\begin{equation}
+			i = -K\exp(-\lambda t)(\lambda\cos(\omega t + \phi)+\omega\sin(\omega t +\phi)
+		\end{equation}
+		En effet,
+		\begin{equation}
+			K\exp(-\lambda t) \cos(\omega t +\phi) = \exp(-\lambda t)(A\cos(\omega t) + B\sin(\omega t)),
+		\end{equation}
+		pour $A=K\cos \phi$ et $B=-K\sin \phi$. D'où $K=\sqrt{A^2+B^2}$ et $\phi = -\arctan\left(\frac{B}{A}\right)$.
 
-Si les conditions initiales sont à $t=0$, $q=q_0>0$, $i=0$ alors on a $B=q_0$ et $A=\lambda q_0$. La solution adaptée au problème physique s'écrit donc $q(t) = q_0(A+\lambda t)\exp(-\lambda t)$.
-D'où $i(t) = -q_0\lambda^2 t\exp(-\lambda t)$ et $\derived{i}{t} = -q_0\lambda^2(1-\lambda t)\exp(-\lambda t)$.
+		Avec les mêmes conditions initiale que précédemment, on obtient~:
+		\begin{align}
+			q_0 &=K\cos \phi \\
+			  0 &= \lambda\cos\phi + \omega\sin\phi.
+		\end{align}
+		Ainsi $\cos\phi = \frac{q_0}{K}$ et $\sin\phi = -\frac{\lambda}{K\omega}$ alors $\frac{q_0^2}{K^2} + \frac{\lambda^2}{K^2\omega^2}= \left(\frac{q_0 \omega_0}{K\omega}\right)=1$. Si on choisit $K$ positif, alors $K=q_0 \frac{\omega_0}{\omega}$. Alors~:
+		\begin{align}
+			\cos\phi &= \frac{\omega}{\omega_0} \\
+			\sin\phi &=-\frac{\lambda}{\omega_0},
+		\end{align}
+		alors $\tan \phi = -\frac{\lambda}{\omega}$. Comme $\cos\phi$ est positif, $\phi = \arctan\left(-\frac{\lambda}{\omega}\right)$.
 
-On voit que $\lim\limits_{t \to 0} \derived{i}{t} = -q_0\lambda^2$ et $\lim\limits_{t \to \infty} q(t) = \lim\limits_{t \to \infty} i(t) = 0$.
+		On remarquera que la courbe est comprise entre les deux exponentielles $K\exp(-\lambda t)$ et $-K\exp(-\lambda t)$ et que $K>q_0$ puisque $\omega_0>\omega$.
+	\subsection{Aspects énergétiques, facteur de qualité}
 
-On voit que la dérivée du courant s'annule pour $t=t_m = \frac{1}{\lambda} = 2\frac{L}{R} = \sqrt{LC} = \frac{RC}{2}$. Le courant passe par un minimum négatif $i_m=-\frac{q_0 \lambda}{e}$ et $q$ présente un point d'inflexion. Les graphes sont du même types que pour le régime apériodique, avec un amortissement plus rapide pour des valeurs de $L$ et de $C$ identiques.
+		Le facteur de qualité d'un dipôle R, L, C est par définition $Q = \frac{L\omega_0}{R}$, compte tenu de la formule de Thomson, on a donc aussi
+		\begin{equation}
+			Q = \frac{1}{RC \omega_0} = \frac{1}{R}\sqrt{\frac{L}{C}}.
+		\end{equation}
 
-\subsection{Régime pseudo-périodique (ou sinusoïdal amorti)}
+		L'énergie stockée dans le dipôle R,L,C série est $W = W_m + W_m = \frac{1}{2}\left(Li^2 + \frac{q^2}{C}\right)$. \emph{Pour un amortissement très faible}~: $\lambda$ est très petit devant $\omega_0$, d'où $\omega = \omega_0$ et $\frac{\lambda}{\omega}$ est très faible. Les approximations suivantes sont justifiées~:
+		\begin{align}
+			q(t) &= q_0 \exp(-\lambda t)\left(\cos(\omega t) + \frac{\lambda}{\omega} \sin(\omega t)\right) \\
+			     &= q_0 \exp(-\lambda t) \cos(\omega t),
+		\end{align}
+		et~:
+		\begin{align}
+			i(t) &= \frac{-q_0\omega_0^2}{\omega}\exp(-\lambda t) \sin(\omega t) \\
+		         &=-q_0 \omega_0 \exp(-\lambda t) \sin(\omega t).
+		\end{align}
 
-Si le discriminant réduit, $delta$ est négatif (\emph{i.e.} $\lambda = \omega_0$ et $R = R_c$) alors l'équation caractéristique a deux racines complexes conjuguées : $x_{1, 2} = -\lambda \pm j\sqrt{-\delta}$. La solution générale de l'équation différentielle (homogène) s'écrit~:
-\begin{equation}
-	q(t) = A \exp(x_1 t) + B \exp(x_2 t) = \exp(-\lambda t)(A\exp(-j\sqrt{-\delta t})+B\exp(j\sqrt{-\delta t})).
-\end{equation}
-Seules les solution réelles nous intéressent, alors~:
-\begin{equation}
-	q(t) = \exp(-\lambda t)(A\cos(\sqrt{-\delta t}) + B\sin(\sqrt{-\delta t})).
-\end{equation}
-On a donc un régime sinusoïdal amorti de pseudo pulsation $\omega=\sqrt{-\delta} = \sqrt{\omega^2 - \lambda^2}<\omega_0$ qui vérifie $\omega^2 +\lambda^2 = \omega_0^2$. La pseudo période $T=\frac{2\pi}{\omega}$ est supérieure à la période propre $T_0=\frac{2\pi}{\omega_0}$.
+		Alors en injectant ces expressions dans le calcul de l'énergie~:
+		\begin{equation}
+			W(t) = \frac{q_0^2 \exp(-2\lambda t)}{2} \left(L\omega_0^2 \sin^2(\omega_0 t) + \frac{1}{C}\cos^2(\omega_0 t)\right) = \frac{q_0^2 \exp(-2\lambda t)}{2}
+		\end{equation}
 
-La solution réelle générale s'écrit donc~:
-\begin{equation}
-q(t) = \exp(-\lambda t)(A\cos(\omega t)+B\sin(\omega t)).
-\end{equation}
-Alors le courant vaut~:
-\begin{equation}
-i(t) = \exp(-\lambda t)((B\omega - A\lambda)\cos(\omega t) - (A\omega + B\lambda)\sin(\omega t)).
-\end{equation}
+		Une période plus tard, l'énergie accumulée a diminuée à cause de l'effet Joule : $W(t+T) = \frac{q_0^2 \exp(-2\lambda (t+T))}{2}$. Alors le ratio suivant vaut~:
+		\begin{equation}
+			\frac{\text{énergie accumulée}}{\text{énergie perdue en une période}} = \frac{W(t)}{W(t) - W(t+T_0)} = \frac{1}{1 - \exp(-2\lambda T_0)} = \frac{1}{2\lambda T_0},
+		\end{equation}
+		avec $\lambda = \frac{R}{2L}$, soit $\frac{1}{2\lambda}=\frac{L}{R}$ et $\frac{1}{T_0} = \frac{\omega}{2\pi}$. Donc le ratio vaut~:
+		\begin{equation}
+			\frac{\text{énergie accumulée}}{\text{énergie perdue en une période}} = \frac{Q}{2\pi},
+		\end{equation}
+	\subsection{Équation différentielle}
+		Si l'amortissement est faible. Plus le facteur de qualité est grand, plus l'énergie électromagnétique accumulée est longue à se dissiper par effet Joule. $R$, $L$ et $C$ sont des constantes, par hypothèse. L'équation différentielle du circuit est~:
+		\begin{equation}
+			L\deriveds{q}{t} +R\derived{q}{t} +\frac{q}{C} = E(t),
+		\end{equation}
+		avec $E(t)$ un échelon en zéro de valeur $E$. Cette équation différentielle est équivalente à~:
+		\begin{align}
+			\deriveds{q}{t} + 2\lambda\derived{q}{t} + \omega_0^2 q           &= \frac{E(t)}{L} \\
+			\deriveds{q}{t} + \frac{\omega_0}{Q}\derived{q}{t} + \omega_0^2 q &= \frac{E(t)}{L},
+		\end{align}
+		puisque $2\lambda = \frac{R}{L} = \frac{\omega_0}{Q}$. Si lorsque $t<0$, le régime stationnaire était atteint, alors le courant et la charge seraient nuls puisque qu'elles sont continues en fonction du temps.
 
-Si les conditions initiales à $t=0$ sont $q=q_0>0$, $i=0$ alors on a~: $A=q_0$ et $B=q_0\frac{\lambda}{\omega}$. La solution adaptée au problème est donc~:
-\begin{equation}
- q(t) = q_0 \exp(-\lambda t)\left(\cos(\omega t) + \frac{\lambda}{\omega} \sin(\omega t)\right).
-\end{equation}
-Alors, $i(t) = -\exp(-\lambda t) \left(\omega +\frac{\lambda^2}{\omega}\right)\sin(\omega t)$ avec $\omega + \frac{\lambda^2}{\omega} = \frac{\omega_0^2}{\omega}$ d'où~:
-\begin{equation}
-i(t) = \frac{-q_0\omega_0^2}{\omega}\exp(-\lambda t) \sin(\omega t),
-\end{equation}
-et
-\begin{equation}
-\derived{i}{t} = \frac{-q_0\omega_0^2}{\omega}\exp(-\lambda t) (\omega \cos(\omega t) - \lambda \sin(\omega t)).
-\end{equation}
+		La solution générale de l'équation homogène dépend du signe du discriminant réduit de l'équation caractéristique $\delta$, elles ont été vues dans la section précédente. Une solution particulière pour $t>0$ de cette équation est $q(t)=CE$. La solution physique de l'équation différentielle est la somme de ces deux solutions, les constantes d'intégration étant fixées par les condtions initiales.
+	\subsection{Régime pseudo périodique}
+		Pour $R<Rc$, (\emph{i.e.} $\delta<0$), la solution générale de l'équation différentielle est~:
+		\begin{equation}
+			q = CE + \exp(-\lambda t)(A\cos(\omega t) + B\sin(\omega t))
+		\end{equation}
+		D'où~:
+		\begin{equation}
+			i = \exp(-\lambda t)((B\omega-A\lambda)\cos(\omega t) - (B \lambda+A \omega)\sin(\omega t)).
+		\end{equation}
+		Avec les conditions initiales données, $A=-CE$ et $B=-\lambda \frac{CE}{\omega}$. La solution adaptée est donc~:
+		\begin{equation}
+			q = CE\left(1 - \exp(-\lambda t) \left(\cos(\omega t) + \frac{\lambda}{\omega} \sin(\omega t) \right)\right).
+		\end{equation}
+		On procéderait de la même manière pour les régimes critique et apériodique.
+	\subsection{Aspects énergétiques}
+		L'énergie fournie par la source est $\int_0^t E i \D t = Eq$, celle qui est stockée est $W = \frac{1}{2} \left(Li^2 + \frac{q^2}{C}\right)$. À la fin du régime transitoire, la source a fourni l'énergie $CE^2$ et il reste $W=\frac{CE^2}{2}$ stockée dans le condensateur (ici $W_m=0$). La moitié de l'énergie fournie par la source a été consommée par effet Joule.
+	\subsection{Régime propre et régime transitoire}
+		L'exemple du régime R,L,C série a montré que le régime propre et le régime transitoire sont étroitement liés, le régime propre n'étant qu'un régime transitoire particulier. Le régime transitoire, caractéristique du circuit, disparaît au bout d'un temps suffisamment long. Il en est de même si la source fournit une tension alternative sinusoïdale, à la fin du régime transitoire, il y a un régime sinusoïdal permanent.
 
-La pseudo période est l'intervalle de temps entre deux maxima (ou deux minima, ou deux annulations), avec variation dans le même sens, de $i$ ou de $q$.
+\section{Tracés du chapitre}
+	On utilisera des variables sans dimensions pour ces tracés.
+	\subsection{Dipôle $R, L$ série soumis à un échelon de tension}
+		Tracés de $\frac{u_R}{E} = \frac{R}{E} i$ et de $\frac{u_L}{E} = 1- \frac{u_R}{E}$ en fonction de $\frac{t}{\tau} = \frac{R}{L} t$.
+		\paragraph{Établissement du courant}
 
-En une pseudo période, $\ln(q)$ et $\ln(i)$ diminuent de $\delta_\ell = \ln\left(\frac{q(t)}{q(t+T)}\right) = \ln\left(\frac{\exp(-\lambda t)}{\exp(-\lambda t-\lambda T)}\right)=\lambda T$.
+		\paragraph{Arrêt du courant}
 
-Cette grandeur est appelée \emph{décrément logarithmique}~: $\delta_\ell = \lambda T$.
+	\subsection{Dipôle $R, C$ série soumis à un échelon de tension}
+		Tracés de $\frac{u_C}{E} = \frac{1}{CE} q$ et de $\frac{u_R}{E} = \frac{R}{E} i = 1- \frac{u_C}{E}$ en fonction de $\frac{t}{\tau} = \frac{R}{L} t$.
+		\paragraph{Charge du condensateur}
 
-On peut aussi écrire la solution sous la forme~: $q=K\exp(-\lambda t) \cos(\omega t +\phi)$. Donc~:
-\begin{equation}
-i = -K\exp(-\lambda t)(\lambda\cos(\omega t + \phi)+\omega\sin(\omega t +\phi)
-\end{equation}
-En effet,
-\begin{equation}
-K\exp(-\lambda t) \cos(\omega t +\phi) = \exp(-\lambda t)(A\cos(\omega t) + B\sin(\omega t)),
-\end{equation}
-pour $A=K\cos \phi$ et $B=-K\sin \phi$. D'où $K=\sqrt{A^2+B^2}$ et $\phi = -\arctan\left(\frac{B}{A}\right).$
+		\paragraph{Décharge du condensateur}
 
-Avec les mêmes conditions initiale que précédemment, on obtient~:
-\begin{align}
-q_0 &=K\cos \phi \\ 0 &= \lambda\cos\phi + \omega\sin\phi.
-\end{align}
-Ainsi $\cos\phi = \frac{q_0}{K}$ et $\sin\phi = -\frac{\lambda}{K\omega}$ alors $\frac{q_0^2}{K^2} + \frac{\lambda^2}{K^2\omega^2}= \left(\frac{q_0 \omega_0}{K\omega}\right)=1$. Si on choisit $K$ positif, alors $K=q_0 \frac{\omega_0}{\omega}$. Alors~:
-\begin{align}
-\cos\phi &= \frac{\omega}{\omega_0} \\ \sin\phi&=-\frac{\lambda}{\omega_0},
-\end{align}
-alors $\tan \phi = -\frac{\lambda}{\omega}$. Comme $\cos\phi$ est positif, $\phi = \arctan\left(-\frac{\lambda}{\omega}\right)$.
+	\subsection{Régimes propres du circuit $R, L, C$ série}
+		Tracé de $\frac{u_c}{u_{C_0}} = \frac{q}{q_0}$ en fonction de $\frac{t}{T_0}$ pour $R \in \left\{\frac{R_C}{9}, \frac{R_C}{3}, R_C, 3R_C \right\}$ avec pour conditions initiales à $t=0$, $q=q_0$ et $i=0$.
+		%% Mettre les tracés
+		Tracé de $\frac{u_R}{u_{C_0}} = \frac{CR}{q_0} i$ en fonction de $\frac{t}{T_0}$ pour $R \in \left\{\frac{R_C}{9}, \frac{R_C}{3}, R_C, 3R_C \right\}$ avec pour conditions initiales à $t=0$, $q=q_0$ et $i=0$.
+		%% Mettre les tracés
+\section{Exercices}
+	\begin{exercice}[Circuit $R, L, C$ série]
+		Voir le cours pour les données. La charge initiale du condensateur est $q_0$ et $u_{C_0} = \frac{q_0}{C}$, $T_0$ la période propre de l'oscillateur, et $R_c$ sa résistance critique. Établir les équations de $\frac{U_C}{u_{C_0}}$ et $\frac{U_R}{u_{C_0}}$ en fonction de $t/T_0$ pour les valeurs de $R$ suivantes $3R_C$, $R_C$, $R_C/3$ et $R_C/9$.
 
-On remarquera que la courbe est comprise entre les deux exponentielles $K\exp(-\lambda t)$ et $-K\exp(-\lambda t)$ et que $K>q_0$ puisque $\omega_0>\omega$.
+		Comparer , dans le cas où l'on a un régime sinusoïdal amorti, la pseudo-période $T=\frac{2\pi}{\omega}$ à la période propre $T_0$, donner leur écart relatif $\frac{T-T_0}{T_0}$.
+	\end{exercice}
 
-\subsection{Aspects énergétiques, facteur de qualité}
+	\begin{exercice}[Réponse à un échelon de courant]
+		Le générateur de courant fournit un courant électromoteur $\eta = I Y(t)$, avec $Y$ la fonction de Heaviside, qui est nulle pour $t$ négatif et unitaire pour $t$ positif.
 
-Le facteur de qualité d'un dipôle R, L, C est par définition $Q = \frac{L\omega_0}{R}$, compte tenu de la formule de Thomson, on a donc aussi
-\begin{equation}
-Q = \frac{1}{RC \omega_0} = \frac{1}{R}\sqrt{\frac{L}{C}}.
-\end{equation}
-
-L'énergie stockée dans le dipôle R,L,C série est $W = W_m + W_m = \frac{1}{2}\left(Li^2 + \frac{q^2}{C}\right)$. \emph{Pour un amortissement très faible} : $\lambda$ est très petit devant $\omega_0$, d'où $\omega = \omega_0$ et $\frac{\lambda}{\omega}$ est très faible. Les approximations suivantes sont justifiées~:
-\begin{align}
-q(t) &= q_0 \exp(-\lambda t)\left(\cos(\omega t) + \frac{\lambda}{\omega} \sin(\omega t)\right) \\
-&= q_0 \exp(-\lambda t) \cos(\omega t),
-\end{align}
-et~:
-\begin{align}
-i(t) &= \frac{-q_0\omega_0^2}{\omega}\exp(-\lambda t) \sin(\omega t) \\
-&=-q_0 \omega_0 \exp(-\lambda t) \sin(\omega t).
-\end{align}
-
-Alors en injectant ces expressions dans le calcul de l'énergie~:
-\begin{equation}
-W(t) = \frac{q_0^2 \exp(-2\lambda t)}{2} \left(L\omega_0^2 \sin^2(\omega_0 t) + \frac{1}{C}\cos^2(\omega_0 t)\right) = \frac{q_0^2 \exp(-2\lambda t)}{2}
-\end{equation}
-
-Une période plus tard, l'énergie accumulée a diminuée à cause de l'effet Joule : $W(t+T) = \frac{q_0^2 \exp(-2\lambda (t+T))}{2}$. Alors le ratio suivant vaut~:
-\begin{equation}
-\frac{\text{énergie accumulée}}{\text{énergie perdue en une période}} = \frac{W(t)}{W(t) - W(t+T_0)} = \frac{1}{1 - \exp(-2\lambda T_0)} = \frac{1}{2\lambda T_0},
-\end{equation}
-avec $\lambda = \frac{R}{2L}$, soit $\frac{1}{2\lambda}=\frac{L}{R}$ et $\frac{1}{T_0} = \frac{\omega}{2\pi}$. Donc le ratio vaut~:
-\begin{equation}
-\frac{\text{énergie accumulée}}{\text{énergie perdue en une période}} = \frac{Q}{2\pi},
-\end{equation}
-si l'amortissement est faible. Plus le facteur de qualité est grand, plus l'énergie électromagnétique accumulée est longue à se dissiper par effet Joule.
-\section{Réponse d'un diôle R,L,C série à un échelon de tension}
-\subsection{Équation différentielle}
-$R$, $L$ et $C$ sont des constantes, par hypothèse. L'équation différentielle du circuit est~:
-\begin{equation}
-L\deriveds{q}{t} +R\derived{q}{t} +\frac{q}{C} = E(t),
-\end{equation}
-avec $E(t)$ un échelon en zéro de valeur $E$. Cette équation différentielle est équivalente à~:
-\begin{align}
-\deriveds{q}{t} + 2\lambda\derived{q}{t} + \omega_0^2 q &= \frac{E(t)}{L} \\
-\deriveds{q}{t} + \frac{\omega_0}{Q}\derived{q}{t} + \omega_0^2 q &= \frac{E(t)}{L},
-\end{align}
-puisque $2\lambda = \frac{R}{L} = \frac{\omega_0}{Q}$.
-
-Si lorsque $t<0$, le régime stationnaire était atteint, alors le courant et la charge seraient nuls puisque qu'elles sont continues en fonction du temps.
-
-La solution générale de l'équation homogène dépend du signe du discriminant réduit de l'équation caractéristique $\delta$, elles ont été vues dans la section précédente. Une solution particulière pour $t>0$ de cette équation est $q(t)=CE$. La solution physique de l'équation différentielle est la somme de ces deux solutions, les constantes d'intégration étant fixées par les condtions initiales.
-
-\subsection{Régime pseudo périodique}
-Pour $R<Rc$, (\emph{i.e.} $\delta<0$), la solution générale de l'équation différentielle est~:
-\begin{equation}
-q = CE + \exp(-\lambda t)(A\cos(\omega t) + B\sin(\omega t))
-\end{equation}
-D'où~:
-\begin{equation}
-i = \exp(-\lambda t)((B\omega-A\lambda)\cos(\omega t) - (B \lambda+A \omega)\sin(\omega t)).
-\end{equation}
-
-Avec les conditions initiales données, $A=-CE$ et $B=-\lambda \frac{CE}{\omega}$. La solution adaptée est donc~:
-\begin{equation}
-q = CE\left(1 - \exp(-\lambda t) \left(\cos(\omega t) + \frac{\lambda}{\omega} \sin(\omega t) \right)\right).
-\end{equation}
-
-On procéderait de la même manière pour les régimes critique et apériodique.
-
-\subsection{Aspects énergétiques}
-
-L'énergie fournie par la source est $\int_0^t E i \D t = Eq$, celle qui est stockée est $W = \frac{1}{2} \left(Li^2 + \frac{q^2}{C}\right)$. À la fin du régime transitoire, la source a fourni l'énergie $CE^2$ et il reste $W=\frac{CE^2}{2}$ stockée dans le condensateur (ici $W_m=0$). La moitié de l'énergie fournie par la source a été consommée par effet Joule.
-
-\subsection{Régime propre et régime transitoire}
-L'exemple du régime R,L,C série a montré que le régime propre et le régime transitoire sont étroitement liés, le régime propre n'étant qu'un régime transitoire particulier.
-
-Le régime transitoire, caractéristique du circuit, disparaît au bout d'un temps suffisamment long. Il en est de même si la source fournit une tension alternative sinusoïdale, à la fin du régime transitoire, il y a un régime sinusoïdal permanent.
+	\end{exercice}
