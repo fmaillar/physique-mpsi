@@ -74,12 +74,19 @@ Si le diélectrique d'un condensateur n'est pas un isolant parfait, un courant l
 La loi des nœuds donne : $i = Gu + C \derived{u}{t}$.
 
 \section{Générateurs et récepteurs linéaires}
+
 Tout générateur ou récepteur linéaire peut être modélisé de deux façons différentes.
+
 \subsection{Modèle de Thévenin}
+
 Avec la convention récepteur et $e$ fléché dans le même sens que $i$, l'équation de la caractéristique est $u=Ri-e$. Si le pôle + est du côté de la pointe de la flèche $e$, alors $e > 0$. C'est à ce cas que correspond le tracé ci-dessus.
+
 \subsection{Modèle de Norton}
+
 Avec la convention récepteur et $\eta$ fléché dans le même sens que $i$, l'équation de la caractéristique est $i=Gu+\eta$. Si le c.é.m. $\eta$ est fléché comme sortant du pôle +, alors $\eta > 0$. C'est à ce cas que correspond le tracé ci-dessus.
+
 \subsection{Équivalence des deux modèles}
+
 Les deux modèles représentent donc le même dipôle si et seulement si
 $G=\frac{1}{R}$ et $e = R \eta$. La tension à vide est la valeur de $u$ pour $i =
 0$, (coupe circuit dans sa branche).  On la mesure en plaçant directement un
@@ -91,6 +98,7 @@ L'intensité du courant de court-circuit est la valeur de $i$ pour $u = 0$
 résistance négligeable). On la mesure en plaçant directement un ampèremètre (de
 conductance infinie) entre les bornes du dipôle. Sa valeur est $\eta = Ge =
 \frac{e}{R}$.
+
 \subsection{Puissance électrocinétique reçue, puissance électrocinétique
 engendrée, différents types de fonctionnement}
 
@@ -102,7 +110,9 @@ Si $i > 0$  et $u < 0$, alors $P'> 0$ et $-P  > 0$ , avec $-P  < P'$. C'est le c
 Si $i < 0$, et $u < 0$, alors $P > 0$ et $P' < 0$ . C'est le cas d'un fonctionnement en récepteur; le dipôle consomme de la puissance électrocinétique par effet joule et par un autre effet (chimique, mécanique...). Ce récepteur peut être un "générateur monté en opposition", $i < 0$ étant imposé par un autre générateur de force électro-motrice plus grande (en valeur absolue), les deux pôles + étant reliés entre eux.
 
 Si $i > 0$ et $u > 0$, alors $P > 0$ et $P' > 0$ avec  $P > P'$. On a dans ce cas $i > \eta$, l'intensité du courant est plus grande que celle du courant de court-circuit (avec souvent un risque de détérioration du fait d'un effet Joule intense). C'est le cas exceptionnel d'un générateur qui engendre effectivement de la puissance électrocinétique mais qui en consomme par effet Joule plus qu'il n'en engendre.  Ce n'est possible que s'il est monté en série avec un autre générateur de force électro-motrice grande et de résistance petite (son pôle – est relié au pôle + de l'autre).
+
 \subsection{Cas d'un dipôle non linéaire possédant une caractéristique}
+
 C'est en fait le cas habituel pour les générateurs et récepteurs réels. On peut, au voisinage du point de fonctionnement assimiler la caractéristique à sa tangente et écrire suivant la modélisation choisie $u = R i - e$ ou i$ = G u + \eta$. La caractéristique est "linéarisée". Mais alors, $R$ (ou $G$) et $e$ (ou $\eta$) dépendent du point de fonctionnement.
 \subsection{Récepteurs (électrolyseurs, moteurs électriques) non polarisés}
 Il s'agit de récepteurs symétriques, leurs deux bornes sont identiques. 
@@ -121,7 +131,7 @@ Finalement, tout récepteur ou générateur polarisé ou non, si sa caractérist
 
 Si le dipôle est polarisé, alors le signe de $e$ est constant : avec $e$ fléché de $A$ vers $B$, $e = eAB$ on a $e > 0$ si $B$ est le pôle plus, et $e < 0$ si B est le pôle moins. De même pour le signe de $\eta$.
 
-Si le dipôle n'est pas polarisé, alors le signe de $e$ (ou de $\eta$) change avec celui de $i$ : si $i > 0$, $e = –E'$. Si $i < 0$, $e = E'$ . On a bien dans ces deux cas $u = R i - e$.
+Si le dipôle n'est pas polarisé, alors le signe de $e$ (ou de $\eta$) change avec celui de $i$ : si $i > 0$, $e = -E'$. Si $i < 0$, $e = E'$ . On a bien dans ces deux cas $u = R i - e$.
 
 La puissance utile s'écrit donc aussi $P_u = - e i$ . Elle est toujours positive car un récepteur non polarisé ne peut fonctionner qu'en récepteur. On a donc toujours $ei < 0$.
 
