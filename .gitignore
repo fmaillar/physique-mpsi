@@ -1,0 +1,10 @@
+# On enleve les log et les fichiers de compilations
+*.log
+*~
+*.mlf*
+*.mtc*
+*.aux
+*.fls
+*.fdb*
+*.out
+*.dvi
