@@ -30,7 +30,7 @@
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black, pdftitle={Physique MPSI}, pdfauthor={FlorianMaillard}, breaklinks = true]{hyperref}
 %
 %Pour écrire de la physique avec les unités
-%\usepackage{siunitx} 
+%\usepackage{siunitx}
 %
 %Pour inclure des images avec \includegraphics[scale=]{}
 \usepackage{graphics}
@@ -44,7 +44,7 @@
 \tikzset{math3d/.style={x={(-0.353cm,-0.353cm)}, z={(0cm,1cm)}, y={(1cm,0cm)}}}
 %
 % pour le symbole \danger
-\usepackage{fourier-orns} 
+\usepackage{fourier-orns}
 %
 %pour utiliser les couleurs
 \usepackage{color}
@@ -114,7 +114,7 @@
 \setlength{\headheight}{13.6pt}
 %
 %pour inclure des pdf
-\usepackage[final]{pdfpages} 
+\usepackage[final]{pdfpages}
 %
 %Pour l'interligne
 %\linespread{1.1}
@@ -251,6 +251,7 @@
 
 \newcommand{\derived}[2]{\dfrac{\D #1}{\D #2}}
 \newcommand{\deriveds}[2]{\dfrac{\D^2 #1}{\D {#2}^2}}
+\newcommand{\derivedn}[3]{\dfrac{\D^{#3} #1}{\D {#2}^{#3}}}
 \newcommand{\derivep}[2]{\dfrac{\partial #1}{\partial #2}}
 \newcommand{\deriveps}[2]{\dfrac{\partial^2 #1}{\partial {#2}^2}}
 \newcommand{\derivepc}[3]{\dfrac{\partial^2 #1}{\partial {#2} \partial {#3}}}
@@ -271,6 +272,18 @@
 \newcommand{\intervalleoo}[2]{\ensuremath{\left] #1 \pv #2 \right[}}%{\intervalle{]}{#1}{#2}{[}}
 \newcommand{\intervalleentier}[2]{\intervalle\llbracket{#1}{#2}\rrbracket}
 
+\newcommand{\ju}{{j\mkern1mu}}
+\newcommand{\iu}{{i\mkern1mu}}
+\newcommand{\ncomplexe}[1]{\underline{#1}}
+\newcommand{\Uc}{\ncomplexe{U}}
+\newcommand{\Ic}{\ncomplexe{I}}
+\newcommand{\uc}{\ncomplexe{u}}
+\newcommand{\ic}{\ncomplexe{i}}
+\newcommand{\Zc}{\ncomplexe{Z}}
+\newcommand{\Yc}{\ncomplexe{Y}}
+\newcommand{\yc}{\ncomplexe{y}}
+\newcommand{\Xc}{\ncomplexe{X}}
+\newcommand{\xc}{\ncomplexe{x}}
 
 %%pour la profondeur des sections, sous sections, ...
 
