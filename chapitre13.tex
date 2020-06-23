@@ -85,9 +85,9 @@
 
         Mais $\eqref{eq:eqdiffcomp} = \eqref{eq:eqdiffreel} + \ju \eqref{eq:eqdiffreel2}$, donc $\Xc = \Xc \exp(\ju\omega t)$ est solution de l'équation complexe \eqref{eq:eqdiffcomp}. La recherche de la solution particulière sinusoïdale de l'équation différentielle linéaire, grâce aux grandeurs complexes associées, se réduit à la résolution d'une équation complexe algébrique.
 
-        Si un terme du type $\lambda \int x \diff{}t$ est présent dans l'équation différentielle à résoudre, le plus simple est de dériver les deux membrs de l'égalité pour éviter ce type de terme.
+        Si un terme du type $\lambda \int x \diff{}t$ est présent dans l'équation différentielle à résoudre, le plus simple est de dériver les deux membres de l'égalité pour éviter ce type de terme.
 \section{Impédance complexe, admittance complexe d'un dipôle linéaire passif}
-    On s'intérrese ici aux dipôles linéaires passifs dont la force électromotrice, ou courant éelectromoteur est nul(le) en régime stationnaire~: conducteurs ohmiques, bobines et condensateurs.
+    On s'intéresse ici aux dipôles linéaires passifs dont la force électromotrice, ou courant électromoteur est nul(le) en régime stationnaire~: conducteurs ohmiques, bobines et condensateurs.
 
     En régime sinusoïdal permanent, la tension est alternative sinusoïdale, la grandeur complexe associée à cette tension est du type $\uc = \Uc \exp(\ju\omega t)$ et l'intensité (fléchée en sens inverse) est aussi alternative sinusoïdale, dont la grandeur complexe associée est du type $\ic = \Ic \exp(\ju\omega t)$. C'est la solution particulière de l'équation différentielle particulière complexe associée à l'équation différentielle réelle qui relie $u$ et $i$. Cette solution étant obtenue par la méthode exposée dans la section \ref{sec:complexe}, c'est-à-dire par la méthode de résolution algébrique.
     \subsection{Impédance complexe}
@@ -105,20 +105,20 @@
     \subsection{Impédance et admittance des dipôles linéaires simples}
         \begin{itemize}
             \item Résistance pure~: $u=Ri$ donc $\uc = R \ic$, $\Zc =R$, $\Yc = G$, $Z=R$ et $\Phi=0$, $u$ et $i$ sont en concordance de phase ;
-            \item Autoinductance pure~: $u=L\derived{i}{t}$, donc $\uc = \ju L \omega \ic$, donc $\Zc = \ju L\omega$ et $\Yc = \frac{-\ju}{L\omega},$ $Z=L\omega$ et $\Phi=\frac{\pi}{2}$. $u$ est en quadrature avance sur $i$.
+            \item Auto-inductance pure~: $u=L\derived{i}{t}$, donc $\uc = \ju L \omega \ic$, donc $\Zc = \ju L\omega$ et $\Yc = \frac{-\ju}{L\omega},$ $Z=L\omega$ et $\Phi=\frac{\pi}{2}$. $u$ est en quadrature avance sur $i$.
             \item Capacité pure~: $i=C\derived{u}{t}$, d'où $\ic = \ju\omega C \ic$, donc $\Yc = \ju\omega C$ et $\Zc = \frac{-\ju}{C\omega}$, $Y=C\omega$, $Z=\frac{1}{C\omega}$ et $\Phi = -\frac{\pi}{2}$. $u$ est en quadrature retard sur $i$.
         \end{itemize}
-    \subsection{Comportement fréquentiel des dipôles ninéaires simples}
-        Pour une auro-inductance pure, lorsque $\omega$ tend vers 0, l'impédance $Z$ tend vers 0 et donc la tension $U$ tend vers 0, pour toute intensité $I$. \emph{Une auto-inductance pure à basse fréquence, ou en régime stationnaire, est un court-circuit}.
+    \subsection{Comportement fréquentiel des dipôles linéaires simples}
+        Pour une auto-inductance pure, lorsque $\omega$ tend vers 0, l'impédance $Z$ tend vers 0 et donc la tension $U$ tend vers 0, pour toute intensité $I$. \emph{Une auto-inductance pure à basse fréquence, ou en régime stationnaire, est un court-circuit}.
 
-        Pour une auro-inductance pure, lorsque $\omega$ tend vers l'infini, alors l'admittance $Y$ tend vers 0, donc $I$ tend vers 0 pour toute tension $U$. \emph{Une auto-inductance pure à haute fréquence est un coupe-circuit}.
+        Pour une auto-inductance pure, lorsque $\omega$ tend vers l'infini, alors l'admittance $Y$ tend vers 0, donc $I$ tend vers 0 pour toute tension $U$. \emph{Une auto-inductance pure à haute fréquence est un coupe-circuit}.
 
         Pour une capacité pure, lorsque $\omega$ tend vers 0 alors l'admittance $Y$ tend vers 0 et $I$ tend vers 0, pour toute tension $U$. \emph{Une capacité pure à basse fréquence, ou en régime stationnaire, est un coupe-circuit}.
 
         Pour une capacité pure, lorsque $\omega$ tend vers l'infini, alors l'impédance $Z$ tend vers 0, donc $U$ tend vers 0 pour toute intensité $I$. \emph{Une capacité pure à haute fréquence est un court-circuit}.
 \section{Lois de Kirchhoff, associations de dipôles, équivalences}
     \subsection{Lois de Kirchhoff, théorème de Millman}
-        En régime sinusoïdal permanent (quasi-stationnaire donc de fréquence pas trop élevée), la loi des n\oe{}ds et la loi des mailles s'appliquent aux valeurs instantannées des intensités et des tensions~:
+        En régime sinusoïdal permanent (quasi-stationnaire donc de fréquence pas trop élevée), la loi des n\oe{}ds et la loi des mailles s'appliquent aux valeurs instantanées des intensités et des tensions~:
         \begin{equation}
             \label{eq:noeuds_cos}
             \sum_{k} I_k\cos(\omega t +\varphi_k) = 0.
