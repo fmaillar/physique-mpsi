@@ -89,8 +89,61 @@
 	\begin{exercice}[Quartz piézo-électrique]
 		Un quartz piézo-électrique peut être modélisé sous la forme du dipôle $AB$ représenté ci-dessous. Une tension alternative sinusoïdale est appliquée entre $A$ et $B$. On donne $L=\SI{1}{mH}$, $C=\SI{1}{nF}$ et $C'=\SI{10}{pF}$.
 		\begin{enumerate}
-			\item Calculer la fréquence de résonance $f_R$ ($I$ théoriquement infini) et d'antirésonance $f_A$ ($I$ nul)
+			\item Calculer la fréquence de résonance $f_R$ ($I$ théoriquement infini) et d'antirésonance $f_A$ ($I$ nul). \item On fait osciller le quartz sur la féquence $f_R$. L'intensité du courant est très grande sans être infinie car le circuit a une résistance négligeable devant les autres impédances mais non nulle. Calculer en $\si{\ohm\per\hertz}$, la variation d'impédance créée par une petite variation de fréquence au voisinage de la résonnace, amplitude de la tension entre $A$ et $B$ étant maintenue constante. Quelle propriété essentielle du quartz met-on ainsi en évidence ?
 		\end{enumerate}
+	\end{exercice}
+	\begin{exercice}[Dipôle $R, L, C$ de capacité variable]
+		Soit un dipôle $R, L, C$ série de capacité variable, de résistance et d'inductance fixes, en régime sinusoïdale permanent sous une tension de valeur maximale $U$ et de pulsation $\omega$ fixes. On note $C_0$ la valeur de $C$ pour laquelle il y a résonance d'intensité ($I$ maximal). $Q = L\omega/R$ et le déphasage $\varphi$ de la tension par rapport à l'intensité. On pose $x = C/C_0$ et $y=RI/U$.
+		\begin{itemize}
+			\item Étudier la réponse du dipôle sous la forme $y=f(x)$ et $\varphi=g(x)$ et tracer les graphes correspondants pour les valeurs de $Q$ suivantes : $0.5, 1, 2, 10$.
+			\item Pour quelles valeurs $x_1$ et $x_2>x_1$ de $x$ a-t-on $y=1/\sqrt{2}$ ? Quelle est la largeur $x_2-x_1$ de la bande passante en capacité ? Pour quelle valeur de $Q$ devient elle infinie ? Exprimer le facteur de qualité défini ici par $Q' = \frac{C_0}{C_2-C_1} = \frac{1}{x_2-x_1}$ en fonction de $Q$
+		\end{itemize} 
+	\end{exercice}
+	\begin{exercice}[Puissance moyenne, puissance instantanée]
+		L'intensité dans un dipôle est $i = I\cos(\omega t)$ et la tension aux bornes du dipôle $u=U\cos(\omega t +\varphi)$. La puissance instantanée reçue par le dipôle est notée $p$ et la puissance moyenne $P$.
+		\begin{itemize}
+		\item Montrer que l'écart relatif entre la puissance instantanée et la puissance moyenne est $\epsilon_P(t) = \frac{p-P}{P} = \frac{\cos(2\omega t +\varphi)}{\cos\phi}$.
+		\item On note $w$ l'énergie électrocinétique reçue par le dipôle de $0$ à $t$ et $W=Pt$ l'énergie calculée avec la puissance moyenne. Montrer que l'écart relatif entre $w$ et $W$ est $\epsilon_W(t) = \frac{w-W}{W} = \frac{\sin(2\omega t + \varphi)-\sin\varphi}{2\omega t \cos\varphi}$.
+		\item Donner la borne supérieur de la valeur absolue de l'erreur relative que l'on fait en assimilant $w$ à $W$ pour un temps court ou pour un facteur de puissance trop petit.
+		\item Application numérique : Au bout de combien de périodes peut-on affirmer que l'erreur relative est inférieure à $0.1\%$ si $\varphi=89°$ ? Quelle est la date correspondate $t$ si la fréquence est de $\SI{50}{\hertz}$ ?
+		\end{itemize}
+	\end{exercice}
+	\begin{exercice}
+		Pour chacune des tensions périodiques suivantes, donner en fonction de l'amplitude (ou tension crête) $U_M$ et éventuellement du rapport cyclique $x$~:
+		\begin{itemize}
+			\item la valeur moyenne de $u$ sur une période ;
+			\item la valeur donnée par un voltmètre usuel $\frac{\pi}{2\sqrt{2}} U_{MR}$ avec $U_{MR}$ étant la valeur moyenne redressée $U_{MR} = \frac{1}{T} \int_0^T \abs{u} \D t$ ;
+			\item la valeur efficace vraie $U$ donnée par un voltmètre efficace vrai (voltmètre RMS, c'est-à-dire \emph{root mean square}).
+		\end{itemize}
+		
+		Dans chaque cas étudiée, on représentera $u(t)$ sur une période et on comparera les indications données par un voltmètre usuel à celle que donnerait un voltmètre efficace vrai.
+		\begin{enumerate}
+			\item Tension en créneaux symétrique de rapport cyclique $x$; 
+			\item Tension en créneaux positif de rapport cyclique $x$;
+			\item Tension triangulaire symatrique de rapport cyclique $x$;
+			\item Tension alternative sinusoïdale;
+			\item Tension alternative sinusoïdale redressée simple alternance;
+			\item Tension alternative sinusoïdale redressée double alternance;
+			\item Tension alternative sinusoïdale écrêtée à $86.6\%$ pour les alternances positives par un phénomène de saturation ($\cos\pi/3 = 0.866$).
+		\end{enumerate}
+	\end{exercice}
+	\begin{exercice}[Différentes expressions de la puissance moyenne]
+		On considère un dipôle $R, L, C$ série d'impédance complexe $\Zc$ et d'admittance complexe $\Yc$. On note $\Ic$ et $\Uc$ les amplitudes complexes de l'intensité et de la tension et $P$ la puissance moyenne pour ce dipôle. Démontrer~: $R = \frac{\Zc + \Zc^*}{2}$ ; $P = \frac{(\Zc + \Zc^*)\ic \ic^*}{4}$ ; $P = \frac{\uc\ic^* + \uc^*\ic}{4}$ ; $P = \frac{(\Yc+\Yc^*)\uc\uc^*}{4}$. Peut-on écrire les mêmes relations en remplaçant les grandeurs complexes instantannées $\ic$ et $\uc$ par les amplitudes complexes $\Uc$ et $\Ic$ ? 
+
+		On nomme puissance complexe la grandeurs $\pc = \frac{\uc \ic^*}{2}$. Sa partie réelle est appelée puissance active et sapartie imaginaire puissance réactive. Démontrer que la puissance active est toujours positive et que la puissance réactive peut être positive ou négative.
+	\end{exercice}
+	\begin{exercice}[Puissance moyenne dans un dipôle $R, L, C$ série]
+		Étudier en fonction de la pulsation $\omega$, pour un dipôle $R, L, C$ série sous une tension efficace $U$ constante, les variations de la puissance moyenne $P$.
+	\end{exercice}
+	\begin{exercice}[Puissance dissipée dans une résistance]
+		On considère le dipôle formé par $R, L, C$ et $R_L$ placés en parallèle et parcourus par un courant total $i = I\cos\omega t$.
+		\begin{enumerate}
+			\item Montrer que si $\omega$ vérifie une certaine relation avec $c$ et $L$=, l'amplitude $V$ de la tension au bornes de $R_L$ est la plus grande possible. Que vaut alors $V$ ?
+			\item La relation précédente étant vérifiée, exprimer la puissance moyenne $P$ dissipée par $R_L$. Comment choisir $R_L$ pour que cette puissance soit maximale ? Que vaut alor $P$ en fonction de $R$ et de $I$ ?
+		\end{enumerate}
+	\end{exercice}
+	\begin{exercice}[Méthode des trois ampèremètres]
+		On se propose de mesurer la puissance $P$ dissipée dans une impédance quelconque de valeur complexe $\Zc$. Pour cela, on considère le montage ci-contre dans lequel $r$ est une résistance pure et on suppose que chaque ampèremètre a une résistance négligeable. Exprimer $P$ en fonction de $r$ et des intensités efficaces $I_1$, $I_2$ et $I_3$ mesurées par les ampèremètres.
 	\end{exercice}
 %%% Local Variables: 
 %%% mode: latex
