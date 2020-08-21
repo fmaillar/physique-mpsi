@@ -99,27 +99,27 @@ On remarque que $\ur = \cos \theta \ux + \sin \theta \uy$ et $\utheta = -\sin \t
 
 Plus généralement, la dérivée d'un vecteur unitaire $\vu$ tournant dans un plan par rapport à l'angle qui définit sa direction dans ce plan est le vecteur $\vvv$ unitaire par rotation de $\vu$ de $\frac{\pi}{2}$.
 
-% \begin{figure}
-%   \centering
-%   \begin{tikzpicture} [math3d]
-%     \draw (0,0,0) node[left, below] {$O$};    
-%     \coordinate (O) at (0,0,0);
-%     \coordinate (H) at (3,3,0);
-%     \coordinate (M) at (3,3,2);
-%     \draw [->] (O) -- ++(3,0,0) node[below] {$x$};
-%     \draw [->] (O) -- ++(0,3,0) node[right] {$y$};
-%     \draw [->] (O) -- ++(0,0,3) node[left] {$z$};
-%     \draw (O) -- (H) node[right] {$H$};
-%     \draw [->] (1.3,0,0) arc (0:55:1) node[right, above] {$\theta$};
-%     \draw (3,2,0) node[above] {$\rho$};
-%     \draw [dotted] (H) -- (M) node[left] {$M$};
-%     \draw [->] (M) -- ++(1,1,0) node[below] {$\ur$};
-%     \draw [->] (M) -- ++(-1,1,0) node[above] {$\utheta$};
-%     \draw [->] (M) -- ++(0,0,1) node[left] {$\uz$};
-%   \end{tikzpicture}
-%   \caption{Coordonnées cylindro-polaires}
-%   \label{fig:coordonnees}
-% \end{figure}
+ \begin{figure}
+   \centering
+   \begin{tikzpicture} [math3d]
+     \draw (0,0,0) node[left, below] {$O$};    
+     \coordinate (O) at (0,0,0);
+     \coordinate (H) at (3,3,0);
+     \coordinate (M) at (3,3,2);
+     \draw [->] (O) -- ++(3,0,0) node[below] {$x$};
+     \draw [->] (O) -- ++(0,3,0) node[right] {$y$};
+     \draw [->] (O) -- ++(0,0,3) node[left] {$z$};
+     \draw (O) -- (H) node[right] {$H$};
+     \draw [->] (1.3,0,0) arc (0:55:1) node[right, above] {$\theta$};
+     \draw (3,2,0) node[above] {$\rho$};
+     \draw [dotted] (H) -- (M) node[left] {$M$};
+     \draw [->] (M) -- ++(1,1,0) node[below] {$\ur$};
+     \draw [->] (M) -- ++(-1,1,0) node[above] {$\utheta$};
+     \draw [->] (M) -- ++(0,0,1) node[left] {$\uz$};
+   \end{tikzpicture}
+   \caption{Coordonnées cylindro-polaires}
+   \label{fig:coordonnees}
+ \end{figure}
 
 \section{Trajectoire, abscisse curviligne et loi horaire}
 \label{chap1-sec:trajectoireabcissecurv}
@@ -231,7 +231,15 @@ En éliminant la date $t=\frac{x}{v_0\cos\alpha}$, on obtient l'équation de la 
 \begin{equation}
   z = -\frac{a}{2v_0^2\cos^2\alpha}x^2+x\tan\alpha,
 \end{equation}
-c'est l'équation d'une parabole.
+c'est l'équation d'une parabole, représentée sur la figure \ref{fig:acceleration_constante}. La limite des points atteignables à accélération et vitesse initiale figées est la courbe d'équation $z_{max} = \frac{z_l}{2} - \frac{x^2}{2 z_l}$ avec $z_l = v_0^2/a$.
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{acceleration_constante}
+	\caption{Mouvement à accélération constante avec $a = g = \SI{9,81}{m/s^2}, v_0=\SI{20}{m/s}$}
+	\label{fig:acceleration_constante}
+\end{figure}
 
 \emph{La trajectoire d'un point matériel dont l'accélération est constante est une parabole}. Le mouvement de la projection de $M$ sur $(Ox)$ est uniforme et celui de la projection de $M$ sur $Oz$ est uniformément varié. Si $\vv{v_0}$ et $\vv{a}$ sont parallèles alors le mouvement de $M$ est rectiligne uniformément varié sur l'axe $Oz$.
 
