@@ -7,6 +7,7 @@ Created on Thu Aug 20 14:07:20 2020
 
 import numpy as np
 import matplotlib as mpl
+mpl.rcParams['text.usetex'] = True
 import matplotlib.pyplot as plt
 
 #plt.rcParams.update({
@@ -23,38 +24,39 @@ import matplotlib.pyplot as plt
 #mpl.rcParams['text.usetex']=True
 #mpl.rcParams['text.latex.unicode']=True
 
-N = 1000
+theta = np.linspace(0, np.pi/2, 100)
+
+N = 10000
 g = 9.81
 z0 = 0
 xmax = 40
-alphav = np.pi*np.array([1.0/32, 1.0/8, 1.0/6, 1.0/4, 1.0/3, 3.0/8, 15/32.0], float)
-v0 = 7.0#*np.array([0, 1/2, 2/3, 3/4, 4/5, 1], float)
+alphav = np.pi*np.array([1.0/16, 1.0/8, 1.0/6, 1.0/5, 1.0/4, 0.5-1.0/5, 0.5-1.0/6, 0.5-1.0/8, 0.5-1/16.0], float)
+v0 = np.sqrt(2*g)#*np.array([0, 1/2, 2/3, 3/4, 4/5, 1], float)
 x = np.linspace(0, xmax, N)
 
-def chute(v0, alphav):
+def chute(v0, alphav, x):
     return -g/(2*v0**2*np.cos(alphav)**2) * x**2 + x*np.tan(alphav)+z0
 
 z = np.zeros((len(alphav), N), dtype=float)
-
+z_enveloppe = v0**2/(2*g) - g/(2*v0**2)*x**2 +z0
 for j in range(len(alphav)):
-    z[j, :] = chute(v0, alphav[j])
+    z[j, :] = chute(v0, alphav[j], x)
 
-zlim = v0**2/(2*g) - g/(2*v0**2)*x**2 +z0
-
-plt.figure(1)
-plt.ylim(bottom = 0, top=6)
-plt.xlim(0, 0.3*xmax)
+fig, ax = plt.subplots(subplot_kw={'aspect': 'equal'})
+ax.set_ylim(bottom = 0, top=1.5)
+ax.set_xlim(0, 5./2)
 for j in range(len(alphav)):
-    plt.plot(x, z[j,:], label = 'alpha =' + str(round(alphav[j]*180/np.pi,1)) + 'degres')
-plt.plot(x, zlim, '--', label = '$z_{max}$')
-#plt.fill_between(x, zlim, 0, alpha=0.01, color = 'red')
-plt.xlabel('$x$')
-plt.ylabel('$z$')
-plt.title('Tir à accéleration constante selon plusieurs angles')
-plt.legend()
-plt.grid(True)     
+    ax.plot(x, z[j,:], label = r'$\alpha = $ ' + str(round(alphav[j]*180/np.pi,1)) + ' degres')
+ax.plot(x, z_enveloppe, '--', label = 'enveloppe')
+e = mpl.patches.Ellipse((0, 0.5*(z0+v0**2/(2*g))), v0**2/(1*g) ,v0**2/(2*g), fill=False, ls='-.', label = 'max')
+ax.add_artist(e)
+plt.xlabel('$x$', fontsize=14)
+plt.ylabel('$z$', fontsize=14)
+#plt.title('Tir à accéleration constante selon plusieurs angles')
+ax.legend()
+ax.grid(True)     
 
-#plt.savefig('./acceleration_constante.png', format='png', dpi=96)
+plt.savefig('./acceleration_constante.png', format='png', dpi=96)
 
 #plt.figure(2)
 #plt.ylim(bottom = 0, top=6)
