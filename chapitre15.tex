@@ -5,6 +5,28 @@
 
 \section{Quadripôle, fonction de transfert}
 \subsection{Quadripôle, générateur, charge}
-Un quadripôle est une portion de circuit présentant quatre bornes~: deux bornes d'entrée et deux bornes de sortie. Les tension et les courants sont en général algébrisés comme sur le schéma ci-dessous. $u_E$ tension d'entrée, $i_E$ courant d'entrée, $u_S$ tension de sortie, $i_S$, courant de sortie (pour des raisons de symétrie, il peut être utile de flécher $i_S$ dans l'autre sens). Un quadripôle est en général associé à deux dipôles électrocinétiques.
+Un quadripôle est une portion de circuit présentant quatre bornes~: deux bornes d'entrée et deux bornes de sortie. Les tension et les courants sont en général algébrisés comme sur le schéma ci-dessous. $u_E$ tension d'entrée, $i_E$ courant d'entrée, $u_S$ tension de sortie, $i_S$, courant de sortie (pour des raisons de symétrie, il peut être utile de flécher $i_S$ dans l'autre sens). Un quadripôle est en général associé à deux dipôles électrocinétiques~:
+\begin{itemize}
+\item Un dipôle générateur relié aux bornes d'entré ; Si ce dipôle est linéaire, au moins dans le domaine où on l'utilise, il pourra être modélisé par un générateur de Thévenin ou de Norton ; Si la résistance du générateur (ou, en régime sinusoïdal permanent, son impédance) est négligeable, on le modélisera comme une source de tension ; De la même manière, si sa conductance (ou, en régime sinusoïdal permanent, son admittance) est négligeable, on le modélisera comme une source de courant ;
+\item Un dipôle récepteur relié aux bornes de sortie, que l'on nommera ``charge''. Ce sera souvent un dipôle passif, par exemple une résistance pure.
+\end{itemize}
+Un quadripôle peut comporter un dipôle générateur, le plus souvent une source liée dont le fonctionnement nécessite une alimentation (voir les montages à amplificateurs opérationnels), celle-ci n'est en général pas représentée sur les schémas. Lorsque le quadripôle ne comporte pas de source, il est dit ``passif'', dans le cas contraire, il est dit ``actif''.
+\subsection{Fonctions de transfert --- Transmittances}
+En régime sinusoïdal permanent, pour un quadripôle linéaire, les grandeurs d'entrée et de sortie sont de même pulsation, ou \emph{fréquence angulaire}, $\omega$. Les grandeurs complexes associées à une grandeur d'entrée $\xc_E$ et à une grandeur de sortie $\yc_S$ sont respectivement $\xc_E = \Xc_E \exp(\ju \omega t)$ et $\yc_S = \Yc_S \exp(\ju \omega t)$. Le rapport $\frac{\yc_S}{\xc_E} = \frac{\Yc_S}{\Xc_E}$ est indépendant du temps, c'est une fonction de $\ju \omega$, que l'on note $\Hc(\ju \omega)$.
 
-Un dipôle générateur relié aux bornes d'entré. Si ce dipôle est linéaire, au moins dans le domaine où on l'utilise, il pourra être modélisé par un générateur de Thévenin ou de Norton.
+La \emph{fonction de transfert, ou ``transmittance complexe'', du quadripôle} est  $\Hc(\ju \omega) = \frac{\yc_S}{\xc_E} = \frac{\Yc_S}{\Xc_E}$.
+
+Il est très important de note dès maintenant, que la fonction de transfert d'un quadripôle dépend, \emph{a priori}, non seulement du quadripôle considéré, mais aussi de la charge.
+
+On peut distinguer quatre transmittance pour un quadripôle suivant la nature, intensité ou tension, des grandeurs $\yc_S$ et $\xc_E$ auxquelles on s'intéresse~:
+\begin{itemize}
+	\item Amplification en tension : $\frac{\Uc_S}{\Uc_E}$ sans dimension ;
+	\item Amplification en courant : $\frac{\Ic_S}{\Ic_E}$ sans dimension ;
+	\item Transimpédance complexe : $\frac{\Uc_S}{\Ic_E}$ en \si{\ohm};
+	\item Transadmittance complexe : $\frac{\Ic_S}{\Uc_E}$ en \si{\siemens}.
+\end{itemize}
+Le module $H$ et l'argument $\Phi$ d'une fonction de transfert sont des fonctions de la fréquence angulaire $\Hc(\ju \omega) = H(\omega) \exp(\ju \Phi(\omega))$.
+\subsection{Amplification, Gain, Décibels}
+Si les grandeurs d'entrée et de sortie considérées sont de même nature, le module $H$ de la fonction de trnasfert est nommé ``gain'', il peut varier énormément avec la pulsation, c'est pourquoi on utilise un échelle logarithmique.
+
+Le logarithme décimal du rapport de deux puissance (électrocinétiques, acoustiques, $\dots$) s'exprime en décibels (\si{\decibel).
