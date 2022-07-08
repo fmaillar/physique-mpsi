@@ -4,7 +4,8 @@ filename=physique
 #	 dvipdf ${filename}.dvi > /dev/null
 pdf:
 	gnuplot *.gnuplot||true
-	py *.py #pour win10 cygwin
+#	py *.py #pour win10 cygwin
+	python *.py #pour linux
 	pdflatex ${filename}
 	makeindex ${filename}.idx
 	pdflatex ${filename}> /dev/null

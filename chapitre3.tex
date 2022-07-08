@@ -120,28 +120,18 @@ En isolant $v$ de cette équation on a~:
   v = v_L \frac{(v_L+v_0)\e^{\frac{2K v_L t}{m}}-(v_L-v_0)}{(v_L+v_0)\e^{\frac{2K v_L t}{m}}+(v_L-v_0)}.
 \end{equation}
 On remarque que lorsque $t$ tend vers l'infini, $v$ tend vers $v_L$.
-
 \section{Mouvement d'un point matériel soumis à une force de rappel}
 \label{chap3-sec:mouvementdunpointmaterielsoumisauneforcederappel}
-
-
 \subsection{Pendule élastique horizontal}
 \label{chap3-subsec:pendulehorizontal}
-
-On considère un point matériel $M$ de masse $m$, attaché à un ressort dont l'autre extrémité est fixe. L'ensemble est enfilé sur une tige horizontale $(Ax)$. On suppose que le ressort est parfait, e raideur $k$ et de longueur à vide $L_0=AO$ et que les frottements sont négligeables.
-
-Le point $M$ est soumis, dans le référentiel terrestre assumé galiléen, à son poids $\vv{P}$ vertical, à la réaction de la tige $\vv{R}$ normale à $(Ox)$ et à la force de rappel exercée par le ressort $\vv{F}=-kx\ux$.
-
-La relation fondamentale de la dynamique donne~:
+On considère un point matériel $M$ de masse $m$, attaché à un ressort dont l'autre extrémité est fixe. L'ensemble est enfilé sur une tige horizontale $(Ax)$. On suppose que le ressort est parfait, e raideur $k$ et de longueur à vide $L_0=AO$ et que les frottements sont négligeables. Le point $M$ est soumis, dans le référentiel terrestre assumé galiléen, à son poids $\vv{P}$ vertical, à la réaction de la tige $\vv{R}$ normale à $(Ox)$ et à la force de rappel exercée par le ressort $\vv{F}=-kx\ux$. La relation fondamentale de la dynamique donne~:
 \begin{equation}
   \vv{P}+\vv{R}-kx\ux = m\vv{a}.
 \end{equation}
-
 La vitesse est horizontale donc $\vv{a} = \ddot{x}\ux$ est aussi horizontale donc $\vv{R}=-\vv{P}$ et alors on a l'équation différentielle suivante~:
 \begin{equation}
   \ddot{x} +\frac{k}{m}x=0.
 \end{equation}
-
 Cette équation est celle d'un oscillateur harmonique. Le mouvement est rectiligne sinusoïdal. La solution réelle générale de cette équation est
 \begin{equation}
   x = A \cos\left(\sqrt{\frac{k}{m}} t\right) + B \sin\left(\sqrt{\frac{k}{m}} t\right) = X \cos\left(\sqrt{\frac{k}{m}} t + \varphi\right).
@@ -150,17 +140,11 @@ Les conditions sur $x$ et $\dot{x}$ permettent de calculer $A$ et $B$ ou l'ampli
 
 \subsection{Pendule élastique vertical}
 \label{chap3-subsec:pendulevertical}
-
-On suppose maintenant que le ressort est vertical. Pour amorcer le mouvement, il faut écarter $M$ verticalement de sa position d'équilibre, ou le lancer verticalement, ou les deux à la fois.
-
-On prend la position d'équilibre comme l'origine de l'axe vertical descendant $(Ox)$ et on note $L_e$ la longueur du ressort à l'équilibre.
-
-En négligeant encore la poussée d'Archimède et la résistance de l'air, $M$ est soumis à son poids $\vv{P}=mg\ux$ et la force du ressort $\vv{F}=-k(L_e +x-L_0)\ux$. 
-L'équation différentielle du mouvement est donc
+On suppose maintenant que le ressort est vertical. Pour amorcer le mouvement, il faut écarter $M$ verticalement de sa position d'équilibre, ou le lancer verticalement, ou les deux à la fois. On prend la position d'équilibre comme l'origine de l'axe vertical descendant $(Ox)$ et on note $L_e$ la longueur du ressort à l'équilibre. En négligeant encore la poussée d'Archimède et la résistance de l'air, $M$ est soumis à son poids $\vv{P}=mg\ux$ et la force du ressort $\vv{F}=-k(L_e +x-L_0)\ux$. L'équation différentielle du mouvement est donc
 \begin{equation}
   mg -k(L_e +x-L_0) = m\ddot{x}.
 \end{equation}
-D'autre part on a $ mg -k(L_e-L_0)=0$. Alors par soustraction membre à membre de ces deux égalités, on obtient la même équation différentielle que pour le pendule élastique horizontal~:
+D'autre part on a $ mg-k(L_e-L_0)=0$. Alors par soustraction membre à membre de ces deux égalités, on obtient la même équation différentielle que pour le pendule élastique horizontal~:
 \begin{equation}
   -kx \ux = m \ddot{x} \ux,
 \end{equation}
@@ -168,7 +152,7 @@ d'où $\ddot{x} +\frac{k}{m}x=0$ et le même type de solution.
 
 \section{Exercices}
 \label{chap3-sec:exercices}
-
+%
 \begin{exercice}[Interaction entre deux charges ponctuelles]
   Quatre charges ponctuelles $q$, $-2q$, $2q$, et $-q$ sont placées respectivement aux sommets $A$, $B$, $C$ et $D$ d'un carré de coté $a$. Exprimer la force exercée par l'ensemble de ces quatre charges sur une charge ponctuelle $q$ placée au centre $O$ du carré, avec $a$, $q$ et les vecteurs unitaires $\vi$ et $\vj$ tels que $\vv{AB}=\vv{DC}=a\vi$ et $\vv{DA}=\vv{CB}=a\vj$.
 \end{exercice}
@@ -176,13 +160,12 @@ d'où $\ddot{x} +\frac{k}{m}x=0$ et le même type de solution.
 \begin{exercice}[Expérience de Millikan]
 On observe au microscope la chute d'une gouttelette sphérique d'huile dans l'air. SA vitesse est rapidement stabilisée à la valeur $v_0$, elle parcourt alors $\SI{4,00}{mm}$ en $\SI{12,4}{s}$.
 
-On admettra que la résistance de l'air oppose au mouvement de la goutte une force d'intensité $6\pi r \eta v$, $v$ étant la vitesse de la goutte, $r$ son rayon et $\eta$ la viscosité de l'air. On rappelle que la poussée d'Archiméde a la même intensité que le poids de l'air déplacé par la goutte. On pose $\eta=\SI{1,80e-5}{SI}$, $\rho=\SI{1260}{kg/m^3}$, $g=\SI{9.81}{m.s^{-2}}$ et $\rho'=\SI{1,3}{kg/m^3}$.
-
-  \begin{enumerate}
-  \item  Calculer le rayon de la goutte.;
-  \item Les gouttes observées se chargent positivement par frottement lors de la pulvérisation de l'huile et se déplacent entre les armatures horizontales d'un condensateur, distantes de $d=\SI{2,00}{cm}$. Lorsque le condensateur est chargé sous une tension de $U=\SI{9,00}{kV}$, la goutte remonte de $\SI{4,00}{mm}$ en $\SI{15.1}{s}$. En déduire la charge électrique $q$ de la goutte.
-  \item La charge de la goutte peut varier brusquement lors de son contact avec une molécule d'air ionisée par un faisceau de rayons $X$. La goutte précédente portant une nouvelle charge $q'$ est pratiquement immobile pour une tension de $U'=\SI{3,95}{kV}$ entre les armatures du condensateur. Calculer $q'$. Déduire de $q$ et $q'$ une valeur probable de la charge élémentaire $e$.
-  \end{enumerate}
+On admettra que la résistance de l'air oppose au mouvement de la goutte une force d'intensité $6\pi r \eta v$, $v$ étant la vitesse de la goutte, $r$ son rayon et $\eta$ la viscosité de l'air. On rappelle que la poussée d'Archimède a la même intensité que le poids de l'air déplacé par la goutte. On pose $\eta=\SI{1,80e-5}{SI}$, $\rho=\SI{1260}{kg/m^3}$, $g=\SI{9.81}{m.s^{-2}}$ et $\rho'=\SI{1,3}{kg/m^3}$.
+\begin{enumerate}
+\item  Calculer le rayon de la goutte.;
+\item Les gouttes observées se chargent positivement par frottement lors de la pulvérisation de l'huile et se déplacent entre les armatures horizontales d'un condensateur, distantes de $d=\SI{2,00}{cm}$. Lorsque le condensateur est chargé sous une tension de $U=\SI{9,00}{kV}$, la goutte remonte de $\SI{4,00}{mm}$ en $\SI{15.1}{s}$. En déduire la charge électrique $q$ de la goutte.
+\item La charge de la goutte peut varier brusquement lors de son contact avec une molécule d'air ionisée par un faisceau de rayons $X$. La goutte précédente portant une nouvelle charge $q'$ est pratiquement immobile pour une tension de $U'=\SI{3,95}{kV}$ entre les armatures du condensateur. Calculer $q'$. Déduire de $q$ et $q'$ une valeur probable de la charge élémentaire $e$.
+\end{enumerate}
 \end{exercice}
 
 \begin{exercice}[Masse du Soleil]
@@ -190,9 +173,9 @@ On admettra que la résistance de l'air oppose au mouvement de la goutte une for
 \end{exercice}
 
 \begin{exercice}[Pendule conique à deux fils]
-  On suspend un point matériel $M$, de masse $m$, à un fil inextensible de longueur $L$ et de masse négligeable fixé en $O_1$ (de l'axe $(Oz)$). Le point $M$ subit un mouvement de rotation uniforme (de vitesse $\omega$)  dans le plan $(xOy)$. Le fil $O_1M$ reste incliné d'un angle constant $\alpha$ par rapport à $(Oz)$. 
+On suspend un point matériel $M$, de masse $m$, à un fil inextensible de longueur $L$ et de masse négligeable fixé en $O_1$ (de l'axe $(Oz)$). Le point $M$ subit un mouvement de rotation uniforme (de vitesse $\omega$)  dans le plan $(xOy)$. Le fil $O_1M$ reste incliné d'un angle constant $\alpha$ par rapport à $(Oz)$. 
 
-  Déterminer $\alpha$ en fonction de $\omega$, $L$, et de l'accélération de la pesanteur $g$.
+Déterminer $\alpha$ en fonction de $\omega$, $L$, et de l'accélération de la pesanteur $g$.
 
 Maintenant, le point matériel $M$ est relié au point $O_2$ (qui est le symétrique de $O_1$ par rapport à $O$), $OO_1=OO_2=D$. Le point $M$ est mis en rotation à la vitesse angulaire $\omega$ que l'on augment progressivement. Le fil $O_2M$ commence à se tendre pour une valeur $\omega_1$ que l'on exprimera en fonction de $g$ et $D$.
 

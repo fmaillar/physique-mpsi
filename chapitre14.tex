@@ -32,7 +32,7 @@
 		Le facteur de qualité est donc aussi le facteur de surtension à la résonance $ Q = \frac{U_{C_0}}{E} = \frac{U_{L_0}}{E}$.
 		
 	\subsection{Acuité de la résonance, bande passante à $\SI{-3}{\dB}$} 
-	
+	\label{sec-chap14:acuite}
 		Calculons les pulsations $\omega_1 = x_1 \omega_0$ et $\omega_2 = x_2 \omega_0$ ($x_1<x_2$) pour lesquelles $I = \frac{I}{\sqrt{2}}$. C'est-à-dire que $I = \frac{E}{Z}$ et $I_0 = \frac{E}{R}$, donc l'égalité précédente donne $Z = R\sqrt{2}$. Donc $R\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2} = R\sqrt{1+1}$. $x_1$ et $x_2$ sont les solutions réelles positives de l'équation $x -\frac{1}{x} = \pm \frac{1}{Q}$. Donc $x = \pm\frac{1}{2Q} \pm \sqrt{\frac{1}{(2Q)^2} +1}$ et donc les deux solutions positives sont $x_1 = -\frac{1}{2Q} + \sqrt{\frac{1}{(2Q)^2} +1}$ et $x_2 = \frac{1}{2Q} + \sqrt{\frac{1}{(2Q)^2} +1}$. Leur différence est $\Delta x = x_2-x_1 = \frac{\omega_2 -\omega_1}{\omega_0} = \frac{1}{Q}$. La bande passante en pulsation est $\Delta \omega = \frac{\omega_0}{Q}=\frac{R}{L}$. La bande passante en fréquence est $\Delta N = \frac{N_0}{Q}=\frac{R}{2\pi L}$.
 		
 		On verra dans la suite du cours pourquoi on appelle encore la bande passante à $\SI{-3}{\dB}$. On voit que la bande passante est d'autant plus large que $R$ est grand et $L$ petit, elle ne dépend pas de la capacité.
