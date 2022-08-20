@@ -1,4 +1,5 @@
 Ceci est un cours de physique de première année de CPGE. En fait c'était mon cours de 2007 à 2008.
 
-Une installation de LaTeX est néxessaire (MikTeX ou TeXLive), une installation
-de gnuplot et une installation de python (numpy, matplotlib a minima).
+Une installation de LaTeX est nécessaire (MikTeX ou TeXLive), une installation et une installation de python (numpy, matplotlib a minima).
+Pour créer les figures dans une invite python à la racine faites :
+import *
