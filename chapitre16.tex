@@ -11,7 +11,7 @@ Un amplificateur opérationnel est un circuit intégré comportant de nombreux t
 L'alimentation est souvent omise sur les schémas. On schématise encore l'amplificateur opérationnel par~:
 %mettre le schema
 
-un amplificateur opérationnel amplifie sa tension différentielle d'entrée. Il doit son nom à ce qu'il servit d'abord pour la réalisation d'opérations simples sur les tensions tells qu'addition, soustraction et multiplication par une constante. \emph{En régime linéaire, il délivre à la sortie une tension proportionnelle à la différence de potentiel entre ses deux entrées}. L'une des entrée est appelée \emph{entrée inverseuse}, on la note $-$ sur les schémas, et l'autre entrée est appelée \emph{non-inverseuse}, notée $+$. Il n'a qu'une seule sortie notée $S$. Les tensions $v^+$, $v^-$ et $v_S$ sont respectivement les potentiels par rapport à la masse d'alimentation des entrées $+$, $-$ et de la sortie. Les bornes d'alimentation sont portées l'une au potentiel $\Vcc$, et l'autre au potentiel $-\Vcc$. Le plus souvent, $\Vcc = \SI{15}{\volt}$.
+Un amplificateur opérationnel amplifie sa tension différentielle d'entrée. Il doit son nom à ce qu'il servit d'abord pour la réalisation d'opérations simples sur les tensions telles que l'addition, la soustraction et la multiplication par une constante. \emph{En régime linéaire, il délivre à la sortie une tension proportionnelle à la différence de potentiel entre ses deux entrées}. L'une des entrée est appelée \emph{entrée inverseuse}, on la note $-$ sur les schémas, et l'autre entrée est appelée \emph{non-inverseuse}, notée $+$. Il n'a qu'une seule sortie notée $S$. Les tensions $v^+$, $v^-$ et $v_S$ sont respectivement les potentiels par rapport à la masse d'alimentation des entrées $+$, $-$ et de la sortie. Les bornes d'alimentation sont portées l'une au potentiel $\Vcc$, et l'autre au potentiel $-\Vcc$. Le plus souvent, $\Vcc = \SI{15}{\volt}$.
 \subsection{Réponse en tension, fonctionnement linéaire et saturation en tension}
 En régime continu, pour une impédance de charge infinie, la réponse de l'amplificateur opérationnel est schématisée par le graphe ci-dessous.%TODO Mettre le graphe
 On a donc différents fonctionnement~:
@@ -24,18 +24,18 @@ Typiquement, lorsque $\Vcc = \SI{15}{\volt}$, on a $\SI{13.5}{\volt} \leq V_0 \l
 
 \emph{On a donc, en fonctionnement linéaire $\epsilon$ quasi-nul et $\mu$ quasiment infini.}
 \subsection{Courants d'entrée, courant de sortie et saturation en courant}
-Les courant dans les entrées sont en général de quelques nanoampères et peuvent être négligés en première approximation $i_E^+ = i_E^-=0$. Le courant de sortie est limité en général à quelques dizaines de milliampères et quand il atteint la valeur maximale, il y  a \emph{saturation en courant}~: $\mid \i_S \mid \leq I_{SM}$.
+Les courant dans les entrées sont en général de quelques nano-ampères et peuvent être négligés en première approximation $i_E^+ = i_E^-=0$. Le courant de sortie est limité en général à quelques dizaines de milliampères et quand il atteint la valeur maximale, il y  a \emph{saturation en courant}~: $\mid \i_S \mid \leq I_{SM}$.
 \subsection{Comportement fréquentiel de l'amplificateur opérationnel}
 En régime sinusoïdal permanent, pour des fréquences basses et moyennes, 
 \begin{equation}
 	\label{eq:freqao}
-	\ncomplexe{\mu} = \vcp_S / \ncomplexe{\epsilon},
+	\ncomplexe{\mu} = \ncomplexe{v}_S / \ncomplexe{\epsilon},
 \end{equation}
 se comporte comme la transmittance d'un filtre passe-bas du premier ordre avec une fréquence de coupure $f_C$ de l'ordre de \SI{10}{\hertz}~:
 \begin{equation}
 	\ncomplexe{\mu} = \frac{\mu_0}{1+\ju \frac{f}{f_C}}.
 \end{equation}
-On peut en déduire que $ \mu_0 \ncomplexe{\epsilon} = \vcp_S + \frac{1}{\omega_C} \derived{\vcp_S}{t}$. Notons que l'équation \eqref{eq:freqao} n'est bien sûr valable que tant qu'il n'y a pas de saturation, donc en particulier, tant que l'amplitude $V_S$ de $v_S$ n'atteint pas la valeur $V_0$. Aux très basses fréquences et en régime continu, on a donc $\mu = \mu_0 = \num{150e3}$ par exemple et $\phi=0$.
+On peut en déduire que $ \mu_0 \ncomplexe{\epsilon} = \ncomplexe{v}_S + \frac{1}{\omega_C} \derived{\ncomplexe{v}_S}{t}$. Notons que l'équation \eqref{eq:freqao} n'est bien sûr valable que tant qu'il n'y a pas de saturation, donc en particulier, tant que l'amplitude $V_S$ de $v_S$ n'atteint pas la valeur $V_0$. Aux très basses fréquences et en régime continu, on a donc $\mu = \mu_0 = \num{150e3}$ par exemple et $\phi=0$.
 
 \emph{Pour les régimes transitoire, tant que $\epsilon$ ne varie pas trop rapidement, l'équation différentielle vérifiée par $v_S$ et $\epsilon$ est la même qu'en régime sinusoïdal permanent~:}
 \begin{equation}
@@ -63,7 +63,7 @@ avec $i_{E^-}=0$, et comme $\epsilon=0$, on a $v^-=v^+=0$ donc $u_S = -R_0 \left
 En fonctionnement linéaire, le théorème de Millmann, avec $i_{E^-}=0$ et $v^-=v^+=0$ (puisque $\epsilon$ est nul) donne $0=v^- =\frac{u_E/R_1+u_S/R_2}{1/R_1+1/R_2}$, donc $u_S = -R_2/R_1 u_E$. Si $R_2 > R_1$, alors $\mid u_S \mid > \mid u_E \mid$, donc il s'agit bien d'un amplificateur inverseur, si $R_2 < R_1$, alors $\mid u_S \mid < \mid u_E \mid$ il s'agit d'un atténuateur inverseur, et si $R_2 = R_1$, il s'agit juste d'un inverseur.
 \subsection{Exemple de filtre actif avec amplificateur opérationnel}
 %TODO mettre le schema
-On étudiera le quadripôle de tension d'entrée $u_E$ et de tension de sortie $u_S$ en régime sinusoïdal permanent, lorsque l'amplificateur opérationnel est en fonctionnement linéaire. On a donc $\epsilon$ nul, donc $\vcp^+=\vcp^-=0$. En notant $\Yc$ l'admittance complexe de $R2 \parallel C$~: $\Yc = \ju C \omega + \frac{1}{R_2}$. Le théorème de Millman donne~: $0=\vcp^-=\frac{\frac{\uc_E}{R_1}+\Yc \uc_S}{1/R_1+\Yc}$, donc $\uc_S = -\uc_E/(R_1 \Yc)$. L'amplification complexe en tension est donc~:
+On étudiera le quadripôle de tension d'entrée $u_E$ et de tension de sortie $u_S$ en régime sinusoïdal permanent, lorsque l'amplificateur opérationnel est en fonctionnement linéaire. On a donc $\epsilon$ nul, donc $\ncomplexe{v}^+=\ncomplexe{v}^-=0$. En notant $\Yc$ l'admittance complexe de $R2 \parallel C$~: $\Yc = \ju C \omega + \frac{1}{R_2}$. Le théorème de Millman donne~: $0=\ncomplexe{v}^-=\frac{\frac{\uc_E}{R_1}+\Yc \uc_S}{1/R_1+\Yc}$, donc $\uc_S = -\uc_E/(R_1 \Yc)$. L'amplification complexe en tension est donc~:
 \begin{equation}
 	\Hc = \frac{\uc_S}{\uc_E} = \frac{R_2/R_1}{1+\ju\omega R_2 C}.
 \end{equation}
@@ -74,14 +74,19 @@ Il lui correspond l'équation différentielle du premier ordre suivante~:
 \end{align}
 Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de référence $\omega_0 = \frac{1}{R_2C}$, $x = \omega/\omega_0 = R_2C \omega$ et $H_0 = R_2/R_1$, pour faciliter l'étude de la transmittance complexe. On a donc $\Hc = -\frac{H_0}{1+\ju x}$. Alors $H = \frac{H_0}{\sqrt{1+x^2}}$, le gain en décibels vaut $G = 20\log H_0 - 10 \log(1+x^2)$ et le déphasage vaut $\Phi = \pi - \arctan x$. $H$ et $G$ sont des fonctions décroissantes de $\log x$. $\Phi$ est une fonction croissante de $\log x$. À basse fréquence, il s'agit d'un simple inverseur (amplificateur ou atténuateur suivant les valeurs des résistance), puisque le condensateur est un coupe-circuit en régime permanent. Lorsque $\log x$ tend vers $-\infty$ ($x$ vers 0), $G$ tend vers $20\log H_0 = G_M$ et $\phi$ tend vers $\pi$. Lorsque $\log x$ tend vers $+\infty$ ($x$ vers $+\infty$), $G$ est équivalent à $G_M - 20\log x$ qui est l'équation d'une asymptote d'ordonnée à l'origine $G_M$ et de coefficient directeur $\SI{20}{\dB}$ par décade ; et $\Phi$ tend vers $\pi/2$.
 
-À la coupure, $H_C = \frac{H_M}{\sqrt{2}} = \frac{H_0}{\sqrt{2}}$ et $G_C = G_M -\SI{3}{\dB}$, donc $x_c=1$ et $\Phi_C = \pi/4$. On a donc affaire à un filtre passe-bas amplificateur (si $R_2>R_1$) inverseur. Le tracé ci-dessous correspond au cas où $R_2=10R_1$ (alors $H_0=10$ et $G = \SI{20}{\dB}$).
+À la coupure, $H_C = \frac{H_M}{\sqrt{2}} = \frac{H_0}{\sqrt{2}}$ et $G_C = G_M -\SI{3}{\dB}$, donc $x_c=1$ et $\Phi_C = \pi/4$. On a donc affaire à un filtre passe-bas amplificateur (si $R_2>R_1$) inverseur. Le tracé ci-dessous, figure \ref{fig:BodeAOP}, correspond au cas où $R_2=10R_1$ (alors $H_0=10$ et $G = \SI{20}{\dB}$).
 %TODO Mettre le graphique
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.7]{Fig12.png}
+    \caption{Diagramme de Bode du filtre actif}
+    \label{fig:BodeAOP}
+\end{figure}
 \section{Exercices}
 \begin{exercice}[Amplificateur non-inverseur]
 	%TODO Mettre le schema
 	\begin{enumerate}
-		\item Si l'amplificateur opérationnel est idéal et en fonctionnement linéaire, exprimer la fonction de transfert $\Hc = \vcp_S/\vcp_E$ avec les résistances $R_1$ et $R_2$.
+		\item Si l'amplificateur opérationnel est idéal et en fonctionnement linéaire, exprimer la fonction de transfert $\Hc = \ncomplexe{v}_S/\ncomplexe{v}_E$ avec les résistances $R_1$ et $R_2$.
 		\item On tient compte, pour seul défaut de l'amplificateur opérationnel, du gain fini $\mu_0$ en régime continu. Montrer que $H_0 = v_S / v_E$ peut se mettre sous la forme $H_0 = \frac{K}{1+\frac{K}{\mu_0}}$ et exprimer $K$ avec les résistances.
 		\item En régime sinusoïdal permanent $\ncomplexe{\mu} = \frac{\mu_0}{1+ \ju f/f_0}$. Montrer que la fonction de transfert du quadripôle peut se mettre sous la forme $\Hc = \frac{H_0}{1+\ju f/F_0}$. Quelle est la bande passante, exprimée avec $f_0$ $\mu_0$ et $H_0$,  de l'amplificateur ? Montrer que le facteur de mérite $H_0F_0$ est constant.
 	\end{enumerate}
@@ -90,7 +95,7 @@ Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de r�
 	%TODO Mettre le schema
 	On suppose que l'amplificateur opérationnel est idéal en fonctionnement linéaire
 	\begin{enumerate}
-		\item Exprimer la fonction de transfert du quadripôle $\Hc = \frac{\vcp_S}{\vcp_E}$ et tracer ses diagrammes de Bode en prenant $x = \omega/\omega_0=RC\omega$.
+		\item Exprimer la fonction de transfert du quadripôle $\Hc = \frac{\ncomplexe{v}_S}{\ncomplexe{v}_E}$ et tracer ses diagrammes de Bode en prenant $x = \omega/\omega_0=RC\omega$.
 		\item Montrer qu'il s'agit d'un montage dérivateur inverseur. 
 	\end{enumerate}
 \end{exercice}
@@ -103,16 +108,16 @@ Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de r�
 \begin{exercice}[Simulation d'une bobine]
 	%TODO mettre le schema
 	\begin{enumerate}
-		\item Amplification en tension du quadripôle (ME,MS). On veut étudier, en régime sinusoïdal permanent de pulsation $\omega$, la fonction de transfert $\Hc = \vcp_S / \vcp_E$ de ce montage
+		\item Amplification en tension du quadripôle (ME,MS). On veut étudier, en régime sinusoïdal permanent de pulsation $\omega$, la fonction de transfert $\Hc = \ncomplexe{v}_S / \ncomplexe{v}_E$ de ce montage
 		\begin{enumerate}			
-			\item Exprimer $\vcp_A/\vcp_E$ avec $R$, $C$ et $\omega$. Faire de même avec $\vcp_B/\vcp_S$;
+			\item Exprimer $\ncomplexe{v}_A/\ncomplexe{v}_E$ avec $R$, $C$ et $\omega$. Faire de même avec $\ncomplexe{v}_B/\ncomplexe{v}_S$;
 			\item L'amplificateur opérationnel étant considéré comme idéal et en fonctionnement linéaire, ne déduire l'expression de $\Hc$ avec $R$, $C$ et $\omega$, puis avec $z=2RC\omega$.
 			\item Tracer les diagrammes de Bode de $\Hc$ : $G(\si{\dB}) = f(\log z)$ et $\Phi = g(\log z)$. Calculer la fréquence de coupure $N$ et préciser sur les diagrammes de Bode les coordonnées correspondantes à cette coupure.
 		\end{enumerate}
 		\item Dipôle équivalent à (ME). On veut montrer l'équivalence, en régime sinusoïdal permanent entre le dipôle (ME), situé à droite du point E, et une auto-inductance pure $L$ en série avec une résistance pure $r$.
 		\begin{enumerate}
-			\item Exprimer l'intensité complexe $\ic_E$ du courant d'entrée avec $\vcp_E$, $\vcp_S$, $R$, $C$ et $\omega$.
-			\item Compte tenu de l'expression de $\Hc$ obtenu précédemment, exprimer l'impédance complexe d'entrée définie par $\Zc_E = \frac{\vcp_E}{\ic_E}$ avec $R$, $C$ et $\omega$.
+			\item Exprimer l'intensité complexe $\ic_E$ du courant d'entrée avec $\ncomplexe{v}_E$, $\ncomplexe{v}_S$, $R$, $C$ et $\omega$.
+			\item Compte tenu de l'expression de $\Hc$ obtenu précédemment, exprimer l'impédance complexe d'entrée définie par $\Zc_E = \frac{\ncomplexe{v}_E}{\ic_E}$ avec $R$, $C$ et $\omega$.
 			\item Montrer l'équivalence entre le dipôle (ME) et $L$ en série avec $r$~: On exprimera $L$ et $r$ en fonction de $R$ et $C$.
 		\end{enumerate}
 	\end{enumerate}
