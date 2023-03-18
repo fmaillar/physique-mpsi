@@ -31,7 +31,8 @@ aread:
 	acroread ${filename}.pdf &
 
 clean:
-	rm -f *.ps *.log *.aux *.out *.dvi *.bbl *.blg *.lof *.lot *.toc *.ilg *.idx *.ind *~ ${filename}.m*
+	rm -f *.ps *.log *.aux *.out *.dvi *.bbl *.blg *.lof *.lot *.toc *.ilg *.idx 
+	rm *.ind *~ ${filename}.m* *.png
 
 backup:
 	git add *

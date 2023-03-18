@@ -1,0 +1,211 @@
+\chapter{Applications de la relation fondamentale de la dynamique}
+\label{chap:applicationsdelarelationfondamentale}
+\minitoc
+\minilof
+\minilot
+
+\section{Chute libre, tir dans le vide}
+\label{sec-chap3:chutelibre}
+
+Dans une région de la Terre suffisamment petite, on sait que la seule force qui s'exerce dans le référentiel terrestre sur un corps dans le vide est son poids~: $\vv{P}=m\vg$, $\vg$ étant le champ de pesanteur, localement uniforme, vertical et orienté vers le bas. La relation fondamentale de la dynamique donne alors $\vv{a}=\vg$, elle est nommée aussi accélération de la pesanteur. À Paris, $g=\SI{9.80665}{m.s^{-2}}$.
+
+Pour étudier le mouvement d'un projectile dans le vide, on utilise un repère cartésien lié à la terre avec $O$~: position à $t=0$, $(Oz)$ vertical ; $(Ox)$ dans le plan de tir formé par $O$ et $\vv{v_0}$. À $t=0$, on a l'angle de tir $\alpha = (\vv{Ox}, \vv{v_0})$. Alors, en prenant en compte $\vv{a} = -g\uz$ et $\vv{v_0}= v_0\cos\alpha \ux + v_0\sin\alpha \uz$ et en intégrant deux fois, on obtient~:
+\begin{equation}
+  \vv{OM} = v_0t\cos \alpha \ux + \left(v_0t\sin\alpha - g\frac{t^2}{2}\right) \uz.
+\end{equation}
+
+Ainsi, l'équation cartésienne du mouvement est
+\begin{equation}
+  y=0 \quad z = -\frac{g}{2v_0^2\cos^2\alpha} x^2 + x\tan\alpha.
+\end{equation}
+C'est l'équation d'une parabole d'axe vertical, dont la concavité est tournée vers le bas. Elle coupe l'axe $(Oz)$ en $x=0$ et en la portée horizontale $x=p=\frac{v_0^2\sin(2\alpha)}{g}$. Le sommet de la parabole a pour coordonnées $x=\frac{p}{2}=\frac{v_0 \cos\alpha \sin\alpha}{2}$ (par symétrie de la trajectoire). Alors la flèche vaut~:
+\begin{equation}
+  f=z(x=p/2) = \frac{v_0^2\sin^2\alpha}{2g}.
+\end{equation}
+On constate que la portée horizontale est maximale pour $\alpha=\frac{\pi}{4}$ et sa valeur est $p=\frac{v_0^2}{g}$. La flèche est maximale lorsque $\alpha=\frac{\pi}{2}$ et alors $f_m = \frac{v_0^2}{2g}$.
+
+Pour atteindre un point de coordonnées données $P(X,Y)$ avec $X>0$, avec une vitesse initiale de norme $v_0$, l'angle de tir doit être solution de l'équation
+\begin{equation}
+  Z = \frac{g}{2v_0^2\cos^2\alpha} X^2 + X\tan\alpha.
+\end{equation}
+Notons pour simplifier l'écriture : $u=\tan \alpha$, alors $1+u^2=\frac{1}{\cos^2 \alpha}$ et $\alpha=\arctan u$. Ainsi l'équation devient
+\begin{equation}
+  Z = -\frac{g}{2v_0^2}(1+u^2)X^2 +uX,
+\end{equation}
+c'est-à-dire
+\begin{equation}
+  \left(\frac{gX^2}{2v_0^2}\right)u^2 -Xu +\left(Z+\frac{gX^2}{2v_0^2}\right) = 0.
+\end{equation}
+Cette équation n'a de solution que si son discriminant est positif, c'est-à-dire que si $Z \leq \frac{v_0^2}{2g}-\frac{gX^2}{2v_0^2}$.
+
+La parabole de sûreté a pour équation~:
+\begin{equation}
+  z = \frac{v_0^2}{2g}-\frac{g}{2v_0^2}x^2.
+\end{equation}
+Son sommet a les coordonnées de $x=0$ et $z=f_m$ et elle coupe l'axe $(Ox)$ au point $z=0$ et $x=p_m$. Tout point $P$ situé en-dessous de la parabole de sûreté peut être atteint avec deux valeurs différentes de $\alpha$. Tout point situé sur la parabole de sûreté n'est atteint qu'avec une seule valeur de $\alpha$ et tout point au-dessus de la parabole ne peut être atteint.
+
+\section{Influence de la résistance de l'air sur le tir d'un projectile pour des vitesses faibles}
+\label{sec-chap3:influencedelaresistancedelair}
+
+Pour des vitesses faibles, on peut faire l'approximation suivante~: la résistance de l'air est proportionnelle à la vitesse~: $\vv{f}=-k \vvv$. La relation fondamentale de la dynamique donne l'équation différentielle suivante~:
+\begin{equation}
+  \derived{\vvv}{t}+\frac{k}{m}\vvv = \vg.
+\end{equation}
+La solution homogène de cette équation est $\vvv = \vv{C}\e^{-\frac{k}{m}t}$ (où $\vv{C}$ est un vecteur constant). Une solution particulière de l'équation complète est $\vvv = \frac{m}{k}\vg$. La solution générale de l'équation différentielle est donc
+\begin{equation}
+  \vvv = \vv{C}\e^{-\frac{k}{m}t} + \frac{m}{k}\vg.
+\end{equation}
+À $t=0$ on a $\vvv=\vvv_0$ donc $\vv{C}=\vvv_0 - \frac{m}{k}\vg$. La solution physique de cette équation est donc
+\begin{equation}
+  \vvv = \left( \vvv_0 - \frac{m}{k}\vg \right) \e^{-\frac{k}{m}t} + \frac{m}{k}\vg
+\end{equation}
+En intégrant encore une fois (avec $\vv{OM}(t=0)=\vv{0}$), on obtient
+\begin{equation}
+  \vv{OM} = \frac{m}{k}\left(\vvv_0 - \frac{m}{k}\vg\right)\left(1 - \e^{-\frac{k}{m}t}\right) + \frac{m}{k}\vg t.
+\end{equation}
+Si on décompose dans le repère orthogonal on obtient
+\begin{equation}
+  \begin{cases}
+    x = \frac{m v_0 \cos\alpha}{k}\left(1 - \e^{-\frac{k}{m}t}\right) \\
+    z = \frac{m}{k}\left(v_0\sin\alpha + \frac{m}{k}g\right) \left(1 - \e^{-\frac{k}{m}t}\right) - \frac{mg}{k}t
+  \end{cases}
+\end{equation}
+
+Lorsque $t$ tend vers l'infini la vitesse tend vers une vitesse limite verticale~: $\vvv_L = \frac{m}{k}\vg$. On notera donc $v_L = \frac{m}{k}g$. L'abscisse tend vers la valeur limite $x_L = \frac{mv_0 \cos \alpha}{k}$.
+
+On peut donc écrire plus simplement~: $x = x_L\left(1-\e^{-\frac{k}{m}t}\right)$ d'où $t = -\frac{m}{k}\ln\left(1-\frac{x}{x_L}\right)$ et
+\begin{equation}
+  z = \left(x_L\tan \alpha + \frac{mv_L}{k}\right)\left(1-\e^{-\frac{k}{m}t}\right) -v_L t.
+\end{equation}
+D'où l'équation de la trajectoire
+\begin{equation}
+  z = \left(x_L\tan \alpha + \frac{mv_L}{k}\right)\frac{x}{x_L} + \frac{m v_L}{k}\ln\left(1-\frac{x}{x_L}\right).
+\end{equation}
+
+La flèche de la trajectoire s'obtient avec la résolution de l'équation $\derived{z}{x}=0$, et on arrive à
+\begin{equation}
+  f = x_L \tan \alpha - \frac{mv_L}{k}\ln\left(1 + \frac{k x_L \tan \alpha}{m v_L}\right) = \frac{m v_0 \sin \alpha}{k} - \frac{m^2 g}{k}\ln\left(1 + \frac{k v_0 \sin \alpha}{m g}\right).
+\end{equation}
+De manière triviale, elle est maximale pour $\alpha = \frac{\pi}{2}$ et vaut alors $f =  \frac{m v_0}{k} - \frac{m^2 g}{k}\ln\left(1 + \frac{k v_0}{m g}\right)$.
+
+La portée est la valeur $x$ non nulle solution de $z=0$, que l'on ne peut pas 
+résoudre analytiquement. Néanmoins une simulation numérique montrerait qu'elle 
+est réduite par rapport au cas sans frottements. C'est ce que montre les figures 
+\ref{fig:chute_frott1} à \ref{fig:chute_frott3} avec un frottement \(\vv{f} = -k 
+\vvv^{\alpha}\)
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=1, width=0.8\linewidth]{Tir_parabolique_frottements_alpha_0.5}
+  \caption{Tir parabolique freiné selon différents \(k\) et \(\alpha = 0.5\)}
+  \label{fig:chutefrott1}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=1, width=0.8\linewidth]{Tir_parabolique_frottements_alpha_0.7}
+  \caption{Tir parabolique freiné selon différents \(k\) et \(\alpha = 0.707\)}
+  \label{fig:chutefrott2}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=1, 
+  width=0.8\linewidth]{Tir_parabolique_frottements_alpha_1.0}
+  \caption{Tir parabolique freiné selon différents \(k\) et \(\alpha = 1\)}
+  \label{fig:chutefrott3}
+\end{figure}
+
+\section{Tir vertical}
+\label{chap3-sec:tirvertical}
+
+Dans le cas général, la force de frottement exercée par le fluide est de la forme $\vv{f}=-Kv^\alpha\vvv$ avec $\alpha \in [0, 3]$ et $K>0$. On étudiera ici le cas où la vitesse initiale est verticale, le champ de pesanteur uniforme et la poussée d'Archimède négligeable. On a alors l'équation différentielle suivante~:
+\begin{equation}
+  \derived{\vvv}{t} + \frac{Kv^\alpha}{m}\vvv = \vg.
+\end{equation}
+Les vecteurs $\vvv_0$ est $\vg$ étant verticaux, on en déduit que le mouvement se fait sur une trajectoire verticale.
+
+On se limite maintenant au cas où $v$ reste d'un ordre de grandeur où $\alpha=1$ avec $\vvv_0$ vers le bas. Ainsi l'équation différentielle s'écrit
+\begin{equation}
+  mg -Kv^2 = m\derived{v}{t}.
+\end{equation}
+Cette équation n'est pas linéaire, on peut cependant la résoudre en utilisant la vitesse limites $v_L = \sqrt{\frac{mg}{K}}$, qui est une solution particulière. L'équation se réécrit
+\begin{equation}
+  v_L^2-v^2 = \frac{m}{K}\derived{v}{t},
+\end{equation}
+soit alors
+\begin{equation}
+  \int_{v_0}^v \frac{\diff v}{v_L^2-v^2} = \int_0^t\frac{K}{m}\diff t.
+\end{equation}
+En remarquant que $\frac{1}{v_L^2-v^2} = \frac{1}{2 v_L}\left(\frac{1}{v_L+v}+\frac{1}{v_L-v}\right)$ on obtient
+\begin{equation}
+  \frac{1}{2v_L}\left[\ln\left(\frac{v_L+v}{v_L-v}\right)\right]^{v}_{v_0} = \frac{K}{m}t.
+\end{equation}
+En isolant $v$ de cette équation on a~:
+\begin{equation}
+  v = v_L \frac{(v_L+v_0)\e^{\frac{2K v_L t}{m}}-(v_L-v_0)}{(v_L+v_0)\e^{\frac{2K v_L t}{m}}+(v_L-v_0)}.
+\end{equation}
+On remarque que lorsque $t$ tend vers l'infini, $v$ tend vers $v_L$.
+\section{Mouvement d'un point matériel soumis à une force de rappel}
+\label{chap3-sec:mouvementdunpointmaterielsoumisauneforcederappel}
+\subsection{Pendule élastique horizontal}
+\label{chap3-subsec:pendulehorizontal}
+On considère un point matériel $M$ de masse $m$, attaché à un ressort dont l'autre extrémité est fixe. L'ensemble est enfilé sur une tige horizontale $(Ax)$. On suppose que le ressort est parfait, e raideur $k$ et de longueur à vide $L_0=AO$ et que les frottements sont négligeables. Le point $M$ est soumis, dans le référentiel terrestre assumé galiléen, à son poids $\vv{P}$ vertical, à la réaction de la tige $\vv{R}$ normale à $(Ox)$ et à la force de rappel exercée par le ressort $\vv{F}=-kx\ux$. La relation fondamentale de la dynamique donne~:
+\begin{equation}
+  \vv{P}+\vv{R}-kx\ux = m\vv{a}.
+\end{equation}
+La vitesse est horizontale donc $\vv{a} = \ddot{x}\ux$ est aussi horizontale donc $\vv{R}=-\vv{P}$ et alors on a l'équation différentielle suivante~:
+\begin{equation}
+  \ddot{x} +\frac{k}{m}x=0.
+\end{equation}
+Cette équation est celle d'un oscillateur harmonique. Le mouvement est rectiligne sinusoïdal. La solution réelle générale de cette équation est
+\begin{equation}
+  x = A \cos\left(\sqrt{\frac{k}{m}} t\right) + B \sin\left(\sqrt{\frac{k}{m}} t\right) = X \cos\left(\sqrt{\frac{k}{m}} t + \varphi\right).
+\end{equation}
+Les conditions sur $x$ et $\dot{x}$ permettent de calculer $A$ et $B$ ou l'amplitude $X$ et la phase d'origine $\varphi$.
+
+\subsection{Pendule élastique vertical}
+\label{chap3-subsec:pendulevertical}
+On suppose maintenant que le ressort est vertical. Pour amorcer le mouvement, il faut écarter $M$ verticalement de sa position d'équilibre, ou le lancer verticalement, ou les deux à la fois. On prend la position d'équilibre comme l'origine de l'axe vertical descendant $(Ox)$ et on note $L_e$ la longueur du ressort à l'équilibre. En négligeant encore la poussée d'Archimède et la résistance de l'air, $M$ est soumis à son poids $\vv{P}=mg\ux$ et la force du ressort $\vv{F}=-k(L_e +x-L_0)\ux$. L'équation différentielle du mouvement est donc
+\begin{equation}
+  mg -k(L_e +x-L_0) = m\ddot{x}.
+\end{equation}
+D'autre part on a $ mg-k(L_e-L_0)=0$. Alors par soustraction membre à membre de ces deux égalités, on obtient la même équation différentielle que pour le pendule élastique horizontal~:
+\begin{equation}
+  -kx \ux = m \ddot{x} \ux,
+\end{equation}
+d'où $\ddot{x} +\frac{k}{m}x=0$ et le même type de solution.
+
+\section{Exercices}
+\label{chap3-sec:exercices}
+%
+\begin{exercice}[Interaction entre deux charges ponctuelles]
+  Quatre charges ponctuelles $q$, $-2q$, $2q$, et $-q$ sont placées respectivement aux sommets $A$, $B$, $C$ et $D$ d'un carré de coté $a$. Exprimer la force exercée par l'ensemble de ces quatre charges sur une charge ponctuelle $q$ placée au centre $O$ du carré, avec $a$, $q$ et les vecteurs unitaires $\vi$ et $\vj$ tels que $\vv{AB}=\vv{DC}=a\vi$ et $\vv{DA}=\vv{CB}=a\vj$.
+\end{exercice}
+%
+\begin{exercice}[Expérience de Millikan]
+On observe au microscope la chute d'une gouttelette sphérique d'huile dans l'air. SA vitesse est rapidement stabilisée à la valeur $v_0$, elle parcourt alors $\SI{4,00}{mm}$ en $\SI{12,4}{s}$.
+
+On admettra que la résistance de l'air oppose au mouvement de la goutte une force d'intensité $6\pi r \eta v$, $v$ étant la vitesse de la goutte, $r$ son rayon et $\eta$ la viscosité de l'air. On rappelle que la poussée d'Archimède a la même intensité que le poids de l'air déplacé par la goutte. On pose $\eta=\SI{1,80e-5}{SI}$, $\rho=\SI{1260}{kg/m^3}$, $g=\SI{9.81}{m.s^{-2}}$ et $\rho'=\SI{1,3}{kg/m^3}$.
+\begin{enumerate}
+\item  Calculer le rayon de la goutte.;
+\item Les gouttes observées se chargent positivement par frottement lors de la pulvérisation de l'huile et se déplacent entre les armatures horizontales d'un condensateur, distantes de $d=\SI{2,00}{cm}$. Lorsque le condensateur est chargé sous une tension de $U=\SI{9,00}{kV}$, la goutte remonte de $\SI{4,00}{mm}$ en $\SI{15.1}{s}$. En déduire la charge électrique $q$ de la goutte.
+\item La charge de la goutte peut varier brusquement lors de son contact avec une molécule d'air ionisée par un faisceau de rayons $X$. La goutte précédente portant une nouvelle charge $q'$ est pratiquement immobile pour une tension de $U'=\SI{3,95}{kV}$ entre les armatures du condensateur. Calculer $q'$. Déduire de $q$ et $q'$ une valeur probable de la charge élémentaire $e$.
+\end{enumerate}
+\end{exercice}
+
+\begin{exercice}[Masse du Soleil]
+  La Terre et le Soleil sont assimilés à des points matériels, on considère que le Soleil est fixe. La Terre décrit en une année (365,25 jours) autour du Soleil un cercle de rayon 150 millions de kilomètres. Sachant que la masse de la Terre vaut $m_T=\SI{5,97e24}{kg}$ et la constante de gravitation universelle $\Gb=\SI{6.67e-11}{SI}$, déterminer la masse du Soleil.
+\end{exercice}
+
+\begin{exercice}[Pendule conique à deux fils]
+On suspend un point matériel $M$, de masse $m$, à un fil inextensible de longueur $L$ et de masse négligeable fixé en $O_1$ (de l'axe $(Oz)$). Le point $M$ subit un mouvement de rotation uniforme (de vitesse $\omega$)  dans le plan $(xOy)$. Le fil $O_1M$ reste incliné d'un angle constant $\alpha$ par rapport à $(Oz)$. 
+
+Déterminer $\alpha$ en fonction de $\omega$, $L$, et de l'accélération de la pesanteur $g$.
+
+Maintenant, le point matériel $M$ est relié au point $O_2$ (qui est le symétrique de $O_1$ par rapport à $O$), $OO_1=OO_2=D$. Le point $M$ est mis en rotation à la vitesse angulaire $\omega$ que l'on augment progressivement. Le fil $O_2M$ commence à se tendre pour une valeur $\omega_1$ que l'on exprimera en fonction de $g$ et $D$.
+
+Pour $\omega > \omega_1$, déterminer les normes $T_1$ et $T_2$ des tensions respectives des fils $O_1M$ et $O_2M$ en fonction de $m$, $L$, $\omega_1$ et $\omega$.
+
+Calculer numériquement $T_1$ et $T_2$ pour $L=\SI{0.5}{m}$, $D=\SI{0.3}{m}$, $m=\SI{1}{kg}$, $g=\SI{9.8}{m.s^{-2}}$ et $\omega=\SI{7}{rad.s^{-1}}$.
+\end{exercice}
