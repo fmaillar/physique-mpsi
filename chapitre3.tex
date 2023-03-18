@@ -88,7 +88,33 @@ La flèche de la trajectoire s'obtient avec la résolution de l'équation $\deri
 \end{equation}
 De manière triviale, elle est maximale pour $\alpha = \frac{\pi}{2}$ et vaut alors $f =  \frac{m v_0}{k} - \frac{m^2 g}{k}\ln\left(1 + \frac{k v_0}{m g}\right)$.
 
-La portée est la valeur $x$ non nulle solution de $z=0$, que l'on ne peut pas résoudre analytiquement. Néanmoins une simulation numérique montrerait qu'elle est réduite par rapport au cas sans frottements.
+La portée est la valeur $x$ non nulle solution de $z=0$, que l'on ne peut pas 
+résoudre analytiquement. Néanmoins une simulation numérique montrerait qu'elle 
+est réduite par rapport au cas sans frottements. C'est ce que montre les figures 
+\ref{fig:chute_frott1} à \ref{fig:chute_frott3} avec un frottement \(\vv{f} = -k 
+\vvv^{\alpha}\)
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=1, width=0.8\linewidth]{Tir_parabolique_frottements_alpha_0.5}
+  \caption{Tir parabolique freiné selon différents \(k\) et \(\alpha = 0.5\)}
+  \label{fig:chutefrott1}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=1, width=0.8\linewidth]{Tir_parabolique_frottements_alpha_0.7}
+  \caption{Tir parabolique freiné selon différents \(k\) et \(\alpha = 0.707\)}
+  \label{fig:chutefrott2}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=1, 
+  width=0.8\linewidth]{Tir_parabolique_frottements_alpha_1.0}
+  \caption{Tir parabolique freiné selon différents \(k\) et \(\alpha = 1\)}
+  \label{fig:chutefrott3}
+\end{figure}
 
 \section{Tir vertical}
 \label{chap3-sec:tirvertical}

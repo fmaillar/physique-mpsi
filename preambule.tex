@@ -156,7 +156,7 @@
 %\newtheorem*{theo_etoile}{Théorème}
 \newtheorem{lemme}{Lemme}[chapter]
 \theoremstyle{definition} \newtheorem{defdef}{Définition}[chapter]
-\newtheorem{exercice}{Exercice}[chapter]
+%\newtheorem{exercice}{Exercice}[chapter]
 %\newtheorem*{defdef_etoile}{Définition}
 \newtheorem{prop}{Proposition}[chapter]
 \newtheorem{rappel}{Rappel}[chapter]
@@ -285,6 +285,8 @@
 \newcommand{\iu}{{i\mkern1mu}}
 \newcommand{\ncomplexe}[1]{\underline{#1}}
 \newcommand{\Uc}{\ncomplexe{U}}
+\newcommand{\Vitc}{\ncomplexe{V}}
+\newcommand{\vitc}{\ncomplexe{v}}
 \newcommand{\Ic}{\ncomplexe{I}}
 \newcommand{\uc}{\ncomplexe{u}}
 \newcommand{\ec}{\ncomplexe{e}}
@@ -317,3 +319,12 @@
 
 %\addtolength{\oddsidemargin}{-1cm}
 %\addtolength{\evensidemargin}{-1cm}
+\newcounter{exercice}
+\counterwithin*{exercice}{chapter}
+\newenvironment{exercice}[1][]{%
+\stepcounter{exercice}%
+\par\vspace{5pt}\noindent
+\shadowbox{\textbf{Exercice~\thechapter.\theexercice~\textit{#1}}}%
+\hrulefill\par\vspace{10pt}\noindent\rmfamily}%
+{\par\noindent\hrulefill\vrule width10pt height2pt depth2pt\par}
+%

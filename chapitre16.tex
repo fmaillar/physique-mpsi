@@ -84,41 +84,41 @@ Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de r�
 \end{figure}
 \section{Exercices}
 \begin{exercice}[Amplificateur non-inverseur]
-	%TODO Mettre le schema
-	\begin{enumerate}
-		\item Si l'amplificateur opérationnel est idéal et en fonctionnement linéaire, exprimer la fonction de transfert $\Hc = \ncomplexe{v}_S/\ncomplexe{v}_E$ avec les résistances $R_1$ et $R_2$.
-		\item On tient compte, pour seul défaut de l'amplificateur opérationnel, du gain fini $\mu_0$ en régime continu. Montrer que $H_0 = v_S / v_E$ peut se mettre sous la forme $H_0 = \frac{K}{1+\frac{K}{\mu_0}}$ et exprimer $K$ avec les résistances.
-		\item En régime sinusoïdal permanent $\ncomplexe{\mu} = \frac{\mu_0}{1+ \ju f/f_0}$. Montrer que la fonction de transfert du quadripôle peut se mettre sous la forme $\Hc = \frac{H_0}{1+\ju f/F_0}$. Quelle est la bande passante, exprimée avec $f_0$ $\mu_0$ et $H_0$,  de l'amplificateur ? Montrer que le facteur de mérite $H_0F_0$ est constant.
-	\end{enumerate}
+%TODO Mettre le schema
+\begin{enumerate}
+  \item Si l'amplificateur opérationnel est idéal et en fonctionnement linéaire, exprimer la fonction de transfert $\Hc = \ncomplexe{v}_S/\ncomplexe{v}_E$ avec les résistances $R_1$ et $R_2$.
+  \item On tient compte, pour seul défaut de l'amplificateur opérationnel, du gain fini $\mu_0$ en régime continu. Montrer que $H_0 = v_S / v_E$ peut se mettre sous la forme $H_0 = \frac{K}{1+\frac{K}{\mu_0}}$ et exprimer $K$ avec les résistances.
+  \item En régime sinusoïdal permanent $\ncomplexe{\mu} = \frac{\mu_0}{1+ \ju f/f_0}$. Montrer que la fonction de transfert du quadripôle peut se mettre sous la forme $\Hc = \frac{H_0}{1+\ju f/F_0}$. Quelle est la bande passante, exprimée avec $f_0$ $\mu_0$ et $H_0$,  de l'amplificateur ? Montrer que le facteur de mérite $H_0F_0$ est constant.
+\end{enumerate}
 \end{exercice}
 \begin{exercice}[Montage dérivateur]
-	%TODO Mettre le schema
-	On suppose que l'amplificateur opérationnel est idéal en fonctionnement linéaire
-	\begin{enumerate}
-		\item Exprimer la fonction de transfert du quadripôle $\Hc = \frac{\ncomplexe{v}_S}{\ncomplexe{v}_E}$ et tracer ses diagrammes de Bode en prenant $x = \omega/\omega_0=RC\omega$.
-		\item Montrer qu'il s'agit d'un montage dérivateur inverseur. 
-	\end{enumerate}
+%TODO Mettre le schema
+On suppose que l'amplificateur opérationnel est idéal en fonctionnement linéaire
+\begin{enumerate}
+  \item Exprimer la fonction de transfert du quadripôle $\Hc = \frac{\ncomplexe{v}_S}{\ncomplexe{v}_E}$ et tracer ses diagrammes de Bode en prenant $x = \omega/\omega_0=RC\omega$.
+  \item Montrer qu'il s'agit d'un montage dérivateur inverseur. 
+\end{enumerate}
 \end{exercice}
 \begin{exercice}[Rétroaction, stabilité du montage inverseur]
-	%TODO mettre les schemas
-	Pour un fonctionnement linéaire de l'amplificateur opérationnel, quelle est l'amplification en tension de chacun des ces deux montages si $\mu = \mu_0$ ? Que devient elle si $\mu$ devient infini ? 
-	
-	En réalité, en régime sinusoïdal permanent, on a~: $\ncomplexe{\mu} = \frac{\mu_0}{1+\ju \omega/\omega_0}$. Montrer que cette expression permet d'écrire l'équation différentielle relient $v_E$ et $v_S$ en régime variable. Montrer alors que toute mise sous tension de l'un de ces deux montages conduit rapidement à un fonctionnement linéaire si $\mid V_E \mid < V_0$ (tension de saturation), alors que l'autre montage conduit nécessairement à la saturation en tension. Conclure.
+%TODO mettre les schemas
+Pour un fonctionnement linéaire de l'amplificateur opérationnel, quelle est l'amplification en tension de chacun des ces deux montages si $\mu = \mu_0$ ? Que devient elle si $\mu$ devient infini ? 
+
+En réalité, en régime sinusoïdal permanent, on a~: $\ncomplexe{\mu} = \frac{\mu_0}{1+\ju \omega/\omega_0}$. Montrer que cette expression permet d'écrire l'équation différentielle relient $v_E$ et $v_S$ en régime variable. Montrer alors que toute mise sous tension de l'un de ces deux montages conduit rapidement à un fonctionnement linéaire si $\mid V_E \mid < V_0$ (tension de saturation), alors que l'autre montage conduit nécessairement à la saturation en tension. Conclure.
 \end{exercice}
 \begin{exercice}[Simulation d'une bobine]
-	%TODO mettre le schema
-	\begin{enumerate}
-		\item Amplification en tension du quadripôle (ME,MS). On veut étudier, en régime sinusoïdal permanent de pulsation $\omega$, la fonction de transfert $\Hc = \ncomplexe{v}_S / \ncomplexe{v}_E$ de ce montage
-		\begin{enumerate}			
-			\item Exprimer $\ncomplexe{v}_A/\ncomplexe{v}_E$ avec $R$, $C$ et $\omega$. Faire de même avec $\ncomplexe{v}_B/\ncomplexe{v}_S$;
-			\item L'amplificateur opérationnel étant considéré comme idéal et en fonctionnement linéaire, ne déduire l'expression de $\Hc$ avec $R$, $C$ et $\omega$, puis avec $z=2RC\omega$.
-			\item Tracer les diagrammes de Bode de $\Hc$ : $G(\si{\dB}) = f(\log z)$ et $\Phi = g(\log z)$. Calculer la fréquence de coupure $N$ et préciser sur les diagrammes de Bode les coordonnées correspondantes à cette coupure.
-		\end{enumerate}
-		\item Dipôle équivalent à (ME). On veut montrer l'équivalence, en régime sinusoïdal permanent entre le dipôle (ME), situé à droite du point E, et une auto-inductance pure $L$ en série avec une résistance pure $r$.
-		\begin{enumerate}
-			\item Exprimer l'intensité complexe $\ic_E$ du courant d'entrée avec $\ncomplexe{v}_E$, $\ncomplexe{v}_S$, $R$, $C$ et $\omega$.
-			\item Compte tenu de l'expression de $\Hc$ obtenu précédemment, exprimer l'impédance complexe d'entrée définie par $\Zc_E = \frac{\ncomplexe{v}_E}{\ic_E}$ avec $R$, $C$ et $\omega$.
-			\item Montrer l'équivalence entre le dipôle (ME) et $L$ en série avec $r$~: On exprimera $L$ et $r$ en fonction de $R$ et $C$.
-		\end{enumerate}
-	\end{enumerate}
+%TODO mettre le schema
+\begin{enumerate}
+  \item Amplification en tension du quadripôle (ME,MS). On veut étudier, en régime sinusoïdal permanent de pulsation $\omega$, la fonction de transfert $\Hc = \ncomplexe{v}_S / \ncomplexe{v}_E$ de ce montage
+  \begin{enumerate}			
+    \item Exprimer $\ncomplexe{v}_A/\ncomplexe{v}_E$ avec $R$, $C$ et $\omega$. Faire de même avec $\ncomplexe{v}_B/\ncomplexe{v}_S$;
+    \item L'amplificateur opérationnel étant considéré comme idéal et en fonctionnement linéaire, ne déduire l'expression de $\Hc$ avec $R$, $C$ et $\omega$, puis avec $z=2RC\omega$.
+    \item Tracer les diagrammes de Bode de $\Hc$ : $G(\si{\dB}) = f(\log z)$ et $\Phi = g(\log z)$. Calculer la fréquence de coupure $N$ et préciser sur les diagrammes de Bode les coordonnées correspondantes à cette coupure.
+  \end{enumerate}
+  \item Dipôle équivalent à (ME). On veut montrer l'équivalence, en régime sinusoïdal permanent entre le dipôle (ME), situé à droite du point E, et une auto-inductance pure $L$ en série avec une résistance pure $r$.
+  \begin{enumerate}
+    \item Exprimer l'intensité complexe $\ic_E$ du courant d'entrée avec $\ncomplexe{v}_E$, $\ncomplexe{v}_S$, $R$, $C$ et $\omega$.
+    \item Compte tenu de l'expression de $\Hc$ obtenu précédemment, exprimer l'impédance complexe d'entrée définie par $\Zc_E = \frac{\ncomplexe{v}_E}{\ic_E}$ avec $R$, $C$ et $\omega$.
+    \item Montrer l'équivalence entre le dipôle (ME) et $L$ en série avec $r$~: On exprimera $L$ et $r$ en fonction de $R$ et $C$.
+  \end{enumerate}
+\end{enumerate}
 \end{exercice}
