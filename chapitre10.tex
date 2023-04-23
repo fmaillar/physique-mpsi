@@ -36,7 +36,7 @@ La loi d'Ohm locale se traduit donc par la formule \(\vj = \sigma \vv{E}\) avec 
 Pour un conducteur ohmique, c'est-à-dire un conducteur homogène, isotrope, immobile, en régime stationnaire ou en ARQS (donc en particulier à \(T\) constante), la loi d'Ohm s'écrit : \(u = R i\) avec \(R\) constante, si l'on utilise la convention récepteur. 
 %mettre une figure
 
-$R$ est la résistance du conducteur ohmique, son unité SI est l'ohm : \(\si{\ohm}\). Son inverse est la conductance \(G=\frac{1}{R}\). Son unité SI est le siemens \(\si{S}\). La loi d'Ohm s'écrit donc aussi \(i = G u\). La loi d'Ohm est bien entendue une conséquence de la loi d'Ohm locale~: Soit un conducteur ohmique traversé par un courant en régime stationnaire, limité par deux équipotentielles A et B. Sa surface latérale est un tube de courant puisque aucun courant n'en sort. S étant une section quelconque du conducteur, l'intensité du courant est \( i = \iint_{S} \vj \cdot \vv{\D S} = \sigma \iint_S \vj \cdot \vec{\D S}\) et la tension est \(u \int_A^B \vv{E} \cdot \vv{\D M}\). Si en chaque point du conducteur, \(\vv{E}\) est multiplié par \(k\), alors \(u\) est multiplié par \(k\) et \(\sigma\) étant inchangé, \(i\) est aussi multiplié par \(k\). Le rapport \(R = \frac{u}{i}\) reste bien constant.
+\(R\) est la résistance du conducteur ohmique, son unité SI est l'ohm : \(\si{\ohm}\). Son inverse est la conductance \(G=\frac{1}{R}\). Son unité SI est le siemens \(\si{S}\). La loi d'Ohm s'écrit donc aussi \(i = G u\). La loi d'Ohm est bien entendue une conséquence de la loi d'Ohm locale~: Soit un conducteur ohmique traversé par un courant en régime stationnaire, limité par deux équipotentielles A et B. Sa surface latérale est un tube de courant puisque aucun courant n'en sort. S étant une section quelconque du conducteur, l'intensité du courant est \( i = \iint_{S} \vj \cdot \vv{\D S} = \sigma \iint_S \vj \cdot \vec{\D S}\) et la tension est \(u \int_A^B \vv{E} \cdot \vv{\D M}\). Si en chaque point du conducteur, \(\vv{E}\) est multiplié par \(k\), alors \(u\) est multiplié par \(k\) et \(\sigma\) étant inchangé, \(i\) est aussi multiplié par \(k\). Le rapport \(R = \frac{u}{i}\) reste bien constant.
 
 \subsection{Résistance d'un conducteur ohmique élémentaire et d'un conducteur ohmique cylindrique}
 
@@ -60,7 +60,7 @@ Pour une forme quelconque du conducteur ohmique, on peut calculer sa résistance
 Pour un métal pur~:
 \begin{itemize}
 \item aux températures ordinaires : \(\rho = \rho_0 (1 + a \theta)\), avec \(\theta\) représentant la température en \(\degrees\)C et \(a\) est de l'ordre de \(\SI{3,7e-3}{K^{-1}}\);
-\item à des températures basses ($\SI{20}{K}$ à \(\SI{100}{K}\) environ) la résistivité varie plus rapidement et non linéairement.
+\item à des températures basses (\(\SI{20}{K}\) à \(\SI{100}{K}\) environ) la résistivité varie plus rapidement et non linéairement.
 \end{itemize}
 
 Les alliages métalliques ont souvent des coefficients a bien plus faibles, parfois même très faibles (constantan, manganine).
@@ -75,7 +75,7 @@ Pour les métaux, la température critique est toujours très basse~: quelques k
 
 La conductivité d'un électrolyte est une fonction croissante de la température, (la mobilité des ions croît avec la température).
 
-Soit un électrolyte dans lequel les porteurs de charge sont les ions libres \(X_i^{z_i^+}\)($z_i > 0$ ou \(z_i < 0\) suivant si l'on a affaire à un cation ou à un anion).
+Soit un électrolyte dans lequel les porteurs de charge sont les ions libres \(X_i^{z_i^+}\)(\(z_i > 0\) ou \(z_i < 0\) suivant si l'on a affaire à un cation ou à un anion).
 
 La charge de l'ion est \(q_i = z_i e\). La concentration molaire volumique de cet ion étant \(c_i\) (ou \([X_i^{z_i^+}]\) ), la concentration volumique de ces ions est \(n_i = N  c_i\). La densité volumique de charge mobile pour ces ions est donc \(\rho_i = N  c_i z_i e\). En utilisant la constante de Faraday \(F = N e = \SI{96,5}{kC.mol^{-1}}\), on obtient : \(\rho_i = z_i F c_i\). On a donc~: .
 \begin{equation}
@@ -151,8 +151,8 @@ G_3 &= \frac{G_{31} G_{23}}{G_{12}+G_{31}+G_{23}}.
 \section{Théorème de Millman}
 Soit un noeud au potentiel \(V\) ou aboutissent~:
 \begin{itemize}
-	\item \(n\) branches passives, par la branche de numéro \(k\) de conductance \(G_k\) arrive au noeud considéré le courant d'intensité \(i_k\) et son autre extrémité étant au potentiel \(V_k\),
-	\item \(m\) branches comportant des sources de courant, \(\eta_j\) étant l'intensité du courant électromoteur de la branche numéro \(j\) fléché vers le noeud considéré.
+  \item \(n\) branches passives, par la branche de numéro \(k\) de conductance \(G_k\) arrive au noeud considéré le courant d'intensité \(i_k\) et son autre extrémité étant au potentiel \(V_k\),
+  \item \(m\) branches comportant des sources de courant, \(\eta_j\) étant l'intensité du courant électromoteur de la branche numéro \(j\) fléché vers le noeud considéré.
 \end{itemize}
 La loi d'Ohm donne : \(i_k = G_k(V_k-V)\). La loi des noeuds donne \(\sum_{k=1}^{n} G_k(V_k-V) + \sum_{j=1}^{m} \eta_j = 0\). D'où, en notant \(G = \sum_{k=1}^{n} G_k\), le théorème de Millman :
 \begin{equation}\label{eq:Millman}
@@ -207,39 +207,39 @@ L'effet Joule est la production d'énergie thermique dans un dipôle. Il concern
 
 \section{Exercices}
 \begin{exercice}[Loi de joule locale]
-	\begin{enumerate}
-		\item On donne la masse de l'électron \(m=\SI{9.11e-31}{\kilogram}\), la charge élémentaire \(e = \SI{1.60e-19}{\coulomb}\), la masse molaire atomique de l'argent \(M=\SI{108}{\gram\per\mole}\) et la masse volumique de l'argent \(M_V = \SI{10.5}{\gram\per\cubed\centi\meter}\). En admettant qu'il y a un électron libre par atome d'argent, calculer la concentration \(n\) des électrons libres dans ce métal.
-		\item La conductivité de l'argent étant \(\sigma = \SI{61.8}{\micro\siemens\per\meter}\), déterminer la norme de la vitesse moyenne des électrons libres pour une densité de courant de norme \(j=\SI{20.0}{\ampere\per\meter\squared}\), puis la mobilité \(\mu\) de ces électrons libres dans l'argent.
-		\item Exprimer avec \(j\), \(\sigma\) et \(n\) la puissance de la force exercée par le champ électrique sur un porteur de charge, puis, avec \(j\) et \(\sigma\), le rapport \(\derived{P}{V}\), \(\D P\) étant la puissance électrocinétique que reçoivent les électrons libres d'un volume élémentaire \(\D V\). Cette dernière formule exprime la loi de Joule locale.
-		\item Retrouver la loi de Joule macroscopique \(P=Ri^2\) à partir de la loi de Joule locale.
-	\end{enumerate}
+  \begin{enumerate}
+    \item On donne la masse de l'électron \(m=\SI{9.11e-31}{\kilogram}\), la charge élémentaire \(e = \SI{1.60e-19}{\coulomb}\), la masse molaire atomique de l'argent \(M=\SI{108}{\gram\per\mole}\) et la masse volumique de l'argent \(M_V = \SI{10.5}{\gram\per\cubed\centi\meter}\). En admettant qu'il y a un électron libre par atome d'argent, calculer la concentration \(n\) des électrons libres dans ce métal.
+    \item La conductivité de l'argent étant \(\sigma = \SI{61.8}{\micro\siemens\per\meter}\), déterminer la norme de la vitesse moyenne des électrons libres pour une densité de courant de norme \(j=\SI{20.0}{\ampere\per\meter\squared}\), puis la mobilité \(\mu\) de ces électrons libres dans l'argent.
+    \item Exprimer avec \(j\), \(\sigma\) et \(n\) la puissance de la force exercée par le champ électrique sur un porteur de charge, puis, avec \(j\) et \(\sigma\), le rapport \(\derived{P}{V}\), \(\D P\) étant la puissance électrocinétique que reçoivent les électrons libres d'un volume élémentaire \(\D V\). Cette dernière formule exprime la loi de Joule locale.
+    \item Retrouver la loi de Joule macroscopique \(P=Ri^2\) à partir de la loi de Joule locale.
+  \end{enumerate}
 \end{exercice}
 
 \begin{exercice}[Association de résistances]
-	\begin{enumerate}
-		\item Les douze arêtes d'un cube sont constituées par des résistance identiques de valeur \(r\) chacune. Le cube est relié au circuit extérieur par deux sommets opposés. Exprimer la résistance équivalente de ce cube avec \(r\) (On utilisera des symétries pour chercher comment on divise l'intensité totale entre les différentes arêtes).
-		\item On considère un grillage formé de seize carrés dont les côtés ont chacun une résistance \(r\). Ce réseau est connecté au circuit extérieur par des sommets opposés. Exprimer la résistance équivalente de ce grillage avec \(r\) (On montrera d'abord à l'aide des symétries, l’équivalence entre les deux réseaux ci-dessous, puis on utilisera les lois sur les associations de résistance et le théorème de Kennelly). 
-	\end{enumerate}
+  \begin{enumerate}
+    \item Les douze arêtes d'un cube sont constituées par des résistance identiques de valeur \(r\) chacune. Le cube est relié au circuit extérieur par deux sommets opposés. Exprimer la résistance équivalente de ce cube avec \(r\) (On utilisera des symétries pour chercher comment on divise l'intensité totale entre les différentes arêtes).
+    \item On considère un grillage formé de seize carrés dont les côtés ont chacun une résistance \(r\). Ce réseau est connecté au circuit extérieur par des sommets opposés. Exprimer la résistance équivalente de ce grillage avec \(r\) (On montrera d'abord à l'aide des symétries, l’équivalence entre les deux réseaux ci-dessous, puis on utilisera les lois sur les associations de résistance et le théorème de Kennelly). 
+  \end{enumerate}
 \end{exercice}
 
 \begin{exercice}[Résistance d'une prise de terre]
-	Deux sphères métalliques concentriques en un point \(O\), de rayons \(r_1\) et \(r_2\), supposées parfaitement conductrices, sont séparées par un milieu peu conducteur de résistivité \(\rho\). On établit entre ces deux sphères une différence de potentiel.
-	
-	Quelles sont les surfaces équipotentielles et quelles sont les lignes de ce champs électrique ?
-	
-	Calculer la résistance \(R\) du conducteur situé entre les deux sphères. On exprimera d'abord la résistance d'un tronc de cône élémentaire, de sommet \(O\), limité par les sphères de rayon \(r\) et \(r +\D r\), que l'on assimilera à un cylindre de section \(\D S\) ; puis on effectuera les intégrations nécessaires pour calculer \(R\).
-	
-	Que devient \(R\) lorsque \(r_2\) tend à l'infini ?
-	
-	Application numérique pour \(r_1 = \SI{10}{\centi\meter}\) et \(\rho=\SI{e3}{\ohm \meter}\) (sol argileux).
+  Deux sphères métalliques concentriques en un point \(O\), de rayons \(r_1\) et \(r_2\), supposées parfaitement conductrices, sont séparées par un milieu peu conducteur de résistivité \(\rho\). On établit entre ces deux sphères une différence de potentiel.
+  
+  Quelles sont les surfaces équipotentielles et quelles sont les lignes de ce champs électrique ?
+  
+  Calculer la résistance \(R\) du conducteur situé entre les deux sphères. On exprimera d'abord la résistance d'un tronc de cône élémentaire, de sommet \(O\), limité par les sphères de rayon \(r\) et \(r +\D r\), que l'on assimilera à un cylindre de section \(\D S\) ; puis on effectuera les intégrations nécessaires pour calculer \(R\).
+  
+  Que devient \(R\) lorsque \(r_2\) tend à l'infini ?
+  
+  Application numérique pour \(r_1 = \SI{10}{\centi\meter}\) et \(\rho=\SI{e3}{\ohm \meter}\) (sol argileux).
 \end{exercice}
 
 \begin{exercice}[Diviseur de courant en cascade]
-	\begin{enumerate}
-		\item Quelle est, exprimée en avec \(G\), la conductance \(G_k\) équivalente au groupement de conducteurs ohmiques à droite des points \(A_k\) et \(B_k\) pour \(k\) allant de 1 à 3 ?
-		\item Montrer que pour tout naturel non nul \(k\) on a : \(G_k = \frac{x_{k+1}}{x_k} G\), où \((x_k)\) est la suite de Fibonacci définie par \(x_2=x_1=1\) et \(x_k = x_{k-1}+x_{k-2}\) pour \(k \geq 3\).
-		\item Lorsque \(k\) tend vers l'infini, le rapport \(\frac{x_{k+1}}{x_k}\) converge vers une limite finie. Calculer cette limite et donner la valeur de \(G_\infty = \lim\limits_{k \to \infty} G_k\) en fonction de \(G\).
-		\item On note \(i_k\) l'intensité entrant par \(A_k\) et sortant par \(B_k\). Calculer le rapport \(\frac{i_{k-1}}{i_k}\) avec \(G\) et \(G_{k-1}\), en utilisant la formule du diviseur de courant, puis avec les termes \(x_{2k+1}\) et \(x_{2k-1}\) de la suite de Fibonacci.
-		\item En déduire que le rapport \(\frac{i_n}{i_0}\) de l'intensité du courant d'entrée à l'intensité du courant de sortie duquadripôle représenté ($A_n$, \(B_n\), \(A_0\), \(B_0\)) est égal à l'un des termes de la suite de Fibonacci, lequel ? 
-	\end{enumerate}
+  \begin{enumerate}
+    \item Quelle est, exprimée en avec \(G\), la conductance \(G_k\) équivalente au groupement de conducteurs ohmiques à droite des points \(A_k\) et \(B_k\) pour \(k\) allant de 1 à 3 ?
+    \item Montrer que pour tout naturel non nul \(k\) on a : \(G_k = \frac{x_{k+1}}{x_k} G\), où \((x_k)\) est la suite de Fibonacci définie par \(x_2=x_1=1\) et \(x_k = x_{k-1}+x_{k-2}\) pour \(k \geq 3\).
+    \item Lorsque \(k\) tend vers l'infini, le rapport \(\frac{x_{k+1}}{x_k}\) converge vers une limite finie. Calculer cette limite et donner la valeur de \(G_\infty = \lim\limits_{k \to \infty} G_k\) en fonction de \(G\).
+    \item On note \(i_k\) l'intensité entrant par \(A_k\) et sortant par \(B_k\). Calculer le rapport \(\frac{i_{k-1}}{i_k}\) avec \(G\) et \(G_{k-1}\), en utilisant la formule du diviseur de courant, puis avec les termes \(x_{2k+1}\) et \(x_{2k-1}\) de la suite de Fibonacci.
+    \item En déduire que le rapport \(\frac{i_n}{i_0}\) de l'intensité du courant d'entrée à l'intensité du courant de sortie du quadripôle représenté (\(A_n\), \(B_n\), \(A_0\), \(B_0\)) est égal à l'un des termes de la suite de Fibonacci, lequel ? 
+  \end{enumerate}
 \end{exercice}

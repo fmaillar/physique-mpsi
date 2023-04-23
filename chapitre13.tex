@@ -4,7 +4,13 @@
 \minilot
 
 \section{Réponse à une excitation sinusoïdale, régime transitoire, régime permanent}
-    Soit un dipôle \(R, C\) série par exemple, branché sur une source de tension fournissant une tension alternative sinusoïdale à partir de \(t=0\). On a \(e(t) = E\cos(\omega t + \varphi) Y(t)\) avec \(Y\) la fonction de Heaviside. Initialement l'intisité est nulle et le condensateur est déchargé. L'équation différentielle vérifiée par \(q\) la charge du condensateur est~: \[ \ddot{q} + \frac{R}{L} \dot{q} + \frac{q}{RC} = \frac{e}{L} \]. Pour \(t\) postif~:
+    Soit un dipôle \(R, C\) série par exemple, branché sur une source de tension 
+    fournissant une tension alternative sinusoïdale à partir de \(t=0\). On a 
+    \(e(t) = E\cos(\omega t + \varphi) Y(t)\) avec \(Y\) la fonction de 
+    Heaviside. Initialement l'intensité est nulle et le condensateur est 
+    déchargé. L'équation différentielle vérifiée par \(q\) la charge du 
+    condensateur est~: \[ \ddot{q} + \frac{R}{L} \dot{q} + \frac{q}{RC} = 
+    \frac{e}{L} \]. Pour \(t\) positif~:
     \begin{itemize}
         \item La solution générale \(q= f_T(t)\) de l'équation différentielle sans second membre correspond à un régime amorti, apériodique ou pseudo-périodique ;
         \item L'équation complète admet, comme on le démontreraplus loin, une solution particulière alternative sinusoïdale de pulsation égale à celle de la source de tension, de la forme \(q = f_P(t) = Q \cos(\omega t +\psi)\).
@@ -81,7 +87,7 @@
             \label{eq:eqdiffreel2}
             Y\sin(\omega t +\psi) = \sum_{i=1}^n \alpha_i \derivedn{x}{t}{i},
         \end{equation}
-        qui est identique à \eqref{eq:eqdiffreel} à un changement d'origine ds dates près ($T/4$).
+        qui est identique à \eqref{eq:eqdiffreel} à un changement d'origine ds dates près (\(T/4\)).
 
         Mais \(\eqref{eq:eqdiffcomp} = \eqref{eq:eqdiffreel} + \ju \eqref{eq:eqdiffreel2}\), donc \(\Xc = \Xc \exp(\ju\omega t)\) est solution de l'équation complexe \eqref{eq:eqdiffcomp}. La recherche de la solution particulière sinusoïdale de l'équation différentielle linéaire, grâce aux grandeurs complexes associées, se réduit à la résolution d'une équation complexe algébrique.
 
@@ -148,54 +154,54 @@
             \Uc & = \sum_{k=1}^n \Uc_k \frac{\Yc_k}{\Yc} + \sum_{j=1}^m \frac{\ncomplexe{H}_j}{\Yc}.
         \end{align}
     \subsection{Associations de dipôles linéaires}
-	    \paragraph{En parallèle} Les dipôles sont sous la même tension et les intensités s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\ic = \sum_k {\ic}_k = \sum{k} {\yc}_k \uc \). \emph{L'admittance complexe du dipôle équivalent est la somme des admittances complexe des dipôles en parallèle}~: \(\Yc = \sum_{k=1}^n \Yc_k\). En particulier pour deux dipôles en parallèle : \(\Yc = \Yc_1 + \Yc_2\), d'où \(\Zc = \frac{\Zc_1 \Zc_2}{\Zc_1+\Zc_2}\). Par exemple, l'admittance complexe d'un condensateur de capacité \(C\) avec une conductance de fuite non nulle \(G\) est~: \(\Yc = G + \ju\omega C\), donc \(Y = \sqrt{G^2 + C^2 \omega^2}\), d'où \(Z = \frac{R}{\sqrt{1+(RC\omega)^2}}\) et le déphasage de la tension sur l'intensité est \(\Phi = -\arctan\left(\frac{C\omega}{G}\right) = -\arctan(RC\omega)\).
-	    
-	    \paragraph{En série} Les dipôles sont traversés par le même courant et les tensions s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\uc = \sum_k \Zc_k \ic\). \emph{L'impédance complexe du dipôle équivalent est la somme des impédances complexes des dipôles en série~: \(\Zc = \sum_k \Zc_k\). En particulier pour deux dipôles en série : \(\Zc = \Zc_1 + \Zc_2\), d'où \(\Yc = \frac{\Yc_1 \Yc_2}{\Yc_1+\Yc_2}\).} Par exemple, l'impédance complexe d'une bobine réelle, si l'on peut négliger sa capacité est~: \(\Zc = R + \ju\omega L\), donc \(Z = \sqrt{R^2+L^2\omega^2}\), d'où \(Y = \frac{G}{\sqrt{1+(GL\omega)^2}}\), avec \(G=1/R\), et le déphasage de la tension sur l'intensité est \(\Phi = \arctan\left(\frac{L\omega}{R}\right) = \arctan(GL\omega)\).
-    	\paragraph{Théorème de Kennely}
-    		Il y a équivalence entre le triangle et l'étoile et on démontre, comme en régime continu~:
-    	\begin{align}
-    		\Zc_{12} = \frac{\Zc_1\Zc_2}{\Zc_1 + \Zc_2 + \Zc_3}  & \Zc_{23} = \frac{\Zc_2\Zc_3}{\Zc_1 + \Zc_2 + \Zc_3} & \Zc_{31} = \frac{\Zc_3\Zc_1}{\Zc_1 + \Zc_2 + \Zc_3} \\
-    		\Yc_1 = \frac{\Yc_{12}\Yc_{31}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}  & \Yc_2 = \frac{\Yc_{23}\Yc_{12}}{\Yc_{12} + \Yc_{23} + \Yc_{31}} & \Yc_3 = \frac{\Yc_{31}\Yc_{23}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}
-    	\end{align}
-    	%
-    \subsection{Modèle de Norton et modèle de Thévenin d'un dipôle linéaire  actif}	
-    	Les équations de ces modèles sont~: \(e = E\cos(\omega t + \varphi)\) et \(\eta = H\cos(\omega t + \psi)\) étant respectivement la force électromotrice et le courant électromoteur du dipôle linéaire, en régime sinusoïdal permanent de pulsation \(\omega\). \(\Zc\) et \(\Yc\) respectivement l'impédance complexe et l'admittance complexe de ce dipôle, on a~: \(u = u_Z -e\), d'où \(\uc = \Zc \ic -\ncomplexe{e}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Uc = \Zc \Ic - \ncomplexe{E}\). On a aussi~: \(i = i_Y + \eta\), d'où \(\ic = \ic_Y + \ncomplexe{\eta}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Ic = \Yc \Uc + \ncomplexe{H}\).
+      \paragraph{En parallèle} Les dipôles sont sous la même tension et les intensités s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\ic = \sum_k {\ic}_k = \sum{k} {\yc}_k \uc \). \emph{L'admittance complexe du dipôle équivalent est la somme des admittances complexe des dipôles en parallèle}~: \(\Yc = \sum_{k=1}^n \Yc_k\). En particulier pour deux dipôles en parallèle : \(\Yc = \Yc_1 + \Yc_2\), d'où \(\Zc = \frac{\Zc_1 \Zc_2}{\Zc_1+\Zc_2}\). Par exemple, l'admittance complexe d'un condensateur de capacité \(C\) avec une conductance de fuite non nulle \(G\) est~: \(\Yc = G + \ju\omega C\), donc \(Y = \sqrt{G^2 + C^2 \omega^2}\), d'où \(Z = \frac{R}{\sqrt{1+(RC\omega)^2}}\) et le déphasage de la tension sur l'intensité est \(\Phi = -\arctan\left(\frac{C\omega}{G}\right) = -\arctan(RC\omega)\).
+      
+      \paragraph{En série} Les dipôles sont traversés par le même courant et les tensions s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\uc = \sum_k \Zc_k \ic\). \emph{L'impédance complexe du dipôle équivalent est la somme des impédances complexes des dipôles en série~: \(\Zc = \sum_k \Zc_k\). En particulier pour deux dipôles en série : \(\Zc = \Zc_1 + \Zc_2\), d'où \(\Yc = \frac{\Yc_1 \Yc_2}{\Yc_1+\Yc_2}\).} Par exemple, l'impédance complexe d'une bobine réelle, si l'on peut négliger sa capacité est~: \(\Zc = R + \ju\omega L\), donc \(Z = \sqrt{R^2+L^2\omega^2}\), d'où \(Y = \frac{G}{\sqrt{1+(GL\omega)^2}}\), avec \(G=1/R\), et le déphasage de la tension sur l'intensité est \(\Phi = \arctan\left(\frac{L\omega}{R}\right) = \arctan(GL\omega)\).
+      \paragraph{Théorème de Kennely}
+        Il y a équivalence entre le triangle et l'étoile et on démontre, comme en régime continu~:
+      \begin{align}
+        \Zc_{12} = \frac{\Zc_1\Zc_2}{\Zc_1 + \Zc_2 + \Zc_3}  & \Zc_{23} = \frac{\Zc_2\Zc_3}{\Zc_1 + \Zc_2 + \Zc_3} & \Zc_{31} = \frac{\Zc_3\Zc_1}{\Zc_1 + \Zc_2 + \Zc_3} \\
+        \Yc_1 = \frac{\Yc_{12}\Yc_{31}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}  & \Yc_2 = \frac{\Yc_{23}\Yc_{12}}{\Yc_{12} + \Yc_{23} + \Yc_{31}} & \Yc_3 = \frac{\Yc_{31}\Yc_{23}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}
+      \end{align}
+      %
+    \subsection{Modèle de Norton et modèle de Thévenin d'un dipôle linéaire  actif} 
+      Les équations de ces modèles sont~: \(e = E\cos(\omega t + \varphi)\) et \(\eta = H\cos(\omega t + \psi)\) étant respectivement la force électromotrice et le courant électromoteur du dipôle linéaire, en régime sinusoïdal permanent de pulsation \(\omega\). \(\Zc\) et \(\Yc\) respectivement l'impédance complexe et l'admittance complexe de ce dipôle, on a~: \(u = u_Z -e\), d'où \(\uc = \Zc \ic -\ncomplexe{e}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Uc = \Zc \Ic - \ncomplexe{E}\). On a aussi~: \(i = i_Y + \eta\), d'où \(\ic = \ic_Y + \ncomplexe{\eta}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Ic = \Yc \Uc + \ncomplexe{H}\).
     
-    	\emph{Les deux modèle représentent le même dipôle si et seulement si~: \(\Yc = 1/\Zc\) et \(\ncomplexe{eta} = \ncomplexe{e}/ \Zc\), soit \(\ncomplexe{H} = \ncomplexe{E}/\Zc\).} On a donc pour les amplitudes, \(H = E/Z = YE\) et pour les phases initialement à \(t=0\), \(\psi = \varphi - \Arg(\Zc) = \varphi+\Arg(\Yc)\).
-    	%
+      \emph{Les deux modèle représentent le même dipôle si et seulement si~: \(\Yc = 1/\Zc\) et \(\ncomplexe{eta} = \ncomplexe{e}/ \Zc\), soit \(\ncomplexe{H} = \ncomplexe{E}/\Zc\).} On a donc pour les amplitudes, \(H = E/Z = YE\) et pour les phases initialement à \(t=0\), \(\psi = \varphi - \Arg(\Zc) = \varphi+\Arg(\Yc)\).
+      %
     \subsection{Pont diviseur de tension}
-    	En sortie ouverte~: \(\frac{\uc_s}{\uc_e} = \frac{\Uc_s}{\Uc_e} = \frac{\Zc_2}{\Zc_1+\Zc_2}\), et aussi en divisant par \(\Zc_1 \Zc_2\) : \(frac{\Uc_s}{\Uc_e} = \frac{\Yc_1}{\Yc_1+\Yc_2}\).
-    	
-    	Avec une impédance de charge, il faut remplacer \(\Zc_2\) par l'impédance équivalente \(\Zc_2 \parallel \Zc_c\), ce qui donne \(\frac{\Uc_s}{\Uc_e} = \frac{\Zc_c \Zc_2}{\Zc_1\Zc_2 + \Zc_c\Zc_1 + \Zc_c\Zc_2} = \frac{\Yc_1}{\Yc_1+\Yc_2+\Yc_c}\)
-    	%
-	\subsection{Pont diviseur de courant}
-		En sortie court-circuitée~: \(\frac{\ic_s}{\ic_e} = \frac{\Ic_s}{\Ic_e} = \frac{\Yc_2}{\Yc_1+\Yc_2}\), et aussi en divisant par \(\Yc_1 \Yc_2\) : \(frac{\Ic_s}{\Ic_e} = \frac{\Zc_1}{\Zc_1+\Zc_2}\).
-		
-		Avec une conductance de charge, il faut remplacer \(\Yc_2\) par la conductance équivalente \(\Yc_2 \parallel \Yc_c\), ce qui donne \(\frac{\Ic_s}{\Ic_e} = \frac{\Yc_c \Yc_2}{\Yc_1\Yc_2 + \Yc_c\Yc_1 + \Yc_c\Yc_2} = \frac{\Zc_1}{\Zc_1+\Zc_2+\Zc_c}\)
+      En sortie ouverte~: \(\frac{\uc_s}{\uc_e} = \frac{\Uc_s}{\Uc_e} = \frac{\Zc_2}{\Zc_1+\Zc_2}\), et aussi en divisant par \(\Zc_1 \Zc_2\) : \(frac{\Uc_s}{\Uc_e} = \frac{\Yc_1}{\Yc_1+\Yc_2}\).
+      
+      Avec une impédance de charge, il faut remplacer \(\Zc_2\) par l'impédance équivalente \(\Zc_2 \parallel \Zc_c\), ce qui donne \(\frac{\Uc_s}{\Uc_e} = \frac{\Zc_c \Zc_2}{\Zc_1\Zc_2 + \Zc_c\Zc_1 + \Zc_c\Zc_2} = \frac{\Yc_1}{\Yc_1+\Yc_2+\Yc_c}\)
+      %
+  \subsection{Pont diviseur de courant}
+    En sortie court-circuitée~: \(\frac{\ic_s}{\ic_e} = \frac{\Ic_s}{\Ic_e} = \frac{\Yc_2}{\Yc_1+\Yc_2}\), et aussi en divisant par \(\Yc_1 \Yc_2\) : \(frac{\Ic_s}{\Ic_e} = \frac{\Zc_1}{\Zc_1+\Zc_2}\).
+    
+    Avec une conductance de charge, il faut remplacer \(\Yc_2\) par la conductance équivalente \(\Yc_2 \parallel \Yc_c\), ce qui donne \(\frac{\Ic_s}{\Ic_e} = \frac{\Yc_c \Yc_2}{\Yc_1\Yc_2 + \Yc_c\Yc_1 + \Yc_c\Yc_2} = \frac{\Zc_1}{\Zc_1+\Zc_2+\Zc_c}\)
 \section{Exercices}
-	\begin{exercice}[Circuit complexe en régime sinusoïdal permanent]
-		Le réseau représenté ci-dessous est alimenté par une source de tension alternative \(E = E \cos(\omega t).\) On donne \(R=\SI{10}{\ohm}\) et \(E=\SI{20}{\volt}\). La fréquence du générateur est réglé de façon que \(L\omega = \frac{1}{C\omega}=R\). Calculer l'amplitude \(I\) de l'intensité du courant dans la résistance.
-	\end{exercice}
-	\begin{exercice}[Dipôle \(R, L, C\) parallèle]
-		Dans le montage ci-dessous, le générateur délivre une tension sinusoïdale de pulsation \(\SI{1000}{\radian\per\second}\) d'amplitude \(\SI{10}{\volt}\). On constate que l'intensité du courant débité par le générateur prend la même valeur efficace pour deux valeurs différentes de capacité~: \(\SI{3,2}{\micro\farad}\) et \(\SI{6,9}{\micro\farad}\).
-		\begin{itemize}
-			\item Déterminez \(L\). \item Pour quelle valeur de \(C\) (notée \(C_0\)) l'intensité efficace sera minimale ?
-		\end{itemize}
-	\end{exercice}
-	\begin{exercice}[Dipôles \(R, C\)]
-		Dans le montage ci-dessous, la résistance \(R\) et les capacités \(C\) et$C'$ sont fixées. On posera \(C'=\frac{C}{a}\). On peut faire varier \(R'\) et la pulsation \(\omega\).
-		\begin{itemize}
-			\item Trouver les deux relations réelles que doivent vérifier \(R\), \(R'\), \(C\) et \(C'\) pour que les tensions \(u_1\) et \(u_2\) soient constamment égales.
-			\item Montrer que, pour que cette condition soit remplie, il faut imposer à \(R'\) une certaine relation avec \(R\) et à \(\omega\) une certaine relation avec \(C\).
-			\item Pour \(a=2\), exprimer en fonction de \(R\) et de l'amplitude \(U\) de la tension totale \(u_1+u_2\), les caractéristiques (amplitudes et déphasages) des différents courants du circuit.
-		\end{itemize}
-	\end{exercice}
-	\begin{exercice}[Pont de Sauty]
-		Dans le pont décrit ci-dessous, les grandeurs inconnues sont des caractéristiques \(L\) et \(r\) de la bobine. Montrer que l'on peut les tirer de la relation qui traduit l'équilibre du pont ($u=0$). Comment peut-on constater que le pont est équilibré ?
-	\end{exercice}
-	\begin{exercice}[Condensateur réel, bobine réelle]
-	\begin{itemize}
-		\item Calculer la résistance de fuite d'un condensateur réel, de capacité \(\SI{2}{\nano\farad}\), lorsque la tension entre ses armatures, de fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{10}\) par rapport à l'intensité.
-		\item Calculer la résistance de fuite d'une bobine réelle, d'inductance \(\SI{20}{\milli\henry}\), lorsque la tension entre ses armatures, de fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{80}\) par rapport à l'intensité.
-	\end{itemize}
-	\end{exercice}
+  \begin{exercice}[Circuit complexe en régime sinusoïdal permanent]
+    Le réseau représenté ci-dessous est alimenté par une source de tension alternative \(E = E \cos(\omega t).\) On donne \(R=\SI{10}{\ohm}\) et \(E=\SI{20}{\volt}\). La fréquence du générateur est réglé de façon que \(L\omega = \frac{1}{C\omega}=R\). Calculer l'amplitude \(I\) de l'intensité du courant dans la résistance.
+  \end{exercice}
+  \begin{exercice}[Dipôle \(R, L, C\) parallèle]
+    Dans le montage ci-dessous, le générateur délivre une tension sinusoïdale de pulsation \(\SI{1000}{\radian\per\second}\) d'amplitude \(\SI{10}{\volt}\). On constate que l'intensité du courant débité par le générateur prend la même valeur efficace pour deux valeurs différentes de capacité~: \(\SI{3,2}{\micro\farad}\) et \(\SI{6,9}{\micro\farad}\).
+    \begin{itemize}
+      \item Déterminez \(L\). \item Pour quelle valeur de \(C\) (notée \(C_0\)) l'intensité efficace sera minimale ?
+    \end{itemize}
+  \end{exercice}
+  \begin{exercice}[Dipôles \(R, C\)]
+    Dans le montage ci-dessous, la résistance \(R\) et les capacités \(C\) et\(C'\) sont fixées. On posera \(C'=\frac{C}{a}\). On peut faire varier \(R'\) et la pulsation \(\omega\).
+    \begin{itemize}
+      \item Trouver les deux relations réelles que doivent vérifier \(R\), \(R'\), \(C\) et \(C'\) pour que les tensions \(u_1\) et \(u_2\) soient constamment égales.
+      \item Montrer que, pour que cette condition soit remplie, il faut imposer à \(R'\) une certaine relation avec \(R\) et à \(\omega\) une certaine relation avec \(C\).
+      \item Pour \(a=2\), exprimer en fonction de \(R\) et de l'amplitude \(U\) de la tension totale \(u_1+u_2\), les caractéristiques (amplitudes et déphasages) des différents courants du circuit.
+    \end{itemize}
+  \end{exercice}
+  \begin{exercice}[Pont de Sauty]
+    Dans le pont décrit ci-dessous, les grandeurs inconnues sont des caractéristiques \(L\) et \(r\) de la bobine. Montrer que l'on peut les tirer de la relation qui traduit l'équilibre du pont (\(u=0\)). Comment peut-on constater que le pont est équilibré ?
+  \end{exercice}
+  \begin{exercice}[Condensateur réel, bobine réelle]
+  \begin{itemize}
+    \item Calculer la résistance de fuite d'un condensateur réel, de capacité \(\SI{2}{\nano\farad}\), lorsque la tension entre ses armatures, de fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{10}\) par rapport à l'intensité.
+    \item Calculer la résistance de fuite d'une bobine réelle, d'inductance \(\SI{20}{\milli\henry}\), lorsque la tension entre ses armatures, de fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{80}\) par rapport à l'intensité.
+  \end{itemize}
+  \end{exercice}

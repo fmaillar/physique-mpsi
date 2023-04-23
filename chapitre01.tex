@@ -102,20 +102,20 @@ Plus généralement, la dérivée d'un vecteur unitaire \(\vu\) tournant dans un
  \begin{figure}
    \centering
    \begin{tikzpicture} [math3d]
-     \draw (0,0,0) node[left, below] {$O$};    
+     \draw (0,0,0) node[left, below] {\(O\)};    
      \coordinate (O) at (0,0,0);
      \coordinate (H) at (3,3,0);
      \coordinate (M) at (3,3,2);
-     \draw [->] (O) -- ++(3,0,0) node[below] {$x$};
-     \draw [->] (O) -- ++(0,3,0) node[right] {$y$};
-     \draw [->] (O) -- ++(0,0,3) node[left] {$z$};
-     \draw (O) -- (H) node[right] {$H$};
-     \draw [->] (1.3,0,0) arc (0:55:1) node[right, above] {$\theta$};
-     \draw (3,2,0) node[above] {$\rho$};
-     \draw [dotted] (H) -- (M) node[left] {$M$};
-     \draw [->] (M) -- ++(1,1,0) node[below] {$\ur$};
-     \draw [->] (M) -- ++(-1,1,0) node[above] {$\utheta$};
-     \draw [->] (M) -- ++(0,0,1) node[left] {$\uz$};
+     \draw [->] (O) -- ++(3,0,0) node[below] {\(x\)};
+     \draw [->] (O) -- ++(0,3,0) node[right] {\(y\)};
+     \draw [->] (O) -- ++(0,0,3) node[left] {\(z\)};
+     \draw (O) -- (H) node[right] {\(H\)};
+     \draw [->] (1.3,0,0) arc (0:55:1) node[right, above] {\(\theta\)};
+     \draw (3,2,0) node[above] {\(\rho\)};
+     \draw [dotted] (H) -- (M) node[left] {\(M\)};
+     \draw [->] (M) -- ++(1,1,0) node[below] {\(\ur\)};
+     \draw [->] (M) -- ++(-1,1,0) node[above] {\(\utheta\)};
+     \draw [->] (M) -- ++(0,0,1) node[left] {\(\uz\)};
    \end{tikzpicture}
    \caption{Coordonnées cylindro-polaires}
    \label{fig:coordonnees}
@@ -186,7 +186,7 @@ Un mouvement est sinusoïdal si \(s=s_0+\alpha \cos(\omega t+\varphi)\). Le nomb
 \subsection{Mouvements rectilignes}
 \label{chap1-sec:mvtrect}
 
-Pour un mouvement rectiligne, \(\vv{u}_T\) est constant, l'accélération est tangentielle~: \(\vv{a}=\ddot{s} \vv{u}_T\). On choisit l'axe \((Ox)\) suivant la trajectoire ($s$ est alors noté \(x\) et l'origine des abscisses curvilignes est en \(O\)). La loi horaire est alors \(f:t \rightarrow x=f(t)\).
+Pour un mouvement rectiligne, \(\vv{u}_T\) est constant, l'accélération est tangentielle~: \(\vv{a}=\ddot{s} \vv{u}_T\). On choisit l'axe \((Ox)\) suivant la trajectoire (\(s\) est alors noté \(x\) et l'origine des abscisses curvilignes est en \(O\)). La loi horaire est alors \(f:t \rightarrow x=f(t)\).
 
 Si le mouvement est rectiligne uniforme alors \(\vv{v}\) est constant et l'accélération est nulle.
 
@@ -267,14 +267,14 @@ v_2^2-v_1^2=2\vv{a}\cdot \vv{M_1M_2};
      \coordinate (A) at (0,5);
      \coordinate (B) at (5,0);
      \coordinate (M) at (120:3);
-     \draw (0,0) node[below]{$\vv{\omega} \ Oz$};
+     \draw (0,0) node[below]{\(\vv{\omega} \ Oz\)};
      \draw[>=latex] (0,0) circle(3);
-     \draw[->] (O) -- (B) node[below]{$x$};
-     \draw[->] (O) -- (A) node[left]{$y$};
-     \draw (O) -- (M) node[right]{$M$};
+     \draw[->] (O) -- (B) node[below]{\(x\)};
+     \draw[->] (O) -- (A) node[left]{\(y\)};
+     \draw (O) -- (M) node[right]{\(M\)};
 
-     \draw[>=latex, ->] (M) -- ++(120:1) node[above]{$\urho$};
-     \draw[>=latex, ->] (M) -- ++(210:1) node[below]{$\utheta$};
+     \draw[>=latex, ->] (M) -- ++(120:1) node[above]{\(\urho\)};
+     \draw[>=latex, ->] (M) -- ++(210:1) node[below]{\(\utheta\)};
     
    \end{tikzpicture}
    \caption{Mouvement circulaire}

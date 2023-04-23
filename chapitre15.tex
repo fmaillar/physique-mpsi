@@ -34,7 +34,7 @@ Le logarithme décimal du rapport de deux puissance (électrocinétiques, acoust
 \begin{equation}
  G/(\SI{1}{\dB}) = 10\log\left(\frac{R_C}{R_E}\right) + 20\log\left(\frac{I_S}{I_E}\right) = 10\log\left(\frac{R_CZ_E^2}{R_EZ_C^2}\right) + 20\log\left(\frac{U_S}{U_E}\right).
 \end{equation}
-Le gain en puissance, en décibels apparaît comme la somme de deux termes dont l'un est \(20\log(H)\), avec \(\Hc = \frac{\Uc_S}{\Uc_E}= \frac{\Ic_S}{\Ic_E}\) suivant si l'on s'intéresse à une amplification en courant ou en tension. C'est pourquoi on définit le \emph{gain en décibels du quadripôle} par \(G = \SI{20}{\dB} \log{H}\). C'est une fonction de la pulsation \(\omega\) tout comme \(H\). Un gain de \(\SI{20}{\dB}\) correspond donc à une multiplication par 10 de l'amplification. \(G\) est positif s'il y a réellement une amplification ($H>1$) et négatif s'il y a une atténuation ($H<1$). Il tend vers \(-\infty\) s'il y a une extinction ($H \to 0$).
+Le gain en puissance, en décibels apparaît comme la somme de deux termes dont l'un est \(20\log(H)\), avec \(\Hc = \frac{\Uc_S}{\Uc_E}= \frac{\Ic_S}{\Ic_E}\) suivant si l'on s'intéresse à une amplification en courant ou en tension. C'est pourquoi on définit le \emph{gain en décibels du quadripôle} par \(G = \SI{20}{\dB} \log{H}\). C'est une fonction de la pulsation \(\omega\) tout comme \(H\). Un gain de \(\SI{20}{\dB}\) correspond donc à une multiplication par 10 de l'amplification. \(G\) est positif s'il y a réellement une amplification (\(H>1\)) et négatif s'il y a une atténuation (\(H<1\)). Il tend vers \(-\infty\) s'il y a une extinction (\(H \to 0\)).
 
 \subsection{Gain en décibels dans le cas d'une fonction de transfert mixte}
 Si \(H(\ju \omega)\) est une transadmittance ou une transimpédance, il est nécessaire de se ramener à une grandeur sans dimension pour utiliser une échelle logarithmique. On utilise une pulsation de référence \(\omega_0\) judicieusement choisie (une valeur pour laquelle la transmittance est réelle, voire maximale, \ldots), le gain en décibels est alors défini par :
@@ -56,7 +56,7 @@ Par définition, \emph{à la ``coupure'', le gain maximum est divisé par \(\sqr
 
 \section{Exemples de fonctions de transfert}
 \subsection{Circuit RLC série}
-On peut étudier le dipôle RLC série (ou tout autre dipôle en régime sinusoïdal permanent), comme un quadripôle en sortie court-circuitée ($R_C = 0$) et étudier sa transadmittance lorsqu'il est alimenté par une source de tension.
+On peut étudier le dipôle RLC série (ou tout autre dipôle en régime sinusoïdal permanent), comme un quadripôle en sortie court-circuitée (\(R_C = 0\)) et étudier sa transadmittance lorsqu'il est alimenté par une source de tension.
 %TODO Mettre une figure du circuit
 Ici, \(\ic_S = \ic_E\) et \(\uc_S = 0\), la seule fonction de transfert présentant un intérêt est la transadmittance \(\Hc = \frac{\Ic_S}{\Uc_e} = \Yc(\text{RLC série}) = \frac{1}{R + \ju\left(L\omega -\frac{1}{C\omega}\right)}\).
 
@@ -117,7 +117,7 @@ Le comportement asymptotique est évident~:
 \end{itemize}
 Les signaux basses fréquences demeurent inchangés, alors que les signaux hautes fréquences tendent à l'extinction. Il s'agit donc d'un filtre ``passe-bas''. L'étude mathématique donne des résultats plus complets.
 
-$H$, \(G\) et \(\Phi\) sont des fonctions décroissantes de \(x\), donc de \(\log x\). Le déphasage présente une symétrie, puisque \(\arctan(1/x) + \arctan(x) = \pi/2\), donc \(1/2(\Phi(-\log x)+\Phi(\log x)) = -\pi/4\) : le diagramme de Bode du déphasage est symétrique par rapport au point de coordonnée \(x=1\), \(\Phi=-\pi/4\). Le gain maximum correspond à \(x=0\), soit \(H_m=1\), \(G_m=0\), \(\Phi_m=0\). La coupure correspond à \(H = H_m/\sqrt{2}\), donc \(H_c = 1\sqrt{2} = 1/\sqrt{1+x_c^2}\), avec \(x_c=1\). La fréquence de coupure est donc \(N_c = N_0 = \omega_0/(2\pi) = \frac{1}{2\pi RC}\). On a alors \(Gc = G_m-\SI{3}{\dB}=-\SI{3}{\dB}\) et \(\Phi = -\arctan(x_c) = -\pi/4\).
+\(H\), \(G\) et \(\Phi\) sont des fonctions décroissantes de \(x\), donc de \(\log x\). Le déphasage présente une symétrie, puisque \(\arctan(1/x) + \arctan(x) = \pi/2\), donc \(1/2(\Phi(-\log x)+\Phi(\log x)) = -\pi/4\) : le diagramme de Bode du déphasage est symétrique par rapport au point de coordonnée \(x=1\), \(\Phi=-\pi/4\). Le gain maximum correspond à \(x=0\), soit \(H_m=1\), \(G_m=0\), \(\Phi_m=0\). La coupure correspond à \(H = H_m/\sqrt{2}\), donc \(H_c = 1\sqrt{2} = 1/\sqrt{1+x_c^2}\), avec \(x_c=1\). La fréquence de coupure est donc \(N_c = N_0 = \omega_0/(2\pi) = \frac{1}{2\pi RC}\). On a alors \(Gc = G_m-\SI{3}{\dB}=-\SI{3}{\dB}\) et \(\Phi = -\arctan(x_c) = -\pi/4\).
 
 À très basse fréquence, lorsque \(x\) tend vers \(0\), \(\Hc\) tend vers \(1\), alors \(G\) et \(\Phi\) tendent vers \(0\) (asymptote horizontale). À haute fréquence, le gain en décibel est équivalent à \(G \approx -10 \log(x^2) = -20\log x\), qui est l'équation d'une droite d'ordonnée à l'origine nulle et de coefficient directeur \SI{-20}{\dB} par décade ; et \(\Phi\) tend vers \(-\pi/2\) (asymptote horizontale).
 
