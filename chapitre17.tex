@@ -11,7 +11,7 @@ sur un axe \((Ox)\), soumis à~:
   \item une force de rappel, due à un ressort parfait, \(-kx \ux\),
   \item une force de frottement fluide, visqueux, du type \(-\alpha \dot{x} 
     \ux\), c'est-à-dire proportionnelle à la vitesse du point \(M\),
-  \item une force excitatrice \(f \ux\), on nétudiera que le cas où la force 
+  \item une force excitatrice \(f \ux\), on n'étudiera que le cas où la force 
     excitatrice est une fonction sinusoïdale de la date soit \(f = F\cos(\omega 
     t + \varphi)\).
 \end{itemize}
@@ -26,7 +26,7 @@ dans \(x_T\) étant déterminées par les conditions initiales (en utilisant la
 solution complète \(x = x_T+x_P\)). 
 
 La solution de l'équation sans second membre \(x_T\) peut prendre différentes 
-forme, comme on l'a vu dans la section \ref{sec:regpropres}, suivant la valeur 
+forme, comme on l'a vu dans la section \ref{sec:regpropresRLC}, suivant la valeur 
 de l'amortissement. Dans tous les cas, la solution générale tend vers 0 du fait 
 de la présence d'exponentielles décroissantes \ldots
 
@@ -360,3 +360,86 @@ a pour impédance électrique \(\Zc = \frac{\Ec}{\Ic} = R + \ju\left(L\omega
 \frac{\Fc}{\Vitc} = \alpha +\ju\left(m\omega -\frac{k}{\omega}\right)\).
 
 \section{Exercices}
+\begin{exercice}[Étude mécanique d'un haut-parleur]
+  %%TODO : Mettre la représentation du haut-parleur
+  On modélise la partie mécanique d'un haut-parleur par une masse \(m\) assimilée 
+  à un point matériel \(M\), se déplacant sur une ige horizontale d'axe \((Ox)\), 
+  reliée à un ressort de longueur à vide \(L_0\) et de raideur \(k\) et liée à un 
+  amortisseur fluide (piston solidaire de \(M\), se déplaçant dans un liquide) qui 
+  exerce sur \(M\) la force \(-f \vvv\). La masse \(m\) est celle du noyau de fer 
+  et du cône du haut-parleur, elle est soumise en plus à une force magnétique 
+  \(\vF\) proportionnelle au courant \(i(t)\) entrant dans la bobine (fixe) 
+  du haut-parleur.
+  %%TODO : Mettre le circuit électrique du haut-parleur
+
+  On a \(\vF = Ki \ux\) avec \(i = I_m \cos(\omega t)\), \(m = \qty{10}{g}\), 
+  \(k = \qty{15e3}{N/m}\), \(K = \qty{200}{N/A}\), \(I_m = \qty{1.0}{A}\) et 
+  \(\omega = 2000\pi\unit{rad/s}\).
+  \begin{enumerate}
+    \item Écrire l'équation différentielle vérifiée par l'abscisse \(x = 
+      \bar{OM}\) de \(M\) (\(O\) étant la position de \(M\) lorsque le ressort est 
+      au repos).
+    \item La normaliser, avec la pulsation propre \(\omega_0\) et le facteur de 
+      qualité \(Q\). On veut \(Q = \frac{\sqrt{2}}{2}\), calculer le coefficient 
+      \(f\).
+    \item Déterminer l'expression de la réponse forcée \(x = X_m\cos(\omega t 
+      +\varphi)\) en calculant \(X_m\) et \(\varphi\).
+    \item Tracer l'allure de la courbe représentant \(X_m\) en fonction de 
+      \(\omega\). Quelle est la bande passante du système pour l'amplitude 
+      \(X_m\).
+  \end{enumerate}
+\end{exercice}
+\begin{exercice}[Ressorts en série, ressorts en parallèle]
+  On dispose de deux ressorts parfaitement élastiques, de masses négligeables 
+  devant la masse \(m\) du point matériel \(M\), de raideurs \(k\) et \(k'\), de 
+  longueurs à vide \(L_0\) et \(L'_0\).
+  \begin{enumerate}
+    \item Les ressorts et \(M\) sont enfilés sur une tige horizontale comme 
+      indiqué par le schéma. La distance entre les deux supports est fixe et 
+      vaut \(L_0+L'_0\). Le point \(O\) est la position de \(M\) lorsque les 
+      ressorts sont au repos et on note \(x = \bar{OM}\).
+      La force de frottement exercée par la tige sur \(M\) est négligée mais 
+      l'ensemble est plongé dans un fluide de viscosité \(\eta\), de masse 
+      volumique \(\mu\) et \(M\) (qui est une sphère de rayon \(r\)) subit une 
+      frottement fluide qui vaut \(-6\pi\eta r \vvv\). On notera \(\alpha = 
+      6\pi\eta r\).
+      %%TODO : Mettre le schéma mécanique.
+
+      Écrire l'équation différentielle du mouvement. Quelle est la raideur \(K\) 
+      du ressort équivalent aux deux ressorts? Représenter le dispositif sous la 
+      forme d'un circuit mécanique après avoir précisé si les ressorts sont 
+      analogues à des condensateurs en série ou en parallèle.
+    \item Les deux ressorts sont maintenant attachés l'un à l'autre comme le 
+      montre le dessin ci-dessous.
+      %%TODO : Mettre le schéma mécanique.
+
+      Exprimer la longueur \(L'\) du ressort \((L'_0, k')\) en fonction de la 
+      longueur \(L\) de l'autre ressort, avec \(k, k', L_0\) et \(L'_0\). et en 
+      déduire la relation entre l'abscisse \(x\) de \(M\) et la longueur \(L\), 
+      avec \(k, k'\) et \(L_0\). Exprimer la force de rappel exercée sur \(M\) 
+      par le ressort auquel il est attaché. Quelle est la raideur du ressort 
+      équivalent, pour le point \(M\), aux deux ressorts ainsi groupés?
+      Représenter le dispositif sous la forme d'un circuit mécanique après avoir 
+      précisé si les ressorts sont analogues à des condensateurs en série ou en 
+      parallèle.
+    \item Les deux ressorts sont enfilés l'un dans l'autre, accrochés au point 
+      \(A\) fixe et, à l'autre extrémité, à \(M\). Le tout est suspendu 
+      verticalement. On note \(L\) la longueur \(AM\) commune aux deux ressorts 
+      et \(L_{eq}\) sa valeur à l'équilibre.
+      %%TODO : Mettre le schéma mécanique.
+
+      Démontrer que l'ensemble des deux ressorts exerce sur \(M\) la même force 
+      qu'un unique ressort \((K, \Lambda_0)\), en exprimant \(K\) avec \(k\) et 
+      \(k'\) et \(\Lambda_0\) avec \(L_0, L'_0, k, k'\).
+
+      Écrire la relation vérifiée par la valeur \(L_{eq}\) de \(L\) à 
+      l'équilibre, avec \(K\), \(\Lambda_0\), \(L\), \(m\), \(g\), \(\mu\) et 
+      \(r\). La position \(O\) de \(M\) à l'équilibre est prise comme origine 
+      des abscisses \(x\). Le point \(M\) est soumis, en plus de son poids, à la 
+      poussée d'Archimède, de la force de frottements visqueux et des forces 
+      exercées par les ressorts, à une force excitatrice \(\vv{f} = f\ux\). Écrire 
+      l'équation différentielle vérifiée par \(x\) avec \(K, \alpha, m\) et 
+      \(f\). Représenter le dispositif sous la forme d'un circuit mécanique.
+  \end{enumerate}
+\end{exercice}
+
