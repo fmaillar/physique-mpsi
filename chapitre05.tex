@@ -10,22 +10,22 @@
 \subsection{Mouvement d'un point matériel sur une courbe au voisinage d'une position d'équilibre}
 \label{chap5-subsec:mvtauvoisinagedunepositiondequilibre}
 
-Soit $s$ l'abscisse curviligne d'un point matériel $M$, de masse $m$, mobile sur une courbe et soumis à des forces conservatives et à des forces qui ne travaillent pas (de puissances nulles).
+Soit \(s\) l'abscisse curviligne d'un point matériel \(M\), de masse \(m\), mobile sur une courbe et soumis à des forces conservatives et à des forces qui ne travaillent pas (de puissances nulles).
 
-Soit ${E_{p}}_m$ son énergie pour une position d'équilibre stable et $s_m$ l'abscisse curviligne correspondante. De plus $\derived{E_p}{s}_m=0$ et $\deriveds{E_p}{s}_m>0$. La formule de Taylor-Young permet d'écrire~:
+Soit \({E_{p}}_m\) son énergie pour une position d'équilibre stable et \(s_m\) l'abscisse curviligne correspondante. De plus \(\derived{E_p}{s}_m=0\) et \(\deriveds{E_p}{s}_m>0\). La formule de Taylor-Young permet d'écrire~:
 \begin{equation}
   E_p(s) = {E_p}_m + \derived{E_p}{s}_m (s-s_m) + \deriveds{E_p}{s}_m \frac{(s-s_m)^2}{2} + \ldots
 \end{equation}
-pour $s$ au voisinage de $s_m$. Alors en posant $K=\deriveds{E_p}{s}_m>0$ on obtient
+pour \(s\) au voisinage de \(s_m\). Alors en posant \(K=\deriveds{E_p}{s}_m>0\) on obtient
 \begin{equation}
   E_p(s) = {E_p}_m + K \frac{(s-s_m)^2}{2}.
 \end{equation}
-En dérivant cette expression, on a au voisinage de $s_m$~:
+En dérivant cette expression, on a au voisinage de \(s_m\)~:
 \begin{equation}
   \derived{E_p}{t} = K \dot{s} (s-s_m).
 \end{equation}
 
-Mais la puissance développée par les forces conservatives est aussi la puissance totale puisque les autres forces ne travaillent pas~: $\P=-\derived{E_p}{t}$. En notant $\vF$ la résultante des forces que subit le point matériel, on a
+Mais la puissance développée par les forces conservatives est aussi la puissance totale puisque les autres forces ne travaillent pas~: \(\P=-\derived{E_p}{t}\). En notant \(\vF\) la résultante des forces que subit le point matériel, on a
 \begin{equation}
   \P = \vF \cdot \vV = m \va \cdot \vV = m\ddot{s} \dot{s}.
 \end{equation}
@@ -33,36 +33,36 @@ Ainsi
 \begin{equation}
   m\ddot{s}\dot{s} = -K \dot{s}(s-s_m).
 \end{equation}
-On suppose que $\dot{s}$ n'est pas identiquement nulle, donc on obtient l'équation différentielle suivante~:
+On suppose que \(\dot{s}\) n'est pas identiquement nulle, donc on obtient l'équation différentielle suivante~:
 \begin{equation}
   \ddot{s} + \frac{K}{m}(s-s_m) = 0.
 \end{equation}
-En posant $\omega_0 = \sqrt{\frac{K}{m}}$ et en prenant l'origine des abscisses curvilignes en $s_m$, \emph{l'équation différentielle du mouvement au voisinage d'une position d'équilibre stable est~:}
+En posant \(\omega_0 = \sqrt{\frac{K}{m}}\) et en prenant l'origine des abscisses curvilignes en \(s_m\), \emph{l'équation différentielle du mouvement au voisinage d'une position d'équilibre stable est~:}
 \begin{equation}
   \ddot{s} + \omega_0^2 s = 0.
 \end{equation}
 
-S'il se déplace sur un cercle de rayon $R$, avec $\theta=\frac{s}{R}$, elle s'écrit aussi $\ddot{\theta}+\omega_0^2\theta=0$. Si le point se déplace sur une droite que l'on prend alors comme axe des $x$, l'équation s'écrit $\ddot{x}+\omega_0^2x = 0$.
+S'il se déplace sur un cercle de rayon \(R\), avec \(\theta=\frac{s}{R}\), elle s'écrit aussi \(\ddot{\theta}+\omega_0^2\theta=0\). Si le point se déplace sur une droite que l'on prend alors comme axe des \(x\), l'équation s'écrit \(\ddot{x}+\omega_0^2x = 0\).
 
 \subsection{Oscillateur harmonique}
 \label{chap5-subsec:oscillateur}
 
-Tout point matériel dont la loi horaire $X=f(t)$ est solution de l'équation différentielle $\ddot{X}+\omega_0^2x=0$ est un oscillateur harmonique.
+Tout point matériel dont la loi horaire \(X=f(t)\) est solution de l'équation différentielle \(\ddot{X}+\omega_0^2x=0\) est un oscillateur harmonique.
 
-\emph{Un point matériel au voisinage d'une position d'équilibre stable est un oscillateur harmonique.} On a déjà vu qu'un point matériel lié à un ressort parfait dont l'autre extrémité est fixe et astreint à se déplacer sans frotter sur la droite formée par l'axe du ressort est un oscillateur harmonique de pulsation $\omega_0=\sqrt{\frac{k}{m}}$ avec $k$ la raideur du ressort et $m$ la masse du point. On a aussi vu qu'un pendule pesant simple est un oscillateur harmonique, de pulsation $\omega_0=\sqrt{\frac{g}{L}}$ avec $g$ l'accélération de la pesanteur et $L$ la longueur du pendule.
+\emph{Un point matériel au voisinage d'une position d'équilibre stable est un oscillateur harmonique.} On a déjà vu qu'un point matériel lié à un ressort parfait dont l'autre extrémité est fixe et astreint à se déplacer sans frotter sur la droite formée par l'axe du ressort est un oscillateur harmonique de pulsation \(\omega_0=\sqrt{\frac{k}{m}}\) avec \(k\) la raideur du ressort et \(m\) la masse du point. On a aussi vu qu'un pendule pesant simple est un oscillateur harmonique, de pulsation \(\omega_0=\sqrt{\frac{g}{L}}\) avec \(g\) l'accélération de la pesanteur et \(L\) la longueur du pendule.
 
-La loi horaire de l'oscillateur harmonique avec $X=0$ à la position d'équilibre stable s'écrit donc, avec des constantes $A$ et $\varphi$~: $X=A\cos(\omega_0 t +\varphi)$.
+La loi horaire de l'oscillateur harmonique avec \(X=0\) à la position d'équilibre stable s'écrit donc, avec des constantes \(A\) et \(\varphi\)~: \(X=A\cos(\omega_0 t +\varphi)\).
 
 \subsection{Aspect énergétique}
 \label{chap5-subsec:aspectenergetique}
 
-Soit un point mobile sur une courbe et dont l'abscisse curviligne est solution de l'équation différentielle $\ddot{s} +\omega_0^2(s-s_m)=0$ (un oscillateur !). Sa loi horaire s'écrit donc~: $s=s_m + A\cos(\omega_0 t+\varphi)$.
+Soit un point mobile sur une courbe et dont l'abscisse curviligne est solution de l'équation différentielle \(\ddot{s} +\omega_0^2(s-s_m)=0\) (un oscillateur !). Sa loi horaire s'écrit donc~: \(s=s_m + A\cos(\omega_0 t+\varphi)\).
 
 On a donc, dans le domaine où cette équation est valable,
 \begin{equation}
  \dot{s}\ddot{s} +\omega_0^2\dot{s}(s-s_m)=0. 
 \end{equation}
-En multipliant par $m$ et en intégrant, on obtient
+En multipliant par \(m\) et en intégrant, on obtient
 \begin{equation}
   m \frac{\dot{s}^2}{2} + m\omega_0^2\frac{(s-s_m)^2}{2} = C^{st},
 \end{equation}
@@ -70,17 +70,17 @@ c'est-à-dire
 \begin{equation}
   E_c +f(s) = C^{st}.
 \end{equation}
-La quantité $f(s)=m\omega_0^2\frac{(s-s_m)^2}{2}+B$ ($B$ constante) est l'énergie potentielle du point matériel, et $E_0=C+B$ est son énergie mécanique (constante). En $s_m$, $E_p={E_p}_m=B$. Finalement
+La quantité \(f(s)=m\omega_0^2\frac{(s-s_m)^2}{2}+B\) ($B$ constante) est l'énergie potentielle du point matériel, et \(E_0=C+B\) est son énergie mécanique (constante). En \(s_m\), \(E_p={E_p}_m=B\). Finalement
 \begin{equation}
   E_p = \frac{K}{2}(s-s_m)^2+{E_p}_m ,
 \end{equation}
-avec $K=m\omega_0^2=\deriveds{E_p}{s}$.
+avec \(K=m\omega_0^2=\deriveds{E_p}{s}\).
 
-Si le mouvement est rectiligne, on notera $x$ à la place de $s$ ; et s'il est circulaire de rayon $R$, on notera $s=R\theta$ et $E_p = \frac{KR^2}{2}(\theta-\theta_m)^2$.
+Si le mouvement est rectiligne, on notera \(x\) à la place de \(s\) ; et s'il est circulaire de rayon \(R\), on notera \(s=R\theta\) et \(E_p = \frac{KR^2}{2}(\theta-\theta_m)^2\).
 
-L'allure de la courbe représentant $E_p$ en fonction de $s$, $x$ ou $\theta$ est une parabole. Le point se déplace dans une cuvette de potentiel. La condition $E_p < E_0$ donne l'amplitude $A$ du mouvement.
+L'allure de la courbe représentant \(E_p\) en fonction de \(s\), \(x\) ou \(\theta\) est une parabole. Le point se déplace dans une cuvette de potentiel. La condition \(E_p < E_0\) donne l'amplitude \(A\) du mouvement.
 
-Bien entendu, un choix plus adéquat de l'origine des abscisses curvilignes ($s_m=0$) et de l'origine des énergie potentielles (${E_p}_m=0$) ne fait que décaler le sommet de la parabole au point $O$ et du coup l'énergie potentielle est transformée en $E_p = \frac{K}{2}s^2$ et la loi horaire $s=A\cos(\omega_0 t +\varphi)$.
+Bien entendu, un choix plus adéquat de l'origine des abscisses curvilignes ($s_m=0$) et de l'origine des énergie potentielles (${E_p}_m=0$) ne fait que décaler le sommet de la parabole au point \(O\) et du coup l'énergie potentielle est transformée en \(E_p = \frac{K}{2}s^2\) et la loi horaire \(s=A\cos(\omega_0 t +\varphi)\).
 
 \section{Portrait de phase}
 \label{chap5-sec:portratitdephase}
@@ -88,22 +88,22 @@ Bien entendu, un choix plus adéquat de l'origine des abscisses curvilignes ($s_
 \subsection{Définitions, propriétés des trajectoires de phase}
 \label{chap5-subsec:trajectoiresdephase}
 %
-On considère un point matériel \emph{à un seul degré de liberté}. On notera ici $X=s$ ou $x$, ou $\theta$ et $\dot{X}$ la vitesse algébrique ou la vitesse angulaire suivant les cas. L'état de ce point est caractérisé à un instant donné par le \emph{point de phase} de coordonnées $X$ et $\dot{X}$. Le point de phase se déplace au cours du temps dans le \emph{plan de phase} sur sa \emph{trajectoire de phase}. L'ensemble des trajectoires de phase pour les différentes conditions initiales est le \emph{portrait de phase} du point matériel. Pour $\dot{X}>0$, $X$ est croissant et pour $\dot{X}<0$, $X$ est décroissant. Ceci donne le sens de parcours du point de phase sur la trajectoire de phase (sens horaire). D'autre part, si $\dot{X}=0$, $X$ est un extrémal donc la tangente à la trajectoire de phase pour $\dot{X}=0$ est verticale. Un tel point de phase est appelé \emph{point de rebroussement}. De plus
+On considère un point matériel \emph{à un seul degré de liberté}. On notera ici \(X=s\) ou \(x\), ou \(\theta\) et \(\dot{X}\) la vitesse algébrique ou la vitesse angulaire suivant les cas. L'état de ce point est caractérisé à un instant donné par le \emph{point de phase} de coordonnées \(X\) et \(\dot{X}\). Le point de phase se déplace au cours du temps dans le \emph{plan de phase} sur sa \emph{trajectoire de phase}. L'ensemble des trajectoires de phase pour les différentes conditions initiales est le \emph{portrait de phase} du point matériel. Pour \(\dot{X}>0\), \(X\) est croissant et pour \(\dot{X}<0\), \(X\) est décroissant. Ceci donne le sens de parcours du point de phase sur la trajectoire de phase (sens horaire). D'autre part, si \(\dot{X}=0\), \(X\) est un extrémal donc la tangente à la trajectoire de phase pour \(\dot{X}=0\) est verticale. Un tel point de phase est appelé \emph{point de rebroussement}. De plus
 \begin{equation}
   \derived{\dot{X}}{X} = \derived{X}{t} \derived{t}{X} = \frac{\ddot{X}}{\dot{X}}.
 \end{equation}
-Donc la tangente à la trajectoire de phase pour $\dot{X}=0$ est horizontale. Un tel point de phase correspond au passage du point matériel par une position d'équilibre. Si la trajectoire de phase est une courbe fermée, le point matériel repasse aux mêmes positions avec la même vitesse. Il en résulte que le mouvement est périodique et la trajectoire de phase est parcourue dans le sens inverse du sens trigonométrique (sens horaire).
+Donc la tangente à la trajectoire de phase pour \(\dot{X}=0\) est horizontale. Un tel point de phase correspond au passage du point matériel par une position d'équilibre. Si la trajectoire de phase est une courbe fermée, le point matériel repasse aux mêmes positions avec la même vitesse. Il en résulte que le mouvement est périodique et la trajectoire de phase est parcourue dans le sens inverse du sens trigonométrique (sens horaire).
 %
 \subsection{Portraits de phase de l'oscillateur harmonique}
 \label{chap5-subsec:portraitdephaseoscillateurharmonique}
 %
-On obtient la trajectoire de phase de l'oscillateur d'équation différentielle $\ddot{X}+\omega_0 X=0$, avec les conditions initiales $X_0$ et $\dot{X}_0$ et de trois façons différentes~:
+On obtient la trajectoire de phase de l'oscillateur d'équation différentielle \(\ddot{X}+\omega_0 X=0\), avec les conditions initiales \(X_0\) et \(\dot{X}_0\) et de trois façons différentes~:
 \begin{itemize}
-\item \emph{En résolvant l'équation différentielle}~: On a $X=A\cos(\omega_0 t+\varphi)$ et $\dot{X}=-A\sin(\omega_0 t+\varphi)$. De plus $X_0=A\cos\varphi$ et $\dot{X}_0=-A\omega_0\sin\varphi$. Alors $A = \sqrt{X_0^2+\frac{\dot{X}_0^2}{\omega_0^2}}$ et $\begin{cases} \varphi=-\arctan\left(\frac{\dot{X}_0}{\omega_0X_0}\right) & X_0>0 \\ \varphi=\pi-\arctan\left(\frac{\dot{X}_0}{\omega_0X_0}\right) & X_0<0\end{cases}$. Grâce à $\sin^2+\cos^2=1$, on obtient l'équation de la trajectoire de phase~:
+\item \emph{En résolvant l'équation différentielle}~: On a \(X=A\cos(\omega_0 t+\varphi)\) et \(\dot{X}=-A\sin(\omega_0 t+\varphi)\). De plus \(X_0=A\cos\varphi\) et \(\dot{X}_0=-A\omega_0\sin\varphi\). Alors \(A = \sqrt{X_0^2+\frac{\dot{X}_0^2}{\omega_0^2}}\) et \(\begin{cases} \varphi=-\arctan\left(\frac{\dot{X}_0}{\omega_0X_0}\right) & X_0>0 \\ \varphi=\pi-\arctan\left(\frac{\dot{X}_0}{\omega_0X_0}\right) & X_0<0\end{cases}\). Grâce à \(\sin^2+\cos^2=1\), on obtient l'équation de la trajectoire de phase~:
 \begin{equation}
   \left( \frac{\dot{X}}{\omega_0 A} \right)^2 +  \left(\frac{X}{A}\right)^2 =1.
 \end{equation}
-\item \emph{Avec l'équation différentielle}~: En multipliant par $2\dot{X}\D t$ les deux membres de l'équation différentielle et en intégrant entre $0$ et $t$, on obtient~:
+\item \emph{Avec l'équation différentielle}~: En multipliant par \(2\dot{X}\D t\) les deux membres de l'équation différentielle et en intégrant entre \(0\) et \(t\), on obtient~:
   \begin{equation}
     \int_0^t 2\dot{X} \ddot{X}\D t + \omega_0^2 \int_0^t 2X\dot{X}\D t = 0,
   \end{equation}
@@ -119,38 +119,38 @@ On obtient la trajectoire de phase de l'oscillateur d'équation différentielle 
   \begin{equation}
     \left( \frac{\dot{X}}{\omega_0 A} \right)^2 +  \left(\frac{X}{A}\right)^2 =1.
   \end{equation}
-\item \emph{Avec l'énergie mécanique constante}~: Si $X$ représente $x$ ou $s$ (si c'est $\theta$, il faut multiplier par le rayon) alors
+\item \emph{Avec l'énergie mécanique constante}~: Si \(X\) représente \(x\) ou \(s\) (si c'est \(\theta\), il faut multiplier par le rayon) alors
   \begin{equation}
     \frac{m\dot{X}^2}{2} + \frac{KX^2}{2} = \frac{m\dot{X}_0^2}{2} + \frac{KX_0^2}{2}.
   \end{equation}
-  En utilisant $\omega_0^2=\frac{K}{m}$, on obtient $\dot{X}^2+\omega_0^2X^2 = \dot{X}_0^2+\omega_0^2X_0^2$ et alors
+  En utilisant \(\omega_0^2=\frac{K}{m}\), on obtient \(\dot{X}^2+\omega_0^2X^2 = \dot{X}_0^2+\omega_0^2X_0^2\) et alors
   \begin{equation}
     \left( \frac{\dot{X}}{\omega_0 A} \right)^2 +  \left(\frac{X}{A}\right)^2 =1.
   \end{equation}
 \end{itemize}
 
-Cette relation entre $X$ et $\dot{X}$ est représentée par une ellipse de demi-axes $A$ sur $X$ et $\omega_0A$ sur $\dot{X}$. \emph{Le portrait de phase de l'oscillateur harmonique est un ensemble d'ellipses homothétiques dans une homothétie de centre $O$}.
+Cette relation entre \(X\) et \(\dot{X}\) est représentée par une ellipse de demi-axes \(A\) sur \(X\) et \(\omega_0A\) sur \(\dot{X}\). \emph{Le portrait de phase de l'oscillateur harmonique est un ensemble d'ellipses homothétiques dans une homothétie de centre \(O\)}.
 %
 \subsection{Portrait de phase du pendule pesant simple}
 \label{chap5-subsec:portraitdephasepesantsimple}
 %
 \subsubsection{Définition, équation différentielle}
 %
-\emph{Un pendule pesant simple est un point matériel qui oscille sur un cercle vertical sous l'action de son poids}. Il peut s'agir d'un point matériel suspendu à un fil inextensible, de masse négligeable dont l'autre extrémité est fixe, à condition que la vitesse initiale ait une direction convenable. Mais dans certaines conditions, le fil peut se détendre et le point matériel quitte sa trajectoire circulaire \ldots On évite ce problème de la tension du fil en considérant un point lié à un cercle vertical (anneau circulaire). On considérera ici le cas où le point matériel n'est soumis, en plus de son poids, qu'à la réaction normale du cercle sur lequel il se déplace (on néglige les frottements). L'équation différentielle du mouvement s'obtient avec la conservation de l'énergie mécanique (ou avec le principe fondamental de la dynamique, ou encore avec le théorème du moment cinétique appliqué au point fixe $O$)~:
+\emph{Un pendule pesant simple est un point matériel qui oscille sur un cercle vertical sous l'action de son poids}. Il peut s'agir d'un point matériel suspendu à un fil inextensible, de masse négligeable dont l'autre extrémité est fixe, à condition que la vitesse initiale ait une direction convenable. Mais dans certaines conditions, le fil peut se détendre et le point matériel quitte sa trajectoire circulaire \ldots On évite ce problème de la tension du fil en considérant un point lié à un cercle vertical (anneau circulaire). On considérera ici le cas où le point matériel n'est soumis, en plus de son poids, qu'à la réaction normale du cercle sur lequel il se déplace (on néglige les frottements). L'équation différentielle du mouvement s'obtient avec la conservation de l'énergie mécanique (ou avec le principe fondamental de la dynamique, ou encore avec le théorème du moment cinétique appliqué au point fixe \(O\))~:
 
-En notant $L$ le rayon du cercle (longueur du fil, pour le pendule simple), le moment cinétique en $O$ est $\vv{\sigma_0} = \vv{OM}\wedge m \vvv = mL^2\dot{\theta}\uz$. Donc $\derived{\vv{\sigma_0}}{t}=mL^2\ddot{\theta}\uz$. La somme des moments en $O$ des forces que subit $M$ est~: $\vv{\Gamma_0}=\vv{OM}\wedge\vv{R}+\vv{OM}\wedge\vv{P}$. Avec $\vv{R} = R_r \ur +R_z \uz$ (pas de frottements) et $\vv{P}=mg(\cos\theta \ur -\sin\theta \utheta)$. Alors
+En notant \(L\) le rayon du cercle (longueur du fil, pour le pendule simple), le moment cinétique en \(O\) est \(\vv{\sigma_0} = \vv{OM}\wedge m \vvv = mL^2\dot{\theta}\uz\). Donc \(\derived{\vv{\sigma_0}}{t}=mL^2\ddot{\theta}\uz\). La somme des moments en \(O\) des forces que subit \(M\) est~: \(\vv{\Gamma_0}=\vv{OM}\wedge\vv{R}+\vv{OM}\wedge\vv{P}\). Avec \(\vv{R} = R_r \ur +R_z \uz\) (pas de frottements) et \(\vv{P}=mg(\cos\theta \ur -\sin\theta \utheta)\). Alors
 \begin{align}
   \vv{\Gamma_0} &= L \ur \wedge \left( (mg\cos\theta +R_r)\ur - mg\sin\theta\utheta +R_z\uz\right) \\ 
   & = -mgL\sin\theta\uz - LR_z\utheta.
 \end{align}
-Mais $\derived{\vv{\sigma_0}}{t} = \vv{\Gamma}_0$, donc $R_z=0$ et $mL^2\ddot{\theta}=-mgL\sin\theta$. En posant $\omega_0 = \sqrt{\frac{g}{L}}$, on obtient l'équation différentielle du mouvement du pendule pesant simple~:
+Mais \(\derived{\vv{\sigma_0}}{t} = \vv{\Gamma}_0\), donc \(R_z=0\) et \(mL^2\ddot{\theta}=-mgL\sin\theta\). En posant \(\omega_0 = \sqrt{\frac{g}{L}}\), on obtient l'équation différentielle du mouvement du pendule pesant simple~:
 \begin{equation}
   \ddot{\theta} + \omega_0^2\sin\theta =0.
 \end{equation}
 %
 \subsubsection{Cas des petites oscillations}
 %
-Pour des mouvements de faible amplitude, on peut faire l'approximation $\sin\theta = \theta$ et il s'agit d'un oscillateur harmonique. En notant $\Theta$ l'amplitude du mouvement, on obtient la loi horaire $\theta = \Theta\cos(\omega_0 t +\varphi)$. La trajectoire de phase est une ellipse d'équation
+Pour des mouvements de faible amplitude, on peut faire l'approximation \(\sin\theta = \theta\) et il s'agit d'un oscillateur harmonique. En notant \(\Theta\) l'amplitude du mouvement, on obtient la loi horaire \(\theta = \Theta\cos(\omega_0 t +\varphi)\). La trajectoire de phase est une ellipse d'équation
 \begin{equation}
   \left(\frac{\dot{\theta}}{\omega_0 \Theta}\right)^2 + \left(\frac{\theta}{\Theta}\right)^2=1,
 \end{equation}
@@ -158,15 +158,15 @@ ou
 \begin{equation}
   \left(\frac{\dot{\theta}}{\omega_0}\right)^2 = \Theta^2-\theta^2
 \end{equation}
-avec $\Theta = \sqrt{\theta_0^2+\frac{\dot{\theta_0}}{\omega_0}}$.
+avec \(\Theta = \sqrt{\theta_0^2+\frac{\dot{\theta_0}}{\omega_0}}\).
 %
 \subsubsection{Cas général}
 %
-Dans le cas général, il n'y a pas de solution analytique de l'équation différentielle, mais on peut obtenir l'équation du portrait de phase en multipliant l'équation différentielle par $2\dot{\theta} \D t$, on obtient
+Dans le cas général, il n'y a pas de solution analytique de l'équation différentielle, mais on peut obtenir l'équation du portrait de phase en multipliant l'équation différentielle par \(2\dot{\theta} \D t\), on obtient
 \begin{equation}
   2\dot{\theta} \D \dot{\theta} + 2\omega_0^2\sin\theta \D \theta=0.
 \end{equation}
-En intégrant de $0$ à $t$, on a
+En intégrant de \(0\) à \(t\), on a
 \begin{equation}
   \dot{\theta}^2-\dot{\theta_0}^2+2\omega_0^2(\cos\theta_0 - \cos\theta)=0,
 \end{equation}
@@ -175,18 +175,18 @@ soit encore
   \left(\frac{\dot{\theta}}{\omega_0}\right)^2 = 2\cos\theta - 2\cos\theta_0 + \left(\frac{\dot{\theta_0}}{\omega_0}\right)^2.
 \end{equation}
 %
-La condition $\dot\theta^2$ (équivalente à $E_c>0$) s'écrit $A<\cos\theta$ avec $A=\cos\theta_0 - \frac{1}{2}\left(\frac{\dot{\theta_0}}{\omega_0}\right)^2$. D'une part on remarque que $A<1$ et d'autre part que la condition est vérifiée pour tout $\theta$ si et seulement si $A<-1$. Il peut se présenter trois cas différents~:
+La condition \(\dot\theta^2\) (équivalente à \(E_c>0\)) s'écrit \(A<\cos\theta\) avec \(A=\cos\theta_0 - \frac{1}{2}\left(\frac{\dot{\theta_0}}{\omega_0}\right)^2\). D'une part on remarque que \(A<1\) et d'autre part que la condition est vérifiée pour tout \(\theta\) si et seulement si \(A<-1\). Il peut se présenter trois cas différents~:
 \begin{itemize}
-\item Si $-1 < A < 1$, alors il existe $\Theta=\arccos A$ et $\cos\theta>\cos\Theta$, soit $-\Theta < \theta < \Theta$. L'angle $\Theta$ est l'amplitude des oscillations périodiques du pendule. $\Theta = \arccos\left(\cos\theta_0 - \frac{1}{2}\left(\frac{\dot{\theta_0}}{\omega_0}\right)^2\right)$ et la trajectoire de phase a pour équation
+\item Si \(-1 < A < 1\), alors il existe \(\Theta=\arccos A\) et \(\cos\theta>\cos\Theta\), soit \(-\Theta < \theta < \Theta\). L'angle \(\Theta\) est l'amplitude des oscillations périodiques du pendule. \(\Theta = \arccos\left(\cos\theta_0 - \frac{1}{2}\left(\frac{\dot{\theta_0}}{\omega_0}\right)^2\right)\) et la trajectoire de phase a pour équation
   \begin{equation}
     \left(\frac{\dot{\theta}}{\omega_0}\right)^2 = 2(\cos\theta - \cos\Theta).
   \end{equation}
-\item Si $A < -1$, alors l'équation de la trajectoire de phase s'écrit toujours 
+\item Si \(A < -1\), alors l'équation de la trajectoire de phase s'écrit toujours 
   \begin{equation}
     \left(\frac{\dot{\theta}}{\omega_0}\right)^2 = 2(\cos\theta - A),
   \end{equation}
-  mais toutes les valeurs de $\theta$ sont possibles. Il y a rotation toujours dans le même sens et non oscillation. Le mouvement est périodique bien que la trajectoire de phase ne se referme pas.
-\item Si $A = 1$, alors le point de phase se déplace sur la trajectoire de phase critique. Si cela était réalisable, le point matériel s'arrêterait pour $\theta=\pi$, c'est-à-dire sur une position d'équilibre instable. Si cela se produit, c'est à cause de légers frottements inévitables que l'on a négligé.
+  mais toutes les valeurs de \(\theta\) sont possibles. Il y a rotation toujours dans le même sens et non oscillation. Le mouvement est périodique bien que la trajectoire de phase ne se referme pas.
+\item Si \(A = 1\), alors le point de phase se déplace sur la trajectoire de phase critique. Si cela était réalisable, le point matériel s'arrêterait pour \(\theta=\pi\), c'est-à-dire sur une position d'équilibre instable. Si cela se produit, c'est à cause de légers frottements inévitables que l'on a négligé.
 \end{itemize}
 %
 \section{Oscillateur amorti par frottements fluides}
@@ -195,7 +195,7 @@ La condition $\dot\theta^2$ (équivalente à $E_c>0$) s'écrit $A<\cos\theta$ av
 \subsection{Équation différentielle}
 \label{chap5-subsec:equadiffoscillateuramorti}
 %
-On considère un pendule élastique horizontal. Le point matériel $M$, de masse $m$, est soumis à son poids, à la force de rappel du ressort et à la réaction du support (composée d'une réaction normale et d'une force de frottement fluide). En appliquant le principe fondamental de la dynamique et en projetant sur l'axe horizontal, on obtient l'équation différentielle du mouvement~:
+On considère un pendule élastique horizontal. Le point matériel \(M\), de masse \(m\), est soumis à son poids, à la force de rappel du ressort et à la réaction du support (composée d'une réaction normale et d'une force de frottement fluide). En appliquant le principe fondamental de la dynamique et en projetant sur l'axe horizontal, on obtient l'équation différentielle du mouvement~:
 \begin{equation}
   m\ddot x = -f\dot x -kx,
 \end{equation}
@@ -203,7 +203,7 @@ soit
 \begin{equation}
   \ddot x + \frac{f}{m} \dot x +\frac{k}{m}x = 0.
 \end{equation}
-En l'absence de frottements, $M$ aurait un mouvement rectiligne sinusoïdal de pulsation $\omega_0 = \sqrt{\frac{k}{m}}$ appelée pulsation propre. D'autre part, on posera le coefficient d'amortissement $\lambda = \frac{f}{2m}$ (pour faciliter l'écriture des solutions). On réécrit l'équation différentielle~:
+En l'absence de frottements, \(M\) aurait un mouvement rectiligne sinusoïdal de pulsation \(\omega_0 = \sqrt{\frac{k}{m}}\) appelée pulsation propre. D'autre part, on posera le coefficient d'amortissement \(\lambda = \frac{f}{2m}\) (pour faciliter l'écriture des solutions). On réécrit l'équation différentielle~:
 \begin{equation}
   \ddot x + 2\lambda \dot x + \omega_0^2 x =0.
 \end{equation}
@@ -216,62 +216,62 @@ On ne résoudra ici l'équation différentielle que pour des conditions initiale
   x(t=0) = x_0>0 \quad \dot x(t=0)=0.
 \end{equation}
 %
-L'équation caractéristique associée s'écrit $u^2+2\lambda u + \omega_0^2=0$ et son discriminant réduit $\delta = \lambda^2-\omega_0^2$. Trois cas différents peuvent se présenter selon la valeur de $\delta$.
+L'équation caractéristique associée s'écrit \(u^2+2\lambda u + \omega_0^2=0\) et son discriminant réduit \(\delta = \lambda^2-\omega_0^2\). Trois cas différents peuvent se présenter selon la valeur de \(\delta\).
 %
 \subsubsection{Régime apériodique}
 \label{chap5-subsubsec:aperiodique}
 %
-Si $\lambda>\omega_0$ ($\delta>0$), l'équation caractéristique a deux solutions réelles~: $-\lambda \pm \sqrt{\lambda^2-\omega_0^2}$, toutes deux négatives que l'on notera $-\alpha$ et $-\beta$. La solution de l'équation différentielle s'écrit
+Si \(\lambda>\omega_0\) ($\delta>0$), l'équation caractéristique a deux solutions réelles~: \(-\lambda \pm \sqrt{\lambda^2-\omega_0^2}\), toutes deux négatives que l'on notera \(-\alpha\) et \(-\beta\). La solution de l'équation différentielle s'écrit
 \begin{equation}
   x = A\e^{-\alpha t} +B\e^{-\beta t}
 \end{equation}
-Les conditions initiales donnent $A=\frac{-\beta x_0}{\alpha-\beta}$ et $B=\frac{\alpha x_0}{\alpha-\beta}$. Alors
+Les conditions initiales donnent \(A=\frac{-\beta x_0}{\alpha-\beta}\) et \(B=\frac{\alpha x_0}{\alpha-\beta}\). Alors
 \begin{equation}
   x = \frac{x_0}{\alpha - \beta}(\alpha \e^{-\beta t} - \beta \e^{-\alpha t}) \qquad \dot x = \frac{\alpha \beta x_0}{\alpha - \beta}(\e^{-\beta t} - \e^{-\alpha t}).
 \end{equation}
-On remarque que $x$ reste toujours positif et que $\dot x$ reste toujours négatif. Il n'y a pas d'oscillations. Lorsque $t$ tend vers l'infini, $x$ et $\dot x$ tendent vers $0$.
+On remarque que \(x\) reste toujours positif et que \(\dot x\) reste toujours négatif. Il n'y a pas d'oscillations. Lorsque \(t\) tend vers l'infini, \(x\) et \(\dot x\) tendent vers \(0\).
 %
 \subsubsection{Régime critique}
 \label{chap5-subsubsec:critique}
 %
-Si $\lambda = \omega_0$ ($\delta=0$), l'équation caractéristique a une racine double $\lambda=\omega_0$. La solution de l'équation s'écrit
+Si \(\lambda = \omega_0\) ($\delta=0$), l'équation caractéristique a une racine double \(\lambda=\omega_0\). La solution de l'équation s'écrit
 \begin{equation}
   x = (A+Bt)\e^{-\lambda t} \qquad \dot x = (B-\lambda A-\lambda B t)\e^{-\lambda t}.
 \end{equation}
-Les conditions initiales donnent $x_0=A$ et $B=\lambda A=\lambda x_0$ donc
+Les conditions initiales donnent \(x_0=A\) et \(B=\lambda A=\lambda x_0\) donc
 \begin{equation}
   x = x_0(1+\lambda t)\e^{-\lambda t} \qquad \dot x = -\lambda^2 x_0 t \e^{-\lambda t}.
 \end{equation}
 %
-Dans ce cas, $x$ demeure toujours positif et $\dot x$ demeure toujours négatif. Il n'y a pas d'oscillations. Lorsque $t$ tend vers l'infini $x$ et $\dot x$ tendent vers zéro. Ils tendent vers zéro plus rapidement que dans le cas apériodique.
+Dans ce cas, \(x\) demeure toujours positif et \(\dot x\) demeure toujours négatif. Il n'y a pas d'oscillations. Lorsque \(t\) tend vers l'infini \(x\) et \(\dot x\) tendent vers zéro. Ils tendent vers zéro plus rapidement que dans le cas apériodique.
 %
 \subsubsection{Régime pseudo-périodique}
 \label{chap5-subsubsec:pseudoperiodique}
 
-Si $\lambda < \omega_0$ ($\delta < 0$), l'équation caractéristique a deux solutions complexes $-\lambda \pm i\sqrt{-\delta}$. On pose $\omega = \sqrt{-\delta}$, soit $\omega = \sqrt{\omega_0^2-\lambda^2}$. C'est la pseudo-pulsation. Les solutions réelles de l'équation différentielle s'écrivent
+Si \(\lambda < \omega_0\) ($\delta < 0$), l'équation caractéristique a deux solutions complexes \(-\lambda \pm i\sqrt{-\delta}\). On pose \(\omega = \sqrt{-\delta}\), soit \(\omega = \sqrt{\omega_0^2-\lambda^2}\). C'est la pseudo-pulsation. Les solutions réelles de l'équation différentielle s'écrivent
 \begin{equation}
   x = \e^{-\lambda t}(A\cos\omega t + B\sin\omega t) \qquad \dot x = \e^{-\lambda t}((B\omega -\lambda A)\cos\omega t - (\lambda B + \omega A)\sin\omega t).
 \end{equation}
-Les conditions initiales donnent $x_0=A$ et $0 = -\lambda A + B \omega$ d'où $B = \frac{\lambda}{\omega}x_0$. La solution s'écrit donc
+Les conditions initiales donnent \(x_0=A\) et \(0 = -\lambda A + B \omega\) d'où \(B = \frac{\lambda}{\omega}x_0\). La solution s'écrit donc
 \begin{equation}
   x = x_0 \e^{-\lambda t}\left(\cos \omega t + \frac{\lambda}{\omega}\sin\omega t\right) \qquad \dot x = -\frac{\omega_0^2}{\omega}x_0 \e^{-\lambda t}\sin \omega t.
 \end{equation}
 
-On peut aussi poser $\varphi = -\arctan\left(\frac{\lambda}{\omega}\right)$, d'où $\sin\varphi = -\frac{\lambda}{\sqrt{\lambda^2+\omega^2}}$ et $\cos\varphi = \frac{\omega}{\omega_0}$. Ainsi
+On peut aussi poser \(\varphi = -\arctan\left(\frac{\lambda}{\omega}\right)\), d'où \(\sin\varphi = -\frac{\lambda}{\sqrt{\lambda^2+\omega^2}}\) et \(\cos\varphi = \frac{\omega}{\omega_0}\). Ainsi
 \begin{equation}
   x = \frac{\omega_0}{\omega}x_0 \e^{-\lambda t} \cos(\omega t + \varphi).
 \end{equation}
 %
-On peut dire que l'amplitude est $X = \frac{\omega_0}{\omega}x_0 \e^{-\lambda t}$, elle décroît exponentiellement. Le graphe de $x$ en fonction du temps oscille entre deux exponentielles $X$ et $-X$. On remarquera d'autre part que la pseudo-période $T = \frac{2\pi}{\omega} = \frac{2\pi}{\sqrt{\omega_0^2-\lambda^2}}$ est plus grande que la période propre $T_0 = \frac{2\pi}{\omega_0}$, celle de l'oscillateur non amorti. L'écart entre $T$ et $T_0$ croît en fonction du coefficient d'amortissement $\lambda$. De plus
+On peut dire que l'amplitude est \(X = \frac{\omega_0}{\omega}x_0 \e^{-\lambda t}\), elle décroît exponentiellement. Le graphe de \(x\) en fonction du temps oscille entre deux exponentielles \(X\) et \(-X\). On remarquera d'autre part que la pseudo-période \(T = \frac{2\pi}{\omega} = \frac{2\pi}{\sqrt{\omega_0^2-\lambda^2}}\) est plus grande que la période propre \(T_0 = \frac{2\pi}{\omega_0}\), celle de l'oscillateur non amorti. L'écart entre \(T\) et \(T_0\) croît en fonction du coefficient d'amortissement \(\lambda\). De plus
 \begin{equation}
   \ln\left(\frac{x(t)}{x(t+T)}\right) = \ln\left(\frac{\dot x(t)}{\dot x(t+T)}\right) = \ln\left(\frac{\e^{x(-\lambda t)}}{\e^{x(-\lambda (t+T))}}\right) = \lambda T.
 \end{equation}
-Le nombre $\delta = \lambda T$ est appelé le décrément logarithmique.
+Le nombre \(\delta = \lambda T\) est appelé le décrément logarithmique.
 %
 \subsection{Aspect énergétique, facteur de qualité d'un oscillateur}
 \label{chap5-subsec:aspecténergétique}
 %
-L'énergie mécanique de l'oscillateur est $E(t) = \frac{k x(t)^2}{2} + \frac{m \dot x(t)^2}{2}$. Compte tenu du décrément logarithmique $E(t+T) = E(t) \e^{-2\lambda T}$. L'énergie perdue par frottements en une pseudo-période est $E(t)-E(t+T) = E(t)(1-\e^{-2\lambda T})$. Dans le cas d'un régime pseudo-périodique d'amortissement très faible, $2\lambda T << 1$, on peut utiliser un développement limité $\e^x = 1+x$. On a donc
+L'énergie mécanique de l'oscillateur est \(E(t) = \frac{k x(t)^2}{2} + \frac{m \dot x(t)^2}{2}\). Compte tenu du décrément logarithmique \(E(t+T) = E(t) \e^{-2\lambda T}\). L'énergie perdue par frottements en une pseudo-période est \(E(t)-E(t+T) = E(t)(1-\e^{-2\lambda T})\). Dans le cas d'un régime pseudo-périodique d'amortissement très faible, \(2\lambda T << 1\), on peut utiliser un développement limité \(\e^x = 1+x\). On a donc
 \begin{equation}
   E(t)-E(t+T) = 2\lambda T E(t).
 \end{equation}
@@ -283,37 +283,37 @@ L'énergie mécanique de l'oscillateur est $E(t) = \frac{k x(t)^2}{2} + \frac{m 
   pour un régime pseudo-périodique très peu amorti.
 \end{defdef}
 %
-C'est-à-dire $Q = \frac{\omega}{2\lambda}$ mais pour un régime très peu amorti on a $\lambda << \omega_0$. Donc $Q=\frac{\omega_0}{2\lambda}$. Avec $\omega_0=\frac{k}{m}$ et $\lambda =\frac{f}{2m}$ on a $Q=\frac{\sqrt{km}}{f}$. Plus le facteur de qualité est grand, plus on se rapproche du régime périodique d'un oscillateur harmonique. La situation critique est telle que $\lambda = \omega_0$, donc le facteur de qualité vaut $Q_{\text{critique}} = \frac{1}{2}$. On peut utiliser $Q$ comme un paramètre, à la place de $\lambda$, dans l'équation différentielle~: $2\lambda = \frac{\omega_0}{Q}$. L'équation différentielle s'écrit donc
+C'est-à-dire \(Q = \frac{\omega}{2\lambda}\) mais pour un régime très peu amorti on a \(\lambda << \omega_0\). Donc \(Q=\frac{\omega_0}{2\lambda}\). Avec \(\omega_0=\frac{k}{m}\) et \(\lambda =\frac{f}{2m}\) on a \(Q=\frac{\sqrt{km}}{f}\). Plus le facteur de qualité est grand, plus on se rapproche du régime périodique d'un oscillateur harmonique. La situation critique est telle que \(\lambda = \omega_0\), donc le facteur de qualité vaut \(Q_{\text{critique}} = \frac{1}{2}\). On peut utiliser \(Q\) comme un paramètre, à la place de \(\lambda\), dans l'équation différentielle~: \(2\lambda = \frac{\omega_0}{Q}\). L'équation différentielle s'écrit donc
 \begin{equation}
   \ddot x +\frac{\omega_0}{Q} \dot x +\omega_0^2 x = 0.
 \end{equation}
 %
-Les tracés ci-dessous donnent $x(t)$ (pour les conditions initiales $x=x_0$ et $\dot x=0$) en coordonnées réduites $\xi=\frac{x}{x_0}$ et $\tau = \omega_0 t$. Avec ces coordonnées réduites, $\derived{x}{t} = \derived{x}{\tau} \derived{\tau}{t}$, c'est-à-dire $\dot x = \omega_0 x_0 \xi'$. De même $\ddot x = \omega_0^2 x_0 \xi''$. Alors l'équation différentielle s'écrit
+Les tracés ci-dessous donnent \(x(t)\) (pour les conditions initiales \(x=x_0\) et \(\dot x=0\)) en coordonnées réduites \(\xi=\frac{x}{x_0}\) et \(\tau = \omega_0 t\). Avec ces coordonnées réduites, \(\derived{x}{t} = \derived{x}{\tau} \derived{\tau}{t}\), c'est-à-dire \(\dot x = \omega_0 x_0 \xi'\). De même \(\ddot x = \omega_0^2 x_0 \xi''\). Alors l'équation différentielle s'écrit
 \begin{equation}
   \xi'' +\frac{1}{Q} \xi'+x=0.
 \end{equation}
-Le facteur de qualité $Q$ est donc le seul paramètre. On remarque sur ces tracés que l'oscillateur revient le plus rapidement possible à sa position d'équilibre pour le régime critique.
+Le facteur de qualité \(Q\) est donc le seul paramètre. On remarque sur ces tracés que l'oscillateur revient le plus rapidement possible à sa position d'équilibre pour le régime critique.
 %
 \subsection{Portrait de phase de l'oscillateur amorti}
 \label{chap5-subsec:portraitdephasedeloscillateuramorti}
 %
-Avec un logiciel de calcul, on obtient facilement le portrait de phase représentant la relation entre $\dot x$ et $x$ (ou entre $\xi'$ et $\xi$ sans dimension). On a tracé ici quelques trajectoires de phase correspondant aux mêmes conditions initiales (pour $t=0$ $\xi=1$ et $\xi'=0$). Si $Q$ est très grand, on retrouve la trajectoire de phase circulaire de l'oscillateur harmonique. Pour les autres valeurs de $Q$, le mouvement n'est pas périodique. La trajectoire de phase n'est donc pas une courbe fermée, elle tend vers le point de phase limite $(0,0)$. L'apparition d'oscillations pour $Q>\frac{1}{2}$ se traduit par un changement de signe de $\xi$, \ldots
+Avec un logiciel de calcul, on obtient facilement le portrait de phase représentant la relation entre \(\dot x\) et \(x\) (ou entre \(\xi'\) et \(\xi\) sans dimension). On a tracé ici quelques trajectoires de phase correspondant aux mêmes conditions initiales (pour \(t=0\) \(\xi=1\) et \(\xi'=0\)). Si \(Q\) est très grand, on retrouve la trajectoire de phase circulaire de l'oscillateur harmonique. Pour les autres valeurs de \(Q\), le mouvement n'est pas périodique. La trajectoire de phase n'est donc pas une courbe fermée, elle tend vers le point de phase limite \((0,0)\). L'apparition d'oscillations pour \(Q>\frac{1}{2}\) se traduit par un changement de signe de \(\xi\), \ldots
 %
 \section{Exercices}
 \label{chap5-sec:exercices}
 \begin{exercice}[Ressort comprimé]
-	Un objet de masse $m$ assimilé à un point matériel M, glisse sans frottement sur une tige inclinéee de l'angle $\alpha$ par rapport au plan horizontal. 
-	Arrivé au point $O$, origine de l'axe $Ox$, il vient comprimer un ressort de longueur à vide $L_0$ et de raideur $k$, dont l'autre extrémité $A$ est fixe. Le contact est rompu dès que le ressort reprend sa longueur à vide $L_0$. Pour $x$ négatif, $M$ est donc soumis à une force supplémentaire exercée par le ressort comprimé.
-	À la date $t=0$, $M$ est lâché sans vitesse initiale du point d'abscisse $x_0=\frac{L_0}{2}$. La longueur à vide du ressort est telle que $\frac{mg \sin(\alpha)}{k} = \frac{L_0}{4}$.
+	Un objet de masse \(m\) assimilé à un point matériel M, glisse sans frottement sur une tige inclinéee de l'angle \(\alpha\) par rapport au plan horizontal. 
+	Arrivé au point \(O\), origine de l'axe \(Ox\), il vient comprimer un ressort de longueur à vide \(L_0\) et de raideur \(k\), dont l'autre extrémité \(A\) est fixe. Le contact est rompu dès que le ressort reprend sa longueur à vide \(L_0\). Pour \(x\) négatif, \(M\) est donc soumis à une force supplémentaire exercée par le ressort comprimé.
+	À la date \(t=0\), \(M\) est lâché sans vitesse initiale du point d'abscisse \(x_0=\frac{L_0}{2}\). La longueur à vide du ressort est telle que \(\frac{mg \sin(\alpha)}{k} = \frac{L_0}{4}\).
 	\begin{enumerate}
-		\item Exprimer l'énergie potentielle de $M$ avec $j$, $L_0$, et $x$ pour $x$ positif puis pour $x$ négatif.
+		\item Exprimer l'énergie potentielle de \(M\) avec \(j\), \(L_0\), et \(x\) pour \(x\) positif puis pour \(x\) négatif.
 		\item Quelle est l'abscisse de la position d'équilibre ? Est-ce une position d'équilibre stable ?
-		\item Représenter l'énergie potentielle $E_p$ en fonction de $x$ et montrer sur le tracé la valeur de l'énergie mécanique $E$ avec les échelles suivantes : $\SI{8}{\centi\meter}$ pour $L_0$ et $\SI{8}{\centi\meter}$ $\frac{k L_0^2}{4}$.
-		\item Établir les équations implicites de la trajectoire de phase (relation entre $x$ et $\dot{x}$) avec les paramètres $k$, $m$ et $L_0$. 
+		\item Représenter l'énergie potentielle \(E_p\) en fonction de \(x\) et montrer sur le tracé la valeur de l'énergie mécanique \(E\) avec les échelles suivantes : \(\SI{8}{\centi\meter}\) pour \(L_0\) et \(\SI{8}{\centi\meter}\) \(\frac{k L_0^2}{4}\).
+		\item Établir les équations implicites de la trajectoire de phase (relation entre \(x\) et \(\dot{x}\)) avec les paramètres \(k\), \(m\) et \(L_0\). 
 			
-		On remplace les variables $x$ et $t$ par des variables adimensionnées $X$ et $\tau$ et on pose $X' = \derived{X}{\tau}$  $X'' = \deriveds{X}{\tau}$. Ceci permet d'écrire les équations de la trajectoire de phase sans aucun paramètre.
+		On remplace les variables \(x\) et \(t\) par des variables adimensionnées \(X\) et \(\tau\) et on pose \(X' = \derived{X}{\tau}\) \(X'' = \deriveds{X}{\tau}\). Ceci permet d'écrire les équations de la trajectoire de phase sans aucun paramètre.
 
-		Exprimer les relations entre $x$ et $X$, entre $t$ et $\tau$, entre $\dot{x}$ et $X'$ et entre $\ddot{x}$ et $X''$.
+		Exprimer les relations entre \(x\) et \(X\), entre \(t\) et \(\tau\), entre \(\dot{x}\) et \(X'\) et entre \(\ddot{x}\) et \(X''\).
 		Écrire les équations implicites de la trajectoire de phase avec les nouvelles variables. Montrer comment on vérifie les résultats de la question 2) sur le tracé.
 	\end{enumerate}
 \end{exercice}
