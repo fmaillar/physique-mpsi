@@ -1,40 +1,8 @@
-filename=physique
-
-#pdf: dvi
-#	 dvipdf ${filename}.dvi > /dev/null
-pdf:
-	gnuplot *.gnuplot||true
-#	py *.py #pour win10 cygwin
-	python *.py #pour linux
-	pdflatex ${filename}
-	makeindex ${filename}.idx
-	pdflatex ${filename}> /dev/null
-	pdflatex ${filename}> /dev/null
-
-#ps: dvi
-#	dvips -t a4 ${filename}.dvi -o ${filename}.ps > /dev/null
-
-#dvi:
-#	gnuplot *.gnuplot||true
-#	as *.asy||true
-#	latex ${filename}
-#	bibtex ${filename}||true
-#	makeindex ${filename}.idx
-#	latex ${filename}> /dev/null
-#	latex ${filename}> /dev/null
-#	latex ${filename}> /dev/null
-
-read:
-	evince ${filename}.pdf &
-
-aread:
-	acroread ${filename}.pdf &
-
-clean:
-	rm -f *.ps *.log *.aux *.out *.dvi *.bbl *.blg *.lof *.lot *.toc *.ilg *.idx 
-	rm *.ind *~ ${filename}.m* *.png
-
-backup:
-	git add *
-	git commit
-	git push backupDD master
+all:
+	latexmk -pdf physique.tex
+fig:
+	python3 process_fig.py
+cleanTemp:
+	latexmk -c
+cleanAll:
+	latexmk -C
