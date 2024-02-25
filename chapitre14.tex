@@ -1,150 +1,150 @@
 \chapter{Résonance d'intensité, puissance en régime sinusoïdal permanent}
-\minitoc
-\minilof
-\minilot
+\minitoc{}
+\minilof{}
+\minilot{}
 
 \section{Dipôle \(R, L, C\) série en régime sinusoïdal permanent, résonance d'intensité}
-  \subsection{Circuit, limites de la modélisation utilisée}
+\subsection{Circuit, limites de la modélisation utilisée}
 
-  Les résistances éventuelles de la bobines et du générateur sont incluses dans \(R\) On suppose que la conductance de fuite du condensateur est nulle ainsi que la capacité de la bobine (les spires sont séparées par un vernis isolant). On suppose que \(R\) est indépendante de la pulsation \(\omega\). Or la géométrie des lignes de courant est modifiée par le phénomène d'induction dû au champ magnétique créé par le courant lui-même. Il en résulte que les lignes de courant se concentrent sur la surface des conducteurs, sur une épaisseur d'autant plus faible que \(\omega\) est grande. C'est \emph{l'effet de peau} et il conduit à une augmentation de la résistance \(r\) avec \(\omega\) \ldots
+Les résistances éventuelles de la bobines et du générateur sont incluses dans \(R\) On suppose que la conductance de fuite du condensateur est nulle ainsi que la capacité de la bobine (les spires sont séparées par un vernis isolant). On suppose que \(R\) est indépendante de la pulsation \(\omega\). Or la géométrie des lignes de courant est modifiée par le phénomène d'induction dû au champ magnétique créé par le courant lui-même. Il en résulte que les lignes de courant se concentrent sur la surface des conducteurs, sur une épaisseur d'autant plus faible que \(\omega\) est grande. C'est \emph{l'effet de peau} et il conduit à une augmentation de la résistance \(r\) avec \(\omega\) \ldots
 
-  \subsection{Impédance du dipôle \(R, L, C\) série}
+\subsection{Impédance du dipôle \(R, L, C\) série}
 
-  L'impédance complexe du dipôle \(R, L, C\) série est \(\Zc = R + \ju\left(L\omega -\frac{1}{C\omega}\right)\). Son impédance vaut donc \(Z = \abs{\Zc} = \sqrt{R^2 + \left(L\omega -\frac{1}{C\omega}\right)^2}\) et le déphasage de \(e\) par rapport à \(i\) est \(\Phi = \Arg(\Zc) = \arctan\left(\frac{L\omega -\frac{1}{C\omega}}{R}\right)\). On remarque que \(Z = R\sqrt{1+\tan(\Phi)^2}=R\cos\Phi\). Donc \(\cos\Phi = \frac{R}{Z}\).
+L'impédance complexe du dipôle \(R, L, C\) série est \(\Zc = R + \ju\left(L\omega -\frac{1}{C\omega}\right)\). Son impédance vaut donc \(Z = \abs{\Zc} = \sqrt{R^2 + \left(L\omega -\frac{1}{C\omega}\right)^2}\) et le déphasage de \(e\) par rapport à \(i\) est \(\Phi = \Arg(\Zc) = \arctan\left(\frac{L\omega -\frac{1}{C\omega}}{R}\right)\). On remarque que \(Z = R\sqrt{1+\tan(\Phi)^2}=R\cos\Phi\). Donc \(\cos\Phi = \frac{R}{Z}\).
 
-  \subsection{Pulsation propre, facteur de qualité}
- \(Z\) est minimale et \(Phi=0\) pour \(\omega=\omega_0\), la pulsation propre du dipôle \(R, L, C\) série. Elle vérifie la formule de Thomson \(LC\omega_0^2=1\), soit \(\omega_0=\frac{1}{\sqrt{LC}}\). Le facteur de qualité est \(Q = \frac{L\omega_0}{R} = \frac{1}{RC\omega_0}\). En notant la pulsation réduite \(x = \frac{\omega}{\omega_0} =\frac{N}{N_0} =\frac{T_0}{T}\), la réactance du dipôle \(S = L\omega -\frac{1}{C\omega}\) s'écrit encore \(S = RQ\left(x-\frac{1}{x}\right)\) et l'impédance du dipôle est \(Z = R\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2}\). Le déphasage de \(e\) par rapport à \(i\) est \(\Phi = \arctan(S/R) = \arctan\left(Q\left(x - \frac{1}{x}\right)\right)\).
+\subsection{Pulsation propre, facteur de qualité}
+\(Z\) est minimale et \(Phi=0\) pour \(\omega=\omega_0\), la pulsation propre du dipôle \(R, L, C\) série. Elle vérifie la formule de Thomson \(LC\omega_0^2=1\), soit \(\omega_0=\frac{1}{\sqrt{LC}}\). Le facteur de qualité est \(Q = \frac{L\omega_0}{R} = \frac{1}{RC\omega_0}\). En notant la pulsation réduite \(x = \frac{\omega}{\omega_0} =\frac{N}{N_0} =\frac{T_0}{T}\), la réactance du dipôle \(S = L\omega -\frac{1}{C\omega}\) s'écrit encore \(S = RQ\left(x-\frac{1}{x}\right)\) et l'impédance du dipôle est \(Z = R\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2}\). Le déphasage de \(e\) par rapport à \(i\) est \(\Phi = \arctan(S/R) = \arctan\left(Q\left(x - \frac{1}{x}\right)\right)\).
 
-    Le rapport des amplitudes (ou des valeurs efficaces) des tensions aux bornes de \(R\) et de la source est
-    \begin{equation}
-      \frac{RI}{E} = \frac{R}{Z} = \frac{1}{\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2}}.
-    \end{equation}
+Le rapport des amplitudes (ou des valeurs efficaces) des tensions aux bornes de \(R\) et de la source est
+\begin{equation}
+  \frac{RI}{E} = \frac{R}{Z} = \frac{1}{\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2}}.
+\end{equation}
 
-  \subsection{Étude de la réponse du dipôle}
+\subsection{Étude de la réponse du dipôle}
 
-  L'étude de la réponse, en régime permanent, du dipôle \(R, L, C\) série à une excitation sinusoïdale peut donc se faire en étudiant les fonctions \(\frac{RI}{E} = f(x)\) et \(\Phi = g(x)\) et leur évolution en fonction du paramètre \(Q\). Déjà \(f(0) = 0\), \(f(1) = 1\) et \(\lim\limits_{+\infty} f = 0\). De plus \(g(0) = -\pi/2\), \(g(1) = 0\) et \(\lim\limits_{+\infty} g = \pi/2\).
+L'étude de la réponse, en régime permanent, du dipôle \(R, L, C\) série à une excitation sinusoïdale peut donc se faire en étudiant les fonctions \(\frac{RI}{E} = f(x)\) et \(\Phi = g(x)\) et leur évolution en fonction du paramètre \(Q\). Déjà \(f(0) = 0\), \(f(1) = 1\) et \(\lim\limits_{+\infty} f = 0\). De plus \(g(0) = -\pi/2\), \(g(1) = 0\) et \(\lim\limits_{+\infty} g = \pi/2\).
 
-  En dérivant, il vient \(f'(x) = -Q^2 \frac{x-1/x^3}{1+Q^2(x-1/x^3)^{3/2}}\) et \(g'(x) = Q \frac{1+1/x^2}{1+Q^2(x-1/x)^2}\). Alors \(f'(0) = Q\), \(f'(1) = 0\) et \(\lim\limits_{+\infty} f' = 0\). De plus \(g'(0) = 1/Q\), \(g'(1) = 2Q\) et \(\lim\limits_{+\infty} g' = 0\).
+En dérivant, il vient \(f'(x) = -Q^2 \frac{x-1/x^3}{1+Q^2(x-1/x^3)^{3/2}}\) et \(g'(x) = Q \frac{1+1/x^2}{1+Q^2(x-1/x)^2}\). Alors \(f'(0) = Q\), \(f'(1) = 0\) et \(\lim\limits_{+\infty} f' = 0\). De plus \(g'(0) = 1/Q\), \(g'(1) = 2Q\) et \(\lim\limits_{+\infty} g' = 0\).
 
-  \subsection{Résonance d'intensité, surtension à la résonance}
-    \emph{Le maximum d'amplitude de l'intensité correspond à \(Z\) minimale} donc à \(x=1\) et \(\omega = \omega_0\), \emph{on a alors résonance d'intensité}. Dans ce cas, \(\Phi\) est nul, \(i\) et \(e\) sont en \emph{concordance de phase} et \(Z=R\). On peut noter, avec l'indice 0 pour cette situation~: \(Z_0 = R\), \(S_0=0\), \(I_0 = E/R\), \(\Phi_0=0\), \(\cos\Phi_0 = 1\). L'impédance de la bobine est donc égale à \(\Zc_{L_0} =\ju L \omega_0 = \ju Q R\) et l'impédance de la capacité est \(\Zc_{C_0}=\frac{1}{\ju C \omega_0}=-\ju Q R = -\Zc_{L_0}\), donc \(\Uc_{L_0} = \ju Q R \Ic = -\Uc_{C_0}\). les tensions aux bornes de \(L\) et de \(C\) sont opposées à chaque instant et de même amplitude \(QRI = QE\).
+\subsection{Résonance d'intensité, surtension à la résonance}
+\emph{Le maximum d'amplitude de l'intensité correspond à \(Z\) minimale} donc à \(x=1\) et \(\omega = \omega_0\), \emph{on a alors résonance d'intensité}. Dans ce cas, \(\Phi\) est nul, \(i\) et \(e\) sont en \emph{concordance de phase} et \(Z=R\). On peut noter, avec l'indice 0 pour cette situation~: \(Z_0 = R\), \(S_0=0\), \(I_0 = E/R\), \(\Phi_0=0\), \(\cos\Phi_0 = 1\). L'impédance de la bobine est donc égale à \(\Zc_{L_0} =\ju L \omega_0 = \ju Q R\) et l'impédance de la capacité est \(\Zc_{C_0}=\frac{1}{\ju C \omega_0}=-\ju Q R = -\Zc_{L_0}\), donc \(\Uc_{L_0} = \ju Q R \Ic = -\Uc_{C_0}\). les tensions aux bornes de \(L\) et de \(C\) sont opposées à chaque instant et de même amplitude \(QRI = QE\).
 
-    Le facteur de qualité est donc aussi le facteur de surtension à la résonance \( Q = \frac{U_{C_0}}{E} = \frac{U_{L_0}}{E}\).
+Le facteur de qualité est donc aussi le facteur de surtension à la résonance \( Q = \frac{U_{C_0}}{E} = \frac{U_{L_0}}{E}\).
 
-  \subsection{Acuité de la résonance, bande passante à \(\SI{-3}{\dB}\)}
-  \label{sec-chap14:acuite}
-    Calculons les pulsations \(\omega_1 = x_1 \omega_0\) et \(\omega_2 = x_2 \omega_0\) (\(x_1<x_2\)) pour lesquelles \(I = \frac{I}{\sqrt{2}}\). C'est-à-dire que \(I = \frac{E}{Z}\) et \(I_0 = \frac{E}{R}\), donc l'égalité précédente donne \(Z = R\sqrt{2}\). Donc \(R\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2} = R\sqrt{1+1}\). \(x_1\) et \(x_2\) sont les solutions réelles positives de l'équation \(x -\frac{1}{x} = \pm \frac{1}{Q}\). Donc \(x = \pm\frac{1}{2Q} \pm \sqrt{\frac{1}{(2Q)^2} +1}\) et donc les deux solutions positives sont \(x_1 = -\frac{1}{2Q} + \sqrt{\frac{1}{(2Q)^2} +1}\) et \(x_2 = \frac{1}{2Q} + \sqrt{\frac{1}{(2Q)^2} +1}\). Leur différence est \(\Delta x = x_2-x_1 = \frac{\omega_2 -\omega_1}{\omega_0} = \frac{1}{Q}\). La bande passante en pulsation est \(\Delta \omega = \frac{\omega_0}{Q}=\frac{R}{L}\). La bande passante en fréquence est \(\Delta N = \frac{N_0}{Q}=\frac{R}{2\pi L}\).
+\subsection{Acuité de la résonance, bande passante à \(\SI{-3}{\dB}\)}
+\label{sec-chap14:acuite}
+Calculons les pulsations \(\omega_1 = x_1 \omega_0\) et \(\omega_2 = x_2 \omega_0\) (\(x_1<x_2\)) pour lesquelles \(I = \frac{I}{\sqrt{2}}\). C'est-à-dire que \(I = \frac{E}{Z}\) et \(I_0 = \frac{E}{R}\), donc l'égalité précédente donne \(Z = R\sqrt{2}\). Donc \(R\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2} = R\sqrt{1+1}\). \(x_1\) et \(x_2\) sont les solutions réelles positives de l'équation \(x -\frac{1}{x} = \pm \frac{1}{Q}\). Donc \(x = \pm\frac{1}{2Q} \pm \sqrt{\frac{1}{(2Q)^2} +1}\) et donc les deux solutions positives sont \(x_1 = -\frac{1}{2Q} + \sqrt{\frac{1}{(2Q)^2} +1}\) et \(x_2 = \frac{1}{2Q} + \sqrt{\frac{1}{(2Q)^2} +1}\). Leur différence est \(\Delta x = x_2-x_1 = \frac{\omega_2 -\omega_1}{\omega_0} = \frac{1}{Q}\). La bande passante en pulsation est \(\Delta \omega = \frac{\omega_0}{Q}=\frac{R}{L}\). La bande passante en fréquence est \(\Delta N = \frac{N_0}{Q}=\frac{R}{2\pi L}\).
 
-    On verra dans la suite du cours pourquoi on appelle encore la bande passante à \(\SI{-3}{\dB}\). On voit que la bande passante est d'autant plus large que \(R\) est grand et \(L\) petit, elle ne dépend pas de la capacité.
+On verra dans la suite du cours pourquoi on appelle encore la bande passante à \(\SI{-3}{\dB}\). On voit que la bande passante est d'autant plus large que \(R\) est grand et \(L\) petit, elle ne dépend pas de la capacité.
 
-    Il est plus intéressant de comparer \(\Delta \omega\) à \(\omega_0\)~: la résonance est d'autant plus aiguë que le rapport \(\frac{\omega_0}{\omega} = \frac{N_0}{\Delta N} = \frac{1}{\Delta x} = Q\) est grand, donc \emph{le facteur de qualité exprime aussi l'acuité de la résonance, plus il est grand, plus la résonance est aiguë}. Remarquons encore que que pour les extrémités de la bande, \(Z_1=Z_2=R\sqrt{2}\). Il en résulte que les réactances sont~: \(S_1=-R\) et \(S_2=R\) et les déphasages alors \(\Phi_1=-\pi/4\) et \(\Phi_2 =\pi/4\).
+Il est plus intéressant de comparer \(\Delta \omega\) à \(\omega_0\)~: la résonance est d'autant plus aiguë que le rapport \(\frac{\omega_0}{\omega} = \frac{N_0}{\Delta N} = \frac{1}{\Delta x} = Q\) est grand, donc \emph{le facteur de qualité exprime aussi l'acuité de la résonance, plus il est grand, plus la résonance est aiguë}. Remarquons encore que que pour les extrémités de la bande, \(Z_1=Z_2=R\sqrt{2}\). Il en résulte que les réactances sont~: \(S_1=-R\) et \(S_2=R\) et les déphasages alors \(\Phi_1=-\pi/4\) et \(\Phi_2 =\pi/4\).
 
 \section{Puissance électrocinétique en régime périodique}
-  On ne considère ici que le cas des régimes lentement variables (ARQS).
-  \subsection{Puissance instantanée, valeur moyenne de la puissance}
-    La puissance électrocinétique instantanée reçue par un dipôle en régime continu ou lentement variable est \(p = ui\) (convention récepteur). L'énergie électrocinétique reçue de \(t_1\) à\(t_2\) par le dipôle est donc de \(W = \int_{t_1}^{t_2} ui \D t\). La valeur moyenne de la puissance reçue entre \(t_1\) et \(t_2\) est donc \(<p> = \frac{W}{t_2 - t_1}\).
-  \subsection{Puissance moyenne en régime périodique}
-    En régime périodique (lentement variable), \emph{on appelle ``puissance moyenne'' la valeur moyenne de la puissance pour une durée d'un nombre de périodes}~: \(P = \frac{W}{nT} = \frac{\int_{t_1}^{t_1+nT} ui \D t}{nT}\). ``La puissance moyenne'' ne s'identifie à la valeur moyenne exacte de la puissance que pour un nombre entier de périodes (ou pour un temps \(t_2-t_1 >> T\) à certaines conditions).
-  \subsection{Valeurs efficaces en régime périodique}
-    \emph{La valeur efficace \(U_{eff}\) d'une tension périodique \(u\) est la valeur de la tension continue qui, dans un même conducteur ohmique, produirait en un nombre entier de périodes la même quantité de chaleur par effet Joule que la tension périodique \(u\).} On a donc, avec \(G\), la conductance du conducteur ohmique considéré~:
-    \begin{equation}
-      P = G U_{eff}^2 = 1/T \int_0^T G u^2 \D t,
-    \end{equation}
-    donc \(U_{eff} = \sqrt{\frac{1}{T} \int_0^T u^2 \D t}\). C'est donc la racine carrée de la valeur moyenne de \(u^2\) sur une période, on dit aussi que c'est la tension quadratique moyenne sur une période. C'est la même définition pour le courant efficace : c'est le courant quadratique moyen sur une période~: \(I_{eff} = \sqrt{\frac{1}{T} \int_0^T i^2 \D t}\).
+On ne considère ici que le cas des régimes lentement variables (ARQS).
+\subsection{Puissance instantanée, valeur moyenne de la puissance}
+La puissance électrocinétique instantanée reçue par un dipôle en régime continu ou lentement variable est \(p = ui\) (convention récepteur). L'énergie électrocinétique reçue de \(t_1\) à\(t_2\) par le dipôle est donc de \(W = \int_{t_1}^{t_2} ui \D t\). La valeur moyenne de la puissance reçue entre \(t_1\) et \(t_2\) est donc \(<p> = \frac{W}{t_2 - t_1}\).
+\subsection{Puissance moyenne en régime périodique}
+En régime périodique (lentement variable), \emph{on appelle ``puissance moyenne'' la valeur moyenne de la puissance pour une durée d'un nombre de périodes}~: \(P = \frac{W}{nT} = \frac{\int_{t_1}^{t_1+nT} ui \D t}{nT}\). ``La puissance moyenne'' ne s'identifie à la valeur moyenne exacte de la puissance que pour un nombre entier de périodes (ou pour un temps \(t_2-t_1 >> T\) à certaines conditions).
+\subsection{Valeurs efficaces en régime périodique}
+\emph{La valeur efficace \(U_{eff}\) d'une tension périodique \(u\) est la valeur de la tension continue qui, dans un même conducteur ohmique, produirait en un nombre entier de périodes la même quantité de chaleur par effet Joule que la tension périodique \(u\).} On a donc, avec \(G\), la conductance du conducteur ohmique considéré~:
+\begin{equation}
+  P = G U_{eff}^2 = 1/T \int_0^T G u^2 \D t,
+\end{equation}
+donc \(U_{eff} = \sqrt{\frac{1}{T} \int_0^T u^2 \D t}\). C'est donc la racine carrée de la valeur moyenne de \(u^2\) sur une période, on dit aussi que c'est la tension quadratique moyenne sur une période. C'est la même définition pour le courant efficace : c'est le courant quadratique moyen sur une période~: \(I_{eff} = \sqrt{\frac{1}{T} \int_0^T i^2 \D t}\).
 
 \section{Puissance moyenne en régime sinusoïdal permanent}
-  \subsection{Tension efficace, intensité efficace}
-    Si \(\Phi\) est le déphasage de la tension sur l'intensité dans le dipôle et \(U\) et \(I\) les amplitudes de \(u\) et de \(i\), on a par exemple~: \(i=I\cos(\omega t)\) et \(u=U\cos(\omega t+\Phi)\), alors \(I_eff^2 = \frac{1}{T} \int_0^T I^2 \cos^2(\omega t) \D t = \frac{I^2}{2T} \int_0^T (1+\cos(2\omega t)) \D t\). Donc \(I_eff = \frac{I}{\sqrt{2}}\). De même \(U_eff = \frac{U}{\sqrt{2}}\).
-  \subsection{Puissance moyenne, énergie reçue}
-    La puissance instantanée est \(p=ui=UI\cos\omega t \cos(\omega t +\Phi) = \frac{UI}{2} (\cos(2\omega t +\Phi)+\cos \Phi)\). L'énergie électrocinétique reçue de la date \(t_1\) à la date \(t_2=t_1+nT+\theta\) avec \(\theta \in [0, T[\) est
-    \begin{equation}
-      W = \frac{UI}{2}\left( \int_{t_1}^{t_1+nT} \cos(2\omega t +\Phi) \D t + \int_{t_1+nT}^{t_1+nT+\theta} \cos(2\omega t +\Phi) \D t +\int_{t_1}^{t_2} \cos\Phi \D t \right).
-    \end{equation}
-    Le premier terme de la somme est nul (valeur moyenne d'un cosinus sur une période est nulle), le deuxième est compris entre \(\theta\) et \(-\theta\) et le troisième vaut \((t_2-t_1)\cos\Phi\). On a donc~:
-    \begin{equation}
-      \frac{UI}{2}((t_2-t_1)\cos\Phi-\theta) \leq W < \frac{UI}{2}((t_2-t_1)\cos\Phi+\theta),
-    \end{equation}
-    ou avec les valeurs efficaces~:
-    \begin{equation}
-      U_{eff}I_{eff}((t_2-t_1)\cos\Phi-\theta) \leq W < U_{eff}I_{eff}((t_2-t_1)\cos\Phi+\theta)t.
-    \end{equation}
-    Pour un nombre entier de périodes (\(\theta=0\))~: \(W = nT U_{eff}I_{eff}\cos\Phi\). En divisant par la durée \(nT\), on obtient la puissance moyenne~:
-    \begin{equation}
-      P = \frac{UI}{2}\cos\Phi = U_{eff}I_{eff}\cos\Phi.
-    \end{equation}
-    La puissance apparente (en \(\si{\volt \ampere}\)) est \(P_A = \frac{UI}{2} = U_{eff}I_{eff}\), le facteur de puissance est \(\cos\Phi\) et donc \(P = P_A \cos\Phi\). On voit que sur l'encadrement effectué auparavant pour \(W\) que l'énergie électrocinétique reçue ne vaut \(W = P(t_2-t_1) = (t_2-t_1) U_{eff}I_{eff}\cos\Phi\) que dans l'un des cas suivants~:
-    \begin{itemize}
-      \item si \(t_2-t_1 = nT\), \item si \((t_2-t_1)\cos\Phi >> \theta\) donc si \(t_2-t_1 >> T\) et \(\cos\Phi\) pas trop petit.
-    \end{itemize}
-  \subsection{Remarques}
-    Pour une puissance moyenne donnée reçue par un utilisateur du réseau EDF l'intensité efficace sera d'autant plus grande et les pertes par effet Joule le long des lignes de transport seront d'autant plus grande que le facteur de puissance sera plus petit. Aussi, EDF impose aux utilisateurs de compenser l'effet inductif des bobinages des moteurs par l'effet capacitif de condensateur de telle façon que le facteur de puissance soit d'au moins 0,9 sous peines d'amendes.
-  \subsection{Autres expressions de la puissance moyenne}
-    Pour un dipôle linéaire d'impédance complexe \(\Zc = R +\ju S\), on a \(\uc = \Zc \ic\) et \(\Phi = \Arg(\uc) - \Arg(\ic)\) donc \(\Phi = \Arg(\Zc_{C_0})\), le facteur de puissance est \(\cos\Phi = \frac{R}{Z}\). La puissance moyenne est \(P = \frac{UI}{2}\cos\Phi = \frac{ZI^2}{2} \frac{R}{Z}\), soit \(P=\frac{RI^2}{2}=RI_{eff}^2\). Sur un nombre entier de périodes ou sur un temps très long, si le facteur de puissance n'est pas trop petit, l'énergie reçue est \(W=RI_{eff}^2 \Delta t\). En un nombre entier de périodes toute l'énergie électrocinétique est dissipée par effet Joule.
-  \subsection{Adaptation d'impédance}
-    Pour un dipôle d'impédance complexe \(\Zc = R + \ju S\) branché sur un générateur de force électromotrice complexe \(\ec = E\exp(\ju \omega t)\) d'impédance complexe \(\zc = r + \ju s\), on a \(\Ic = \frac{\Ec}{\Zc + \zc}\), donc \(I^2 = \frac{E^2}{(R+r)^2+(S+s)^2}\). La puissance moyenne reçue par le dipôle \(P = \frac{RI^2}{2} = \frac{RE^2}{2((R+r)^2+(S+s)^2)}\). Elle sera maximale si on adapte le dipôle de telle façon que \(S=-s\) et \(\derived{R/(R+r)^2}{R}=0\), soit \((R+r)^2-2R(R+r)=0\), soit \(R=r\). Le dipôle est donc adapté si et seulement si \(\Zc = \zc^*\), le conjugué de \(\zc\). La puissance maximale est donc \(P_M = \frac{E^2}{8r} = \frac{E_{eff}^2}{4r}\).
+\subsection{Tension efficace, intensité efficace}
+Si \(\Phi\) est le déphasage de la tension sur l'intensité dans le dipôle et \(U\) et \(I\) les amplitudes de \(u\) et de \(i\), on a par exemple~: \(i=I\cos(\omega t)\) et \(u=U\cos(\omega t+\Phi)\), alors \(I_eff^2 = \frac{1}{T} \int_0^T I^2 \cos^2(\omega t) \D t = \frac{I^2}{2T} \int_0^T (1+\cos(2\omega t)) \D t\). Donc \(I_eff = \frac{I}{\sqrt{2}}\). De même \(U_eff = \frac{U}{\sqrt{2}}\).
+\subsection{Puissance moyenne, énergie reçue}
+La puissance instantanée est \(p=ui=UI\cos\omega t \cos(\omega t +\Phi) = \frac{UI}{2} (\cos(2\omega t +\Phi)+\cos \Phi)\). L'énergie électrocinétique reçue de la date \(t_1\) à la date \(t_2=t_1+nT+\theta\) avec \(\theta \in [0, T[\) est
+\begin{equation}
+  W = \frac{UI}{2}\left( \int_{t_1}^{t_1+nT} \cos(2\omega t +\Phi) \D t + \int_{t_1+nT}^{t_1+nT+\theta} \cos(2\omega t +\Phi) \D t +\int_{t_1}^{t_2} \cos\Phi \D t \right).
+\end{equation}
+Le premier terme de la somme est nul (valeur moyenne d'un cosinus sur une période est nulle), le deuxième est compris entre \(\theta\) et \(-\theta\) et le troisième vaut \((t_2-t_1)\cos\Phi\). On a donc~:
+\begin{equation}
+  \frac{UI}{2}((t_2-t_1)\cos\Phi-\theta) \leq W < \frac{UI}{2}((t_2-t_1)\cos\Phi+\theta),
+\end{equation}
+ou avec les valeurs efficaces~:
+\begin{equation}
+  U_{eff}I_{eff}((t_2-t_1)\cos\Phi-\theta) \leq W < U_{eff}I_{eff}((t_2-t_1)\cos\Phi+\theta)t.
+\end{equation}
+Pour un nombre entier de périodes (\(\theta=0\))~: \(W = nT U_{eff}I_{eff}\cos\Phi\). En divisant par la durée \(nT\), on obtient la puissance moyenne~:
+\begin{equation}
+  P = \frac{UI}{2}\cos\Phi = U_{eff}I_{eff}\cos\Phi.
+\end{equation}
+La puissance apparente (en \(\si{\volt \ampere}\)) est \(P_A = \frac{UI}{2} = U_{eff}I_{eff}\), le facteur de puissance est \(\cos\Phi\) et donc \(P = P_A \cos\Phi\). On voit que sur l'encadrement effectué auparavant pour \(W\) que l'énergie électrocinétique reçue ne vaut \(W = P(t_2-t_1) = (t_2-t_1) U_{eff}I_{eff}\cos\Phi\) que dans l'un des cas suivants~:
+\begin{itemize}
+  \item si \(t_2-t_1 = nT\), \item si \((t_2-t_1)\cos\Phi >> \theta\) donc si \(t_2-t_1 >> T\) et \(\cos\Phi\) pas trop petit.
+\end{itemize}
+\subsection{Remarques}
+Pour une puissance moyenne donnée reçue par un utilisateur du réseau EDF l'intensité efficace sera d'autant plus grande et les pertes par effet Joule le long des lignes de transport seront d'autant plus grande que le facteur de puissance sera plus petit. Aussi, EDF impose aux utilisateurs de compenser l'effet inductif des bobinages des moteurs par l'effet capacitif de condensateur de telle façon que le facteur de puissance soit d'au moins 0,9 sous peines d'amendes.
+\subsection{Autres expressions de la puissance moyenne}
+Pour un dipôle linéaire d'impédance complexe \(\Zc = R +\ju S\), on a \(\uc = \Zc \ic\) et \(\Phi = \Arg(\uc) - \Arg(\ic)\) donc \(\Phi = \Arg(\Zc_{C_0})\), le facteur de puissance est \(\cos\Phi = \frac{R}{Z}\). La puissance moyenne est \(P = \frac{UI}{2}\cos\Phi = \frac{ZI^2}{2} \frac{R}{Z}\), soit \(P=\frac{RI^2}{2}=RI_{eff}^2\). Sur un nombre entier de périodes ou sur un temps très long, si le facteur de puissance n'est pas trop petit, l'énergie reçue est \(W=RI_{eff}^2 \Delta t\). En un nombre entier de périodes toute l'énergie électrocinétique est dissipée par effet Joule.
+\subsection{Adaptation d'impédance}
+Pour un dipôle d'impédance complexe \(\Zc = R + \ju S\) branché sur un générateur de force électromotrice complexe \(\ec = E\exp(\ju \omega t)\) d'impédance complexe \(\zc = r + \ju s\), on a \(\Ic = \frac{\Ec}{\Zc + \zc}\), donc \(I^2 = \frac{E^2}{(R+r)^2+(S+s)^2}\). La puissance moyenne reçue par le dipôle \(P = \frac{RI^2}{2} = \frac{RE^2}{2((R+r)^2+(S+s)^2)}\). Elle sera maximale si on adapte le dipôle de telle façon que \(S=-s\) et \(\derived{R/(R+r)^2}{R}=0\), soit \((R+r)^2-2R(R+r)=0\), soit \(R=r\). Le dipôle est donc adapté si et seulement si \(\Zc = \zc^*\), le conjugué de \(\zc\). La puissance maximale est donc \(P_M = \frac{E^2}{8r} = \frac{E_{eff}^2}{4r}\).
 \section{Exercices}
-  \begin{exercice}[Dipôle \(R, L, C\) parallèle]
-    Faire une étude du dipôle \(R, L, C\) parallèle soumis à une source de courant alternatif sinusoïdal, en régime permanent. On mènera cette étude comme celle du dipôle \(R, L, C\) série soumis à une source de tension alternative sinusoïdale effectuée en cours.
-  \end{exercice}
-  \begin{exercice}[Quartz piézo-électrique]
-    Un quartz piézo-électrique peut être modélisé sous la forme du dipôle \(AB\) représenté ci-dessous. Une tension alternative sinusoïdale est appliquée entre \(A\) et \(B\). On donne \(L=\SI{1}{mH}\), \(C=\SI{1}{nF}\) et \(C'=\SI{10}{pF}\).
-    \begin{enumerate}
-      \item Calculer la fréquence de résonance \(f_R\) (\(I\) théoriquement infini) et d'antirésonance \(f_A\) (\(I\) nul). \item On fait osciller le quartz sur la fréquence \(f_R\). L'intensité du courant est très grande sans être infinie car le circuit a une résistance négligeable devant les autres impédances mais non nulle. Calculer en \(\si{\ohm\per\hertz}\), la variation d'impédance créée par une petite variation de fréquence au voisinage de la résonance, amplitude de la tension entre \(A\) et \(B\) étant maintenue constante. Quelle propriété essentielle du quartz met-on ainsi en évidence ?
-    \end{enumerate}
-  \end{exercice}
-  \begin{exercice}[Dipôle \(R, L, C\) de capacité variable]
-    Soit un dipôle \(R, L, C\) série de capacité variable, de résistance et d'inductance fixes, en régime sinusoïdale permanent sous une tension de valeur maximale \(U\) et de pulsation \(\omega\) fixes. On note \(C_0\) la valeur de \(C\) pour laquelle il y a résonance d'intensité (\(I\) maximal). \(Q = L\omega/R\) et le déphasage \(\varphi\) de la tension par rapport à l'intensité. On pose \(x = C/C_0\) et \(y=RI/U\).
-    \begin{itemize}
-      \item Étudier la réponse du dipôle sous la forme \(y=f(x)\) et \(\varphi=g(x)\) et tracer les graphes correspondants pour les valeurs de \(Q\) suivantes : \(0.5, 1, 2, 10\).
-      \item Pour quelles valeurs \(x_1\) et \(x_2>x_1\) de \(x\) a-t-on \(y=1/\sqrt{2}\) ? Quelle est la largeur \(x_2-x_1\) de la bande passante en capacité ? Pour quelle valeur de \(Q\) devient elle infinie ? Exprimer le facteur de qualité défini ici par \(Q' = \frac{C_0}{C_2-C_1} = \frac{1}{x_2-x_1}\) en fonction de \(Q\)
-    \end{itemize}
-  \end{exercice}
-  \begin{exercice}[Puissance moyenne, puissance instantanée]
-    L'intensité dans un dipôle est \(i = I\cos(\omega t)\) et la tension aux bornes du dipôle \(u=U\cos(\omega t +\varphi)\). La puissance instantanée reçue par le dipôle est notée \(p\) et la puissance moyenne \(P\).
-    \begin{itemize}
+\begin{exercice}[Dipôle \(R, L, C\) parallèle]
+  Faire une étude du dipôle \(R, L, C\) parallèle soumis à une source de courant alternatif sinusoïdal, en régime permanent. On mènera cette étude comme celle du dipôle \(R, L, C\) série soumis à une source de tension alternative sinusoïdale effectuée en cours.
+\end{exercice}
+\begin{exercice}[Quartz piézo-électrique]
+  Un quartz piézo-électrique peut être modélisé sous la forme du dipôle \(AB\) représenté ci-dessous. Une tension alternative sinusoïdale est appliquée entre \(A\) et \(B\). On donne \(L=\SI{1}{mH}\), \(C=\SI{1}{nF}\) et \(C'=\SI{10}{pF}\).
+  \begin{enumerate}
+    \item Calculer la fréquence de résonance \(f_R\) (\(I\) théoriquement infini) et d'antirésonance \(f_A\) (\(I\) nul). \item On fait osciller le quartz sur la fréquence \(f_R\). L'intensité du courant est très grande sans être infinie car le circuit a une résistance négligeable devant les autres impédances mais non nulle. Calculer en \(\si{\ohm\per\hertz}\), la variation d'impédance créée par une petite variation de fréquence au voisinage de la résonance, amplitude de la tension entre \(A\) et \(B\) étant maintenue constante. Quelle propriété essentielle du quartz met-on ainsi en évidence ?
+  \end{enumerate}
+\end{exercice}
+\begin{exercice}[Dipôle \(R, L, C\) de capacité variable]
+  Soit un dipôle \(R, L, C\) série de capacité variable, de résistance et d'inductance fixes, en régime sinusoïdale permanent sous une tension de valeur maximale \(U\) et de pulsation \(\omega\) fixes. On note \(C_0\) la valeur de \(C\) pour laquelle il y a résonance d'intensité (\(I\) maximal). \(Q = L\omega/R\) et le déphasage \(\varphi\) de la tension par rapport à l'intensité. On pose \(x = C/C_0\) et \(y=RI/U\).
+  \begin{itemize}
+    \item Étudier la réponse du dipôle sous la forme \(y=f(x)\) et \(\varphi=g(x)\) et tracer les graphes correspondants pour les valeurs de \(Q\) suivantes : \(0.5, 1, 2, 10\).
+    \item Pour quelles valeurs \(x_1\) et \(x_2>x_1\) de \(x\) a-t-on \(y=1/\sqrt{2}\) ? Quelle est la largeur \(x_2-x_1\) de la bande passante en capacité ? Pour quelle valeur de \(Q\) devient elle infinie ? Exprimer le facteur de qualité défini ici par \(Q' = \frac{C_0}{C_2-C_1} = \frac{1}{x_2-x_1}\) en fonction de \(Q\)
+  \end{itemize}
+\end{exercice}
+\begin{exercice}[Puissance moyenne, puissance instantanée]
+  L'intensité dans un dipôle est \(i = I\cos(\omega t)\) et la tension aux bornes du dipôle \(u=U\cos(\omega t +\varphi)\). La puissance instantanée reçue par le dipôle est notée \(p\) et la puissance moyenne \(P\).
+  \begin{itemize}
     \item Montrer que l'écart relatif entre la puissance instantanée et la puissance moyenne est \(\epsilon_P(t) = \frac{p-P}{P} = \frac{\cos(2\omega t +\varphi)}{\cos\phi}\).
     \item On note \(w\) l'énergie électrocinétique reçue par le dipôle de \(0\) à \(t\) et \(W=Pt\) l'énergie calculée avec la puissance moyenne. Montrer que l'écart relatif entre \(w\) et \(W\) est \(\epsilon_W(t) = \frac{w-W}{W} = \frac{\sin(2\omega t + \varphi)-\sin\varphi}{2\omega t \cos\varphi}\).
     \item Donner la borne supérieur de la valeur absolue de l'erreur relative que l'on fait en assimilant \(w\) à \(W\) pour un temps court ou pour un facteur de puissance trop petit.
     \item Application numérique : Au bout de combien de périodes peut-on affirmer que l'erreur relative est inférieure à \(0.1\%\) si \(\varphi=89°\) ? Quelle est la date correspondante \(t\) si la fréquence est de \(\SI{50}{\hertz}\) ?
-    \end{itemize}
-  \end{exercice}
-  \begin{exercice}
-    Pour chacune des tensions périodiques suivantes, donner en fonction de l'amplitude (ou tension crête) \(U_M\) et éventuellement du rapport cyclique \(x\)~:
-    \begin{itemize}
-      \item la valeur moyenne de \(u\) sur une période ;
-      \item la valeur donnée par un voltmètre usuel \(\frac{\pi}{2\sqrt{2}} U_{MR}\) avec \(U_{MR}\) étant la valeur moyenne redressée \(U_{MR} = \frac{1}{T} \int_0^T \abs{u} \D t\) ;
-      \item la valeur efficace vraie \(U\) donnée par un voltmètre efficace vrai (voltmètre RMS, c'est-à-dire \emph{root mean square}).
-    \end{itemize}
+  \end{itemize}
+\end{exercice}
+\begin{exercice}
+  Pour chacune des tensions périodiques suivantes, donner en fonction de l'amplitude (ou tension crête) \(U_M\) et éventuellement du rapport cyclique \(x\)~:
+  \begin{itemize}
+    \item la valeur moyenne de \(u\) sur une période ;
+    \item la valeur donnée par un voltmètre usuel \(\frac{\pi}{2\sqrt{2}} U_{MR}\) avec \(U_{MR}\) étant la valeur moyenne redressée \(U_{MR} = \frac{1}{T} \int_0^T \abs{u} \D t\) ;
+    \item la valeur efficace vraie \(U\) donnée par un voltmètre efficace vrai (voltmètre RMS, c'est-à-dire \emph{root mean square}).
+  \end{itemize}
 
-    Dans chaque cas étudiée, on représentera \(u(t)\) sur une période et on comparera les indications données par un voltmètre usuel à celle que donnerait un voltmètre efficace vrai.
-    \begin{enumerate}
-      \item Tension en créneaux symétrique de rapport cyclique \(x\);
-      \item Tension en créneaux positif de rapport cyclique \(x\);
-      \item Tension triangulaire symatrique de rapport cyclique \(x\);
-      \item Tension alternative sinusoïdale;
-      \item Tension alternative sinusoïdale redressée simple alternance;
-      \item Tension alternative sinusoïdale redressée double alternance;
-      \item Tension alternative sinusoïdale écrêtée à \(86.6\%\) pour les alternances positives par un phénomène de saturation (\(\cos\pi/3 = 0.866\)).
-    \end{enumerate}
-  \end{exercice}
-  \begin{exercice}[Différentes expressions de la puissance moyenne]
-    On considère un dipôle \(R, L, C\) série d'impédance complexe \(\Zc\) et d'admittance complexe \(\Yc\). On note \(\Ic\) et \(\Uc\) les amplitudes complexes de l'intensité et de la tension et \(P\) la puissance moyenne pour ce dipôle. Démontrer~: \(R = \frac{\Zc + \Zc^*}{2}\) ; \(P = \frac{(\Zc + \Zc^*)\ic \ic^*}{4}\) ; \(P = \frac{\uc\ic^* + \uc^*\ic}{4}\) ; \(P = \frac{(\Yc+\Yc^*)\uc\uc^*}{4}\). Peut-on écrire les mêmes relations en remplaçant les grandeurs complexes instantanées \(\ic\) et \(\uc\) par les amplitudes complexes \(\Uc\) et \(\Ic\) ?
+  Dans chaque cas étudiée, on représentera \(u(t)\) sur une période et on comparera les indications données par un voltmètre usuel à celle que donnerait un voltmètre efficace vrai.
+  \begin{enumerate}
+    \item Tension en créneaux symétrique de rapport cyclique \(x\);
+    \item Tension en créneaux positif de rapport cyclique \(x\);
+    \item Tension triangulaire symatrique de rapport cyclique \(x\);
+    \item Tension alternative sinusoïdale;
+    \item Tension alternative sinusoïdale redressée simple alternance;
+    \item Tension alternative sinusoïdale redressée double alternance;
+    \item Tension alternative sinusoïdale écrêtée à \(86.6\%\) pour les alternances positives par un phénomène de saturation (\(\cos\pi/3 = 0.866\)).
+  \end{enumerate}
+\end{exercice}
+\begin{exercice}[Différentes expressions de la puissance moyenne]
+  On considère un dipôle \(R, L, C\) série d'impédance complexe \(\Zc\) et d'admittance complexe \(\Yc\). On note \(\Ic\) et \(\Uc\) les amplitudes complexes de l'intensité et de la tension et \(P\) la puissance moyenne pour ce dipôle. Démontrer~: \(R = \frac{\Zc + \Zc^*}{2}\) ; \(P = \frac{(\Zc + \Zc^*)\ic \ic^*}{4}\) ; \(P = \frac{\uc\ic^* + \uc^*\ic}{4}\) ; \(P = \frac{(\Yc+\Yc^*)\uc\uc^*}{4}\). Peut-on écrire les mêmes relations en remplaçant les grandeurs complexes instantanées \(\ic\) et \(\uc\) par les amplitudes complexes \(\Uc\) et \(\Ic\) ?
 
-    On nomme puissance complexe la grandeurs \(\pc = \frac{\uc \ic^*}{2}\). Sa partie réelle est appelée puissance active et sa partie imaginaire puissance réactive. Démontrer que la puissance active est toujours positive et que la puissance réactive peut être positive ou négative.
-  \end{exercice}
-  \begin{exercice}[Puissance moyenne dans un dipôle \(R, L, C\) série]
-    Étudier en fonction de la pulsation \(\omega\), pour un dipôle \(R, L, C\) série sous une tension efficace \(U\) constante, les variations de la puissance moyenne \(P\).
-  \end{exercice}
-  \begin{exercice}[Puissance dissipée dans une résistance]
-    On considère le dipôle formé par \(R, L, C\) et \(R_L\) placés en parallèle et parcourus par un courant total \(i = I\cos\omega t\).
-    \begin{enumerate}
-      \item Montrer que si \(\omega\) vérifie une certaine relation avec \(c\) et \(L\)=, l'amplitude \(V\) de la tension au bornes de \(R_L\) est la plus grande possible. Que vaut alors \(V\) ?
-      \item La relation précédente étant vérifiée, exprimer la puissance moyenne \(P\) dissipée par \(R_L\). Comment choisir \(R_L\) pour que cette puissance soit maximale ? Que vaut alors \(P\) en fonction de \(R\) et de \(I\) ?
-    \end{enumerate}
-  \end{exercice}
-  \begin{exercice}[Méthode des trois ampèremètres]
-    On se propose de mesurer la puissance \(P\) dissipée dans une impédance quelconque de valeur complexe \(\Zc\). Pour cela, on considère le montage ci-contre dans lequel \(r\) est une résistance pure et on suppose que chaque ampèremètre a une résistance négligeable. Exprimer \(P\) en fonction de \(r\) et des intensités efficaces \(I_1\), \(I_2\) et \(I_3\) mesurées par les ampèremètres.
-  \end{exercice}
+  On nomme puissance complexe la grandeurs \(\pc = \frac{\uc \ic^*}{2}\). Sa partie réelle est appelée puissance active et sa partie imaginaire puissance réactive. Démontrer que la puissance active est toujours positive et que la puissance réactive peut être positive ou négative.
+\end{exercice}
+\begin{exercice}[Puissance moyenne dans un dipôle \(R, L, C\) série]
+  Étudier en fonction de la pulsation \(\omega\), pour un dipôle \(R, L, C\) série sous une tension efficace \(U\) constante, les variations de la puissance moyenne \(P\).
+\end{exercice}
+\begin{exercice}[Puissance dissipée dans une résistance]
+  On considère le dipôle formé par \(R, L, C\) et \(R_L\) placés en parallèle et parcourus par un courant total \(i = I\cos\omega t\).
+  \begin{enumerate}
+    \item Montrer que si \(\omega\) vérifie une certaine relation avec \(c\) et \(L\)=, l'amplitude \(V\) de la tension au bornes de \(R_L\) est la plus grande possible. Que vaut alors \(V\) ?
+    \item La relation précédente étant vérifiée, exprimer la puissance moyenne \(P\) dissipée par \(R_L\). Comment choisir \(R_L\) pour que cette puissance soit maximale ? Que vaut alors \(P\) en fonction de \(R\) et de \(I\) ?
+  \end{enumerate}
+\end{exercice}
+\begin{exercice}[Méthode des trois ampèremètres]
+  On se propose de mesurer la puissance \(P\) dissipée dans une impédance quelconque de valeur complexe \(\Zc\). Pour cela, on considère le montage ci-contre dans lequel \(r\) est une résistance pure et on suppose que chaque ampèremètre a une résistance négligeable. Exprimer \(P\) en fonction de \(r\) et des intensités efficaces \(I_1\), \(I_2\) et \(I_3\) mesurées par les ampèremètres.
+\end{exercice}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "physique"
