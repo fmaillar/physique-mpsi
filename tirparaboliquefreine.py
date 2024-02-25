@@ -12,7 +12,7 @@ from scipy.integrate import odeint
 from scipy import integrate
 import matplotlib.pyplot as plt
 from itertools import cycle
-from labellines import labelLines
+# from labellines import labelLines
 
 #def chute_frot_x(vx, t, g, m, k):        
 #    return -k/m*vx
