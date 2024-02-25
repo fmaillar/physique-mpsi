@@ -3,63 +3,63 @@
 \minilof
 \minilot
 
-\section{Oscillateur harmonique soumis à des frottements fluides et à une force 
+\section{Oscillateur harmonique soumis à des frottements fluides et à une force
 excitatrice sinusoïdale}
-On considèrera dans ce chapitre un point matériel \(M\), de masse \(m\), mobile 
+On considèrera dans ce chapitre un point matériel \(M\), de masse \(m\), mobile
 sur un axe \((Ox)\), soumis à~:
 \begin{itemize}
   \item une force de rappel, due à un ressort parfait, \(-kx \ux\),
-  \item une force de frottement fluide, visqueux, du type \(-\alpha \dot{x} 
+  \item une force de frottement fluide, visqueux, du type \(-\alpha \dot{x}
     \ux\), c'est-à-dire proportionnelle à la vitesse du point \(M\),
-  \item une force excitatrice \(f \ux\), on n'étudiera que le cas où la force 
-    excitatrice est une fonction sinusoïdale de la date soit \(f = F\cos(\omega 
+  \item une force excitatrice \(f \ux\), on n'étudiera que le cas où la force
+    excitatrice est une fonction sinusoïdale de la date soit \(f = F\cos(\omega
     t + \varphi)\).
 \end{itemize}
 L'élongation de \(M\) est solution d'une équation différentielle~:
 \begin{equation}
   m\ddot{x}+\alpha\dot{x}+kx = f.
 \end{equation}
-La solution de l'équation différentielle est la somme de la solution générale de 
-l'équation sans second membre (notée \(x_T\)) et d'une solution particulière de 
-l'équation complète (notée \(x_P\)). Les constantes d'intégration intervenant 
-dans \(x_T\) étant déterminées par les conditions initiales (en utilisant la 
-solution complète \(x = x_T+x_P\)). 
+La solution de l'équation différentielle est la somme de la solution générale de
+l'équation sans second membre (notée \(x_T\)) et d'une solution particulière de
+l'équation complète (notée \(x_P\)). Les constantes d'intégration intervenant
+dans \(x_T\) étant déterminées par les conditions initiales (en utilisant la
+solution complète \(x = x_T+x_P\)).
 
-La solution de l'équation sans second membre \(x_T\) peut prendre différentes 
-forme, comme on l'a vu dans la section \ref{sec:regpropresRLC}, suivant la valeur 
-de l'amortissement. Dans tous les cas, la solution générale tend vers 0 du fait 
+La solution de l'équation sans second membre \(x_T\) peut prendre différentes
+forme, comme on l'a vu dans la section \ref{sec:regpropresRLC}, suivant la valeur
+de l'amortissement. Dans tous les cas, la solution générale tend vers 0 du fait
 de la présence d'exponentielles décroissantes \ldots
 
-On a vu en électrocinétique qu'une solution particulière de ce type d'équation 
-est sinusoïdale, de même pulsation que le second membre de l'équation 
-différentielle, soit \(x_P = X\cos(\omega t + \Psi)\). Au bout d'un temps, on 
-peut faire l'approximation \(x = x_P\) et l'oscillateur est en \emph{régime 
-sinusoïdal permanent}. 
+On a vu en électrocinétique qu'une solution particulière de ce type d'équation
+est sinusoïdale, de même pulsation que le second membre de l'équation
+différentielle, soit \(x_P = X\cos(\omega t + \Psi)\). Au bout d'un temps, on
+peut faire l'approximation \(x = x_P\) et l'oscillateur est en \emph{régime
+sinusoïdal permanent}.
 
-On ne cherchera ici que la solution particulière sinusoïdale, c'est-à-dire 
-l'amplitude et le déphasage de \(x\) par rapport à \(f\), en régime sinusoïdal 
+On ne cherchera ici que la solution particulière sinusoïdale, c'est-à-dire
+l'amplitude et le déphasage de \(x\) par rapport à \(f\), en régime sinusoïdal
 permanent.
 
-\section{Recherche de l'amplitude et du déphasage en régime sinusoïdal 
+\section{Recherche de l'amplitude et du déphasage en régime sinusoïdal
 permanent}
-On peut mettre l'équation différentielle sous l'une de ses formes en posant 
-\(\lambda = \alpha/(2m)\) le coefficient d'amortissement et 
-\(\omega_0=\sqrt{k/m}\) la pulsation propre, alors \(\ddot{x}+2\lambda 
+On peut mettre l'équation différentielle sous l'une de ses formes en posant
+\(\lambda = \alpha/(2m)\) le coefficient d'amortissement et
+\(\omega_0=\sqrt{k/m}\) la pulsation propre, alors \(\ddot{x}+2\lambda
 \dot{x}+\omega_0^2x = f/m\).
-En définissant le facteur de qualité \(Q = 
-\frac{m\omega_0}{\alpha}=\frac{\sqrt{km}}{\alpha}=\frac{k}{\alpha\omega_0}\) on 
-peut aussi écrire que \(\ddot{x}+\frac{\omega_0}{Q}\dot{x}+\omega_0^2 
+En définissant le facteur de qualité \(Q =
+\frac{m\omega_0}{\alpha}=\frac{\sqrt{km}}{\alpha}=\frac{k}{\alpha\omega_0}\) on
+peut aussi écrire que \(\ddot{x}+\frac{\omega_0}{Q}\dot{x}+\omega_0^2
 x=\frac{f}{m}\).
 
-La résolution utilise la même méthode qu'en électrocinétique~: on associe à 
-chaque grandeur fonction sinusoïdale du temps, une \emph{grandeur complexe 
+La résolution utilise la même méthode qu'en électrocinétique~: on associe à
+chaque grandeur fonction sinusoïdale du temps, une \emph{grandeur complexe
 associée}.
-\(\xc = \Xc\exp(\ii\omega t)\) avec \(\Xc = X\exp(\ii\psi)\) et \(\fc = 
+\(\xc = \Xc\exp(\ii\omega t)\) avec \(\Xc = X\exp(\ii\psi)\) et \(\fc =
 \Fc\exp(\ii\omega t)\) avec \(\Fc = F\exp(\ii\phi)\).
 
-\(\xc\) est donc solution de l'équation différentielle complexe associée~: 
-\(\ddot{\xc}+\frac{\omega_0}{Q}\dot{\xc}+\omega_0^2 \xc=\frac{\fc}{m}\), soit 
-\((\ii\omega)^2\xc + (\ii\omega)\frac{\omega_0}{Q}\xc+\omega_0^2\xc = 
+\(\xc\) est donc solution de l'équation différentielle complexe associée~:
+\(\ddot{\xc}+\frac{\omega_0}{Q}\dot{\xc}+\omega_0^2 \xc=\frac{\fc}{m}\), soit
+\((\ii\omega)^2\xc + (\ii\omega)\frac{\omega_0}{Q}\xc+\omega_0^2\xc =
 \frac{\fc}{m}\), soit en divisant par \(\exp(\ii\omega t)\) les deux membres~:
 \begin{equation}
   \label{eq:elongationcomplexe}
@@ -68,66 +68,66 @@ associée}.
 
 On déduit donc l'amplitude de l'élongation en passant au module~:
 \begin{equation}
-  X = 
+  X =
   \frac{F/m}{\sqrt{(\omega_0^2-\omega^2)^2+\left(\frac{\omega\omega_0}{Q}\right)^2}},
 \end{equation}
-et le déphasage de l'élongation par rapport à l'abscisse de la force 
+et le déphasage de l'élongation par rapport à l'abscisse de la force
 excitatrice~: \(\psi-\varphi = \Phi\)~: \begin{itemize}
-  \item si \(\omega<\omega_0\)~: \(\Phi = 
+  \item si \(\omega<\omega_0\)~: \(\Phi =
     \arctan(\frac{\omega\omega_0}{Q(\omega^2-\omega_0^2)})\);
-  \item si \(\omega>\omega_0\)~: \(\Phi = -\pi + 
+  \item si \(\omega>\omega_0\)~: \(\Phi = -\pi +
     \arctan(\frac{\omega\omega_0}{Q(\omega^2-\omega_0^2)})\);
   \item si \(\omega=\omega_0\)~: \(\Phi = -\frac{\pi}{2}\)
 \end{itemize}
-On constate que si \(\omega = 0\), alors \(\Phi=0\) et \(X_0 = 
-\frac{F}{m\omega_0^2}\). En l'infini, \(X\) tend vers 0 et \(\Phi\) tend vers 
+On constate que si \(\omega = 0\), alors \(\Phi=0\) et \(X_0 =
+\frac{F}{m\omega_0^2}\). En l'infini, \(X\) tend vers 0 et \(\Phi\) tend vers
 \(-\pi\).
 
 \section{Résonance d'élongation}
 \subsection{Pulsation à la résonance, amplitude de l'élongation à la résonance}
 
-L'amplitude de l'élongation est maximale lorsque 
-\((\omega_0^2-\omega^2)^2+\left(\frac{\omega\omega_0}{Q}\right)^2\) est minimal, 
-donc lorsque sa dérivée (par rapport à \(\omega\)) est nulle~: 
-\(2(-2\omega)(\omega_0^2-\omega^2)+2\omega\frac{\omega_0^2}{Q^2} = 0\), 
-c'est-à-dire pour \(\omega = 0\) et pour \(\omega = 
+L'amplitude de l'élongation est maximale lorsque
+\((\omega_0^2-\omega^2)^2+\left(\frac{\omega\omega_0}{Q}\right)^2\) est minimal,
+donc lorsque sa dérivée (par rapport à \(\omega\)) est nulle~:
+\(2(-2\omega)(\omega_0^2-\omega^2)+2\omega\frac{\omega_0^2}{Q^2} = 0\),
+c'est-à-dire pour \(\omega = 0\) et pour \(\omega =
 \omega_0\sqrt{1-\frac{1}{2Q^2}}\).
 
-\emph{Il n'y a donc résonance d'élongation que si \(Q>\frac{1}{\sqrt{2}}\)} et 
-la pulsation à la résonance est inférieure à la pulsation propre \(\omega_r = 
-\omega_0\sqrt{1-\frac{1}{2Q^2}}\). L'amplitude à la résonance d'élongation est 
-donc~: \(X_r = \frac{QX_0}{\sqrt{1-\frac{1}{4Q^2}}}\). 
+\emph{Il n'y a donc résonance d'élongation que si \(Q>\frac{1}{\sqrt{2}}\)} et
+la pulsation à la résonance est inférieure à la pulsation propre \(\omega_r =
+\omega_0\sqrt{1-\frac{1}{2Q^2}}\). L'amplitude à la résonance d'élongation est
+donc~: \(X_r = \frac{QX_0}{\sqrt{1-\frac{1}{4Q^2}}}\).
 
-Si \(Q>\frac{1}{\sqrt{2}}\), l'amplitude maximale vaut donc l'amplitude à la 
+Si \(Q>\frac{1}{\sqrt{2}}\), l'amplitude maximale vaut donc l'amplitude à la
 résonance : \(X_m = X_r\) ; sinon \(X_m = X_0\).
 
-On remarque que \(X_r\) est une fonction croissante de \(Q\) et que 
+On remarque que \(X_r\) est une fonction croissante de \(Q\) et que
 \(\lim\limits_{Q\to\infty} \omega_r = \omega_0\) et
-\(\lim\limits_{Q\to\infty} X_r = +\infty\). D'autre part, de l'expression de 
-\(\omega_r\), on obtient \(Q^2 = 
-\frac{1}{2\left(1-\left(\frac{\omega_R}{\omega_0}\right)^2\right)}\) et en 
-reportant dans l'expression de \(X_m\), on obtient après simplification~: \(X_m 
+\(\lim\limits_{Q\to\infty} X_r = +\infty\). D'autre part, de l'expression de
+\(\omega_r\), on obtient \(Q^2 =
+\frac{1}{2\left(1-\left(\frac{\omega_R}{\omega_0}\right)^2\right)}\) et en
+reportant dans l'expression de \(X_m\), on obtient après simplification~: \(X_m
 = \frac{X_0}{\sqrt{1-\left(\frac{\omega_r}{\omega_0}\right)^4}}\).
 
-L'équation de la courbe sur laquelle se trouvent les maxima de \(X\) est donc 
+L'équation de la courbe sur laquelle se trouvent les maxima de \(X\) est donc
 \(X = \frac{X_0}{\sqrt{1-\left(\frac{\omega}{\omega_0}\right)^4}}\).
 
 \subsection{Variables réduites, tracés}
 \label{subsec:varred}
-Pour les tracés, on utilise les variables réduites~: \(\xi = \frac{X}{X_0} \ 
-\Omega = \frac{\omega}{\omega_0}\). On a alors~: \(\xi = 
-\left((1-\Omega^2)^2+\frac{\Omega^2}{Q^2}\right)^{-\frac{1}{2}}\) et \(\xi_m = 
-\frac{Q}{\sqrt{1-\frac{1}{4Q^2}}} = 
+Pour les tracés, on utilise les variables réduites~: \(\xi = \frac{X}{X_0} \
+\Omega = \frac{\omega}{\omega_0}\). On a alors~: \(\xi =
+\left((1-\Omega^2)^2+\frac{\Omega^2}{Q^2}\right)^{-\frac{1}{2}}\) et \(\xi_m =
+\frac{Q}{\sqrt{1-\frac{1}{4Q^2}}} =
 \left(\frac{1}{Q^2}-\frac{1}{4Q^4}\right)^{-\frac{1}{2}}\).
 
-Les maxima de \(\xi\) sont sur la courbe d'équation \(\xi = 
+Les maxima de \(\xi\) sont sur la courbe d'équation \(\xi =
 (1-\Omega^4)^{-\frac{1}{2}}\).
 
-Si \(\Omega <1\), alors \(\Phi = 
-\arctan\left(\frac{1}{Q\left(\Omega-\frac{1}{\Omega}\right)}\right)\). Si 
-\(\Omega >1\), alors \(\Phi = 
-\arctan\left(\frac{1}{Q\left(\Omega-\frac{1}{\Omega}\right)}\right) - \pi\). On 
-pourrait encore démontrer que dans tous les cas~: \(\Phi = 
+Si \(\Omega <1\), alors \(\Phi =
+\arctan\left(\frac{1}{Q\left(\Omega-\frac{1}{\Omega}\right)}\right)\). Si
+\(\Omega >1\), alors \(\Phi =
+\arctan\left(\frac{1}{Q\left(\Omega-\frac{1}{\Omega}\right)}\right) - \pi\). On
+pourrait encore démontrer que dans tous les cas~: \(\Phi =
 \arctan\left(Q\left(\frac{1}{\Omega}-\Omega\right)\right)-\frac{\pi}{2}\).
 
 Les courbes sont tracées sur la figure \ref{fig:oscforcees}.
@@ -135,87 +135,87 @@ Les courbes sont tracées sur la figure \ref{fig:oscforcees}.
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.7]{./Fig17.png}
-  \caption{\(\xi\) et \(\Phi\) à différentes valeurs valeurs du facteur de 
+  \caption{\(\xi\) et \(\Phi\) à différentes valeurs valeurs du facteur de
   qualité}
   \label{fig:oscforcees}
 \end{figure}
 
 \subsection{Bande passante à \SI{-3}{\deci\bel}}
 
-Pour \(Q \leq \frac{1}{\sqrt{2}}, \xi_m = 1\), donc à l'unique coupure, on a 
-\(\left(1-\Omega_c^2)^2+\frac{\Omega^2}{Q^2}\right)^{-0.5} = 2^{-0.5}\). On 
-obtient \(\Omega_C = \sqrt{1 - \frac{1}{2Q^2} + \sqrt{2 - \frac{1}{Q^2} + 
+Pour \(Q \leq \frac{1}{\sqrt{2}}, \xi_m = 1\), donc à l'unique coupure, on a
+\(\left(1-\Omega_c^2)^2+\frac{\Omega^2}{Q^2}\right)^{-0.5} = 2^{-0.5}\). On
+obtient \(\Omega_C = \sqrt{1 - \frac{1}{2Q^2} + \sqrt{2 - \frac{1}{Q^2} +
 \frac{1}{4Q^4}}}\).
 
-Pour \(Q \geqslant \frac{1}{\sqrt{2}}\), les coupures correspondent à \(\xi_C = 
-\frac{\xi_M}{\sqrt{2}} = \left(\frac{2}{Q^2}-\frac{1}{2Q^4}\right)^{-0.5}\), les 
-pulsations réduites aux coupures sont donc solutions de l'équation 
-\(1-\Omega^2)^2 +\frac{\Omega^2}{Q^2} = \frac{2}{Q^2} - \frac{1}{2Q^4}\), dont 
+Pour \(Q \geqslant \frac{1}{\sqrt{2}}\), les coupures correspondent à \(\xi_C =
+\frac{\xi_M}{\sqrt{2}} = \left(\frac{2}{Q^2}-\frac{1}{2Q^4}\right)^{-0.5}\), les
+pulsations réduites aux coupures sont donc solutions de l'équation
+\(1-\Omega^2)^2 +\frac{\Omega^2}{Q^2} = \frac{2}{Q^2} - \frac{1}{2Q^4}\), dont
 la résolution donne les résultats suivants~:
 \begin{itemize}
-  \item Si \(Q \geqslant \sqrt{1 + \frac{1}{\sqrt{2}}}\) il y a deux coupures, 
-    pour \(\Omega_C = \sqrt{1-\frac{1}{2Q^2} \pm \sqrt{\frac{1}{Q^2} - 
+  \item Si \(Q \geqslant \sqrt{1 + \frac{1}{\sqrt{2}}}\) il y a deux coupures,
+    pour \(\Omega_C = \sqrt{1-\frac{1}{2Q^2} \pm \sqrt{\frac{1}{Q^2} -
     \frac{1}{Q^4}}}\) ;
-  \item Si \(\frac{1}{\sqrt{2}} \leqslant Q \leqslant \sqrt{1 + 
-    \frac{1}{\sqrt{2}}}\) il n'y a qu'une coupure, 
-    pour \(\Omega_C = \sqrt{1-\frac{1}{2Q^2} + \sqrt{\frac{1}{Q^2} - 
+  \item Si \(\frac{1}{\sqrt{2}} \leqslant Q \leqslant \sqrt{1 +
+    \frac{1}{\sqrt{2}}}\) il n'y a qu'une coupure,
+    pour \(\Omega_C = \sqrt{1-\frac{1}{2Q^2} + \sqrt{\frac{1}{Q^2} -
     \frac{1}{Q^4}}}\).
 \end{itemize}
-On remarque que pour \(Q = \frac{1}{\sqrt{2}}\), \(\Omega_C = 1\) (donc 
-\(\omega_C = \omega_0\). On remarque aussi que \emph{si \(\Q\) est très grand}, 
-les pulsations de coupures peuvent être obtenues avec un développement limité~: 
-\(\Omega_1 \sim \sqrt{1-\frac{1}{Q}} \sim 1-\frac{1}{2Q}\) et \(\Omega_2 \sim 
-\sqrt{1+\frac{1}{Q}} \sim 1+\frac{1}{2Q}\). La bande passante est donc, en 
+On remarque que pour \(Q = \frac{1}{\sqrt{2}}\), \(\Omega_C = 1\) (donc
+\(\omega_C = \omega_0\). On remarque aussi que \emph{si \(\Q\) est très grand},
+les pulsations de coupures peuvent être obtenues avec un développement limité~:
+\(\Omega_1 \sim \sqrt{1-\frac{1}{Q}} \sim 1-\frac{1}{2Q}\) et \(\Omega_2 \sim
+\sqrt{1+\frac{1}{Q}} \sim 1+\frac{1}{2Q}\). La bande passante est donc, en
 pulsation réduite, \(\Delta\Omega \approx \frac{1}{Q}\), ou en pulsation~:
 \begin{equation}
-  \Delta\omega \approx \frac{\omega_0}{Q} = \frac{\alpha}{m} \quad Q \approx 
+  \Delta\omega \approx \frac{\omega_0}{Q} = \frac{\alpha}{m} \quad Q \approx
   \frac{\omega_0}{\Delta\omega}=\frac{N_0}{\Delta N}.
 \end{equation}
 
 \section{Résonance de vitesse}
 
-On rappelle l'équation \eqref{eq:elongationcomplexe}, \(\Xc = 
-\frac{\Fc/m}{\omega_0^2-\omega^2+\ii\frac{\omega\omega_0}{Q}}\). En posant \(v = 
-\dot{x}\) : abscisse de la vitesse, on a \(\Vitc = \ii \xc\) et on en déduit que 
+On rappelle l'équation \eqref{eq:elongationcomplexe}, \(\Xc =
+\frac{\Fc/m}{\omega_0^2-\omega^2+\ii\frac{\omega\omega_0}{Q}}\). En posant \(v =
+\dot{x}\) : abscisse de la vitesse, on a \(\Vitc = \ii \xc\) et on en déduit que
 \(\Vitc = \ii\omega \Xc\), soit~:
 \begin{equation}
-  \Vitc = \frac{\ii\omega \Fc/m}{\omega_0^2-\omega^2+\ii\frac{\omega\omega_0}{Q}} 
+  \Vitc = \frac{\ii\omega \Fc/m}{\omega_0^2-\omega^2+\ii\frac{\omega\omega_0}{Q}}
   = \frac{\frac{QF}{m\omega_0}}{1+\ii Q\left(\Omega-\frac{1}{\Omega}\right)}.
 \end{equation}
-La deuxième égalité s'obtient en multipliant le numérateur et le dénominateur 
+La deuxième égalité s'obtient en multipliant le numérateur et le dénominateur
 par \(\frac{Q}{\ii\omega\omega_0}\).
 
 L'amplitude de vitesse est donc~:
 \begin{equation}
-  V = 
+  V =
   \frac{\frac{QF}{m\omega_0}}{\sqrt{1+Q^2\left(\Omega-\frac{1}{\Omega}\right)^2}}.
 \end{equation}
-Elle est maximale pour \(\Omega = 1\), soit \(\omega = \omega_0\), il y a alors 
-résonance de vitesse en cette pulsation et ce maximum vaut \(V_M = 
+Elle est maximale pour \(\Omega = 1\), soit \(\omega = \omega_0\), il y a alors
+résonance de vitesse en cette pulsation et ce maximum vaut \(V_M =
 \frac{QF}{m\omega_0}\).
 
-Aux coupures, la vitesse vaut \(V_C = \frac{V_M}{\sqrt{2}}\), donc les 
-pulsations de coupures sont données par l'équation \(\Omega - \frac{1}{\Omega} = 
-\pm \frac{1}{Q}\), soient \(\Omega_1 = -\frac{1}{2Q} + \sqrt{\frac{1}{4Q^2}+1}\) 
-et \(\Omega_2 = +\frac{1}{2Q} + \sqrt{\frac{1}{4Q^2}+1}\). La bande passante, 
-pour l'amplitude de la vitesse, en pulsation réduite est donc \(\Delta\Omega = 
-\frac{1}{Q}\), ou en pulsation \(\Delta\omega = \frac{\omega_0}{Q}\), ou en 
-fréquence \(\Delta N = \frac{N_0}{Q}\). \emph{Le facteur de qualité exprime donc 
-l'acuité de la résonance de vitesse}~: \(Q = \frac{\omega_0}{\Delta\omega} = 
+Aux coupures, la vitesse vaut \(V_C = \frac{V_M}{\sqrt{2}}\), donc les
+pulsations de coupures sont données par l'équation \(\Omega - \frac{1}{\Omega} =
+\pm \frac{1}{Q}\), soient \(\Omega_1 = -\frac{1}{2Q} + \sqrt{\frac{1}{4Q^2}+1}\)
+et \(\Omega_2 = +\frac{1}{2Q} + \sqrt{\frac{1}{4Q^2}+1}\). La bande passante,
+pour l'amplitude de la vitesse, en pulsation réduite est donc \(\Delta\Omega =
+\frac{1}{Q}\), ou en pulsation \(\Delta\omega = \frac{\omega_0}{Q}\), ou en
+fréquence \(\Delta N = \frac{N_0}{Q}\). \emph{Le facteur de qualité exprime donc
+l'acuité de la résonance de vitesse}~: \(Q = \frac{\omega_0}{\Delta\omega} =
 \frac{N_0}{\Delta N}\).
 
-La courbe de résonance de vitesse peut être tracée avec les variables réduites 
+La courbe de résonance de vitesse peut être tracée avec les variables réduites
 \(\Omega\) et \(\xi = \frac{V}{V_M}\), son équation est~:
 \begin{equation}
   \xi = \frac{1}{\sqrt{Q^2\left(\Omega - \frac{1}{\Omega}\right)^2 + 1}}
 \end{equation}
-et le déphasage de l'abscisse \(v\) de la vitesse par rapport à celle de la 
+et le déphasage de l'abscisse \(v\) de la vitesse par rapport à celle de la
 force excitatrice \(f\) est~:
 \begin{equation}
   \Psi = \arctan\left(Q\left(\frac{1}{\Omega} - \Omega\right)\right).
 \end{equation}
-On remarque que \(\Vitc = \ii\omega \xc\), donc que \(v\) est déphasée de 
-\(\frac{\pi}{2}\) par rapport à \(x\), ce qui justifie l'expression de \(\Phi\) 
+On remarque que \(\Vitc = \ii\omega \xc\), donc que \(v\) est déphasée de
+\(\frac{\pi}{2}\) par rapport à \(x\), ce qui justifie l'expression de \(\Phi\)
 dans la section \ref{subsec:varred}.
 
 Aux coupures, on a \(\Psi_1 = \frac{\pi}{4}\) et \(\Psi_2 = -\frac{\pi}{4}\).
@@ -223,44 +223,44 @@ Aux coupures, on a \(\Psi_1 = \frac{\pi}{4}\) et \(\Psi_2 = -\frac{\pi}{4}\).
 \begin{figure}[!h]
   \centering
   \includegraphics[scale=0.7]{./Fig17-2.png}
-  \caption{\(\xi\) et \(\Psi\) à différentes valeurs valeurs du facteur de 
+  \caption{\(\xi\) et \(\Psi\) à différentes valeurs valeurs du facteur de
   qualité}
   \label{fig:oscforceesvit}
 \end{figure}
 
-Les tracés pour \(\xi\) et \(\psi\) correspondent aux mêmes valeurs de \(Q\) que 
-pour les tracés de résonance d'élongation \ref{subsec:varred}, affichés sur la 
-figure \ref{fig:oscforceesvit}. Le tracé de \(\xi\) est trompeur, car \(V_M\) 
-est proportionnel à \(Q\), donc \(\xi\) ne donne pas une idée claire des maxima 
-de \(V\). Si l'on traçait \(V\) en fonction de \(\Omega\), on aurait des maxima 
-d'autant plus grand que \(Q\) est grand. L'avantage de notre tracé est que tous 
-les maxima sont ramenés à la valeur \(1\) et qu'on peut donc repérer le coupures 
-et les bandes passantes, quel que soit \(Q\), sur la même horizontale d'ordonnée 
+Les tracés pour \(\xi\) et \(\psi\) correspondent aux mêmes valeurs de \(Q\) que
+pour les tracés de résonance d'élongation \ref{subsec:varred}, affichés sur la
+figure \ref{fig:oscforceesvit}. Le tracé de \(\xi\) est trompeur, car \(V_M\)
+est proportionnel à \(Q\), donc \(\xi\) ne donne pas une idée claire des maxima
+de \(V\). Si l'on traçait \(V\) en fonction de \(\Omega\), on aurait des maxima
+d'autant plus grand que \(Q\) est grand. L'avantage de notre tracé est que tous
+les maxima sont ramenés à la valeur \(1\) et qu'on peut donc repérer le coupures
+et les bandes passantes, quel que soit \(Q\), sur la même horizontale d'ordonnée
 \(\frac{1}{\sqrt{2}}\).
 
 \section{Résonance de puissance}
 
 La puissance développée par la force excitatrice est~:
 \begin{equation}
-  p = \vec{f} \cdot \vv = F\cos(\omega t +\varphi) V\cos(\omega t + \varphi + \Psi) 
+  p = \vec{f} \cdot \vv = F\cos(\omega t +\varphi) V\cos(\omega t + \varphi + \Psi)
   = \frac{FV}{2}\left(\cos(2\omega t + \varphi + \Psi) + \cos \Psi\right)
 \end{equation}
-Sa valeur moyenne sur une période est la \og{}puissance moyenne\fg{}~:\(P = 
-\frac{FV\cos\Psi}{2}\). Avec \(\Psi = \arctan(Q(1/\omega - \Omega))\), on 
-obtient~: \(\cos \Psi = 
-\frac{1}{\sqrt{Q^2\left(\Omega-\frac{1}{\Omega}\right)^2+1}} = \xi\), et \(V = 
-\frac{\frac{QF}{m\omega_0}}{\sqrt{Q^2\left(\Omega-\frac{1}{\Omega}\right)^2+1}}\), 
-donc 
+Sa valeur moyenne sur une période est la \og{}puissance moyenne\fg{}~:\(P =
+\frac{FV\cos\Psi}{2}\). Avec \(\Psi = \arctan(Q(1/\omega - \Omega))\), on
+obtient~: \(\cos \Psi =
+\frac{1}{\sqrt{Q^2\left(\Omega-\frac{1}{\Omega}\right)^2+1}} = \xi\), et \(V =
+\frac{\frac{QF}{m\omega_0}}{\sqrt{Q^2\left(\Omega-\frac{1}{\Omega}\right)^2+1}}\),
+donc
 \begin{equation}
-  P = 
+  P =
   \frac{QF^2}{2m\omega_0\left(Q^2\left(\Omega-\frac{1}{\Omega}\right)^2+1\right)}.
 \end{equation}
-La puissance maximale est obtenue pour \(\Omega = 1, \omega = \omega_0\), il y a 
-alors \emph{résonance de puissance}, alors \(P_M = \frac{QF^2}{2m\omega_0} = 
-\frac{F^2}{2\alpha}\). On a donc \(\tau = \frac{P}{P_M} = 
+La puissance maximale est obtenue pour \(\Omega = 1, \omega = \omega_0\), il y a
+alors \emph{résonance de puissance}, alors \(P_M = \frac{QF^2}{2m\omega_0} =
+\frac{F^2}{2\alpha}\). On a donc \(\tau = \frac{P}{P_M} =
 \frac{1}{Q^2\left(\Omega-\frac{1}{\Omega}\right)^2+1} = \xi^2\).
 
-Le tracé de \(\tau\) en fonction de \(\Omega\) pour différents \(Q\) (les mêmes 
+Le tracé de \(\tau\) en fonction de \(\Omega\) pour différents \(Q\) (les mêmes
 que précédemment) est donné par la figure \ref{fig:oscforceespuis}.
 
 \begin{figure}[!h]
@@ -270,46 +270,46 @@ que précédemment) est donné par la figure \ref{fig:oscforceespuis}.
   \label{fig:oscforceespuis}
 \end{figure}
 
-Aux coupures en puissance ce maximum est divisé par 2. Les coupures 
-correspondent donc à \(Q^2\left(\Omega-\frac{1}{\Omega}\right)^2 = 1\) comme 
+Aux coupures en puissance ce maximum est divisé par 2. Les coupures
+correspondent donc à \(Q^2\left(\Omega-\frac{1}{\Omega}\right)^2 = 1\) comme
 pour la résonance de vitesse.
 
-\emph{La pulsation de résonance de puissance, les pulsations de coupure en 
-puissance et la bande passante correspondante sont donc les mêmes que pour 
+\emph{La pulsation de résonance de puissance, les pulsations de coupure en
+puissance et la bande passante correspondante sont donc les mêmes que pour
 l'amplitude de la vitesse}.
 
 \section{Exemple d'oscillations sinusoïdales forcées}
 
-On considère un ressort parfait \((k, L_0)\), enfilé sur une tige horizontale, 
-dont une extrémité \(A\) est actionnée par un moteur qui lui communique un 
-mouvement sinusoïdal. L'autre extrémité du ressort est lié au point matériel 
+On considère un ressort parfait \((k, L_0)\), enfilé sur une tige horizontale,
+dont une extrémité \(A\) est actionnée par un moteur qui lui communique un
+mouvement sinusoïdal. L'autre extrémité du ressort est lié au point matériel
 \(M(m)\) qui est soumis à une force de frottement fluide \(-\alpha \vec{v}\).
 
-Soit \(\overline{A_0O} = L_0\), \(\overline{A_0A} = x_A = X_A\cos(\omega t + 
-\varphi)\) (\(\omega\) est ici la vitesse de rotation du moteur) et 
-\(\overline{OM} = x\), la longueur du ressort est \(L = L_0 + x - x_A\) et la 
-force qu'il exerce sur \(M\) est \(-k(L-L_0)\ux = -k(x-x_A)\ux\). La force de 
+Soit \(\overline{A_0O} = L_0\), \(\overline{A_0A} = x_A = X_A\cos(\omega t +
+\varphi)\) (\(\omega\) est ici la vitesse de rotation du moteur) et
+\(\overline{OM} = x\), la longueur du ressort est \(L = L_0 + x - x_A\) et la
+force qu'il exerce sur \(M\) est \(-k(L-L_0)\ux = -k(x-x_A)\ux\). La force de
 frottement fluide est \(-\alpha \dot{x}\ux\).
 
-La relation fondamentale de la dynamique donne \(m \ddot{x} = -\alpha \dot{x} 
--k(x-x_A)\), soit \(m\ddot{x} +\alpha \dot{x} + kx = f\), avec \(f = 
+La relation fondamentale de la dynamique donne \(m \ddot{x} = -\alpha \dot{x}
+-k(x-x_A)\), soit \(m\ddot{x} +\alpha \dot{x} + kx = f\), avec \(f =
 F\cos(\omega t +\varphi)\) si l'on pose \(F=kX_A\).
 
-Tout se passe donc comme si \(M\) était soumis à une force supplémentaire 
+Tout se passe donc comme si \(M\) était soumis à une force supplémentaire
 sinusoïdale et si \(A\) était fixe.
 
-\section[Analogie mécanique/électrique]{Analogie entre les oscillations 
+\section[Analogie mécanique/électrique]{Analogie entre les oscillations
 sinusoïdales forcées en mécanique et en électricité}
 
 \subsection{équivalences entre grandeurs mécaniques et électriques}
 
-Pour un dipôle RLC série branché sur une source de tension, l'équation 
-différentielle qui régit le système s'écrit~: \(L \ddot{q} + R\dot{q} + q/C = 
+Pour un dipôle RLC série branché sur une source de tension, l'équation
+différentielle qui régit le système s'écrit~: \(L \ddot{q} + R\dot{q} + q/C =
 e\) avec \(q\) la charge électrique du condensateur.
 
-Pour un point matériel de masse \(m\) lié à un ressort et soumis à une force 
-excitatrice \(f\), avec frottement fluide \(-\alpha \vec{v}\), l'équation 
-différentielle qui régit le système s'écrit~:\(m\ddot{x}+\alpha \dot{x}+k x = 
+Pour un point matériel de masse \(m\) lié à un ressort et soumis à une force
+excitatrice \(f\), avec frottement fluide \(-\alpha \vec{v}\), l'équation
+différentielle qui régit le système s'écrit~:\(m\ddot{x}+\alpha \dot{x}+k x =
 f\). On a les équivalence suivantes dans le tableau \ref{tab:equiv}.
 
 \begin{table}[h]
@@ -322,12 +322,12 @@ f\). On a les équivalence suivantes dans le tableau \ref{tab:equiv}.
     \(R\) & \(\alpha\) & Facteur d'amortissement\\
     \(\frac{1}{C}\) & \(k\) & Raideur d'oscillateur\\
     \(e\) & \(f\) & Excitation\\
-    \(\frac{1}{\sqrt{LC}}\) & \(\sqrt{\frac{k}{m}}\) & Pulsation propre 
+    \(\frac{1}{\sqrt{LC}}\) & \(\sqrt{\frac{k}{m}}\) & Pulsation propre
     \(\omega_0\)\\
-    \(\frac{L\omega_0}{R} = \frac{1}{R}\sqrt{\frac{L}{C}}\) & 
-    \(\frac{m\omega_0}{\alpha} = \frac{1}{\alpha}\sqrt{km}\) & Facteur de 
+    \(\frac{L\omega_0}{R} = \frac{1}{R}\sqrt{\frac{L}{C}}\) &
+    \(\frac{m\omega_0}{\alpha} = \frac{1}{\alpha}\sqrt{km}\) & Facteur de
     qualité \(Q\)\\
-    \(\frac{L}{2R}\) & \(\frac{m}{2\alpha}\) & Coefficient d'amortissement 
+    \(\frac{L}{2R}\) & \(\frac{m}{2\alpha}\) & Coefficient d'amortissement
     \(\lambda\)\\
     \(q\) & \(x\) & \\
     \(i=\dot{q}\) & \(v=\dot{x}\) & \\
@@ -339,106 +339,106 @@ f\). On a les équivalence suivantes dans le tableau \ref{tab:equiv}.
 \end{table}
 
 L'équation différentielle s'écrit suivant les cas~:
-\[\ddot{q}+2\lambda\dot{q}+\omega_0^2 q = e/L \text{~ou~} 
+\[\ddot{q}+2\lambda\dot{q}+\omega_0^2 q = e/L \text{~ou~}
 \ddot{q}+\frac{\omega_0}{Q}\dot{q}+\omega_0^2 q = e/L\]
-\[\ddot{x}+2\lambda\dot{x}+\omega_0^2 q = e/L \text{~ou~} 
+\[\ddot{x}+2\lambda\dot{x}+\omega_0^2 q = e/L \text{~ou~}
 \ddot{x}+\frac{\omega_0}{Q}\dot{x}+\omega_0^2 x = e/L\]
 
-La résolution de l'équation sans second membre donne les différents types de 
-régimes transitoires. Les équations différentielles vérifiées par l'intensité et 
-par l'abscisse de la vitesse sont obtenues en dérivant par rapport au temps 
+La résolution de l'équation sans second membre donne les différents types de
+régimes transitoires. Les équations différentielles vérifiées par l'intensité et
+par l'abscisse de la vitesse sont obtenues en dérivant par rapport au temps
 celles qui sont vérifiées par \(q\) et \(x\)~:
-\[L\ddot{i}+R\dot{i}+i/C = \dot{e} \text{~et~} m\ddot{v}+\alpha\dot{v}+kv = 
+\[L\ddot{i}+R\dot{i}+i/C = \dot{e} \text{~et~} m\ddot{v}+\alpha\dot{v}+kv =
 \dot{f}\]
 
 \subsection{Notion d'impédance mécanique}
 
-En régime sinusoïdal permanent, de pulsation \(\omega\), \(\ic\) et \(\vitc\) 
-vérifient les mêmes équations, en électricité on a vu que le circuit RLC série 
-a pour impédance électrique \(\Zc = \frac{\Ec}{\Ic} = R + \ju\left(L\omega 
--\frac{1}{C\omega}\right)\). De même on définit une impédance mécanique \(\Zc = 
+En régime sinusoïdal permanent, de pulsation \(\omega\), \(\ic\) et \(\vitc\)
+vérifient les mêmes équations, en électricité on a vu que le circuit RLC série
+a pour impédance électrique \(\Zc = \frac{\Ec}{\Ic} = R + \ju\left(L\omega
+-\frac{1}{C\omega}\right)\). De même on définit une impédance mécanique \(\Zc =
 \frac{\Fc}{\Vitc} = \alpha +\ju\left(m\omega -\frac{k}{\omega}\right)\).
 
 \section{Exercices}
 \begin{exercice}[Étude mécanique d'un haut-parleur]
   %%TODO : Mettre la représentation du haut-parleur
-  On modélise la partie mécanique d'un haut-parleur par une masse \(m\) assimilée 
-  à un point matériel \(M\), se déplacant sur une ige horizontale d'axe \((Ox)\), 
-  reliée à un ressort de longueur à vide \(L_0\) et de raideur \(k\) et liée à un 
-  amortisseur fluide (piston solidaire de \(M\), se déplaçant dans un liquide) qui 
-  exerce sur \(M\) la force \(-f \vvv\). La masse \(m\) est celle du noyau de fer 
-  et du cône du haut-parleur, elle est soumise en plus à une force magnétique 
-  \(\vF\) proportionnelle au courant \(i(t)\) entrant dans la bobine (fixe) 
+  On modélise la partie mécanique d'un haut-parleur par une masse \(m\) assimilée
+  à un point matériel \(M\), se déplacant sur une ige horizontale d'axe \((Ox)\),
+  reliée à un ressort de longueur à vide \(L_0\) et de raideur \(k\) et liée à un
+  amortisseur fluide (piston solidaire de \(M\), se déplaçant dans un liquide) qui
+  exerce sur \(M\) la force \(-f \vvv\). La masse \(m\) est celle du noyau de fer
+  et du cône du haut-parleur, elle est soumise en plus à une force magnétique
+  \(\vF\) proportionnelle au courant \(i(t)\) entrant dans la bobine (fixe)
   du haut-parleur.
   %%TODO : Mettre le circuit électrique du haut-parleur
 
-  On a \(\vF = Ki \ux\) avec \(i = I_m \cos(\omega t)\), \(m = \qty{10}{g}\), 
-  \(k = \qty{15e3}{N/m}\), \(K = \qty{200}{N/A}\), \(I_m = \qty{1.0}{A}\) et 
+  On a \(\vF = Ki \ux\) avec \(i = I_m \cos(\omega t)\), \(m = \qty{10}{g}\),
+  \(k = \qty{15e3}{N/m}\), \(K = \qty{200}{N/A}\), \(I_m = \qty{1.0}{A}\) et
   \(\omega = 2000\pi\unit{rad/s}\).
   \begin{enumerate}
-    \item Écrire l'équation différentielle vérifiée par l'abscisse \(x = 
-      \bar{OM}\) de \(M\) (\(O\) étant la position de \(M\) lorsque le ressort est 
+    \item Écrire l'équation différentielle vérifiée par l'abscisse \(x =
+      \bar{OM}\) de \(M\) (\(O\) étant la position de \(M\) lorsque le ressort est
       au repos).
-    \item La normaliser, avec la pulsation propre \(\omega_0\) et le facteur de 
-      qualité \(Q\). On veut \(Q = \frac{\sqrt{2}}{2}\), calculer le coefficient 
+    \item La normaliser, avec la pulsation propre \(\omega_0\) et le facteur de
+      qualité \(Q\). On veut \(Q = \frac{\sqrt{2}}{2}\), calculer le coefficient
       \(f\).
-    \item Déterminer l'expression de la réponse forcée \(x = X_m\cos(\omega t 
+    \item Déterminer l'expression de la réponse forcée \(x = X_m\cos(\omega t
       +\varphi)\) en calculant \(X_m\) et \(\varphi\).
-    \item Tracer l'allure de la courbe représentant \(X_m\) en fonction de 
-      \(\omega\). Quelle est la bande passante du système pour l'amplitude 
+    \item Tracer l'allure de la courbe représentant \(X_m\) en fonction de
+      \(\omega\). Quelle est la bande passante du système pour l'amplitude
       \(X_m\).
   \end{enumerate}
 \end{exercice}
 \begin{exercice}[Ressorts en série, ressorts en parallèle]
-  On dispose de deux ressorts parfaitement élastiques, de masses négligeables 
-  devant la masse \(m\) du point matériel \(M\), de raideurs \(k\) et \(k'\), de 
+  On dispose de deux ressorts parfaitement élastiques, de masses négligeables
+  devant la masse \(m\) du point matériel \(M\), de raideurs \(k\) et \(k'\), de
   longueurs à vide \(L_0\) et \(L'_0\).
   \begin{enumerate}
-    \item Les ressorts et \(M\) sont enfilés sur une tige horizontale comme 
-      indiqué par le schéma. La distance entre les deux supports est fixe et 
-      vaut \(L_0+L'_0\). Le point \(O\) est la position de \(M\) lorsque les 
+    \item Les ressorts et \(M\) sont enfilés sur une tige horizontale comme
+      indiqué par le schéma. La distance entre les deux supports est fixe et
+      vaut \(L_0+L'_0\). Le point \(O\) est la position de \(M\) lorsque les
       ressorts sont au repos et on note \(x = \bar{OM}\).
-      La force de frottement exercée par la tige sur \(M\) est négligée mais 
-      l'ensemble est plongé dans un fluide de viscosité \(\eta\), de masse 
-      volumique \(\mu\) et \(M\) (qui est une sphère de rayon \(r\)) subit une 
-      frottement fluide qui vaut \(-6\pi\eta r \vvv\). On notera \(\alpha = 
+      La force de frottement exercée par la tige sur \(M\) est négligée mais
+      l'ensemble est plongé dans un fluide de viscosité \(\eta\), de masse
+      volumique \(\mu\) et \(M\) (qui est une sphère de rayon \(r\)) subit une
+      frottement fluide qui vaut \(-6\pi\eta r \vvv\). On notera \(\alpha =
       6\pi\eta r\).
       %%TODO : Mettre le schéma mécanique.
 
-      Écrire l'équation différentielle du mouvement. Quelle est la raideur \(K\) 
-      du ressort équivalent aux deux ressorts? Représenter le dispositif sous la 
-      forme d'un circuit mécanique après avoir précisé si les ressorts sont 
+      Écrire l'équation différentielle du mouvement. Quelle est la raideur \(K\)
+      du ressort équivalent aux deux ressorts? Représenter le dispositif sous la
+      forme d'un circuit mécanique après avoir précisé si les ressorts sont
       analogues à des condensateurs en série ou en parallèle.
-    \item Les deux ressorts sont maintenant attachés l'un à l'autre comme le 
+    \item Les deux ressorts sont maintenant attachés l'un à l'autre comme le
       montre le dessin ci-dessous.
       %%TODO : Mettre le schéma mécanique.
 
-      Exprimer la longueur \(L'\) du ressort \((L'_0, k')\) en fonction de la 
-      longueur \(L\) de l'autre ressort, avec \(k, k', L_0\) et \(L'_0\). et en 
-      déduire la relation entre l'abscisse \(x\) de \(M\) et la longueur \(L\), 
-      avec \(k, k'\) et \(L_0\). Exprimer la force de rappel exercée sur \(M\) 
-      par le ressort auquel il est attaché. Quelle est la raideur du ressort 
+      Exprimer la longueur \(L'\) du ressort \((L'_0, k')\) en fonction de la
+      longueur \(L\) de l'autre ressort, avec \(k, k', L_0\) et \(L'_0\). et en
+      déduire la relation entre l'abscisse \(x\) de \(M\) et la longueur \(L\),
+      avec \(k, k'\) et \(L_0\). Exprimer la force de rappel exercée sur \(M\)
+      par le ressort auquel il est attaché. Quelle est la raideur du ressort
       équivalent, pour le point \(M\), aux deux ressorts ainsi groupés?
-      Représenter le dispositif sous la forme d'un circuit mécanique après avoir 
-      précisé si les ressorts sont analogues à des condensateurs en série ou en 
+      Représenter le dispositif sous la forme d'un circuit mécanique après avoir
+      précisé si les ressorts sont analogues à des condensateurs en série ou en
       parallèle.
-    \item Les deux ressorts sont enfilés l'un dans l'autre, accrochés au point 
-      \(A\) fixe et, à l'autre extrémité, à \(M\). Le tout est suspendu 
-      verticalement. On note \(L\) la longueur \(AM\) commune aux deux ressorts 
+    \item Les deux ressorts sont enfilés l'un dans l'autre, accrochés au point
+      \(A\) fixe et, à l'autre extrémité, à \(M\). Le tout est suspendu
+      verticalement. On note \(L\) la longueur \(AM\) commune aux deux ressorts
       et \(L_{eq}\) sa valeur à l'équilibre.
       %%TODO : Mettre le schéma mécanique.
 
-      Démontrer que l'ensemble des deux ressorts exerce sur \(M\) la même force 
-      qu'un unique ressort \((K, \Lambda_0)\), en exprimant \(K\) avec \(k\) et 
+      Démontrer que l'ensemble des deux ressorts exerce sur \(M\) la même force
+      qu'un unique ressort \((K, \Lambda_0)\), en exprimant \(K\) avec \(k\) et
       \(k'\) et \(\Lambda_0\) avec \(L_0, L'_0, k, k'\).
 
-      Écrire la relation vérifiée par la valeur \(L_{eq}\) de \(L\) à 
-      l'équilibre, avec \(K\), \(\Lambda_0\), \(L\), \(m\), \(g\), \(\mu\) et 
-      \(r\). La position \(O\) de \(M\) à l'équilibre est prise comme origine 
-      des abscisses \(x\). Le point \(M\) est soumis, en plus de son poids, à la 
-      poussée d'Archimède, de la force de frottements visqueux et des forces 
-      exercées par les ressorts, à une force excitatrice \(\vv{f} = f\ux\). Écrire 
-      l'équation différentielle vérifiée par \(x\) avec \(K, \alpha, m\) et 
+      Écrire la relation vérifiée par la valeur \(L_{eq}\) de \(L\) à
+      l'équilibre, avec \(K\), \(\Lambda_0\), \(L\), \(m\), \(g\), \(\mu\) et
+      \(r\). La position \(O\) de \(M\) à l'équilibre est prise comme origine
+      des abscisses \(x\). Le point \(M\) est soumis, en plus de son poids, à la
+      poussée d'Archimède, de la force de frottements visqueux et des forces
+      exercées par les ressorts, à une force excitatrice \(\vv{f} = f\ux\). Écrire
+      l'équation différentielle vérifiée par \(x\) avec \(K, \alpha, m\) et
       \(f\). Représenter le dispositif sous la forme d'un circuit mécanique.
   \end{enumerate}
 \end{exercice}

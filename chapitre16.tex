@@ -26,7 +26,7 @@ Typiquement, lorsque \(\Vcc = \SI{15}{\volt}\), on a \(\SI{13.5}{\volt} \leq V_0
 \subsection{Courants d'entrée, courant de sortie et saturation en courant}
 Les courant dans les entrées sont en général de quelques nano-ampères et peuvent être négligés en première approximation \(i_E^+ = i_E^-=0\). Le courant de sortie est limité en général à quelques dizaines de milliampères et quand il atteint la valeur maximale, il y  a \emph{saturation en courant}~: \(\mid \i_S \mid \leq I_{SM}\).
 \subsection{Comportement fréquentiel de l'amplificateur opérationnel}
-En régime sinusoïdal permanent, pour des fréquences basses et moyennes, 
+En régime sinusoïdal permanent, pour des fréquences basses et moyennes,
 \begin{equation}
 	\label{eq:freqao}
 	\ncomplexe{\mu} = \ncomplexe{v}_S / \ncomplexe{\epsilon},
@@ -41,7 +41,7 @@ On peut en déduire que \( \mu_0 \ncomplexe{\epsilon} = \ncomplexe{v}_S + \frac{
 \begin{equation}
 	\label{eq:equadiffaop}
 	\derived{v_S}{t} + \omega_C v_S = \mu_0 \omega_C \epsilon.
-\end{equation} 
+\end{equation}
 
 \subsection{L'amplificateur opérationnel idéal}
 Pour un amplificateur opérationnel idéal, les courants d'entrées sont nuls \(i_E^+ = i_E^-=0\), le gain est infini \(\mu = \infty\) et la différence de potentiel d'entrée est nulle \(\epsilon=0\) en fonctionnement linéaire. %TODO Mettre le schema d'un AO idéal
@@ -70,7 +70,7 @@ On étudiera le quadripôle de tension d'entrée \(u_E\) et de tension de sortie
 Il lui correspond l'équation différentielle du premier ordre suivante~:
 \begin{align}
 	R_1/R_2 \uc_S + R_2C \derived{\uc_S}{t} &= \uc_E; \\
-	R_1/R_2 u_S + R_2C \derived{u_S}{t} &= u_E. 
+	R_1/R_2 u_S + R_2C \derived{u_S}{t} &= u_E.
 \end{align}
 Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de référence \(\omega_0 = \frac{1}{R_2C}\), \(x = \omega/\omega_0 = R_2C \omega\) et \(H_0 = R_2/R_1\), pour faciliter l'étude de la transmittance complexe. On a donc \(\Hc = -\frac{H_0}{1+\ju x}\). Alors \(H = \frac{H_0}{\sqrt{1+x^2}}\), le gain en décibels vaut \(G = 20\log H_0 - 10 \log(1+x^2)\) et le déphasage vaut \(\Phi = \pi - \arctan x\). \(H\) et \(G\) sont des fonctions décroissantes de \(\log x\). \(\Phi\) est une fonction croissante de \(\log x\). À basse fréquence, il s'agit d'un simple inverseur (amplificateur ou atténuateur suivant les valeurs des résistance), puisque le condensateur est un coupe-circuit en régime permanent. Lorsque \(\log x\) tend vers \(-\infty\) (\(x\) vers 0), \(G\) tend vers \(20\log H_0 = G_M\) et \(\phi\) tend vers \(\pi\). Lorsque \(\log x\) tend vers \(+\infty\) (\(x\) vers \(+\infty\)), \(G\) est équivalent à \(G_M - 20\log x\) qui est l'équation d'une asymptote d'ordonnée à l'origine \(G_M\) et de coefficient directeur \(\SI{20}{\dB}\) par décade ; et \(\Phi\) tend vers \(\pi/2\).
 
@@ -96,12 +96,12 @@ Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de r�
 On suppose que l'amplificateur opérationnel est idéal en fonctionnement linéaire
 \begin{enumerate}
   \item Exprimer la fonction de transfert du quadripôle \(\Hc = \frac{\ncomplexe{v}_S}{\ncomplexe{v}_E}\) et tracer ses diagrammes de Bode en prenant \(x = \omega/\omega_0=RC\omega\).
-  \item Montrer qu'il s'agit d'un montage dérivateur inverseur. 
+  \item Montrer qu'il s'agit d'un montage dérivateur inverseur.
 \end{enumerate}
 \end{exercice}
 \begin{exercice}[Rétroaction, stabilité du montage inverseur]
 %TODO mettre les schemas
-Pour un fonctionnement linéaire de l'amplificateur opérationnel, quelle est l'amplification en tension de chacun des ces deux montages si \(\mu = \mu_0\) ? Que devient elle si \(\mu\) devient infini ? 
+Pour un fonctionnement linéaire de l'amplificateur opérationnel, quelle est l'amplification en tension de chacun des ces deux montages si \(\mu = \mu_0\) ? Que devient elle si \(\mu\) devient infini ?
 
 En réalité, en régime sinusoïdal permanent, on a~: \(\ncomplexe{\mu} = \frac{\mu_0}{1+\ju \omega/\omega_0}\). Montrer que cette expression permet d'écrire l'équation différentielle relient \(v_E\) et \(v_S\) en régime variable. Montrer alors que toute mise sous tension de l'un de ces deux montages conduit rapidement à un fonctionnement linéaire si \(\mid V_E \mid < V_0\) (tension de saturation), alors que l'autre montage conduit nécessairement à la saturation en tension. Conclure.
 \end{exercice}
@@ -109,7 +109,7 @@ En réalité, en régime sinusoïdal permanent, on a~: \(\ncomplexe{\mu} = \frac
 %TODO mettre le schema
 \begin{enumerate}
   \item Amplification en tension du quadripôle (ME,MS). On veut étudier, en régime sinusoïdal permanent de pulsation \(\omega\), la fonction de transfert \(\Hc = \ncomplexe{v}_S / \ncomplexe{v}_E\) de ce montage
-  \begin{enumerate}			
+  \begin{enumerate}
     \item Exprimer \(\ncomplexe{v}_A/\ncomplexe{v}_E\) avec \(R\), \(C\) et \(\omega\). Faire de même avec \(\ncomplexe{v}_B/\ncomplexe{v}_S\);
     \item L'amplificateur opérationnel étant considéré comme idéal et en fonctionnement linéaire, ne déduire l'expression de \(\Hc\) avec \(R\), \(C\) et \(\omega\), puis avec \(z=2RC\omega\).
     \item Tracer les diagrammes de Bode de \(\Hc\) : \(G(\si{\dB}) = f(\log z)\) et \(\Phi = g(\log z)\). Calculer la fréquence de coupure \(N\) et préciser sur les diagrammes de Bode les coordonnées correspondantes à cette coupure.

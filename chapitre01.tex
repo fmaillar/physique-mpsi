@@ -28,7 +28,7 @@ Le temps est un paramètre réel servant à dater les événements. N'importe qu
 
 Pour choisir parmi les différentes horloges, on impose une exigence supplémentaire~: l'uniformité du temps, ou, ce qui revient au même, nous postulons que \emph{les lois physiques sont invariantes par translation dans le temps}. Par exemple, si un pendule oscille en repassant toujours par les mêmes positions dans des conditions extérieures constantes, les lois physiques étant inchangées d'une oscillation à l'autre, la durée doit être la même pour chaque oscillation. On voit ainsi l'importance des phénomènes cycliques pour définir une chronologie.
 
-Le problème crucial, dans l'exemple précédent comme pour toute horloge basée sur un phénomène cyclique, est celui des conditions extérieures qui doivent être constantes. Le choix d'une chronologie privilégiée permettant d'appliquer les lois de la mécanique s'est fait par des approximations successives. Les scientifiques ont longtemps utilisé l'astronomie pour définir l'unité de temps. 
+Le problème crucial, dans l'exemple précédent comme pour toute horloge basée sur un phénomène cyclique, est celui des conditions extérieures qui doivent être constantes. Le choix d'une chronologie privilégiée permettant d'appliquer les lois de la mécanique s'est fait par des approximations successives. Les scientifiques ont longtemps utilisé l'astronomie pour définir l'unité de temps.
 
 Jusqu'en 1960, les scientifiques utilisaient le \emph{temps sidéral}. La seconde était définie comme la fraction \(1/\numprint{86400}\) du jour sidéral (le jour sidéral est la durée que met une planète pour faire un tour sur elle-même par rapport aux étoiles, indépendamment de sa révolution autour du Soleil). L'inconvénient de cette définition est le suivant~: Le mouvement des astres s'accélérait sans qu'aucune explication plausible ne puisse être donnée. Alors qu'en réalité c'est le contraire~: la Terre ralentit à cause des frottements de l'eau des océans. C'était alors l'horloge qui retardait. Ensuite, les scientifiques ont utilisé le \emph{temps des éphémérides}, la révolution de la Terre autour du Soleil, pour définir la seconde. Aujourd'hui, on utilise plutôt des mesures de fréquence, qui sont très précises, pour définir la seconde. C'est le \emph{temps atomique}.
 \begin{defdef}
@@ -92,7 +92,7 @@ Plus généralement, la dérivée d'un vecteur unitaire \(\vu\) tournant dans un
  \begin{figure}
    \centering
    \begin{tikzpicture} [math3d]
-     \draw (0,0,0) node[left, below] {\(O\)};    
+     \draw (0,0,0) node[left, below] {\(O\)};
      \coordinate (O) at (0,0,0);
      \coordinate (H) at (3,3,0);
      \coordinate (M) at (3,3,2);
@@ -257,7 +257,7 @@ v_2^2-v_1^2=2\vv{a}\cdot \vv{M_1M_2};
 
      \draw[>=latex, ->] (M) -- ++(120:1) node[above]{\(\urho\)};
      \draw[>=latex, ->] (M) -- ++(210:1) node[below]{\(\utheta\)};
-    
+
    \end{tikzpicture}
    \caption{Mouvement circulaire}
    \label{fig:mvt-circulaire}
@@ -267,9 +267,9 @@ Un point matériel mobile \(M\) se meut circulairement s'il se déplace sur un c
 
 En notant \(R\) le rayon du cercle parcouru par \(M\) et \(O\) son centre, si \(s=0\) lorsque \(\theta=0\) alors \(s=R\theta\), \(\dot{s}=R\dot{\theta}\) et \(\ddot{s}=R\ddot{\theta}\).
 
-Le vecteur \emph{vitesse angulaire} est \(\vv{\omega}=\dot{\theta}\uz\). Sa norme vaut \(\omega=\frac{v}{R}\) et elle s'exprime en \(\si{rad\per s}\). 
+Le vecteur \emph{vitesse angulaire} est \(\vv{\omega}=\dot{\theta}\uz\). Sa norme vaut \(\omega=\frac{v}{R}\) et elle s'exprime en \(\si{rad\per s}\).
 
-Le vecteur vitesse est 
+Le vecteur vitesse est
 \begin{equation}
  \vv{v}=\dot{s}\utheta=R\dot{\theta} \utheta= \vv{\omega} \wedge \vv{OM}.
 \end{equation}
@@ -277,7 +277,7 @@ C'est le moment en \(M\) du vecteur vitesse angulaire représenté en \(O\).
 
 Le vecteur accélération est
 \begin{equation}
-\vv{a}=-R\dot{\theta}^2\ur +R\ddot{\theta}\utheta=-\frac{v^2}{R}\ur+\ddot{s}\utheta.  
+\vv{a}=-R\dot{\theta}^2\ur +R\ddot{\theta}\utheta=-\frac{v^2}{R}\ur+\ddot{s}\utheta.
 \end{equation}
 On constate que l'accélération normale est orientée vers le centre du cercle.
 

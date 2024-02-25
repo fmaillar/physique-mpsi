@@ -4,12 +4,12 @@
 \minilot
 
 \section{Réponse à une excitation sinusoïdale, régime transitoire, régime permanent}
-    Soit un dipôle \(R, C\) série par exemple, branché sur une source de tension 
-    fournissant une tension alternative sinusoïdale à partir de \(t=0\). On a 
-    \(e(t) = E\cos(\omega t + \varphi) Y(t)\) avec \(Y\) la fonction de 
-    Heaviside. Initialement l'intensité est nulle et le condensateur est 
-    déchargé. L'équation différentielle vérifiée par \(q\) la charge du 
-    condensateur est~: \[ \ddot{q} + \frac{R}{L} \dot{q} + \frac{q}{RC} = 
+    Soit un dipôle \(R, C\) série par exemple, branché sur une source de tension
+    fournissant une tension alternative sinusoïdale à partir de \(t=0\). On a
+    \(e(t) = E\cos(\omega t + \varphi) Y(t)\) avec \(Y\) la fonction de
+    Heaviside. Initialement l'intensité est nulle et le condensateur est
+    déchargé. L'équation différentielle vérifiée par \(q\) la charge du
+    condensateur est~: \[ \ddot{q} + \frac{R}{L} \dot{q} + \frac{q}{RC} =
     \frac{e}{L} \]. Pour \(t\) positif~:
     \begin{itemize}
         \item La solution générale \(q= f_T(t)\) de l'équation différentielle sans second membre correspond à un régime amorti, apériodique ou pseudo-périodique ;
@@ -155,7 +155,7 @@
         \end{align}
     \subsection{Associations de dipôles linéaires}
       \paragraph{En parallèle} Les dipôles sont sous la même tension et les intensités s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\ic = \sum_k {\ic}_k = \sum{k} {\yc}_k \uc \). \emph{L'admittance complexe du dipôle équivalent est la somme des admittances complexe des dipôles en parallèle}~: \(\Yc = \sum_{k=1}^n \Yc_k\). En particulier pour deux dipôles en parallèle : \(\Yc = \Yc_1 + \Yc_2\), d'où \(\Zc = \frac{\Zc_1 \Zc_2}{\Zc_1+\Zc_2}\). Par exemple, l'admittance complexe d'un condensateur de capacité \(C\) avec une conductance de fuite non nulle \(G\) est~: \(\Yc = G + \ju\omega C\), donc \(Y = \sqrt{G^2 + C^2 \omega^2}\), d'où \(Z = \frac{R}{\sqrt{1+(RC\omega)^2}}\) et le déphasage de la tension sur l'intensité est \(\Phi = -\arctan\left(\frac{C\omega}{G}\right) = -\arctan(RC\omega)\).
-      
+
       \paragraph{En série} Les dipôles sont traversés par le même courant et les tensions s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\uc = \sum_k \Zc_k \ic\). \emph{L'impédance complexe du dipôle équivalent est la somme des impédances complexes des dipôles en série~: \(\Zc = \sum_k \Zc_k\). En particulier pour deux dipôles en série : \(\Zc = \Zc_1 + \Zc_2\), d'où \(\Yc = \frac{\Yc_1 \Yc_2}{\Yc_1+\Yc_2}\).} Par exemple, l'impédance complexe d'une bobine réelle, si l'on peut négliger sa capacité est~: \(\Zc = R + \ju\omega L\), donc \(Z = \sqrt{R^2+L^2\omega^2}\), d'où \(Y = \frac{G}{\sqrt{1+(GL\omega)^2}}\), avec \(G=1/R\), et le déphasage de la tension sur l'intensité est \(\Phi = \arctan\left(\frac{L\omega}{R}\right) = \arctan(GL\omega)\).
       \paragraph{Théorème de Kennely}
         Il y a équivalence entre le triangle et l'étoile et on démontre, comme en régime continu~:
@@ -164,19 +164,19 @@
         \Yc_1 = \frac{\Yc_{12}\Yc_{31}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}  & \Yc_2 = \frac{\Yc_{23}\Yc_{12}}{\Yc_{12} + \Yc_{23} + \Yc_{31}} & \Yc_3 = \frac{\Yc_{31}\Yc_{23}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}
       \end{align}
       %
-    \subsection{Modèle de Norton et modèle de Thévenin d'un dipôle linéaire  actif} 
+    \subsection{Modèle de Norton et modèle de Thévenin d'un dipôle linéaire  actif}
       Les équations de ces modèles sont~: \(e = E\cos(\omega t + \varphi)\) et \(\eta = H\cos(\omega t + \psi)\) étant respectivement la force électromotrice et le courant électromoteur du dipôle linéaire, en régime sinusoïdal permanent de pulsation \(\omega\). \(\Zc\) et \(\Yc\) respectivement l'impédance complexe et l'admittance complexe de ce dipôle, on a~: \(u = u_Z -e\), d'où \(\uc = \Zc \ic -\ncomplexe{e}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Uc = \Zc \Ic - \ncomplexe{E}\). On a aussi~: \(i = i_Y + \eta\), d'où \(\ic = \ic_Y + \ncomplexe{\eta}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Ic = \Yc \Uc + \ncomplexe{H}\).
-    
+
       \emph{Les deux modèle représentent le même dipôle si et seulement si~: \(\Yc = 1/\Zc\) et \(\ncomplexe{eta} = \ncomplexe{e}/ \Zc\), soit \(\ncomplexe{H} = \ncomplexe{E}/\Zc\).} On a donc pour les amplitudes, \(H = E/Z = YE\) et pour les phases initialement à \(t=0\), \(\psi = \varphi - \Arg(\Zc) = \varphi+\Arg(\Yc)\).
       %
     \subsection{Pont diviseur de tension}
       En sortie ouverte~: \(\frac{\uc_s}{\uc_e} = \frac{\Uc_s}{\Uc_e} = \frac{\Zc_2}{\Zc_1+\Zc_2}\), et aussi en divisant par \(\Zc_1 \Zc_2\) : \(frac{\Uc_s}{\Uc_e} = \frac{\Yc_1}{\Yc_1+\Yc_2}\).
-      
+
       Avec une impédance de charge, il faut remplacer \(\Zc_2\) par l'impédance équivalente \(\Zc_2 \parallel \Zc_c\), ce qui donne \(\frac{\Uc_s}{\Uc_e} = \frac{\Zc_c \Zc_2}{\Zc_1\Zc_2 + \Zc_c\Zc_1 + \Zc_c\Zc_2} = \frac{\Yc_1}{\Yc_1+\Yc_2+\Yc_c}\)
       %
   \subsection{Pont diviseur de courant}
     En sortie court-circuitée~: \(\frac{\ic_s}{\ic_e} = \frac{\Ic_s}{\Ic_e} = \frac{\Yc_2}{\Yc_1+\Yc_2}\), et aussi en divisant par \(\Yc_1 \Yc_2\) : \(frac{\Ic_s}{\Ic_e} = \frac{\Zc_1}{\Zc_1+\Zc_2}\).
-    
+
     Avec une conductance de charge, il faut remplacer \(\Yc_2\) par la conductance équivalente \(\Yc_2 \parallel \Yc_c\), ce qui donne \(\frac{\Ic_s}{\Ic_e} = \frac{\Yc_c \Yc_2}{\Yc_1\Yc_2 + \Yc_c\Yc_1 + \Yc_c\Yc_2} = \frac{\Zc_1}{\Zc_1+\Zc_2+\Zc_c}\)
 \section{Exercices}
   \begin{exercice}[Circuit complexe en régime sinusoïdal permanent]

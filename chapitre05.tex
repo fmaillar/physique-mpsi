@@ -60,7 +60,7 @@ Soit un point mobile sur une courbe et dont l'abscisse curviligne est solution d
 
 On a donc, dans le domaine où cette équation est valable,
 \begin{equation}
- \dot{s}\ddot{s} +\omega_0^2\dot{s}(s-s_m)=0. 
+ \dot{s}\ddot{s} +\omega_0^2\dot{s}(s-s_m)=0.
 \end{equation}
 En multipliant par \(m\) et en intégrant, on obtient
 \begin{equation}
@@ -140,7 +140,7 @@ Cette relation entre \(X\) et \(\dot{X}\) est représentée par une ellipse de d
 
 En notant \(L\) le rayon du cercle (longueur du fil, pour le pendule simple), le moment cinétique en \(O\) est \(\vv{\sigma_0} = \vv{OM}\wedge m \vvv = mL^2\dot{\theta}\uz\). Donc \(\derived{\vv{\sigma_0}}{t}=mL^2\ddot{\theta}\uz\). La somme des moments en \(O\) des forces que subit \(M\) est~: \(\vv{\Gamma_0}=\vv{OM}\wedge\vv{R}+\vv{OM}\wedge\vv{P}\). Avec \(\vv{R} = R_r \ur +R_z \uz\) (pas de frottements) et \(\vv{P}=mg(\cos\theta \ur -\sin\theta \utheta)\). Alors
 \begin{align}
-  \vv{\Gamma_0} &= L \ur \wedge \left( (mg\cos\theta +R_r)\ur - mg\sin\theta\utheta +R_z\uz\right) \\ 
+  \vv{\Gamma_0} &= L \ur \wedge \left( (mg\cos\theta +R_r)\ur - mg\sin\theta\utheta +R_z\uz\right) \\
   & = -mgL\sin\theta\uz - LR_z\utheta.
 \end{align}
 Mais \(\derived{\vv{\sigma_0}}{t} = \vv{\Gamma}_0\), donc \(R_z=0\) et \(mL^2\ddot{\theta}=-mgL\sin\theta\). En posant \(\omega_0 = \sqrt{\frac{g}{L}}\), on obtient l'équation différentielle du mouvement du pendule pesant simple~:
@@ -181,7 +181,7 @@ La condition \(\dot\theta^2\) (équivalente à \(E_c>0\)) s'écrit \(A<\cos\thet
   \begin{equation}
     \left(\frac{\dot{\theta}}{\omega_0}\right)^2 = 2(\cos\theta - \cos\Theta).
   \end{equation}
-\item Si \(A < -1\), alors l'équation de la trajectoire de phase s'écrit toujours 
+\item Si \(A < -1\), alors l'équation de la trajectoire de phase s'écrit toujours
   \begin{equation}
     \left(\frac{\dot{\theta}}{\omega_0}\right)^2 = 2(\cos\theta - A),
   \end{equation}
@@ -302,15 +302,15 @@ Avec un logiciel de calcul, on obtient facilement le portrait de phase représen
 \section{Exercices}
 \label{chap5-sec:exercices}
 \begin{exercice}[Ressort comprimé]
-	Un objet de masse \(m\) assimilé à un point matériel M, glisse sans frottement sur une tige inclinéee de l'angle \(\alpha\) par rapport au plan horizontal. 
+	Un objet de masse \(m\) assimilé à un point matériel M, glisse sans frottement sur une tige inclinéee de l'angle \(\alpha\) par rapport au plan horizontal.
 	Arrivé au point \(O\), origine de l'axe \(Ox\), il vient comprimer un ressort de longueur à vide \(L_0\) et de raideur \(k\), dont l'autre extrémité \(A\) est fixe. Le contact est rompu dès que le ressort reprend sa longueur à vide \(L_0\). Pour \(x\) négatif, \(M\) est donc soumis à une force supplémentaire exercée par le ressort comprimé.
 	À la date \(t=0\), \(M\) est lâché sans vitesse initiale du point d'abscisse \(x_0=\frac{L_0}{2}\). La longueur à vide du ressort est telle que \(\frac{mg \sin(\alpha)}{k} = \frac{L_0}{4}\).
 	\begin{enumerate}
 		\item Exprimer l'énergie potentielle de \(M\) avec \(j\), \(L_0\), et \(x\) pour \(x\) positif puis pour \(x\) négatif.
 		\item Quelle est l'abscisse de la position d'équilibre ? Est-ce une position d'équilibre stable ?
 		\item Représenter l'énergie potentielle \(E_p\) en fonction de \(x\) et montrer sur le tracé la valeur de l'énergie mécanique \(E\) avec les échelles suivantes : \(\SI{8}{\centi\meter}\) pour \(L_0\) et \(\SI{8}{\centi\meter}\) \(\frac{k L_0^2}{4}\).
-		\item Établir les équations implicites de la trajectoire de phase (relation entre \(x\) et \(\dot{x}\)) avec les paramètres \(k\), \(m\) et \(L_0\). 
-			
+		\item Établir les équations implicites de la trajectoire de phase (relation entre \(x\) et \(\dot{x}\)) avec les paramètres \(k\), \(m\) et \(L_0\).
+
 		On remplace les variables \(x\) et \(t\) par des variables adimensionnées \(X\) et \(\tau\) et on pose \(X' = \derived{X}{\tau}\) \(X'' = \deriveds{X}{\tau}\). Ceci permet d'écrire les équations de la trajectoire de phase sans aucun paramètre.
 
 		Exprimer les relations entre \(x\) et \(X\), entre \(t\) et \(\tau\), entre \(\dot{x}\) et \(X'\) et entre \(\ddot{x}\) et \(X''\).
