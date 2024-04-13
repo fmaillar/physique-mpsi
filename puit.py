@@ -16,16 +16,15 @@ def plot_potential_curve(a, b, c):
     plt.ylabel("$Ep(r)$")
     plt.ylim([-3, 3])
     plt.xlim([0, 4])
-    plt.grid(which='both')
-    plt.axhline(0, color='black')
-    plt.axvline(0, color='black')
+    plt.grid(which="both")
+    plt.axhline(0, color="black")
+    plt.axvline(0, color="black")
     text = r"$Ep(r) = \frac{a}{r} + \frac{b}{r^2} + \frac{c}{r^3}$" + "\n"
     text += f"$a={a}, b={b}, c={c}$"
     plt.text(2, 2.3, text)
     plt.xticks([])
-    plt.yticks([-1.75, -0.8, 1.8, 2.8],
-               labels=[r"$E_0$", r"$E_3$", r"$E_2$", r"$E_1$"])
-    plt.savefig('puits_potentiel.png', dpi=200)
+    plt.yticks([-1.75, -0.8, 1.8, 2.8], labels=[r"$E_0$", r"$E_3$", r"$E_2$", r"$E_1$"])
+    plt.savefig("puits_potentiel.png", dpi=200)
 
 
 plot_potential_curve(3.9, -1.8, 0.19)
