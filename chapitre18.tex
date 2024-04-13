@@ -1,0 +1,215 @@
+\chapter{Mouvement dans un champ de forces centrales conservatives}
+\minitoc{}
+\minilof{}
+\minilot{}
+
+\section{Mouvement à accélération centrale}
+\subsection{Définition, planéité du mouvement, loi des aires}
+Un point matériel a un mouvement à accélération centrale de centre \(O\), fixe 
+dans le référentiel considéré, si et seulement si son accélération est parallèle 
+à son vecteur position \(\vv{OM}\) à chaque instant.
+
+%TODO:Mettre un schéma
+
+Alors, pour ce mouvement, on a \(\vv{OM} \wedge \vv{a} = \vv{0}\). Soit le 
+vecteur \(\vv{C} = \vv{OM} \wedge \vvv\). En le dérivant, on obtient 
+\(\derived{\vv{C}}{t} = \vvv \wedge \vvv + \vv{OM} \wedge \vv{a} = 
+\vv{0}\), donc \(\vv{C}\) est constant (Le moment cinétique en \(O\) \(m\vv{C}\)
+est constant). Le vecteur \(\vv{OM}\) reste donc perpendiculaire à un vecteur 
+constant et par conséquent \emph{le mouvement est plan}.
+
+Pendant un intervalle de temps du durée \(\D{t}\), \(\vv{OM}\) balaye une 
+surface élémentaire qui est la norme du vecteur \(\D\vv{S} = 
+\dfrac{\vv{OM}\wedge\D\vv{M}}{2}\), donc la ``vitesse aréolaire'' est 
+\(\derived{\vv{S}}{t} = \dfrac{\vv{OM}\wedge\vvv}{2} = \dfrac{\vv{C}}{2}\).
+
+Dans un mouvement à accélération centrale, \emph{la vitesse aréolaire est 
+constante}. C'est la loi des aires. Le vecteur \(\vv{C}\) est \emph{la 
+constante de la loi des aires}.
+
+\subsection{Utilisation du théorème du moment cinétique}
+On arrive aux mêmes conclusions par le raisonnement suivant~: si le mouvement 
+de \(M\) est à accélération centrale, de centre \(O\), alors il est soumis à la 
+force totale \(\vv{F} = m \vv{a} \parallel \vv{OM}\), c'est-à-dire à une 
+\emph{force centrale (exercée par \(O\))}. Le moment de la force en \(O\) est 
+\(\Gamma_O = \vv{OM} \wedge \vv{F} = 0\). Le théorème du moment cinétique 
+appliqué en \(O\) qui est fixe donne \(\derived{\vv{L_O}}{t} = \Gamma_O = \vv{0}\), 
+donc le moment cinétique en \(O\) est constant, \(L_O = m\vv{C}\).
+
+\subsection{Formule de Binet}
+On utilisera les coordonnées cylindriques de \(M(r, \theta, z=0)\) avec l'axe 
+\(z\) dans la direction et le sens de \(\vv{C}\). On a donc~:
+\[\vv{C} = C \uz = \vv{OM} \wedge \vvv = r \ur \wedge (\dot{r}\ur + 
+r\dot{\theta} \utheta) = r^2\dot{\theta} \uz\]
+et donc \(\dot{\theta} = \dfrac{C}{r^2} = \dfrac{L_O}{mr^2}\)
+
+Pour simplifier les expression suivantes, on pose~:
+\[u = \dfrac{1}{r} ; u'=\derived{u}{\theta} ; u''=\deriveds{u}{\theta}.\]
+On a donc \(\dot{\theta} = Cu^2\). On a aussi \(\dot{r} = -\dfrac{\dot{u}}{u^2} 
+= -\dfrac{u' \dot{\theta}}{u^2} = -Cu'\) et ainsi \(\vvv = -Cu' \ur + Cu 
+\utheta\). D'où la \emph{première loi de Binet}~:
+\begin{equation}
+  v^2 = C^2(u^2 + u'^2)
+\end{equation}
+En dérivant la vitesse, on obtient \(\vv{a} = -Cu''\dot{\theta}\ur 
+-Cu\dot{\theta}\ur\), les termes en \(\utheta\) s'annule puisque l'accélération 
+est colinéaire à \(\vv{OM}\). D'où la \emph{deuxième loi de Binet}~:
+\begin{equation}
+  \vv{a} = -C^2u^2(u+u'')\ur
+\end{equation}
+\section{Cas d'une force centrale conservative en \(F_r(r)\)}
+\subsection{Énergie potentielle, conservation de l'énergie mécanique}
+Dans ce case, le travail élémentaire de la force s'écrit \(\delta{}W = 
+\vv{F}\cdot\vv{\D{M}} = F_r(r)\ur\cdot(\D{r}\ur + r\D{\theta}\utheta) = 
+F_r(r)\D{r}\). Donc \(-\D{E_p} = F_r(r)\D{r}\). L'énergie potentielle n'est 
+fonction que de \(r\). La constante d'intégration est choisie telle que la 
+limite en l'infini soit nulle. L'énergie mécanique (qui est constante puisque 
+la force est conservative) vaut donc~:
+\[E = E_p(r) + \dfrac{1}{2} mv^2\]
+
+\subsection{Energie potentielle effective, énergie cinétique radiale}
+La vitesse de \(M\) est \(\vvv = \dot{r}\ur + r\dot{\theta}\utheta\) et son 
+carré vaut \(v^2 = \dot{r}^2 + r^2\dot{\theta}^2\) avec \(\dot{\theta} = 
+C/r^2\), donc \(v^2 = \dot{r}^2 + \dfrac{C^2}{r^2}\) donc l'énergie mécanique 
+de \(M\) s'écrit~:
+\[E = \dfrac{1}{2}m\dot{r}^2 + \dfrac{mC^2}{2r^2} + E_p(r).\]
+Elle est la somme de deux termes, l'énergie cinétique radiale (qui serait 
+l'énergie cinétique si la vitesse était radiale) \(Ec_r = 
+\dfrac{1}{2}m\dot{r}^2\) et l'énergie potentielle 
+effective \(Ep_{\textmd{eff}} = \dfrac{mC^2}{2r^2} + E_p(r)\).
+
+On a \(Ep_{\textmd{eff}} \leq E\).
+
+\subsection{Différents types de mouvements}
+La condition \(Ep_{\textmd{eff}} \leq E\), si l'on connait l'expression de 
+\(Ep_{\textmd{eff}}\) en fonction de \(r\) permet de déterminer le type de 
+mouvement de \(M\) suivant la valeur de l'énergie mécanique (constante), donc 
+suivant la valeur initiale de \(E\) et suivant la valeur initiale de \(r\). De 
+toute façon, la limite de l'énergie potentielle effective en l'infini est nulle 
+et en zéro est infini (en général). Supposons par exemple que l'allure de la 
+courbe ait l'allure de la Fig.~\ref{fig:puits_potentiel}.
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.7]{./puits_potentiel.png}
+  \caption{Puits de potentiel}\label{fig:puits_potentiel}
+\end{figure}
+
+Pour \(E = E_1\), le point \(M\) peut s'éloigner indéfiniment de \(O\), car il 
+n'est pas lié à \(O\). Pour \(E=E_2\), deux cas sont possibles suivant la 
+valeur initiale de \(r\), si le rayon initial est dans le puits, alors \(M\) 
+reste à une distance finie de \(O\), il est donc lié; sinon il n'est pas lié.
+Pour \(E=E_3\) il est lié et pour \(E=E_0\), le point \(M\) est lié et a un
+mouvement circulaire autour de \(O\). \emph{Si \(M\) peut s'éloigner 
+indéfiniment de \(O\) on parle d'état de diffusion, sinon on parle d'état lié.}
+
+Bien entendu, un état lié n'est possible que si la force exercée par \(O\) sur 
+\(M\) est attractive.
+
+\subsection{Obtention de l'équation de la trajectoire en coordonnées polaires}
+On peut utliser la deuxième loi de Newton et la deuxième formule de Binet. 
+\(F_r\) étant fonction de \(r\) est aussi une fonction de \(u = 1/r\), donc 
+\(u\) en fonction de \(\theta\) est solution de l'équation différentielle~:
+\begin{equation}
+  F_r(u) = -mC^2u^2(u+u'') \iff F_r(u) + \frac{L_0^2}{m}u^2(u+u'') = 0.
+\end{equation}
+La constante \(C\) (ou la constante \(L_0\)) est déterminée avec les conditions 
+initiales.
+\section{Cas des forces centrales en \(1/r^2\)~: interaction gravitationnelle,
+interaction électrostatique}
+\subsection{Expression de l'énergie potentielle, potentiel électrostatique, 
+potentiel gravitationnel}
+Si \(M\) de masse \(m\) est attiré par la masse \(m_O\) placé en \(O\) fixe, 
+\(M\) subit la force d'attraction gravitationnelle~:
+\begin{equation}
+  \vv{F} = -\Gb \frac{m_O m}{r^2} \er.
+\end{equation}
+avec \(\er = \frac{\vv{OM}}{OM}\). Son travail élémentaire vaut \(\delta W = 
+-\D E_p = F_r \D r\) donc \(\D E_p = \Gb\frac{m_O m}{r^2}\) en intégrant avec 
+une constante d'intégration nulle (\(\lim_{r\to\infty} E_p = 0 = C\)) il vient
+\begin{equation}
+  E_p = -\Gb \frac{m_O m}{r} \qquad V = \frac{E_p}{m} = -\Gb \frac{m_O}{r}
+\end{equation}
+avec \(V\) le potentiel gravitationnel.
+
+Si \(M\) de charge électrique \(q\) est attiré (ou repoussé) par la charge 
+\(q_O\) placée en \(O\) fixe, \(M\) subit la force électrostatique
+\begin{equation}
+  \vv{F} = \frac{q_O q}{4\pi\epsilon_0r^2} \er.
+\end{equation}
+avec \(\er = \frac{\vv{OM}}{OM}\). Son travail élémentaire vaut \(\delta W = 
+-\D E_p = F_r \D r\) donc \(\D E_p = - \frac{q_O q}{4\pi\epsilon_0r^2}\)
+en intégrant avec une constante d'intégration nulle (\(\lim_{r\to\infty}
+E_p = 0 = C\)) il vient
+\begin{equation}
+  E_p = \frac{q_O q}{4\pi\epsilon_0 r} \qquad V = \frac{E_p}{q} = 
+  \frac{q_O}{4\pi\epsilon_0 r}
+\end{equation}
+avec \(V\) le potentiel électrostatique.
+
+Dans les deux cas, la force est centrale et inversement proportionnel au carré 
+de la distance au centre, l'énergie potentielle est de la forme \(E_p = 
+\frac{K}{r}\) et on a \(F_r = \frac{K}{r^2}\) avec~:
+\begin{itemize}
+  \item \(K = -\Gb m_O m < 0\) pour une interaction gravitationnelle~;
+  \item \(K = \frac{q_O q}{4\pi\epsilon_0}\) pour une interaction 
+    électrostatique qui est négatif (attraction) si les charges sont de signes
+    opposés et positif (répulsion) si les charges sont de même signe.
+\end{itemize}
+\subsection{Énergie potentielle effective, différents types de mouvements}
+Dans ces deux cas, on a donc~:
+\begin{equation}
+  E_{\text{p,eff}} = \frac{K}{r} + \frac{L_O^2}{2mr^2} = \frac{K}{r} + 
+  \frac{mC^2}{2r^2}.
+\end{equation}
+Si \(K >0\), \(E_{\text{p,eff}}\) décroît de l'infini vers 0 lorsque le rayon va de 0 
+à l'infini.\emph{Il n'y a que des états de diffusion.}
+Si \(K < 0\), l'énergie potentielle effective passe par un minimum négatif en 
+\(r_0 = -\frac{mC^2}{K}\) qui vaut \(E_0 = -\frac{K^2}{2mC^2}\). On remarque 
+aussi que l'énergie potentielle effective s'annule pour \(r = \frac{r_0}{2}\).
+Il y a donc différents cas~:
+\begin{itemize}
+  \item Si \(E>0\) c'est-à-dire \(r<r_0/2\) alors il n'y a que des états de 
+    diffusion
+  \item Si \(E<0\) il s'agit d'états liés, particulièrement en \(E = E_0\) pour 
+    lequel le mouvement de \(M\) est circulaire, de rayon \(r_0\).
+\end{itemize}
+\subsection{Équation de la trajectoire en coordonnées polaires}
+Elle est donnée par l'équation différentielle \(F_r(u) = -mC^2u^2(u+u'')\). 
+Avec \(F_r = Ku^2\), l'équation différentielle s'écrit~:
+\begin{equation}
+  u'' + u = \frac{-K}{mC^2}
+\end{equation}
+et sa solution générale est de la forme \(u = \frac{-K}{mC^2} + 
+A\cos(\theta-\theta_0)\), avec le choix de \(\theta_0\) tel que \(A\) demeure 
+positif, d'où il vient~:
+\begin{equation}
+  r = \frac{1}{u} = \frac{1}{\frac{-K}{mC^2} + A\cos(\theta - \theta_0)} = 
+  \frac{-\frac{mC^2}{K}}{1 - \frac{AmC^2}{K}\cos(\theta - \theta_0)}
+\end{equation}
+\paragraph{Cas d'une force attractive}
+Pour une force attractive, \(K < 0\), on a affaire à une conique d'équation \(r 
+= \frac{p}{1 + e\cos(\theta - \theta_0)}\), avec~: le paramètre \(p = 
+-\frac{mC}{K}\) et l'excentricité \(e = -\frac{AmC^2}{K} = Ap\) (\(p\) et \(e\) 
+sont positifs). Si \(e=0\), la trajectoire est un cercle, si \(e=1\) il s'agit 
+d'une parabole, si \(e>1\) il s'agit d'une branche d'hyperbole. Le cercle et 
+les ellipses correspondent aux états liés., la parabole et la branche 
+d'hyperbole correspondent aux états de diffusion. La parabole correspond au cas 
+limite. Dans le cas de la branche d'hyperbole, il s'agit de celle pour laquelle 
+\(O\) est dans la concavité (on le démontre en tenant compte de \(r>0\)).
+\paragraph{Cas d'une force répulsive}
+Pour une force répulsive, \(K > 0\), il ne peut y avoir que des états de 
+diffusion et la trajectoire ne peut être qu'une branche d'hyperbole puisque le 
+cas limite de la parabole n'existe pas. On a donc le paramètre \(p = 
+\frac{mC}{K}\) et l'excentricité \(e = \frac{AmC^2}{K} = Ap\) \(e = Ap\). 
+L'équation de la trajectoire s'écrit~\(r = \frac{-p}{1 - e\cos(\theta - 
+\theta_0)}\). La branche d'hyperbole décrite par \(M\) est celle pour laquelle 
+\(O\) est du côté de sa convexité.
+
+\emph{Dans tous les cas~: le paramètre est \(p=\frac{mC^2}{\abs{K}}\) et 
+l'excentricité est \(e = Ap\)}.
+\subsection{Énergie mécanique}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "physique"
+%%% End:
