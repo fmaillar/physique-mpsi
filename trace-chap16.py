@@ -18,6 +18,7 @@ w, mag, phase = signal.bode(sys, f)
 # Cherche l'index de la coupure (1)
 # IC = np.where(w == 1)[0][0]
 IC = int(L / 2)
+d_arrow = {'facecolor': "black", 'shrink': 0.05, 'width': 0.2, 'headlength': 3}
 
 # Definition des asymptotes
 G1 = 20 * np.log10(H0) * np.ones(IC + 1)
@@ -34,24 +35,24 @@ axs[0].annotate(
     "Cutoff, $G =$" + str(np.around(mag[IC], decimals=0)),
     xy=(w[IC], mag[IC]),
     xytext=(w[IC] + 3, mag[IC]),
-    arrowprops=dict(facecolor="black", shrink=0.05, width=0.2, frac=0.2),
+    arrowprops=d_arrow
 )
 axs[0].grid(True, which="both")
 # axs[0].set_xlabel("$x = \omega/\omega_0$")
-axs[0].set_ylabel("$G = 20\log(H)$ (dB)")
+axs[0].set_ylabel("$G = 20\\log(H)$ (dB)")
 axs[1].semilogx(w, phase)
 axs[1].semilogx(w[: (IC + 1)], Phi1, c="red", ls="--")
 axs[1].semilogx(w[IC:], Phi2, c="red", ls="--")
 axs[1].annotate(
-    "Cutoff, $\Phi =$" + str(np.around(phase[IC], decimals=0)),
+    "Cutoff, $\\Phi =$" + str(np.around(phase[IC], decimals=0)),
     xy=(w[IC], phase[IC]),
     xytext=(w[IC] + 3, phase[IC]),
-    arrowprops=dict(facecolor="black", shrink=0.05, width=0.2, frac=0.2),
+    arrowprops=d_arrow
 )
 
 axs[1].grid(True, which="both")
-axs[1].set_xlabel("$x = \omega/\omega_0$")
-axs[1].set_ylabel("$\Phi = Arg(H)$ (deg)")
+axs[1].set_xlabel("$x = \\omega/\\omega_0$")
+axs[1].set_ylabel("$\\Phi = Arg(H)$ (deg)")
 plt.suptitle("Magnitude and phase Bode Plot of $H=H_0/(1+jx)$")
 plt.tight_layout()
 plt.savefig("Fig12.png", dpi=300)

@@ -9,26 +9,22 @@ mpl.rcParams["text.usetex"] = True
 
 
 def Heavyside(x):
+    """Define the Heavyside function."""
     return 0.5 * (np.sign(x) + 1)
 
 
-a = -2
-b = 5.0
-N = 1000
-t = np.linspace(a, b, N)
+a, b, n = -2, 5.0, 1000
+tau, gain = 1, 1
+delta = n / (a - b)
+t = np.linspace(a, b, n)
 
-tau = 1
-Gain = 1
 
-U1 = Gain * (1 - np.exp(-t / tau)) * Heavyside(t)
+u1 = gain * (1 - np.exp(-t / tau)) * Heavyside(t)
+u2 = 1 - u1
 
-# U1[0:(b-a)*N/2] = 0
-U2 = 1 - U1
-
-delta = N / (a - b)
 
 fig1 = plt.figure(1)
-plt.plot(t, U1)
+plt.plot(t, u1)
 plt.grid(True)
 plt.xlabel(r"$t/\tau$")
 plt.ylabel(r"$u/E$")

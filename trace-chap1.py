@@ -2,15 +2,15 @@
 """Trace les figure du chapitre1."""
 import numpy as np
 import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 mpl.rcParams["text.usetex"] = True
-import matplotlib.pyplot as plt
 
 # plt.rcParams.update({
 #    "text.usetex": True,
 #    "font.family": "sans-serif",
 #    "font.sans-serif": ["Helvetica"]})
-## for Palatino and other serif fonts use:
+# for Palatino and other serif fonts use:
 # plt.rcParams.update({
 #    "text.usetex": True,
 #    "font.family": "serif",
@@ -44,24 +44,27 @@ v0 = np.sqrt(2 * g)  # *np.array([0, 1/2, 2/3, 3/4, 4/5, 1], float)
 x = np.linspace(0, xmax, N)
 
 
-def chute(v0, alphav, x):
-    return -g / (2 * v0**2 * np.cos(alphav) ** 2) * x**2 + x * np.tan(alphav) + z0
+def chute(v0_i, alphav_i, x_i):
+    """Retourne la chute paramétrée."""
+    chute_o = -g / (2 * v0_i**2 * np.cos(alphav_i) ** 2) * x_i**2
+    chute_o += x_i * np.tan(alphav_i) + z0
+    return chute_o
 
 
 z = np.zeros((len(alphav), N), dtype=float)
 z_enveloppe = v0**2 / (2 * g) - g / (2 * v0**2) * x**2 + z0
-for j in range(len(alphav)):
-    z[j, :] = chute(v0, alphav[j], x)
+for j, alpha in enumerate(alphav):
+    z[j, :] = chute(v0, alpha, x)
 
 fig, ax = plt.subplots(subplot_kw={"aspect": "equal"})
 fig.set_size_inches(8, 6)
 ax.set_ylim(bottom=0, top=1.5)
 ax.set_xlim(0, 5.0 / 2)
-for j in range(len(alphav)):
+for j, alpha in enumerate(alphav):
     ax.plot(
         x,
         z[j, :],
-        label=r"$\alpha = $ " + str(round(alphav[j] * 180 / np.pi, 1)) + " degres",
+        label=r"$\alpha = $ " + str(round(alpha * 180 / np.pi, 1)) + " degres",
     )
 ax.plot(x, z_enveloppe, "--", label="enveloppe")
 e = mpl.patches.Ellipse(

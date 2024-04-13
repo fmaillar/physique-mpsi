@@ -23,7 +23,8 @@ def plot_potential_curve(a, b, c):
     text += f"$a={a}, b={b}, c={c}$"
     plt.text(2, 2.3, text)
     plt.xticks([])
-    plt.yticks([-1.75, -0.8, 1.8, 2.8], labels=[r"$E_0$", r"$E_3$", r"$E_2$", r"$E_1$"])
+    plt.yticks([-1.75, -0.8, 1.8, 2.8],
+               labels=[r"$E_0$", r"$E_3$", r"$E_2$", r"$E_1$"])
     plt.savefig("puits_potentiel.png", dpi=200)
 
 

@@ -4,7 +4,7 @@
 from itertools import cycle
 import numpy as np
 from scipy.integrate import odeint
-from scipy import integrate
+# from scipy import integrate
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
@@ -15,7 +15,9 @@ mpl.rcParams["text.usetex"] = True
 def chute_frot(y, t, g0, msurk, gamma):
     """Renvoie."""
     _, _, vx, vz = y
-    return [vx, vz, -ksurm * np.abs(vx) ** gamma, -g0 - ksurm * np.abs(vz) ** gamma]
+    ax_o = -msurk * np.abs(vx) ** gamma
+    az_o = -g0 - msurk * np.abs(vz) ** gamma
+    return [vx, vz, ax_o, az_o]
 
 
 x0, z0, V0, n = 0, 0, 20, 8
