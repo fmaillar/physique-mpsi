@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Apr  2 01:42:00 2024.
+"""Trace les puits de potentiel."""
 
-@author: florian
-"""
-
-# from itertools import product
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def plot_potential_curve(a, b, c):
-    """Ploit the curve."""
+    """Plot the curve."""
     r = np.linspace(0.05, 10, 10_000)
-    ep = a/r + b/r**2 + c/r**3
+    ep = a / r + b / r**2 + c / r**3
     plt.figure(dpi=200)
     plt.plot(r, ep)
     plt.xlabel("$r$")
@@ -30,7 +25,6 @@ def plot_potential_curve(a, b, c):
     plt.xticks([])
     plt.yticks([-1.75, -0.8, 1.8, 2.8],
                labels=[r"$E_0$", r"$E_3$", r"$E_2$", r"$E_1$"])
-    # plt.show()
     plt.savefig('puits_potentiel.png', dpi=200)
 
 
