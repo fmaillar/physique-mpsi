@@ -1,207 +1,426 @@
-\chapter{Régime sinusoïdal permanent}
+\chapter{Régime sinusoïdal permanent}%
 \minitoc{}
 \minilof{}
 \minilot{}
 
-\section{Réponse à une excitation sinusoïdale, régime transitoire, régime permanent}
-    Soit un dipôle \(R, C\) série par exemple, branché sur une source de tension
-    fournissant une tension alternative sinusoïdale à partir de \(t=0\). On a
-    \(e(t) = E\cos(\omega t + \varphi) Y(t)\) avec \(Y\) la fonction de
-    Heaviside. Initialement l'intensité est nulle et le condensateur est
-    déchargé. L'équation différentielle vérifiée par \(q\) la charge du
-    condensateur est~: \[ \ddot{q} + \frac{R}{L} \dot{q} + \frac{q}{RC} =
-    \frac{e}{L} \]. Pour \(t\) positif~:
-    \begin{itemize}
-        \item La solution générale \(q= f_T(t)\) de l'équation différentielle sans second membre correspond à un régime amorti, apériodique ou pseudo-périodique ;
-        \item L'équation complète admet, comme on le démontreraplus loin, une solution particulière alternative sinusoïdale de pulsation égale à celle de la source de tension, de la forme \(q = f_P(t) = Q \cos(\omega t +\psi)\).
-        \item On a donc pour \(t\) positif, \(q = f_T(t) + f_P(t)\) et \(i = \dot{q} = f_T' + f_P'\). Les constantes d'intégration étant déterminées par les conditions initiales~: la continuité de \(i\) qui traverse l'inductance \(L\) donne \(\lim\limits{t \to 0} i = 0\) et celle de \(q\) donne \(\lim\limits{t \to 0} q = 0\). Pour \(t\) suffisamment grand, le régime transitoire peut être considéré comme terminé, du fait des exponentielles d'argument négatifs, \(\lim\limits{t \to \infty} f_T(t) = 0\). On a alors un régime sinusoïdal permanent~:
-        \begin{align}
-            q = f_P(t) &= Q \cos(\omega t +\psi) \\
-            i = f_P'(t) &= -\omega Q\sin(\omega t +\psi)
-        \end{align}
-    \end{itemize}
-\section{Déphasage entre deux grandeurs sinusoïdales de même fréquence}
-    \subsection{Définition}
-            Pour deux grandeurs sinusoïdale de même fréquence (de même pulsation)~: \(x = X\cos(\omega t + \varphi)\) et \(y = Y\cos(\omega t + \psi)\), ou \(x = X\sin(\omega t + \varphi)\) et \(y = Y\sin(\omega t + \psi)\), \(X\) et \(Y\) sont positifs, ce sont les amplitudes ; \(\omega t + \varphi\) et \(\omega t + \psi\) sont les phases à la date \(t\). \(\Phi = \psi -\varphi\) est le déphasage de \(y\) par rapport à \(x\) (ou différence de phase).
-            Si l'on choisit l'origine des dates de telle façon qu'à \(t=0\), \(x=X\), on a alors \(\varphi=0\) et \(\Phi = \psi\).
-    \subsection{Mesure du déphasage sur les graphes}
-            Pour simplifier, on peut donc choisir l'origine des dates telle que \(x = X\cos \omega t\) et \(y=Y\cos(\omega t + \Psi)\) avec \(\Phi \in \intervalleof{-\pi}{\pi}\). À \(t' = t + \frac{\Phi}{\omega} = t + T\frac{\Phi}{2\pi}\), \(x\) aura la phase qu'à \(y\) à la date \(t\). L'avance de \(y\) sur \(x\) est donc de \(\theta = \frac{\Phi}{2\pi} T\).
-            En éliminant le paramètre \(t\) dans les expressions de \(x\) et \(y\)~:
-            \begin{align}
-                \frac{x}{X} &= \cos\omega t \\
-                \frac{y}{Y} &= \cos\omega t \cos\Phi -\sin\omega t \sin\Phi,
-            \end{align}
-            donc~:
-            \begin{align}
-                \cos\omega t &= \frac{x}{X} \\
-                \sin\omega t &= \frac{\frac{x}{X}\cos\Phi - \frac{y}{Y}}{\sin\Phi}.
-            \end{align}
-            Avec \(\sin^2+\cos^2=1\), on obtient~:
-            \begin{align}
-                1 &= \cos^2\omega t + \sin^2\omega t \\
-                  &= \left(\frac{x}{X}\right)^2 + \left( \frac{\frac{x}{X}\cos\Phi - \frac{y}{Y}}{\sin\Phi} \right)^2 \\
-                  &= \left(\frac{x}{X}\right)^2 + \frac{(\frac{x}{X}\cos\Phi - \frac{y}{Y})^2}{\sin^2\Phi} \\
-       \sin^2\Phi &= \sin^2\phi \left(\frac{x}{X}\right)^2 + \cos^2\Phi \left(\frac{x}{X}\right)^2 + \left(\frac{y}{Y}\right)^2 - 2 \frac{xy}{XY} \cos\Phi
-            \end{align}
-            Donc on a bien l'équation cartésienne d'une ellipse~:
-            \begin{equation}
-                \left(\frac{x}{X}\right)^2 + \left(\frac{y}{Y}\right)^2 - 2 \frac{xy}{XY} \cos\Phi = \sin^2\Phi.
-            \end{equation}
-            Cette ellipse est inscrite dans le rectagle \([X, Y]\) et en général, ces axes sont inclinés par rapport au repère \((Oxy)\). Pour \(y=0\), on a \(x = \pm X\sin(\Phi) = \pm a\). Pour \(x=0\) on a \(y = \pm Y\sin\Phi\) donc \(\abs{\sin\Phi} = \frac{2a}{2X} = \frac{2b}{2Y}\). Si l'ellipse est décrite dans le sens trigonométrique, \(x\) est maximal avant \(y\), \(y\) est en retard sur \(x\), alors \(\Phi\) est négatif.
-        \subsection{Déphasages particulier}
-            Si \(\Phi\) est nul, \(x\) et \(y\) sont en concordance de phase, ou "en phase". Alors \(y=\frac{Y}{X} x\), le graphe de \(y(x)\) est alors un segment de droite symétrique par rapport à \(O\), de coefficient directeur positif. Si \(\Phi=\pi\), \(x\) et \(y\) sont en opposition de phase. Alors \(y=-\frac{Y}{X} x\), le graphe de \(y(x)\) est alors un segment de droite symétrique par rapport à \(O\), de coefficient directeur négatif. Si \(\Phi=\frac{\pi}{2}\), \(y\) est en quadrature avance sur \(x\). Si \(\Phi=-\frac{\pi}{2}\), \(y\) est en quadrature retard sur \(x\).
+\section{Réponse à une excitation sinusoïdale, régime transitoire, régime 
+permanent}%
 
-            Dans les deux derniers cas, \(\cos\phi = 0\), \(\sin\Phi=1\), l'équation de l'ellipse est \(\left(\frac{x}{X}\right)^2 + \left(\frac{y}{Y}\right)^2 = 1\). Les axes de symétrie de l'ellipse sont \(Ox\) et \(Oy\). Si l'ellipse est décrite dans le sens trigonométrique, \(y\) est en quadrature retard sur \(x\) (on passe par \(y\) après \(x\)). Si elle est décrite dans le sens inverse, \(y\) est en quadrature avance sur \(x\) (on passe par \(y\) avant \(x\)).
-\section{Notation complexe d'une grandeur sinusoïdale}
-    \label{sec:complexe}
-    \subsection{Grandeur complexe associée, amplitude complexe}
-        En électricité, pour éviter toute confusion avec l'intensité, on note \(\ju\) l'unité imaginaire \(\ju^2=-1\), alors qu'en mécanique ou en optique, on note ce nombre \(\iu\). Soit la grandeur \(x\) fonction sinusoïdale de la date \(t\)~: \(x = X\cos(\omega t +\varphi)\). La grandeur complexe associée à \(x\) est par définition~: \(\xc = X\exp(\ju(\omega t +\varphi))\). L'amplitude complexe de \(x\) est \(\Xc = X\exp(\ju \varphi)\), donc \(\xc = \Xc \exp(\ju\omega t)\). On a donc \(x = \Re(\Xc)\), \(X = \abs{\Xc}\) et \(\varphi = \Arg(\Xc)\).
-    \subsection{Dérivation d'une grandeur complexe associée}
-        Avec les grandeurs complexes associées, la dérivation par rapport à \(t\) devient une multiplication par \(\ju\omega\)~:
-        \begin{align}
-            \derived{\xc}{t} &= \ju\omega\xc \\
-            \derivedn{\xc}{t}{n} &= (\ju\omega)^n\xc.
-        \end{align}
-        Pour l'intégration, si à \(t=0\) on a \(x=x_0\), alors
-        \begin{equation}
-                \int \xc \diff t = \frac{\xc-\xc_0}{\ju\omega}.
-        \end{equation}
-    \subsection{Équations différentielles linéaires à coefficients constants}
-        Une équation différentielle du type~:
-        \begin{equation}
-            \label{eq:eqdiffcomp}
-            \yc = \sum_{i=1}^n \alpha_i \derivedn{\xc}{t}{i}
-        \end{equation}
-        peut s'écrire, après division de tous les termes par \(\exp(\ju\omega t)\)~:
-        \begin{align}
-            \Yc &= \Xc \sum_{i=1}^n \alpha_i (\ju \omega)^i\\
-                          &= \Xc ~ \Zc
-        \end{align}
-        avec \(\Zc = \sum_{i=1}^n \alpha_i (\ju \omega)^i\). La grandeur complexe \(\xc = \Xc\exp(\ju\omega t)\) est solution de l'équation différentielle. Sa partie réelle \(X\cos(\omega t+\varphi)\) est solution de l'équation différentielle réelle \(\Re(\eqref{eq:eqdiffcomp})\)~:
-        \begin{equation}
-            \label{eq:eqdiffreel}
-            Y\cos(\omega t +\psi) = \sum_{i=1}^n \alpha_i \derivedn{x}{t}{i}.
-        \end{equation}
-        La réciproque est aussi vraie~: Si \(x=X\cos(\omega t +\varphi)\) est une solution de l'équation réelle \eqref{eq:eqdiffreel}, alors \(X\sin(\omega t +\varphi)\) est solution de l'équation~:
-        \begin{equation}
-            \label{eq:eqdiffreel2}
-            Y\sin(\omega t +\psi) = \sum_{i=1}^n \alpha_i \derivedn{x}{t}{i},
-        \end{equation}
-        qui est identique à \eqref{eq:eqdiffreel} à un changement d'origine ds dates près (\(T/4\)).
+Soit un dipôle \(R, C\) série par exemple, branché sur une source de tension
+fournissant une tension alternative sinusoïdale à partir de \(t=0\). On a
+\(e(t) = E\cos(\omega t + \varphi) Y(t)\) avec \(Y\) la fonction de
+Heaviside. Initialement l'intensité est nulle et le condensateur est
+déchargé. L'équation différentielle vérifiée par \(q\) la charge du
+condensateur est~: \[ \ddot{q} + \frac{R}{L} \dot{q} + \frac{q}{RC} =
+\frac{e}{L}.\]
+Pour \(t\) positif~:
+\begin{itemize}
+  \item La solution générale \(q= f_T(t)\) de l'équation différentielle 
+    sans second membre correspond à un régime amorti, apériodique ou 
+    pseudo-périodique ;
+  \item L'équation complète admet, comme on le démontreraplus loin, une 
+    solution particulière alternative sinusoïdale de pulsation égale à 
+    celle de la source de tension, de la forme \(q = f_P(t) = Q 
+    \cos(\omega t +\psi)\).
+  \item On a donc pour \(t\) positif, \(q = f_T(t) + f_P(t)\) et \(i = 
+    \dot{q} = f_T' + f_P'\). Les constantes d'intégration étant 
+    déterminées par les conditions initiales~: la continuité de \(i\) 
+    qui traverse l'inductance \(L\) donne \(\lim\limits{t \to 0} i = 
+    0\) et celle de \(q\) donne \(\lim\limits{t \to 0} q = 0\). Pour 
+    \(t\) suffisamment grand, le régime transitoire peut être considéré 
+    comme terminé, du fait des exponentielles d'argument négatifs, 
+    \(\lim\limits{t \to \infty} f_T(t) = 0\). On a alors un régime 
+    sinusoïdal permanent~:
+    \begin{align}
+      q = f_P(t) &= Q \cos(\omega t +\psi) \\
+      i = f_P'(t) &= -\omega Q\sin(\omega t +\psi)
+    \end{align}
+\end{itemize}
+\section{Déphasage entre deux grandeurs sinusoïdales de même fréquence}%
+\subsection{Définition}
+Pour deux grandeurs sinusoïdale de même fréquence (de même 
+pulsation)~: \(x = X\cos(\omega t + \varphi)\) et \(y = 
+Y\cos(\omega t + \psi)\), ou \(x = X\sin(\omega t + \varphi)\) et 
+\(y = Y\sin(\omega t + \psi)\), \(X\) et \(Y\) sont positifs, ce 
+sont les amplitudes ; \(\omega t + \varphi\) et \(\omega t + \psi\) 
+sont les phases à la date \(t\). \(\Phi = \psi -\varphi\) est le 
+déphasage de \(y\) par rapport à \(x\) (ou différence de phase).
+Si l'on choisit l'origine des dates de telle façon qu'à \(t=0\), 
+\(x=X\), on a alors \(\varphi=0\) et \(\Phi = \psi\).
+\subsection{Mesure du déphasage sur les graphes}
+Pour simplifier, on peut donc choisir l'origine des dates telle que 
+\(x = X\cos \omega t\) et \(y=Y\cos(\omega t + \Psi)\) avec \(\Phi 
+\in \intervalleof{-\pi}{\pi}\). À \(t' = t + \frac{\Phi}{\omega} = 
+t + T\frac{\Phi}{2\pi}\), \(x\) aura la phase qu'à \(y\) à la date 
+\(t\). L'avance de \(y\) sur \(x\) est donc de \(\theta = 
+\frac{\Phi}{2\pi} T\).
+En éliminant le paramètre \(t\) dans les expressions de \(x\) et 
+\(y\)~:
+\begin{align}
+  \frac{x}{X} &= \cos\omega t \\
+  \frac{y}{Y} &= \cos\omega t \cos\Phi -\sin\omega t \sin\Phi,
+\end{align}
+donc~:
+\begin{align}
+  \cos\omega t &= \frac{x}{X} \\
+  \sin\omega t &= \frac{\frac{x}{X}\cos\Phi - 
+  \frac{y}{Y}}{\sin\Phi}.
+\end{align}
+Avec \(\sin^2+\cos^2=1\), on obtient~:
+\begin{align}
+  1 &= \cos^2\omega t + \sin^2\omega t \\
+  &= \left(\frac{x}{X}\right)^2 + \left( 
+  \frac{\frac{x}{X}\cos\Phi - \frac{y}{Y}}{\sin\Phi} \right)^2 
+  \\
+  &= \left(\frac{x}{X}\right)^2 + \frac{(\frac{x}{X}\cos\Phi - 
+  \frac{y}{Y})^2}{\sin^2\Phi} \\
+  \sin^2\Phi &= \sin^2\phi \left(\frac{x}{X}\right)^2 + \cos^2\Phi 
+  \left(\frac{x}{X}\right)^2 + \left(\frac{y}{Y}\right)^2 - 2 
+  \frac{xy}{XY} \cos\Phi
+\end{align}
+Donc on a bien l'équation cartésienne d'une ellipse~:
+\begin{equation}
+  \left(\frac{x}{X}\right)^2 + \left(\frac{y}{Y}\right)^2 - 2 
+  \frac{xy}{XY} \cos\Phi = \sin^2\Phi.
+\end{equation}
+Cette ellipse est inscrite dans le rectagle \([X, Y]\) et en 
+général, ces axes sont inclinés par rapport au repère \((Oxy)\). 
+Pour \(y=0\), on a \(x = \pm X\sin(\Phi) = \pm a\). Pour \(x=0\) on 
+a \(y = \pm Y\sin\Phi\) donc \(\abs{\sin\Phi} = \frac{2a}{2X} = 
+\frac{2b}{2Y}\). Si l'ellipse est décrite dans le sens 
+trigonométrique, \(x\) est maximal avant \(y\), \(y\) est en retard 
+sur \(x\), alors \(\Phi\) est négatif.
+\subsection{Déphasages particulier}
+Si \(\Phi\) est nul, \(x\) et \(y\) sont en concordance de phase, 
+ou "en phase". Alors \(y=\frac{Y}{X} x\), le graphe de \(y(x)\) est 
+alors un segment de droite symétrique par rapport à \(O\), de 
+coefficient directeur positif. Si \(\Phi=\pi\), \(x\) et \(y\) sont 
+en opposition de phase. Alors \(y=-\frac{Y}{X} x\), le graphe de 
+\(y(x)\) est alors un segment de droite symétrique par rapport à 
+\(O\), de coefficient directeur négatif. Si \(\Phi=\frac{\pi}{2}\), 
+\(y\) est en quadrature avance sur \(x\). Si 
+\(\Phi=-\frac{\pi}{2}\), \(y\) est en quadrature retard sur \(x\).
 
-        Mais \(\eqref{eq:eqdiffcomp} = \eqref{eq:eqdiffreel} + \ju \eqref{eq:eqdiffreel2}\), donc \(\Xc = \Xc \exp(\ju\omega t)\) est solution de l'équation complexe \eqref{eq:eqdiffcomp}. La recherche de la solution particulière sinusoïdale de l'équation différentielle linéaire, grâce aux grandeurs complexes associées, se réduit à la résolution d'une équation complexe algébrique.
+Dans les deux derniers cas, \(\cos\phi = 0\), \(\sin\Phi=1\), 
+l'équation de l'ellipse est \(\left(\frac{x}{X}\right)^2 + 
+\left(\frac{y}{Y}\right)^2 = 1\). Les axes de symétrie de l'ellipse 
+sont \(Ox\) et \(Oy\). Si l'ellipse est décrite dans le sens 
+trigonométrique, \(y\) est en quadrature retard sur \(x\) (on passe 
+par \(y\) après \(x\)). Si elle est décrite dans le sens inverse, 
+\(y\) est en quadrature avance sur \(x\) (on passe par \(y\) avant 
+\(x\)).
+\section{Notation complexe d'une grandeur sinusoïdale}%
+\label{sec:complexe}
+\subsection{Grandeur complexe associée, amplitude complexe}
+En électricité, pour éviter toute confusion avec l'intensité, on note 
+\(\ju\) l'unité imaginaire \(\ju^2=-1\), alors qu'en mécanique ou en 
+optique, on note ce nombre \(\iu\). Soit la grandeur \(x\) fonction 
+sinusoïdale de la date \(t\)~: \(x = X\cos(\omega t +\varphi)\). La 
+grandeur complexe associée à \(x\) est par définition~: \(\xc = 
+X\exp(\ju(\omega t +\varphi))\). L'amplitude complexe de \(x\) est 
+\(\Xc = X\exp(\ju \varphi)\), donc \(\xc = \Xc \exp(\ju\omega t)\). On 
+a donc \(x = \Re(\Xc)\), \(X = \abs{\Xc}\) et \(\varphi = \Arg(\Xc)\).
+\subsection{Dérivation d'une grandeur complexe associée}
+Avec les grandeurs complexes associées, la dérivation par rapport à 
+\(t\) devient une multiplication par \(\ju\omega\)~:
+\begin{align}
+  \derived{\xc}{t} &= \ju\omega\xc \\
+  \derivedn{\xc}{t}{n} &= (\ju\omega)^n\xc.
+\end{align}
+Pour l'intégration, si à \(t=0\) on a \(x=x_0\), alors
+\begin{equation}
+  \int \xc \diff t = \frac{\xc-\xc_0}{\ju\omega}.
+\end{equation}
+\subsection{Équations différentielles linéaires à coefficients constants}
+Une équation différentielle du type~:
+\begin{equation}
+  \label{eq:eqdiffcomp}
+  \yc = \sum_{i=1}^n \alpha_i \derivedn{\xc}{t}{i}
+\end{equation}
+peut s'écrire, après division de tous les termes par \(\exp(\ju\omega 
+t)\)~:
+\begin{align}
+  \Yc &= \Xc \sum_{i=1}^n \alpha_i {(\ju \omega)}^i\\
+  &= \Xc \sim \Zc
+\end{align}
+avec \(\Zc = \sum_{i=1}^n \alpha_i (\ju \omega)^i\). La grandeur 
+complexe \(\xc = \Xc\exp(\ju\omega t)\) est solution de l'équation 
+différentielle. Sa partie réelle \(X\cos(\omega t+\varphi)\) est 
+solution de l'équation différentielle réelle 
+\(\Re(\eqref{eq:eqdiffcomp})\)~:
+\begin{equation}
+  \label{eq:eqdiffreel}
+  Y\cos(\omega t +\psi) = \sum_{i=1}^n \alpha_i \derivedn{x}{t}{i}.
+\end{equation}
+La réciproque est aussi vraie~: Si \(x=X\cos(\omega t +\varphi)\) est 
+une solution de l'équation réelle \eqref{eq:eqdiffreel}, alors 
+\(X\sin(\omega t +\varphi)\) est solution de l'équation~:
+\begin{equation}
+  \label{eq:eqdiffreel2}
+  Y\sin(\omega t +\psi) = \sum_{i=1}^n \alpha_i \derivedn{x}{t}{i},
+\end{equation}
+qui est identique à \eqref{eq:eqdiffreel} à un changement d'origine ds 
+dates près (\(T/4\)).
 
-        Si un terme du type \(\lambda \int x \diff{}t\) est présent dans l'équation différentielle à résoudre, le plus simple est de dériver les deux membres de l'égalité pour éviter ce type de terme.
-\section{Impédance complexe, admittance complexe d'un dipôle linéaire passif}
-    On s'intéresse ici aux dipôles linéaires passifs dont la force électromotrice, ou courant électromoteur est nul(le) en régime stationnaire~: conducteurs ohmiques, bobines et condensateurs.
+Mais \(\eqref{eq:eqdiffcomp} = \eqref{eq:eqdiffreel} + \ju 
+\eqref{eq:eqdiffreel2}\), donc \(\Xc = \Xc \exp(\ju\omega t)\) est 
+solution de l'équation complexe \eqref{eq:eqdiffcomp}. La recherche de 
+la solution particulière sinusoïdale de l'équation différentielle 
+linéaire, grâce aux grandeurs complexes associées, se réduit à la 
+résolution d'une équation complexe algébrique.
 
-    En régime sinusoïdal permanent, la tension est alternative sinusoïdale, la grandeur complexe associée à cette tension est du type \(\uc = \Uc \exp(\ju\omega t)\) et l'intensité (fléchée en sens inverse) est aussi alternative sinusoïdale, dont la grandeur complexe associée est du type \(\ic = \Ic \exp(\ju\omega t)\). C'est la solution particulière de l'équation différentielle particulière complexe associée à l'équation différentielle réelle qui relie \(u\) et \(i\). Cette solution étant obtenue par la méthode exposée dans la section \ref{sec:complexe}, c'est-à-dire par la méthode de résolution algébrique.
-    \subsection{Impédance complexe}
-        Par définition l'impédance complexe du dipôle considéré est \(\Zc = \frac{\Uc}{\Ic}=\frac{\uc}{\ic}\) en \(\si{\ohm}\). Son module est l'impédance du dipôle~: \(Z = \abs{\Zc} = \frac{U}{I}\). Son argument est le déphasage de \(u\) par rapport à \(i\)~:
-        \begin{equation}
-            \Phi = \Arg(\Zc) = \Arg(\uc) - \Arg(\ic) = \Arg(\Uc) - \Arg(\Ic).
-        \end{equation}
-        La partie réelle de l'impédance est la résistance du dipôle \(R = \Re(\Zc)\). Sa partie imaginaire est la réactance \(S=\Im(\Zc)\). On a donc \(\Zc = R + \ju S\), \(Z = \sqrt(R^2+S^2)\) et comme \(R\) est toujours positif, \(\Phi = \arctan(S/R)\), avec \(\cos\Phi = R/Z\) et \(\sin\Phi=S/Z\).
-    \subsection{Admittance complexe}
-        Par définition, l'admittance complexe du dipôle considéré est \(\Yc = \frac{\Ic}{\Uc}=\frac{\ic}{\uc}=\frac{1}{\Zc}\) en \(\si{\siemens}\), "Siemens". Son module est l'admittance du dipôle~: \(Y = \abs{\Yc} = \frac{I}{U} = \frac{1}{Z}\). Son argument est le déphasage de \(i\) par rapport à \(u\)~:
-        \begin{equation}
-            -\Phi = \Arg(\Yc) = \Arg(\ic) - \Arg(\uc) = \Arg(\Ic) - \Arg(\Uc) = -\Arg(\Zc).
-        \end{equation}
-        Attention, sa partie réelle n'est pas l'inverse de la résistance.
-    \subsection{Impédance et admittance des dipôles linéaires simples}
-        \begin{itemize}
-            \item Résistance pure~: \(u=Ri\) donc \(\uc = R \ic\), \(\Zc =R\), \(\Yc = G\), \(Z=R\) et \(\Phi=0\), \(u\) et \(i\) sont en concordance de phase ;
-            \item Auto-inductance pure~: \(u=L\derived{i}{t}\), donc \(\uc = \ju L \omega \ic\), donc \(\Zc = \ju L\omega\) et \(\Yc = \frac{-\ju}{L\omega},\) \(Z=L\omega\) et \(\Phi=\frac{\pi}{2}\). \(u\) est en quadrature avance sur \(i\).
-            \item Capacité pure~: \(i=C\derived{u}{t}\), d'où \(\ic = \ju\omega C \ic\), donc \(\Yc = \ju\omega C\) et \(\Zc = \frac{-\ju}{C\omega}\), \(Y=C\omega\), \(Z=\frac{1}{C\omega}\) et \(\Phi = -\frac{\pi}{2}\). \(u\) est en quadrature retard sur \(i\).
-        \end{itemize}
-    \subsection{Comportement fréquentiel des dipôles linéaires simples}
-        Pour une auto-inductance pure, lorsque \(\omega\) tend vers 0, l'impédance \(Z\) tend vers 0 et donc la tension \(U\) tend vers 0, pour toute intensité \(I\). \emph{Une auto-inductance pure à basse fréquence, ou en régime stationnaire, est un court-circuit}.
+Si un terme du type \(\lambda \int x \diff{}t\) est présent dans 
+l'équation différentielle à résoudre, le plus simple est de dériver les 
+deux membres de l'égalité pour éviter ce type de terme.
+\section{Impédance complexe, admittance complexe d'un dipôle linéaire passif}%
+On s'intéresse ici aux dipôles linéaires passifs dont la force 
+électromotrice, ou courant électromoteur est nul(le) en régime 
+stationnaire~: conducteurs ohmiques, bobines et condensateurs.
 
-        Pour une auto-inductance pure, lorsque \(\omega\) tend vers l'infini, alors l'admittance \(Y\) tend vers 0, donc \(I\) tend vers 0 pour toute tension \(U\). \emph{Une auto-inductance pure à haute fréquence est un coupe-circuit}.
+En régime sinusoïdal permanent, la tension est alternative sinusoïdale, la 
+grandeur complexe associée à cette tension est du type \(\uc = \Uc 
+\exp(\ju\omega t)\) et l'intensité (fléchée en sens inverse) est aussi 
+alternative sinusoïdale, dont la grandeur complexe associée est du type 
+\(\ic = \Ic \exp(\ju\omega t)\). C'est la solution particulière de 
+l'équation différentielle particulière complexe associée à l'équation 
+différentielle réelle qui relie \(u\) et \(i\). Cette solution étant 
+obtenue par la méthode exposée dans la section~\ref{sec:complexe}, 
+c'est-à-dire par la méthode de résolution algébrique.
+\subsection{Impédance complexe}
+Par définition l'impédance complexe du dipôle considéré est \(\Zc = 
+\frac{\Uc}{\Ic}=\frac{\uc}{\ic}\) en \(\si{\ohm}\). Son module est 
+l'impédance du dipôle~: \(Z = \abs{\Zc} = \frac{U}{I}\). Son argument 
+est le déphasage de \(u\) par rapport à \(i\)~:
+\begin{equation}
+  \Phi = \Arg(\Zc) = \Arg(\uc) - \Arg(\ic) = \Arg(\Uc) - \Arg(\Ic).
+\end{equation}
+La partie réelle de l'impédance est la résistance du dipôle \(R = 
+\Re(\Zc)\). Sa partie imaginaire est la réactance \(S=\Im(\Zc)\). On a 
+donc \(\Zc = R + \ju S\), \(Z = \sqrt(R^2+S^2)\) et comme \(R\) est 
+toujours positif, \(\Phi = \arctan(S/R)\), avec \(\cos\Phi = R/Z\) et 
+\(\sin\Phi=S/Z\).
+\subsection{Admittance complexe}
+Par définition, l'admittance complexe du dipôle considéré est \(\Yc = 
+\frac{\Ic}{\Uc}=\frac{\ic}{\uc}=\frac{1}{\Zc}\) en \(\si{\siemens}\), 
+"Siemens". Son module est l'admittance du dipôle~: \(Y = \abs{\Yc} = 
+\frac{I}{U} = \frac{1}{Z}\). Son argument est le déphasage de \(i\) par 
+rapport à \(u\)~:
+\begin{equation}
+  -\Phi = \Arg(\Yc) = \Arg(\ic) - \Arg(\uc) = \Arg(\Ic) - \Arg(\Uc) = 
+  -\Arg(\Zc).
+\end{equation}
+Attention, sa partie réelle n'est pas l'inverse de la résistance.
+\subsection{Impédance et admittance des dipôles linéaires simples}
+\begin{itemize}
+  \item Résistance pure~: \(u=Ri\) donc \(\uc = R \ic\), \(\Zc =R\), 
+    \(\Yc = G\), \(Z=R\) et \(\Phi=0\), \(u\) et \(i\) sont en 
+    concordance de phase ;
+  \item Auto-inductance pure~: \(u=L\derived{i}{t}\), donc \(\uc = 
+    \ju L \omega \ic\), donc \(\Zc = \ju L\omega\) et \(\Yc = 
+    \frac{-\ju}{L\omega},\) \(Z=L\omega\) et 
+    \(\Phi=\frac{\pi}{2}\). \(u\) est en quadrature avance sur 
+    \(i\).
+  \item Capacité pure~: \(i=C\derived{u}{t}\), d'où \(\ic = \ju\omega 
+    C \ic\), donc \(\Yc = \ju\omega C\) et \(\Zc = 
+    \frac{-\ju}{C\omega}\), \(Y=C\omega\), \(Z=\frac{1}{C\omega}\) 
+    et \(\Phi = -\frac{\pi}{2}\). \(u\) est en quadrature retard 
+    sur \(i\).
+\end{itemize}
+\subsection{Comportement fréquentiel des dipôles linéaires simples}
+Pour une auto-inductance pure, lorsque \(\omega\) tend vers 0, 
+l'impédance \(Z\) tend vers 0 et donc la tension \(U\) tend vers 0, 
+pour toute intensité \(I\). \emph{Une auto-inductance pure à basse 
+fréquence, ou en régime stationnaire, est un court-circuit}.
 
-        Pour une capacité pure, lorsque \(\omega\) tend vers 0 alors l'admittance \(Y\) tend vers 0 et \(I\) tend vers 0, pour toute tension \(U\). \emph{Une capacité pure à basse fréquence, ou en régime stationnaire, est un coupe-circuit}.
+Pour une auto-inductance pure, lorsque \(\omega\) tend vers l'infini, 
+alors l'admittance \(Y\) tend vers 0, donc \(I\) tend vers 0 pour toute 
+tension \(U\). \emph{Une auto-inductance pure à haute fréquence est un 
+coupe-circuit}.
 
-        Pour une capacité pure, lorsque \(\omega\) tend vers l'infini, alors l'impédance \(Z\) tend vers 0, donc \(U\) tend vers 0 pour toute intensité \(I\). \emph{Une capacité pure à haute fréquence est un court-circuit}.
-\section{Lois de Kirchhoff, associations de dipôles, équivalences}
-    \subsection{Lois de Kirchhoff, théorème de Millman}
-        En régime sinusoïdal permanent (quasi-stationnaire donc de fréquence pas trop élevée), la loi des n\oe{}ds et la loi des mailles s'appliquent aux valeurs instantanées des intensités et des tensions~:
-        \begin{equation}
-            \label{eq:noeuds_cos}
-            \sum_{k} I_k\cos(\omega t +\varphi_k) = 0.
-        \end{equation}
-        En reculant l'origine des dates de \(T/4\), on en déduit~:
-        \begin{equation}
-            \label{eq:noeuds_sin}
-            \sum_{k} I_k\sin(\omega t +\varphi_k) = 0.
-        \end{equation}
-        En additionnant ces deux équations, \(\eqref{eq:noeuds_cos} + \ju \eqref{eq:noeuds_sin}\), il vient~:
-        \begin{equation}
-            \label{eq:noeuds_cplx}
-            \sum_k \Ic_k \exp(\ju\omega t) = 0
-        \end{equation}
-        La loi des nœuds s'applique donc aux grandeurs complexes associées aux intensités et aux amplitudes complexes des intensités~: Pour l'ensemble des \(n\) courants arrivant en un noeud \(\sum_{k=1}^n \ic_k = 0\) et \(\sum_{k=1}^n \Ic_k = 0\).
+Pour une capacité pure, lorsque \(\omega\) tend vers 0 alors 
+l'admittance \(Y\) tend vers 0 et \(I\) tend vers 0, pour toute tension 
+\(U\). \emph{Une capacité pure à basse fréquence, ou en régime 
+stationnaire, est un coupe-circuit}.
 
-        On démontre de même que la loi des mailles en régime sinusoïdal permanent~: La loi des mailles s'applique donc aux grandeurs complexes associées aux tensions et aux amplitudes complexes des tensions~: Pour l'ensemble des \(n\) tensions représentées par des flèches, correspondant toutes aux même sens de parcours le long d'une maille \(\sum_{k=1}^n \uc_k = 0\) et \(\sum_{k=1}^n \Uc_k = 0\).
+Pour une capacité pure, lorsque \(\omega\) tend vers l'infini, alors 
+l'impédance \(Z\) tend vers 0, donc \(U\) tend vers 0 pour toute 
+intensité \(I\). \emph{Une capacité pure à haute fréquence est un 
+court-circuit}.
+\section{Lois de Kirchhoff, associations de dipôles, équivalences}%
+\subsection{Lois de Kirchhoff, théorème de Millman}
+En régime sinusoïdal permanent (quasi-stationnaire donc de fréquence 
+pas trop élevée), la loi des n\oe{}ds et la loi des mailles 
+s'appliquent aux valeurs instantanées des intensités et des tensions~:
+\begin{equation}
+  \label{eq:noeuds_cos}
+  \sum_{k} I_k\cos(\omega t +\varphi_k) = 0.
+\end{equation}
+En reculant l'origine des dates de \(T/4\), on en déduit~:
+\begin{equation}
+  \label{eq:noeuds_sin}
+  \sum_{k} I_k\sin(\omega t +\varphi_k) = 0.
+\end{equation}
+En additionnant ces deux équations, \(\eqref{eq:noeuds_cos} + \ju 
+\eqref{eq:noeuds_sin}\), il vient~:
+\begin{equation}
+  \label{eq:noeuds_cplx}
+  \sum_k \Ic_k \exp(\ju\omega t) = 0
+\end{equation}
+La loi des nœuds s'applique donc aux grandeurs complexes associées aux 
+intensités et aux amplitudes complexes des intensités~: Pour l'ensemble 
+des \(n\) courants arrivant en un noeud \(\sum_{k=1}^n \ic_k = 0\) et 
+\(\sum_{k=1}^n \Ic_k = 0\).
 
-        Pour un dipôle linéaire passif, la définition de l'impédance complexe et celle de l'admittance complexe donne l'équivalent en régime sinusoïdal permanent de la loi d'Ohm~:
-        \begin{align}
-            \label{eq:ohm_cplxZ}    \uc = \Zc ~ \ic &\quad \Uc = \Zc ~ \Ic \\
-            \label{eq:ohm_cplxY}    \ic = \Yc ~ \uc &\quad \Ic = \Yc ~ \Uc.
-        \end{align}
-        En combinant \eqref{eq:ohm_cplxY} avec la loi des nœuds, on obtient le théorème de Millman~: en notant \(\Yc = \sum_{k=1}^n \Yc_k\) alors
-        \begin{align}
-            \uc & = \sum_{k=1}^n \uc_k \frac{\Yc_k}{\Yc} + \sum_{j=1}^m \frac{\ncomplexe{\eta}_j}{\Yc} \\
-            \Uc & = \sum_{k=1}^n \Uc_k \frac{\Yc_k}{\Yc} + \sum_{j=1}^m \frac{\ncomplexe{H}_j}{\Yc}.
-        \end{align}
-    \subsection{Associations de dipôles linéaires}
-      \paragraph{En parallèle} Les dipôles sont sous la même tension et les intensités s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\ic = \sum_k {\ic}_k = \sum{k} {\yc}_k \uc \). \emph{L'admittance complexe du dipôle équivalent est la somme des admittances complexe des dipôles en parallèle}~: \(\Yc = \sum_{k=1}^n \Yc_k\). En particulier pour deux dipôles en parallèle : \(\Yc = \Yc_1 + \Yc_2\), d'où \(\Zc = \frac{\Zc_1 \Zc_2}{\Zc_1+\Zc_2}\). Par exemple, l'admittance complexe d'un condensateur de capacité \(C\) avec une conductance de fuite non nulle \(G\) est~: \(\Yc = G + \ju\omega C\), donc \(Y = \sqrt{G^2 + C^2 \omega^2}\), d'où \(Z = \frac{R}{\sqrt{1+(RC\omega)^2}}\) et le déphasage de la tension sur l'intensité est \(\Phi = -\arctan\left(\frac{C\omega}{G}\right) = -\arctan(RC\omega)\).
+On démontre de même que la loi des mailles en régime sinusoïdal 
+permanent~: La loi des mailles s'applique donc aux grandeurs complexes 
+associées aux tensions et aux amplitudes complexes des tensions~: Pour 
+l'ensemble des \(n\) tensions représentées par des flèches, 
+correspondant toutes aux même sens de parcours le long d'une maille 
+\(\sum_{k=1}^n \uc_k = 0\) et \(\sum_{k=1}^n \Uc_k = 0\).
 
-      \paragraph{En série} Les dipôles sont traversés par le même courant et les tensions s'ajoutent. Pour les grandeurs complexes associées, on a donc~: \(\uc = \sum_k \Zc_k \ic\). \emph{L'impédance complexe du dipôle équivalent est la somme des impédances complexes des dipôles en série~: \(\Zc = \sum_k \Zc_k\). En particulier pour deux dipôles en série : \(\Zc = \Zc_1 + \Zc_2\), d'où \(\Yc = \frac{\Yc_1 \Yc_2}{\Yc_1+\Yc_2}\).} Par exemple, l'impédance complexe d'une bobine réelle, si l'on peut négliger sa capacité est~: \(\Zc = R + \ju\omega L\), donc \(Z = \sqrt{R^2+L^2\omega^2}\), d'où \(Y = \frac{G}{\sqrt{1+(GL\omega)^2}}\), avec \(G=1/R\), et le déphasage de la tension sur l'intensité est \(\Phi = \arctan\left(\frac{L\omega}{R}\right) = \arctan(GL\omega)\).
-      \paragraph{Théorème de Kennely}
-        Il y a équivalence entre le triangle et l'étoile et on démontre, comme en régime continu~:
-      \begin{align}
-        \Zc_{12} = \frac{\Zc_1\Zc_2}{\Zc_1 + \Zc_2 + \Zc_3}  & \Zc_{23} = \frac{\Zc_2\Zc_3}{\Zc_1 + \Zc_2 + \Zc_3} & \Zc_{31} = \frac{\Zc_3\Zc_1}{\Zc_1 + \Zc_2 + \Zc_3} \\
-        \Yc_1 = \frac{\Yc_{12}\Yc_{31}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}  & \Yc_2 = \frac{\Yc_{23}\Yc_{12}}{\Yc_{12} + \Yc_{23} + \Yc_{31}} & \Yc_3 = \frac{\Yc_{31}\Yc_{23}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}
-      \end{align}
-      %
-    \subsection{Modèle de Norton et modèle de Thévenin d'un dipôle linéaire  actif}
-      Les équations de ces modèles sont~: \(e = E\cos(\omega t + \varphi)\) et \(\eta = H\cos(\omega t + \psi)\) étant respectivement la force électromotrice et le courant électromoteur du dipôle linéaire, en régime sinusoïdal permanent de pulsation \(\omega\). \(\Zc\) et \(\Yc\) respectivement l'impédance complexe et l'admittance complexe de ce dipôle, on a~: \(u = u_Z -e\), d'où \(\uc = \Zc \ic -\ncomplexe{e}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Uc = \Zc \Ic - \ncomplexe{E}\). On a aussi~: \(i = i_Y + \eta\), d'où \(\ic = \ic_Y + \ncomplexe{\eta}\) et en divisant par \(\exp(\ju\omega t)\), on obtient \(\Ic = \Yc \Uc + \ncomplexe{H}\).
+Pour un dipôle linéaire passif, la définition de l'impédance complexe 
+et celle de l'admittance complexe donne l'équivalent en régime 
+sinusoïdal permanent de la loi d'Ohm~:
+\begin{align}
+  \label{eq:ohm_cplxZ}
+  \uc = \Zc \sim \ic &\quad \Uc = \Zc \sim \Ic \\
+  \label{eq:ohm_cplxY}
+  \ic = \Yc \sim \uc &\quad \Ic = \Yc \sim \Uc.
+\end{align}
+En combinant \eqref{eq:ohm_cplxY} avec la loi des nœuds, on obtient le 
+théorème de Millman~: en notant \(\Yc = \sum_{k=1}^n \Yc_k\) alors
+\begin{align}
+  \uc & = \sum_{k=1}^n \uc_k \frac{\Yc_k}{\Yc} + \sum_{j=1}^m 
+  \frac{\ncomplexe{\eta}_j}{\Yc} \\
+  \Uc & = \sum_{k=1}^n \Uc_k \frac{\Yc_k}{\Yc} + \sum_{j=1}^m 
+  \frac{\ncomplexe{H}_j}{\Yc}.
+\end{align}
+\subsection{Associations de dipôles linéaires}
+\paragraph{En parallèle} Les dipôles sont sous la même tension et les 
+intensités s'ajoutent. Pour les grandeurs complexes associées, on a 
+donc~: \(\ic = \sum_k {\ic}_k = \sum{k} {\yc}_k \uc \). 
+\emph{L'admittance complexe du dipôle équivalent est la somme des 
+admittances complexe des dipôles en parallèle}~: \(\Yc = \sum_{k=1}^n 
+\Yc_k\). En particulier pour deux dipôles en parallèle : \(\Yc = \Yc_1 + 
+\Yc_2\), d'où \(\Zc = \frac{\Zc_1 \Zc_2}{\Zc_1+\Zc_2}\). Par exemple, 
+l'admittance complexe d'un condensateur de capacité \(C\) avec une 
+conductance de fuite non nulle \(G\) est~: \(\Yc = G + \ju\omega C\), 
+donc \(Y = \sqrt{G^2 + C^2 \omega^2}\), d'où \(Z = 
+\frac{R}{\sqrt{1+(RC\omega)^2}}\) et le déphasage de la tension sur 
+l'intensité est \(\Phi = -\arctan\left(\frac{C\omega}{G}\right) = 
+-\arctan(RC\omega)\).
 
-      \emph{Les deux modèle représentent le même dipôle si et seulement si~: \(\Yc = 1/\Zc\) et \(\ncomplexe{eta} = \ncomplexe{e}/ \Zc\), soit \(\ncomplexe{H} = \ncomplexe{E}/\Zc\).} On a donc pour les amplitudes, \(H = E/Z = YE\) et pour les phases initialement à \(t=0\), \(\psi = \varphi - \Arg(\Zc) = \varphi+\Arg(\Yc)\).
-      %
-    \subsection{Pont diviseur de tension}
-      En sortie ouverte~: \(\frac{\uc_s}{\uc_e} = \frac{\Uc_s}{\Uc_e} = \frac{\Zc_2}{\Zc_1+\Zc_2}\), et aussi en divisant par \(\Zc_1 \Zc_2\) : \(frac{\Uc_s}{\Uc_e} = \frac{\Yc_1}{\Yc_1+\Yc_2}\).
+\paragraph{En série} Les dipôles sont traversés par le même courant et 
+les tensions s'ajoutent. Pour les grandeurs complexes associées, on a 
+donc~: \(\uc = \sum_k \Zc_k \ic\). \emph{L'impédance complexe du dipôle 
+équivalent est la somme des impédances complexes des dipôles en série~: 
+\(\Zc = \sum_k \Zc_k\). En particulier pour deux dipôles en série : \(\Zc 
+= \Zc_1 + \Zc_2\), d'où \(\Yc = \frac{\Yc_1 \Yc_2}{\Yc_1+\Yc_2}\).} Par 
+exemple, l'impédance complexe d'une bobine réelle, si l'on peut négliger 
+sa capacité est~: \(\Zc = R + \ju\omega L\), donc \(Z = 
+\sqrt{R^2+L^2\omega^2}\), d'où \(Y = \frac{G}{\sqrt{1+(GL\omega)^2}}\), 
+avec \(G=1/R\), et le déphasage de la tension sur l'intensité est \(\Phi 
+= \arctan\left(\frac{L\omega}{R}\right) = \arctan(GL\omega)\).
+\paragraph{Théorème de Kennely}
+Il y a équivalence entre le triangle et l'étoile et on démontre, comme 
+en régime continu~:
+\begin{align}
+  \Zc_{12} = \frac{\Zc_1\Zc_2}{\Zc_1 + \Zc_2 + \Zc_3}  & \Zc_{23} = 
+  \frac{\Zc_2\Zc_3}{\Zc_1 + \Zc_2 + \Zc_3} & \Zc_{31} = 
+  \frac{\Zc_3\Zc_1}{\Zc_1 + \Zc_2 + \Zc_3} \\
+  \Yc_1 = \frac{\Yc_{12}\Yc_{31}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}  & 
+  \Yc_2 = \frac{\Yc_{23}\Yc_{12}}{\Yc_{12} + \Yc_{23} + \Yc_{31}} & 
+  \Yc_3 = \frac{\Yc_{31}\Yc_{23}}{\Yc_{12} + \Yc_{23} + \Yc_{31}}
+\end{align}
+%
+\subsection{Modèle de Norton et modèle de Thévenin d'un dipôle linéaire  
+actif}
+Les équations de ces modèles sont~: \(e = E\cos(\omega t + \varphi)\) et 
+\(\eta = H\cos(\omega t + \psi)\) étant respectivement la force 
+électromotrice et le courant électromoteur du dipôle linéaire, en régime 
+sinusoïdal permanent de pulsation \(\omega\). \(\Zc\) et \(\Yc\) 
+respectivement l'impédance complexe et l'admittance complexe de ce 
+dipôle, on a~: \(u = u_Z -e\), d'où \(\uc = \Zc \ic -\ncomplexe{e}\) et 
+en divisant par \(\exp(\ju\omega t)\), on obtient \(\Uc = \Zc \Ic - 
+\ncomplexe{E}\). On a aussi~: \(i = i_Y + \eta\), d'où \(\ic = \ic_Y + 
+\ncomplexe{\eta}\) et en divisant par \(\exp(\ju\omega t)\), on obtient 
+\(\Ic = \Yc \Uc + \ncomplexe{H}\).
 
-      Avec une impédance de charge, il faut remplacer \(\Zc_2\) par l'impédance équivalente \(\Zc_2 \parallel \Zc_c\), ce qui donne \(\frac{\Uc_s}{\Uc_e} = \frac{\Zc_c \Zc_2}{\Zc_1\Zc_2 + \Zc_c\Zc_1 + \Zc_c\Zc_2} = \frac{\Yc_1}{\Yc_1+\Yc_2+\Yc_c}\)
-      %
-  \subsection{Pont diviseur de courant}
-    En sortie court-circuitée~: \(\frac{\ic_s}{\ic_e} = \frac{\Ic_s}{\Ic_e} = \frac{\Yc_2}{\Yc_1+\Yc_2}\), et aussi en divisant par \(\Yc_1 \Yc_2\) : \(frac{\Ic_s}{\Ic_e} = \frac{\Zc_1}{\Zc_1+\Zc_2}\).
+\emph{Les deux modèle représentent le même dipôle si et seulement si~: 
+\(\Yc = 1/\Zc\) et \(\ncomplexe{eta} = \ncomplexe{e}/ \Zc\), soit 
+\(\ncomplexe{H} = \ncomplexe{E}/\Zc\).} On a donc pour les amplitudes, 
+\(H = E/Z = YE\) et pour les phases initialement à \(t=0\), \(\psi = 
+\varphi - \Arg(\Zc) = \varphi+\Arg(\Yc)\).
+%
+\subsection{Pont diviseur de tension}
+En sortie ouverte~: \(\frac{\uc_s}{\uc_e} = \frac{\Uc_s}{\Uc_e} = 
+\frac{\Zc_2}{\Zc_1+\Zc_2}\), et aussi en divisant par \(\Zc_1 \Zc_2\) : 
+\(frac{\Uc_s}{\Uc_e} = \frac{\Yc_1}{\Yc_1+\Yc_2}\).
 
-    Avec une conductance de charge, il faut remplacer \(\Yc_2\) par la conductance équivalente \(\Yc_2 \parallel \Yc_c\), ce qui donne \(\frac{\Ic_s}{\Ic_e} = \frac{\Yc_c \Yc_2}{\Yc_1\Yc_2 + \Yc_c\Yc_1 + \Yc_c\Yc_2} = \frac{\Zc_1}{\Zc_1+\Zc_2+\Zc_c}\)
-\section{Exercices}
-  \begin{exercice}[Circuit complexe en régime sinusoïdal permanent]
-    Le réseau représenté ci-dessous est alimenté par une source de tension alternative \(E = E \cos(\omega t).\) On donne \(R=\SI{10}{\ohm}\) et \(E=\SI{20}{\volt}\). La fréquence du générateur est réglé de façon que \(L\omega = \frac{1}{C\omega}=R\). Calculer l'amplitude \(I\) de l'intensité du courant dans la résistance.
-  \end{exercice}
-  \begin{exercice}[Dipôle \(R, L, C\) parallèle]
-    Dans le montage ci-dessous, le générateur délivre une tension sinusoïdale de pulsation \(\SI{1000}{\radian\per\second}\) d'amplitude \(\SI{10}{\volt}\). On constate que l'intensité du courant débité par le générateur prend la même valeur efficace pour deux valeurs différentes de capacité~: \(\SI{3,2}{\micro\farad}\) et \(\SI{6,9}{\micro\farad}\).
-    \begin{itemize}
-      \item Déterminez \(L\). \item Pour quelle valeur de \(C\) (notée \(C_0\)) l'intensité efficace sera minimale ?
-    \end{itemize}
-  \end{exercice}
-  \begin{exercice}[Dipôles \(R, C\)]
-    Dans le montage ci-dessous, la résistance \(R\) et les capacités \(C\) et\(C'\) sont fixées. On posera \(C'=\frac{C}{a}\). On peut faire varier \(R'\) et la pulsation \(\omega\).
-    \begin{itemize}
-      \item Trouver les deux relations réelles que doivent vérifier \(R\), \(R'\), \(C\) et \(C'\) pour que les tensions \(u_1\) et \(u_2\) soient constamment égales.
-      \item Montrer que, pour que cette condition soit remplie, il faut imposer à \(R'\) une certaine relation avec \(R\) et à \(\omega\) une certaine relation avec \(C\).
-      \item Pour \(a=2\), exprimer en fonction de \(R\) et de l'amplitude \(U\) de la tension totale \(u_1+u_2\), les caractéristiques (amplitudes et déphasages) des différents courants du circuit.
-    \end{itemize}
-  \end{exercice}
-  \begin{exercice}[Pont de Sauty]
-    Dans le pont décrit ci-dessous, les grandeurs inconnues sont des caractéristiques \(L\) et \(r\) de la bobine. Montrer que l'on peut les tirer de la relation qui traduit l'équilibre du pont (\(u=0\)). Comment peut-on constater que le pont est équilibré ?
-  \end{exercice}
-  \begin{exercice}[Condensateur réel, bobine réelle]
+Avec une impédance de charge, il faut remplacer \(\Zc_2\) par l'impédance 
+équivalente \(\Zc_2 \parallel \Zc_c\), ce qui donne \(\frac{\Uc_s}{\Uc_e} 
+= \frac{\Zc_c \Zc_2}{\Zc_1\Zc_2 + \Zc_c\Zc_1 + \Zc_c\Zc_2} = 
+\frac{\Yc_1}{\Yc_1+\Yc_2+\Yc_c}\)
+%
+\subsection{Pont diviseur de courant}
+En sortie court-circuitée~: \(\frac{\ic_s}{\ic_e} = \frac{\Ic_s}{\Ic_e} = 
+\frac{\Yc_2}{\Yc_1+\Yc_2}\), et aussi en divisant par \(\Yc_1 \Yc_2\) : 
+\(frac{\Ic_s}{\Ic_e} = \frac{\Zc_1}{\Zc_1+\Zc_2}\).
+
+Avec une conductance de charge, il faut remplacer \(\Yc_2\) par la 
+conductance équivalente \(\Yc_2 \parallel \Yc_c\), ce qui donne 
+\(\frac{\Ic_s}{\Ic_e} = \frac{\Yc_c \Yc_2}{\Yc_1\Yc_2 + \Yc_c\Yc_1 + 
+\Yc_c\Yc_2} = \frac{\Zc_1}{\Zc_1+\Zc_2+\Zc_c}\)
+\section{Exercices}%
+\begin{exercice}[Circuit complexe en régime sinusoïdal permanent]
+  Le réseau représenté ci-dessous est alimenté par une source de tension 
+  alternative \(E = E \cos(\omega t)\). On donne \(R=\SI{10}{\ohm}\) et 
+  \(E=\SI{20}{\volt}\). La fréquence du générateur est réglé de façon que 
+  \(L\omega = \frac{1}{C\omega}=R\). Calculer l'amplitude \(I\) de 
+  l'intensité du courant dans la résistance.
+\end{exercice}
+\begin{exercice}[Dipôle \(R, L, C\) parallèle]
+  Dans le montage ci-dessous, le générateur délivre une tension sinusoïdale 
+  de pulsation \(\SI{1000}{\radian\per\second}\) d'amplitude 
+  \(\SI{10}{\volt}\). On constate que l'intensité du courant débité par le 
+  générateur prend la même valeur efficace pour deux valeurs différentes de 
+  capacité~: \(\SI{3,2}{\micro\farad}\) et \(\SI{6,9}{\micro\farad}\).
   \begin{itemize}
-    \item Calculer la résistance de fuite d'un condensateur réel, de capacité \(\SI{2}{\nano\farad}\), lorsque la tension entre ses armatures, de fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{10}\) par rapport à l'intensité.
-    \item Calculer la résistance de fuite d'une bobine réelle, d'inductance \(\SI{20}{\milli\henry}\), lorsque la tension entre ses armatures, de fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{80}\) par rapport à l'intensité.
+    \item Déterminez \(L\). \item Pour quelle valeur de \(C\) (notée \(C_0\)) 
+      l'intensité efficace sera minimale?
   \end{itemize}
-  \end{exercice}
+\end{exercice}
+\begin{exercice}[Dipôles \(R, C\)]
+  Dans le montage ci-dessous, la résistance \(R\) et les capacités \(C\) 
+  et\(C'\) sont fixées. On posera \(C'=\frac{C}{a}\). On peut faire varier 
+  \(R'\) et la pulsation \(\omega\).
+  \begin{itemize}
+    \item Trouver les deux relations réelles que doivent vérifier \(R\), 
+      \(R'\), \(C\) et \(C'\) pour que les tensions \(u_1\) et \(u_2\) 
+      soient constamment égales.
+    \item Montrer que, pour que cette condition soit remplie, il faut imposer 
+      à \(R'\) une certaine relation avec \(R\) et à \(\omega\) une 
+      certaine relation avec \(C\).
+    \item Pour \(a=2\), exprimer en fonction de \(R\) et de l'amplitude \(U\) 
+      de la tension totale \(u_1+u_2\), les caractéristiques (amplitudes et 
+      déphasages) des différents courants du circuit.
+  \end{itemize}
+\end{exercice}
+\begin{exercice}[Pont de Sauty]
+  Dans le pont décrit ci-dessous, les grandeurs inconnues sont des 
+  caractéristiques \(L\) et \(r\) de la bobine. Montrer que l'on peut les 
+  tirer de la relation qui traduit l'équilibre du pont (\(u=0\)). Comment 
+  peut-on constater que le pont est équilibré?
+\end{exercice}
+\begin{exercice}[Condensateur réel, bobine réelle]
+  \begin{itemize}
+    \item Calculer la résistance de fuite d'un condensateur réel, de capacité 
+      \(\SI{2}{\nano\farad}\), lorsque la tension entre ses armatures, de 
+      fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{10}\) par 
+      rapport à l'intensité.
+    \item Calculer la résistance de fuite d'une bobine réelle, d'inductance 
+      \(\SI{20}{\milli\henry}\), lorsque la tension entre ses armatures, de 
+      fréquence \(\SI{200}{\hertz}\), est déphasée de \(\ang{80}\) par 
+      rapport à l'intensité.
+  \end{itemize}
+\end{exercice}

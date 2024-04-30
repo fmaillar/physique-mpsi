@@ -1,124 +1,246 @@
-\chapter{L'amplificateur opérationnel}
+\chapter{L'amplificateur opérationnel}%
 \minitoc{}
 \minilof{}
 \minilot{}
 %
-\section{L'amplificateur opérationnel}
-\subsection{Définition, schéma}
+\section{L'amplificateur opérationnel}%
+\subsection{Définition, schéma}%
 %TODO Mettre les schemas
-Un amplificateur opérationnel est un circuit intégré comportant de nombreux transistors et des condensateurs. Pour le faire fonctionner, il doit être alimenté par un générateur de tension continue à trois bornes \(+\Vcc\), \(0\) et \(-\Vcc\). Le schéma de l'amplificateur opérationnel avec son alimentation est le suivant~:
+Un amplificateur opérationnel est un circuit intégré comportant de nombreux 
+transistors et des condensateurs. Pour le faire fonctionner, il doit être 
+alimenté par un générateur de tension continue à trois bornes \(+\Vcc\), \(0\) 
+et \(-\Vcc\). Le schéma de l'amplificateur opérationnel avec son alimentation 
+est le suivant~:
 %mettre le schema
-L'alimentation est souvent omise sur les schémas. On schématise encore l'amplificateur opérationnel par~:
+L'alimentation est souvent omise sur les schémas. On schématise encore 
+l'amplificateur opérationnel par~:
 %mettre le schema
 
-Un amplificateur opérationnel amplifie sa tension différentielle d'entrée. Il doit son nom à ce qu'il servit d'abord pour la réalisation d'opérations simples sur les tensions telles que l'addition, la soustraction et la multiplication par une constante. \emph{En régime linéaire, il délivre à la sortie une tension proportionnelle à la différence de potentiel entre ses deux entrées}. L'une des entrée est appelée \emph{entrée inverseuse}, on la note \(-\) sur les schémas, et l'autre entrée est appelée \emph{non-inverseuse}, notée \(+\). Il n'a qu'une seule sortie notée \(S\). Les tensions \(v^+\), \(v^-\) et \(v_S\) sont respectivement les potentiels par rapport à la masse d'alimentation des entrées \(+\), \(-\) et de la sortie. Les bornes d'alimentation sont portées l'une au potentiel \(\Vcc\), et l'autre au potentiel \(-\Vcc\). Le plus souvent, \(\Vcc = \SI{15}{\volt}\).
-\subsection{Réponse en tension, fonctionnement linéaire et saturation en tension}
-En régime continu, pour une impédance de charge infinie, la réponse de l'amplificateur opérationnel est schématisée par le graphe ci-dessous.%TODO Mettre le graphe
+Un amplificateur opérationnel amplifie sa tension différentielle d'entrée. Il 
+doit son nom à ce qu'il servit d'abord pour la réalisation d'opérations simples 
+sur les tensions telles que l'addition, la soustraction et la multiplication 
+par une constante. \emph{En régime linéaire, il délivre à la sortie une tension 
+proportionnelle à la différence de potentiel entre ses deux entrées}. L'une des 
+entrée est appelée \emph{entrée inverseuse}, on la note \(-\) sur les schémas, 
+et l'autre entrée est appelée \emph{non-inverseuse}, notée \(+\). Il n'a qu'une 
+seule sortie notée \(S\). Les tensions \(v^+\), \(v^-\) et \(v_S\) sont 
+respectivement les potentiels par rapport à la masse d'alimentation des entrées 
+\(+\), \(-\) et de la sortie. Les bornes d'alimentation sont portées l'une au 
+potentiel \(\Vcc\), et l'autre au potentiel \(-\Vcc\). Le plus souvent, \(\Vcc 
+= \SI{15}{\volt}\).
+\subsection{Réponse en tension, fonctionnement linéaire et saturation en 
+tension}%
+En régime continu, pour une impédance de charge infinie, la réponse de 
+l'amplificateur opérationnel est schématisée par le graphe ci-dessous.%TODO 
+Mettre le graphe
 On a donc différents fonctionnement~:
-\begin{itemize}
-	\item Un fonctionnement linéaire~: lorsque \(\mid \epsilon \mid \leq \epsilon_M\), et \(\mid V_S \mid \leq V_0\), on a \(V_S = \mu \epsilon\) ;
-	\item Une saturation en tension~: lorsque \(\epsilon < -\epsilon_M\), \(V_S = -V_0\) et lorsque \(\epsilon > \epsilon_M\), \(V_S = V_0\).
-	\item Destruction de l'amplificateur opérationnel~: Pour \(\epsilon\) assez important, quelques volts.
-\end{itemize}
-Typiquement, lorsque \(\Vcc = \SI{15}{\volt}\), on a \(\SI{13.5}{\volt} \leq V_0 \leq \SI{14}{\volt}\). La valeur de \(\mu\) est de l'ordre de \num{e5} à \num{1.5e5}, donc \(\epsilon_M = V_0/\mu\) est de l'ordre de \SI{0.13}{\milli\volt}, souvent négligeable.
+\begin{itemize}%
+  \item Un fonctionnement linéaire~: lorsque \(\mid \epsilon \mid \leq 
+    \epsilon_M\), et \(\mid V_S \mid \leq V_0\), on a \(V_S = \mu \epsilon\) ;
+  \item Une saturation en tension~: lorsque \(\epsilon < -\epsilon_M\), \(V_S = 
+    -V_0\) et lorsque \(\epsilon > \epsilon_M\), \(V_S = V_0\).
+  \item Destruction de l'amplificateur opérationnel~: Pour \(\epsilon\) assez 
+    important, quelques volts.
+\end{itemize}%
+Typiquement, lorsque \(\Vcc = \SI{15}{\volt}\), on a \(\SI{13.5}{\volt} \leq 
+V_0 \leq \SI{14}{\volt}\). La valeur de \(\mu\) est de l'ordre de \num{e5} à 
+\num{1.5e5}, donc \(\epsilon_M = V_0/\mu\) est de l'ordre de 
+\SI{0.13}{\milli\volt}, souvent négligeable.
 
-\emph{On a donc, en fonctionnement linéaire \(\epsilon\) quasi-nul et \(\mu\) quasiment infini.}
-\subsection{Courants d'entrée, courant de sortie et saturation en courant}
-Les courant dans les entrées sont en général de quelques nano-ampères et peuvent être négligés en première approximation \(i_E^+ = i_E^-=0\). Le courant de sortie est limité en général à quelques dizaines de milliampères et quand il atteint la valeur maximale, il y  a \emph{saturation en courant}~: \(\mid \i_S \mid \leq I_{SM}\).
-\subsection{Comportement fréquentiel de l'amplificateur opérationnel}
+\emph{On a donc, en fonctionnement linéaire \(\epsilon\) quasi-nul et \(\mu\) 
+quasiment infini.}%
+\subsection{Courants d'entrée, courant de sortie et saturation en courant}%
+Les courant dans les entrées sont en général de quelques nano-ampères et 
+peuvent être négligés en première approximation \(i_E^+ = i_E^-=0\). Le courant 
+de sortie est limité en général à quelques dizaines de milliampères et quand il 
+atteint la valeur maximale, il y  a \emph{saturation en courant}~: \(\mid \i_S 
+\mid \leq I_{SM}\).
+\subsection{Comportement fréquentiel de l'amplificateur opérationnel}%
 En régime sinusoïdal permanent, pour des fréquences basses et moyennes,
-\begin{equation}
-	\label{eq:freqao}
-	\ncomplexe{\mu} = \ncomplexe{v}_S / \ncomplexe{\epsilon},
-\end{equation}
-se comporte comme la transmittance d'un filtre passe-bas du premier ordre avec une fréquence de coupure \(f_C\) de l'ordre de \SI{10}{\hertz}~:
-\begin{equation}
-	\ncomplexe{\mu} = \frac{\mu_0}{1+\ju \frac{f}{f_C}}.
-\end{equation}
-On peut en déduire que \( \mu_0 \ncomplexe{\epsilon} = \ncomplexe{v}_S + \frac{1}{\omega_C} \derived{\ncomplexe{v}_S}{t}\). Notons que l'équation \eqref{eq:freqao} n'est bien sûr valable que tant qu'il n'y a pas de saturation, donc en particulier, tant que l'amplitude \(V_S\) de \(v_S\) n'atteint pas la valeur \(V_0\). Aux très basses fréquences et en régime continu, on a donc \(\mu = \mu_0 = \num{150e3}\) par exemple et \(\phi=0\).
+\begin{equation}%
+  \label{eq:freqao}
+  \ncomplexe{\mu} = \ncomplexe{v}_S / \ncomplexe{\epsilon},
+\end{equation}%
+se comporte comme la transmittance d'un filtre passe-bas du premier ordre avec 
+une fréquence de coupure \(f_C\) de l'ordre de \SI{10}{\hertz}~:
+\begin{equation}%
+  \ncomplexe{\mu} = \frac{\mu_0}{1+\ju \frac{f}{f_C}}.
+\end{equation}%
+On peut en déduire que \( \mu_0 \ncomplexe{\epsilon} = \ncomplexe{v}_S + 
+\frac{1}{\omega_C} \derived{\ncomplexe{v}_S}{t}\). Notons que l'équation 
+\eqref{eq:freqao} n'est bien sûr valable que tant qu'il n'y a pas de 
+saturation, donc en particulier, tant que l'amplitude \(V_S\) de \(v_S\) 
+n'atteint pas la valeur \(V_0\). Aux très basses fréquences et en régime 
+continu, on a donc \(\mu = \mu_0 = \num{150e3}\) par exemple et \(\phi=0\).
 
-\emph{Pour les régimes transitoire, tant que \(\epsilon\) ne varie pas trop rapidement, l'équation différentielle vérifiée par \(v_S\) et \(\epsilon\) est la même qu'en régime sinusoïdal permanent~:}
-\begin{equation}
-	\label{eq:equadiffaop}
-	\derived{v_S}{t} + \omega_C v_S = \mu_0 \omega_C \epsilon.
-\end{equation}
+\emph{Pour les régimes transitoire, tant que \(\epsilon\) ne varie pas trop 
+rapidement, l'équation différentielle vérifiée par \(v_S\) et \(\epsilon\) est 
+la même qu'en régime sinusoïdal permanent~:}%
+\begin{equation}%
+  \label{eq:equadiffaop}
+  \derived{v_S}{t} + \omega_C v_S = \mu_0 \omega_C \epsilon.
+\end{equation}%
 
-\subsection{L'amplificateur opérationnel idéal}
-Pour un amplificateur opérationnel idéal, les courants d'entrées sont nuls \(i_E^+ = i_E^-=0\), le gain est infini \(\mu = \infty\) et la différence de potentiel d'entrée est nulle \(\epsilon=0\) en fonctionnement linéaire. %TODO Mettre le schema d'un AO idéal
-Dans tout ce qui suit, on supposera que l'amplificateur opérationnel est idéal et que son fonctionnement est linéaire stable.
+\subsection{L'amplificateur opérationnel idéal}%
+Pour un amplificateur opérationnel idéal, les courants d'entrées sont nuls 
+\(i_E^+ = i_E^-=0\), le gain est infini \(\mu = \infty\) et la différence de 
+potentiel d'entrée est nulle \(\epsilon=0\) en fonctionnement linéaire. %TODO 
+Mettre le schema d'un AO idéal
+Dans tout ce qui suit, on supposera que l'amplificateur opérationnel est idéal 
+et que son fonctionnement est linéaire stable.
 
-\section{Quelques montages simples utilisant un amplificateur opérationnel idéal en fonctionnement linéaire}
-\subsection{Montage suiveur}
+\section{Quelques montages simples utilisant un amplificateur opérationnel 
+idéal en fonctionnement linéaire}%
+\subsection{Montage suiveur}%
 %TODO Mettre le schema du montage suiveur
-En régime linéaire, \(\epsilon=0\), donc \(v^+ = v^-\) soit \(u_S = u_E\). Il s'agit d'un ``montage suiveur''. Le conducteur parfait placé entre l'entrée inverseuse et la sortie constitue une ``boucle de rétroaction'' (réaction négative). On peut démontrer en tenant compte de l'équation différentielle \eqref{eq:equadiffaop} que c'est grâce à cette rétroaction que le fonctionnement linéaire est stable et que si l'on inversait les deux entrées (réaction positive), alors le fonctionnement linéaire serait impossible. l'intérêt du montage suiveur est dans le fait que \(i_E=0\), puisque la puissance reçue est nulle ; donc la puissance disponible à la sortie est entièrement fournie par l'alimentation de l'amplificateur opérationnel.
-\subsection{Montage sommateur inverseur}
+En régime linéaire, \(\epsilon=0\), donc \(v^+ = v^-\) soit \(u_S = u_E\). Il 
+s'agit d'un ``montage suiveur''. Le conducteur parfait placé entre l'entrée 
+inverseuse et la sortie constitue une ``boucle de rétroaction'' (réaction 
+négative). On peut démontrer en tenant compte de l'équation différentielle 
+\eqref{eq:equadiffaop} que c'est grâce à cette rétroaction que le 
+fonctionnement linéaire est stable et que si l'on inversait les deux entrées 
+(réaction positive), alors le fonctionnement linéaire serait impossible. 
+L'intérêt du montage suiveur est dans le fait que \(i_E=0\), puisque la 
+puissance reçue est nulle ; donc la puissance disponible à la sortie est 
+entièrement fournie par l'alimentation de l'amplificateur opérationnel.
+\subsection{Montage sommateur inverseur}%
 %TODO Mettre le schema du montage sommateur
-En régime linéaire, le théorème de Millman permet d'obtenir rapidement l'expression de la tension de sortie en fonction des tension d'entrée~:
-\begin{equation}
-	v^- = \frac{\sum_{k=1}^3 \frac{u_k}{R_k} + u_S/R_0 - i_{E^-}}{\sum_{k=1}^3 \frac{1}{R_k}},
-\end{equation}
-avec \(i_{E^-}=0\), et comme \(\epsilon=0\), on a \(v^-=v^+=0\) donc \(u_S = -R_0 \left(\sum_{k=1}^3 \frac{u_k}{R_k} \right)\). Si les résistances sont toutes égales, alors on a bien un ``sommateur inverseur''~:\(u_S = - \sum_{k=1}^3 u_k\).
-\subsection{Montage amplificateur inverseur}
+En régime linéaire, le théorème de Millman permet d'obtenir rapidement 
+l'expression de la tension de sortie en fonction des tension d'entrée~:
+\begin{equation}%
+  v^- = \frac{\sum_{k=1}^3 \frac{u_k}{R_k} + u_S/R_0 - i_{E^-}}{\sum_{k=1}^3 
+  \frac{1}{R_k}},
+\end{equation}%
+avec \(i_{E^-}=0\), et comme \(\epsilon=0\), on a \(v^-=v^+=0\) donc \(u_S = 
+-R_0 \left(\sum_{k=1}^3 \frac{u_k}{R_k} \right)\). Si les résistances sont 
+toutes égales, alors on a bien un ``sommateur inverseur''~:\(u_S = - 
+\sum_{k=1}^3 u_k\).
+\subsection{Montage amplificateur inverseur}%
 %TODO Mettre le schema du montage ampli inverseur
-En fonctionnement linéaire, le théorème de Millmann, avec \(i_{E^-}=0\) et \(v^-=v^+=0\) (puisque \(\epsilon\) est nul) donne \(0=v^- =\frac{u_E/R_1+u_S/R_2}{1/R_1+1/R_2}\), donc \(u_S = -R_2/R_1 u_E\). Si \(R_2 > R_1\), alors \(\mid u_S \mid > \mid u_E \mid\), donc il s'agit bien d'un amplificateur inverseur, si \(R_2 < R_1\), alors \(\mid u_S \mid < \mid u_E \mid\) il s'agit d'un atténuateur inverseur, et si \(R_2 = R_1\), il s'agit juste d'un inverseur.
-\subsection{Exemple de filtre actif avec amplificateur opérationnel}
+En fonctionnement linéaire, le théorème de Millmann, avec \(i_{E^-}=0\) et 
+\(v^-=v^+=0\) (puisque \(\epsilon\) est nul) donne \(0=v^- 
+=\frac{u_E/R_1+u_S/R_2}{1/R_1+1/R_2}\), donc \(u_S = -R_2/R_1 u_E\). Si \(R_2 > 
+R_1\), alors \(\mid u_S \mid > \mid u_E \mid\), donc il s'agit bien d'un 
+amplificateur inverseur, si \(R_2 < R_1\), alors \(\mid u_S \mid < \mid u_E 
+\mid\) il s'agit d'un atténuateur inverseur, et si \(R_2 = R_1\), il s'agit 
+juste d'un inverseur.
+\subsection{Exemple de filtre actif avec amplificateur opérationnel}%
 %TODO mettre le schema
-On étudiera le quadripôle de tension d'entrée \(u_E\) et de tension de sortie \(u_S\) en régime sinusoïdal permanent, lorsque l'amplificateur opérationnel est en fonctionnement linéaire. On a donc \(\epsilon\) nul, donc \(\ncomplexe{v}^+=\ncomplexe{v}^-=0\). En notant \(\Yc\) l'admittance complexe de \(R2 \parallel C\)~: \(\Yc = \ju C \omega + \frac{1}{R_2}\). Le théorème de Millman donne~: \(0=\ncomplexe{v}^-=\frac{\frac{\uc_E}{R_1}+\Yc \uc_S}{1/R_1+\Yc}\), donc \(\uc_S = -\uc_E/(R_1 \Yc)\). L'amplification complexe en tension est donc~:
-\begin{equation}
-	\Hc = \frac{\uc_S}{\uc_E} = \frac{R_2/R_1}{1+\ju\omega R_2 C}.
-\end{equation}
+On étudiera le quadripôle de tension d'entrée \(u_E\) et de tension de sortie 
+\(u_S\) en régime sinusoïdal permanent, lorsque l'amplificateur opérationnel 
+est en fonctionnement linéaire. On a donc \(\epsilon\) nul, donc 
+\(\ncomplexe{v}^+=\ncomplexe{v}^-=0\). En notant \(\Yc\) l'admittance complexe 
+de \(R2 \parallel C\)~: \(\Yc = \ju C \omega + \frac{1}{R_2}\). Le théorème de 
+Millman donne~: \(0=\ncomplexe{v}^-=\frac{\frac{\uc_E}{R_1}+\Yc 
+\uc_S}{1/R_1+\Yc}\), donc \(\uc_S = -\uc_E/(R_1 \Yc)\). L'amplification 
+complexe en tension est donc~:
+\begin{equation}%
+  \Hc = \frac{\uc_S}{\uc_E} = \frac{R_2/R_1}{1+\ju\omega R_2 C}.
+\end{equation}%
 Il lui correspond l'équation différentielle du premier ordre suivante~:
-\begin{align}
-	R_1/R_2 \uc_S + R_2C \derived{\uc_S}{t} &= \uc_E; \\
-	R_1/R_2 u_S + R_2C \derived{u_S}{t} &= u_E.
-\end{align}
-Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de référence \(\omega_0 = \frac{1}{R_2C}\), \(x = \omega/\omega_0 = R_2C \omega\) et \(H_0 = R_2/R_1\), pour faciliter l'étude de la transmittance complexe. On a donc \(\Hc = -\frac{H_0}{1+\ju x}\). Alors \(H = \frac{H_0}{\sqrt{1+x^2}}\), le gain en décibels vaut \(G = 20\log H_0 - 10 \log(1+x^2)\) et le déphasage vaut \(\Phi = \pi - \arctan x\). \(H\) et \(G\) sont des fonctions décroissantes de \(\log x\). \(\Phi\) est une fonction croissante de \(\log x\). À basse fréquence, il s'agit d'un simple inverseur (amplificateur ou atténuateur suivant les valeurs des résistance), puisque le condensateur est un coupe-circuit en régime permanent. Lorsque \(\log x\) tend vers \(-\infty\) (\(x\) vers 0), \(G\) tend vers \(20\log H_0 = G_M\) et \(\phi\) tend vers \(\pi\). Lorsque \(\log x\) tend vers \(+\infty\) (\(x\) vers \(+\infty\)), \(G\) est équivalent à \(G_M - 20\log x\) qui est l'équation d'une asymptote d'ordonnée à l'origine \(G_M\) et de coefficient directeur \(\SI{20}{\dB}\) par décade ; et \(\Phi\) tend vers \(\pi/2\).
+\begin{align}%
+  R_1/R_2 \uc_S + R_2C \derived{\uc_S}{t} &= \uc_E; \\
+  R_1/R_2 u_S + R_2C \derived{u_S}{t} &= u_E.
+\end{align}%
+Il s'agit donc d'un filtre actif du premier ordre. On pose comme pulsation de 
+référence \(\omega_0 = \frac{1}{R_2C}\), \(x = \omega/\omega_0 = R_2C \omega\) 
+et \(H_0 = R_2/R_1\), pour faciliter l'étude de la transmittance complexe. On a 
+donc \(\Hc = -\frac{H_0}{1+\ju x}\). Alors \(H = \frac{H_0}{\sqrt{1+x^2}}\), le 
+gain en décibels vaut \(G = 20\log H_0 - 10 \log(1+x^2)\) et le déphasage vaut 
+\(\Phi = \pi - \arctan x\). \(H\) et \(G\) sont des fonctions décroissantes de 
+\(\log x\). \(\Phi\) est une fonction croissante de \(\log x\). À basse 
+fréquence, il s'agit d'un simple inverseur (amplificateur ou atténuateur 
+suivant les valeurs des résistance), puisque le condensateur est un 
+coupe-circuit en régime permanent. Lorsque \(\log x\) tend vers \(-\infty\) 
+(\(x\) vers 0), \(G\) tend vers \(20\log H_0 = G_M\) et \(\phi\) tend vers 
+\(\pi\). Lorsque \(\log x\) tend vers \(+\infty\) (\(x\) vers \(+\infty\)), 
+\(G\) est équivalent à \(G_M - 20\log x\) qui est l'équation d'une asymptote 
+d'ordonnée à l'origine \(G_M\) et de coefficient directeur \(\SI{20}{\dB}\) par 
+décade ; et \(\Phi\) tend vers \(\pi/2\).
 
-À la coupure, \(H_C = \frac{H_M}{\sqrt{2}} = \frac{H_0}{\sqrt{2}}\) et \(G_C = G_M -\SI{3}{\dB}\), donc \(x_c=1\) et \(\Phi_C = \pi/4\). On a donc affaire à un filtre passe-bas amplificateur (si \(R_2>R_1\)) inverseur. Le tracé ci-dessous, figure \ref{fig:BodeAOP}, correspond au cas où \(R_2=10R_1\) (alors \(H_0=10\) et \(G = \SI{20}{\dB}\)).
+À la coupure, \(H_C = \frac{H_M}{\sqrt{2}} = \frac{H_0}{\sqrt{2}}\) et \(G_C = 
+G_M -\SI{3}{\dB}\), donc \(x_c=1\) et \(\Phi_C = \pi/4\). On a donc affaire à 
+un filtre passe-bas amplificateur (si \(R_2>R_1\)) inverseur. Le tracé 
+ci-dessous, figure~\ref{fig:BodeAOP}, correspond au cas où \(R_2=10R_1\) (alors 
+\(H_0=10\) et \(G = \SI{20}{\dB}\)).
 %TODO Mettre le graphique
-\begin{figure}[h!]
+\begin{figure}[h!]%
     \centering
     \includegraphics[scale=0.7]{Fig12.png}
     \caption{Diagramme de Bode du filtre actif}
     \label{fig:BodeAOP}
-\end{figure}
-\section{Exercices}
-\begin{exercice}[Amplificateur non-inverseur]
+\end{figure}%
+\section{Exercices}%
+\begin{exercice}[Amplificateur non-inverseur]%
 %TODO Mettre le schema
-\begin{enumerate}
-  \item Si l'amplificateur opérationnel est idéal et en fonctionnement linéaire, exprimer la fonction de transfert \(\Hc = \ncomplexe{v}_S/\ncomplexe{v}_E\) avec les résistances \(R_1\) et \(R_2\).
-  \item On tient compte, pour seul défaut de l'amplificateur opérationnel, du gain fini \(\mu_0\) en régime continu. Montrer que \(H_0 = v_S / v_E\) peut se mettre sous la forme \(H_0 = \frac{K}{1+\frac{K}{\mu_0}}\) et exprimer \(K\) avec les résistances.
-  \item En régime sinusoïdal permanent \(\ncomplexe{\mu} = \frac{\mu_0}{1+ \ju f/f_0}\). Montrer que la fonction de transfert du quadripôle peut se mettre sous la forme \(\Hc = \frac{H_0}{1+\ju f/F_0}\). Quelle est la bande passante, exprimée avec \(f_0\) \(\mu_0\) et \(H_0\),  de l'amplificateur ? Montrer que le facteur de mérite \(H_0F_0\) est constant.
-\end{enumerate}
-\end{exercice}
-\begin{exercice}[Montage dérivateur]
+\begin{enumerate}%
+  \item Si l'amplificateur opérationnel est idéal et en fonctionnement 
+    linéaire, exprimer la fonction de transfert \(\Hc = 
+    \ncomplexe{v}_S/\ncomplexe{v}_E\) avec les résistances \(R_1\) et \(R_2\).
+  \item On tient compte, pour seul défaut de l'amplificateur opérationnel, du 
+    gain fini \(\mu_0\) en régime continu. Montrer que \(H_0 = v_S / v_E\) peut 
+    se mettre sous la forme \(H_0 = \frac{K}{1+\frac{K}{\mu_0}}\) et exprimer 
+    \(K\) avec les résistances.
+  \item En régime sinusoïdal permanent \(\ncomplexe{\mu} = \frac{\mu_0}{1+ \ju 
+    f/f_0}\). Montrer que la fonction de transfert du quadripôle peut se mettre 
+    sous la forme \(\Hc = \frac{H_0}{1+\ju f/F_0}\). Quelle est la bande 
+    passante, exprimée avec \(f_0\) \(\mu_0\) et \(H_0\),  de l'amplificateur? 
+    Montrer que le facteur de mérite \(H_0F_0\) est constant.
+\end{enumerate}%
+\end{exercice}%
+\begin{exercice}[Montage dérivateur]%
 %TODO Mettre le schema
-On suppose que l'amplificateur opérationnel est idéal en fonctionnement linéaire
-\begin{enumerate}
-  \item Exprimer la fonction de transfert du quadripôle \(\Hc = \frac{\ncomplexe{v}_S}{\ncomplexe{v}_E}\) et tracer ses diagrammes de Bode en prenant \(x = \omega/\omega_0=RC\omega\).
+On suppose que l'amplificateur opérationnel est idéal en fonctionnement 
+  linéaire
+\begin{enumerate}%
+  \item Exprimer la fonction de transfert du quadripôle \(\Hc = 
+    \frac{\ncomplexe{v}_S}{\ncomplexe{v}_E}\) et tracer ses diagrammes de Bode 
+    en prenant \(x = \omega/\omega_0=RC\omega\).
   \item Montrer qu'il s'agit d'un montage dérivateur inverseur.
-\end{enumerate}
-\end{exercice}
-\begin{exercice}[Rétroaction, stabilité du montage inverseur]
+\end{enumerate}%
+\end{exercice}%
+\begin{exercice}[Rétroaction, stabilité du montage inverseur]%
 %TODO mettre les schemas
-Pour un fonctionnement linéaire de l'amplificateur opérationnel, quelle est l'amplification en tension de chacun des ces deux montages si \(\mu = \mu_0\) ? Que devient elle si \(\mu\) devient infini ?
+Pour un fonctionnement linéaire de l'amplificateur opérationnel, quelle est 
+  l'amplification en tension de chacun des ces deux montages si \(\mu = 
+  \mu_0\)? Que devient elle si \(\mu\) devient infini?
 
-En réalité, en régime sinusoïdal permanent, on a~: \(\ncomplexe{\mu} = \frac{\mu_0}{1+\ju \omega/\omega_0}\). Montrer que cette expression permet d'écrire l'équation différentielle relient \(v_E\) et \(v_S\) en régime variable. Montrer alors que toute mise sous tension de l'un de ces deux montages conduit rapidement à un fonctionnement linéaire si \(\mid V_E \mid < V_0\) (tension de saturation), alors que l'autre montage conduit nécessairement à la saturation en tension. Conclure.
-\end{exercice}
-\begin{exercice}[Simulation d'une bobine]
+En réalité, en régime sinusoïdal permanent, on a~: \(\ncomplexe{\mu} = 
+  \frac{\mu_0}{1+\ju \omega/\omega_0}\). Montrer que cette expression permet 
+  d'écrire l'équation différentielle relient \(v_E\) et \(v_S\) en régime 
+  variable. Montrer alors que toute mise sous tension de l'un de ces deux 
+  montages conduit rapidement à un fonctionnement linéaire si \(\mid V_E \mid < 
+  V_0\) (tension de saturation), alors que l'autre montage conduit 
+  nécessairement à la saturation en tension. Conclure.
+\end{exercice}%
+\begin{exercice}[Simulation d'une bobine]%
 %TODO mettre le schema
-\begin{enumerate}
-  \item Amplification en tension du quadripôle (ME,MS). On veut étudier, en régime sinusoïdal permanent de pulsation \(\omega\), la fonction de transfert \(\Hc = \ncomplexe{v}_S / \ncomplexe{v}_E\) de ce montage
+\begin{enumerate}%
+  \item Amplification en tension du quadripôle (ME,MS). On veut étudier, en 
+    régime sinusoïdal permanent de pulsation \(\omega\), la fonction de 
+    transfert \(\Hc = \ncomplexe{v}_S / \ncomplexe{v}_E\) de ce montage
   \begin{enumerate}
-    \item Exprimer \(\ncomplexe{v}_A/\ncomplexe{v}_E\) avec \(R\), \(C\) et \(\omega\). Faire de même avec \(\ncomplexe{v}_B/\ncomplexe{v}_S\);
-    \item L'amplificateur opérationnel étant considéré comme idéal et en fonctionnement linéaire, ne déduire l'expression de \(\Hc\) avec \(R\), \(C\) et \(\omega\), puis avec \(z=2RC\omega\).
-    \item Tracer les diagrammes de Bode de \(\Hc\) : \(G(\si{\dB}) = f(\log z)\) et \(\Phi = g(\log z)\). Calculer la fréquence de coupure \(N\) et préciser sur les diagrammes de Bode les coordonnées correspondantes à cette coupure.
+    \item Exprimer \(\ncomplexe{v}_A/\ncomplexe{v}_E\) avec \(R\), \(C\) et 
+      \(\omega\). Faire de même avec \(\ncomplexe{v}_B/\ncomplexe{v}_S\);
+    \item L'amplificateur opérationnel étant considéré comme idéal et en 
+      fonctionnement linéaire, ne déduire l'expression de \(\Hc\) avec \(R\), 
+      \(C\) et \(\omega\), puis avec \(z=2RC\omega\).
+    \item Tracer les diagrammes de Bode de \(\Hc\) : \(G(\si{\dB}) = f(\log 
+      z)\) et \(\Phi = g(\log z)\). Calculer la fréquence de coupure \(N\) et 
+      préciser sur les diagrammes de Bode les coordonnées correspondantes à 
+      cette coupure.
   \end{enumerate}
-  \item Dipôle équivalent à (ME). On veut montrer l'équivalence, en régime sinusoïdal permanent entre le dipôle (ME), situé à droite du point E, et une auto-inductance pure \(L\) en série avec une résistance pure \(r\).
+  \item Dipôle équivalent à (ME). On veut montrer l'équivalence, en régime 
+    sinusoïdal permanent entre le dipôle (ME), situé à droite du point E, et 
+    une auto-inductance pure \(L\) en série avec une résistance pure \(r\).
   \begin{enumerate}
-    \item Exprimer l'intensité complexe \(\ic_E\) du courant d'entrée avec \(\ncomplexe{v}_E\), \(\ncomplexe{v}_S\), \(R\), \(C\) et \(\omega\).
-    \item Compte tenu de l'expression de \(\Hc\) obtenu précédemment, exprimer l'impédance complexe d'entrée définie par \(\Zc_E = \frac{\ncomplexe{v}_E}{\ic_E}\) avec \(R\), \(C\) et \(\omega\).
-    \item Montrer l'équivalence entre le dipôle (ME) et \(L\) en série avec \(r\)~: On exprimera \(L\) et \(r\) en fonction de \(R\) et \(C\).
+    \item Exprimer l'intensité complexe \(\ic_E\) du courant d'entrée avec 
+      \(\ncomplexe{v}_E\), \(\ncomplexe{v}_S\), \(R\), \(C\) et \(\omega\).
+    \item Compte tenu de l'expression de \(\Hc\) obtenu précédemment, exprimer 
+      l'impédance complexe d'entrée définie par \(\Zc_E = 
+      \frac{\ncomplexe{v}_E}{\ic_E}\) avec \(R\), \(C\) et \(\omega\).
+    \item Montrer l'équivalence entre le dipôle (ME) et \(L\) en série avec 
+      \(r\)~: On exprimera \(L\) et \(r\) en fonction de \(R\) et \(C\).
   \end{enumerate}
-\end{enumerate}
-\end{exercice}
+\end{enumerate}%
+\end{exercice}%

@@ -1,158 +1,346 @@
-\chapter{Quadripôles, filtres du premier ordre}
+\chapter{Quadripôles, filtres du premier ordre}%
 \minitoc{}
 \minilof{}
 \minilot{}
 
-\section{Quadripôle, fonction de transfert}
-\subsection{Quadripôle, générateur, charge}
+\section{Quadripôle, fonction de transfert}%
+\subsection{Quadripôle, générateur, charge}%
 %TODO Mettre le schema du quadripôle
-Un quadripôle est une portion de circuit présentant quatre bornes~: deux bornes d'entrée et deux bornes de sortie. Les tension et les courants sont en général algébrisés comme sur le schéma ci-dessous. \(u_E\) tension d'entrée, \(i_E\) courant d'entrée, \(u_S\) tension de sortie, \(i_S\), courant de sortie (pour des raisons de symétrie, il peut être utile de flécher \(i_S\) dans l'autre sens). Un quadripôle est en général associé à deux dipôles électrocinétiques~:
-\begin{itemize}
-\item Un dipôle générateur relié aux bornes d'entré ; Si ce dipôle est linéaire, au moins dans le domaine où on l'utilise, il pourra être modélisé par un générateur de Thévenin ou de Norton ; Si la résistance du générateur (ou, en régime sinusoïdal permanent, son impédance) est négligeable, on le modélisera comme une source de tension ; De la même manière, si sa conductance (ou, en régime sinusoïdal permanent, son admittance) est négligeable, on le modélisera comme une source de courant ;
-\item Un dipôle récepteur relié aux bornes de sortie, que l'on nommera ``charge''. Ce sera souvent un dipôle passif, par exemple une résistance pure.
-\end{itemize}
-Un quadripôle peut comporter un dipôle générateur, le plus souvent une source liée dont le fonctionnement nécessite une alimentation (voir les montages à amplificateurs opérationnels), celle-ci n'est en général pas représentée sur les schémas. Lorsque le quadripôle ne comporte pas de source, il est dit ``passif'', dans le cas contraire, il est dit ``actif''.
-\subsection{Fonctions de transfert --- Transmittances}
-En régime sinusoïdal permanent, pour un quadripôle linéaire, les grandeurs d'entrée et de sortie sont de même pulsation, ou \emph{fréquence angulaire}, \(\omega\). Les grandeurs complexes associées à une grandeur d'entrée \(\xc_E\) et à une grandeur de sortie \(\yc_S\) sont respectivement \(\xc_E = \Xc_E \exp(\ju \omega t)\) et \(\yc_S = \Yc_S \exp(\ju \omega t)\). Le rapport \(\frac{\yc_S}{\xc_E} = \frac{\Yc_S}{\Xc_E}\) est indépendant du temps, c'est une fonction de \(\ju \omega\), que l'on note \(\Hc(\ju \omega)\).
+Un quadripôle est une portion de circuit présentant quatre bornes~: deux bornes 
+d'entrée et deux bornes de sortie. Les tension et les courants sont en général 
+algébrisés comme sur le schéma ci-dessous. \(u_E\) tension d'entrée, \(i_E\) 
+courant d'entrée, \(u_S\) tension de sortie, \(i_S\), courant de sortie (pour 
+des raisons de symétrie, il peut être utile de flécher \(i_S\) dans l'autre 
+sens). Un quadripôle est en général associé à deux dipôles électrocinétiques~:
+\begin{itemize}%
+\item Un dipôle générateur relié aux bornes d'entré ; Si ce dipôle est 
+	linéaire, au moins dans le domaine où on l'utilise, il pourra être modélisé 
+		par un générateur de Thévenin ou de Norton ; Si la résistance du générateur 
+		(ou, en régime sinusoïdal permanent, son impédance) est négligeable, on le 
+		modélisera comme une source de tension ; De la même manière, si sa 
+		conductance (ou, en régime sinusoïdal permanent, son admittance) est 
+		négligeable, on le modélisera comme une source de courant ;
+\item Un dipôle récepteur relié aux bornes de sortie, que l'on nommera 
+	``charge''. Ce sera souvent un dipôle passif, par exemple une résistance 
+		pure.
+\end{itemize}%
+Un quadripôle peut comporter un dipôle générateur, le plus souvent une source 
+liée dont le fonctionnement nécessite une alimentation (voir les montages à 
+amplificateurs opérationnels), celle-ci n'est en général pas représentée sur 
+les schémas. Lorsque le quadripôle ne comporte pas de source, il est dit 
+``passif'', dans le cas contraire, il est dit ``actif''.
+\subsection{Fonctions de transfert --- Transmittances}%
+En régime sinusoïdal permanent, pour un quadripôle linéaire, les grandeurs 
+d'entrée et de sortie sont de même pulsation, ou \emph{fréquence angulaire}, 
+\(\omega\). Les grandeurs complexes associées à une grandeur d'entrée \(\xc_E\) 
+et à une grandeur de sortie \(\yc_S\) sont respectivement \(\xc_E = \Xc_E 
+\exp(\ju \omega t)\) et \(\yc_S = \Yc_S \exp(\ju \omega t)\). Le rapport 
+\(\frac{\yc_S}{\xc_E} = \frac{\Yc_S}{\Xc_E}\) est indépendant du temps, c'est 
+une fonction de \(\ju \omega\), que l'on note \(\Hc(\ju \omega)\).
 
-La \emph{fonction de transfert, ou ``transmittance complexe'', du quadripôle} est \(\Hc(\ju \omega) = \frac{\yc_S}{\xc_E} = \frac{\Yc_S}{\Xc_E}\).
+La \emph{fonction de transfert, ou ``transmittance complexe'', du quadripôle} 
+est \(\Hc(\ju \omega) = \frac{\yc_S}{\xc_E} = \frac{\Yc_S}{\Xc_E}\).
 
-Il est très important de note dès maintenant, que la fonction de transfert d'un quadripôle dépend, \emph{a priori}, non seulement du quadripôle considéré, mais aussi de la charge.
+Il est très important de note dès maintenant, que la fonction de transfert d'un 
+quadripôle dépend, \emph{a priori}, non seulement du quadripôle considéré, mais 
+aussi de la charge.
 
-On peut distinguer quatre transmittance pour un quadripôle suivant la nature, intensité ou tension, des grandeurs \(\yc_S\) et \(\xc_E\) auxquelles on s'intéresse~:
-\begin{itemize}
+On peut distinguer quatre transmittance pour un quadripôle suivant la nature, 
+intensité ou tension, des grandeurs \(\yc_S\) et \(\xc_E\) auxquelles on 
+s'intéresse~:
+\begin{itemize}%
 	\item Amplification en tension : \(\frac{\Uc_S}{\Uc_E}\) sans dimension ;
 	\item Amplification en courant : \(\frac{\Ic_S}{\Ic_E}\) sans dimension ;
 	\item Transimpédance complexe : \(\frac{\Uc_S}{\Ic_E}\) en \si{\ohm};
 	\item Transadmittance complexe : \(\frac{\Ic_S}{\Uc_E}\) en \si{\siemens}.
-\end{itemize}
-Le module \(H\) et l'argument \(\Phi\) d'une fonction de transfert sont des fonctions de la fréquence angulaire \(\Hc(\ju \omega) = H(\omega) \exp(\ju \Phi(\omega))\).
-\subsection{Amplification, Gain, Décibels}
-Si les grandeurs d'entrée et de sortie considérées sont de même nature, le module \(H\) de la fonction de transfert est nommé ``gain'', il peut varier énormément avec la pulsation, c'est pourquoi on utilise un échelle logarithmique.
+\end{itemize}%
+Le module \(H\) et l'argument \(\Phi\) d'une fonction de transfert sont des 
+fonctions de la fréquence angulaire \(\Hc(\ju \omega) = H(\omega) \exp(\ju 
+\Phi(\omega))\).
+\subsection{Amplification, Gain, Décibels}%
+Si les grandeurs d'entrée et de sortie considérées sont de même nature, le 
+module \(H\) de la fonction de transfert est nommé ``gain'', il peut varier 
+énormément avec la pulsation, c'est pourquoi on utilise un échelle 
+logarithmique.
 
-Le logarithme décimal du rapport de deux puissance (électrocinétiques, acoustiques, \(\dots\)) s'exprime avec une unité : le bel (symbole \si{\bel}). Si \(\P_0\) est la puissance de référence, le gain en puissance est, en bels \(G_p = \SI{1}{\bel} \log\left(\frac{\P}{\P_0}\right)\), ou en décibels \(G_p = \SI{10}{\dB} \log\left(\frac{\P}{\P_0}\right)\). Pour un quadripôle, en régime sinusoïdal permanent, le gain en puissance s'exprime avec les puissances électrocinétiques moyennes reçues à l'entrée et fournie à la sortie : \(G_P = \SI{10}{\dB} \log\left(\frac{\P_S}{\P_E}\right)\). Si l'ensemble constitué par le quadripôle et la charge est équivalent, vu des entrées, à un dipôle et si son impédance complexe est \(\Zc_E = R_E + \ju S_E\), alors \(\P_E = \frac{R_E I_E^2}{2} = \frac{R_E U_E^2}{2 Z_E^2}\). De même, si la charge est passive et si son impédance complexe est \(\Zc_C = R_C + \ju S_C\), alors \(\P_S = \frac{R_C I_S^2}{2} = \frac{R_C U_S^2}{2 Z_C^2}\). On a donc~:
-\begin{equation}
- G/(\SI{1}{\dB}) = 10\log\left(\frac{R_C}{R_E}\right) + 20\log\left(\frac{I_S}{I_E}\right) = 10\log\left(\frac{R_CZ_E^2}{R_EZ_C^2}\right) + 20\log\left(\frac{U_S}{U_E}\right).
-\end{equation}
-Le gain en puissance, en décibels apparaît comme la somme de deux termes dont l'un est \(20\log(H)\), avec \(\Hc = \frac{\Uc_S}{\Uc_E}= \frac{\Ic_S}{\Ic_E}\) suivant si l'on s'intéresse à une amplification en courant ou en tension. C'est pourquoi on définit le \emph{gain en décibels du quadripôle} par \(G = \SI{20}{\dB} \log{H}\). C'est une fonction de la pulsation \(\omega\) tout comme \(H\). Un gain de \(\SI{20}{\dB}\) correspond donc à une multiplication par 10 de l'amplification. \(G\) est positif s'il y a réellement une amplification (\(H>1\)) et négatif s'il y a une atténuation (\(H<1\)). Il tend vers \(-\infty\) s'il y a une extinction (\(H \to 0\)).
+Le logarithme décimal du rapport de deux puissance (électrocinétiques, 
+acoustiques, \(\dots\)) s'exprime avec une unité : le bel (symbole \si{\bel}). 
+Si \(\P_0\) est la puissance de référence, le gain en puissance est, en bels 
+\(G_p = \SI{1}{\bel} \log\left(\frac{\P}{\P_0}\right)\), ou en décibels \(G_p = 
+\SI{10}{\dB} \log\left(\frac{\P}{\P_0}\right)\). Pour un quadripôle, en régime 
+sinusoïdal permanent, le gain en puissance s'exprime avec les puissances 
+électrocinétiques moyennes reçues à l'entrée et fournie à la sortie : \(G_P = 
+\SI{10}{\dB} \log\left(\frac{\P_S}{\P_E}\right)\). Si l'ensemble constitué par 
+le quadripôle et la charge est équivalent, vu des entrées, à un dipôle et si 
+son impédance complexe est \(\Zc_E = R_E + \ju S_E\), alors \(\P_E = \frac{R_E 
+I_E^2}{2} = \frac{R_E U_E^2}{2 Z_E^2}\). De même, si la charge est passive et 
+si son impédance complexe est \(\Zc_C = R_C + \ju S_C\), alors \(\P_S = 
+\frac{R_C I_S^2}{2} = \frac{R_C U_S^2}{2 Z_C^2}\). On a donc~:
+\begin{equation}%
+ G/(\SI{1}{\dB}) = 10\log\left(\frac{R_C}{R_E}\right) + 
+	20\log\left(\frac{I_S}{I_E}\right) = 
+	10\log\left(\frac{R_CZ_E^2}{R_EZ_C^2}\right) + 
+	20\log\left(\frac{U_S}{U_E}\right).
+\end{equation}%
+Le gain en puissance, en décibels apparaît comme la somme de deux termes dont 
+l'un est \(20\log(H)\), avec \(\Hc = \frac{\Uc_S}{\Uc_E}= \frac{\Ic_S}{\Ic_E}\) 
+suivant si l'on s'intéresse à une amplification en courant ou en tension. C'est 
+pourquoi on définit le \emph{gain en décibels du quadripôle} par \(G = 
+\SI{20}{\dB} \log{H}\). C'est une fonction de la pulsation \(\omega\) tout 
+comme \(H\). Un gain de \(\SI{20}{\dB}\) correspond donc à une multiplication 
+par 10 de l'amplification. \(G\) est positif s'il y a réellement une 
+amplification (\(H>1\)) et négatif s'il y a une atténuation (\(H<1\)). Il tend 
+vers \(-\infty\) s'il y a une extinction (\(H \to 0\)).
 
-\subsection{Gain en décibels dans le cas d'une fonction de transfert mixte}
-Si \(H(\ju \omega)\) est une transadmittance ou une transimpédance, il est nécessaire de se ramener à une grandeur sans dimension pour utiliser une échelle logarithmique. On utilise une pulsation de référence \(\omega_0\) judicieusement choisie (une valeur pour laquelle la transmittance est réelle, voire maximale, \ldots), le gain en décibels est alors défini par :
-\begin{equation}
+\subsection{Gain en décibels dans le cas d'une fonction de transfert mixte}%
+Si \(H(\ju \omega)\) est une transadmittance ou une transimpédance, il est 
+nécessaire de se ramener à une grandeur sans dimension pour utiliser une 
+échelle logarithmique. On utilise une pulsation de référence \(\omega_0\) 
+judicieusement choisie (une valeur pour laquelle la transmittance est réelle, 
+voire maximale, \ldots), le gain en décibels est alors défini par :
+\begin{equation}%
 G = 20 \log \left(\frac{H(\omega)}{H(\omega_0)}\right)
-\end{equation}
+\end{equation}%
 
-\section{Diagrammes de Bode d'une fonction de transfert}
-\subsection{Définition}
-Soit une pulsation de référence \(\omega_0\) (ou une fréquence de référence \(N_0\)) bien choisie. On notera \(x = \omega/omega_0 = N/N_0\) la pulsation réduite ou la fréquence réduite. \emph{On appelle diagrammes de Bode d'une fonction de transfert, les diagrammes représentant les graphes des fonctions~:}
-\begin{equation}
-\fonction{G}{\R}{\R}{\log(x)}{G = \SI{20}{\dB} \log(H)} \qquad \fonction{\Phi}{\R}{\R}{\log(x)}{\Phi = \arg(H)}
-\end{equation}
+\section{Diagrammes de Bode d'une fonction de transfert}%
+\subsection{Définition}%
+Soit une pulsation de référence \(\omega_0\) (ou une fréquence de référence 
+\(N_0\)) bien choisie. On notera \(x = \omega/omega_0 = N/N_0\) la pulsation 
+réduite ou la fréquence réduite. \emph{On appelle diagrammes de Bode d'une 
+fonction de transfert, les diagrammes représentant les graphes des fonctions~:}
+\begin{equation}%
+\fonction{G}{\R}{\R}{\log(x)}{G = \SI{20}{\dB} \log(H)} \qquad 
+	\fonction{\Phi}{\R}{\R}{\log(x)}{\Phi = \arg(H)}%
+\end{equation}%
 
-Les diagrammes obtenus avec différents choix pour \(\omega_0\) (ou pour \(N_0\)) ne différent que par une translation sur l'axe de abscisses. L'intervalle compris entre les fréquences \(N\) et \(10N\) est appelé une décade, il lui correspond une largeur de \(1\) sur l'axe des abscisses. Le tracé des diagrammes de Bode est facilité par l'utilisation du papier semi-logarithmique qui est gradué proportionnellement à \(\log x\) sur l'axe des \(x\) et proportionnellement à \(y\) sur l'axe des \(y\).
+Les diagrammes obtenus avec différents choix pour \(\omega_0\) (ou pour 
+\(N_0\)) ne différent que par une translation sur l'axe de abscisses. 
+L'intervalle compris entre les fréquences \(N\) et \(10N\) est appelé une 
+décade, il lui correspond une largeur de \(1\) sur l'axe des abscisses. Le 
+tracé des diagrammes de Bode est facilité par l'utilisation du papier 
+semi-logarithmique qui est gradué proportionnellement à \(\log x\) sur l'axe 
+des \(x\) et proportionnellement à \(y\) sur l'axe des \(y\).
 
-\subsection{Bande passante, fréquence de coupure}
-Par définition, \emph{à la ``coupure'', le gain maximum est divisé par \(\sqrt{2}\)}, gain en puissance divisé par 2, donc \(H_C = H_M/\sqrt{2}\). Donc \(20\log(H_C/H_M) = -10\log 2 \approx -3\), d'où \(G_C = G_M -\SI{3}{\dB}\). Les valeurs \(\omega_C\), \(N_C\), correspondantes sont les \emph{pulsations de coupure}, \emph{fréquences de coupure}. \emph{La ``bande passante'' est l'intervalle en fréquence ou en pulsation tel que \(G > G_M - \SI{3}{\dB}\), elle s'exprime par la différence entre deux fréquences, pulsations, de coupure ou par la valeur de l'unique fréquence, pulsation de coupure}. Lorsqu'il n'y a qu'une fréquence de coupure, il est pratique de l'utiliser comme fréquence de référence, c'est-à-dire de tracer les graphes en fonction de \(\log(N/N_C) = \log(\omega/\omega_C)\).
+\subsection{Bande passante, fréquence de coupure}%
+Par définition, \emph{à la ``coupure'', le gain maximum est divisé par 
+\(\sqrt{2}\)}, gain en puissance divisé par 2, donc \(H_C = H_M/\sqrt{2}\). 
+Donc \(20\log(H_C/H_M) = -10\log 2 \approx -3\), d'où \(G_C = G_M 
+-\SI{3}{\dB}\). Les valeurs \(\omega_C\), \(N_C\), correspondantes sont les 
+\emph{pulsations de coupure}, \emph{fréquences de coupure}. \emph{La ``bande 
+passante'' est l'intervalle en fréquence ou en pulsation tel que \(G > G_M - 
+\SI{3}{\dB}\), elle s'exprime par la différence entre deux fréquences, 
+pulsations, de coupure ou par la valeur de l'unique fréquence, pulsation de 
+coupure}. Lorsqu'il n'y a qu'une fréquence de coupure, il est pratique de 
+l'utiliser comme fréquence de référence, c'est-à-dire de tracer les graphes en 
+fonction de \(\log(N/N_C) = \log(\omega/\omega_C)\).
 
-\section{Exemples de fonctions de transfert}
-\subsection{Circuit RLC série}
-On peut étudier le dipôle RLC série (ou tout autre dipôle en régime sinusoïdal permanent), comme un quadripôle en sortie court-circuitée (\(R_C = 0\)) et étudier sa transadmittance lorsqu'il est alimenté par une source de tension.
+\section{Exemples de fonctions de transfert}%
+\subsection{Circuit RLC série}%
+On peut étudier le dipôle RLC série (ou tout autre dipôle en régime sinusoïdal 
+permanent), comme un quadripôle en sortie court-circuitée (\(R_C = 0\)) et 
+étudier sa transadmittance lorsqu'il est alimenté par une source de tension.
 %TODO Mettre une figure du circuit
-Ici, \(\ic_S = \ic_E\) et \(\uc_S = 0\), la seule fonction de transfert présentant un intérêt est la transadmittance \(\Hc = \frac{\Ic_S}{\Uc_e} = \Yc(\text{RLC série}) = \frac{1}{R + \ju\left(L\omega -\frac{1}{C\omega}\right)}\).
+Ici, \(\ic_S = \ic_E\) et \(\uc_S = 0\), la seule fonction de transfert 
+présentant un intérêt est la transadmittance \(\Hc = \frac{\Ic_S}{\Uc_e} = 
+\Yc(\text{RLC série}) = \frac{1}{R + \ju\left(L\omega 
+-\frac{1}{C\omega}\right)}\).
 
-En prenant la pulsation de résonance comme référence \(\omega_0 = \frac{1}{\sqrt{LC}}\), avec le facteur de qualité \(Q = \frac{L\omega_0}{R} = \frac{1}{RC\omega_0}\) et \(H_0 = \frac{1}{R}\) la transadmittance réelle à la résonance, en posant \(x = \omega / \omega_0\), on a~:
-\begin{equation}
+En prenant la pulsation de résonance comme référence \(\omega_0 = 
+\frac{1}{\sqrt{LC}}\), avec le facteur de qualité \(Q = \frac{L\omega_0}{R} = 
+\frac{1}{RC\omega_0}\) et \(H_0 = \frac{1}{R}\) la transadmittance réelle à la 
+résonance, en posant \(x = \omega / \omega_0\), on a~:
+\begin{equation}%
 \Hc = \frac{1}{R\left(1+\ju Q\left(x-\frac{1}{x}\right)\right)},
-\end{equation}
+\end{equation}%
 donc
-\begin{equation}
-H = \frac{1}{R\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2}} \qquad \Phi = -\arctan\left(Q \left(x-\frac{1}{x} \right) \right).
-\end{equation}
+\begin{equation}%
+H = \frac{1}{R\sqrt{1+Q^2\left(x-\frac{1}{x}\right)^2}} \qquad \Phi = 
+	-\arctan\left(Q \left(x-\frac{1}{x} \right) \right).
+\end{equation}%
 Alors le gain en décibels est~:
-\begin{equation}
+\begin{equation}%
 G = 20\log(H/H_0) = -10\log\left( 1 + Q^2\left(x-\frac{1}{x} \right)^2\right)
-\end{equation}
+\end{equation}%
 
-\paragraph{Diagramme du gain \(G = f(\log x)\)}
+\paragraph{Diagramme du gain \(G = f(\log x)\)}%
 
-On remarque d'abord que \(G\) prend la même valeur pour \(x\) et pour \(x' = 1/x\), donc \(f\) est une fonction paire. La valeur maximale de \(G\) est \(0\) obtenue en \(x=1\). Les pulsations réduites de coupure correspondent à \(G = \SI{-3}{\dB}\), ce sont donc \(x_1\) et \(x_2\) qui vérifient l'équation \footnote{déjà résolue en \ref{sec-chap14:acuite}}~:
-\begin{equation}
-\frac{H}{H_0} = \frac{1}{\sqrt{1+Q^2\left(x-\frac{1}{x} \right)^2}} = \frac{1}{\sqrt{2}},
-\end{equation}
-soit \(Q^2\left(x-\frac{1}{x} \right)^2=1\), donc les pulsations réduites de coupure sont les deux solution positives~: \(x_1 = -\frac{1}{2Q} + \sqrt{\left(\frac{1}{2Q} \right)^2+1}\) et \(x_2 = \frac{1}{2Q} + \sqrt{\left(\frac{1}{2Q} \right)^2+1} = \frac{1}{x_1}\), donc \(\log x_2 = -\log x_1\) (puisque \(f\) est paire).
+On remarque d'abord que \(G\) prend la même valeur pour \(x\) et pour \(x' = 
+1/x\), donc \(f\) est une fonction paire. La valeur maximale de \(G\) est \(0\) 
+obtenue en \(x=1\). Les pulsations réduites de coupure correspondent à \(G = 
+\SI{-3}{\dB}\), ce sont donc \(x_1\) et \(x_2\) qui vérifient
+l'équation~\footnote{déjà résolue en~\ref{sec-chap14:acuite}}~:
+\begin{equation}%
+\frac{H}{H_0} = \frac{1}{\sqrt{1+Q^2\left(x-\frac{1}{x} \right)^2}} = 
+	\frac{1}{\sqrt{2}},%
+\end{equation}%
+soit \(Q^2\left(x-\frac{1}{x} \right)^2=1\), donc les pulsations réduites de 
+coupure sont les deux solution positives~: \(x_1 = -\frac{1}{2Q} + 
+\sqrt{\left(\frac{1}{2Q} \right)^2+1}\) et \(x_2 = \frac{1}{2Q} + 
+\sqrt{\left(\frac{1}{2Q} \right)^2+1} = \frac{1}{x_1}\), donc \(\log x_2 = 
+-\log x_1\) (puisque \(f\) est paire).
 
-La bande passante s'exprime, en pulsation réduite, par \(\Delta x = x_2 - x_1 = \frac{1}{Q}\), ou en pulsation par \(\Delta \omega = \omega_2 - \omega_1 = \omega_0/Q = \frac{R}{L}\), ou en fréquence par \(\Delta N = N_2- N_1 = \frac{R}{2\pi L}\). Le facteur de qualité est bien \(Q = \frac{\omega_0}{\Delta \omega}\). On trace le diagramme asymptotique de la façon suivante~:
-\begin{itemize}
-	\item Pour \(x\) tendant vers \(0\), soit \(\log x\) tendant vers \(-\infty\), on a \(G \approx -10\log(Q^2/x^2) = -20\log Q +20\log x\), cette asymptote a une pente de +\SI{20}{\dB} par décade ;
-	\item Pour \(x\) tendant vers \(+\infty\), soit \(\log x\) tendant vers \(+\infty\), on a \(G \approx -10\log(Q^2+x^2) = -20\log Q -20\log x\), cette asymptote a une pente de -\SI{20}{\dB} par décade.
-\end{itemize}
+La bande passante s'exprime, en pulsation réduite, par \(\Delta x = x_2 - x_1 = 
+\frac{1}{Q}\), ou en pulsation par \(\Delta \omega = \omega_2 - \omega_1 = 
+\omega_0/Q = \frac{R}{L}\), ou en fréquence par \(\Delta N = N_2- N_1 = 
+\frac{R}{2\pi L}\). Le facteur de qualité est bien \(Q = \frac{\omega_0}{\Delta 
+\omega}\). On trace le diagramme asymptotique de la façon suivante~:
+\begin{itemize}%
+	\item Pour \(x\) tendant vers \(0\), soit \(\log x\) tendant vers 
+		\(-\infty\), on a \(G \approx -10\log(Q^2/x^2) = -20\log Q +20\log x\), 
+		cette asymptote a une pente de +\SI{20}{\dB} par décade ;
+	\item Pour \(x\) tendant vers \(+\infty\), soit \(\log x\) tendant vers 
+		\(+\infty\), on a \(G \approx -10\log(Q^2+x^2) = -20\log Q -20\log x\), 
+		cette asymptote a une pente de -\SI{20}{\dB} par décade.
+\end{itemize}%
 Les deux asymptotes ont la même ordonnée à l'origine : \(-\SI{20}{\dB}\log Q\).
 %TODO Mettre le graphe
-\paragraph{Diagramme du déphasage \(\Phi = g(\log x)\)}
+\paragraph{Diagramme du déphasage \(\Phi = g(\log x)\)}%
 
-On remarque d'abord que \(\Phi\) prend des valeurs opposées pour \(x\) et pour \(x'=1/x\), donc la fonction \(g\) est impaire. Pour \(x=1\), \(\Phi = 0\). Pour \(x=x_1\), \(Q(x-1/x)=-1\), donc \(\Phi_1=\pi/4\), donc \(\Phi_2=-\pi/4\). Lorsque \(x\) tend vers \(0\), soit \(\log x\) tendant vers \(-\infty\), \(\Phi\) tend vers \(\pi/2\). Lorsque \(x\) tend vers \(0+\infty\), soit \(\log x\) tendant vers \(+\infty\), \(\Phi\) tend vers \(-\pi/2\)
+On remarque d'abord que \(\Phi\) prend des valeurs opposées pour \(x\) et pour 
+\(x'=1/x\), donc la fonction \(g\) est impaire. Pour \(x=1\), \(\Phi = 0\). 
+Pour \(x=x_1\), \(Q(x-1/x)=-1\), donc \(\Phi_1=\pi/4\), donc \(\Phi_2=-\pi/4\). 
+Lorsque \(x\) tend vers \(0\), soit \(\log x\) tendant vers \(-\infty\), 
+\(\Phi\) tend vers \(\pi/2\). Lorsque \(x\) tend vers \(0+\infty\), soit \(\log 
+x\) tendant vers \(+\infty\), \(\Phi\) tend vers \(-\pi/2\)
 %TODO Mettre le graphe
-\paragraph{Conclusion}
+\paragraph{Conclusion}%
 
-Le quadripôle étudié est un \emph{filtre passe bande} car il atténue les signaux de basse fréquence et de haute fréquence, ne laissant passer que les signaux dont la fréquence est voisine de \(N_0 = \frac{1}{2\pi\sqrt{LC}}\).
+Le quadripôle étudié est un \emph{filtre passe bande} car il atténue les 
+signaux de basse fréquence et de haute fréquence, ne laissant passer que les 
+signaux dont la fréquence est voisine de \(N_0 = \frac{1}{2\pi\sqrt{LC}}\).
 
-Sa fonction de transfert \(\Hc = \frac{\Ic_S}{\Uc_E} = \frac{1}{R+\ju\left( L\omega -\frac{1}{\ju \omega C} \right)} = \frac{\ju \omega C}{\ju \omega R C + 1 +LC (\ju \omega)^2}\) est équivalente à~:
-\begin{align}
+Sa fonction de transfert \(\Hc = \frac{\Ic_S}{\Uc_E} = \frac{1}{R+\ju\left( 
+L\omega -\frac{1}{\ju \omega C} \right)} = \frac{\ju \omega C}{\ju \omega R C + 
+1 +LC (\ju \omega)^2}\) est équivalente à~:
+\begin{align}%
 	& RC \ju \omega \Ic_S + LC (\ju \omega)^2 \Ic_S + \Ic_S = C \omega \Uc_E \\
-	\iff & (\ju \omega)^2 \ic_S + \frac{R}{L} \ju\omega \ic_S + \frac{1}{LC} \ic_S = \frac{1}{L} \Uc_E \\
-	\iff & \deriveds{i_S}{t} + \frac{R}{L} \derived{i_S}{t} + \frac{i_S}{LC} = \frac{1}{L} \derived{u_E}{t}.
-\end{align}
-C'est bien sûr celle que l'on obtiendrait directement en étudiant le circuit en régime quelconque. Cette équation différentielle est du deuxième ordre, il s'agit donc d'un \emph{filtre du deuxième ordre}. Ce filtre est \emph{passif} car le quadripôle étudié ne comporte pas de sources de tension ni de source de courant.
+	\iff & (\ju \omega)^2 \ic_S + \frac{R}{L} \ju\omega \ic_S + \frac{1}{LC} 
+	\ic_S = \frac{1}{L} \Uc_E \\
+	\iff & \deriveds{i_S}{t} + \frac{R}{L} \derived{i_S}{t} + \frac{i_S}{LC} = 
+	\frac{1}{L} \derived{u_E}{t}.
+\end{align}%
+C'est bien sûr celle que l'on obtiendrait directement en étudiant le circuit en 
+régime quelconque. Cette équation différentielle est du deuxième ordre, il 
+s'agit donc d'un \emph{filtre du deuxième ordre}. Ce filtre est \emph{passif} 
+car le quadripôle étudié ne comporte pas de sources de tension ni de source de 
+courant.
 
-\subsection{Filtres passifs du premier ordre}
+\subsection{Filtres passifs du premier ordre}%
 On étudiera ici deux exemples~: le filtre RC passe-bas et CR passe-haut.
-\subsubsection{Filtre RC (passe-bas)}
+\subsubsection{Filtre RC (passe-bas)}%
 %TODO Mettre le schema du filtre et les graphiques
-Il s'agit d'un diviseur de tension que l'on supposera en sortie ouverte. On étudiera son amplification complexe en tension, en régime sinusoïdal permanent : \(\Hc = \frac{\Uc_S}{\Uc_E} = \frac{\Zc_C}{\Zc_C + \Zc_R} = \frac{1}{1+\Zc_R\Yc_C} = \frac{1}{1+\ju R C \omega}\). Il est naturel de poser \(\omega_0=\frac{1}{RC}\), donc \(x=\omega/\omega_0=RC\omega\), donc \(\Hc = \frac{1}{1+\ju x}\). Ainsi \(H =\frac{1}{\sqrt{1+x^2}}\). Donc le gain en décibels vaut \(G = 20\log H = -10\log(1+x^2)\) et \(\Phi = \arg(\Hc)=-\arctan x\).
+Il s'agit d'un diviseur de tension que l'on supposera en sortie ouverte. On 
+étudiera son amplification complexe en tension, en régime sinusoïdal permanent 
+: \(\Hc = \frac{\Uc_S}{\Uc_E} = \frac{\Zc_C}{\Zc_C + \Zc_R} = 
+\frac{1}{1+\Zc_R\Yc_C} = \frac{1}{1+\ju R C \omega}\). Il est naturel de poser 
+\(\omega_0=\frac{1}{RC}\), donc \(x=\omega/\omega_0=RC\omega\), donc \(\Hc = 
+\frac{1}{1+\ju x}\). Ainsi \(H =\frac{1}{\sqrt{1+x^2}}\). Donc le gain en 
+décibels vaut \(G = 20\log H = -10\log(1+x^2)\) et \(\Phi = \arg(\Hc)=-\arctan 
+x\).
 
 Le comportement asymptotique est évident~:
-\begin{itemize}
-	\item À très basse fréquence, le condensateur est un coupe-circuit donc l'intensité du courant est nulle est \(\Uc_S = \Uc_E\), donc \(\Hc=1\), \(H=1\), \(G=0\), \(\Phi=0\);
-	\item À très haute fréquence, pas trop pour rester dans l'ARQS, le condensateur est un court-circuit, donc \(\Uc_S=0\) et \(\Hc=0\), \(G\) tend vers \(-\infty\).
-\end{itemize}
-Les signaux basses fréquences demeurent inchangés, alors que les signaux hautes fréquences tendent à l'extinction. Il s'agit donc d'un filtre ``passe-bas''. L'étude mathématique donne des résultats plus complets.
+\begin{itemize}%
+	\item À très basse fréquence, le condensateur est un coupe-circuit donc 
+		l'intensité du courant est nulle est \(\Uc_S = \Uc_E\), donc \(\Hc=1\), 
+		\(H=1\), \(G=0\), \(\Phi=0\);
+	\item À très haute fréquence, pas trop pour rester dans l'ARQS, le 
+		condensateur est un court-circuit, donc \(\Uc_S=0\) et \(\Hc=0\), \(G\) 
+		tend vers \(-\infty\).
+\end{itemize}%
+Les signaux basses fréquences demeurent inchangés, alors que les signaux hautes 
+fréquences tendent à l'extinction. Il s'agit donc d'un filtre ``passe-bas''. 
+L'étude mathématique donne des résultats plus complets.
 
-\(H\), \(G\) et \(\Phi\) sont des fonctions décroissantes de \(x\), donc de \(\log x\). Le déphasage présente une symétrie, puisque \(\arctan(1/x) + \arctan(x) = \pi/2\), donc \(1/2(\Phi(-\log x)+\Phi(\log x)) = -\pi/4\) : le diagramme de Bode du déphasage est symétrique par rapport au point de coordonnée \(x=1\), \(\Phi=-\pi/4\). Le gain maximum correspond à \(x=0\), soit \(H_m=1\), \(G_m=0\), \(\Phi_m=0\). La coupure correspond à \(H = H_m/\sqrt{2}\), donc \(H_c = 1\sqrt{2} = 1/\sqrt{1+x_c^2}\), avec \(x_c=1\). La fréquence de coupure est donc \(N_c = N_0 = \omega_0/(2\pi) = \frac{1}{2\pi RC}\). On a alors \(Gc = G_m-\SI{3}{\dB}=-\SI{3}{\dB}\) et \(\Phi = -\arctan(x_c) = -\pi/4\).
+\(H\), \(G\) et \(\Phi\) sont des fonctions décroissantes de \(x\), donc de 
+\(\log x\). Le déphasage présente une symétrie, puisque \(\arctan(1/x) + 
+\arctan(x) = \pi/2\), donc \(1/2(\Phi(-\log x)+\Phi(\log x)) = -\pi/4\) : le 
+diagramme de Bode du déphasage est symétrique par rapport au point de 
+coordonnée \(x=1\), \(\Phi=-\pi/4\). Le gain maximum correspond à \(x=0\), soit 
+\(H_m=1\), \(G_m=0\), \(\Phi_m=0\). La coupure correspond à \(H = 
+H_m/\sqrt{2}\), donc \(H_c = 1\sqrt{2} = 1/\sqrt{1+x_c^2}\), avec \(x_c=1\). La 
+fréquence de coupure est donc \(N_c = N_0 = \omega_0/(2\pi) = \frac{1}{2\pi 
+RC}\). On a alors \(Gc = G_m-\SI{3}{\dB}=-\SI{3}{\dB}\) et \(\Phi = 
+-\arctan(x_c) = -\pi/4\).
 
-À très basse fréquence, lorsque \(x\) tend vers \(0\), \(\Hc\) tend vers \(1\), alors \(G\) et \(\Phi\) tendent vers \(0\) (asymptote horizontale). À haute fréquence, le gain en décibel est équivalent à \(G \approx -10 \log(x^2) = -20\log x\), qui est l'équation d'une droite d'ordonnée à l'origine nulle et de coefficient directeur \SI{-20}{\dB} par décade ; et \(\Phi\) tend vers \(-\pi/2\) (asymptote horizontale).
+À très basse fréquence, lorsque \(x\) tend vers \(0\), \(\Hc\) tend vers \(1\), 
+alors \(G\) et \(\Phi\) tendent vers \(0\) (asymptote horizontale). À haute 
+fréquence, le gain en décibel est équivalent à \(G \approx -10 \log(x^2) = 
+-20\log x\), qui est l'équation d'une droite d'ordonnée à l'origine nulle et de 
+coefficient directeur \SI{-20}{\dB} par décade ; et \(\Phi\) tend vers 
+\(-\pi/2\) (asymptote horizontale).
 
-\subsection{Filtre CR (passe-haut)}
+\subsection{Filtre CR (passe-haut)}%
 %TODO Mettre le schema du filtre et les graphiques
-Dans les mêmes conditions que le filtre précédent~: \(\Hc = \frac{\Uc_S}{\Uc_E} = \frac{\Zc_R}{\Zc_C + \Zc_R} = \frac{1}{1+\Zc_C\Yc_R} = \frac{1}{1+\frac{1}{\ju R C \omega}}\). Il est naturel de poser \(\omega_0=\frac{1}{RC}\), donc \(x=\omega/\omega_0=RC\omega\), donc \(\Hc = \frac{1}{1-\frac{\ju}{x}}\). Donc \(H = \frac{1}{\sqrt{1+\frac{1}{x^2}}}\), et le gain en \si{\dB} vaut \(G = -10\log(1+1/x^2)\) ; \(\Phi = \arctan(1/x) = \pi/2 - \arctan(x)\). Le comportement asymptotique est le suivant~:
-\begin{itemize}
-	\item À très basse fréquence, le condensateur est un coupe-circuit donc l'intensité du courant est nulle est \(\Uc_S = 0\), donc \(\Hc=0\), \(H=0\), \(G=-\infty\), \(\Phi=\pi/2\);
-	\item À très haute fréquence, pas trop pour rester dans l'ARQS, le condensateur est un court-circuit, donc \(\Uc_S=\Uc_E\) et \(\Hc=1\), \(G=0\) et \(\Phi=0\).
-\end{itemize}
-Les signaux hautes fréquences demeurent inchangés, alors que les signaux basses fréquences tendent à l'extinction. Il s'agit donc d'un filtre ``passe-haut''. L'étude mathématique donne des résultats suivants~: le gain en décibels est celui du filtre précédent (RC passe-bas) si l'on change \(x\) en \(1/x\), soit \(\log x\) en \(-\log x\). Le diagramme de Bode du gain est le symétrique du filtre précédent par rapport à l'axe des ordonnées. Le déphasage est l'opposé de celui du filtre précédent si l'on change \(x\) en \(1/x\), soit \(\log x\) en \(-\log x\). Il suffit de translater le diagramme de Bode du déphasage du filtre précédent vers le haut de \(\pi/2\).
+Dans les mêmes conditions que le filtre précédent~: \(\Hc = \frac{\Uc_S}{\Uc_E} 
+= \frac{\Zc_R}{\Zc_C + \Zc_R} = \frac{1}{1+\Zc_C\Yc_R} = 
+\frac{1}{1+\frac{1}{\ju R C \omega}}\). Il est naturel de poser 
+\(\omega_0=\frac{1}{RC}\), donc \(x=\omega/\omega_0=RC\omega\), donc \(\Hc = 
+\frac{1}{1-\frac{\ju}{x}}\). Donc \(H = \frac{1}{\sqrt{1+\frac{1}{x^2}}}\), et 
+le gain en \si{\dB} vaut \(G = -10\log(1+1/x^2)\) ; \(\Phi = \arctan(1/x) = 
+\pi/2 - \arctan(x)\). Le comportement asymptotique est le suivant~:
+\begin{itemize}%
+	\item À très basse fréquence, le condensateur est un coupe-circuit donc 
+		l'intensité du courant est nulle est \(\Uc_S = 0\), donc \(\Hc=0\), 
+		\(H=0\), \(G=-\infty\), \(\Phi=\pi/2\);
+	\item À très haute fréquence, pas trop pour rester dans l'ARQS, le 
+		condensateur est un court-circuit, donc \(\Uc_S=\Uc_E\) et \(\Hc=1\), 
+		\(G=0\) et \(\Phi=0\).
+\end{itemize}%
+Les signaux hautes fréquences demeurent inchangés, alors que les signaux basses 
+fréquences tendent à l'extinction. Il s'agit donc d'un filtre ``passe-haut''. 
+L'étude mathématique donne des résultats suivants~: le gain en décibels est 
+celui du filtre précédent (RC passe-bas) si l'on change \(x\) en \(1/x\), soit 
+\(\log x\) en \(-\log x\). Le diagramme de Bode du gain est le symétrique du 
+filtre précédent par rapport à l'axe des ordonnées. Le déphasage est l'opposé 
+de celui du filtre précédent si l'on change \(x\) en \(1/x\), soit \(\log x\) 
+en \(-\log x\). Il suffit de translater le diagramme de Bode du déphasage du 
+filtre précédent vers le haut de \(\pi/2\).
 
-\section{Exercices}
-\begin{exercice}[Filtre passe-bas, influence de la charge et du générateur]
+\section{Exercices}%
+\begin{exercice}[Filtre passe-bas, influence de la charge et du générateur]%
 	%TODO Mettre le schema
 	\begin{enumerate}
-		\item Pour une charge \(R_U\) infinie, déterminer la fonction de transfert \(\Hc = \frac{\uc_s}{\uc_E}\) en fonction de \(\omega\) et de \(\omega_0 = \frac{1}{RC}\). Calculer \(R\) pour que la bande passante à \SI{-3}{\dB} soit de \SI{100}{\kilo\hertz} si \(C=\SI{1}{\nano\farad}\).
-		\item Déterminer la fonction de transfert \(\Hc' = \frac{\uc_S}{\uc_E}\) pour une résistance de charge quelconque. Donner la nouvelle expression de la bande passante et sa nouvelle valeur avec \(C\) inchangée, \(R\) déterminée précédemment et \(R_U = 10 R\).
-		\item Déterminer la fonction de transfert \(\Hc'' = \frac{\uc_S}{\ec_G}\). Quelle relation doit il y avoir entre \(R\), \(R_u\) et \(R_G\) pour que la bande passante ait la même valeur que pour la fonction de transfert \(\Hc\) de la première question ?
+		\item Pour une charge \(R_U\) infinie, déterminer la fonction de transfert 
+			\(\Hc = \frac{\uc_s}{\uc_E}\) en fonction de \(\omega\) et de \(\omega_0 
+			= \frac{1}{RC}\). Calculer \(R\) pour que la bande passante à 
+			\SI{-3}{\dB} soit de \SI{100}{\kilo\hertz} si \(C=\SI{1}{\nano\farad}\).
+		\item Déterminer la fonction de transfert \(\Hc' = \frac{\uc_S}{\uc_E}\) 
+			pour une résistance de charge quelconque. Donner la nouvelle expression 
+			de la bande passante et sa nouvelle valeur avec \(C\) inchangée, \(R\) 
+			déterminée précédemment et \(R_U = 10 R\).
+		\item Déterminer la fonction de transfert \(\Hc'' = \frac{\uc_S}{\ec_G}\). 
+			Quelle relation doit il y avoir entre \(R\), \(R_u\) et \(R_G\) pour que 
+			la bande passante ait la même valeur que pour la fonction de transfert 
+			\(\Hc\) de la première question?
 	\end{enumerate}
-\end{exercice}
-\begin{exercice}[Étude de deux filtres]
+\end{exercice}%
+\begin{exercice}[Étude de deux filtres]%
 	%TODO Mettre les schemas
 	\begin{enumerate}
-		\item Montrer que les transferts statiques (c'est-à-dire en continu) \(\frac{U_{S_1}}{u_E}\) et \(\frac{U_{S_2}}{u_E}\) sont les mêmes pour ces deux quadripôles. On notera par la suite \(H_0\) la valeur commune à ces deux transferts statiques.
-		\item Déterminer les fonctions de transferts \(\Hc_1\) et \(\Hc_2\) de ces deux quadripôles en régime sinusoïdal de pulsation \(\omega\). On notera \(R_E = R_1 \parallel R_2\) et on écrira les fonctions de transfert en fonction de \(H_0\) et de \(x = R_E C \omega\).
-		\item Pour \(R = R_1 = R_2\), tracer les diagrammes de Bode des deux quadripôles et donner leurs bandes passantes à \SI{-3}{\dB}.
+		\item Montrer que les transferts statiques (c'est-à-dire en continu) 
+			\(\frac{U_{S_1}}{u_E}\) et \(\frac{U_{S_2}}{u_E}\) sont les mêmes pour 
+			ces deux quadripôles. On notera par la suite \(H_0\) la valeur commune à 
+			ces deux transferts statiques.
+		\item Déterminer les fonctions de transferts \(\Hc_1\) et \(\Hc_2\) de ces 
+			deux quadripôles en régime sinusoïdal de pulsation \(\omega\). On notera 
+			\(R_E = R_1 \parallel R_2\) et on écrira les fonctions de transfert en 
+			fonction de \(H_0\) et de \(x = R_E C \omega\).
+		\item Pour \(R = R_1 = R_2\), tracer les diagrammes de Bode des deux 
+			quadripôles et donner leurs bandes passantes à \SI{-3}{\dB}.
 	\end{enumerate}
-\end{exercice}
-\begin{exercice}[Étude de deux filtres]
+\end{exercice}%
+\begin{exercice}[Étude de deux filtres]%
 	%TODO Mettre les schemas
 	\begin{enumerate}
-		\item Déterminer en régime sinusoïdal établi, les fonctions de transfert~: \(\Hc_1 = \frac{\uc}{\uc_E}\), \(\Hc_1 = \frac{\uc_S}{\uc}\) et \(\Hc_1 = \frac{\uc_S}{\uc_E}\).
-		\item On pose \(x = R C \omega\), montrer que \(\H = \frac{1}{3+\left(x-\frac{1}{x} \right)}\).
-		\item Pour quelle valeur de pulsation \(\omega_0\) les tensions \(u_s\) et \(u_e\) sont elles en concordance de phase ? Que vaut alors le gain en décibels ?
-		\item Déterminer la bande passante à \SI{-3}{\dB} Application numérique pour \(R = \SI{1}{\kilo\ohm}\) et \(C = \SI{1}{\micro\farad}\).
+		\item Déterminer en régime sinusoïdal établi, les fonctions de transfert~: 
+			\(\Hc_1 = \frac{\uc}{\uc_E}\), \(\Hc_1 = \frac{\uc_S}{\uc}\) et \(\Hc_1 = 
+			\frac{\uc_S}{\uc_E}\).
+		\item On pose \(x = R C \omega\), montrer que \(\H = 
+			\frac{1}{3+\left(x-\frac{1}{x} \right)}\).
+		\item Pour quelle valeur de pulsation \(\omega_0\) les tensions \(u_s\) et 
+			\(u_e\) sont elles en concordance de phase? Que vaut alors le gain en 
+			décibels?
+		\item Déterminer la bande passante à \SI{-3}{\dB} Application numérique 
+			pour \(R = \SI{1}{\kilo\ohm}\) et \(C = \SI{1}{\micro\farad}\).
 	\end{enumerate}
-\end{exercice}
+\end{exercice}%
