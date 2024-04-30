@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Trace les figure du chapitre1."""
 import numpy as np

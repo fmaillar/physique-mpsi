@@ -23,14 +23,9 @@ def plot_potential_curve(a, b, c):
     text += f"$a={a}, b={b}, c={c}$"
     plt.text(2, 2.3, text)
     plt.xticks([])
-    plt.yticks([-1.75, -0.8, 1.8, 2.8],
-               labels=[r"$E_0$", r"$E_3$", r"$E_2$", r"$E_1$"])
-    plt.savefig("puits_potentiel.png", dpi=200)
+    # plt.yticks([-1.75, -0.8, 1.8, 2.8], [-1.7, -1.8, -1.9])
+    plt.savefig('puit.png')
 
 
-plot_potential_curve(3.9, -1.8, 0.19)
-# list_a = [3.8, 3.9, 4.0]
-# list_b = [-1.7, -1.8, -1.9]
-# list_c = [0.18, 0.19, 0.20]
-# for a, b, c in product(list_a, list_b, list_c):
-#     plot_potential_curve(a, b, c)
+a_i, b_i, c_i = 3.9, -1.8, 0.19
+plot_potential_curve(a_i, b_i, c_i)

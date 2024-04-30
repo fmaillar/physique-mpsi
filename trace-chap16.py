@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Trace les figures du chap16."""
 import numpy as np
@@ -15,8 +16,6 @@ L = 1000
 f = np.logspace(-2, 2, num=L)
 w, mag, phase = signal.bode(sys, f)
 
-# Cherche l'index de la coupure (1)
-# IC = np.where(w == 1)[0][0]
 IC = int(L / 2)
 d_arrow = {'facecolor': "black", 'shrink': 0.05, 'width': 0.2, 'headlength': 3}
 
