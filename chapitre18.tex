@@ -208,7 +208,98 @@ L'équation de la trajectoire s'écrit~\(r = \frac{-p}{1 - e\cos(\theta -
 
 \emph{Dans tous les cas~: le paramètre est \(p=\frac{mC^2}{\abs{K}}\) et 
 l'excentricité est \(e = Ap\)}.
+
 \subsection{Énergie mécanique}
+L'énergie mécanique s'exprime comme la somme de l'énergie potentielle et de 
+l'énergie cinétique~: \[E = Ku + \frac{mC^2}{2}(u^2 + {u'}^2).\]
+Si \(K<0\) alors \(mC^2 = -kP\) et donc \(u = \frac{1+e\cos(\theta - 
+\theta_0)}{p}\) et \(u' = \frac{-e\sin(\theta - \theta_0)}{p}\). Ainsi~:
+\[E = \frac{K}{2p}\left(2+2e\cos(\theta-\theta_0) - 
+{(1+e\cos(\theta-\theta_0))}^2 - {(-e\sin(\theta-\theta_0))}^2\right) = 
+\frac{K}{2p}(1-e^2)\]
+
+Si \(K>0\) alors \(mC^2 = kP\) et donc \(u = \frac{1-e\cos(\theta - 
+\theta_0)}{-p}\) et \(u' = \frac{e\sin(\theta - \theta_0)}{-p}\). Ainsi~:
+\[E = \frac{K}{2p}\left(-2+2e\cos(\theta-\theta_0) - 
+{(1-e\cos(\theta-\theta_0))}^2 - {(e\sin(\theta-\theta_0))}^2\right) = 
+\frac{K}{2p}(-1+e^2) = -\frac{K}{2p}(1-e^2)\]
+
+Dans les deux cas, \(E = \frac{\abs{K}}{2p}(e^2-1)\). Pour une trajectoire 
+circulaire ou elliptique (état lié), \(E<0\) ; pour une trajectoire 
+parabolique, \(E=0\) et pour une trajectoire hyperbolique, \(E>0\).
+
+\section{Attraction gravitationelle par un astre}
+\subsection{Cas général}
+
+Si l'astre a sa masse \(m_0\) répartie suivant une symétrie sphérique de centre 
+\(O\), on démontre avec le théorème de Gauss (cf. cours d'électrostatique) que 
+la force d'attraction qu'il exerce sur le point matériel \(M\) est la même que 
+si toute la masse \(m_O\) était concentrée en \(O\).
+
+On supposera que les forces exercées par les autres astres sur \(M\) sont 
+négligeables devant celle qu'exerce \(O\) et que le repère d'origine \(O\) dont 
+les axes sont orientés vers des étoiles lointaines constitue un référentiel
+galiléen.
+
+On a donc ~:\(K = -\Gb m_O m\). Le point \(M\) décrit alors une conique 
+d'équation \(r = \frac{p}{1+e\cos(\theta - \theta_0)}\) avec \(p = 
+\frac{C^2}{\Gb m_O}\) et \(e = \frac{AC^2}{\Gb m_O}\). Les constantes \(A\) et
+\(C\) sont déterminées par les conditions initiales sur la position et sur la 
+vitesse. L'énergie mécanique du point \(M\) vaut \(E = \frac{\Gb m_O 
+m}{2p}(e^2-1) = \frac{\Gb^2{m_O}^2m}{2C^2}(e^2-1)\). L'énergie potentielle du 
+point \(M\) vaut \(Ep = -\frac{\Gb m m_O (1+e\cos(\theta-\theta_0))}{p}\). 
+L'énergie cinétqiue vaut donc la différence entre l'énergie mécanique et 
+l'énergie potentielle~: \(Ec = \frac{\Gb m_O m}{2p}(e^2 + 
+2e\cos(\theta-\theta_0)+1)\)
+
+\subsection{Trajectoire circulaire}
+Dans ce cas particulier, l'excentricité \(e\) est nulle, \(A=0\), et \(r=p=r_0\) est 
+constant. Si l'on note \(\vvv_0\) la vitesse initiale, on a \(\vvv \perp \vv{OM}\)
+et donc \(C = r_0 v_0 = r_0 v\) donc \(v\) est constante et vaut \(v_0\), le 
+mouvement est donc uniforme.
+Ainsi, \(r_0 = p = \frac{C^2}{\Gb m_O} = \frac{r_0^2v_0^2}{\Gb m_O}\).
+
+Donc pour que le mouvement soit circulaire, il faut que \(\vvv_0 \perp 
+\vv{OM_0}\) et que \(v_0 = \sqrt{\frac{m_O \Gb}{r_0}}\).
+
+Par exemple, pour un satellite artificiel d'orbite basse, \(r_O = 
+\qty{6.37e6}{m}\) qui est à peu près le rayon terrestre, avec \(\Gb = 
+\qty{6.67e{-11}}{N.m^2.kg^{-2}}\) et \(m_O=m_T=\qty{5.97e24}{kg}\), on obtient 
+\(v_0 = \qty{7.9}{km/s}\). C'est la première vitesse cosmique~:
+\begin{equation}
+  v_1 = \sqrt{\frac{m_T \Gb}{r_T}} = \qty{7.9}{km/s}
+\end{equation}
+
+L'énergie mécanique vaut \(E = -\frac{\Gb m_O m}{2r_O}\), on a \(Ec=-E\) et 
+\(Ep = 2E\). Il en résulte que pour un satellite, l'atmosphère raréfié dans 
+lequelle il est plongé diminuant par forttement sont énergie mécanique, sa 
+distance à la Terre diminue, il perd de l'altitude, mais sa vitesse croît.
+
+La période de révolution est \(T = \frac{2\pi r_0}{v_0} = 2\pi r_0 
+\sqrt{\frac{r_0}{m_O \Gb}}\). On a bien la troisième loi de Kepler, la loi des 
+périodes~:
+\begin{equation}
+  \frac{r_0^3}{T^2} = \frac{m_O \Gb}{4\pi^2}
+\end{equation}
+
+\subsection{Trajectoires elliptiques}
+%Voir le dessin de l'ellipse en 18.3.3
+Le point \(P\) est le péricentre (périgée, périhélie, périastre suivant 
+l'attracteur) et le point \(A\) est l'apocentre (apogée, aphélie ou apoastre 
+suivant l'attracteur). Les points \(O\) et \(O'\) sont les foyers, \(B\) et 
+\(M\) sont des points de l'ellipses.
+
+Le grand axe d'une ellipse vaut \(2a\). D'après les propriétés des ellipses~:
+\begin{equation}\label{eq:trajell}
+\begin{split}
+  2a & = PO + OA \\
+  & = PO + PO' \\
+  & = BO + BO' \\
+  & = MO + MO'
+\end{split}
+\end{equation}
+car l'ellipse st l'ensemble des points du plan dont la somme des distances aux 
+deux foyers est constante.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "physique"
