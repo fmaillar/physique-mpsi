@@ -293,3 +293,4 @@ bin/
 pyvenv.cfg
 # ipython
 .ipynb_checkpoints/
+/venv/
