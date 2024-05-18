@@ -17,8 +17,8 @@ def plot_potential_curve(a, b, c):
     plt.ylim([-3, 3])
     plt.xlim([0, 4])
     plt.grid(which="both")
-    plt.axhline(0, color="black")
-    plt.axvline(0, color="black")
+    plt.axhline()
+    plt.axvline()
     text = r"$Ep(r) = \frac{a}{r} + \frac{b}{r^2} + \frac{c}{r^3}$" + "\n"
     text += f"$a={a}, b={b}, c={c}$"
     plt.text(2, 2.3, text)

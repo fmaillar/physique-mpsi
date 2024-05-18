@@ -18,27 +18,27 @@ def deviation(angle0, indice, eps):
     return x0 / COEF, y0 / COEF
 
 
-list_angle = [pi / 3, pi / 4, pi / 6]
-list_n = [1.2, 1.5, 1.9]
+list_angle = [pi / 4, pi / 6]
+list_n = [1.1, 1.25, 1.5]
 fig, ax = plt.subplots()
 ax.minorticks_on()
 for angle, n in list(product(list_angle, list_n)):
-    x, y = deviation(angle, n, 0.1)
+    x, y = deviation(angle, n, 0.001)
     plt.plot(
         x,
         y,
-        label=r"$\theta=$" + f"{round(angle/COEF)}° " + r"$n=$" + f"{n}",
+        label=r"$\theta=$" + f"{round(angle / COEF)}° " + r"$n=$" + f"{n}",
         linewidth=1.2,
-    )
-plt.legend(loc="best", fontsize=7)
+        )
+plt.legend(loc="upper center", fontsize=7)
 plt.xlabel(r"Incidence $i (°)$")
 plt.ylabel(r"Deviation $D (°)$")
-plt.tick_params(axis="x", which="major", length=10, color="r")
-plt.tick_params(axis="y", which="major", length=10, color="r",
+plt.tick_params(axis="x", which="major", length=10, color="g")
+plt.tick_params(axis="y", which="major", length=10, color="g",
                 labelrotation=45.0)
-ax.set_xticks(arange(-40, 100, 2), minor=True)
-ax.set_yticks(arange(0, 100, 2), minor=True)
-ax.grid(which="major", linestyle=":", linewidth="1.0", color="red")
+ax.set_xticks(arange(-50, 100, 2), minor=True)
+ax.set_yticks(arange(0, 60, 2), minor=True)
+ax.grid(which="major", linestyle="--", linewidth="0.3", color="blue")
 ax.grid(which="minor", linestyle="-", linewidth="0.1", color="black")
 # ax.yaxis.set_label_coords(-55.0, 40.0)
 plt.savefig("Deviation.png", dpi=240)

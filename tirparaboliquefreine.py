@@ -13,11 +13,11 @@ mpl.rcParams["text.usetex"] = True
 # from labellines import labelLines
 
 
-def chute_frot(y, t, g0, msurk, gamma):
+def chute_frot(y, t, g0, msurk, gamma_v):
     """Renvoie."""
     _, _, vx, vz = y
-    ax_o = -msurk * np.abs(vx) ** gamma
-    az_o = -g0 - msurk * np.abs(vz) ** gamma
+    ax_o = -msurk * np.abs(vx) ** gamma_v
+    az_o = -g0 - msurk * np.abs(vz) ** gamma_v
     return [vx, vz, ax_o, az_o]
 
 
@@ -25,14 +25,14 @@ x0, z0, V0, n = 0, 0, 20, 8
 theta = (1 / 2 - 1 / n) * np.pi
 thetadeg = np.ceil(theta * 180 / np.pi)
 Vz0, Vx0 = V0 * np.sin(theta), V0 * np.cos(theta)
-t = np.linspace(0, 30, 10000)
+ttime = np.linspace(0, 30, 10000)
 g, ksurm, gamma = 9.81, 0.1, 1.5
 y0 = [x0, z0, Vx0, Vz0]
 
 lines = ["-", "--", "-.", ":"]
 linecycler = cycle(lines)
 
-sol0 = odeint(chute_frot, y0, t, args=(g, ksurm, 0))
+sol0 = odeint(chute_frot, y0, ttime, args=(g, ksurm, 0))
 # index pour lequel z devient negatif
 END0 = np.where(sol0[:, 1] < 0, sol0[:, 1], -np.inf).argmax()
 
@@ -42,15 +42,15 @@ for gamma in [0.5, 0.707, 1]:
     fig, ax = plt.subplots()
     plt.plot(sol0[:END0, 0], sol0[:END0, 1], label=r"$k/m=0$", ls="-")
     for ksurm in [0.1, 0.2, 0.5, 0.707, 1]:
-        sol = odeint(chute_frot, y0, t, args=(g, ksurm, gamma))
+        sol = odeint(chute_frot, y0, ttime, args=(g, ksurm, gamma))
         END = 10 + np.where(sol[:, 1] < 0, sol[:, 1], -np.inf).argmax()
         plt.plot(
-            sol[:END, 0],
-            sol[:END, 1],
-            # label=f'$k/m={ksurm:.1f},\\alpha={gamma:.1f}$',
-            label=f"$k/m={ksurm:.1f}$",
-            ls=next(linecycler),
-        )
+                sol[:END, 0],
+                sol[:END, 1],
+                # label=f'$k/m={ksurm:.1f},\\alpha={gamma:.1f}$',
+                label=f"$k/m={ksurm:.1f}$",
+                ls=next(linecycler),
+            )
 
     plt.legend(loc="best")
     lines = ax.get_lines()
