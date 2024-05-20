@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="509a6219-41bc-466f-bc83-cb2e61ab280a" name="Changes" comment="projet texstu">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/physique-mpsi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/physique.txss2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions_pomodoro.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapitre01.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapitre01.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapitre02.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapitre02.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapitre03.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapitre03.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapitre05.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapitre05.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapitre18.tex" beforeDir="false" afterPath="$PROJECT_DIR$/chapitre18.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/physique.tex" beforeDir="false" afterPath="$PROJECT_DIR$/physique.tex" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2gdAE8Eo1qYaRrQ1anWEXLEJd5V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.equation_horaire_oscillations.executor": "Debug",
+    "Python.meca.executor": "Run",
+    "Python.tirparaboliquefreine.executor": "Run",
+    "Python.trace-chap17.executor": "Run",
+    "Python.trace_17.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="509a6219-41bc-466f-bc83-cb2e61ab280a" name="Changes" comment="" />
+      <created>1716016966246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716016966246</updated>
+    </task>
+    <task id="LOCAL-00001" summary="amélioration du script">
+      <option name="closed" value="true" />
+      <created>1716038654993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716038654993</updated>
+    </task>
+    <task id="LOCAL-00002" summary="amélioration des scripts python">
+      <option name="closed" value="true" />
+      <created>1716061857153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716061857153</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ajout d'un clearpage avant la section exercices">
+      <option name="closed" value="true" />
+      <created>1716061905265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716061905265</updated>
+    </task>
+    <task id="LOCAL-00004" summary="maj gitignore">
+      <option name="closed" value="true" />
+      <created>1716061955433</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716061955433</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="amélioration du script" />
+    <MESSAGE value="amélioration des scripts python" />
+    <MESSAGE value="ajout d'un clearpage avant la section exercices" />
+    <MESSAGE value="maj gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="maj gitignore" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
